@@ -1,0 +1,21 @@
+{
+  "module": "L3.2",
+  "version": "0.2",
+  "date": "2026-10-25",
+  "parent_research_master_library_file_id": "libfile_6a24daf8211081919033d46e4b282680",
+  "protocol_file": "SNN_L3_2_Protocol_v0_2_2026-10-25.md",
+  "status": "protocol and implementation verification; scientific experiments pending",
+  "completed": [
+    "reviewable protocol",
+    "nine-paper use/novelty mapping",
+    "data generator",
+    "analytical references",
+    "training and probe scripts",
+    "25 checks",
+    "three tiny CPU pipeline smokes"
+  ],
+  "planned_formal_fits": 435,
+  "completed_formal_fits": 0,
+  "new_empirical_scientific_claims": [],
+  "next": "review numerical settings; then first 15 development screen runs; continue L3.3 as agreed"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "reference implementation checks passed",
+  "test_methods_passed": 12,
+  "new_snn_training_fits": 0,
+  "torch_available": false,
+  "snn_adapter_status": "AST syntax checked only; forward/backward/stream integration not executed",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "checks": [
+    "stable sample prefixes/chunks",
+    "balanced event schedules and legal tags",
+    "split/group separation",
+    "single-factor pairs with common noise",
+    "target recomputation and mirror certification",
+    "measurement-noise pairs",
+    "observed-input solvability with zero/noisy measurement",
+    "rank-deficiency and missing target directions",
+    "paired response and orthogonal directions",
+    "orthogonal rotation and uniform scale controls"
+  ],
+  "parameter_count_status": "algebraic count; not measured on an instantiated model"
+}

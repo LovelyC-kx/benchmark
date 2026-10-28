@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "numpy_reference_tests": 21,
+  "pytorch_runtime_tests": 4,
+  "ast_files": [
+    "load_data.py",
+    "run_reference.py",
+    "analyze_features.py",
+    "torch_adapter.py",
+    "run_train.py",
+    "linear_reference.py",
+    "experiment_plan.py",
+    "tests/test_torch_adapter.py",
+    "tests/test_reference.py",
+    "parent_l2/snnbench/l2_runtime.py",
+    "parent_l2/snnbench/neurons.py",
+    "parent_l2/snnbench/models.py",
+    "parent_l2/snnbench/__init__.py"
+  ],
+  "new_benchmark_fits": 0,
+  "torch_available": true,
+  "torch_forward_backward_validated": true,
+  "actual_controls": [
+    "same input across supervised demand",
+    "prefix/time legality",
+    "write-pressure anchors",
+    "energy/SNR reference",
+    "noiseless solvability",
+    "Gaussian observed-sequence oracle",
+    "nonorthogonal invertible counterexample",
+    "conditional linear rank bound",
+    "linear age expansion",
+    "held-out risk identity with cross terms",
+    "independent split and negative R² handling"
+  ],
+  "planned_runs": 435,
+  "screen_runs": 15,
+  "primary_runs": 135,
+  "figures": [
+    "evidence/reference_calibration.png",
+    "evidence/reference_calibration.pdf"
+  ],
+  "interpretation": "Analytical/data calibration, 25 automated checks, and three tiny CPU training/probe pipeline smokes; 0 formal benchmark fits.",
+  "actual_training_pipeline_smokes": [
+    {
+      "path": "evidence/smoke_runs/0a806718d9c8a25a",
+      "kind": "smoke",
+      "objective": "regression",
+      "optimizer_updates": 1,
+      "status": "fit_and_feature_export_completed",
+      "noop_max_abs_error": 0.0,
+      "content_analysis_completed": true
+    },
+    {
+      "path": "evidence/smoke_runs/272ae6230942ebeb",
+      "kind": "smoke",
+      "objective": "regression",
+      "optimizer_updates": 1,
+      "status": "fit_and_feature_export_completed",
+      "noop_max_abs_error": 0.0,
+      "content_analysis_completed": true
+    },
+    {
+      "path": "evidence/smoke_runs/daad993cf1f23042",
+      "kind": "smoke",
+      "objective": "classification",
+      "optimizer_updates": 1,
+      "status": "fit_and_feature_export_completed",
+      "noop_max_abs_error": 0.0,
+      "content_analysis_completed": true
+    }
+  ],
+  "scientific_result_scope": "Tiny smoke runs verify the pipeline only; 0 of 435 planned benchmark configurations completed.",
+  "pytorch": "2.14.1+cpu",
+  "cuda_available": false,
+  "post_cublas_environment_patch_ast_check": "PASS"
+}

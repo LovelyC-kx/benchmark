@@ -1,0 +1,56 @@
+[
+  {
+    "id": "R1",
+    "title": "Temporal superposition and feature geometry of RNNs under memory demands",
+    "version": "ICLR 2026",
+    "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/bfcb583d225b1db8d3ca2331f6785774-Abstract-Conference.html"
+  },
+  {
+    "id": "R2",
+    "title": "Information Processing Capacity of Dynamical Systems",
+    "version": "Scientific Reports 2012",
+    "primary_url": "https://www.nature.com/articles/srep00514.pdf"
+  },
+  {
+    "id": "R3",
+    "title": "A refined information processing capacity metric allows an in-depth analysis of memory and nonlinearity trade-offs in neurocomputational systems",
+    "version": "Scientific Reports 2023",
+    "primary_url": "https://www.nature.com/articles/s41598-023-37604-0"
+  },
+  {
+    "id": "R4",
+    "title": "Quantifying Memory Utilization with Effective State-Size",
+    "version": "ICML 2025",
+    "primary_url": "https://proceedings.mlr.press/v267/parnichkun25a.html"
+  },
+  {
+    "id": "R5",
+    "title": "How Linear Attention Remembers",
+    "version": "arXiv v1 2026-09-27",
+    "primary_url": "https://arxiv.org/html/2609.33093v1"
+  },
+  {
+    "id": "R6",
+    "title": "Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It",
+    "version": "arXiv v1 2026-09-14",
+    "primary_url": "https://arxiv.org/html/2609.16183v1"
+  },
+  {
+    "id": "R7",
+    "title": "Unleashing Temporal Capacity of Spiking Neural Networks through Spatiotemporal Separation",
+    "version": "arXiv v1 2025-12-05",
+    "primary_url": "https://arxiv.org/html/2512.05472v1"
+  },
+  {
+    "id": "R8",
+    "title": "Mechanistic Design and Scaling of Hybrid Architectures",
+    "version": "ICML 2024",
+    "primary_url": "https://proceedings.mlr.press/v235/poli24a.html"
+  },
+  {
+    "id": "R9",
+    "title": "Working Memory in Recurrent Spiking Neural Networks With Heterogeneous Synaptic Delays",
+    "version": "arXiv v2 2026-07-11",
+    "primary_url": "https://arxiv.org/html/2604.14096v2"
+  }
+]

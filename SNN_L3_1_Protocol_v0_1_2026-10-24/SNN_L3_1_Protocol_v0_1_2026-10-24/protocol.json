@@ -1,0 +1,192 @@
+{
+  "schema": "snn_l3_unit1_protocol_0.1",
+  "date": "2026-10-24",
+  "status": "Reviewable executable specification; NumPy data/geometry implemented. No new SNN fits.",
+  "scope": "Content retention, identity binding, carrier redistribution and nuisance response; not order necessity",
+  "data": {
+    "latent_dim": 4,
+    "sensory_dim": 8,
+    "input_dim": 12,
+    "T": 16,
+    "history_slots_zero_based": [
+      2,
+      5,
+      8
+    ],
+    "current_time_zero_based": 12,
+    "trailing_blank_steps": 3,
+    "sigma": 0.2,
+    "projection_seed": 901,
+    "data_seed": 12400,
+    "projection": "one shared 8x4 orthonormal-column P; Gaussian latents and event-only measurement noise; no clipping",
+    "timing": "all 6 ordered distinct A/B slot pairs once per block of 6 samples",
+    "tags": "three noiseless identity tags and observed valid flag; all models receive them",
+    "sampling": "counter-based split/sample/stream seeds; stable prefixes"
+  },
+  "tasks": {
+    "current": "z_C",
+    "history": "z_A",
+    "joint": "concat(z_A,z_C)",
+    "mirror": "replace selected history A by B; same raw input pool",
+    "primary_objective": "mean per-coordinate squared error",
+    "classification": "separate fixed-direction labels and frozen-feature readouts; not yet new classification SNN fits"
+  },
+  "splits": {
+    "encoder_train": 6144,
+    "encoder_val": 1536,
+    "geometry_fit": 1536,
+    "probe_train": 6144,
+    "probe_val": 1536,
+    "audit_test": 3072
+  },
+  "model": {
+    "common_frame_encoder": {
+      "layers": [
+        12,
+        32,
+        16
+      ],
+      "activation": "ReLU after first affine map",
+      "output_mask": "multiply 16-D encoded result by observed valid flag",
+      "learning": "same architecture and paired initialization; trained separately within each run, frozen during interventions"
+    },
+    "core": {
+      "backbone": "mlp",
+      "width": 32,
+      "depth": 2,
+      "beta": 0.8,
+      "threshold": 1,
+      "gain": 2,
+      "dc_normalize": false,
+      "gradient_mode": "full",
+      "surrogate": "atan",
+      "sg_scale": 2,
+      "detach_reset": true,
+      "observation": "post",
+      "readout": "last",
+      "normalization": "none",
+      "push_pull": false,
+      "reset_strength": 1
+    },
+    "neurons": [
+      "continuous",
+      "threshold",
+      "analog_hard_ref",
+      "lif_hard",
+      "lif_soft"
+    ],
+    "parameters_per_run": {
+      "current": 2676,
+      "history": 2676,
+      "joint": 2808
+    },
+    "persistent_cell_scalars_per_sample": 64,
+    "permissions": "terminal post is a real-valued state interface; not a spike-only deployment claim"
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0001,
+    "batch_size": 128,
+    "epochs": 60,
+    "scheduler": "none",
+    "early_stopping": false,
+    "gradient_clip_norm": 1,
+    "selection": "minimum encoder_val MSE; ties use earliest epoch",
+    "expected_updates": 2880
+  },
+  "pilot_matrix": {
+    "first_seed": 11,
+    "first_stage_fits": 15,
+    "replication_seeds": [
+      22,
+      33
+    ],
+    "additional_replication_fits": 30,
+    "total_pilot_fits": 45,
+    "status": "planned; none executed",
+    "caveat": "common-hyperparameter pilot, not adequately tuned final model ranking"
+  },
+  "diagnosis": {
+    "readout_sample_sizes": [
+      128,
+      512,
+      2048,
+      6144
+    ],
+    "ridge_alphas": [
+      0.0001,
+      0.01,
+      1,
+      100,
+      10000
+    ],
+    "regression_metrics": [
+      "per-coordinate R2 (negative values retained)",
+      "per-source mean R2",
+      "MSE"
+    ],
+    "geometry_basis_relative_tolerance": 1e-06,
+    "primary_time_zero_based": 15,
+    "secondary_times_zero_based": [
+      2,
+      5,
+      8,
+      12
+    ],
+    "spike_windows": [
+      1,
+      4,
+      16
+    ],
+    "primary_intervention": {
+      "site": "first Cell",
+      "timing": "after step index 9, before step 10; all A/B events have occurred and C has not",
+      "scopes": [
+        "noop",
+        "cell"
+      ],
+      "weights_and_future_input": "shared, frozen"
+    },
+    "secondary_interventions": [
+      "first-cell reset feedback disabled for entire sequence (emit natural)",
+      "all-core clear at same common cut for path scope control"
+    ]
+  },
+  "interpretation": {
+    "no_mutually_exclusive_diagnoses": true,
+    "no_probe_failure_implies_absolute_erasure": true,
+    "no_target_basis_means": "null/unknown linear direction, not perfect separation",
+    "equivalence_margin_R2_proposed": 0.02,
+    "equivalence_status": "proposal for review; must be fixed before confirmation, not a universal criterion",
+    "working_point": "log events/margins and response scales; event scarcity flags uninformative reset exposure"
+  },
+  "stage_boundaries": {
+    "implemented": [
+      "factor generator",
+      "legal source and noise pairs",
+      "target recomputation and invariance certification",
+      "observed-sequence solvability reference",
+      "linear target basis and paired response geometry"
+    ],
+    "not_executed": [
+      "new SNN training",
+      "trained SNN classification controls",
+      "SNN adapter forward/backward/stream checks (PyTorch unavailable in this session)",
+      "image reconstruction extension",
+      "Wakhloo prediction",
+      "hardware evaluation"
+    ]
+  },
+  "parent": {
+    "library_file_id": "libfile_3e65696624048191903064f4fff85bc8",
+    "filename": "SNN_L2_Complete_2026-10-21.zip",
+    "version_returned": null,
+    "relationship": "add-on protocol; parent code not overwritten"
+  }
+}

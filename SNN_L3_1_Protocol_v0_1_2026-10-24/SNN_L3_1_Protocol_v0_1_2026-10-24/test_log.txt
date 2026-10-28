@@ -1,0 +1,17 @@
+test_balanced_timing_and_tags (test_reference.DataContracts.test_balanced_timing_and_tags) ... ok
+test_gaussian_reference_mse (test_reference.DataContracts.test_gaussian_reference_mse) ... ok
+test_invalid_inputs (test_reference.DataContracts.test_invalid_inputs) ... ok
+test_measurement_noise_pair_has_no_content_or_target_change (test_reference.DataContracts.test_measurement_noise_pair_has_no_content_or_target_change) ... ok
+test_noiseless_observation_reference (test_reference.DataContracts.test_noiseless_observation_reference) ... ok
+test_prefix_and_chunk_identity (test_reference.DataContracts.test_prefix_and_chunk_identity) ... ok
+test_single_source_pair_and_shared_noise (test_reference.DataContracts.test_single_source_pair_and_shared_noise) ... ok
+test_split_separation_and_projection (test_reference.DataContracts.test_split_separation_and_projection) ... ok
+test_targets_recomputed_and_mirror_certification (test_reference.DataContracts.test_targets_recomputed_and_mirror_certification) ... ok
+test_known_source_and_orthogonal_response (test_reference.GeometryContracts.test_known_source_and_orthogonal_response) ... ok
+test_rank_deficiency_and_zero_basis (test_reference.GeometryContracts.test_rank_deficiency_and_zero_basis) ... ok
+test_rotation_and_uniform_scale_controls (test_reference.GeometryContracts.test_rotation_and_uniform_scale_controls) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.649s
+
+OK

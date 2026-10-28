@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/kashparty/iclr-rnn-superposition",
+  "commit": "26b00cbb9cc03bcb2b4f9d989ac3a9d48a5f6bf9",
+  "notebook": "iclr_figure_01_and_05.ipynb",
+  "read_code_cells": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "scope": "Data generation, RNN forward/sequence equations, training loss, candidate selection; not all plotting cells or all repository files; not executed.",
+  "borrowed_code": false,
+  "implementation": "Our generator and linear reference are independently written; parent SNN implementation is our previously delivered L2 code."
+}

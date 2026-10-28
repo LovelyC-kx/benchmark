@@ -1,0 +1,30 @@
+test_active_dimensions_and_labels_no_shortcut_metadata (test_reference.ProtocolReferences.test_active_dimensions_and_labels_no_shortcut_metadata) ... ok
+test_age_expansion_matches_actual_linear_recursion (test_reference.ProtocolReferences.test_age_expansion_matches_actual_linear_recursion) ... ok
+test_anchor_loss_coefficient_does_not_shrink_with_l (test_reference.ProtocolReferences.test_anchor_loss_coefficient_does_not_shrink_with_l) ... ok
+test_balanced_timing_and_fixed_anchor (test_reference.ProtocolReferences.test_balanced_timing_and_fixed_anchor) ... ok
+test_blank_age_same_prefix_no_new_measurement (test_reference.ProtocolReferences.test_blank_age_same_prefix_no_new_measurement) ... ok
+test_demand_does_not_change_observation_or_latents (test_reference.ProtocolReferences.test_demand_does_not_change_observation_or_latents) ... ok
+test_equal_total_demand_controls_have_identical_inputs (test_reference.ProtocolReferences.test_equal_total_demand_controls_have_identical_inputs) ... ok
+test_fixed_dimension_does_not_imply_constant_total (test_reference.ProtocolReferences.test_fixed_dimension_does_not_imply_constant_total) ... ok
+test_full_observation_oracle_noiseless (test_reference.ProtocolReferences.test_full_observation_oracle_noiseless) ... ok
+test_independent_splits_and_no_input_permissions_leak (test_reference.ProtocolReferences.test_independent_splits_and_no_input_permissions_leak) ... ok
+test_invalid_observation_contracts_fail (test_reference.ProtocolReferences.test_invalid_observation_contracts_fail) ... ok
+test_linear_bound_and_null_signal (test_reference.ProtocolReferences.test_linear_bound_and_null_signal) ... ok
+test_nonorthogonal_invertible_is_recoverable (test_reference.ProtocolReferences.test_nonorthogonal_invertible_is_recoverable) ... ok
+test_pair_changes_only_selected_content_and_labels (test_reference.ProtocolReferences.test_pair_changes_only_selected_content_and_labels) ... ok
+test_plan_counts_unique_ids_and_resource_formula (test_reference.ProtocolReferences.test_plan_counts_unique_ids_and_resource_formula) ... ok
+test_prefix_and_sample_id_permutation (test_reference.ProtocolReferences.test_prefix_and_sample_id_permutation) ... ok
+test_projection_is_shared_across_k (test_reference.ProtocolReferences.test_projection_is_shared_across_k) ... ok
+test_raw_and_fixed_rms_expected_energy (test_reference.ProtocolReferences.test_raw_and_fixed_rms_expected_energy) ... ok
+test_ridge_and_negative_heldout_r2 (test_reference.ProtocolReferences.test_ridge_and_negative_heldout_r2) ... ok
+test_risk_identity_keeps_cross_terms_on_heldout_data (test_reference.ProtocolReferences.test_risk_identity_keeps_cross_terms_on_heldout_data) ... ok
+test_write_pressure_preserves_anchor_measurements (test_reference.ProtocolReferences.test_write_pressure_preserves_anchor_measurements) ... ok
+test_core_clear_removes_pair_history_at_last_readout (test_torch_adapter.TorchContractChecks.test_core_clear_removes_pair_history_at_last_readout) ... ok
+test_equal_demand_loss_is_uniform_and_classification_backpropagates (test_torch_adapter.TorchContractChecks.test_equal_demand_loss_is_uniform_and_classification_backpropagates) ... ok
+test_five_cells_forward_backward_parameters_and_streaming (test_torch_adapter.TorchContractChecks.test_five_cells_forward_backward_parameters_and_streaming) ... ok
+test_zero_extra_weight_has_identical_optimization_across_l (test_torch_adapter.TorchContractChecks.test_zero_extra_weight_has_identical_optimization_across_l) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.950s
+
+OK

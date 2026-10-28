@@ -1,0 +1,12 @@
+{
+  "library_file_id": "libfile_3e65696624048191903064f4fff85bc8",
+  "filename": "SNN_L2_Complete_2026-10-21.zip",
+  "version_returned": null,
+  "archive_sha256": "f9a108f53ddf401d4d9426c6bc42189f33eacdbe587a0e4045f6e43a2def16f6",
+  "inspected_source_sha256": {
+    "snnbench/neurons.py": "20da689cd325a0f550c008f45e6ad3eb560525120337641da4286167cf0d4910",
+    "snnbench/models.py": "e9e3c89bbcc66cd46e30848e86bf4016cc5ed07be713681aff102077d4b083cf"
+  },
+  "inspection_scope": "neurons.py and models.py fully read; no parent SNN runs reexecuted",
+  "parent_code_modified": false
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "path": "PROTOCOL.md",
+    "bytes": 17837,
+    "sha256": "509500d6d43633a9af2b9e5d6ce9ab04b2e6f2bfcfcc91b1406ea713cfcb7ef2"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1783,
+    "sha256": "c5d772e3d7ecc6d61a6ff828ee6071ded59e7ffba8c4266a3b2b7586d990cde2"
+  },
+  {
+    "path": "factor_data.py",
+    "bytes": 7887,
+    "sha256": "7690ef15318b4663a1aaedf0976356e34de3063663a829f1530b073851bb8348"
+  },
+  {
+    "path": "l2_adapter_example.py",
+    "bytes": 1619,
+    "sha256": "52f8fef6565e98b532490f910cedeac2a187772f29661b93e784b26c7c7e68b5"
+  },
+  {
+    "path": "paired_geometry.py",
+    "bytes": 2588,
+    "sha256": "8f464c9a03b0efee857d9a777b7095365827deb3b7df59a806fe550d5e806156"
+  },
+  {
+    "path": "parent_provenance.json",
+    "bytes": 581,
+    "sha256": "4225d8741f808380d3ad82b9b980cd40e529559af65128f40fe99b3d4b3115b4"
+  },
+  {
+    "path": "protocol.json",
+    "bytes": 5609,
+    "sha256": "9882a8beae77844a3601269ca44ba941d6e3c8512be4fa8338c4d4cf5b93e995"
+  },
+  {
+    "path": "requirements-reference.txt",
+    "bytes": 13,
+    "sha256": "9e712fee14f54287e053b9d60e7b59f8fa33b99f862cb3748f37fa720266a889"
+  },
+  {
+    "path": "test_log.txt",
+    "bytes": 1471,
+    "sha256": "115fe44a929f4ad49e6ebf23dc815b71c8f72332f61569e18d5f2043001e0a4e"
+  },
+  {
+    "path": "tests/test_reference.py",
+    "bytes": 7174,
+    "sha256": "8724b5eff1bfa9891fcfa39ce6d4a7eccbe956ffcbc79a4e685b31047aa5b919"
+  },
+  {
+    "path": "verification.json",
+    "bytes": 853,
+    "sha256": "d3b68440585750d1e3dd2a75bb1900991fc935ea15c4aec89e9844b795f5a69b"
+  }
+]

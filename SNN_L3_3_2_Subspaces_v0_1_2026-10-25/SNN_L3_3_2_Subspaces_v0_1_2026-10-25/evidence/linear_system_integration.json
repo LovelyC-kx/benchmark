@@ -1,0 +1,219 @@
+{
+  "kind": "known_linear_system_integration",
+  "new_snn_training_runs": 0,
+  "observation_dim": 12,
+  "factor_dim": 20,
+  "fit_rows": 1024,
+  "selection_rows": 512,
+  "evaluation_rows": 4096,
+  "selected_ranks": {
+    "focal": 4,
+    "cotarget": 4,
+    "unrequested": 4
+  },
+  "replica_stability": {
+    "focal": {
+      "fixed_selected_rank_from_a": 4,
+      "replica_available_rank": 4,
+      "same_selected_rank_available": true,
+      "subspace_stability": {
+        "observation_dim": 12,
+        "rank_a": 4,
+        "rank_b": 4,
+        "forced_intersection_dimension": 0,
+        "status": "defined",
+        "principal_angles_degrees": [
+          0.14151794817905086,
+          0.6772996413508491,
+          0.7510461086000904,
+          1.1368748542406415
+        ],
+        "projector_inner_product": 3.999288689844002,
+        "overlap_a_into_b": 0.9998221724610005,
+        "overlap_b_into_a": 0.9998221724610005,
+        "haar_expected_a_into_b": 0.3333333333333333,
+        "haar_expected_b_into_a": 0.3333333333333333,
+        "chance_adjusted_a_into_b": 0.9997332586915005,
+        "warning": "Descriptive geometry, not information loss or causal interference."
+      },
+      "coefficient_relative_difference": 0.015942663689571108
+    },
+    "cotarget": {
+      "fixed_selected_rank_from_a": 4,
+      "replica_available_rank": 4,
+      "same_selected_rank_available": true,
+      "subspace_stability": {
+        "observation_dim": 12,
+        "rank_a": 4,
+        "rank_b": 4,
+        "forced_intersection_dimension": 0,
+        "status": "defined",
+        "principal_angles_degrees": [
+          0.12259652979294941,
+          0.3794276417964715,
+          0.5597204145108748,
+          0.7802976595491571
+        ],
+        "projector_inner_product": 3.999670679054854,
+        "overlap_a_into_b": 0.9999176697637135,
+        "overlap_b_into_a": 0.9999176697637135,
+        "haar_expected_a_into_b": 0.3333333333333333,
+        "haar_expected_b_into_a": 0.3333333333333333,
+        "chance_adjusted_a_into_b": 0.9998765046455703,
+        "warning": "Descriptive geometry, not information loss or causal interference."
+      },
+      "coefficient_relative_difference": 0.010650623446216005
+    },
+    "unrequested": {
+      "fixed_selected_rank_from_a": 4,
+      "replica_available_rank": 12,
+      "same_selected_rank_available": true,
+      "subspace_stability": {
+        "observation_dim": 12,
+        "rank_a": 4,
+        "rank_b": 4,
+        "forced_intersection_dimension": 0,
+        "status": "defined",
+        "principal_angles_degrees": [
+          0.2647423513406403,
+          0.9594118374075298,
+          1.489129960240408,
+          2.1883307043383096
+        ],
+        "projector_inner_product": 3.9975649050951105,
+        "overlap_a_into_b": 0.9993912262737776,
+        "overlap_b_into_a": 0.9993912262737776,
+        "haar_expected_a_into_b": 0.3333333333333333,
+        "haar_expected_b_into_a": 0.3333333333333333,
+        "chance_adjusted_a_into_b": 0.9990868394106664,
+        "warning": "Descriptive geometry, not information loss or causal interference."
+      },
+      "coefficient_relative_difference": 0.03428102847332023
+    }
+  },
+  "focal_a_other_b_overlap": {
+    "observation_dim": 12,
+    "rank_a": 4,
+    "rank_b": 4,
+    "forced_intersection_dimension": 0,
+    "status": "defined",
+    "principal_angles_degrees": [
+      44.670337081770064,
+      44.90572046105818,
+      45.355412333550106,
+      45.49894833571756
+    ],
+    "projector_inner_product": 1.992488254459738,
+    "overlap_a_into_b": 0.4981220636149345,
+    "overlap_b_into_a": 0.4981220636149345,
+    "haar_expected_a_into_b": 0.3333333333333333,
+    "haar_expected_b_into_a": 0.3333333333333333,
+    "chance_adjusted_a_into_b": 0.24718309542240174,
+    "warning": "Descriptive geometry, not information loss or causal interference."
+  },
+  "focal_cotarget_bootstrap": {
+    "status": "computed",
+    "requested_draws": 48,
+    "valid_draws": 48,
+    "invalid_draws": 0,
+    "percentile_95": [
+      0.49445266419387063,
+      0.5033056305173285
+    ],
+    "fixed_rank_conditioned": true,
+    "scope": "Within-checkpoint scene resampling with selected ranks fixed; not a post-selection or training-seed confidence guarantee."
+  },
+  "nulls": {
+    "haar_dimension_matched": {
+      "status": "computed",
+      "draws": 256,
+      "mean": 0.33761147456797247,
+      "quantiles_025_50_975": [
+        0.2080612540806835,
+        0.3376373697907221,
+        0.4834801734005416
+      ],
+      "role": "Reference distribution under declared sampling, not a universal neural null or an adjusted significance test."
+    },
+    "covariance_shaped": {
+      "status": "computed",
+      "draws": 256,
+      "mean": 0.445393615846978,
+      "quantiles_025_50_975": [
+        0.3130431534441011,
+        0.4460520831223786,
+        0.5930243994171129
+      ],
+      "role": "Reference distribution under declared sampling, not a universal neural null or an adjusted significance test."
+    }
+  },
+  "conditional_noise_gamma": 0.0,
+  "conditional_noise_metric_overlap": {
+    "observation_dim": 12,
+    "rank_a": 4,
+    "rank_b": 4,
+    "forced_intersection_dimension": 0,
+    "status": "defined",
+    "principal_angles_degrees": [
+      83.41960558009609,
+      84.25302906984862,
+      85.1604573206234,
+      87.4882872032961
+    ],
+    "projector_inner_product": 0.032197691487296794,
+    "overlap_a_into_b": 0.008049422871824198,
+    "overlap_b_into_a": 0.008049422871824198,
+    "haar_expected_a_into_b": 0.3333333333333333,
+    "haar_expected_b_into_a": 0.3333333333333333,
+    "chance_adjusted_a_into_b": -0.48792586569226365,
+    "warning": "Descriptive geometry, not information loss or causal interference."
+  },
+  "population_full_gaussian_mmse": 0.01951266867294349,
+  "empirical_oracle_mse": 0.019649340895875014,
+  "full_ridge": {
+    "mean_mse": 0.01993513205614023,
+    "per_coordinate_mse": [
+      0.019832266537012956,
+      0.020101244451210813,
+      0.020366786185767944,
+      0.019440231050569204
+    ],
+    "per_coordinate_r2": [
+      0.9805882433244711,
+      0.9800604386651225,
+      0.9794368952294409,
+      0.9806149398058844
+    ],
+    "mean_r2": 0.9801751292562297,
+    "negative_r2_retained": true
+  },
+  "encoding_only_ridge": {
+    "mean_mse": 0.5049829292590652,
+    "per_coordinate_mse": [
+      0.5168742280806132,
+      0.5055112572840916,
+      0.5011343444635508,
+      0.4964118872080052
+    ],
+    "per_coordinate_r2": [
+      0.49408522073726313,
+      0.4985547912442789,
+      0.49403514450746333,
+      0.504996916468238
+    ],
+    "mean_r2": 0.4979180182393108,
+    "negative_r2_retained": true
+  },
+  "population_ideal_encoding_only_mmse": 0.5024875621890547,
+  "conditional_readout_risk": {
+    "direct_mse": 0.019909178960853684,
+    "raw_scene_mean_mse": 0.0030278914466482197,
+    "unbiased_conditional_mean_error_mse": 0.0006162789446188676,
+    "unbiased_conditional_variability_mse": 0.019292900016234817,
+    "accounted_mse": 0.019909178960853684,
+    "identity_error": 0.0,
+    "raw_mean_bias_correction": 0.002411612502029352,
+    "negative_corrected_estimates_retained": true
+  },
+  "scope": "Synthetic independent-Gaussian linear generator with known factors. These are diagnostic regression fits, not trained-SNN scientific results."
+}

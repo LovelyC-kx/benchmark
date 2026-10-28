@@ -1,0 +1,30 @@
+{
+  "module": "L3.3.2",
+  "version": "0.1",
+  "protocol_and_initial_implementation_complete": true,
+  "formal_snn_scientific_conclusions_complete": false,
+  "unit_checks_passed": 35,
+  "single_checkpoint_analysis_views": 8,
+  "new_snn_training_runs": 0,
+  "audit_accessed": false,
+  "completed": [
+    "independent role fits and validation ranks including zero",
+    "independent encoding replica",
+    "principal angles and power capture",
+    "Haar and covariance-shaped reference distributions",
+    "same-rank same-retained-variance construction",
+    "conditional covariance selection with explicit regularization",
+    "encoding/readout mapping and exact risk",
+    "observation restrictions and independent probe learning curves",
+    "paired schedule analysis",
+    "known linear-system integration"
+  ],
+  "pending": [
+    "formal trained-model comparisons and training-seed uncertainty",
+    "complete nonlinear decomposition",
+    "full post-selection interval validation",
+    "Wakhloo four-statistic theory execution in L3.4",
+    "core-state causal confirmation in L4",
+    "task-specific classification and reconstruction adapters"
+  ]
+}

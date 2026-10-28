@@ -1,0 +1,161 @@
+{
+  "kind": "known_answer_geometry_calibrations",
+  "new_snn_training_runs": 0,
+  "nonorthogonal_but_exact": {
+    "encoding_angle_degrees": 45.00000000000003,
+    "decoder": [
+      [
+        0.9999999999999996,
+        -0.9999999999999997
+      ]
+    ],
+    "full_observation_mmse": 4.440892098500626e-16,
+    "focal_encoding_only_mmse": 0.5,
+    "constant_zero_mmse": 1.0,
+    "mapping_focal_gain_error": 1.9721522630525295e-31,
+    "mapping_other_injection": 1.232595164407831e-32,
+    "readout_encoding_subspace_overlap": 0.4999999999999999,
+    "meaning": "A direction with no marginal target encoding can supply a noise reference required for exact decoding."
+  },
+  "same_subspace_wrong_readout": {
+    "encoding": 1.0,
+    "readout": -1.0,
+    "subspace_overlap": 1.0,
+    "unit_target_mse": 4.0
+  },
+  "invertible_mixing": {
+    "raw_angle_before": 90.0,
+    "raw_angle_after": 26.565051177078008,
+    "noise_metric_angle_before": 90.0,
+    "noise_metric_angle_after": 89.99999999999999,
+    "mmse_before": 0.03846153846153855,
+    "mmse_after": 0.03846153846153855,
+    "warning": "Exact population covariance, transformed with the signal and reader. Isotropic shrinkage need not preserve this invariance."
+  },
+  "near_parallel": [
+    {
+      "angle_degrees": 0.0,
+      "noiseless_mmse": 0.5,
+      "noise_std_0_1_mmse": 0.5024875621890547,
+      "noiseless_decoder_norm": 0.5
+    },
+    {
+      "angle_degrees": 1.0,
+      "noiseless_mmse": 1.1102230246251565e-16,
+      "noise_std_0_1_mmse": 0.49498675235227463,
+      "noiseless_decoder_norm": 57.298688498550185
+    },
+    {
+      "angle_degrees": 3.0,
+      "noiseless_mmse": 1.1102230246251565e-16,
+      "noise_std_0_1_mmse": 0.4422250039238642,
+      "noiseless_decoder_norm": 19.1073226092974
+    },
+    {
+      "angle_degrees": 5.0,
+      "noiseless_mmse": -2.220446049250313e-16,
+      "noise_std_0_1_mmse": 0.36467197303716414,
+      "noiseless_decoder_norm": 11.473713245669856
+    },
+    {
+      "angle_degrees": 10.0,
+      "noiseless_mmse": 0.0,
+      "noise_std_0_1_mmse": 0.20098026789626866,
+      "noiseless_decoder_norm": 5.758770483143634
+    },
+    {
+      "angle_degrees": 20.0,
+      "noiseless_mmse": -4.440892098500626e-16,
+      "noise_std_0_1_mmse": 0.07368079724448662,
+      "noiseless_decoder_norm": 2.9238044001630885
+    },
+    {
+      "angle_degrees": 45.0,
+      "noiseless_mmse": -2.220446049250313e-16,
+      "noise_std_0_1_mmse": 0.019419342434147113,
+      "noiseless_decoder_norm": 1.4142135623730954
+    },
+    {
+      "angle_degrees": 90.0,
+      "noiseless_mmse": 0.0,
+      "noise_std_0_1_mmse": 0.00990099009900991,
+      "noiseless_decoder_norm": 1.0
+    }
+  ],
+  "nonlinear_focal_signal": {
+    "representation": "[F + e1, F^2 - 1 + e2]",
+    "conditional_covariance": [
+      [
+        0.04,
+        0.0
+      ],
+      [
+        0.0,
+        0.04
+      ]
+    ],
+    "linear_focal_remainder_covariance": [
+      [
+        0.04,
+        0.0
+      ],
+      [
+        0.0,
+        2.04
+      ]
+    ],
+    "meaning": "Average conditional variability and linear focal remainder have different contents."
+  },
+  "validated_rank_zero": {
+    "selected_rank": 0,
+    "minimum_mse_rank": 0,
+    "rule": "paired_one_se",
+    "numeric_rank": 1,
+    "candidates": [
+      {
+        "rank": 0,
+        "validation_mse": 0.0,
+        "delta_to_best": 0.0,
+        "paired_standard_error": 0.0
+      },
+      {
+        "rank": 1,
+        "validation_mse": 1.0000000000000002,
+        "delta_to_best": 1.0000000000000002,
+        "paired_standard_error": 2.8907745304357104e-17
+      }
+    ],
+    "not_a_significance_test_or_biological_dimension": true
+  },
+  "dimension_null": {
+    "d": 32,
+    "rank_f": 4,
+    "rank_other": 12,
+    "expected_focal_into_other": 0.375,
+    "expected_other_into_focal": 0.125,
+    "simulation": {
+      "haar_dimension_matched": {
+        "status": "computed",
+        "draws": 1200,
+        "mean": 0.37405777280910874,
+        "quantiles_025_50_975": [
+          0.2721910543693611,
+          0.37119568171387113,
+          0.4880135075623367
+        ],
+        "role": "Reference distribution under declared sampling, not a universal neural null or an adjusted significance test."
+      },
+      "covariance_shaped": {
+        "status": "computed",
+        "draws": 1200,
+        "mean": 0.37436960565268323,
+        "quantiles_025_50_975": [
+          0.26537457372738615,
+          0.3726329436129405,
+          0.4864962691961161
+        ],
+        "role": "Reference distribution under declared sampling, not a universal neural null or an adjusted significance test."
+      }
+    }
+  }
+}

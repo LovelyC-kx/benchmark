@@ -1,0 +1,978 @@
+{
+  "snn_smoke_c_six_schedules": {
+    "module": "L3.3.2",
+    "version": "0.1",
+    "source_checkpoint_id": "272ae6230942ebeb",
+    "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+    "source_run_kind": "smoke",
+    "source_original_optimizer_updates": 1,
+    "source_config": {
+      "data": {
+        "k": 4,
+        "required_history": 1,
+        "blank_delay": 3,
+        "energy_mode": "fixed_rms",
+        "sigma": 0.2,
+        "data_seed": 13400,
+        "projection_seed": 901,
+        "extra_writes": 3,
+        "schedule": "balanced",
+        "content_mode": "physical_k"
+      },
+      "cell": "lif_hard",
+      "width": 32,
+      "seed": 11,
+      "lambda_extra": 1.0,
+      "objective": "regression",
+      "epochs": 1,
+      "encoder_mode": "learned",
+      "loss_mode": "anchored"
+    },
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "torch": "2.14.1+cpu",
+      "device": "cpu",
+      "torch_cpu_threads": 1
+    },
+    "focal": "C",
+    "observation": "last_post",
+    "schedule_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "schedules_are_views_of_one_checkpoint": true,
+    "paired_context_subspace_descriptions": [
+      {
+        "left_schedule": 0,
+        "right_schedule": 1,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 1,
+          "forced_intersection_dimension": 0,
+          "status": "defined",
+          "principal_angles_degrees": [
+            56.53302897944632
+          ],
+          "projector_inner_product": 0.3041039274024751,
+          "overlap_a_into_b": 0.3041039274024751,
+          "overlap_b_into_a": 0.3041039274024751,
+          "haar_expected_a_into_b": 0.03125,
+          "haar_expected_b_into_a": 0.03125,
+          "chance_adjusted_a_into_b": 0.28165566699610334,
+          "warning": "Descriptive geometry, not information loss or causal interference."
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 1,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 1,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 2,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 2,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 2,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 3,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 3,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 3,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 4,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 2,
+          "forced_intersection_dimension": 0,
+          "status": "defined",
+          "principal_angles_degrees": [
+            56.986180072981476
+          ],
+          "projector_inner_product": 0.2968520522311756,
+          "overlap_a_into_b": 0.2968520522311756,
+          "overlap_b_into_a": 0.1484260261155878,
+          "haar_expected_a_into_b": 0.0625,
+          "haar_expected_b_into_a": 0.03125,
+          "chance_adjusted_a_into_b": 0.24997552237992066,
+          "warning": "Descriptive geometry, not information loss or causal interference."
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 4,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 4,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 5,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 5,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 0,
+        "right_schedule": 5,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 2,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 2,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 2,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 3,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 3,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 3,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 4,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 2,
+          "forced_intersection_dimension": 0,
+          "status": "defined",
+          "principal_angles_degrees": [
+            33.55040073414714
+          ],
+          "projector_inner_product": 0.6945555321603178,
+          "overlap_a_into_b": 0.6945555321603178,
+          "overlap_b_into_a": 0.3472777660801589,
+          "haar_expected_a_into_b": 0.0625,
+          "haar_expected_b_into_a": 0.03125,
+          "chance_adjusted_a_into_b": 0.6741925676376723,
+          "warning": "Descriptive geometry, not information loss or causal interference."
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 4,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 4,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 5,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 1,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 5,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 1,
+        "right_schedule": 5,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 3,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 3,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 3,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 4,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 2,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 4,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 4,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 5,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 5,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 2,
+        "right_schedule": 5,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 3,
+        "right_schedule": 4,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 2,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 3,
+        "right_schedule": 4,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 3,
+        "right_schedule": 4,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 3,
+        "right_schedule": 5,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 3,
+        "right_schedule": 5,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 3,
+        "right_schedule": 5,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 4,
+        "right_schedule": 5,
+        "role": "focal",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 2,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 4,
+        "right_schedule": 5,
+        "role": "cotarget",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      },
+      {
+        "left_schedule": 4,
+        "right_schedule": 5,
+        "role": "unrequested",
+        "overlap": {
+          "observation_dim": 32,
+          "rank_a": 0,
+          "rank_b": 0,
+          "forced_intersection_dimension": 0,
+          "status": "undefined_empty_subspace",
+          "principal_angles_degrees": [],
+          "overlap_a_into_b": null,
+          "overlap_b_into_a": null,
+          "projector_inner_product": null,
+          "haar_expected_a_into_b": null
+        }
+      }
+    ],
+    "selected_ranks_by_schedule": {
+      "0": {
+        "focal": 1,
+        "cotarget": 0,
+        "unrequested": 0
+      },
+      "1": {
+        "focal": 1,
+        "cotarget": 0,
+        "unrequested": 0
+      },
+      "2": {
+        "focal": 0,
+        "cotarget": 0,
+        "unrequested": 0
+      },
+      "3": {
+        "focal": 0,
+        "cotarget": 0,
+        "unrequested": 0
+      },
+      "4": {
+        "focal": 2,
+        "cotarget": 0,
+        "unrequested": 0
+      },
+      "5": {
+        "focal": 0,
+        "cotarget": 0,
+        "unrequested": 0
+      }
+    },
+    "audit_test_accessed": false,
+    "new_snn_training_runs": 0,
+    "new_optimizer_updates": 0,
+    "formal_benchmark_results": false
+  },
+  "snn_smoke_h1_schedule0": {
+    "module": "L3.3.2",
+    "version": "0.1",
+    "source_checkpoint_id": "272ae6230942ebeb",
+    "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+    "source_run_kind": "smoke",
+    "source_original_optimizer_updates": 1,
+    "source_config": {
+      "data": {
+        "k": 4,
+        "required_history": 1,
+        "blank_delay": 3,
+        "energy_mode": "fixed_rms",
+        "sigma": 0.2,
+        "data_seed": 13400,
+        "projection_seed": 901,
+        "extra_writes": 3,
+        "schedule": "balanced",
+        "content_mode": "physical_k"
+      },
+      "cell": "lif_hard",
+      "width": 32,
+      "seed": 11,
+      "lambda_extra": 1.0,
+      "objective": "regression",
+      "epochs": 1,
+      "encoder_mode": "learned",
+      "loss_mode": "anchored"
+    },
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "torch": "2.14.1+cpu",
+      "device": "cpu",
+      "torch_cpu_threads": 1
+    },
+    "focal": "H1",
+    "observation": "last_post",
+    "schedule_indices": [
+      0
+    ],
+    "schedules_are_views_of_one_checkpoint": true,
+    "paired_context_subspace_descriptions": [],
+    "selected_ranks_by_schedule": {
+      "0": {
+        "focal": 0,
+        "cotarget": 1,
+        "unrequested": 0
+      }
+    },
+    "audit_test_accessed": false,
+    "new_snn_training_runs": 0,
+    "new_optimizer_updates": 0,
+    "formal_benchmark_results": false
+  },
+  "snn_smoke_joint_schedule0": {
+    "module": "L3.3.2",
+    "version": "0.1",
+    "source_checkpoint_id": "272ae6230942ebeb",
+    "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+    "source_run_kind": "smoke",
+    "source_original_optimizer_updates": 1,
+    "source_config": {
+      "data": {
+        "k": 4,
+        "required_history": 1,
+        "blank_delay": 3,
+        "energy_mode": "fixed_rms",
+        "sigma": 0.2,
+        "data_seed": 13400,
+        "projection_seed": 901,
+        "extra_writes": 3,
+        "schedule": "balanced",
+        "content_mode": "physical_k"
+      },
+      "cell": "lif_hard",
+      "width": 32,
+      "seed": 11,
+      "lambda_extra": 1.0,
+      "objective": "regression",
+      "epochs": 1,
+      "encoder_mode": "learned",
+      "loss_mode": "anchored"
+    },
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "torch": "2.14.1+cpu",
+      "device": "cpu",
+      "torch_cpu_threads": 1
+    },
+    "focal": "C",
+    "observation": "joint_post",
+    "schedule_indices": [
+      0
+    ],
+    "schedules_are_views_of_one_checkpoint": true,
+    "paired_context_subspace_descriptions": [],
+    "selected_ranks_by_schedule": {
+      "0": {
+        "focal": 2,
+        "cotarget": 0,
+        "unrequested": 0
+      }
+    },
+    "audit_test_accessed": false,
+    "new_snn_training_runs": 0,
+    "new_optimizer_updates": 0,
+    "formal_benchmark_results": false
+  }
+}

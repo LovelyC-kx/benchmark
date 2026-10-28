@@ -1,0 +1,2245 @@
+{
+  "module": "L3.3.2",
+  "version": "0.1",
+  "date": "2026-10-25",
+  "analysis_kind": "pipeline_smoke",
+  "source_checkpoint_id": "272ae6230942ebeb",
+  "source_run_kind": "smoke",
+  "focal": "C",
+  "observation": "last_post",
+  "observation_dimension": 32,
+  "schedule_index": 5,
+  "source_event_times": [
+    2,
+    11,
+    8,
+    5,
+    12
+  ],
+  "time_index": 15,
+  "coordinate_roles": [
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 0,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 1,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 2,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 3,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 0,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 1,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 2,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 3,
+      "role": "focal",
+      "requested": true
+    }
+  ],
+  "sampling_contract": [
+    {
+      "purpose": "axis_fit",
+      "split": "geometry_fit",
+      "first_id": 2000000,
+      "independent_scene_count": 128
+    },
+    {
+      "purpose": "axis_selection",
+      "split": "geometry_fit",
+      "first_id": 2100000,
+      "independent_scene_count": 64
+    },
+    {
+      "purpose": "axis_replica",
+      "split": "geometry_fit",
+      "first_id": 2200000,
+      "independent_scene_count": 128
+    },
+    {
+      "purpose": "linear_remainder_fit",
+      "split": "geometry_fit",
+      "first_id": 2300000,
+      "independent_scene_count": 128
+    },
+    {
+      "purpose": "probe_fit",
+      "split": "probe_train",
+      "first_id": 2600000,
+      "independent_scene_count": 128
+    },
+    {
+      "purpose": "probe_selection",
+      "split": "probe_val",
+      "first_id": 2700000,
+      "independent_scene_count": 64
+    },
+    {
+      "purpose": "evaluation",
+      "split": "development_test",
+      "first_id": 2800000,
+      "independent_scene_count": 128
+    }
+  ],
+  "repeat_contract": {
+    "fit": [
+      2400000,
+      32,
+      4
+    ],
+    "selection": [
+      2500000,
+      16,
+      4
+    ],
+    "evaluation": [
+      2900000,
+      32,
+      4
+    ],
+    "conditioning": "requested focal coordinates and exact schedule",
+    "scene_repeats_not_counted_as_independent_scenes": true
+  },
+  "common_full_observation_scale": 0.1730099122717235,
+  "observation_scale_was_degenerate": false,
+  "axis_fit": {
+    "focal": {
+      "selected_rank": 0,
+      "numeric_rank": 4,
+      "rank_selection": {
+        "selected_rank": 0,
+        "minimum_mse_rank": 1,
+        "rule": "paired_one_se",
+        "numeric_rank": 4,
+        "candidates": [
+          {
+            "rank": 0,
+            "validation_mse": 0.03510763664505945,
+            "delta_to_best": 0.00025106894815954135,
+            "paired_standard_error": 0.00042853439283740096
+          },
+          {
+            "rank": 1,
+            "validation_mse": 0.034856567696899904,
+            "delta_to_best": 0.0,
+            "paired_standard_error": 0.0
+          },
+          {
+            "rank": 2,
+            "validation_mse": 0.03522519173979101,
+            "delta_to_best": 0.0003686240428911006,
+            "paired_standard_error": 0.00045399456328585816
+          },
+          {
+            "rank": 3,
+            "validation_mse": 0.03531593988602039,
+            "delta_to_best": 0.00045937218912048673,
+            "paired_standard_error": 0.0005025010390892879
+          },
+          {
+            "rank": 4,
+            "validation_mse": 0.0354104391625343,
+            "delta_to_best": 0.0005538714656343968,
+            "paired_standard_error": 0.0004796084820936649
+          }
+        ],
+        "not_a_significance_test_or_biological_dimension": true
+      },
+      "singular_values": [
+        0.19382342336035507,
+        0.16703328727087416,
+        0.07596188453795405,
+        0.043170668861648186
+      ],
+      "condition_on_nonzero_modes": 4.489701653257063,
+      "full_column_rank": true,
+      "selected_boundary_relative_singular_gap": null,
+      "selected_cut_near_degenerate_block": false
+    },
+    "cotarget": {
+      "selected_rank": 0,
+      "numeric_rank": 4,
+      "rank_selection": {
+        "selected_rank": 0,
+        "minimum_mse_rank": 0,
+        "rule": "paired_one_se",
+        "numeric_rank": 4,
+        "candidates": [
+          {
+            "rank": 0,
+            "validation_mse": 0.03427211418166387,
+            "delta_to_best": 0.0,
+            "paired_standard_error": 0.0
+          },
+          {
+            "rank": 1,
+            "validation_mse": 0.034829064238912584,
+            "delta_to_best": 0.0005569500572487171,
+            "paired_standard_error": 0.000467113416007484
+          },
+          {
+            "rank": 2,
+            "validation_mse": 0.035156707492275716,
+            "delta_to_best": 0.0008845933106118467,
+            "paired_standard_error": 0.0004592209481545764
+          },
+          {
+            "rank": 3,
+            "validation_mse": 0.03520586445678599,
+            "delta_to_best": 0.0009337502751221208,
+            "paired_standard_error": 0.0005166445709899482
+          },
+          {
+            "rank": 4,
+            "validation_mse": 0.03541043916253429,
+            "delta_to_best": 0.0011383249808704305,
+            "paired_standard_error": 0.0005235266701526295
+          }
+        ],
+        "not_a_significance_test_or_biological_dimension": true
+      },
+      "singular_values": [
+        0.135985687782506,
+        0.09256645244985674,
+        0.08133196318363466,
+        0.06051451301935538
+      ],
+      "condition_on_nonzero_modes": 2.247158260019566,
+      "full_column_rank": true,
+      "selected_boundary_relative_singular_gap": null,
+      "selected_cut_near_degenerate_block": false
+    },
+    "unrequested": {
+      "selected_rank": 0,
+      "numeric_rank": 12,
+      "rank_selection": {
+        "selected_rank": 0,
+        "minimum_mse_rank": 0,
+        "rule": "paired_one_se",
+        "numeric_rank": 12,
+        "candidates": [
+          {
+            "rank": 0,
+            "validation_mse": 0.03383672659075382,
+            "delta_to_best": 0.0,
+            "paired_standard_error": 0.0
+          },
+          {
+            "rank": 1,
+            "validation_mse": 0.03482206982928478,
+            "delta_to_best": 0.000985343238530958,
+            "paired_standard_error": 0.0006107922911027584
+          },
+          {
+            "rank": 2,
+            "validation_mse": 0.0352922368369464,
+            "delta_to_best": 0.0014555102461925775,
+            "paired_standard_error": 0.0008279490664057387
+          },
+          {
+            "rank": 3,
+            "validation_mse": 0.03482163576062354,
+            "delta_to_best": 0.000984909169869716,
+            "paired_standard_error": 0.0008698194587788507
+          },
+          {
+            "rank": 4,
+            "validation_mse": 0.03484390647169288,
+            "delta_to_best": 0.0010071798809390626,
+            "paired_standard_error": 0.0009358631214392311
+          },
+          {
+            "rank": 5,
+            "validation_mse": 0.03486403531822549,
+            "delta_to_best": 0.0010273087274716658,
+            "paired_standard_error": 0.0009688838017678905
+          },
+          {
+            "rank": 6,
+            "validation_mse": 0.03494986569845597,
+            "delta_to_best": 0.0011131391077021581,
+            "paired_standard_error": 0.0009573563391113724
+          },
+          {
+            "rank": 7,
+            "validation_mse": 0.035307602774619834,
+            "delta_to_best": 0.0014708761838660113,
+            "paired_standard_error": 0.0009512416437142771
+          },
+          {
+            "rank": 8,
+            "validation_mse": 0.03544691734276701,
+            "delta_to_best": 0.001610190752013191,
+            "paired_standard_error": 0.0009727140051160333
+          },
+          {
+            "rank": 9,
+            "validation_mse": 0.035367221757799716,
+            "delta_to_best": 0.0015304951670458956,
+            "paired_standard_error": 0.0009726147316613457
+          },
+          {
+            "rank": 10,
+            "validation_mse": 0.035399737469785725,
+            "delta_to_best": 0.0015630108790319047,
+            "paired_standard_error": 0.0009794827822300087
+          },
+          {
+            "rank": 11,
+            "validation_mse": 0.03541886019303405,
+            "delta_to_best": 0.0015821336022802314,
+            "paired_standard_error": 0.0009782526576925612
+          },
+          {
+            "rank": 12,
+            "validation_mse": 0.03541043916253429,
+            "delta_to_best": 0.0015737125717804816,
+            "paired_standard_error": 0.0009802788341710437
+          }
+        ],
+        "not_a_significance_test_or_biological_dimension": true
+      },
+      "singular_values": [
+        0.2102542534153757,
+        0.16993547326882066,
+        0.12927911071724632,
+        0.10849758824328123,
+        0.09321092815928794,
+        0.08552820668123555,
+        0.07249617963164598,
+        0.06377996174939679,
+        0.049503250527918326,
+        0.03175191539947628,
+        0.013495248323561172,
+        0.008594085095209033
+      ],
+      "condition_on_nonzero_modes": 24.464995527282678,
+      "full_column_rank": true,
+      "selected_boundary_relative_singular_gap": null,
+      "selected_cut_near_degenerate_block": false
+    }
+  },
+  "independent_replica_stability": {
+    "focal": {
+      "fixed_selected_rank_from_a": 0,
+      "replica_available_rank": 4,
+      "same_selected_rank_available": true,
+      "subspace_stability": {
+        "observation_dim": 32,
+        "rank_a": 0,
+        "rank_b": 0,
+        "forced_intersection_dimension": 0,
+        "status": "undefined_empty_subspace",
+        "principal_angles_degrees": [],
+        "overlap_a_into_b": null,
+        "overlap_b_into_a": null,
+        "projector_inner_product": null,
+        "haar_expected_a_into_b": null
+      },
+      "coefficient_relative_difference": 0.8954011714250687
+    },
+    "cotarget": {
+      "fixed_selected_rank_from_a": 0,
+      "replica_available_rank": 4,
+      "same_selected_rank_available": true,
+      "subspace_stability": {
+        "observation_dim": 32,
+        "rank_a": 0,
+        "rank_b": 0,
+        "forced_intersection_dimension": 0,
+        "status": "undefined_empty_subspace",
+        "principal_angles_degrees": [],
+        "overlap_a_into_b": null,
+        "overlap_b_into_a": null,
+        "projector_inner_product": null,
+        "haar_expected_a_into_b": null
+      },
+      "coefficient_relative_difference": 1.2353664368479458
+    },
+    "unrequested": {
+      "fixed_selected_rank_from_a": 0,
+      "replica_available_rank": 12,
+      "same_selected_rank_available": true,
+      "subspace_stability": {
+        "observation_dim": 32,
+        "rank_a": 0,
+        "rank_b": 0,
+        "forced_intersection_dimension": 0,
+        "status": "undefined_empty_subspace",
+        "principal_angles_degrees": [],
+        "overlap_a_into_b": null,
+        "overlap_b_into_a": null,
+        "projector_inner_product": null,
+        "haar_expected_a_into_b": null
+      },
+      "coefficient_relative_difference": 1.2932987173686008
+    }
+  },
+  "independent_fit_subspace_overlaps": {
+    "cotarget": {
+      "focal_a_vs_other_b": {
+        "observation_dim": 32,
+        "rank_a": 0,
+        "rank_b": 0,
+        "forced_intersection_dimension": 0,
+        "status": "undefined_empty_subspace",
+        "principal_angles_degrees": [],
+        "overlap_a_into_b": null,
+        "overlap_b_into_a": null,
+        "projector_inner_product": null,
+        "haar_expected_a_into_b": null
+      },
+      "focal_b_vs_other_a": {
+        "observation_dim": 32,
+        "rank_a": 0,
+        "rank_b": 0,
+        "forced_intersection_dimension": 0,
+        "status": "undefined_empty_subspace",
+        "principal_angles_degrees": [],
+        "overlap_a_into_b": null,
+        "overlap_b_into_a": null,
+        "projector_inner_product": null,
+        "haar_expected_a_into_b": null
+      }
+    },
+    "unrequested": {
+      "focal_a_vs_other_b": {
+        "observation_dim": 32,
+        "rank_a": 0,
+        "rank_b": 0,
+        "forced_intersection_dimension": 0,
+        "status": "undefined_empty_subspace",
+        "principal_angles_degrees": [],
+        "overlap_a_into_b": null,
+        "overlap_b_into_a": null,
+        "projector_inner_product": null,
+        "haar_expected_a_into_b": null
+      },
+      "focal_b_vs_other_a": {
+        "observation_dim": 32,
+        "rank_a": 0,
+        "rank_b": 0,
+        "forced_intersection_dimension": 0,
+        "status": "undefined_empty_subspace",
+        "principal_angles_degrees": [],
+        "overlap_a_into_b": null,
+        "overlap_b_into_a": null,
+        "projector_inner_product": null,
+        "haar_expected_a_into_b": null
+      }
+    }
+  },
+  "same_fit_subspace_overlaps_secondary": {
+    "cotarget": {
+      "observation_dim": 32,
+      "rank_a": 0,
+      "rank_b": 0,
+      "forced_intersection_dimension": 0,
+      "status": "undefined_empty_subspace",
+      "principal_angles_degrees": [],
+      "overlap_a_into_b": null,
+      "overlap_b_into_a": null,
+      "projector_inner_product": null,
+      "haar_expected_a_into_b": null
+    },
+    "unrequested": {
+      "observation_dim": 32,
+      "rank_a": 0,
+      "rank_b": 0,
+      "forced_intersection_dimension": 0,
+      "status": "undefined_empty_subspace",
+      "principal_angles_degrees": [],
+      "overlap_a_into_b": null,
+      "overlap_b_into_a": null,
+      "projector_inner_product": null,
+      "haar_expected_a_into_b": null
+    }
+  },
+  "independent_other_encoding_power_in_focal_subspace": {
+    "cotarget": {
+      "captured_power": 0.0,
+      "total_power": 0.035685612693853605,
+      "fraction_of_total_power": 0.0,
+      "fraction_of_best_same_rank_power": null
+    },
+    "unrequested": {
+      "captured_power": 0.0,
+      "total_power": 0.16097796571343087,
+      "fraction_of_total_power": 0.0,
+      "fraction_of_best_same_rank_power": null
+    }
+  },
+  "null_reference_distributions": {
+    "cotarget": {
+      "status": "undefined_empty_subspace"
+    },
+    "unrequested": {
+      "status": "undefined_empty_subspace"
+    }
+  },
+  "fixed_selected_rank_bootstrap_focal_cotarget": {
+    "status": "undefined_empty_subspace",
+    "fixed_rank_conditioned": true
+  },
+  "noise_metric_selection": {
+    "status": "computed",
+    "gamma": 0.01,
+    "selection_score": -153.55646119224963,
+    "condition_number": 610.3224923399578,
+    "unregularized_rank": 24,
+    "trace_scale": 0.026766579246515754,
+    "floor_ratio": 1e-06,
+    "candidate_scores": [
+      {
+        "gamma": 0.0,
+        "score": 193663.4489767429
+      },
+      {
+        "gamma": 0.01,
+        "score": -153.55646119224963
+      },
+      {
+        "gamma": 0.1,
+        "score": -131.91205473483856
+      },
+      {
+        "gamma": 0.5,
+        "score": -105.01039992271947
+      },
+      {
+        "gamma": 1.0,
+        "score": -84.93221120260515
+      }
+    ],
+    "warning": "Average-conditional-covariance metric with explicit regularization. Not full Fisher information or an SNN Bayes error formula."
+  },
+  "conditional_covariance_metric_geometry": {
+    "metric_overlap": {
+      "observation_dim": 32,
+      "rank_a": 0,
+      "rank_b": 0,
+      "forced_intersection_dimension": 0,
+      "status": "undefined_empty_subspace",
+      "principal_angles_degrees": [],
+      "overlap_a_into_b": null,
+      "overlap_b_into_a": null,
+      "projector_inner_product": null,
+      "haar_expected_a_into_b": null
+    },
+    "linear_signal_metric_eigenvalues": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gram": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "meaning": "Coding geometry relative to this covariance; Gaussian-MMSE interpretation only in a matching linear Gaussian model."
+  },
+  "conditional_covariance_trace": 0.9292429091443826,
+  "linear_focal_remainder_covariance_trace": 0.9113272534644605,
+  "different_covariance_objects_not_interchangeable": true,
+  "random_projection_controls": {
+    "target_dimension": 0,
+    "random_reader_count": 0,
+    "variance_match_scope": "Selection covariance only; no labels or test losses used to choose the nearest random projection.",
+    "status": "no_nonzero_selected_focal_subspace"
+  },
+  "linear_encoding_holdout": {
+    "heldout_representation_r2": -0.054057374106894596,
+    "mse_per_state_coordinate": 0.029645980451310755,
+    "mse_relative_to_fit_mean": 1.041174223566937,
+    "scope": "predicting the representation from contents; not downstream target recovery"
+  },
+  "original_head_embedding_max_error": 2.596996397929985e-07,
+  "readout_mapping_diagnostics": {
+    "original_task_head": {
+      "w_a_focal": [
+        [
+          -0.01187373949630801,
+          -0.03262296585356869,
+          -0.008855581819582122,
+          -0.016918935417996217
+        ],
+        [
+          0.012189173584749531,
+          0.020650205752543782,
+          0.005968947345832257,
+          0.0025407194890255235
+        ],
+        [
+          -0.011877790222348025,
+          -0.012902965917329551,
+          -0.01303648726228969,
+          -0.009242220366029192
+        ],
+        [
+          0.0014303564148179775,
+          -0.0018619379336610705,
+          0.015997681101327335,
+          0.011830151404282181
+        ]
+      ],
+      "w_a_cotarget": [
+        [
+          0.0028622856483935507,
+          -0.009856992323500381,
+          -0.01105984844631452,
+          -0.013835694748327725
+        ],
+        [
+          -0.01791072588039167,
+          0.00997288801858541,
+          -0.019432856697303713,
+          0.016250819742618838
+        ],
+        [
+          -0.0034151713033125112,
+          -0.004119079884504912,
+          -0.00857707510641398,
+          0.006250608806629385
+        ],
+        [
+          -0.0032340416543570416,
+          -0.0035390583434288005,
+          0.010633522110940138,
+          -0.006658912990631608
+        ]
+      ],
+      "w_a_unrequested": [
+        [
+          0.0052346813140196295,
+          -0.007298790007803753,
+          -0.015002141033949982,
+          -0.015168676815026321,
+          -0.0032224891922828266,
+          -0.005353364846184851,
+          0.0016482869360723799,
+          -0.028312238160710938,
+          -0.018930025439606323,
+          0.011386549377921553,
+          -0.008093351602178299,
+          0.0182167181723637
+        ],
+        [
+          0.011096835176757603,
+          -0.00018143342437516776,
+          0.003663674651553015,
+          0.0007119455241575944,
+          -0.012465722137234122,
+          -0.000133623996959451,
+          0.0139384168025253,
+          0.004935031331792707,
+          0.00039320224129067195,
+          0.0005390074981678978,
+          -0.004549940627291206,
+          -0.018221698303616016
+        ],
+        [
+          0.01704560335283912,
+          -0.012195437206484892,
+          -0.005728254397196403,
+          -0.0015556789762960401,
+          -0.003977763732965239,
+          -0.005826474743236501,
+          -0.007661057314801012,
+          -0.0026755418394676465,
+          -0.0038524505923117837,
+          -0.01174576446259413,
+          -0.01446260387744338,
+          -0.0035543269556069824
+        ],
+        [
+          0.020983228027749472,
+          -0.013492353226803786,
+          0.027213286399428688,
+          0.014335246195452836,
+          -0.005790227342613306,
+          -0.01337126142902079,
+          -0.009710220189545406,
+          0.014058212605623718,
+          0.016881950839604386,
+          -0.00452250699070846,
+          -0.0028614083958789366,
+          -0.011308541392085283
+        ]
+      ],
+      "focal_gain_mixing_error_unit_latents": 0.9970027682800523,
+      "cotarget_linear_injection_unit_latents": 0.00045068518709578725,
+      "unrequested_linear_injection_unit_latents": 0.0016519375830557161,
+      "readout_rowspace_vs_focal_encoding": {
+        "observation_dim": 32,
+        "rank_a": 4,
+        "rank_b": 4,
+        "forced_intersection_dimension": 0,
+        "status": "defined",
+        "principal_angles_degrees": [
+          62.84716312142911,
+          73.0818151365772,
+          80.47718244165658,
+          85.99404785836896
+        ],
+        "projector_inner_product": 0.3252049648338681,
+        "overlap_a_into_b": 0.08130124120846703,
+        "overlap_b_into_a": 0.08130124120846703,
+        "haar_expected_a_into_b": 0.125,
+        "haar_expected_b_into_a": 0.125,
+        "chance_adjusted_a_into_b": -0.04994143861889482,
+        "warning": "Descriptive geometry, not information loss or causal interference."
+      },
+      "conditional_output_variability": 0.011118817181209587,
+      "warning": "Unit-latent linear terms are descriptors of the fitted encoder. Held-out exact risk keeps cross terms and offsets."
+    },
+    "natural_full_ridge_probe": {
+      "w_a_focal": [
+        [
+          0.02596220814944662,
+          0.009469337524797582,
+          0.02009214480849734,
+          -0.019117630238428728
+        ],
+        [
+          -0.007160414418195258,
+          0.0798802900647091,
+          -0.04143147712063417,
+          0.019208564909554176
+        ],
+        [
+          -0.010222367768603118,
+          -0.023898715540102488,
+          0.11488613048680267,
+          0.049390215793826624
+        ],
+        [
+          -0.008979748004330698,
+          0.1941862000536245,
+          -0.05928875948671906,
+          0.04767008418230187
+        ]
+      ],
+      "w_a_cotarget": [
+        [
+          0.01606464281100453,
+          -0.023205256999478927,
+          -0.024886672950580006,
+          0.03790651426237882
+        ],
+        [
+          0.019129410433501314,
+          -0.001536013686422135,
+          0.011402379232829662,
+          -0.010942290961085219
+        ],
+        [
+          0.06449322894230261,
+          -0.027413362084744927,
+          -0.06944898125010848,
+          -0.006128914801447525
+        ],
+        [
+          -0.018298269326720844,
+          0.03061648630944811,
+          -0.031178994786129448,
+          0.0904904376580802
+        ]
+      ],
+      "w_a_unrequested": [
+        [
+          0.026491289946037534,
+          -0.019880816757972,
+          -0.011634290980635441,
+          0.004770109287915732,
+          0.01466220296502889,
+          -0.042457120143750464,
+          -0.013894186547873073,
+          0.0076617135837903465,
+          -0.02120817378772373,
+          -0.014770094478567298,
+          -0.005312009236234142,
+          -0.022976199888298486
+        ],
+        [
+          -0.0020907254712957783,
+          0.06561882534048452,
+          -0.021191079552697566,
+          0.04475686647037795,
+          0.011141803077168236,
+          -0.012976660090458045,
+          -0.051753335580511504,
+          -0.02712072138663217,
+          0.003902993294287994,
+          0.04512575606661538,
+          -0.004772024373832918,
+          -0.001888821127732594
+        ],
+        [
+          0.056523569312326154,
+          -0.05548540163267713,
+          0.09560198926184235,
+          0.047425326198229194,
+          0.030137276199450464,
+          -0.06206397041309195,
+          -0.004113276506626215,
+          0.07731755817599446,
+          0.0281424405038573,
+          -0.0643076882398154,
+          0.044439851933314796,
+          -0.004831450185609426
+        ],
+        [
+          -0.014423708712327895,
+          0.06940766374877137,
+          -0.013802651993749424,
+          0.060851023029794574,
+          -0.020380405499691542,
+          -0.006689940660387843,
+          -0.02677878631058677,
+          0.07829539899912351,
+          0.010854094539770405,
+          -0.05139668762874976,
+          -0.026728132856292042,
+          -0.1346698072293795
+        ]
+      ],
+      "focal_gain_mixing_error_unit_latents": 0.8832858743349702,
+      "cotarget_linear_injection_unit_latents": 0.005918821797895939,
+      "unrequested_linear_injection_unit_latents": 0.02261866224660496,
+      "readout_rowspace_vs_focal_encoding": {
+        "observation_dim": 32,
+        "rank_a": 4,
+        "rank_b": 4,
+        "forced_intersection_dimension": 0,
+        "status": "defined",
+        "principal_angles_degrees": [
+          28.374026306018887,
+          49.70325000135346,
+          62.76041119803731,
+          89.07682264447568
+        ],
+        "projector_inner_product": 1.4022020827747192,
+        "overlap_a_into_b": 0.3505505206936798,
+        "overlap_b_into_a": 0.3505505206936798,
+        "haar_expected_a_into_b": 0.125,
+        "haar_expected_b_into_a": 0.125,
+        "chance_adjusted_a_into_b": 0.2577720236499198,
+        "warning": "Descriptive geometry, not information loss or causal interference."
+      },
+      "conditional_output_variability": 0.0971982113820227,
+      "warning": "Unit-latent linear terms are descriptors of the fitted encoder. Held-out exact risk keeps cross terms and offsets."
+    }
+  },
+  "exact_heldout_role_risk": {
+    "original_task_head": {
+      "direct_mse": 1.5046028243576608,
+      "accounted_mse": 1.5046028243576608,
+      "diagonal_second_moments": {
+        "focal_gain_or_mixing_error": 0.9906996863204341,
+        "cotarget_injection": 0.0003773031385690698,
+        "unrequested_injection": 0.0015538518998086846,
+        "linear_unexplained_through_head": 0.011411008772592903,
+        "constant_offset": 0.45244163122873915
+      },
+      "cross_second_moments": {
+        "focal_gain_or_mixing_error__cotarget_injection": -0.0006552197066532642,
+        "focal_gain_or_mixing_error__unrequested_injection": 0.0016162580443635959,
+        "focal_gain_or_mixing_error__linear_unexplained_through_head": -0.027703470090560733,
+        "focal_gain_or_mixing_error__constant_offset": 0.07724676284095429,
+        "cotarget_injection__unrequested_injection": -0.00016030855073343443,
+        "cotarget_injection__linear_unexplained_through_head": -0.0006762959985743763,
+        "cotarget_injection__constant_offset": 0.00019294554225786418,
+        "unrequested_injection__linear_unexplained_through_head": -0.0024595942209487374,
+        "unrequested_injection__constant_offset": 0.004060085821833492,
+        "linear_unexplained_through_head__constant_offset": -0.0033418206844218396
+      },
+      "max_error_reconstruction_difference": 8.881784197001252e-16,
+      "mse_identity_difference": 0.0,
+      "interpretation": "Exact algebra for one locked linear readout; components are not causal deletion benefits."
+    },
+    "natural_full_ridge_probe": {
+      "direct_mse": 0.902342613190638,
+      "accounted_mse": 0.9023426131906382,
+      "diagonal_second_moments": {
+        "focal_gain_or_mixing_error": 0.8624936411904547,
+        "cotarget_injection": 0.004818846287270383,
+        "unrequested_injection": 0.020868969492815338,
+        "linear_unexplained_through_head": 0.1086566654172246,
+        "constant_offset": 0.008693000592616773
+      },
+      "cross_second_moments": {
+        "focal_gain_or_mixing_error__cotarget_injection": 0.0016976869587514891,
+        "focal_gain_or_mixing_error__unrequested_injection": -0.008687151495067921,
+        "focal_gain_or_mixing_error__linear_unexplained_through_head": -0.04260681175053885,
+        "focal_gain_or_mixing_error__constant_offset": -0.024575070446565754,
+        "cotarget_injection__unrequested_injection": 0.00024022250505143248,
+        "cotarget_injection__linear_unexplained_through_head": -0.009042740318785722,
+        "cotarget_injection__constant_offset": -0.00039735096347584195,
+        "unrequested_injection__linear_unexplained_through_head": -0.02323094590384442,
+        "unrequested_injection__constant_offset": 0.002714335727921108,
+        "linear_unexplained_through_head__constant_offset": 0.0006993158968108898
+      },
+      "max_error_reconstruction_difference": 8.881784197001252e-16,
+      "mse_identity_difference": 2.220446049250313e-16,
+      "interpretation": "Exact algebra for one locked linear readout; components are not causal deletion benefits."
+    }
+  },
+  "fixed_reader_observation_restrictions": {
+    "original_task_head": {
+      "full": {
+        "observed_dimension": 32,
+        "metrics": {
+          "mean_mse": 1.504602824357661,
+          "per_coordinate_mse": [
+            1.4974057562503202,
+            0.9780764611749524,
+            1.4529332914080564,
+            2.089995788597314
+          ],
+          "per_coordinate_r2": [
+            -0.6386679283230228,
+            -0.1104649884549036,
+            -0.26151328341078983,
+            -1.2575130239974426
+          ],
+          "mean_r2": -0.5670398060465397,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.0,
+          "sequence_percentile_95": [
+            0.0,
+            0.0
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "focal_encoding": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 1.5144337800461307,
+          "per_coordinate_mse": [
+            1.5056322044635362,
+            0.9810164686940649,
+            1.4403709560050042,
+            2.1307154910219177
+          ],
+          "per_coordinate_r2": [
+            -0.6476704427014661,
+            -0.11380294366123445,
+            -0.2506060015174456,
+            -1.3014964899251598
+          ],
+          "mean_r2": -0.5783939694513265,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.009830955688469884,
+          "sequence_percentile_95": [
+            -0.008501366516281292,
+            0.030112334512127994
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "focal_encoding_replica": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 1.5144337800461307,
+          "per_coordinate_mse": [
+            1.5056322044635362,
+            0.9810164686940649,
+            1.4403709560050042,
+            2.1307154910219177
+          ],
+          "per_coordinate_r2": [
+            -0.6476704427014661,
+            -0.11380294366123445,
+            -0.2506060015174456,
+            -1.3014964899251598
+          ],
+          "mean_r2": -0.5783939694513265,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.009830955688469884,
+          "sequence_percentile_95": [
+            -0.008501366516281292,
+            0.030112334512127994
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "focal_complement": {
+        "observed_dimension": 32,
+        "metrics": {
+          "mean_mse": 1.504602824357661,
+          "per_coordinate_mse": [
+            1.4974057562503202,
+            0.9780764611749524,
+            1.4529332914080564,
+            2.089995788597314
+          ],
+          "per_coordinate_r2": [
+            -0.6386679283230228,
+            -0.1104649884549036,
+            -0.26151328341078983,
+            -1.2575130239974426
+          ],
+          "mean_r2": -0.5670398060465397,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.0,
+          "sequence_percentile_95": [
+            0.0,
+            0.0
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "cotarget_encoding": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 1.5144337800461307,
+          "per_coordinate_mse": [
+            1.5056322044635362,
+            0.9810164686940649,
+            1.4403709560050042,
+            2.1307154910219177
+          ],
+          "per_coordinate_r2": [
+            -0.6476704427014661,
+            -0.11380294366123445,
+            -0.2506060015174456,
+            -1.3014964899251598
+          ],
+          "mean_r2": -0.5783939694513265,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.009830955688469884,
+          "sequence_percentile_95": [
+            -0.008501366516281292,
+            0.030112334512127994
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "unrequested_encoding": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 1.5144337800461307,
+          "per_coordinate_mse": [
+            1.5056322044635362,
+            0.9810164686940649,
+            1.4403709560050042,
+            2.1307154910219177
+          ],
+          "per_coordinate_r2": [
+            -0.6476704427014661,
+            -0.11380294366123445,
+            -0.2506060015174456,
+            -1.3014964899251598
+          ],
+          "mean_r2": -0.5783939694513265,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.009830955688469884,
+          "sequence_percentile_95": [
+            -0.008501366516281292,
+            0.030112334512127994
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      }
+    },
+    "natural_full_ridge_probe": {
+      "full": {
+        "observed_dimension": 32,
+        "metrics": {
+          "mean_mse": 0.9023426131906385,
+          "per_coordinate_mse": [
+            0.9252128115702479,
+            0.8146783931264618,
+            1.0915986901775379,
+            0.777880557888306
+          ],
+          "per_coordinate_r2": [
+            -0.012495480844331164,
+            0.07504999012974545,
+            0.052216467227996,
+            0.15977079947810569
+          ],
+          "mean_r2": 0.06863544399787899,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.0,
+          "sequence_percentile_95": [
+            0.0,
+            0.0
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "focal_encoding": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 0.9722227447520868,
+          "per_coordinate_mse": [
+            0.9178798451068256,
+            0.8821599686040594,
+            1.1625178142308612,
+            0.926333351066601
+          ],
+          "per_coordinate_r2": [
+            -0.00447073744200277,
+            -0.001565622154420243,
+            -0.009359255188291282,
+            -0.0005807743754102646
+          ],
+          "mean_r2": -0.00399409729003114,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.06988013156144877,
+          "sequence_percentile_95": [
+            0.009244163889739745,
+            0.12225151477778387
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "focal_encoding_replica": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 0.9722227447520868,
+          "per_coordinate_mse": [
+            0.9178798451068256,
+            0.8821599686040594,
+            1.1625178142308612,
+            0.926333351066601
+          ],
+          "per_coordinate_r2": [
+            -0.00447073744200277,
+            -0.001565622154420243,
+            -0.009359255188291282,
+            -0.0005807743754102646
+          ],
+          "mean_r2": -0.00399409729003114,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.06988013156144877,
+          "sequence_percentile_95": [
+            0.009244163889739745,
+            0.12225151477778387
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "focal_complement": {
+        "observed_dimension": 32,
+        "metrics": {
+          "mean_mse": 0.9023426131906385,
+          "per_coordinate_mse": [
+            0.9252128115702479,
+            0.8146783931264618,
+            1.0915986901775379,
+            0.777880557888306
+          ],
+          "per_coordinate_r2": [
+            -0.012495480844331164,
+            0.07504999012974545,
+            0.052216467227996,
+            0.15977079947810569
+          ],
+          "mean_r2": 0.06863544399787899,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.0,
+          "sequence_percentile_95": [
+            0.0,
+            0.0
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "cotarget_encoding": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 0.9722227447520868,
+          "per_coordinate_mse": [
+            0.9178798451068256,
+            0.8821599686040594,
+            1.1625178142308612,
+            0.926333351066601
+          ],
+          "per_coordinate_r2": [
+            -0.00447073744200277,
+            -0.001565622154420243,
+            -0.009359255188291282,
+            -0.0005807743754102646
+          ],
+          "mean_r2": -0.00399409729003114,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.06988013156144877,
+          "sequence_percentile_95": [
+            0.009244163889739745,
+            0.12225151477778387
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      },
+      "unrequested_encoding": {
+        "observed_dimension": 0,
+        "metrics": {
+          "mean_mse": 0.9722227447520868,
+          "per_coordinate_mse": [
+            0.9178798451068256,
+            0.8821599686040594,
+            1.1625178142308612,
+            0.926333351066601
+          ],
+          "per_coordinate_r2": [
+            -0.00447073744200277,
+            -0.001565622154420243,
+            -0.009359255188291282,
+            -0.0005807743754102646
+          ],
+          "mean_r2": -0.00399409729003114,
+          "negative_r2_retained": true
+        },
+        "paired_change": {
+          "paired_mean_delta_mse": 0.06988013156144877,
+          "sequence_percentile_95": [
+            0.009244163889739745,
+            0.12225151477778387
+          ],
+          "draws": 128,
+          "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+        }
+      }
+    }
+  },
+  "refitted_probe_learning_curves": {
+    "focal": {
+      "full": [
+        {
+          "train_count": 32,
+          "selected_lambda": 1.0,
+          "alpha": 32.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9679934167988906,
+            "per_coordinate_mse": [
+              1.1488321554910286,
+              0.8946830146614385,
+              1.0744340349032064,
+              0.7540244621398894
+            ],
+            "per_coordinate_r2": [
+              -0.25721061266886913,
+              -0.015783737759433647,
+              0.06711972587158554,
+              0.1855390077910637
+            ],
+            "mean_r2": -0.005083904191413385,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 1.0,
+          "alpha": 128.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9023426131906385,
+            "per_coordinate_mse": [
+              0.9252128115702479,
+              0.8146783931264618,
+              1.0915986901775379,
+              0.777880557888306
+            ],
+            "per_coordinate_r2": [
+              -0.012495480844331164,
+              0.07504999012974545,
+              0.052216467227996,
+              0.15977079947810569
+            ],
+            "mean_r2": 0.06863544399787899,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "focal_encoding": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9878513532733832,
+            "per_coordinate_mse": [
+              0.9140287122374398,
+              0.894903724993102,
+              1.1926543909570195,
+              0.9498185849059715
+            ],
+            "per_coordinate_r2": [
+              -0.0002562966370094344,
+              -0.016034322560961378,
+              -0.03552541992647673,
+              -0.025948395474583608
+            ],
+            "mean_r2": -0.019441108649757788,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0198579364744924,
+            "sequence_percentile_95": [
+              -0.0605095791539222,
+              0.10410316900005717
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9762378878517243,
+            "per_coordinate_mse": [
+              0.9162541286427969,
+              0.8877343430707996,
+              1.1615446961569627,
+              0.9394183835363382
+            ],
+            "per_coordinate_r2": [
+              -0.00269165423824802,
+              -0.007894521707340507,
+              -0.008514342772965922,
+              -0.01471459769745942
+            ],
+            "mean_r2": -0.008453779104003467,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.07389527466108631,
+            "sequence_percentile_95": [
+              0.020879859726655382,
+              0.1297446220312615
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "focal_encoding_replica": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9878513532733832,
+            "per_coordinate_mse": [
+              0.9140287122374398,
+              0.894903724993102,
+              1.1926543909570195,
+              0.9498185849059715
+            ],
+            "per_coordinate_r2": [
+              -0.0002562966370094344,
+              -0.016034322560961378,
+              -0.03552541992647673,
+              -0.025948395474583608
+            ],
+            "mean_r2": -0.019441108649757788,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0198579364744924,
+            "sequence_percentile_95": [
+              -0.0605095791539222,
+              0.10410316900005717
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9762378878517243,
+            "per_coordinate_mse": [
+              0.9162541286427969,
+              0.8877343430707996,
+              1.1615446961569627,
+              0.9394183835363382
+            ],
+            "per_coordinate_r2": [
+              -0.00269165423824802,
+              -0.007894521707340507,
+              -0.008514342772965922,
+              -0.01471459769745942
+            ],
+            "mean_r2": -0.008453779104003467,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.07389527466108631,
+            "sequence_percentile_95": [
+              0.020879859726655382,
+              0.1297446220312615
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "focal_complement": [
+        {
+          "train_count": 32,
+          "selected_lambda": 1.0,
+          "alpha": 32.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9679934167988906,
+            "per_coordinate_mse": [
+              1.1488321554910286,
+              0.8946830146614385,
+              1.0744340349032064,
+              0.7540244621398894
+            ],
+            "per_coordinate_r2": [
+              -0.25721061266886913,
+              -0.015783737759433647,
+              0.06711972587158554,
+              0.1855390077910637
+            ],
+            "mean_r2": -0.005083904191413385,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 1.0,
+          "alpha": 128.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9023426131906385,
+            "per_coordinate_mse": [
+              0.9252128115702479,
+              0.8146783931264618,
+              1.0915986901775379,
+              0.777880557888306
+            ],
+            "per_coordinate_r2": [
+              -0.012495480844331164,
+              0.07504999012974545,
+              0.052216467227996,
+              0.15977079947810569
+            ],
+            "mean_r2": 0.06863544399787899,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "cotarget_encoding": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9878513532733832,
+            "per_coordinate_mse": [
+              0.9140287122374398,
+              0.894903724993102,
+              1.1926543909570195,
+              0.9498185849059715
+            ],
+            "per_coordinate_r2": [
+              -0.0002562966370094344,
+              -0.016034322560961378,
+              -0.03552541992647673,
+              -0.025948395474583608
+            ],
+            "mean_r2": -0.019441108649757788,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0198579364744924,
+            "sequence_percentile_95": [
+              -0.0605095791539222,
+              0.10410316900005717
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9762378878517243,
+            "per_coordinate_mse": [
+              0.9162541286427969,
+              0.8877343430707996,
+              1.1615446961569627,
+              0.9394183835363382
+            ],
+            "per_coordinate_r2": [
+              -0.00269165423824802,
+              -0.007894521707340507,
+              -0.008514342772965922,
+              -0.01471459769745942
+            ],
+            "mean_r2": -0.008453779104003467,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.07389527466108631,
+            "sequence_percentile_95": [
+              0.020879859726655382,
+              0.1297446220312615
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "unrequested_encoding": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9878513532733832,
+            "per_coordinate_mse": [
+              0.9140287122374398,
+              0.894903724993102,
+              1.1926543909570195,
+              0.9498185849059715
+            ],
+            "per_coordinate_r2": [
+              -0.0002562966370094344,
+              -0.016034322560961378,
+              -0.03552541992647673,
+              -0.025948395474583608
+            ],
+            "mean_r2": -0.019441108649757788,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0198579364744924,
+            "sequence_percentile_95": [
+              -0.0605095791539222,
+              0.10410316900005717
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.9762378878517243,
+            "per_coordinate_mse": [
+              0.9162541286427969,
+              0.8877343430707996,
+              1.1615446961569627,
+              0.9394183835363382
+            ],
+            "per_coordinate_r2": [
+              -0.00269165423824802,
+              -0.007894521707340507,
+              -0.008514342772965922,
+              -0.01471459769745942
+            ],
+            "mean_r2": -0.008453779104003467,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.07389527466108631,
+            "sequence_percentile_95": [
+              0.020879859726655382,
+              0.1297446220312615
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ]
+    },
+    "cotarget": {
+      "full": [
+        {
+          "train_count": 32,
+          "selected_lambda": 1.0,
+          "alpha": 32.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9992685452269898,
+            "per_coordinate_mse": [
+              1.0279887603969062,
+              0.9252854975667035,
+              1.115048966120159,
+              0.9287509568241907
+            ],
+            "per_coordinate_r2": [
+              -0.28187274123113326,
+              -0.18638202888227107,
+              -0.13489003288378099,
+              -0.15882549527001366
+            ],
+            "mean_r2": -0.19049257456679974,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 1.0,
+          "alpha": 128.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9002793427590841,
+            "per_coordinate_mse": [
+              0.8272846801448906,
+              0.8068326227527735,
+              1.1647557846481722,
+              0.8022442834904999
+            ],
+            "per_coordinate_r2": [
+              -0.03160046254436044,
+              -0.03450418975234637,
+              -0.18548132943472173,
+              -0.0009799961039473892
+            ],
+            "mean_r2": -0.06314149445884398,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "focal_encoding": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8649672936181938,
+            "per_coordinate_mse": [
+              0.8353647379207335,
+              0.8193613559625452,
+              0.9986585307332927,
+              0.8064845498562038
+            ],
+            "per_coordinate_r2": [
+              -0.041676064739103014,
+              -0.050568273717590095,
+              -0.01642855804544263,
+              -0.006270681120429833
+            ],
+            "mean_r2": -0.028735894405641393,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.13430125160879608,
+            "sequence_percentile_95": [
+              -0.21332404926541496,
+              -0.06750434995548439
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8503092280074915,
+            "per_coordinate_mse": [
+              0.8033343657256776,
+              0.7931494686759708,
+              1.0016338770578193,
+              0.8031192005704988
+            ],
+            "per_coordinate_r2": [
+              -0.001735101773246317,
+              -0.016959931101544923,
+              -0.01945684737683573,
+              -0.0020716517422001424
+            ],
+            "mean_r2": -0.010055882998456778,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.04997011475159281,
+            "sequence_percentile_95": [
+              -0.08233379949286972,
+              -0.013086822818144911
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "focal_encoding_replica": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8649672936181938,
+            "per_coordinate_mse": [
+              0.8353647379207335,
+              0.8193613559625452,
+              0.9986585307332927,
+              0.8064845498562038
+            ],
+            "per_coordinate_r2": [
+              -0.041676064739103014,
+              -0.050568273717590095,
+              -0.01642855804544263,
+              -0.006270681120429833
+            ],
+            "mean_r2": -0.028735894405641393,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.13430125160879608,
+            "sequence_percentile_95": [
+              -0.21332404926541496,
+              -0.06750434995548439
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8503092280074915,
+            "per_coordinate_mse": [
+              0.8033343657256776,
+              0.7931494686759708,
+              1.0016338770578193,
+              0.8031192005704988
+            ],
+            "per_coordinate_r2": [
+              -0.001735101773246317,
+              -0.016959931101544923,
+              -0.01945684737683573,
+              -0.0020716517422001424
+            ],
+            "mean_r2": -0.010055882998456778,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.04997011475159281,
+            "sequence_percentile_95": [
+              -0.08233379949286972,
+              -0.013086822818144911
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "focal_complement": [
+        {
+          "train_count": 32,
+          "selected_lambda": 1.0,
+          "alpha": 32.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9992685452269898,
+            "per_coordinate_mse": [
+              1.0279887603969062,
+              0.9252854975667035,
+              1.115048966120159,
+              0.9287509568241907
+            ],
+            "per_coordinate_r2": [
+              -0.28187274123113326,
+              -0.18638202888227107,
+              -0.13489003288378099,
+              -0.15882549527001366
+            ],
+            "mean_r2": -0.19049257456679974,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 1.0,
+          "alpha": 128.0,
+          "observed_dimension": 32,
+          "readout_parameter_count": 132,
+          "metrics": {
+            "mean_mse": 0.9002793427590841,
+            "per_coordinate_mse": [
+              0.8272846801448906,
+              0.8068326227527735,
+              1.1647557846481722,
+              0.8022442834904999
+            ],
+            "per_coordinate_r2": [
+              -0.03160046254436044,
+              -0.03450418975234637,
+              -0.18548132943472173,
+              -0.0009799961039473892
+            ],
+            "mean_r2": -0.06314149445884398,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": 0.0,
+            "sequence_percentile_95": [
+              0.0,
+              0.0
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "cotarget_encoding": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8649672936181938,
+            "per_coordinate_mse": [
+              0.8353647379207335,
+              0.8193613559625452,
+              0.9986585307332927,
+              0.8064845498562038
+            ],
+            "per_coordinate_r2": [
+              -0.041676064739103014,
+              -0.050568273717590095,
+              -0.01642855804544263,
+              -0.006270681120429833
+            ],
+            "mean_r2": -0.028735894405641393,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.13430125160879608,
+            "sequence_percentile_95": [
+              -0.21332404926541496,
+              -0.06750434995548439
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8503092280074915,
+            "per_coordinate_mse": [
+              0.8033343657256776,
+              0.7931494686759708,
+              1.0016338770578193,
+              0.8031192005704988
+            ],
+            "per_coordinate_r2": [
+              -0.001735101773246317,
+              -0.016959931101544923,
+              -0.01945684737683573,
+              -0.0020716517422001424
+            ],
+            "mean_r2": -0.010055882998456778,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.04997011475159281,
+            "sequence_percentile_95": [
+              -0.08233379949286972,
+              -0.013086822818144911
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ],
+      "unrequested_encoding": [
+        {
+          "train_count": 32,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8649672936181938,
+            "per_coordinate_mse": [
+              0.8353647379207335,
+              0.8193613559625452,
+              0.9986585307332927,
+              0.8064845498562038
+            ],
+            "per_coordinate_r2": [
+              -0.041676064739103014,
+              -0.050568273717590095,
+              -0.01642855804544263,
+              -0.006270681120429833
+            ],
+            "mean_r2": -0.028735894405641393,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.13430125160879608,
+            "sequence_percentile_95": [
+              -0.21332404926541496,
+              -0.06750434995548439
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        },
+        {
+          "train_count": 128,
+          "selected_lambda": 0.0,
+          "alpha": 0.0,
+          "observed_dimension": 0,
+          "readout_parameter_count": 4,
+          "metrics": {
+            "mean_mse": 0.8503092280074915,
+            "per_coordinate_mse": [
+              0.8033343657256776,
+              0.7931494686759708,
+              1.0016338770578193,
+              0.8031192005704988
+            ],
+            "per_coordinate_r2": [
+              -0.001735101773246317,
+              -0.016959931101544923,
+              -0.01945684737683573,
+              -0.0020716517422001424
+            ],
+            "mean_r2": -0.010055882998456778,
+            "negative_r2_retained": true
+          },
+          "paired_change_from_same_n_full": {
+            "paired_mean_delta_mse": -0.04997011475159281,
+            "sequence_percentile_95": [
+              -0.08233379949286972,
+              -0.013086822818144911
+            ],
+            "draws": 128,
+            "scope": "Independent evaluation scenes within a checkpoint; not training-seed uncertainty."
+          }
+        }
+      ]
+    }
+  },
+  "conditional_prediction_risk": {
+    "original_task_head": {
+      "direct_mse": 1.5777804560929287,
+      "raw_scene_mean_mse": 1.5694413432070216,
+      "unbiased_conditional_mean_error_mse": 1.5666616389117192,
+      "unbiased_conditional_variability_mse": 0.011118817181209597,
+      "accounted_mse": 1.5777804560929287,
+      "identity_error": 0.0,
+      "raw_mean_bias_correction": 0.0027797042953023993,
+      "negative_corrected_estimates_retained": true,
+      "projected_within_covariance_mse": 0.011118817181209587
+    },
+    "natural_full_ridge_probe": {
+      "direct_mse": 0.9012765451623878,
+      "raw_scene_mean_mse": 0.8283778866258706,
+      "unbiased_conditional_mean_error_mse": 0.804078333780365,
+      "unbiased_conditional_variability_mse": 0.09719821138202274,
+      "accounted_mse": 0.9012765451623878,
+      "identity_error": 0.0,
+      "raw_mean_bias_correction": 0.024299552845505685,
+      "negative_corrected_estimates_retained": true,
+      "projected_within_covariance_mse": 0.0971982113820227
+    },
+    "refitted_focal_encoding_probe": {
+      "direct_mse": 0.9767789200022462,
+      "raw_scene_mean_mse": 0.9767789200022462,
+      "unbiased_conditional_mean_error_mse": 0.9767789200022462,
+      "unbiased_conditional_variability_mse": 0.0,
+      "accounted_mse": 0.9767789200022462,
+      "identity_error": 0.0,
+      "raw_mean_bias_correction": 0.0,
+      "negative_corrected_estimates_retained": true
+    }
+  },
+  "audit_test_accessed": false,
+  "new_snn_training_runs": 0,
+  "new_optimizer_updates": 0,
+  "interpretation": "Independent-fit descriptive geometry, observation restrictions and held-out readout diagnostics. No anatomical partition, nonlinear information-absence proof, SNN Bayes bound, causal mediation or architectural ranking."
+}

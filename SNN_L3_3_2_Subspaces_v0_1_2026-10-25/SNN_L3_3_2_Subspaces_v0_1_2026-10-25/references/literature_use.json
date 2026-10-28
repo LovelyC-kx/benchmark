@@ -1,0 +1,109 @@
+[
+  {
+    "id": "METHOD-HAUFE",
+    "title": "On the interpretation of weight vectors of linear models in multivariate neuroimaging",
+    "year": 2014,
+    "publication": "NeuroImage 87,96-110",
+    "doi": "10.1016/j.neuroimage.2013.10.067",
+    "primary_url": "https://doc.ml.tu-berlin.de/bbci/publications/HauMeiGoeDaeHayBlaBie13.pdf",
+    "scope": "Sections 2.3-2.4 and related discussion; no author experiment executed",
+    "use": "Encoding patterns vs decoding filters; independent noise-reference calibration"
+  },
+  {
+    "id": "METHOD-DPCA",
+    "title": "Demixed principal component analysis of neural population data",
+    "year": 2016,
+    "primary_url": "https://elifesciences.org/articles/10989",
+    "scope": "Nonorthogonal factor axes and QR-order issue; inherited selected author-function inspection",
+    "use": "Within-factor orthonormal bases, no imposed between-factor orthogonality",
+    "not_done": "Full dPCA solver/grid reproduction"
+  },
+  {
+    "id": "METHOD-ELSAYED",
+    "title": "Reorganization between preparatory and movement population responses in motor cortex",
+    "year": 2016,
+    "primary_url": "https://www.nature.com/articles/ncomms13239",
+    "scope": "Alignment-index definition and covariance-informed random-space motivation",
+    "use": "Explicit power normalizations and reference families",
+    "not_done": "Exact Supplementary Note 3 sampler reproduction"
+  },
+  {
+    "id": "GEO-TEMPORALSUPER",
+    "title": "Temporal superposition and feature geometry of RNNs under memory demands",
+    "year": 2026,
+    "publication": "ICLR",
+    "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bfcb583d225b1db8d3ca2331f6785774-Paper-Conference.pdf",
+    "author_repository": "https://github.com/kashparty/iclr-rnn-superposition",
+    "author_commit": "26b00cbb9cc03bcb2b4f9d989ac3a9d48a5f6bf9",
+    "notebook_path": "iclr_figure_02_and_06.ipynb",
+    "git_blob_sha": "b6d9bbfe94941bcb496b1392036a343270b92a98",
+    "reviewed_code_cells_zero_based": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      9,
+      10,
+      12,
+      13,
+      14
+    ],
+    "all_code_cells_in_this_one_notebook_read": true,
+    "executed_author_cells": 0,
+    "code_transplanted": false,
+    "use": "Feature/readout projections, tied/untied setup, second-moment convention and example-run selection scope"
+  },
+  {
+    "id": "GEO-WAKHLOO",
+    "title": "Neural population geometry and optimal coding of tasks with shared latent structure",
+    "year": 2026,
+    "publication": "Nature Neuroscience",
+    "primary_url": "https://www.nature.com/articles/s41593-025-02183-y",
+    "scope": "Inherited explicitly declared method/author-code review, not a new full reproduction",
+    "use": "Task/readout/covariance conditioning; four-statistic theory remains L3.4"
+  },
+  {
+    "id": "CAND-COVARIABILITY-2026",
+    "title": "Partitioning Neural Co-Variability",
+    "authors": [
+      "Skyler Thomas",
+      "Brandon J. Zhu",
+      "Kathleen E. Cullen",
+      "Adam S. Charles"
+    ],
+    "year": 2026,
+    "status": "arXiv preprint v1,2026-05-07",
+    "primary_url": "https://arxiv.org/html/2605.06995v1",
+    "scope": "Abstract, structured co-variability setup, Appendix F alignment formula",
+    "use": "Current example of same-rank covariance capture; no Poisson model fitted to deterministic membrane states",
+    "author_code_reviewed": false
+  },
+  {
+    "id": "INT-ROTATION",
+    "title": "Rotational dynamics reduce interference between sensory and memory representations",
+    "year": 2021,
+    "primary_url": "https://www.nature.com/articles/s41593-021-00821-9",
+    "author_url": "https://www.timbuschman.com/Publications/rotational-dynamics-reduce-interference-between-sensory-and-memory-representations",
+    "scope": "Official author description and inherited plan; current full-text fetch blocked",
+    "use": "Motivation only; no new methods/code reproduction claim"
+  },
+  {
+    "id": "BEN-STP",
+    "title": "Spiking Neural Networks for Temporal Processing: Status Quo and Future Prospects",
+    "version": "arXiv:2502.09449v1,2025",
+    "primary_url": "https://arxiv.org/html/2502.09449v1",
+    "scope": "STP definitions and benchmark organization reread",
+    "use": "Path-level evaluation complemented by content/readout analysis; no blanket absence claim"
+  },
+  {
+    "id": "BEN-SOUL",
+    "title": "Benchmarking spiking neural networks across sensing modalities on edge devices",
+    "year": 2026,
+    "primary_url": "https://arxiv.org/abs/2609.00026",
+    "official_repository": "https://github.com/yudi-mars/Soul",
+    "readme_git_blob_sha": "1c0cb70ff8405898795cc2ef06c24bbdf5fada75",
+    "scope": "Official search abstract and full current official README; full paper refetch blocked",
+    "use": "System-level and cross-modal comparison context; no new claim of exhaustive original-code audit"
+  }
+]

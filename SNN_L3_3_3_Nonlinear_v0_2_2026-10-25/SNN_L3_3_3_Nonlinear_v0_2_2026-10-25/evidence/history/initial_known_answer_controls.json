@@ -1,0 +1,2117 @@
+{
+  "kind": "known finite product populations and controlled decoder learning; not trained SNN results",
+  "enumeration_pair_count": 256,
+  "group_names": [
+    "F",
+    "G",
+    "U",
+    "E"
+  ],
+  "cases": {
+    "additive": {
+      "component_rows": [
+        {
+          "mask": 1,
+          "groups": [
+            "F"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.4999999999999999,
+          "fraction_of_total_variance": 0.1642036124794741
+        },
+        {
+          "mask": 2,
+          "groups": [
+            "G"
+          ],
+          "group_order": 1,
+          "power_per_output": 1.9999999999999956,
+          "fraction_of_total_variance": 0.6568144499178952
+        },
+        {
+          "mask": 3,
+          "groups": [
+            "F",
+            "G"
+          ],
+          "group_order": 2,
+          "power_per_output": 5.88418203051333e-15,
+          "fraction_of_total_variance": 1.932407891794192e-15
+        },
+        {
+          "mask": 4,
+          "groups": [
+            "U"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.5,
+          "fraction_of_total_variance": 0.16420361247947415
+        },
+        {
+          "mask": 5,
+          "groups": [
+            "F",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 6,
+          "groups": [
+            "G",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 7,
+          "groups": [
+            "F",
+            "G",
+            "U"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 8,
+          "groups": [
+            "E"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0449999999999999,
+          "fraction_of_total_variance": 0.014778325123152641
+        },
+        {
+          "mask": 9,
+          "groups": [
+            "F",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": -2.220446049250313e-16,
+          "fraction_of_total_variance": -7.292105252053556e-17
+        },
+        {
+          "mask": 10,
+          "groups": [
+            "G",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 2.6645352591003757e-15,
+          "fraction_of_total_variance": 8.750526302464266e-16
+        },
+        {
+          "mask": 11,
+          "groups": [
+            "F",
+            "G",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 3.774758283725532e-15,
+          "fraction_of_total_variance": 1.2396578928491044e-15
+        },
+        {
+          "mask": 12,
+          "groups": [
+            "U",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 2.42861286636753e-17,
+          "fraction_of_total_variance": 7.975740119433577e-18
+        },
+        {
+          "mask": 13,
+          "groups": [
+            "F",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 14,
+          "groups": [
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 15,
+          "groups": [
+            "F",
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 4,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        }
+      ],
+      "total_variance_per_output": 3.0450000000000075,
+      "by_group_order": {
+        "1": 3.0449999999999955,
+        "2": 8.35095881335235e-15,
+        "3": 3.774758283725532e-15,
+        "4": 0.0
+      },
+      "factor_main_and_total": {
+        "F": {
+          "main": 0.4999999999999999,
+          "total_including_interactions": 0.5000000000000093,
+          "total_by_complement_difference": 0.5
+        },
+        "G": {
+          "main": 1.9999999999999956,
+          "total_including_interactions": 2.000000000000008,
+          "total_by_complement_difference": 2.0
+        },
+        "U": {
+          "main": 0.5,
+          "total_including_interactions": 0.5,
+          "total_by_complement_difference": 0.5
+        },
+        "E": {
+          "main": 0.0449999999999999,
+          "total_including_interactions": 0.045000000000006146,
+          "total_by_complement_difference": 0.044999999999999936
+        }
+      },
+      "empty_independence_check_cross_trace": -2.42861286636753e-17,
+      "covariance_closure_max_error": 8.881784197001252e-16,
+      "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+      "target_contract": {
+        "groups": [
+          "F"
+        ],
+        "target_only_power": 0.4999999999999999,
+        "non_target_conditional_variability_power": 2.545000000000007,
+        "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+      }
+    },
+    "ambiguous_product": {
+      "component_rows": [
+        {
+          "mask": 1,
+          "groups": [
+            "F"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 2,
+          "groups": [
+            "G"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 3,
+          "groups": [
+            "F",
+            "G"
+          ],
+          "group_order": 2,
+          "power_per_output": 1.0,
+          "fraction_of_total_variance": 1.0
+        },
+        {
+          "mask": 4,
+          "groups": [
+            "U"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 5,
+          "groups": [
+            "F",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 6,
+          "groups": [
+            "G",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 7,
+          "groups": [
+            "F",
+            "G",
+            "U"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 8,
+          "groups": [
+            "E"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 9,
+          "groups": [
+            "F",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 10,
+          "groups": [
+            "G",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 11,
+          "groups": [
+            "F",
+            "G",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 12,
+          "groups": [
+            "U",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 13,
+          "groups": [
+            "F",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 14,
+          "groups": [
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 15,
+          "groups": [
+            "F",
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 4,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        }
+      ],
+      "total_variance_per_output": 1.0,
+      "by_group_order": {
+        "1": 0.0,
+        "2": 1.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "factor_main_and_total": {
+        "F": {
+          "main": 0.0,
+          "total_including_interactions": 1.0,
+          "total_by_complement_difference": 1.0
+        },
+        "G": {
+          "main": 0.0,
+          "total_including_interactions": 1.0,
+          "total_by_complement_difference": 1.0
+        },
+        "U": {
+          "main": 0.0,
+          "total_including_interactions": 0.0,
+          "total_by_complement_difference": 0.0
+        },
+        "E": {
+          "main": 0.0,
+          "total_including_interactions": 0.0,
+          "total_by_complement_difference": 0.0
+        }
+      },
+      "empty_independence_check_cross_trace": 0.0,
+      "covariance_closure_max_error": 0.0,
+      "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+      "target_contract": {
+        "groups": [
+          "F"
+        ],
+        "target_only_power": 0.0,
+        "non_target_conditional_variability_power": 1.0,
+        "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+      }
+    },
+    "referenced_product": {
+      "component_rows": [
+        {
+          "mask": 1,
+          "groups": [
+            "F"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 2,
+          "groups": [
+            "G"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.5,
+          "fraction_of_total_variance": 0.5
+        },
+        {
+          "mask": 3,
+          "groups": [
+            "F",
+            "G"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.5,
+          "fraction_of_total_variance": 0.5
+        },
+        {
+          "mask": 4,
+          "groups": [
+            "U"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 5,
+          "groups": [
+            "F",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 6,
+          "groups": [
+            "G",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 7,
+          "groups": [
+            "F",
+            "G",
+            "U"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 8,
+          "groups": [
+            "E"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 9,
+          "groups": [
+            "F",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 10,
+          "groups": [
+            "G",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 11,
+          "groups": [
+            "F",
+            "G",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 12,
+          "groups": [
+            "U",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 13,
+          "groups": [
+            "F",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 14,
+          "groups": [
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 15,
+          "groups": [
+            "F",
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 4,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        }
+      ],
+      "total_variance_per_output": 1.0,
+      "by_group_order": {
+        "1": 0.5,
+        "2": 0.5,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "factor_main_and_total": {
+        "F": {
+          "main": 0.0,
+          "total_including_interactions": 0.5,
+          "total_by_complement_difference": 0.5
+        },
+        "G": {
+          "main": 0.5,
+          "total_including_interactions": 1.0,
+          "total_by_complement_difference": 1.0
+        },
+        "U": {
+          "main": 0.0,
+          "total_including_interactions": 0.0,
+          "total_by_complement_difference": 0.0
+        },
+        "E": {
+          "main": 0.0,
+          "total_including_interactions": 0.0,
+          "total_by_complement_difference": 0.0
+        }
+      },
+      "empty_independence_check_cross_trace": 0.0,
+      "covariance_closure_max_error": 0.0,
+      "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+      "target_contract": {
+        "groups": [
+          "F"
+        ],
+        "target_only_power": 0.0,
+        "non_target_conditional_variability_power": 1.0,
+        "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+      }
+    },
+    "third_order": {
+      "component_rows": [
+        {
+          "mask": 1,
+          "groups": [
+            "F"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 2,
+          "groups": [
+            "G"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 3,
+          "groups": [
+            "F",
+            "G"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 4,
+          "groups": [
+            "U"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 5,
+          "groups": [
+            "F",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 6,
+          "groups": [
+            "G",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 7,
+          "groups": [
+            "F",
+            "G",
+            "U"
+          ],
+          "group_order": 3,
+          "power_per_output": 1.0,
+          "fraction_of_total_variance": 1.0
+        },
+        {
+          "mask": 8,
+          "groups": [
+            "E"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 9,
+          "groups": [
+            "F",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 10,
+          "groups": [
+            "G",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 11,
+          "groups": [
+            "F",
+            "G",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 12,
+          "groups": [
+            "U",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 13,
+          "groups": [
+            "F",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 14,
+          "groups": [
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 15,
+          "groups": [
+            "F",
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 4,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        }
+      ],
+      "total_variance_per_output": 1.0,
+      "by_group_order": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 1.0,
+        "4": 0.0
+      },
+      "factor_main_and_total": {
+        "F": {
+          "main": 0.0,
+          "total_including_interactions": 1.0,
+          "total_by_complement_difference": 1.0
+        },
+        "G": {
+          "main": 0.0,
+          "total_including_interactions": 1.0,
+          "total_by_complement_difference": 1.0
+        },
+        "U": {
+          "main": 0.0,
+          "total_including_interactions": 1.0,
+          "total_by_complement_difference": 1.0
+        },
+        "E": {
+          "main": 0.0,
+          "total_including_interactions": 0.0,
+          "total_by_complement_difference": 0.0
+        }
+      },
+      "empty_independence_check_cross_trace": 0.0,
+      "covariance_closure_max_error": 0.0,
+      "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+      "target_contract": {
+        "groups": [
+          "F"
+        ],
+        "target_only_power": 0.0,
+        "non_target_conditional_variability_power": 1.0,
+        "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+      }
+    },
+    "static_threshold_no_memory": {
+      "component_rows": [
+        {
+          "mask": 1,
+          "groups": [
+            "F"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0625,
+          "fraction_of_total_variance": 0.3333333333333333
+        },
+        {
+          "mask": 2,
+          "groups": [
+            "G"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0625,
+          "fraction_of_total_variance": 0.3333333333333333
+        },
+        {
+          "mask": 3,
+          "groups": [
+            "F",
+            "G"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0625,
+          "fraction_of_total_variance": 0.3333333333333333
+        },
+        {
+          "mask": 4,
+          "groups": [
+            "U"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 5,
+          "groups": [
+            "F",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 6,
+          "groups": [
+            "G",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 7,
+          "groups": [
+            "F",
+            "G",
+            "U"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 8,
+          "groups": [
+            "E"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 9,
+          "groups": [
+            "F",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 10,
+          "groups": [
+            "G",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 11,
+          "groups": [
+            "F",
+            "G",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 12,
+          "groups": [
+            "U",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 13,
+          "groups": [
+            "F",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 14,
+          "groups": [
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 15,
+          "groups": [
+            "F",
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 4,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        }
+      ],
+      "total_variance_per_output": 0.1875,
+      "by_group_order": {
+        "1": 0.125,
+        "2": 0.0625,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "factor_main_and_total": {
+        "F": {
+          "main": 0.0625,
+          "total_including_interactions": 0.125,
+          "total_by_complement_difference": 0.125
+        },
+        "G": {
+          "main": 0.0625,
+          "total_including_interactions": 0.125,
+          "total_by_complement_difference": 0.125
+        },
+        "U": {
+          "main": 0.0,
+          "total_including_interactions": 0.0,
+          "total_by_complement_difference": 0.0
+        },
+        "E": {
+          "main": 0.0,
+          "total_including_interactions": 0.0,
+          "total_by_complement_difference": 0.0
+        }
+      },
+      "empty_independence_check_cross_trace": 0.0,
+      "covariance_closure_max_error": 0.0,
+      "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+      "target_contract": {
+        "groups": [
+          "F"
+        ],
+        "target_only_power": 0.0625,
+        "non_target_conditional_variability_power": 0.125,
+        "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+      }
+    },
+    "nonlinear_per_write_encoder_linear_state": {
+      "component_rows": [
+        {
+          "mask": 1,
+          "groups": [
+            "F"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.25,
+          "fraction_of_total_variance": 0.4264756055953599
+        },
+        {
+          "mask": 2,
+          "groups": [
+            "G"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.15999999999999998,
+          "fraction_of_total_variance": 0.2729443875810303
+        },
+        {
+          "mask": 3,
+          "groups": [
+            "F",
+            "G"
+          ],
+          "group_order": 2,
+          "power_per_output": -5.551115123125783e-17,
+          "fraction_of_total_variance": -9.469660735458516e-17
+        },
+        {
+          "mask": 4,
+          "groups": [
+            "U"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.06250000000000003,
+          "fraction_of_total_variance": 0.10661890139884002
+        },
+        {
+          "mask": 5,
+          "groups": [
+            "F",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.06249999999999989,
+          "fraction_of_total_variance": 0.10661890139883978
+        },
+        {
+          "mask": 6,
+          "groups": [
+            "G",
+            "U"
+          ],
+          "group_order": 2,
+          "power_per_output": 8.326672684688674e-17,
+          "fraction_of_total_variance": 1.4204491103187773e-16
+        },
+        {
+          "mask": 7,
+          "groups": [
+            "F",
+            "G",
+            "U"
+          ],
+          "group_order": 3,
+          "power_per_output": -1.1102230246251565e-16,
+          "fraction_of_total_variance": -1.8939321470917032e-16
+        },
+        {
+          "mask": 8,
+          "groups": [
+            "E"
+          ],
+          "group_order": 1,
+          "power_per_output": 0.025599999999999994,
+          "fraction_of_total_variance": 0.04367110201296485
+        },
+        {
+          "mask": 9,
+          "groups": [
+            "F",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 5.551115123125783e-17,
+          "fraction_of_total_variance": 9.469660735458516e-17
+        },
+        {
+          "mask": 10,
+          "groups": [
+            "G",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": 0.025599999999999873,
+          "fraction_of_total_variance": 0.04367110201296464
+        },
+        {
+          "mask": 11,
+          "groups": [
+            "F",
+            "G",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 3.885780586188048e-16,
+          "fraction_of_total_variance": 6.628762514820961e-16
+        },
+        {
+          "mask": 12,
+          "groups": [
+            "U",
+            "E"
+          ],
+          "group_order": 2,
+          "power_per_output": -1.3877787807814457e-17,
+          "fraction_of_total_variance": -2.367415183864629e-17
+        },
+        {
+          "mask": 13,
+          "groups": [
+            "F",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 0.0,
+          "fraction_of_total_variance": 0.0
+        },
+        {
+          "mask": 14,
+          "groups": [
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 3,
+          "power_per_output": 5.551115123125783e-17,
+          "fraction_of_total_variance": 9.469660735458516e-17
+        },
+        {
+          "mask": 15,
+          "groups": [
+            "F",
+            "G",
+            "U",
+            "E"
+          ],
+          "group_order": 4,
+          "power_per_output": -1.1102230246251565e-16,
+          "fraction_of_total_variance": -1.8939321470917032e-16
+        }
+      ],
+      "total_variance_per_output": 0.5862,
+      "by_group_order": {
+        "1": 0.4981,
+        "2": 0.08809999999999983,
+        "3": 3.3306690738754696e-16,
+        "4": -1.1102230246251565e-16
+      },
+      "factor_main_and_total": {
+        "F": {
+          "main": 0.25,
+          "total_including_interactions": 0.31250000000000006,
+          "total_by_complement_difference": 0.3125
+        },
+        "G": {
+          "main": 0.15999999999999998,
+          "total_including_interactions": 0.1856000000000001,
+          "total_by_complement_difference": 0.1856
+        },
+        "U": {
+          "main": 0.06250000000000003,
+          "total_including_interactions": 0.12499999999999982,
+          "total_by_complement_difference": 0.125
+        },
+        "E": {
+          "main": 0.025599999999999994,
+          "total_including_interactions": 0.051200000000000245,
+          "total_by_complement_difference": 0.051199999999999996
+        }
+      },
+      "empty_independence_check_cross_trace": -8.673617379884035e-19,
+      "covariance_closure_max_error": 1.1102230246251565e-16,
+      "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+      "target_contract": {
+        "groups": [
+          "F"
+        ],
+        "target_only_power": 0.25,
+        "non_target_conditional_variability_power": 0.33620000000000005,
+        "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+      }
+    }
+  },
+  "harmful_fixed_head": {
+    "component_rows": [
+      {
+        "mask": 1,
+        "groups": [
+          "F"
+        ],
+        "group_order": 1,
+        "power_per_output": -6.938893903907228e-18,
+        "fraction_of_total_variance": -8.896017825522078e-18
+      },
+      {
+        "mask": 2,
+        "groups": [
+          "G"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.25000000000000006,
+        "fraction_of_total_variance": 0.3205128205128202
+      },
+      {
+        "mask": 3,
+        "groups": [
+          "F",
+          "G"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.4900000000000006,
+        "fraction_of_total_variance": 0.6282051282051282
+      },
+      {
+        "mask": 4,
+        "groups": [
+          "U"
+        ],
+        "group_order": 1,
+        "power_per_output": -1.734723475976807e-18,
+        "fraction_of_total_variance": -2.2240044563805194e-18
+      },
+      {
+        "mask": 5,
+        "groups": [
+          "F",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 1.734723475976807e-18,
+        "fraction_of_total_variance": 2.2240044563805194e-18
+      },
+      {
+        "mask": 6,
+        "groups": [
+          "G",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 7,
+        "groups": [
+          "F",
+          "G",
+          "U"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 8,
+        "groups": [
+          "E"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.04000000000000003,
+        "fraction_of_total_variance": 0.05128205128205126
+      },
+      {
+        "mask": 9,
+        "groups": [
+          "F",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": -2.0816681711721685e-17,
+        "fraction_of_total_variance": -2.6688053476566233e-17
+      },
+      {
+        "mask": 10,
+        "groups": [
+          "G",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 11,
+        "groups": [
+          "F",
+          "G",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 2.7755575615628914e-16,
+        "fraction_of_total_variance": 3.558407130208831e-16
+      },
+      {
+        "mask": 12,
+        "groups": [
+          "U",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 1.734723475976807e-18,
+        "fraction_of_total_variance": 2.2240044563805194e-18
+      },
+      {
+        "mask": 13,
+        "groups": [
+          "F",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": -1.734723475976807e-18,
+        "fraction_of_total_variance": -2.2240044563805194e-18
+      },
+      {
+        "mask": 14,
+        "groups": [
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 15,
+        "groups": [
+          "F",
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 4,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      }
+    ],
+    "total_variance_per_output": 0.7800000000000009,
+    "by_group_order": {
+      "1": 0.2900000000000001,
+      "2": 0.4900000000000006,
+      "3": 2.7582103268031233e-16,
+      "4": 0.0
+    },
+    "factor_main_and_total": {
+      "F": {
+        "main": -6.938893903907228e-18,
+        "total_including_interactions": 0.4900000000000009,
+        "total_by_complement_difference": 0.49
+      },
+      "G": {
+        "main": 0.25000000000000006,
+        "total_including_interactions": 0.7400000000000009,
+        "total_by_complement_difference": 0.74
+      },
+      "U": {
+        "main": -1.734723475976807e-18,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      },
+      "E": {
+        "main": 0.04000000000000003,
+        "total_including_interactions": 0.040000000000000285,
+        "total_by_complement_difference": 0.04000000000000001
+      }
+    },
+    "empty_independence_check_cross_trace": -1.734723475976807e-18,
+    "covariance_closure_max_error": 0.0,
+    "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+    "target_contract": {
+      "groups": [
+        "F"
+      ],
+      "target_only_power": -6.938893903907228e-18,
+      "non_target_conditional_variability_power": 0.7800000000000009,
+      "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+    },
+    "direct_mse": 0.78,
+    "raw_squared_mean_error": 3.0814879110195774e-33,
+    "finite_mean_bias_correction": 0.0,
+    "unbiased_squared_population_bias": 3.0814879110195774e-33,
+    "accounted_mse": 0.7800000000000009,
+    "mse_identity_error": 8.881784197001252e-16,
+    "target_only_error_plus_bias": -6.938893903907225e-18,
+    "scope": "ANOVA of fixed prediction minus correctly recomputed hybrid target; exclusive error effects, not benefits of deleting inputs."
+  },
+  "same_interaction_as_legitimate_binding_target": {
+    "component_rows": [
+      {
+        "mask": 1,
+        "groups": [
+          "F"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 2,
+        "groups": [
+          "G"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 3,
+        "groups": [
+          "F",
+          "G"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 4,
+        "groups": [
+          "U"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 5,
+        "groups": [
+          "F",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 6,
+        "groups": [
+          "G",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 7,
+        "groups": [
+          "F",
+          "G",
+          "U"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 8,
+        "groups": [
+          "E"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 9,
+        "groups": [
+          "F",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 10,
+        "groups": [
+          "G",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 11,
+        "groups": [
+          "F",
+          "G",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 12,
+        "groups": [
+          "U",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 13,
+        "groups": [
+          "F",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 14,
+        "groups": [
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      },
+      {
+        "mask": 15,
+        "groups": [
+          "F",
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 4,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": null
+      }
+    ],
+    "total_variance_per_output": 0.0,
+    "by_group_order": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0
+    },
+    "factor_main_and_total": {
+      "F": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      },
+      "G": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      },
+      "U": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      },
+      "E": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      }
+    },
+    "empty_independence_check_cross_trace": 0.0,
+    "covariance_closure_max_error": 0.0,
+    "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+    "target_contract": {
+      "groups": [
+        "F",
+        "G"
+      ],
+      "target_only_power": 0.0,
+      "non_target_conditional_variability_power": 0.0,
+      "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+    },
+    "direct_mse": 0.0,
+    "raw_squared_mean_error": 0.0,
+    "finite_mean_bias_correction": 0.0,
+    "unbiased_squared_population_bias": 0.0,
+    "accounted_mse": 0.0,
+    "mse_identity_error": 0.0,
+    "target_only_error_plus_bias": 0.0,
+    "scope": "ANOVA of fixed prediction minus correctly recomputed hybrid target; exclusive error effects, not benefits of deleting inputs."
+  },
+  "same_fixed_product_prediction_for_single_target": {
+    "component_rows": [
+      {
+        "mask": 1,
+        "groups": [
+          "F"
+        ],
+        "group_order": 1,
+        "power_per_output": 1.0,
+        "fraction_of_total_variance": 0.5
+      },
+      {
+        "mask": 2,
+        "groups": [
+          "G"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 3,
+        "groups": [
+          "F",
+          "G"
+        ],
+        "group_order": 2,
+        "power_per_output": 1.0,
+        "fraction_of_total_variance": 0.5
+      },
+      {
+        "mask": 4,
+        "groups": [
+          "U"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 5,
+        "groups": [
+          "F",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 6,
+        "groups": [
+          "G",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 7,
+        "groups": [
+          "F",
+          "G",
+          "U"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 8,
+        "groups": [
+          "E"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 9,
+        "groups": [
+          "F",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 10,
+        "groups": [
+          "G",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 11,
+        "groups": [
+          "F",
+          "G",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 12,
+        "groups": [
+          "U",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 13,
+        "groups": [
+          "F",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 14,
+        "groups": [
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 15,
+        "groups": [
+          "F",
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 4,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      }
+    ],
+    "total_variance_per_output": 2.0,
+    "by_group_order": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 0.0,
+      "4": 0.0
+    },
+    "factor_main_and_total": {
+      "F": {
+        "main": 1.0,
+        "total_including_interactions": 2.0,
+        "total_by_complement_difference": 2.0
+      },
+      "G": {
+        "main": 0.0,
+        "total_including_interactions": 1.0,
+        "total_by_complement_difference": 1.0
+      },
+      "U": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      },
+      "E": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      }
+    },
+    "empty_independence_check_cross_trace": 0.0,
+    "covariance_closure_max_error": 0.0,
+    "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+    "target_contract": {
+      "groups": [
+        "F"
+      ],
+      "target_only_power": 1.0,
+      "non_target_conditional_variability_power": 1.0,
+      "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+    },
+    "direct_mse": 2.0,
+    "raw_squared_mean_error": 0.0,
+    "finite_mean_bias_correction": 0.0,
+    "unbiased_squared_population_bias": 0.0,
+    "accounted_mse": 2.0,
+    "mse_identity_error": 0.0,
+    "target_only_error_plus_bias": 1.0,
+    "scope": "ANOVA of fixed prediction minus correctly recomputed hybrid target; exclusive error effects, not benefits of deleting inputs."
+  },
+  "constant_output_not_success": {
+    "component_rows": [
+      {
+        "mask": 1,
+        "groups": [
+          "F"
+        ],
+        "group_order": 1,
+        "power_per_output": 1.0,
+        "fraction_of_total_variance": 1.0
+      },
+      {
+        "mask": 2,
+        "groups": [
+          "G"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 3,
+        "groups": [
+          "F",
+          "G"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 4,
+        "groups": [
+          "U"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 5,
+        "groups": [
+          "F",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 6,
+        "groups": [
+          "G",
+          "U"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 7,
+        "groups": [
+          "F",
+          "G",
+          "U"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 8,
+        "groups": [
+          "E"
+        ],
+        "group_order": 1,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 9,
+        "groups": [
+          "F",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 10,
+        "groups": [
+          "G",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 11,
+        "groups": [
+          "F",
+          "G",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 12,
+        "groups": [
+          "U",
+          "E"
+        ],
+        "group_order": 2,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 13,
+        "groups": [
+          "F",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 14,
+        "groups": [
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 3,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      },
+      {
+        "mask": 15,
+        "groups": [
+          "F",
+          "G",
+          "U",
+          "E"
+        ],
+        "group_order": 4,
+        "power_per_output": 0.0,
+        "fraction_of_total_variance": 0.0
+      }
+    ],
+    "total_variance_per_output": 1.0,
+    "by_group_order": {
+      "1": 1.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0
+    },
+    "factor_main_and_total": {
+      "F": {
+        "main": 1.0,
+        "total_including_interactions": 1.0,
+        "total_by_complement_difference": 1.0
+      },
+      "G": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      },
+      "U": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      },
+      "E": {
+        "main": 0.0,
+        "total_including_interactions": 0.0,
+        "total_by_complement_difference": 0.0
+      }
+    },
+    "empty_independence_check_cross_trace": 0.0,
+    "covariance_closure_max_error": 0.0,
+    "note": "Total effects overlap; only exclusive component rows or disjoint aggregates may be summed.",
+    "target_contract": {
+      "groups": [
+        "F"
+      ],
+      "target_only_power": 1.0,
+      "non_target_conditional_variability_power": 0.0,
+      "scope": "For prediction outputs and a target depending only on these groups, the second aggregate estimates E Var(prediction|target factors)."
+    },
+    "direct_mse": 1.0,
+    "raw_squared_mean_error": 0.0,
+    "finite_mean_bias_correction": 0.0,
+    "unbiased_squared_population_bias": 0.0,
+    "accounted_mse": 1.0,
+    "mse_identity_error": 0.0,
+    "target_only_error_plus_bias": 1.0,
+    "scope": "ANOVA of fixed prediction minus correctly recomputed hybrid target; exclusive error effects, not benefits of deleting inputs."
+  },
+  "nested_conditional_functions": {
+    "reconstruction_max_error": 2.220446049250313e-16,
+    "f_g_component_max_error": 2.220446049250313e-16,
+    "note": "All completions exhaustively enumerated; no iid finite-B correction applied to this population enumeration."
+  },
+  "legal_reference_decoding": {
+    "linear": {
+      "mse": 1.0015604466966914,
+      "fit": {
+        "family": "linear",
+        "input_scale": 0.9993207531986101,
+        "degenerate_scale": false,
+        "selected_lambda": 1.0,
+        "selection_mse": 0.9991664570364345,
+        "train_count": 512,
+        "selection_count": 256,
+        "raw_observation_dimension": 2,
+        "feature_dimension": 2,
+        "parameter_count": 3,
+        "hyperparameter_candidate_count": 5,
+        "fit_seconds": 0.001104635000046983,
+        "scope": "Finite probe learning rule, not a population information estimator; selection is independent of evaluation."
+      }
+    },
+    "quadratic": {
+      "mse": 1.0014233857706005e-30,
+      "fit": {
+        "family": "quadratic",
+        "input_scale": 0.9993207531986101,
+        "degenerate_scale": false,
+        "selected_lambda": 0.0,
+        "selection_mse": 9.762538888098899e-31,
+        "train_count": 512,
+        "selection_count": 256,
+        "raw_observation_dimension": 2,
+        "feature_dimension": 5,
+        "parameter_count": 6,
+        "hyperparameter_candidate_count": 5,
+        "fit_seconds": 0.0006670150005447795,
+        "scope": "Finite probe learning rule, not a population information estimator; selection is independent of evaluation."
+      }
+    },
+    "mlp_seeds": [
+      {
+        "mse": 1.471902807095856e-10,
+        "fit": {
+          "family": "mlp",
+          "input_scale": 0.9993207531986101,
+          "degenerate_scale": false,
+          "seed": 1,
+          "width": 32,
+          "max_epochs": 200,
+          "selected_epoch": 200,
+          "selected_weight_decay": 0.0,
+          "selection_mse": 1.5043544188131364e-10,
+          "train_count": 512,
+          "selection_count": 256,
+          "raw_observation_dimension": 2,
+          "feature_dimension": 32,
+          "parameter_count": 129,
+          "hyperparameter_candidate_count": 2,
+          "total_optimizer_updates": 400,
+          "fit_seconds": 1.261344069000188,
+          "all_initialization_seeds_retained": true,
+          "scope": "Frozen-SNN nonlinear probe. Early stopping/weight decay selected only on selection data. No best-seed reporting."
+        }
+      },
+      {
+        "mse": 2.6063505720541476e-09,
+        "fit": {
+          "family": "mlp",
+          "input_scale": 0.9993207531986101,
+          "degenerate_scale": false,
+          "seed": 2,
+          "width": 32,
+          "max_epochs": 200,
+          "selected_epoch": 200,
+          "selected_weight_decay": 0.001,
+          "selection_mse": 2.637691842721779e-09,
+          "train_count": 512,
+          "selection_count": 256,
+          "raw_observation_dimension": 2,
+          "feature_dimension": 32,
+          "parameter_count": 129,
+          "hyperparameter_candidate_count": 2,
+          "total_optimizer_updates": 400,
+          "fit_seconds": 0.22236942700055806,
+          "all_initialization_seeds_retained": true,
+          "scope": "Frozen-SNN nonlinear probe. Early stopping/weight decay selected only on selection data. No best-seed reporting."
+        }
+      }
+    ]
+  },
+  "ambiguous_product_population_best_mse_for_F": 1.0,
+  "referenced_product_known_decoder_mse": 0.0,
+  "third_order_main_and_pair_power": 0.0,
+  "context_sign_control": {
+    "pooled_cov_r_F": 0.0,
+    "per_context_known_decoder_mse": 0.0,
+    "hidden_context_population_best_mse": 1.0,
+    "observed_context_quadratic_decoder_mse": 0.0,
+    "extra_context_permission_must_be_declared": true
+  },
+  "iid_repeat_risk": {
+    "direct_mse": 0.7543845694394323,
+    "conditional_mean_error": -0.0031009625226483505,
+    "conditional_variability": 0.7574855319620807,
+    "identity_error": 0.0,
+    "repeats_not_independent_scenes": true,
+    "negative_corrected_estimates_retained": true,
+    "population_conditional_variability": 0.78
+  }
+}

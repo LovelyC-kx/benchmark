@@ -1,0 +1,59 @@
+{
+  "unit_tests_passed": 53,
+  "unit_test_log": "evidence/test_log.txt",
+  "python_ast_files_checked": 27,
+  "parent_byte_hashes_checked": 17,
+  "analysis_views": 8,
+  "independent_snn_checkpoints": 1,
+  "checkpoint_id": "272ae6230942ebeb",
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "checkpoint_original_optimizer_updates": 1,
+  "checkpoint_unchanged": true,
+  "new_snn_training_runs": 0,
+  "new_snn_optimizer_updates": 0,
+  "diagnostic_probe_fit_calls_in_views": 96,
+  "shared_context_ridge_probe_fit_calls": 8,
+  "total_snn_analysis_probe_fit_calls": 104,
+  "snn_analysis_diagnostic_mlp_fit_calls": 32,
+  "snn_analysis_diagnostic_mlp_optimizer_updates": 5120,
+  "calibration_mlp_initialization_seeds_retained": [
+    1,
+    2
+  ],
+  "calibration_mlp_updates_in_final_known_answer_run": 800,
+  "checks_maxima": {
+    "max_original_head_embedding_error": 3.967400510340724e-07,
+    "max_native_covariance_transport_error": 1.9949319973733282e-17,
+    "max_error_risk_closure": 8.881784197001252e-16,
+    "max_conditional_risk_closure": 4.440892098500626e-16,
+    "representation_covariance_closure": 1.3877787807814457e-17
+  },
+  "role_relabel_lattice_response_max_error": 0.0,
+  "joint_last_layer_response_max_error": 0.0,
+  "audit_test_accessed": false,
+  "formal_benchmark_completed": 0,
+  "formal_benchmark_planned": 435,
+  "bootstrap_scope": "fixed predictor and factor/schedule contract; paired A/B/hybrid rows; not across-training uncertainty",
+  "initial_environment_issue": "The first run stopped before producing analysis reports because the freshly installed isolated torch lacked sympy. Dependency restored, then final validated paths run successfully; not counted as new models.",
+  "initial_failed_output_excluded_from_bundle": "evidence/validated_c_six_schedules (empty directory)",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "device": "cpu",
+    "cuda_used": false,
+    "torch_threads": 1,
+    "torch": "2.14.1+cpu",
+    "matplotlib": "3.10.8"
+  },
+  "actual_architecture_additivity_reference": {
+    "source_weight_sets": 1,
+    "same_weight_forward_override": true,
+    "new_snn_training_runs": 0,
+    "data_role_contracts": 2,
+    "independent_pairs_per_case": 64,
+    "max_continuous_cross_write_contrast": 7.105427357601002e-15,
+    "within_write_FU_contrast_k2": 1.035486921996924
+  },
+  "whole_task_weighted_risk_identity_error_max": 4.440892098500626e-16
+}

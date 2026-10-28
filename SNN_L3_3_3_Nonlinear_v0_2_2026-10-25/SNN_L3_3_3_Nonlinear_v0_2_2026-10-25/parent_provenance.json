@@ -1,0 +1,90 @@
+{
+  "source_module": "L3.3.2 v0.1; internal project parents, not upstream author code",
+  "files": [
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/decomposition.py",
+      "bundled_path": "parent_l331/decomposition.py",
+      "sha256": "c72f67a189f3c9d6343816626ebb1ff9e11bb0333be8e195a923cd4158a552bc"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/inherited.py",
+      "bundled_path": "parent_l331/inherited.py",
+      "sha256": "49099e0ecd808410b6a440ac386d042dada7ab1df699bd7fa6e3872f34d8fa32"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/experiment_plan.py",
+      "bundled_path": "parent_l331/parent_l32/experiment_plan.py",
+      "sha256": "5a4d03bf25a66eecbe5e9590d28da2881dc180d51446cc6fb17620377bdabb7f"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/linear_reference.py",
+      "bundled_path": "parent_l331/parent_l32/linear_reference.py",
+      "sha256": "df96a48c09d814ceec844bf7a8b372dd512f900d6adb0e5827872caffe118f45"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/load_data.py",
+      "bundled_path": "parent_l331/parent_l32/load_data.py",
+      "sha256": "a214ae1c2d7f2455656ee960f2555df7f7e6e4db3f07c2674eb75d73da1cff16"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/parent_l2/snnbench/__init__.py",
+      "bundled_path": "parent_l331/parent_l32/parent_l2/snnbench/__init__.py",
+      "sha256": "0c0d8a550d09c30753e91d706a345d0061e29f89f27f0b146c26a2179989add8"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/parent_l2/snnbench/l2_runtime.py",
+      "bundled_path": "parent_l331/parent_l32/parent_l2/snnbench/l2_runtime.py",
+      "sha256": "1f1cd8171fe74136021819751f488799c3b8f4754c1346b6ec1dc9f5a806f434"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/parent_l2/snnbench/models.py",
+      "bundled_path": "parent_l331/parent_l32/parent_l2/snnbench/models.py",
+      "sha256": "e9e3c89bbcc66cd46e30848e86bf4016cc5ed07be713681aff102077d4b083cf"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/parent_l2/snnbench/neurons.py",
+      "bundled_path": "parent_l331/parent_l32/parent_l2/snnbench/neurons.py",
+      "sha256": "20da689cd325a0f550c008f45e6ad3eb560525120337641da4286167cf0d4910"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/parent_l32/torch_adapter.py",
+      "bundled_path": "parent_l331/parent_l32/torch_adapter.py",
+      "sha256": "566be74b96316ac10ba42b1c3659888410c77fd82cf6f2847ac5854f0e71ead4"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/repeat_panels.py",
+      "bundled_path": "parent_l331/repeat_panels.py",
+      "sha256": "5f1150d7e481dd1dbbeceedd484d65a7ace55bb847e9d38868bc3108ed0cee1f"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_l331/roles.py",
+      "bundled_path": "parent_l331/roles.py",
+      "sha256": "7e14d278af10877195f35c3d188723ae23dccc20777757bfa33f761a2dc64a73"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/parent_deep/deep_diagnostics.py",
+      "bundled_path": "parent_deep/deep_diagnostics.py",
+      "sha256": "b1ec19aea053ee7353ded6eba575eef98664de027310569c6cd1735d7b5b1a56"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/bridge.py",
+      "bundled_path": "bridge.py",
+      "sha256": "335d7a4bd71559bcc7fa665978b56617e8263aa1b35ff372c05bb6edd4ed1f94"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/sampling.py",
+      "bundled_path": "parent_sampling.py",
+      "sha256": "98f3af1173635ecd2ea9384de6ba2969b608176c0f55072b748619dab6f0208c"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/evidence/source_smoke_run/best.pt",
+      "bundled_path": "evidence/source_smoke_run/best.pt",
+      "sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e"
+    },
+    {
+      "source": "/workspace/scratch/0086de0e9beb/deliverables/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/evidence/source_smoke_run/run.json",
+      "bundled_path": "evidence/source_smoke_run/run.json",
+      "sha256": "d5a83ff5bab7336821962b3181813a2cde8b1c6453ab921bbec28aad236b81e2"
+    }
+  ]
+}

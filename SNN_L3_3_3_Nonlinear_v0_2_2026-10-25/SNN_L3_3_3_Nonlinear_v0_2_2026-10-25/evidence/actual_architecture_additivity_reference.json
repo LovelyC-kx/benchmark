@@ -1,0 +1,233 @@
+{
+  "kind": "actual-architecture algebraic reference with a forward operator override; not SNN scientific comparison",
+  "source_checkpoint_id": "272ae6230942ebeb",
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "checkpoint_unchanged": true,
+  "source_checkpoint_original_optimizer_updates": 1,
+  "new_snn_training_runs": 0,
+  "new_snn_optimizer_updates": 0,
+  "audit_test_accessed": false,
+  "dtype": "float64",
+  "independent_pairs_per_data_case": 64,
+  "source_schedule_index": 0,
+  "control_weights_identical": true,
+  "cases": [
+    {
+      "data_case": "original_k4",
+      "visible_coordinates": 4,
+      "focal_coordinates": 4,
+      "group_coordinates": {
+        "F": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "G": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "U": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "responses": {
+        "source_lif_hard": {
+          "cross_write_FG_max_abs": 1.6363978655398856,
+          "cross_write_FG_rms": 0.2098619419113333,
+          "F_with_U_max_abs": 1.700006758888542,
+          "F_with_U_rms": 0.25321122733625107
+        },
+        "continuous_forward_override": {
+          "cross_write_FG_max_abs": 5.329070518200751e-15,
+          "cross_write_FG_rms": 9.379339687903184e-16,
+          "F_with_U_max_abs": 7.105427357601002e-15,
+          "F_with_U_rms": 1.0014499453765655e-15
+        }
+      },
+      "note": "K2 changes analysis roles on full visible inputs for this null check; it is not a trained K2 benchmark condition."
+    },
+    {
+      "data_case": "within_write_unrequested_k2",
+      "visible_coordinates": 4,
+      "focal_coordinates": 2,
+      "group_coordinates": {
+        "F": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "G": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "U": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      "responses": {
+        "source_lif_hard": {
+          "cross_write_FG_max_abs": 1.062728947168993,
+          "cross_write_FG_rms": 0.1500751973260698,
+          "F_with_U_max_abs": 1.6447947045461397,
+          "F_with_U_rms": 0.2099062628697455
+        },
+        "continuous_forward_override": {
+          "cross_write_FG_max_abs": 7.105427357601002e-15,
+          "cross_write_FG_rms": 9.286467495666819e-16,
+          "F_with_U_max_abs": 1.035486921996924,
+          "F_with_U_rms": 0.1635267921219723
+        }
+      },
+      "note": "K2 changes analysis roles on full visible inputs for this null check; it is not a trained K2 benchmark condition."
+    }
+  ],
+  "interpretation": "Cross-write FG finite contrast is zero for a linear core with independent per-write encoding. F/U may interact inside one encoder call. A forward override is not a trained baseline or a causal specificity proof."
+}

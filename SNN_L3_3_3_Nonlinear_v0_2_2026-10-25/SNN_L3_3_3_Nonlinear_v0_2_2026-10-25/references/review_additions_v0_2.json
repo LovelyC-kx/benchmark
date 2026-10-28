@@ -1,0 +1,37 @@
+{
+  "records": [
+    {
+      "id": "WAKHLOO2026",
+      "title": "Neural population geometry and optimal coding of tasks with shared latent structure",
+      "year": 2026,
+      "doi": "10.1038/s41593-025-02183-y",
+      "paper": "https://www.nature.com/articles/s41593-025-02183-y",
+      "code": "https://github.com/awakhloo/population_geometry_optimal_coding",
+      "read_scope": "Published relevant main results, full Methods and Discussion via primary full-text mirror; arXiv v2 for version contrast. Selected code files and methods as separately recorded.",
+      "uses": [
+        "four-statistic reference",
+        "new task directions",
+        "joint-Gaussian control"
+      ],
+      "new_research_use": [
+        "F/G/FG and SNN-carrier conditions",
+        "task-conditioned moment explanation",
+        "held-out readout-design gain"
+      ],
+      "not_claimed": "First non-Gaussian use or complete reproduction of author experiments"
+    },
+    {
+      "id": "OWEN2013",
+      "title": "Better estimation of small Sobol sensitivity indices",
+      "year": 2013,
+      "paper": "https://arxiv.org/abs/1204.4763",
+      "read_scope": "Small-index correlated sampling and centering, selected methods sections",
+      "uses": [
+        "L3.3.3 finite small-interaction estimator review"
+      ],
+      "code": "https://github.com/SALib/SALib",
+      "implementation": "Independent symmetric centered vector covariance; not a replica of Owen three-input Correlation2"
+    }
+  ],
+  "previous_registry_retained": true
+}

@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-25",
+  "section": "L3.3.3",
+  "tools_are_classical": true,
+  "upstream_author_code_bundled": false,
+  "references": [
+    {
+      "id": "RIGOTTI2013",
+      "title": "The importance of mixed selectivity in complex cognitive tasks",
+      "year": 2013,
+      "venue": "Nature 497,585–590",
+      "doi": "10.1038/nature12160",
+      "url": "https://www.nature.com/articles/nature12160",
+      "read_scope": "Primary metadata and abstract verified; full methods access blocked this turn.",
+      "use": "Mixed selectivity can support some tasks; dependence, recovery and actual use must remain distinct.",
+      "author_code_reviewed_this_turn": false
+    },
+    {
+      "id": "TPNN2025",
+      "title": "Tensor Product Neural Networks for Functional ANOVA Model",
+      "year": 2025,
+      "venue": "ICML/PMLR267,48041–48085",
+      "url": "https://proceedings.mlr.press/v267/park25d.html",
+      "methods_version": "https://arxiv.org/html/2502.15215v4",
+      "read_scope": "Functional model, sum-to-zero and identifiability, selected sections2.2–3.2.",
+      "repository": "https://github.com/ParkSeokhun/ANOVA-TPNN",
+      "commit": "4a4dec0173f9b693b0317adb20b0aca1eb39ab84",
+      "code_scope": [
+        {
+          "path": "ANOVA-TPNN-official-code/models/tpnn.py",
+          "scope": "entire file",
+          "git_blob": "18b8f040be4decd0c77dc97b62fb7b1bfc298113"
+        },
+        {
+          "path": "ANOVA-TPNN-official-code/models/README",
+          "scope": "entire file",
+          "git_blob": "dcd749ec4e930f514327bebbc8679fb35961075e"
+        }
+      ],
+      "use": "Declare reference measure and identifiable components. Known independent generator allows direct Monte Carlo instead of an unconstrained learned additive surrogate.",
+      "not_executed": true,
+      "code_transplanted": false,
+      "warning": "Pinned code commit postdates the selected paper version; exact experiment-version equivalence not established."
+    },
+    {
+      "id": "BAYESTPNN2026",
+      "title": "Bayesian Neural Networks for Functional ANOVA Model",
+      "year": 2026,
+      "venue": "ICLR2026",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/29cd189d6e68a1b2ea7c4bff619fcb39-Paper-Conference.pdf",
+      "read_scope": "Abstract and sections2.3–3: reference measure, identifiable components, higher-order architecture cost.",
+      "use": "Recent method addressing high-order component selection; motivates explicit computational scope. Our four groups permit complete enumeration.",
+      "author_code_reviewed_this_turn": false,
+      "not_executed": true,
+      "code_transplanted": false
+    },
+    {
+      "id": "LATENTCIRCUIT2025",
+      "title": "Latent circuit inference from heterogeneous neural responses during cognitive tasks",
+      "authors": "Christopher Langdon; Tatiana A. Engel",
+      "year": 2025,
+      "venue": "Nature Neuroscience28,665–675",
+      "doi": "10.1038/s41593-025-01869-7",
+      "url": "https://www.nature.com/articles/s41593-025-01869-7",
+      "read_scope": "Main mechanistic argument, perturbation validation and Fig.7 decoding versus behavioral relevance.",
+      "use": "Keep recoverability separate from existing-system use and future causal validation.",
+      "author_code_reviewed_this_turn": false,
+      "latent_circuit_fitted": false
+    },
+    {
+      "id": "INCONTEXT2026",
+      "title": "In-context superposition: human-like working memory interference in large language models",
+      "year": 2026,
+      "venue": "Author-marked COLM2026; checked arXivv3",
+      "url": "https://arxiv.org/html/2604.09670v3",
+      "version_date": "2026-08-13",
+      "read_scope": "Section3 and AppendixA.5.7–A.5.13; not a whole-repository reproduction.",
+      "repository": "https://github.com/sakimarquis/in-context-superposition",
+      "commit": "9ff5fd3b94a953ad35c6505c440495c4afbe57c5",
+      "code_scope": [
+        {
+          "path": "analysis/summary_causal.py",
+          "scope": "entire file",
+          "git_blob": "c65bb44b76013dd6a7d0f2b6802f9b77bf3212ef"
+        },
+        {
+          "path": "analysis/causal_remove.py",
+          "scope": "lines1–190",
+          "git_blob": "08410ebba103c039e6d88c05ea6e945d0e9c4b37"
+        }
+      ],
+      "use": "Direct nearest neighbor already linking overlap, readout and suppression. Require distinct nonlinear/task-role questions and held-out validation rather than SNN substitution alone.",
+      "audit_observation": "Selected source/paper summarize best-in-sweep intervention gains on evaluated trials, with negative gains clamped; paper explicitly says held-out generalization remains to be tested.",
+      "not_executed": true,
+      "code_transplanted": false,
+      "warning": "Pinned repository commit is not proven identical to the later paper version."
+    },
+    {
+      "id": "EFFICIENCY2026PREPRINT",
+      "title": "The cost of efficiency in flexible neural representations",
+      "authors": "Wenhao Dang; Peiyu Chen; Christos Constantinidis",
+      "year": 2026,
+      "status": "bioRxivv1,preprint",
+      "version_date": "2026-05-19",
+      "doi": "10.64898/2026.05.18.722885",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13228564/",
+      "read_scope": "Abstract, introduction and strategy framing, not full methods audit.",
+      "use": "Efficiency and task success may diverge; compare both, including other requested targets.",
+      "author_code_reviewed_this_turn": false,
+      "not_executed": true
+    },
+    {
+      "id": "SOBOL2001",
+      "title": "Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates",
+      "year": 2001,
+      "doi": "10.1016/S0378-4754(00)00270-6",
+      "url": "https://doi.org/10.1016/S0378-4754(00)00270-6",
+      "read_scope": "Classical definition/primary entry check; inherited foundations, not newly claimed full reread.",
+      "use": "Independent-factor main/total effects, classical not novel.",
+      "code_transplanted": false
+    },
+    {
+      "id": "JANSEN1999",
+      "title": "Analysis of variance designs for model output",
+      "year": 1999,
+      "doi": "10.1016/S0010-4655(98)00154-4",
+      "url": "https://doi.org/10.1016/S0010-4655(98)00154-4",
+      "read_scope": "Primary publication entry checked, not newly claimed full-text reread.",
+      "use": "Complement squared-difference total-effect reference, with explicit design.",
+      "code_transplanted": false
+    },
+    {
+      "id": "SALTELLI2010",
+      "title": "Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index",
+      "year": 2010,
+      "doi": "10.1016/j.cpc.2009.09.018",
+      "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC52955",
+      "read_scope": "Primary entry and inherited estimator background.",
+      "use": "Separate sampling design from estimator; no claim our sampler dominates author methods.",
+      "code_transplanted": false
+    },
+    {
+      "id": "TEMPORALSUPER2026_INHERITED",
+      "title": "Temporal superposition and feature geometry of RNNs under memory demands",
+      "year": 2026,
+      "venue": "ICLR2026",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bfcb583d225b1db8d3ca2331f6785774-Paper-Conference.pdf",
+      "read_scope": "Reuse L3.3.2 pinned notebook/reading audit; not reread this turn.",
+      "use": "Specified-readout losses and scope of linear age directions; nonlinear SNN effects not inferred from Wh^sWx."
+    },
+    {
+      "id": "STP2025_INHERITED",
+      "title": "Spiking Neural Networks for Temporal Processing: Status Quo and Future Prospects",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2502.09449v1",
+      "read_scope": "Reuse L3.3.2 pinnedv1 comparison; no new full-paper audit this turn.",
+      "use": "Temporal path/learning/task benchmark nearest comparison; do not deny its mechanism controls."
+    },
+    {
+      "id": "SOUL2026_INHERITED",
+      "title": "Benchmarking spiking neural networks across sensing modalities on edge devices",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2609.00026",
+      "repository": "https://github.com/yudi-mars/Soul",
+      "read_scope": "Reuse L3.3.2 primary abstract/officialREADME scope; no newly claimed full text this turn.",
+      "use": "Cross-modal/edge benchmark nearest comparison; no claim our present controlled calibration exceeds its deployment evidence."
+    }
+  ]
+}

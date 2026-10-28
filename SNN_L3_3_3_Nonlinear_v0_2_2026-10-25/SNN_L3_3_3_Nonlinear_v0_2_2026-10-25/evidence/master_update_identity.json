@@ -1,0 +1,7 @@
+{
+  "library_file_id": "libfile_6a24daf8211081919033d46e4b282680",
+  "expected_current_version": 5,
+  "source_sha256": "070d837e661a61e30cf0401909d260c9f51981b7617a635d35a1d6350ac9d72d",
+  "updated_sha256": "87e7f387510efa40ea54a9784c9c94a85fd307789ee8d538791326e811ff17a3",
+  "update_scope": "L3.3 current status and new3.3.3 entry; unrelated content preserved"
+}

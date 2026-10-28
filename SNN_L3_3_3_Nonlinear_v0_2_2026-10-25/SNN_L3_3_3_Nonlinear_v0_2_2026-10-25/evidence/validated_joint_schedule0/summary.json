@@ -1,0 +1,45 @@
+{
+  "module": "L3.3.3",
+  "analysis_kind": "pipeline_smoke",
+  "checkpoint_id": "272ae6230942ebeb",
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "checkpoint_unchanged": true,
+  "analysis_view_count": 1,
+  "independent_checkpoints": 1,
+  "source_optimizer_updates": 1,
+  "new_snn_training_runs": 0,
+  "new_snn_optimizer_updates": 0,
+  "new_probe_fit_calls_excluding_context_shared": 12,
+  "diagnostic_mlp_optimizer_updates": 640,
+  "context_shared_ridge_fit_calls": 0,
+  "cross_schedule_audit": {
+    "status": "requires_all_six_schedules"
+  },
+  "checks": [
+    {
+      "max_original_head_embedding_error": 3.1973754843761526e-07,
+      "max_native_covariance_transport_error": 1.3227266504323154e-17,
+      "max_error_risk_closure": 8.881784197001252e-16,
+      "max_conditional_risk_closure": 4.440892098500626e-16,
+      "representation_covariance_closure": 1.3877787807814457e-17
+    }
+  ],
+  "audit_test_accessed": false,
+  "formal_benchmark_completed": 0,
+  "formal_benchmark_planned": 435,
+  "whole_task_objective_audit": [
+    {
+      "schedule_index": 0,
+      "natural_objective": 1.4013084602192425,
+      "lattice_A_objective": 1.4690194956310303,
+      "weighted_risk_identity_error": 4.440892098500626e-16
+    }
+  ],
+  "review_v0_2": [
+    {
+      "schedule_index": 0,
+      "primary_state_closure": 1.3877787807814457e-17,
+      "max_primary_risk_closure": 2.220446049250313e-16
+    }
+  ]
+}

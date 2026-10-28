@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "torch_verified": "2.14.1+cpu",
+  "cuda_tested": false,
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 23,
+    "failed": 0,
+    "actual_execution_completed": true
+  },
+  "syntax_checked_python_files": 16,
+  "source_checkpoint_id": "272ae6230942ebeb",
+  "source_checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "source_checkpoint_original_optimizer_updates": 1,
+  "new_snn_training_runs": 0,
+  "new_optimizer_updates": 0,
+  "audit_test_accessed": false,
+  "max_role_risk_identity_error": 2.220446049250313e-16,
+  "max_role_error_pointwise_error": 4.440892098500626e-16,
+  "max_repeat_risk_identity_error": 2.220446049250313e-16,
+  "max_projection_repeat_risk_difference": 3.469446951953614e-18,
+  "manual_forward_max_error": 0.0,
+  "same_event_replay_max_error": 0.0,
+  "blank_external_input_diagnostic_completed": true,
+  "event_phase_known_answer_completed": true,
+  "same_checkpoint_pipeline_evaluations": 2,
+  "pipeline_evaluations_are_not_independent_training_runs": true
+}

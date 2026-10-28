@@ -1,0 +1,95 @@
+[
+  {
+    "id": "GEO-WAKHLOO",
+    "title": "Neural population geometry and optimal coding of tasks with shared latent structure",
+    "year": 2026,
+    "publication": "Nature Neuroscience",
+    "url": "https://www.nature.com/articles/s41593-025-02183-y",
+    "reuse": "Prior declared method reading; this request reread saved get_geometry source only; no author code transplanted",
+    "author_commit": "9674a6cb0c39926d70746024ce17de35f87df8f9"
+  },
+  {
+    "id": "GEO-TEMPORALSUPER",
+    "title": "Temporal superposition and feature geometry of RNNs under memory demands",
+    "year": 2026,
+    "publication": "ICLR",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bfcb583d225b1db8d3ca2331f6785774-Paper-Conference.pdf",
+    "read_scope": "Sections 3.4 and 4.1-4.3 reread, inherited previous author-code audit",
+    "reuse": "Specified readout loss and feature projections; not generic composition-interference attribution"
+  },
+  {
+    "id": "READ-COINCIDENCE-2025",
+    "title": "Theory of enhanced-by-coincidence neural information transmission",
+    "year": 2025,
+    "publication": "Physical Review Research 7,033155",
+    "url": "https://journals.aps.org/prresearch/pdf/10.1103/9bcy-g5sx",
+    "alternate_primary": "https://arxiv.org/html/2502.10094v2",
+    "read_scope": "Encoding/readout setup, selected timescale/SNR sections, Appendix K",
+    "author_code": "https://github.com/berganzami/coincidence-detection",
+    "code_status": "URL verified from paper; web fetch failed; not source-audited or executed",
+    "reuse": "Temporal observation permissions and encoding/readout distinction; no author model reproduced"
+  },
+  {
+    "id": "NOISE-MORENOBOTE",
+    "title": "Information-limiting correlations",
+    "year": 2014,
+    "url": "https://www.nature.com/articles/nn.3807",
+    "alternate_primary": "https://xaqlab.com/wp-content/uploads/2015/12/InformationLimitingCorrelations.pdf",
+    "reuse": "Noise direction versus average correlations; independent Gaussian controls only"
+  },
+  {
+    "id": "METHOD-CKA",
+    "title": "Similarity of Neural Network Representations Revisited",
+    "year": 2019,
+    "publication": "ICML",
+    "url": "https://proceedings.mlr.press/v97/kornblith19a.html",
+    "read_scope": "Sections 2.1-2.3",
+    "reuse": "Invariance and high-dimension limitations; not proposing CKA as information"
+  },
+  {
+    "id": "METHOD-SOBOL",
+    "title": "Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates",
+    "year": 2001,
+    "url": "https://doi.org/10.1016/S0378-4754(00)00270-6",
+    "read_scope": "Primary bibliographic/abstract verification; full publisher text blocked",
+    "reuse": "Classical main/total-effect definition; estimators independently derived and tested"
+  },
+  {
+    "id": "METHOD-SALTELLI",
+    "title": "Variance based sensitivity analysis of model output. Design and estimator for the total sensitivity index",
+    "year": 2010,
+    "url": "https://doi.org/10.1016/j.cpc.2009.09.018",
+    "primary_institution": "https://publications.jrc.ec.europa.eu/repository/handle/JRC52955",
+    "read_scope": "Primary institution record/abstract; not a complete estimator-comparison reproduction",
+    "reuse": "Main and total sensitivity with explicit interaction counting; no code port"
+  },
+  {
+    "id": "METHOD-EVENTPROP",
+    "title": "Event-based backpropagation can compute exact gradients for spiking neural networks",
+    "year": 2021,
+    "url": "https://www.nature.com/articles/s41598-021-91786-z",
+    "read_scope": "Primary setup and exact continuous-time jump-gradient scope",
+    "reuse": "Boundary between surrogate backward and natural forward response; no EventProp implementation"
+  },
+  {
+    "id": "CAND-SPLITTRIAL-2026",
+    "title": "Split-trial analysis reveals the information capacity of neural population codes",
+    "year": 2026,
+    "publication": "eLife reviewed preprint v1, 2026-08-03",
+    "url": "https://elifesciences.org/reviewed-preprints/111658",
+    "author_code": "https://github.com/wei-bbc-lab/Split-Trial-Analysis",
+    "read_scope": "Methods assumptions, assessment, data availability, repository listing and README",
+    "code_status": "No estimator source audited or run",
+    "reuse": "Candidate only; our repeated-scene correction is not neuron-split replication",
+    "evidence_limitation": "eLife assessment says bias/sample-size robustness evidence incomplete"
+  },
+  {
+    "id": "METHOD-DPCA",
+    "title": "Demixed principal component analysis of neural population data",
+    "year": 2016,
+    "url": "https://elifesciences.org/articles/10989",
+    "reuse": "Inherited selected factor/marginalization/repeat distinctions",
+    "author_commit": "1def5b15854638811a25257dc0b68074ab5a1be0",
+    "code_status": "Inherited selected function inspection; not full reproduction"
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "kind": "known_answer_calibrations",
+  "new_snn_training_runs": 0,
+  "invertible_mixing": {
+    "angle_before_degrees": 90.0,
+    "angle_after_degrees": 26.565051177077994,
+    "mmse_before": 0.03846153846153855,
+    "mmse_after": 0.03846153846153855,
+    "maximum_transported_decoder_difference": 4.440892098500626e-16,
+    "warning": "Noise and readout transformed together; this is a coordinate control, not a biological perturbation."
+  },
+  "equal_noise_trace": {
+    "trace_both": 1.01,
+    "parallel_noise_mmse": 0.5,
+    "orthogonal_noise_mmse": 0.00990099009900991
+  },
+  "pure_product_pickfreeze": {
+    "main_effect_weighted_variance": 0.0,
+    "total_effect_weighted_variance": 1.0,
+    "total_minus_main": 1.0,
+    "reference_weighted_variance": 1.0666666666666667,
+    "finite_negative_main_or_difference_retained": true,
+    "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+  },
+  "conditional_readout_risk": {
+    "expected_conditional_mean_error": 0.25,
+    "expected_conditional_variability": 0.26,
+    "estimate": {
+      "direct_mse": 0.5110112992172066,
+      "raw_scene_mean_mse": 0.282693010126713,
+      "unbiased_conditional_mean_error_mse": 0.25007611168521393,
+      "unbiased_conditional_variability_mse": 0.26093518753199274,
+      "accounted_mse": 0.5110112992172067,
+      "identity_error": 1.1102230246251565e-16,
+      "raw_mean_bias_correction": 0.03261689844149909,
+      "negative_corrected_estimates_retained": true
+    }
+  },
+  "repeat_mean_bias": {
+    "true_signal_variance": 1.0,
+    "expected_raw_mean_variance": 1.16,
+    "raw_between_covariance": 1.159770489473428,
+    "corrected_between_covariance": 1.000147077143472,
+    "cross_replica_covariance": 1.0008100172606236
+  },
+  "discrete_reset_jumps": {
+    "hard": -0.999999,
+    "soft": -0.999998
+  },
+  "history_in_event_phase": {
+    "beta": 0.8,
+    "threshold": 1.0,
+    "bias_current": 0.3,
+    "initial_current_change": 0.4,
+    "base_reset_indices": [
+      4,
+      9,
+      14
+    ],
+    "changed_reset_indices": [
+      3,
+      8,
+      13
+    ],
+    "terminal_post_states": [
+      0.0,
+      0.3
+    ],
+    "direct_initial_current_kernel_survival": [
+      0,
+      0
+    ],
+    "meaning": "Initial direct contributions are zero on both realized paths; different natural event times preserve a phase distinction. This is not guaranteed memory under every condition."
+  },
+  "observation_permission": {
+    "spike_counts": [
+      2,
+      2
+    ],
+    "leaky_terminal_states": [
+      0.625,
+      1.25
+    ],
+    "warning": "Temporal integration sees timing which total count discards; no data-processing paradox."
+  }
+}

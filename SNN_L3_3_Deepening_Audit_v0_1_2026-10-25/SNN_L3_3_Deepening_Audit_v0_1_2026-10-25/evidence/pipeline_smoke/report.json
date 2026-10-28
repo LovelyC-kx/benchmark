@@ -1,0 +1,516 @@
+{
+  "module": "L3.3 deepening calibration",
+  "version": "0.1",
+  "date": "2026-10-25",
+  "analysis_kind": "pipeline_smoke",
+  "source_checkpoint_id": "272ae6230942ebeb",
+  "source_run_kind": "smoke",
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "observation": "terminal last_post",
+  "focal": "C",
+  "coordinate_roles": [
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 0,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 1,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 2,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 3,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 0,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 1,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 2,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 3,
+      "role": "focal",
+      "requested": true
+    }
+  ],
+  "data_contract": {
+    "fixed_schedule_for_encoding_probe_and_pickfreeze": [
+      2,
+      5,
+      8,
+      11,
+      12
+    ],
+    "repeats_condition_on_focal_and_schedule_within_scene": true,
+    "ids_and_splits": [
+      {
+        "purpose": "encoding_fit",
+        "split": "geometry_fit",
+        "first_scene_id": 600000,
+        "rows": 64
+      },
+      {
+        "purpose": "probe_fit",
+        "split": "probe_train",
+        "first_scene_id": 660000,
+        "rows": 64
+      },
+      {
+        "purpose": "probe_selection",
+        "split": "probe_val",
+        "first_scene_id": 720000,
+        "rows": 32
+      },
+      {
+        "purpose": "evaluation",
+        "split": "development_test",
+        "first_scene_id": 780000,
+        "rows": 64
+      },
+      {
+        "purpose": "pickfreeze",
+        "split": "development_test",
+        "first_scene_id": 840000,
+        "rows": 64
+      }
+    ],
+    "repeat_scenes": 16,
+    "repeats_per_scene": 4,
+    "repeat_first_scene_id": 960000,
+    "event_path_first_scene_id": 1020000,
+    "all_new_draws_independent_of_old_export_rows": true
+  },
+  "diagnostic_encoder_fit_rows": 64,
+  "diagnostic_probe_fit_rows": 64,
+  "diagnostic_probe_selection_rows": 32,
+  "evaluation_rows": 64,
+  "probe_alpha": 10000.0,
+  "fixed_reader_risk_budget": {
+    "original_task_head": {
+      "direct_mse": 1.5574374189765456,
+      "accounted_mse": 1.5574374189765454,
+      "diagonal_second_moments": {
+        "focal_gain_or_mixing_error": 0.933393179340524,
+        "cotarget_injection": 0.00057753448010813,
+        "unrequested_injection": 0.001498526835399924,
+        "linear_unexplained_through_head": 0.011933193694389216,
+        "constant_offset": 0.492706503294843
+      },
+      "cross_second_moments": {
+        "focal_gain_or_mixing_error__cotarget_injection": -0.004291729796565486,
+        "focal_gain_or_mixing_error__unrequested_injection": -9.787101839607657e-05,
+        "focal_gain_or_mixing_error__linear_unexplained_through_head": 0.0018062649513318537,
+        "focal_gain_or_mixing_error__constant_offset": 0.1252879498967029,
+        "cotarget_injection__unrequested_injection": -1.3446564767315886e-05,
+        "cotarget_injection__linear_unexplained_through_head": -0.0008555970492854837,
+        "cotarget_injection__constant_offset": -0.0034002426459909096,
+        "unrequested_injection__linear_unexplained_through_head": -0.002201165375321861,
+        "unrequested_injection__constant_offset": -0.0026036693856163785,
+        "linear_unexplained_through_head__constant_offset": 0.0036979883191900096
+      },
+      "max_error_reconstruction_difference": 4.440892098500626e-16,
+      "mse_identity_difference": -2.220446049250313e-16,
+      "interpretation": "Exact algebra for one locked linear readout; components are not causal deletion benefits."
+    },
+    "natural_ridge_probe": {
+      "direct_mse": 0.9321211358855233,
+      "accounted_mse": 0.9321211358855235,
+      "diagonal_second_moments": {
+        "focal_gain_or_mixing_error": 0.9203290308496039,
+        "cotarget_injection": 1.0667500367991925e-05,
+        "unrequested_injection": 3.6691920620369677e-05,
+        "linear_unexplained_through_head": 0.0001356775029369056,
+        "constant_offset": 0.05448783004549286
+      },
+      "cross_second_moments": {
+        "focal_gain_or_mixing_error__cotarget_injection": 0.00017433149606561427,
+        "focal_gain_or_mixing_error__unrequested_injection": -0.00036552058071792165,
+        "focal_gain_or_mixing_error__linear_unexplained_through_head": 0.0009961477960918964,
+        "focal_gain_or_mixing_error__constant_offset": -0.043743637384722076,
+        "cotarget_injection__unrequested_injection": 6.336602584897512e-06,
+        "cotarget_injection__linear_unexplained_through_head": -9.547748777964188e-06,
+        "cotarget_injection__constant_offset": 4.8732013902199955e-05,
+        "unrequested_injection__linear_unexplained_through_head": -5.723325972794161e-05,
+        "unrequested_injection__constant_offset": 0.00020319990388514774,
+        "linear_unexplained_through_head__constant_offset": -0.00013157077208250255
+      },
+      "max_error_reconstruction_difference": 4.440892098500626e-16,
+      "mse_identity_difference": 2.220446049250313e-16,
+      "interpretation": "Exact algebra for one locked linear readout; components are not causal deletion benefits."
+    }
+  },
+  "parent_risk_direct_mse_difference": {
+    "original_task_head": 0.0,
+    "natural_ridge_probe": 0.0
+  },
+  "pickfreeze_sensitivity": {
+    "focal": {
+      "representation": {
+        "main_effect_weighted_variance": -0.0003135941178836263,
+        "total_effect_weighted_variance": 0.021298654284603147,
+        "total_minus_main": 0.021612248402486774,
+        "reference_weighted_variance": 0.03046832486127371,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "original_task_head": {
+        "main_effect_weighted_variance": -0.00044794427464994106,
+        "total_effect_weighted_variance": 0.006773917569134079,
+        "total_minus_main": 0.007221861843784021,
+        "reference_weighted_variance": 0.010731943092471405,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "natural_ridge_probe": {
+        "main_effect_weighted_variance": 1.0221926118124034e-05,
+        "total_effect_weighted_variance": 9.387307526755942e-05,
+        "total_minus_main": 8.365114914943541e-05,
+        "reference_weighted_variance": 0.00012672859956762745,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      }
+    },
+    "cotarget": {
+      "representation": {
+        "main_effect_weighted_variance": 0.0004300047392739033,
+        "total_effect_weighted_variance": 0.016087332706575815,
+        "total_minus_main": 0.015657327967301914,
+        "reference_weighted_variance": 0.03046832486127371,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "original_task_head": {
+        "main_effect_weighted_variance": 0.0008715089172089186,
+        "total_effect_weighted_variance": 0.006007823015603627,
+        "total_minus_main": 0.005136314098394708,
+        "reference_weighted_variance": 0.010731943092471405,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "natural_ridge_probe": {
+        "main_effect_weighted_variance": 8.915458592906198e-06,
+        "total_effect_weighted_variance": 4.535412239078407e-05,
+        "total_minus_main": 3.6438663797877876e-05,
+        "reference_weighted_variance": 0.00012672859956762745,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      }
+    },
+    "unrequested": {
+      "representation": {
+        "main_effect_weighted_variance": 0.004056621043577909,
+        "total_effect_weighted_variance": 0.027418538011935823,
+        "total_minus_main": 0.02336191696835791,
+        "reference_weighted_variance": 0.03046832486127371,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "original_task_head": {
+        "main_effect_weighted_variance": 0.0014929135223249398,
+        "total_effect_weighted_variance": 0.008946129361204886,
+        "total_minus_main": 0.0074532158388799456,
+        "reference_weighted_variance": 0.010731943092471405,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "natural_ridge_probe": {
+        "main_effect_weighted_variance": 4.388293055389869e-05,
+        "total_effect_weighted_variance": 0.00011645733977550169,
+        "total_minus_main": 7.257440922160299e-05,
+        "reference_weighted_variance": 0.00012672859956762745,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      }
+    },
+    "measurement": {
+      "representation": {
+        "main_effect_weighted_variance": 3.214909186343348e-05,
+        "total_effect_weighted_variance": 0.02185912733054895,
+        "total_minus_main": 0.02182697823868551,
+        "reference_weighted_variance": 0.03046832486127371,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "original_task_head": {
+        "main_effect_weighted_variance": 0.0017328274306179787,
+        "total_effect_weighted_variance": 0.00782901670955748,
+        "total_minus_main": 0.006096189278939503,
+        "reference_weighted_variance": 0.010731943092471405,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      },
+      "natural_ridge_probe": {
+        "main_effect_weighted_variance": -2.663889049341843e-06,
+        "total_effect_weighted_variance": 7.051917181219332e-05,
+        "total_minus_main": 7.318306086153517e-05,
+        "reference_weighted_variance": 0.00012672859956762745,
+        "finite_negative_main_or_difference_retained": true,
+        "scope": "Functional sensitivity under the independent-factor sampling contract, not deletion benefit or mediation."
+      }
+    }
+  },
+  "conditional_readout_risk": {
+    "original_task_head": {
+      "direct_mse": 1.7282463570892053,
+      "raw_scene_mean_mse": 1.7225021348249392,
+      "unbiased_conditional_mean_error_mse": 1.720587394070184,
+      "unbiased_conditional_variability_mse": 0.007658963019021428,
+      "accounted_mse": 1.7282463570892053,
+      "identity_error": 0.0,
+      "raw_mean_bias_correction": 0.001914740754755357,
+      "negative_corrected_estimates_retained": true,
+      "projected_conditional_covariance_mse": 0.007658963019021425
+    },
+    "natural_ridge_probe": {
+      "direct_mse": 1.0377229652122337,
+      "raw_scene_mean_mse": 1.0376582795828508,
+      "unbiased_conditional_mean_error_mse": 1.0376367177063899,
+      "unbiased_conditional_variability_mse": 8.624750584388745e-05,
+      "accounted_mse": 1.0377229652122337,
+      "identity_error": 0.0,
+      "raw_mean_bias_correction": 2.1561876460971863e-05,
+      "negative_corrected_estimates_retained": true,
+      "projected_conditional_covariance_mse": 8.624750584388745e-05
+    }
+  },
+  "repeat_covariance_trace": {
+    "within_covariance": 0.6342554575625989,
+    "raw_between_covariance": 0.24153985436221387,
+    "corrected_between_covariance": 0.08297598997156415,
+    "cross_replica_covariance": 0.05464968673246072
+  },
+  "event_path_diagnostics": {
+    "same_input_event_replay_max_error": 0.0,
+    "manual_vs_original_forward_max_error": 0.0,
+    "small_margin_fraction_abs_below_0_03_by_layer": [
+      0.008056640625,
+      0.01123046875
+    ],
+    "rows": [
+      {
+        "changed_source": "C",
+        "latent_direction_l2": 1.0,
+        "epsilon": 0.001,
+        "natural_centered_finite_response_rms_first_C_coordinate": 0.0,
+        "surrogate_backward_directional_rms_first_C_coordinate": 0.034989841282367706,
+        "event_flip_fraction_by_layer": [
+          0.0,
+          0.0
+        ],
+        "natural_last_post_difference_rms": 0.0,
+        "frozen_event_last_post_difference_rms": 0.0,
+        "warning": "Finite perturbation response and surrogate training gradient have different meanings; frozen events are an artificial path control."
+      },
+      {
+        "changed_source": "C",
+        "latent_direction_l2": 1.0,
+        "epsilon": 0.03,
+        "natural_centered_finite_response_rms_first_C_coordinate": 0.341994971036911,
+        "surrogate_backward_directional_rms_first_C_coordinate": 0.034990161657333374,
+        "event_flip_fraction_by_layer": [
+          0.00048828125,
+          0.0013427734375
+        ],
+        "natural_last_post_difference_rms": 0.057718150317668915,
+        "frozen_event_last_post_difference_rms": 0.0,
+        "warning": "Finite perturbation response and surrogate training gradient have different meanings; frozen events are an artificial path control."
+      },
+      {
+        "changed_source": "C",
+        "latent_direction_l2": 1.0,
+        "epsilon": 0.3,
+        "natural_centered_finite_response_rms_first_C_coordinate": 0.101590096950531,
+        "surrogate_backward_directional_rms_first_C_coordinate": 0.03499014675617218,
+        "event_flip_fraction_by_layer": [
+          0.0015869140625,
+          0.0045166015625
+        ],
+        "natural_last_post_difference_rms": 0.14985865354537964,
+        "frozen_event_last_post_difference_rms": 0.0,
+        "warning": "Finite perturbation response and surrogate training gradient have different meanings; frozen events are an artificial path control."
+      },
+      {
+        "changed_source": "H2",
+        "latent_direction_l2": 1.0,
+        "epsilon": 0.001,
+        "natural_centered_finite_response_rms_first_C_coordinate": 0.0,
+        "surrogate_backward_directional_rms_first_C_coordinate": 0.01116769015789032,
+        "event_flip_fraction_by_layer": [
+          0.0,
+          0.0
+        ],
+        "natural_last_post_difference_rms": 0.0,
+        "frozen_event_last_post_difference_rms": 0.0,
+        "warning": "Finite perturbation response and surrogate training gradient have different meanings; frozen events are an artificial path control."
+      },
+      {
+        "changed_source": "H2",
+        "latent_direction_l2": 1.0,
+        "epsilon": 0.03,
+        "natural_centered_finite_response_rms_first_C_coordinate": 0.0,
+        "surrogate_backward_directional_rms_first_C_coordinate": 0.011167749762535095,
+        "event_flip_fraction_by_layer": [
+          0.0,
+          0.0
+        ],
+        "natural_last_post_difference_rms": 0.0,
+        "frozen_event_last_post_difference_rms": 0.0,
+        "warning": "Finite perturbation response and surrogate training gradient have different meanings; frozen events are an artificial path control."
+      },
+      {
+        "changed_source": "H2",
+        "latent_direction_l2": 1.0,
+        "epsilon": 0.3,
+        "natural_centered_finite_response_rms_first_C_coordinate": 0.14548304677009583,
+        "surrogate_backward_directional_rms_first_C_coordinate": 0.011167746037244797,
+        "event_flip_fraction_by_layer": [
+          0.0050048828125,
+          0.01171875
+        ],
+        "natural_last_post_difference_rms": 0.1415991634130478,
+        "frozen_event_last_post_difference_rms": 0.0,
+        "warning": "Finite perturbation response and surrogate training gradient have different meanings; frozen events are an artificial path control."
+      }
+    ],
+    "new_optimizer_updates": 0
+  },
+  "zero_external_input_diagnostic": {
+    "external_input_max_abs": 0.0,
+    "masked_encoder_output_max_abs": 0.0,
+    "steps": 16,
+    "layers": {
+      "backbone.cells.0": {
+        "base_current_rms": 0.14277002215385437,
+        "post_rms": 0.531715452671051,
+        "event_count_over_one_sequence": 4
+      },
+      "backbone.cells.1": {
+        "base_current_rms": 0.2173558920621872,
+        "post_rms": 0.6857942938804626,
+        "event_count_over_one_sequence": 10
+      }
+    },
+    "scope": "Zero external input from zero state, with existing learned biases. Not a trained retention result or a post-write perturbation."
+  },
+  "audit_test_accessed": false,
+  "new_snn_training_runs": 0,
+  "new_optimizer_updates": 0,
+  "interpretation": "One old tiny checkpoint, diagnostic fits and forward/backward checks. No capacity, architectural ranking, causal mediation or trained-SNN scientific conclusion."
+}

@@ -1,0 +1,28 @@
+{
+  "module": "L3.3 deepening audit",
+  "version": "0.1",
+  "subsection_3_3_2_complete": false,
+  "new_known_answer_tests_passed": 23,
+  "existing_snn_checkpoint_reused": "272ae6230942ebeb",
+  "new_snn_training_runs": 0,
+  "new_optimizer_updates": 0,
+  "audit_accessed": false,
+  "complete": [
+    "review and equations",
+    "independent calibration code",
+    "fixed-readout role risk",
+    "conditional repeat risk and covariance correction",
+    "role-based pick-freeze",
+    "natural/frozen event and surrogate-gradient pipeline smoke",
+    "zero external input core drive check",
+    "realized-path direct-kernel versus natural event-phase counterexample"
+  ],
+  "pending": [
+    "independent subspace estimation in 3.3.2",
+    "formal training screen",
+    "full nonlinear ANOVA",
+    "L4 intervention confirmation",
+    "classification and reconstruction task-specific adapters",
+    "cross-architecture and real-task scientific conclusions"
+  ]
+}

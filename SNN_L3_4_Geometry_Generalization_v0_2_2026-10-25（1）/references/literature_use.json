@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-25",
+  "records": [
+    {
+      "id": "WAKHLOO2026",
+      "title": "Neural population geometry and optimal coding of tasks with shared latent structure",
+      "year": 2026,
+      "doi": "10.1038/s41593-025-02183-y",
+      "paper": "https://www.nature.com/articles/s41593-025-02183-y",
+      "code": "https://github.com/awakhloo/population_geometry_optimal_coding",
+      "read_scope": "Published relevant main results, full Methods and Discussion via primary full-text mirror; arXiv v2 for version contrast. Selected code files and methods as separately recorded.",
+      "uses": [
+        "four-statistic reference",
+        "new task directions",
+        "joint-Gaussian control"
+      ],
+      "new_research_use": [
+        "F/G/FG and SNN-carrier conditions",
+        "task-conditioned moment explanation",
+        "held-out readout-design gain"
+      ],
+      "not_claimed": "First non-Gaussian use or complete reproduction of author experiments"
+    },
+    {
+      "id": "OWEN2013",
+      "title": "Better estimation of small Sobol sensitivity indices",
+      "year": 2013,
+      "paper": "https://arxiv.org/abs/1204.4763",
+      "read_scope": "Small-index correlated sampling and centering, selected methods sections",
+      "uses": [
+        "L3.3.3 finite small-interaction estimator review"
+      ],
+      "code": "https://github.com/SALib/SALib",
+      "implementation": "Independent symmetric centered vector covariance; not a replica of Owen three-input Correlation2"
+    },
+    {
+      "id": "YU2025v3_2026",
+      "title": "Beyond Rate Coding: Surrogate Gradients Enable Spike Timing Learning in Spiking Neural Networks",
+      "year": 2026,
+      "paper": "https://arxiv.org/html/2507.16043v3",
+      "doi": "10.1088/2634-4386/ae46d5",
+      "code": "https://github.com/neural-reckoning/temporal-shd",
+      "read_scope": "v3 models, synthetic timing tasks, rate normalization, perturbation/reversal methods; selected complete code files",
+      "uses": [
+        "L3.5 count/timing controls",
+        "frozen vs retrained perturbation distinction"
+      ],
+      "data_downloaded": false
+    },
+    {
+      "id": "KEEMINK2025",
+      "title": "Biases in neural population codes with a few active neurons",
+      "year": 2025,
+      "doi": "10.1371/journal.pcbi.1012969",
+      "paper": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012969",
+      "code": "https://github.com/vanrossumlab/bias24",
+      "read_scope": "Bias, decoder comparison, relevant methods; README/get_ests.m/ftun.m complete selected files",
+      "uses": [
+        "sparse population bias and variability",
+        "distribution-specific decoder assumptions"
+      ],
+      "author_code_executed": false
+    },
+    {
+      "id": "KING2014_MNE2026",
+      "title": "Characterizing the dynamics of mental representations: the temporal generalization method",
+      "year": 2014,
+      "doi": "10.1016/j.tics.2014.01.002",
+      "code": "https://github.com/mne-tools/mne-python",
+      "read_scope": "Original method citation; official MNE GeneralizingEstimator selected implementation and docs. No reproduction of biological experiments.",
+      "uses": [
+        "train-time by test-time matrix",
+        "training-only normalization and coordinate alignment"
+      ]
+    },
+    {
+      "id": "YANG2026",
+      "title": "Orthogonal-Rotational Dynamics Supports Efficient Encoding and Updating for Streaming Information in Working Memory",
+      "year": 2026,
+      "doi": "10.1523/JNEUROSCI.2220-24.2025",
+      "paper": "https://pubmed.ncbi.nlm.nih.gov/41326245/",
+      "read_scope": "Publication identity and primary abstract only; full paper and code blocked/unresolved",
+      "uses": [
+        "candidate for ordinal streaming update analysis"
+      ],
+      "implementation_dependency": false
+    },
+    {
+      "id": "WEISS2025",
+      "title": "Measuring Stimulus Information Transfer Between Neural Populations Through the Communication Subspace",
+      "year": 2025,
+      "doi": "10.1162/neco.a.17",
+      "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12392746/",
+      "read_scope": "Formal abstract/introduction and Methods 2.1 with RRR and noise model; later full-text attempts blocked; not all appendices",
+      "code": "Official complete code repository not verified in this pass",
+      "uses": [
+        "shared activity vs stimulus transfer",
+        "limited Gaussian location Fisher reference"
+      ],
+      "author_full_decomposition_reproduced": false
+    },
+    {
+      "id": "MACDOWELL2025",
+      "title": "Multiplexed subspaces route neural activity across brain-wide networks",
+      "year": 2025,
+      "doi": "10.1038/s41467-025-58698-2",
+      "paper": "https://www.nature.com/articles/s41467-025-58698-2",
+      "code": "https://github.com/buschman-lab/MultiplexedSubspaces",
+      "read_scope": "Relevant RRR/residual/subspace-alignment Methods and major discussion; selected figure-code files",
+      "uses": [
+        "trial residual and alignment controls"
+      ],
+      "code_scope_warning": "Public audited repository provides figure-generation code, not an audited RRR fitting pipeline"
+    }
+  ],
+  "upstream_training_executed": false
+}

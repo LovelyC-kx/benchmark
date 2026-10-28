@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-25",
+  "module": "L3.4 v0.2",
+  "selected_files": [
+    {
+      "repository": "taichiharuna/mur",
+      "commit": "5c4d2f6dfb936041d289704400a2dec307e77647",
+      "path": "README.md",
+      "blob_sha": "ef9b83366b3a0971245e12e84477baed1809a443",
+      "url": "https://github.com/taichiharuna/mur/blob/5c4d2f6dfb936041d289704400a2dec307e77647/README.md",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "taichiharuna/mur",
+      "commit": "5c4d2f6dfb936041d289704400a2dec307e77647",
+      "path": "mc_noise_dsr_th.py",
+      "blob_sha": "7cd940bcaf26c358ee4ec552bca4ab8255c6d924",
+      "url": "https://github.com/taichiharuna/mur/blob/5c4d2f6dfb936041d289704400a2dec307e77647/mc_noise_dsr_th.py",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "taichiharuna/mur",
+      "commit": "5c4d2f6dfb936041d289704400a2dec307e77647",
+      "path": "mk_rge_decomposition_trial.py",
+      "blob_sha": "3568387cf1ae287198f6157eab9545f7c1799d04",
+      "url": "https://github.com/taichiharuna/mur/blob/5c4d2f6dfb936041d289704400a2dec307e77647/mk_rge_decomposition_trial.py",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "sgoldt/dist_inc_comp",
+      "commit": "ed7cfe7e6020873f39dcf965f8af7b2a44c72094",
+      "path": "README.md",
+      "blob_sha": "9335783654592be7a0a863b99e1f31c8052f0331",
+      "url": "https://github.com/sgoldt/dist_inc_comp/blob/ed7cfe7e6020873f39dcf965f8af7b2a44c72094/README.md",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "sgoldt/dist_inc_comp",
+      "commit": "ed7cfe7e6020873f39dcf965f8af7b2a44c72094",
+      "path": "censoring.py",
+      "blob_sha": "229c4f3ec63b21d727601f81710ef3e645ecc099",
+      "url": "https://github.com/sgoldt/dist_inc_comp/blob/ed7cfe7e6020873f39dcf965f8af7b2a44c72094/censoring.py",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "sgoldt/dist_inc_comp",
+      "commit": "ed7cfe7e6020873f39dcf965f8af7b2a44c72094",
+      "path": "cdatasets.py",
+      "blob_sha": "20df8d6156848ef7d2260813fd48c3ef4ba8479a",
+      "url": "https://github.com/sgoldt/dist_inc_comp/blob/ed7cfe7e6020873f39dcf965f8af7b2a44c72094/cdatasets.py",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "peardragon/GaussianUniversality",
+      "commit": "10138a9468f9a360efdd6f1d5d175e48e6a492c6",
+      "path": "README.md",
+      "blob_sha": "5338f31affa7434d5d70e82d91526e0fe1ff65d4",
+      "url": "https://github.com/peardragon/GaussianUniversality/blob/10138a9468f9a360efdd6f1d5d175e48e6a492c6/README.md",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "peardragon/GaussianUniversality",
+      "commit": "10138a9468f9a360efdd6f1d5d175e48e6a492c6",
+      "path": "utils/gaussian_mixture.py",
+      "blob_sha": "318ab5721dd23c68d365ad45d14ba747fe495eb8",
+      "url": "https://github.com/peardragon/GaussianUniversality/blob/10138a9468f9a360efdd6f1d5d175e48e6a492c6/utils/gaussian_mixture.py",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    },
+    {
+      "repository": "peardragon/GaussianUniversality",
+      "commit": "10138a9468f9a360efdd6f1d5d175e48e6a492c6",
+      "path": "utils/model.py",
+      "blob_sha": "547478f2f09fec956c1d9140eae5fb566c374b07",
+      "url": "https://github.com/peardragon/GaussianUniversality/blob/10138a9468f9a360efdd6f1d5d175e48e6a492c6/utils/model.py",
+      "read_scope": "Complete selected file, not complete repository",
+      "upstream_experiment_executed": false
+    }
+  ],
+  "inherited_wakhloo": {
+    "repository": "awakhloo/population_geometry_optimal_coding",
+    "commit": "9674a6cb0c39926d70746024ce17de35f87df8f9",
+    "path": "code/utils.py",
+    "blob_sha": "ca103732e125e9cb1282e80e667b661c5f83b39d",
+    "url": "https://github.com/awakhloo/population_geometry_optimal_coding/blob/9674a6cb0c39926d70746024ce17de35f87df8f9/code/utils.py",
+    "read_scope": "Complete selected file re-read; published Optimal codes and Gaussian simulations Methods re-read; prior four extracted NumPy functions parity retained",
+    "upstream_training_executed": false
+  },
+  "zenodo": {
+    "record": "https://zenodo.org/records/7688574",
+    "doi": "10.5281/zenodo.7688574",
+    "version": "v1",
+    "files": [
+      {
+        "path": "capacity_calculation.py",
+        "sha256": "bf0a7edc34e7e737f52ffdf2a65f1b4cb1d16d8e11d61adc59c7882937817dac",
+        "bytes": 25918,
+        "read_scope": "Legendre/task generation, cov_capacity, iterator init/collect; not all iterator loop paths"
+      },
+      {
+        "path": "subtract_encoder_capacity.py",
+        "sha256": "20fc6f2fb4a2e710a33aa35db0b1c49b07d8b1d3151e4ebd0fec9de8a918d13e",
+        "bytes": 13677,
+        "read_scope": "Selected subtraction, transformation and remembered-encoder functions"
+      },
+      {
+        "path": "test_capacity.py",
+        "sha256": "d89362c51822a8e8f7fb7513cf3ce17c19a8199689776c3c3c5bf1b0eaec04c2",
+        "bytes": 2008,
+        "read_scope": "Complete selected test file, not executed upstream"
+      }
+    ],
+    "retrieval": "Selected ZIP member byte ranges, deflate and CRC verified; central directory index excluded from deliverable",
+    "raw_datasets_downloaded": false,
+    "upstream_NEST_experiments_executed": false
+  },
+  "primary_texts": [
+    {
+      "title": "Organization of computation in reservoir computing",
+      "url": "https://arxiv.org/html/2607.17858v1",
+      "date": "2026-07-20",
+      "read_scope": "Sections 2.1 and 2.2 and relevant definitions",
+      "official_code": "Not verified in paper or targeted search",
+      "integration": "Independent mode/task spectrum implementation"
+    },
+    {
+      "title": "Memory Uncertainty Relation and Harmonic Memory in Random Recurrent Networks",
+      "doi": "10.1103/2vtp-m1yk",
+      "url": "https://arxiv.org/html/2605.24628v1",
+      "read_scope": "Sections III.1 and III.2; not every appendix",
+      "version_note": "Published 2026; as-served v1 HTML includes August 24 2026 header; do not infer code matches final paper"
+    },
+    {
+      "title": "Neural networks trained with SGD learn distributions of increasing complexity",
+      "url": "https://proceedings.mlr.press/v202/refinetti23a.html",
+      "version_note": "2022 preprint, ICML 2023, JSTAT 2025 DOI10.1088/1742-5468/ad8bb8",
+      "read_scope": "Relevant lower-order replacement/Gaussian clone methods; no full training reproduction"
+    },
+    {
+      "title": "Gaussian universality in neural network dynamics with generalized structured input distributions",
+      "url": "https://arxiv.org/html/2405.00642v4",
+      "version_note": "First preprint 2024, revised 2025-11-27, JSTAT 2026 DOI10.1088/1742-5468/ae195e",
+      "read_scope": "Targeted standardization and structured/block correlation sections; not full HTML line-by-line"
+    },
+    {
+      "title": "A refined information processing capacity metric allows an in-depth analysis of memory and nonlinearity trade-offs in neurocomputational systems",
+      "doi": "10.1038/s41598-023-37604-0",
+      "read_scope": "Relevant capacity/encoder correction methods and selected source functions"
+    },
+    {
+      "title": "On the absolute constants in the Berry–Esseen type inequalities for identically distributed summands",
+      "url": "https://arxiv.org/abs/1111.6554",
+      "read_scope": "IID bound constants and assumptions; conservative 0.56 used"
+    },
+    {
+      "title": "Probability Inequalities for Sums of Bounded Random Variables",
+      "doi": "10.1080/01621459.1963.10500830",
+      "read_scope": "Independent bounded-loss concentration result"
+    }
+  ],
+  "scope": "Independent implementations in this project. Reading selected author code is distinct from running full author experiments. No assertion that every paper or repository was read line by line in full."
+}

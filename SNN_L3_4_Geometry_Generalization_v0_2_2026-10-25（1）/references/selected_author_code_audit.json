@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-25",
+  "selected_files": [
+    {
+      "repository": "neural-reckoning/temporal-shd",
+      "commit": "65d8f4d9589d9e1f48c073f877ac44830afd61a2",
+      "path": "README.md",
+      "blob_sha": "27110d12180e3dba515de4b1040a9165e93ec6e4",
+      "bytes": 1662,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/neural-reckoning/temporal-shd/blob/65d8f4d9589d9e1f48c073f877ac44830afd61a2/README.md"
+    },
+    {
+      "repository": "neural-reckoning/temporal-shd",
+      "commit": "65d8f4d9589d9e1f48c073f877ac44830afd61a2",
+      "path": "code/synthetic/isi/isi_data_gen.py",
+      "blob_sha": "e7c2fe1fe1cc542ae5e899d51e4088ae9b7867ef",
+      "bytes": 4784,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/neural-reckoning/temporal-shd/blob/65d8f4d9589d9e1f48c073f877ac44830afd61a2/code/synthetic/isi/isi_data_gen.py"
+    },
+    {
+      "repository": "neural-reckoning/temporal-shd",
+      "commit": "65d8f4d9589d9e1f48c073f877ac44830afd61a2",
+      "path": "code/synthetic/coincidence/coin_data_gen.py",
+      "blob_sha": "1e3464d384327691c5af43e63332049277441c75",
+      "bytes": 5354,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/neural-reckoning/temporal-shd/blob/65d8f4d9589d9e1f48c073f877ac44830afd61a2/code/synthetic/coincidence/coin_data_gen.py"
+    },
+    {
+      "repository": "neural-reckoning/temporal-shd",
+      "commit": "65d8f4d9589d9e1f48c073f877ac44830afd61a2",
+      "path": "code/pertubation/utils.py",
+      "blob_sha": "cc31d44445ab58ba1a41ebf2b0e533eecd26f28b",
+      "bytes": 3828,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/neural-reckoning/temporal-shd/blob/65d8f4d9589d9e1f48c073f877ac44830afd61a2/code/pertubation/utils.py"
+    },
+    {
+      "repository": "vanrossumlab/bias24",
+      "commit": "0e8c51a51034012c8d7fb1caea33846af02975ea",
+      "path": "README.md",
+      "blob_sha": "17ffb8036a83d732fe6ce2adbd28e8dd49c64672",
+      "bytes": 439,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/vanrossumlab/bias24/blob/0e8c51a51034012c8d7fb1caea33846af02975ea/README.md"
+    },
+    {
+      "repository": "vanrossumlab/bias24",
+      "commit": "0e8c51a51034012c8d7fb1caea33846af02975ea",
+      "path": "get_ests.m",
+      "blob_sha": "b77cbc61213ca0755b9ee0482f39b96419f80476",
+      "bytes": 5091,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/vanrossumlab/bias24/blob/0e8c51a51034012c8d7fb1caea33846af02975ea/get_ests.m"
+    },
+    {
+      "repository": "vanrossumlab/bias24",
+      "commit": "0e8c51a51034012c8d7fb1caea33846af02975ea",
+      "path": "ftun.m",
+      "blob_sha": "5415a7f8e5ad35dab6aa076401c89260c0e369e9",
+      "bytes": 763,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/vanrossumlab/bias24/blob/0e8c51a51034012c8d7fb1caea33846af02975ea/ftun.m"
+    },
+    {
+      "repository": "buschman-lab/MultiplexedSubspaces",
+      "commit": "947d1bb730ebf2831e3d5f7aeb10f8c216bcb9b9",
+      "path": "README.md",
+      "blob_sha": "dae15381646d2192c75fc02b5af92d92dbe19938",
+      "bytes": 161,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/buschman-lab/MultiplexedSubspaces/blob/947d1bb730ebf2831e3d5f7aeb10f8c216bcb9b9/README.md"
+    },
+    {
+      "repository": "buschman-lab/MultiplexedSubspaces",
+      "commit": "947d1bb730ebf2831e3d5f7aeb10f8c216bcb9b9",
+      "path": "GenerateFigures.m",
+      "blob_sha": "0d0473179c1a78a26ea504a377a7b50d8e152a67",
+      "bytes": 1373,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/buschman-lab/MultiplexedSubspaces/blob/947d1bb730ebf2831e3d5f7aeb10f8c216bcb9b9/GenerateFigures.m"
+    },
+    {
+      "repository": "buschman-lab/MultiplexedSubspaces",
+      "commit": "947d1bb730ebf2831e3d5f7aeb10f8c216bcb9b9",
+      "path": "FigGenFunc/Figure5.m",
+      "blob_sha": "e3fdaf36e3df4d2fcebc2a6f977c0aada66d90b9",
+      "bytes": 1716,
+      "read_scope": "complete selected file; not complete repository",
+      "executed": false,
+      "url": "https://github.com/buschman-lab/MultiplexedSubspaces/blob/947d1bb730ebf2831e3d5f7aeb10f8c216bcb9b9/FigGenFunc/Figure5.m"
+    },
+    {
+      "repository": "SALib/SALib",
+      "commit": "43e4847b99900cfc2c9acf8ffdd668416fb5d4f9",
+      "path": "src/SALib/analyze/sobol.py",
+      "blob_sha": "ab53bccaf4e2c497289d26acbe2457432c18f2ec",
+      "read_scope": "analyze, first_order, total_order, second_order, sampling-layout sections",
+      "executed": false,
+      "url": "https://github.com/SALib/SALib/blob/43e4847b99900cfc2c9acf8ffdd668416fb5d4f9/src/SALib/analyze/sobol.py"
+    },
+    {
+      "repository": "mne-tools/mne-python",
+      "commit": "v1.13.2 (tag object bf67729b805865b5bb0f2f97621e416278efd1b2)",
+      "path": "mne/decoding/search_light.py",
+      "blob_sha": "3b5078649397d0f95b5188a4d6de3771e8d2cfb5",
+      "read_scope": "GeneralizingEstimator and training/test slice routing; not entire 34KB module",
+      "executed": false,
+      "url": "https://github.com/mne-tools/mne-python/blob/v1.13.2/mne/decoding/search_light.py"
+    },
+    {
+      "repository": "awakhloo/population_geometry_optimal_coding",
+      "commit": "9674a6cb0c39926d70746024ce17de35f87df8f9",
+      "path": "README.md",
+      "blob_sha": "5e741a67c3da667da5d90eb4c5c75435e8334851",
+      "read_scope": "complete selected README",
+      "upstream_training_executed": false
+    },
+    {
+      "repository": "awakhloo/population_geometry_optimal_coding",
+      "commit": "9674a6cb0c39926d70746024ce17de35f87df8f9",
+      "path": "code/utils.py",
+      "blob_sha": "ca103732e125e9cb1282e80e667b661c5f83b39d",
+      "read_scope": "complete selected file; four AST-extracted NumPy functions executed for parity",
+      "upstream_training_executed": false
+    },
+    {
+      "repository": "awakhloo/population_geometry_optimal_coding",
+      "commit": "9674a6cb0c39926d70746024ce17de35f87df8f9",
+      "path": "code/run_mlp_exps.py",
+      "blob_sha": "aed7086e4a3713c161fd9e18f491b79f1b7adfee",
+      "read_scope": "complete selected file; not executed",
+      "upstream_training_executed": false
+    },
+    {
+      "repository": "awakhloo/population_geometry_optimal_coding",
+      "commit": "9674a6cb0c39926d70746024ce17de35f87df8f9",
+      "path": "code/MLP_models.py",
+      "blob_sha": "4d7226abfbebbef8db01536c23f9459992fc661f",
+      "read_scope": "selected principal classes/methods; full file retrieved, not a claim to audit all dependencies",
+      "upstream_training_executed": false
+    }
+  ],
+  "upstream_training_executed": false,
+  "scope": "Code reading and selected function parity tests are distinct from reproducing paper experiments."
+}

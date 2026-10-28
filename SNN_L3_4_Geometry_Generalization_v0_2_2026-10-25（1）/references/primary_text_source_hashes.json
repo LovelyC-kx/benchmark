@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "multiplexed_2025.xml",
+    "bytes": 379043,
+    "sha256": "05f1f0a03825a94195ee474ca57f743c0ded25e690203ef50b64779497024cd8",
+    "read_scope": "Relevant methods/results as individually recorded; file availability is not itself a claim of complete semantic audit."
+  },
+  {
+    "filename": "wakhloo_published.xml",
+    "bytes": 172619,
+    "sha256": "0849b1732805aa3f8b282123d2bbd72d17944161fbfca9b0231bfba967453c0f",
+    "read_scope": "Relevant methods/results as individually recorded; file availability is not itself a claim of complete semantic audit."
+  }
+]

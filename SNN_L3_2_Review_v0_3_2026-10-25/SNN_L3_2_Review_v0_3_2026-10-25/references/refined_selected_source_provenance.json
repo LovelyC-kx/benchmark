@@ -1,0 +1,23 @@
+[
+  {
+    "member": "SNN_capacity/capacity/capacity_calculation.py",
+    "local": "review_l32_20261025/upstream/r3_capacity_calculation.py",
+    "bytes": 25918,
+    "crc_pass": true,
+    "sha256": "bf0a7edc34e7e737f52ffdf2a65f1b4cb1d16d8e11d61adc59c7882937817dac"
+  },
+  {
+    "member": "SNN_capacity/run_capacity.py",
+    "local": "review_l32_20261025/upstream/r3_run_capacity.py",
+    "bytes": 8345,
+    "crc_pass": true,
+    "sha256": "185fc634436b060b42a5642556ae9a0cddbfc137597daca9da062aba0d912eab"
+  },
+  {
+    "member": "SNN_capacity/evaluation/subtract_encoder_capacity.py",
+    "local": "review_l32_20261025/upstream/r3_subtract_encoder_capacity.py",
+    "bytes": 13677,
+    "crc_pass": true,
+    "sha256": "20fc6f2fb4a2e710a33aa35db0b1c49b07d8b1d3151e4ebd0fec9de8a918d13e"
+  }
+]

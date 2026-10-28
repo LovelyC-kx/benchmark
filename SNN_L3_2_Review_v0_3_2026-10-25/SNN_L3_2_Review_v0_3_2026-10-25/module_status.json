@@ -1,0 +1,23 @@
+{
+  "module": "L3.2",
+  "version": "0.3",
+  "date": "2026-10-25",
+  "parent_research_master_library_file_id": "libfile_6a24daf8211081919033d46e4b282680",
+  "protocol_file": "PROTOCOL.md",
+  "status": "literature/code review and implementation verification; formal experiments pending",
+  "completed": [
+    "v0.2 data/model/training/probe foundation retained",
+    "nine-paper use and novelty review",
+    "selected author-code audit with versions and scope",
+    "28 automated checks",
+    "three original tiny CPU training pipelines; no new fits",
+    "locked-probe operation and source-pair analyses on the three smoke checkpoints",
+    "instantaneous source-event encoder availability diagnostics"
+  ],
+  "planned_formal_fits": 435,
+  "completed_formal_fits": 0,
+  "new_empirical_scientific_claims": [],
+  "next": "review numerical settings; then first 15 development screen runs; continue L3.3 as agreed",
+  "review_file": "SNN_L3_2_Review_v0_3_2026-10-25.md",
+  "new_formal_fits_this_revision": 0
+}

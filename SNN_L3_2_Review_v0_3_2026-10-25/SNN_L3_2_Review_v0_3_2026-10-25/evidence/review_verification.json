@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "python_ast_files": [
+    "analyze_interventions.py",
+    "load_data.py",
+    "run_reference.py",
+    "analyze_features.py",
+    "torch_adapter.py",
+    "run_train.py",
+    "intervention_features.py",
+    "linear_reference.py",
+    "experiment_plan.py",
+    "tests/test_torch_adapter.py",
+    "tests/test_interventions.py",
+    "tests/test_reference.py",
+    "parent_l2/snnbench/l2_runtime.py",
+    "parent_l2/snnbench/neurons.py",
+    "parent_l2/snnbench/models.py",
+    "parent_l2/snnbench/__init__.py"
+  ],
+  "unittest_cases_passed": 28,
+  "smoke_checkpoints_reanalyzed": [
+    {
+      "run": "0a806718d9c8a25a",
+      "run_kind": "smoke",
+      "objective": "regression",
+      "sample_n": 32,
+      "probe_n": 64,
+      "natural_probe_r2_match_max_error": 0.0,
+      "noop_error": 0.0,
+      "history_after_core_clear_error": 0.0,
+      "encoder_source_rows": 5,
+      "content_operation_rows": 100,
+      "source_pair_response_rows": 500,
+      "audit_test_accessed": false
+    },
+    {
+      "run": "272ae6230942ebeb",
+      "run_kind": "smoke",
+      "objective": "regression",
+      "sample_n": 32,
+      "probe_n": 64,
+      "natural_probe_r2_match_max_error": 0.0,
+      "noop_error": 0.0,
+      "history_after_core_clear_error": 0.0,
+      "encoder_source_rows": 5,
+      "content_operation_rows": 100,
+      "source_pair_response_rows": 500,
+      "audit_test_accessed": false
+    },
+    {
+      "run": "daad993cf1f23042",
+      "run_kind": "smoke",
+      "objective": "classification",
+      "sample_n": 32,
+      "probe_n": 64,
+      "natural_probe_r2_match_max_error": 0.0,
+      "noop_error": 0.0,
+      "history_after_core_clear_error": 0.0,
+      "encoder_source_rows": 5,
+      "content_operation_rows": 100,
+      "source_pair_response_rows": 500,
+      "audit_test_accessed": false
+    }
+  ],
+  "new_optimizer_updates_this_revision": 0,
+  "new_formal_fits_this_revision": 0,
+  "scope": "Implementation checks and existing tiny CPU pipeline checkpoints only; no model-performance claims."
+}

@@ -1,0 +1,914 @@
+{
+  "scope": "development_test",
+  "run": {
+    "effective_id": "0a806718d9c8a25a",
+    "plan_run_id": "bb90a594ec165dbb",
+    "config": {
+      "data": {
+        "k": 4,
+        "required_history": 1,
+        "blank_delay": 3,
+        "energy_mode": "fixed_rms",
+        "sigma": 0.2,
+        "data_seed": 13400,
+        "projection_seed": 901,
+        "extra_writes": 3,
+        "schedule": "balanced",
+        "content_mode": "physical_k"
+      },
+      "cell": "lif_hard",
+      "width": 32,
+      "seed": 11,
+      "lambda_extra": 1.0,
+      "objective": "regression",
+      "epochs": 1,
+      "encoder_mode": "frozen",
+      "loss_mode": "anchored"
+    },
+    "frozen_encoder_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+    "parameters": 8916,
+    "trainable_parameters": 3796,
+    "persistent_cell_scalars_per_sample": 64,
+    "observation_dim_last_post": 32,
+    "observation_dim_joint_post": 64,
+    "torch": "2.14.1+cpu",
+    "device": "cpu",
+    "status": "fit_and_feature_export_completed",
+    "run_kind": "smoke",
+    "split_sizes": {
+      "encoder_train": 64,
+      "encoder_val": 32,
+      "geometry_fit": 64,
+      "probe_train": 64,
+      "probe_val": 32,
+      "audit_test": 3072,
+      "development_test": 32
+    },
+    "interpretation": "separate learned models across L; same raw inputs, task weights differ",
+    "best_epoch": 1,
+    "best_val_weighted_loss": 1.518228530883789,
+    "optimizer_updates": 1,
+    "noop_max_abs_error": 0.0
+  },
+  "results": [
+    {
+      "observation": "last_post",
+      "probe_n": 64,
+      "source": "H1",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.5021541051225695,
+          1.1439481189959473,
+          0.8344762440453555,
+          1.2774927204098678
+        ],
+        "per_coordinate_r2": [
+          -0.020475252494216667,
+          -0.11554741936273816,
+          -0.04873575839232358,
+          -0.011766152088397819
+        ],
+        "mean_mse": 1.189517797143435,
+        "sum_r2": -0.19652458233767622,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.2122529936271582,
+          "nontarget_injection": 6.831053497555309e-05,
+          "residual_and_offset": 0.03470649276847608,
+          "cross_target_nontarget": 0.0019604684742718266,
+          "cross_target_residual": -0.05946927126848181,
+          "cross_nontarget_residual": -1.1969929649894955e-06
+        },
+        "accounted_mse": 1.189517797143435,
+        "direct_mse": 1.189517797143435,
+        "max_pointwise_identity_error": 5.551115123125783e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_post",
+      "probe_n": 64,
+      "source": "H2",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.9746333426168345,
+          1.0247730688640133,
+          1.5553643600973805,
+          0.7947201698180767
+        ],
+        "per_coordinate_r2": [
+          -0.04473118267414944,
+          0.024565516667949594,
+          -0.11321806341784235,
+          -0.20127759425965275
+        ],
+        "mean_mse": 1.0873727353490763,
+        "sum_r2": -0.33466132368369494,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.0254628602723033,
+          "nontarget_injection": 0.02790984093244891,
+          "residual_and_offset": 0.10777906579848961,
+          "cross_target_nontarget": 0.009701058742212262,
+          "cross_target_residual": -0.05696416134574813,
+          "cross_nontarget_residual": -0.026515929050629487
+        },
+        "accounted_mse": 1.0873727353490765,
+        "direct_mse": 1.087372735349076,
+        "max_pointwise_identity_error": 1.1102230246251565e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_post",
+      "probe_n": 64,
+      "source": "H3",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.3610996334504843,
+          0.8479107715049131,
+          0.7303707657902313,
+          0.847579286219644
+        ],
+        "per_coordinate_r2": [
+          0.003052253310330655,
+          -0.0025925411538125775,
+          -0.026880267079045117,
+          -0.1300949760426222
+        ],
+        "mean_mse": 0.9467401142413182,
+        "sum_r2": -0.15651553096514925,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9283260148676875,
+          "nontarget_injection": 9.472456929986143e-05,
+          "residual_and_offset": 0.021763180571257687,
+          "cross_target_nontarget": 0.0010008304848203573,
+          "cross_target_residual": -0.003655862844765174,
+          "cross_nontarget_residual": -0.000788773406982182
+        },
+        "accounted_mse": 0.9467401142413181,
+        "direct_mse": 0.9467401142413181,
+        "max_pointwise_identity_error": 5.273559366969494e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_post",
+      "probe_n": 64,
+      "source": "H4",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.7364836389935056,
+          1.3009899823552273,
+          0.9818211253050015,
+          1.031815105391774
+        ],
+        "per_coordinate_r2": [
+          -0.16307278123990532,
+          -0.2541919930913026,
+          -0.348236736145221,
+          -0.41355537249623175
+        ],
+        "mean_mse": 1.012777463011377,
+        "sum_r2": -1.1790568829726606,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9181378667156029,
+          "nontarget_injection": 0.059407386859539446,
+          "residual_and_offset": 0.1605777128230961,
+          "cross_target_nontarget": 0.08324115525138627,
+          "cross_target_residual": -0.1358724947556913,
+          "cross_nontarget_residual": -0.07271416388255628
+        },
+        "accounted_mse": 1.0127774630113773,
+        "direct_mse": 1.012777463011377,
+        "max_pointwise_identity_error": 7.216449660063518e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_post",
+      "probe_n": 64,
+      "source": "C",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.4703988612258252,
+          1.2691642729844204,
+          0.8679990280022146,
+          0.8159131283737093
+        ],
+        "per_coordinate_r2": [
+          -0.2526759366688449,
+          -0.02480025905668004,
+          0.16529244623710826,
+          0.14472772703904457
+        ],
+        "mean_mse": 1.1058688226465423,
+        "sum_r2": 0.03254397755062788,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9053111080637792,
+          "nontarget_injection": 0.040283896396979255,
+          "residual_and_offset": 0.19855008060440058,
+          "cross_target_nontarget": -0.025293086875227588,
+          "cross_target_residual": 0.06906931640125327,
+          "cross_nontarget_residual": -0.08205249194464243
+        },
+        "accounted_mse": 1.1058688226465423,
+        "direct_mse": 1.105868822646542,
+        "max_pointwise_identity_error": 1.1518563880486e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "joint_post",
+      "probe_n": 64,
+      "source": "H1",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.5042739660243052,
+          1.1432121872367416,
+          0.8321505292972937,
+          1.2787115034154404
+        ],
+        "per_coordinate_r2": [
+          -0.02191536145612294,
+          -0.11482975851678168,
+          -0.045812894814699634,
+          -0.012731420517781311
+        ],
+        "mean_mse": 1.1895870464934453,
+        "sum_r2": -0.19528943530538556,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.212419002477254,
+          "nontarget_injection": 0.00020850814754605354,
+          "residual_and_offset": 0.03454596538585917,
+          "cross_target_nontarget": 0.0020435468527431324,
+          "cross_target_residual": -0.05957906270746668,
+          "cross_nontarget_residual": -5.091366249031943e-05
+        },
+        "accounted_mse": 1.1895870464934455,
+        "direct_mse": 1.189587046493445,
+        "max_pointwise_identity_error": 5.551115123125783e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "joint_post",
+      "probe_n": 64,
+      "source": "H2",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.9342271181410584,
+          1.0446366690476483,
+          1.4101884343583002,
+          0.7729224897614975
+        ],
+        "per_coordinate_r2": [
+          -0.0014188509098436164,
+          0.0056582666914091195,
+          -0.009311565974353897,
+          -0.16832880844388165
+        ],
+        "mean_mse": 1.040493677827126,
+        "sum_r2": -0.17340095863667004,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.0448530377123548,
+          "nontarget_injection": 0.00012714210610609698,
+          "residual_and_offset": 0.03649100494330407,
+          "cross_target_nontarget": 0.00020795221390026118,
+          "cross_target_residual": -0.04128486228665662,
+          "cross_nontarget_residual": 9.940313811749996e-05
+        },
+        "accounted_mse": 1.040493677827126,
+        "direct_mse": 1.040493677827126,
+        "max_pointwise_identity_error": 4.996003610813204e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "joint_post",
+      "probe_n": 64,
+      "source": "H3",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.2856183837425905,
+          0.8860173528393231,
+          0.8269174517807075,
+          0.9236629201615933
+        ],
+        "per_coordinate_r2": [
+          0.058339066974984144,
+          -0.047650789614251066,
+          -0.16262212770544826,
+          -0.23153885731107193
+        ],
+        "mean_mse": 0.9805540271310537,
+        "sum_r2": -0.3834727076557871,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.7520092202760864,
+          "nontarget_injection": 0.0712999119263403,
+          "residual_and_offset": 0.1340519046624435,
+          "cross_target_nontarget": 0.009386395086476047,
+          "cross_target_residual": 0.06720164298070133,
+          "cross_nontarget_residual": -0.05339504780099424
+        },
+        "accounted_mse": 0.9805540271310533,
+        "direct_mse": 0.9805540271310533,
+        "max_pointwise_identity_error": 1.2212453270876722e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "joint_post",
+      "probe_n": 64,
+      "source": "H4",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.6916319946834342,
+          1.4072851297373998,
+          1.0802045366326463,
+          0.8498672228982357
+        ],
+        "per_coordinate_r2": [
+          -0.0922419794013356,
+          -0.3566635913044085,
+          -0.4833368332611909,
+          -0.16429229670960677
+        ],
+        "mean_mse": 1.0072472209879288,
+        "sum_r2": -1.0965347006765418,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.8558936517211484,
+          "nontarget_injection": 0.09635099104007569,
+          "residual_and_offset": 0.22429006934576756,
+          "cross_target_nontarget": 0.10392704248387682,
+          "cross_target_residual": -0.1907150315022561,
+          "cross_nontarget_residual": -0.08249950210068346
+        },
+        "accounted_mse": 1.0072472209879288,
+        "direct_mse": 1.0072472209879288,
+        "max_pointwise_identity_error": 1.6653345369377348e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "joint_post",
+      "probe_n": 64,
+      "source": "C",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.0626501324919313,
+          0.6342442083272396,
+          0.5009597196657096,
+          0.49422193250770363
+        ],
+        "per_coordinate_r2": [
+          0.09469717015364176,
+          0.48787273418077626,
+          0.5182542276592945,
+          0.48193710719480587
+        ],
+        "mean_mse": 0.673018998248146,
+        "sum_r2": 1.5827612391885184,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.49792682870068306,
+          "nontarget_injection": 0.06480436391081221,
+          "residual_and_offset": 0.1595801482449027,
+          "cross_target_nontarget": -0.013904061008181194,
+          "cross_target_residual": 0.021244783595971872,
+          "cross_nontarget_residual": -0.05663306519604236
+        },
+        "accounted_mse": 0.6730189982481463,
+        "direct_mse": 0.6730189982481463,
+        "max_pointwise_identity_error": 1.582067810090848e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_pre",
+      "probe_n": 64,
+      "source": "H1",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.4997973451868136,
+          1.144165244724552,
+          0.8349724869271886,
+          1.2784923939711024
+        ],
+        "per_coordinate_r2": [
+          -0.01887420824562258,
+          -0.11575915452991947,
+          -0.049359416236078646,
+          -0.012557887224133202
+        ],
+        "mean_mse": 1.189356867702414,
+        "sum_r2": -0.1965506662357539,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.2121640945298218,
+          "nontarget_injection": 6.741714826819854e-05,
+          "residual_and_offset": 0.03477323810024337,
+          "cross_target_nontarget": 0.0022671169894393148,
+          "cross_target_residual": -0.05992537067687692,
+          "cross_nontarget_residual": 1.0371611518409518e-05
+        },
+        "accounted_mse": 1.1893568677024142,
+        "direct_mse": 1.189356867702414,
+        "max_pointwise_identity_error": 3.885780586188048e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_pre",
+      "probe_n": 64,
+      "source": "H2",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.9519308787936773,
+          1.041427647665455,
+          1.447762773341768,
+          0.7289643089200807
+        ],
+        "per_coordinate_r2": [
+          -0.020395906173242162,
+          0.008712786964283903,
+          -0.036204578280976785,
+          -0.10188280677602912
+        ],
+        "mean_mse": 1.0425214021802454,
+        "sum_r2": -0.14977050426596417,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.024029285667131,
+          "nontarget_injection": 0.022411915021824814,
+          "residual_and_offset": 0.10207136806300794,
+          "cross_target_nontarget": 0.009214756701514922,
+          "cross_target_residual": -0.09761703217140676,
+          "cross_nontarget_residual": -0.01758889110182644
+        },
+        "accounted_mse": 1.0425214021802454,
+        "direct_mse": 1.0425214021802454,
+        "max_pointwise_identity_error": 1.1102230246251565e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_pre",
+      "probe_n": 64,
+      "source": "H3",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.3024015590858422,
+          1.0383749486734197,
+          0.9559522127853355,
+          0.8721284031942954
+        ],
+        "per_coordinate_r2": [
+          0.04604610294094369,
+          -0.2278025158392638,
+          -0.344041286370089,
+          -0.16282682096898204
+        ],
+        "mean_mse": 1.0422142809347232,
+        "sum_r2": -0.6886245202373912,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9215252835577368,
+          "nontarget_injection": 0.032955795421378505,
+          "residual_and_offset": 0.1269443341506204,
+          "cross_target_nontarget": 0.007859963353294946,
+          "cross_target_residual": 0.0038910730621118106,
+          "cross_nontarget_residual": -0.050962168610419134
+        },
+        "accounted_mse": 1.0422142809347232,
+        "direct_mse": 1.0422142809347232,
+        "max_pointwise_identity_error": 6.661338147750939e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_pre",
+      "probe_n": 64,
+      "source": "H4",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.7661662403436252,
+          1.3117484393758478,
+          0.9140806392887796,
+          1.0261459251200333
+        ],
+        "per_coordinate_r2": [
+          -0.2099482634351364,
+          -0.2645634570043851,
+          -0.25521550303309937,
+          -0.40578876761819416
+        ],
+        "mean_mse": 1.0045353110320714,
+        "sum_r2": -1.135515991090815,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9357628009770071,
+          "nontarget_injection": 0.052313186734544354,
+          "residual_and_offset": 0.1615805198292461,
+          "cross_target_nontarget": 0.07358037528202303,
+          "cross_target_residual": -0.16149680088008408,
+          "cross_nontarget_residual": -0.05720477091066494
+        },
+        "accounted_mse": 1.0045353110320716,
+        "direct_mse": 1.0045353110320714,
+        "max_pointwise_identity_error": 1.1518563880486e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_pre",
+      "probe_n": 64,
+      "source": "C",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.4735039726144792,
+          1.2546060905320688,
+          0.864331454753721,
+          0.7721923569234422
+        ],
+        "per_coordinate_r2": [
+          -0.25532127217597433,
+          -0.013045099014645567,
+          0.16881935236918344,
+          0.19055756145831548
+        ],
+        "mean_mse": 1.0911584687059277,
+        "sum_r2": 0.09101054263687902,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9258040352657,
+          "nontarget_injection": 0.05204542868380862,
+          "residual_and_offset": 0.2100802326651378,
+          "cross_target_nontarget": -0.02045495534306816,
+          "cross_target_residual": 0.03238593520702035,
+          "cross_nontarget_residual": -0.10870220777267103
+        },
+        "accounted_mse": 1.0911584687059275,
+        "direct_mse": 1.0911584687059277,
+        "max_pointwise_identity_error": 1.3322676295501878e-15
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_output",
+      "probe_n": 64,
+      "source": "H1",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.5019724344348515,
+          1.143010857444317,
+          0.8327880756818918,
+          1.274402006141672
+        ],
+        "per_coordinate_r2": [
+          -0.020351836101526022,
+          -0.11463342712145819,
+          -0.04661413714596163,
+          -0.009318325942403005
+        ],
+        "mean_mse": 1.1880433434256832,
+        "sum_r2": -0.19091772631134885,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.2092090437369625,
+          "nontarget_injection": 2.2861261709680772e-06,
+          "residual_and_offset": 0.035366979911401454,
+          "cross_target_nontarget": -0.000218219452737388,
+          "cross_target_residual": -0.05626985043229091,
+          "cross_nontarget_residual": -4.689646382333867e-05
+        },
+        "accounted_mse": 1.1880433434256832,
+        "direct_mse": 1.1880433434256832,
+        "max_pointwise_identity_error": 4.440892098500626e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_output",
+      "probe_n": 64,
+      "source": "H2",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.9383803139512622,
+          1.0516076245614183,
+          1.4132006068490957,
+          0.7789207886538019
+        ],
+        "per_coordinate_r2": [
+          -0.00587075398040926,
+          -0.0009770661412955572,
+          -0.011467462632982262,
+          -0.1773956754200241
+        ],
+        "mean_mse": 1.0455273335038946,
+        "sum_r2": -0.19571095817471118,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.051487485423062,
+          "nontarget_injection": 1.0741335035300975e-06,
+          "residual_and_offset": 0.036564276969205736,
+          "cross_target_nontarget": 6.979690312474851e-05,
+          "cross_target_residual": -0.04254650094264101,
+          "cross_nontarget_residual": -4.879898236043769e-05
+        },
+        "accounted_mse": 1.0455273335038946,
+        "direct_mse": 1.0455273335038946,
+        "max_pointwise_identity_error": 6.938893903907228e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_output",
+      "probe_n": 64,
+      "source": "H3",
+      "chosen_alpha": 100.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.3928022424144821,
+          0.8945158146870698,
+          0.7150964000052916,
+          0.822532465308646
+        ],
+        "per_coordinate_r2": [
+          -0.02016856300178471,
+          -0.057699599873741514,
+          -0.005404948581416713,
+          -0.09669953217376026
+        ],
+        "mean_mse": 0.9562367306038724,
+        "sum_r2": -0.1799726436307032,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9131781240103563,
+          "nontarget_injection": 0.006700837499904569,
+          "residual_and_offset": 0.03733952715768317,
+          "cross_target_nontarget": -0.008510625394798174,
+          "cross_target_residual": 0.02028727264129133,
+          "cross_nontarget_residual": -0.012758405310564904
+        },
+        "accounted_mse": 0.9562367306038723,
+        "direct_mse": 0.9562367306038724,
+        "max_pointwise_identity_error": 6.106226635438361e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_output",
+      "probe_n": 64,
+      "source": "H4",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          0.6846261678860152,
+          1.0775930966898337,
+          0.7324725151092888,
+          0.7512250047651867
+        ],
+        "per_coordinate_r2": [
+          -0.08117820822334343,
+          -0.0388309302983012,
+          -0.0058312330367189524,
+          -0.029155452261130366
+        ],
+        "mean_mse": 0.811479196112581,
+        "sum_r2": -0.15499582381949395,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 0.9313939140817049,
+          "nontarget_injection": 2.358114304707033e-06,
+          "residual_and_offset": 0.06666896125773808,
+          "cross_target_nontarget": -5.772399663630635e-05,
+          "cross_target_residual": -0.18653335584181152,
+          "cross_nontarget_residual": 5.042497281260749e-06
+        },
+        "accounted_mse": 0.8114791961125811,
+        "direct_mse": 0.811479196112581,
+        "max_pointwise_identity_error": 5.551115123125783e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    },
+    {
+      "observation": "last_output",
+      "probe_n": 64,
+      "source": "C",
+      "chosen_alpha": 10000.0,
+      "source_present_fraction": 1.0,
+      "metrics": {
+        "per_coordinate_mse": [
+          1.1776335400323865,
+          1.2401787213415019,
+          1.0501987837227336,
+          0.9552643988985969
+        ],
+        "per_coordinate_r2": [
+          -0.0032605687567626163,
+          -0.0013955655391781896,
+          -0.009919169775534087,
+          -0.0013457625729875744
+        ],
+        "mean_mse": 1.1058188609988049,
+        "sum_r2": -0.015921066644462467,
+        "note": "Negative finite-sample R² retained; not a population capacity estimate."
+      },
+      "linear_risk_accounting": {
+        "terms": {
+          "target_encoding_error": 1.133476958585411,
+          "nontarget_injection": 1.286507931354809e-06,
+          "residual_and_offset": 0.02365777434091471,
+          "cross_target_nontarget": -8.562754593039338e-05,
+          "cross_target_residual": -0.05118650934990059,
+          "cross_nontarget_residual": -4.502153962156943e-05
+        },
+        "accounted_mse": 1.1058188609988044,
+        "direct_mse": 1.1058188609988044,
+        "max_pointwise_identity_error": 3.3306690738754696e-16
+      },
+      "function_family": "linear with intercept; probe-train-only scaling",
+      "interpretation": "diagnostic recoverability; not proof of original-head use"
+    }
+  ],
+  "summaries": [
+    {
+      "observation": "last_post",
+      "probe_n": 64,
+      "all_source_sum_heldout_r2": -1.8342143424085533,
+      "anchor_mean_heldout_r2": -0.020497575598381043,
+      "requested_sum_heldout_r2": -0.16398060478704835,
+      "observation_dimension": 32,
+      "note": "Empirical probes, not the exact optimal population capacity; no clipping at zero."
+    },
+    {
+      "observation": "joint_post",
+      "probe_n": 64,
+      "all_source_sum_heldout_r2": -0.2659365630858661,
+      "anchor_mean_heldout_r2": 0.1734339754853916,
+      "requested_sum_heldout_r2": 1.3874718038831328,
+      "observation_dimension": 64,
+      "note": "Empirical probes, not the exact optimal population capacity; no clipping at zero."
+    },
+    {
+      "observation": "last_pre",
+      "probe_n": 64,
+      "all_source_sum_heldout_r2": -2.0794511391930453,
+      "anchor_mean_heldout_r2": -0.01319251544985936,
+      "requested_sum_heldout_r2": -0.10554012359887488,
+      "observation_dimension": 32,
+      "note": "Empirical probes, not the exact optimal population capacity; no clipping at zero."
+    },
+    {
+      "observation": "last_output",
+      "probe_n": 64,
+      "all_source_sum_heldout_r2": -0.7375182185807196,
+      "anchor_mean_heldout_r2": -0.025854849119476414,
+      "requested_sum_heldout_r2": -0.2068387929558113,
+      "observation_dimension": 32,
+      "note": "Empirical probes, not the exact optimal population capacity; no clipping at zero."
+    }
+  ],
+  "original_head_requested_targets": {
+    "H1": {
+      "per_coordinate_mse": [
+        1.9100873661360838,
+        1.4190640708097944,
+        0.8870814682206067,
+        1.6764794228126982
+      ],
+      "per_coordinate_r2": [
+        -0.2976011453130418,
+        -0.3838330915668531,
+        -0.11484786172001504,
+        -0.32776109607135395
+      ],
+      "mean_mse": 1.4731780819947957,
+      "sum_r2": -1.124043194671264,
+      "note": "Negative finite-sample R² retained; not a population capacity estimate."
+    },
+    "C": {
+      "per_coordinate_mse": [
+        1.4900227633218932,
+        1.3517118733647593,
+        1.1886127607347927,
+        1.83960081402176
+      ],
+      "per_coordinate_r2": [
+        -0.269394114700346,
+        -0.09145420138311766,
+        -0.14302437891873399,
+        -0.9283420193094074
+      ],
+      "mean_mse": 1.4674870528608013,
+      "sum_r2": -1.432214714311605,
+      "note": "Negative finite-sample R² retained; not a population capacity estimate."
+    }
+  },
+  "status": "actual exported features only; no capacity theorem fitted",
+  "negative_R2_retained": true,
+  "encoding_fit_split": "geometry_fit",
+  "readout_selection_split": "probe_val",
+  "joint_observation_cost": "2w state scalars versus w for last_post"
+}

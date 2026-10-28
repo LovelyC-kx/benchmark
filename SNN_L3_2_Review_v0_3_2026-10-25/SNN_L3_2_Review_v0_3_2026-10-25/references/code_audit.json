@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-25",
+  "scope": "selected methods and code; not all repositories reviewed line-by-line",
+  "upstream_code_transplanted": false,
+  "upstream_neural_training_executed": false,
+  "entries": [
+    {
+      "id": "R1",
+      "repository": "https://github.com/kashparty/iclr-rnn-superposition",
+      "commit": "26b00cbb9cc03bcb2b4f9d989ac3a9d48a5f6bf9",
+      "files": {
+        "iclr_figure_01_and_05.ipynb": "zero-based cells 3 (data), 5 (model/train), 9 (Fig.1 config/selection)"
+      },
+      "executed": "not executed",
+      "reuse": "concepts and independent implementation; no upstream code transplanted"
+    },
+    {
+      "id": "R2",
+      "paper": "https://www.nature.com/articles/srep00514.pdf",
+      "files": {},
+      "scope": "capacity definition/projection conditions; code lineage credited by R3, not a separately audited 2012 repository",
+      "executed": "not executed",
+      "reuse": "theoretical reference; independent Gaussian calibration"
+    },
+    {
+      "id": "R3",
+      "archive": "https://zenodo.org/records/7688574",
+      "archive_version": "v1 published 2023-06-13",
+      "files": {
+        "capacity/capacity_calculation.py": "Legendre target, cov_capacity, CapacityIterator.collect",
+        "run_capacity.py": "input/state loading and subsampling",
+        "evaluation/subtract_encoder_capacity.py": "transform, memory, remembered encoder, subtraction, main flow"
+      },
+      "selected_member_checks": "CRC PASS; SHA256 in refined_selected_source_provenance.json",
+      "executed": "not executed; NEST training not run",
+      "reuse": "encoder/core measurement constraint and independent availability diagnostic; no refined-IPC estimator transplant"
+    },
+    {
+      "id": "R4",
+      "paper": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/parnichkun25a/parnichkun25a.pdf",
+      "files": {
+        "Appendix D.1.3": "T2H_i, T2Ss, Ss2ToleranceESS, Ss2EntropyESS; PDF code listing, not external repository"
+      },
+      "scope": "Sections 3 and D.1; realized operator versus state activity rank",
+      "executed": "listing not executed as model analysis",
+      "reuse": "state/observation ledger; no hard-reset ESS produced"
+    },
+    {
+      "id": "R5",
+      "paper": "https://arxiv.org/html/2609.33093v1",
+      "files": {},
+      "scope": "Sections 2-4 and reproducibility description; no official experiment repository located in inspected entry points",
+      "executed": "no author code execution",
+      "reuse": "controlled lifecycle questions; our operation code independently written"
+    },
+    {
+      "id": "R6",
+      "repository": "https://github.com/JIBSIL/dualgoose",
+      "commit": "8ca624a465e22a26583716399ef9a216da1f5627",
+      "files": {
+        "dualgoose/toy_data.py": "make_mqar_batch, make_long_retrieval_batch",
+        "dualgoose/mixers.py": "DeltaNetRefLayer state update and short_conv; RWKV7RefLayer convolution context",
+        "scripts/mqar_probe.py": "model controls, run_trial, rebind and chance floors",
+        "scripts/long_retrieval_probe.py": "run_trial, uniform/ramp gap curriculum and evaluation"
+      },
+      "executed": "not executed",
+      "reuse": "factor control, cache boundary, training checks; no curriculum or masked denoiser transplant"
+    },
+    {
+      "id": "R7",
+      "paper": "https://arxiv.org/html/2512.05472v1",
+      "files": {},
+      "scope": "NS/rNS and STSep mechanism motivation; no official repository confirmed in inspected entry points",
+      "executed": "no author code execution",
+      "reuse": "research motivation; parent_l2 and historySNN are our references, not attributed as STSep author code"
+    },
+    {
+      "id": "R8",
+      "repository": "https://github.com/athms/mad-lab",
+      "commit": "0f49a452b84ca0d13f8eb9c1ffa649032376fb1b",
+      "files": {
+        "mad/data/instances.py": "recall/memorization/compression/copying relevant functions",
+        "mad/configs.py": "MADConfig task settings and instance_fn_kwargs"
+      },
+      "executed": "two generator behavioral spot checks only; no neural training",
+      "reuse": "task contracts and design-use requirement; no generator transplant"
+    },
+    {
+      "id": "R9",
+      "repository": "https://github.com/laurentperrinet/MNESIS",
+      "commit": "668944108e3e2065baf3bf4a32361c2fabaa9e4d",
+      "commit_date": "2026-10-24",
+      "paper_version": "arXiv 2604.14096v2, 2026-07-11",
+      "files": {
+        "src/mnesis_chains.py": "SpikingPattern.init, HD_SNN.__init__, forward_pass, get_W_init"
+      },
+      "scope": "current code later than paper v2; not assumed bit-identical to July artifact",
+      "executed": "not executed",
+      "reuse": "delay/state boundary and task identity; no model transplant"
+    }
+  ]
+}

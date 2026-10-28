@@ -1,0 +1,8 @@
+{
+  "kind": "upstream helper behavioral spot checks; not paper reproduction",
+  "mad_commit": "0f49a452b84ca0d13f8eb9c1ffa649032376fb1b",
+  "selective_copy_same_local_rng_different_global_rng_equal": false,
+  "compression_input_equals_returned_target": true,
+  "compression_returned_ignore_count": 0,
+  "interpretation": "Current helper semantics need explicit adaptation; no inference about original published results."
+}

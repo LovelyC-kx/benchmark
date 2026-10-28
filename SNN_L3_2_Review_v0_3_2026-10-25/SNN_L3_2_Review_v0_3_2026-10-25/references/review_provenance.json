@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-25",
+  "upstream_source_files_materialized_for_inspection": [
+    {
+      "file": "r1_figure01_05.py",
+      "sha256": "93554567ac16d72239f356e308ebd4a69508e3004fbab4a72e64cd65e59f2d56",
+      "lines": 581
+    },
+    {
+      "file": "r3_capacity_calculation.py",
+      "sha256": "bf0a7edc34e7e737f52ffdf2a65f1b4cb1d16d8e11d61adc59c7882937817dac",
+      "lines": 686
+    },
+    {
+      "file": "r3_run_capacity.py",
+      "sha256": "185fc634436b060b42a5642556ae9a0cddbfc137597daca9da062aba0d912eab",
+      "lines": 164
+    },
+    {
+      "file": "r3_subtract_encoder_capacity.py",
+      "sha256": "20fc6f2fb4a2e710a33aa35db0b1c49b07d8b1d3151e4ebd0fec9de8a918d13e",
+      "lines": 301
+    },
+    {
+      "file": "r6_long_retrieval_probe.py",
+      "sha256": "48477ea9c4a872be2c5de0eaf9599e69238bdd6b3912cdf16c962046adc28d07",
+      "lines": 215
+    },
+    {
+      "file": "r6_mixers.py",
+      "sha256": "5a86ff89115a072492592ca15cb50ccfcef4a868922c3d709c3ad272e5b7a018",
+      "lines": 278
+    },
+    {
+      "file": "r6_mqar_probe.py",
+      "sha256": "36a6ae3b634c927ec670cc6314d0d9f721e20c1b49be3a9945e5120a1eaa9727",
+      "lines": 211
+    },
+    {
+      "file": "r6_toy_data.py",
+      "sha256": "940f129906bdbc321dd0a48d0d6cbf44f1bbc73d85c841732fc64e54bb44926e",
+      "lines": 218
+    },
+    {
+      "file": "r8_configs.py",
+      "sha256": "a84817381b7a16b491e9ce61526762812d65e207ba72e316b05b7db0bde96ed9",
+      "lines": 186
+    },
+    {
+      "file": "r8_instances.py",
+      "sha256": "0f2312d96e9f70a7a02a1bc7136d7e15646608492d20694a7fdbeeb9077d1c25",
+      "lines": 600
+    },
+    {
+      "file": "r9_mnesis_chains.py",
+      "sha256": "727468465f8aa48ac77d18e018ac5eceaabed435427245edf6b0fb3bfaa13479",
+      "lines": 387
+    }
+  ],
+  "our_python_ast_check": "PASS",
+  "new_formal_fits": 0,
+  "upstream_neural_training_runs": 0,
+  "provenance_scope": "Selected upstream functions and main methods reviewed; full repository execution not claimed."
+}

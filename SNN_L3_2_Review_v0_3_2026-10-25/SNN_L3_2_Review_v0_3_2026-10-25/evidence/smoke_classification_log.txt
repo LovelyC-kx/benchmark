@@ -1,0 +1,2 @@
+{"epoch": 1, "train_weighted_loss": 0.7149310111999512, "val_weighted_loss": 0.7312127947807312}
+evidence/smoke_runs/daad993cf1f23042

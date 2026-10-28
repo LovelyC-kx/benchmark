@@ -1,0 +1,287 @@
+{
+  "module": "L3.3.1",
+  "version": "0.1",
+  "date": "2026-10-25",
+  "analysis_kind": "pipeline_smoke",
+  "source_run_id": "272ae6230942ebeb",
+  "source_run_kind": "smoke",
+  "source_checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "regenerated_export_check": {
+    "rows": 16,
+    "max_abs_error": 0.0,
+    "atol": 1e-05,
+    "rtol": 0.0001
+  },
+  "cell": "lif_hard",
+  "objective": "regression",
+  "observation": "last_post",
+  "focal": "H1",
+  "time_index": 15,
+  "data_config": {
+    "k": 4,
+    "required_history": 1,
+    "blank_delay": 3,
+    "energy_mode": "fixed_rms",
+    "sigma": 0.2,
+    "data_seed": 13400,
+    "projection_seed": 901,
+    "extra_writes": 3,
+    "schedule": "balanced",
+    "content_mode": "physical_k"
+  },
+  "coordinate_roles": [
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 0,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 1,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 2,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "H1",
+      "source_id": 0,
+      "coordinate": 3,
+      "role": "focal",
+      "requested": true
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H2",
+      "source_id": 1,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H3",
+      "source_id": 2,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 0,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 1,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 2,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "H4",
+      "source_id": 3,
+      "coordinate": 3,
+      "role": "unrequested",
+      "requested": false
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 0,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 1,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 2,
+      "role": "cotarget",
+      "requested": true
+    },
+    {
+      "source": "C",
+      "source_id": 4,
+      "coordinate": 3,
+      "role": "cotarget",
+      "requested": true
+    }
+  ],
+  "fit_rows": 42,
+  "selection_rows": 22,
+  "evaluation_rows": 32,
+  "fit_split": "geometry_fit first rows",
+  "selection_split": "geometry_fit disjoint remaining rows",
+  "evaluation_split": "development_test",
+  "design_rank": 20,
+  "design_columns": 20,
+  "coefficients_identifiable": true,
+  "joint_linear_representation_score": {
+    "heldout_representation_r2": -1.1304807704421407,
+    "mse_per_state_coordinate": 0.057764835074318524,
+    "mse_relative_to_fit_mean": 2.0365285711817744,
+    "scope": "predicting the representation from contents; not downstream target recovery"
+  },
+  "component_trace": {
+    "focal": 0.2316766388365583,
+    "cotarget": 0.16876946967963566,
+    "unrequested": 0.5132980262656823,
+    "unexplained_by_joint_linear_model": 1.7521712993751584
+  },
+  "cross_trace": {
+    "focal__cotarget": 0.023301636074161643,
+    "focal__unrequested": 0.06484461769625155,
+    "focal__unexplained_by_joint_linear_model": -0.445612689865092,
+    "cotarget__unrequested": 0.07639494631412438,
+    "cotarget__unexplained_by_joint_linear_model": -0.3889145297270817,
+    "unrequested__unexplained_by_joint_linear_model": -1.1003085924848728
+  },
+  "max_pointwise_identity_error": 2.220446049250313e-16,
+  "max_covariance_identity_error": 1.1102230246251565e-16,
+  "linear_focal_remainder_trace": 1.0214106194226462,
+  "focal_remainder_scope": "after subtracting only the fitted linear focal component; can contain nonlinear focal signal",
+  "encoding_family_diagnostics": [
+    {
+      "basis": "linear",
+      "feature_count": 20,
+      "selected_alpha": 100.0,
+      "validation_mse": 0.03160064497168797,
+      "evaluation": {
+        "heldout_representation_r2": -0.06028519437184632,
+        "mse_per_state_coordinate": 0.028748064866091598,
+        "mse_relative_to_fit_mean": 1.0135276140000853,
+        "scope": "predicting the representation from contents; not downstream target recovery"
+      },
+      "not_a_complete_nonlinear_decomposition": true
+    },
+    {
+      "basis": "additive2",
+      "feature_count": 70,
+      "selected_alpha": 100.0,
+      "validation_mse": 0.031634562196851373,
+      "evaluation": {
+        "heldout_representation_r2": -0.06877408896528014,
+        "mse_per_state_coordinate": 0.028978228687777354,
+        "mse_relative_to_fit_mean": 1.0216421563217652,
+        "scope": "predicting the representation from contents; not downstream target recovery"
+      },
+      "not_a_complete_nonlinear_decomposition": true
+    },
+    {
+      "basis": "interaction2",
+      "feature_count": 230,
+      "selected_alpha": 10000.0,
+      "validation_mse": 0.03167323039311016,
+      "evaluation": {
+        "heldout_representation_r2": -0.045536225336055836,
+        "mse_per_state_coordinate": 0.028348168384654752,
+        "mse_relative_to_fit_mean": 0.9994290606342977,
+        "scope": "predicting the representation from contents; not downstream target recovery"
+      },
+      "not_a_complete_nonlinear_decomposition": true
+    }
+  ],
+  "repeated_panels": [
+    {
+      "mode": "identical_input",
+      "conditioned_on": "exact input",
+      "schedule_fixed_within_scene": true,
+      "scene_count": 12,
+      "repeat_count": 4,
+      "average_within_scene_trace": 0.0,
+      "meaning": "deterministic replay control",
+      "not_automatically_harmful_interference": true,
+      "scene_mean_is_not_noiseless": false
+    },
+    {
+      "mode": "measurement_only",
+      "conditioned_on": "all contents and schedule",
+      "schedule_fixed_within_scene": true,
+      "scene_count": 12,
+      "repeat_count": 4,
+      "average_within_scene_trace": 0.7151304709574957,
+      "meaning": "measurement-induced variability with all content and schedule fixed",
+      "not_automatically_harmful_interference": true,
+      "scene_mean_is_not_noiseless": true
+    },
+    {
+      "mode": "focal_fixed_full",
+      "conditioned_on": "requested focal coordinates and schedule",
+      "schedule_fixed_within_scene": true,
+      "scene_count": 12,
+      "repeat_count": 4,
+      "average_within_scene_trace": 0.8127841508140042,
+      "meaning": "nonfocal-content plus measurement variability with focal requested coordinates and schedule fixed",
+      "not_automatically_harmful_interference": true,
+      "scene_mean_is_not_noiseless": true
+    }
+  ],
+  "old_geometry_noise_fields_not_called": true,
+  "audit_test_accessed": false,
+  "new_optimizer_updates": 0,
+  "interpretation": "Representation encoding/decomposition diagnostics on a fixed checkpoint. No subspace-harm claim, causal mediation, full functional ANOVA, or new benchmark-performance result."
+}

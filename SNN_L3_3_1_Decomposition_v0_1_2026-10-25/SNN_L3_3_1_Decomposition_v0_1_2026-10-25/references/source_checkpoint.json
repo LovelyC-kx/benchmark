@@ -1,0 +1,29 @@
+{
+  "source_package_library_file_id": "libfile_0ad2351d605c8191a5563df9b1f1add0",
+  "effective_id": "272ae6230942ebeb",
+  "source_run_kind": "smoke",
+  "optimizer_updates_in_original_training": 1,
+  "new_training": false,
+  "files": [
+    {
+      "name": "best.pt",
+      "sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e"
+    },
+    {
+      "name": "run.json",
+      "sha256": "d5a83ff5bab7336821962b3181813a2cde8b1c6453ab921bbec28aad236b81e2"
+    },
+    {
+      "name": "geometry_fit.npz",
+      "sha256": "64c6f341a18c59b926298cdd4f2ecb503c267ea3184c147351eb90dd49392add"
+    },
+    {
+      "name": "development_test.npz",
+      "sha256": "cc5ed2be98031c1e71e21cc8772ba862790e24a4b60d625f89883a0cdef9d3c7"
+    },
+    {
+      "name": "training.jsonl",
+      "sha256": "c861eff6a6c93890c5873d43888cb2982a0596f38f87add7e169a529f46529d3"
+    }
+  ]
+}

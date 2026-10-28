@@ -1,0 +1,38 @@
+{
+  "parent_library_file_id": "libfile_0ad2351d605c8191a5563df9b1f1add0",
+  "files": [
+    {
+      "parent_relative_path": "load_data.py",
+      "sha256": "a214ae1c2d7f2455656ee960f2555df7f7e6e4db3f07c2674eb75d73da1cff16"
+    },
+    {
+      "parent_relative_path": "linear_reference.py",
+      "sha256": "df96a48c09d814ceec844bf7a8b372dd512f900d6adb0e5827872caffe118f45"
+    },
+    {
+      "parent_relative_path": "experiment_plan.py",
+      "sha256": "5a4d03bf25a66eecbe5e9590d28da2881dc180d51446cc6fb17620377bdabb7f"
+    },
+    {
+      "parent_relative_path": "torch_adapter.py",
+      "sha256": "566be74b96316ac10ba42b1c3659888410c77fd82cf6f2847ac5854f0e71ead4"
+    },
+    {
+      "parent_relative_path": "parent_l2/snnbench/__init__.py",
+      "sha256": "0c0d8a550d09c30753e91d706a345d0061e29f89f27f0b146c26a2179989add8"
+    },
+    {
+      "parent_relative_path": "parent_l2/snnbench/models.py",
+      "sha256": "e9e3c89bbcc66cd46e30848e86bf4016cc5ed07be713681aff102077d4b083cf"
+    },
+    {
+      "parent_relative_path": "parent_l2/snnbench/neurons.py",
+      "sha256": "20da689cd325a0f550c008f45e6ad3eb560525120337641da4286167cf0d4910"
+    },
+    {
+      "parent_relative_path": "parent_l2/snnbench/l2_runtime.py",
+      "sha256": "1f1cd8171fe74136021819751f488799c3b8f4754c1346b6ec1dc9f5a806f434"
+    }
+  ],
+  "modified": false
+}

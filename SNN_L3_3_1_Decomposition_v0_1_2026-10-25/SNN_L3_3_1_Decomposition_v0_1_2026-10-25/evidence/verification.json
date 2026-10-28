@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "numpy": "2.3.5",
+  "unittest_cases_passed": 14,
+  "python_ast_files": [
+    "inherited.py",
+    "repeat_panels.py",
+    "run_decomposition.py",
+    "roles.py",
+    "decomposition.py",
+    "tests/test_decomposition.py",
+    "parent_l32/load_data.py",
+    "parent_l32/torch_adapter.py",
+    "parent_l32/linear_reference.py",
+    "parent_l32/experiment_plan.py",
+    "parent_l32/parent_l2/snnbench/l2_runtime.py",
+    "parent_l32/parent_l2/snnbench/neurons.py",
+    "parent_l32/parent_l2/snnbench/models.py",
+    "parent_l32/parent_l2/snnbench/__init__.py"
+  ],
+  "pipeline_views": [
+    {
+      "source_run_id": "272ae6230942ebeb",
+      "source_run_kind": "smoke",
+      "analysis_kind": "pipeline_smoke",
+      "focal": "C",
+      "fit_rows": 42,
+      "selection_rows": 22,
+      "evaluation_rows": 32,
+      "regenerated_export_check": {
+        "rows": 16,
+        "max_abs_error": 0.0,
+        "atol": 1e-05,
+        "rtol": 0.0001
+      },
+      "max_pointwise_identity_error": 2.220446049250313e-16,
+      "max_covariance_identity_error": 1.1102230246251565e-16,
+      "audit_test_accessed": false,
+      "new_optimizer_updates": 0
+    },
+    {
+      "source_run_id": "272ae6230942ebeb",
+      "source_run_kind": "smoke",
+      "analysis_kind": "pipeline_smoke",
+      "focal": "H1",
+      "fit_rows": 42,
+      "selection_rows": 22,
+      "evaluation_rows": 32,
+      "regenerated_export_check": {
+        "rows": 16,
+        "max_abs_error": 0.0,
+        "atol": 1e-05,
+        "rtol": 0.0001
+      },
+      "max_pointwise_identity_error": 2.220446049250313e-16,
+      "max_covariance_identity_error": 1.1102230246251565e-16,
+      "audit_test_accessed": false,
+      "new_optimizer_updates": 0
+    }
+  ],
+  "same_checkpoint_views_not_independent_training_runs": true,
+  "analysis_focus_invariance_checks": {
+    "encoding_a": 0.0,
+    "evaluation_representation": 0.0,
+    "repeat_covariance__measurement_only": 0.0
+  },
+  "new_formal_fits": 0,
+  "new_optimizer_updates": 0,
+  "upstream_experiments_executed": false
+}

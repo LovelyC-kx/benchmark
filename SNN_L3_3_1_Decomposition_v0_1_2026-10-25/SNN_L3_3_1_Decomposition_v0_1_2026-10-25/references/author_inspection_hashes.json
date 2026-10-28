@@ -1,0 +1,12 @@
+[
+  {
+    "local_inspection_name": "dpca_author.py",
+    "sha256": "d2dcd2368d77f130bbeb4c87dd3fe603e030a082c5927f17dcd5ea393134119f",
+    "scope": "selected functions only; not all source lines audited"
+  },
+  {
+    "local_inspection_name": "wakhloo_utils.py",
+    "sha256": "d1da692ae51790999ae8b3ececfb55867fcffc51e998b4e56f0814311aabd88a",
+    "scope": "selected functions only; not all source lines audited"
+  }
+]

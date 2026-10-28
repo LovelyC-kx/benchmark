@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-25",
+  "external_author_code_transplanted": false,
+  "upstream_experiments_executed": false,
+  "papers": [
+    {
+      "key": "DPCA",
+      "title": "Demixed principal component analysis of neural population data",
+      "year": 2016,
+      "primary_url": "https://elifesciences.org/articles/10989",
+      "repo": "https://github.com/machenslab/dPCA",
+      "commit": "1def5b15854638811a25257dc0b68074ab5a1be0",
+      "file": "python/dPCA/dPCA.py",
+      "read_scope": "fit interface, _marginalize, crossval_score trial split and marginalization calls; not whole solver",
+      "used_for": "factors/interactions/repeats distinction; no imposed across-factor orthogonal neural axes",
+      "not_claimed": "complete dPCA reproduction on our continuous random vectors"
+    },
+    {
+      "key": "GEO-WAKHLOO",
+      "title": "Neural population geometry and optimal coding of tasks with shared latent structure",
+      "year": 2026,
+      "primary_url": "https://www.nature.com/articles/s41593-025-02183-y",
+      "repo": "https://github.com/awakhloo/population_geometry_optimal_coding",
+      "commit": "9674a6cb0c39926d70746024ce17de35f87df8f9",
+      "file": "code/utils.py",
+      "read_scope": "get_geometry and related formula/readout helpers; not full model library",
+      "used_for": "latent-set-dependent residual covariance and separation of encoding from specified readout",
+      "not_claimed": "four-statistic generalization formula applied or validated here; belongs to L3.4"
+    },
+    {
+      "key": "GEO-TEMPORALSUPER",
+      "title": "Temporal superposition and feature geometry of RNNs under memory demands",
+      "year": 2026,
+      "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bfcb583d225b1db8d3ca2331f6785774-Paper-Conference.pdf",
+      "repo": "https://github.com/kashparty/iclr-rnn-superposition",
+      "commit": "26b00cbb9cc03bcb2b4f9d989ac3a9d48a5f6bf9",
+      "read_scope": "inherits L3.2 audit: data/model/training/selection notebook sections; paper age and loss assumptions",
+      "used_for": "content/age/demand bookkeeping; not importing its loss decomposition as an SNN theorem"
+    },
+    {
+      "key": "THEORY-REFINED",
+      "title": "A refined information processing capacity metric allows an in-depth analysis of memory and nonlinearity trade-offs in neurocomputational systems",
+      "year": 2023,
+      "primary_url": "https://www.nature.com/articles/s41598-023-37604-0",
+      "code_archive": "https://zenodo.org/records/7688574",
+      "read_scope": "inherits L3.2 selected capacity, encoder-subtraction and run_capacity source audit",
+      "used_for": "encoder boundary and target-family/input-distribution compatibility; no IPC estimator transplant"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from PIL import Image
+
+# 读取 Exx.tif
+img = Image.open("Exx.tif")python "notepad plot_exx.py"
+exx = np.array(img)
+
+print("shape:", exx.shape)
+print("dtype:", exx.dtype)
+print("min:", np.nanmin(exx))
+print("max:", np.nanmax(exx))
+print("mean:", np.nanmean(exx))
+
+# 如果是 RGB 彩色图，不能直接当应变值
+if exx.ndim == 3:
+    raise ValueError(
+        "Exx.tif 是 RGB 彩色图，不是真实 Exx 数值矩阵，不能直接统计。"
+    )
+
+# 转成浮点数
+exx = exx.astype(float)
+exx = exx[np.isfinite(exx)]
+
+# 去掉极端值，保留 1%–99%
+low, high = np.percentile(exx, [1, 99])
+exx_clip = exx[(exx >= low) & (exx <= high)]
+
+print("Original Exx range:", exx.min(), exx.max())
+print("Clipped Exx range:", exx_clip.min(), exx_clip.max())
+print("Number of pixels used:", len(exx_clip))
+
+# 画图
+plt.figure(figsize=(6, 4))
+plt.hist(exx_clip, bins=100)
+plt.xlabel(r"$\varepsilon_{xx}$")
+plt.ylabel("Counts")
+plt.title(r"Distribution of $\varepsilon_{xx}$")
+plt.tight_layout()
+
+plt.savefig("Exx_distribution.png", dpi=600, bbox_inches="tight")
+plt.show()
+
+# 导出 Origin 数据
+df = pd.DataFrame({"epsilon_xx": exx_clip})
+df.to_csv("Exx_values_for_origin.csv", index=False)
+
+print("已保存: Exx_distribution.png")
+print("已导出: Exx_values_for_origin.csv")

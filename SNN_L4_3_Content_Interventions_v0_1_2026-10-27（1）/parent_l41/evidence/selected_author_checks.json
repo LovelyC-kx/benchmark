@@ -1,0 +1,54 @@
+{
+  "module": "L4.1 selected author access audit",
+  "verified_sources": {
+    "TRQR_0": {
+      "git_blob_sha": "a882bb58967afd367da1726f61555798631e1ab8",
+      "bytes_match": true,
+      "scope": "Selected MI probability function, train-only mask module and model output/count contract"
+    },
+    "TRQR_1": {
+      "git_blob_sha": "b3a86555065b398973142fd8f218abb63449ea68",
+      "bytes_match": true,
+      "scope": "Full small helper file; selected TET_loss executed"
+    },
+    "TRQR_2": {
+      "git_blob_sha": "697bd97fadb09b35c727c9f29f70dfea250ed51e",
+      "bytes_match": true,
+      "scope": "Selected MI/mask, spike-count axes and output contract"
+    },
+    "TRQR_3": {
+      "git_blob_sha": "98f22708ed2c0fbaa1f8a7d451fd0171570f13ab",
+      "bytes_match": true,
+      "scope": "Selected train/test aggregation and loss branches"
+    },
+    "TRQR_4": {
+      "git_blob_sha": "c488cab9d9a36a93f3deab3d3d53ccae376d5762",
+      "bytes_match": true,
+      "scope": "Selected AMP weighted training and evaluation output[0] branches"
+    }
+  },
+  "source_count": 5,
+  "MI_sample_axis": "CIFAR function reshapes each time to (batch*channels, spatial positions); global MI flattens all entries, local MI samples batch*channels at one position",
+  "dependency_substitution": "mutual_info_score replaced with an exact finite-contingency MI implementation in natural units; original TorchMetrics package/runtime not executed",
+  "mask_probability_shape": [
+    3,
+    2,
+    3
+  ],
+  "constant_input_nonfinite_probability_entries": 12,
+  "eval_mask_module_returns_input_unchanged": true,
+  "TET_loss_lambda0_max_abs": 0.0,
+  "TET_loss_value": 1.417952060699463,
+  "weighted_training_assignment_output": [
+    [
+      0.25,
+      0.75
+    ]
+  ],
+  "selected_code_contracts": {
+    "cifar_train_and_eval": "outputs.mean(1), except TET changes the training loss",
+    "imagenet_selected_amp_training": "batch-aggregated firing weights then sum over time",
+    "imagenet_selected_evaluation": "conditional output.dim()==3 branch uses output[0] after loss computation"
+  },
+  "scope": "Selected definitions and expressions executed, with a disclosed MI dependency substitution. No author full model, CUDA/AMP training, validation accuracy or dataset reproduction. Source-specific branch observations do not establish that a paper result is invalid."
+}

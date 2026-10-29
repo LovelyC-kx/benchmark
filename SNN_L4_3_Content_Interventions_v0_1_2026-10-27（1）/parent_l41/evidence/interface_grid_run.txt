@@ -1,0 +1,11 @@
+completed interface grid classification mlp
+completed interface grid classification recurrent_mlp
+completed interface grid classification temporal_conv
+completed interface grid classification cnn1d
+completed interface grid classification cnn2d
+completed interface grid classification sew_resnet18
+completed interface grid classification spike_attention
+completed interface grid classification unet
+completed interface grid reconstruction cnn2d
+completed interface grid reconstruction unet
+Interface grid completed

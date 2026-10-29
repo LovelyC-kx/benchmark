@@ -1,0 +1,36 @@
+test_exponential_endpoint_decays (test_access.MathematicalAccess.test_exponential_endpoint_decays) ... ok
+test_fixed_horizon_mean_sum_equivalence (test_access.MathematicalAccess.test_fixed_horizon_mean_sum_equivalence) ... ok
+test_head_null_is_not_future_system_null (test_access.MathematicalAccess.test_head_null_is_not_future_system_null) ... ok
+test_invalid_horizon_mode_decay_and_nonfinite_rejected (test_access.MathematicalAccess.test_invalid_horizon_mode_decay_and_nonfinite_rejected) ... ok
+test_last_and_mean_are_not_ordered (test_access.MathematicalAccess.test_last_and_mean_are_not_ordered) ... ok
+test_null_perturbation_is_exact_for_affine_head (test_access.MathematicalAccess.test_null_perturbation_is_exact_for_affine_head) ... ok
+test_query_specific_head_null_depends_on_declared_outputs (test_access.MathematicalAccess.test_query_specific_head_null_depends_on_declared_outputs) ... ok
+test_refinement_does_not_invent_pre_post_inclusion (test_access.MathematicalAccess.test_refinement_does_not_invent_pre_post_inclusion) ... ok
+test_spatial_mean_loses_position_required_by_reconstruction (test_access.MathematicalAccess.test_spatial_mean_loses_position_required_by_reconstruction) ... ok
+test_sum_logits_requires_bias_correction (test_access.MathematicalAccess.test_sum_logits_requires_bias_correction) ... ok
+test_trajectory_can_reconstruct_all_declared_summaries (test_access.MathematicalAccess.test_trajectory_can_reconstruct_all_declared_summaries) ... ok
+test_trajectory_head_parameters_are_charged (test_access.MathematicalAccess.test_trajectory_head_parameters_are_charged) ... ok
+test_trajectory_is_not_assigned_scalar_time_weights (test_access.MathematicalAccess.test_trajectory_is_not_assigned_scalar_time_weights) ... ok
+test_variable_horizon_sum_does_not_identify_mean (test_access.MathematicalAccess.test_variable_horizon_sum_does_not_identify_mean) ... ok
+test_weighted_linear_logits_commute_with_normalized_feature_summary (test_access.MathematicalAccess.test_weighted_linear_logits_commute_with_normalized_feature_summary) ... ok
+test_adaptive_weights_can_bring_auxiliary_information (test_access.RuntimeAccess.test_adaptive_weights_can_bring_auxiliary_information) ... ok
+test_analog_output_contract_uses_pre (test_access.RuntimeAccess.test_analog_output_contract_uses_pre) ... ok
+test_capture_and_stream_do_not_change_parameters (test_access.RuntimeAccess.test_capture_and_stream_do_not_change_parameters) ... ok
+test_fixed_T_trajectory_rejects_new_length (test_access.RuntimeAccess.test_fixed_T_trajectory_rejects_new_length) ... ok
+test_folded_head_rejects_incomplete_horizon (test_access.RuntimeAccess.test_folded_head_rejects_incomplete_horizon) ... ok
+test_folded_head_requires_linear_trajectory_contract (test_access.RuntimeAccess.test_folded_head_requires_linear_trajectory_contract) ... ok
+test_folded_trajectory_preserves_native_head_without_history_buffer (test_access.RuntimeAccess.test_folded_trajectory_preserves_native_head_without_history_buffer) ... ok
+test_image_trajectory_decoder_is_explicitly_unsupported (test_access.RuntimeAccess.test_image_trajectory_decoder_is_explicitly_unsupported) ... ok
+test_known_cancellation_and_ridge_scaling (test_access.RuntimeAccess.test_known_cancellation_and_ridge_scaling) ... ok
+test_native_five_summaries_factorize_and_stream (test_access.RuntimeAccess.test_native_five_summaries_factorize_and_stream) ... ok
+test_native_image_reconstruction_keeps_spatial_axes (test_access.RuntimeAccess.test_native_image_reconstruction_keeps_spatial_axes) ... ok
+test_notd_final_cell_has_no_history_but_mean_output_does (test_access.RuntimeAccess.test_notd_final_cell_has_no_history_but_mean_output_does) ... ok
+test_probability_and_logit_averages_can_change_class (test_access.RuntimeAccess.test_probability_and_logit_averages_can_change_class) ... ok
+test_shared_activity_and_new_target_information_coexist (test_access.RuntimeAccess.test_shared_activity_and_new_target_information_coexist) ... ok
+test_snapshot_must_include_readout_accumulator (test_access.RuntimeAccess.test_snapshot_must_include_readout_accumulator) ... ok
+test_symmetric_readout_and_frame_local_encoder_cannot_read_order (test_access.RuntimeAccess.test_symmetric_readout_and_frame_local_encoder_cannot_read_order) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.542s
+
+OK

@@ -19,6 +19,24 @@ from snnbench.specs import TaskSpec
 
 
 class Downloader(unittest.TestCase):
+    def test_mixed_csv_and_gzip_batch_extracts_only_container(self):
+        from snnbench.download import main
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);serve=root/'serve';serve.mkdir();out=root/'raw';csv=b'date,value\n2020-01-01,1\n'
+            (serve/'ETTh1.csv').write_bytes(csv)
+            with gzip.open(serve/'spikes.h5.gz','wb') as f:f.write(b'fixture h5')
+            handler=functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(serve))
+            with socketserver.TCPServer(('127.0.0.1',0),handler) as server:
+                thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start();base=f'http://127.0.0.1:{server.server_address[1]}'
+                manifest=root/'sources.json';manifest.write_text(json.dumps({'datasets':[{'id':'fixture','priority':'P0','files':[
+                    {'filename':'ETTh1.csv','url':base+'/ETTh1.csv'},{'filename':'spikes.h5.gz','url':base+'/spikes.h5.gz'}]}]}))
+                try:
+                    main(['--manifest',str(manifest),'--out',str(out),'--extract'])
+                    self.assertEqual((out/'fixture/ETTh1.csv').read_bytes(),csv)
+                    self.assertEqual((out/'fixture/extracted/spikes.h5').read_bytes(),b'fixture h5')
+                    self.assertTrue((out/'fixture/ETTh1.csv.receipt.json').is_file())
+                finally:server.shutdown();thread.join()
+
     def test_ignored_range_restarts_and_checksum(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);serve=root/'serve';serve.mkdir();data=bytes(range(256))*50;(serve/'data.bin').write_bytes(data);out=root/'out';out.mkdir()

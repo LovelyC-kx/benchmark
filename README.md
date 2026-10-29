@@ -7,6 +7,7 @@
 | 先读哪份文件 | 内容 |
 |---|---|
 | [四阶段全量执行方案](docs/FOUR_PHASE_EXECUTION_PLAN.md) | 实验空间、84GB资源、完整归档、L1—L6覆盖、发现链与论文形成；当前首要执行方案 |
+| [全部命令行](docs/ALL_COMMANDS_BASH.md) | 从获取代码、真实数据转换、GPU验收到全量训练、归档分析、重试与作者模型入口的Bash命令 |
 | [当前进展与边界](docs/CURRENT_STATUS.md) | 已实现、已验收、待服务器数据/GPU验证分别列出 |
 | [实验与分析设计](docs/EXPERIMENT_DESIGN.md) | L1—L4逐模块、变量、对照、读出和理论范围 |
 | [服务器执行](docs/SERVER_RUNBOOK.md) | 环境、下载、转换、多GPU/Slurm、恢复及结果读取 |

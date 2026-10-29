@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-30",
+  "scope": "CLI command handoff and mixed CSV/archive download regression",
+  "test_suite": {
+    "command": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m unittest discover -s tests -v",
+    "tests": 61,
+    "passed": 61,
+    "seconds": 31.121
+  },
+  "download_fix": "--extract preserves raw CSV at its registered path and still expands compressed containers in a mixed batch",
+  "command_document": "docs/ALL_COMMANDS_BASH.md",
+  "command_document_sha256": "7754bcd66ef163cc642f97f65cf089a7eb1de12e66d5a849b91c11086e91bcb5",
+  "syntax_checks": {
+    "bash_blocks": 21,
+    "python_heredocs": 3
+  },
+  "unit_test_log_sha256": "7b5e6136873bb074a88ce0fe920bed3a4dcf4547c860477dc7095633bb80828a",
+  "training_implementation_sha256": "d53c78c7c1de31dfbbe94c6c76a1847fa6e695f223919317615ecd70206c6a9a",
+  "analysis_implementation_sha256": "63ccb19ffde947f452a2be6f775f78d4661e3004334566af790b022e4501473e",
+  "server_commands_executed_here": false,
+  "gpu_full_campaign_started": false
+}

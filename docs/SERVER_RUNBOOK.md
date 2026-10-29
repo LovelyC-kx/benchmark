@@ -2,6 +2,8 @@
 
 所有命令在仓库根目录运行。先查看当前分支/PR交付的版本，再安装项目；原main旧档案没有这些新入口。
 
+按顺序复制执行的完整版本见[全部命令行](ALL_COMMANDS_BASH.md)，其中包含全部已接通真实来源的转换循环、多GPU后处理和专项/恢复命令。
+
 v0.4的首要入口见[四阶段执行方案](FOUR_PHASE_EXECUTION_PLAN.md)。84GB资源按实际设备字节检测；先广泛跑并完整保存，随后执行原L1—L6全部分析。真实数据及32种公共参考骨架见[扩展说明](REAL_DATA_AND_MODEL_EXPANSION.md)，作者轨道见[近期基准复核](BENCHMARK_REVIEW_2025_2026.md)。新实验另用`campaign_v04`，旧checkpoint在原代码版本读取。
 
 ## 0. 全量campaign入口

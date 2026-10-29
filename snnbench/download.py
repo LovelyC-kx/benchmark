@@ -135,7 +135,9 @@ def main(argv=None):
             if f.get('optional') and not args.include_native:continue
             info=verify(folder/f['filename'],f) if args.verify_only else download_file(f,folder)
             print(json.dumps(dict(filename=f['filename'],**info)),flush=True)
-            if args.extract:extract_archive(folder/f['filename'],folder/'extracted')
+            # Forecast CSVs are already usable at their registered raw path.
+            # A mixed --extract batch still expands all compressed containers.
+            if args.extract and Path(f['filename']).suffix.lower()!='.csv':extract_archive(folder/f['filename'],folder/'extracted')
 
 
 if __name__=='__main__':main()

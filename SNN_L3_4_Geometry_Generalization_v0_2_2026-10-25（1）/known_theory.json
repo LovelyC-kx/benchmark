@@ -1,0 +1,161 @@
+{
+  "kind": "known distributions and readout training calibration, not SNN findings",
+  "matched_moments": {
+    "nonlinear_code": "x=0.1z+(z^3-3z)/sqrt(6)",
+    "Gaussian_code": "x=0.1z+epsilon, independent standard Gaussian epsilon",
+    "Psi": 1.01,
+    "Phi": 0.1,
+    "Omega": 1.0,
+    "actual_nonlinear_task_mean": -0.24594655185499345,
+    "Gaussian_task_mean": 0.07978845608028655,
+    "nonlinear_population_Hebbian_error": 0.0969477234124829,
+    "Gaussian_population_Hebbian_error": 0.4682744825694465,
+    "same_four_statistics": {
+      "status": "computed",
+      "PR": 1.0,
+      "c": 0.009900990099009903,
+      "inv_f": 1.0,
+      "inv_s": 99.99999999999997,
+      "f": 1.0,
+      "s": 0.010000000000000004,
+      "s_is_infinite": false,
+      "signal_power": 0.010000000000000002,
+      "response_trace": 1.01,
+      "latent_trace": 1.0,
+      "remainder_min_eigenvalue": 1.0,
+      "noise_inverse_numerical_floor_applied": false,
+      "response_dimension": 1,
+      "latent_dimension": 1,
+      "definitions": "f=signal-signal factorization, s=signal-noise factorization; named output avoids author tuple reordering."
+    },
+    "exact_risk_identity": "R_p=q*P(w_p<0)+(1-q)*P(w_p>0)+0.5*P(w_p=0)"
+  },
+  "finite_p": [
+    {
+      "samples": 1,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.1746965075662149,
+      "positive_weight_probability": 0.09645,
+      "four_statistic_forecast": 0.49749326234702484,
+      "task_moment_normal_forecast": 0.41977836826543846,
+      "mean_training_weight": -0.24240058899292827,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 1.0264954220173141,
+      "population_weight_variance": 0.949510293630639
+    },
+    {
+      "samples": 2,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.20351474534222241,
+      "positive_weight_probability": 0.1322,
+      "four_statistic_forecast": 0.49646595222857376,
+      "task_moment_normal_forecast": 0.38773257720401644,
+      "mean_training_weight": -0.24031864595046062,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.537280107196027,
+      "population_weight_variance": 0.4747551468153195
+    },
+    {
+      "samples": 4,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.22201484483758946,
+      "positive_weight_probability": 0.15515,
+      "four_statistic_forecast": 0.49503282506221036,
+      "task_moment_normal_forecast": 0.34448256142586076,
+      "mean_training_weight": -0.2404511323452712,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.2503415964320582,
+      "population_weight_variance": 0.23737757340765975
+    },
+    {
+      "samples": 8,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.22270003370778824,
+      "positive_weight_probability": 0.156,
+      "four_statistic_forecast": 0.4930599016528557,
+      "task_moment_normal_forecast": 0.28876246193362715,
+      "mean_training_weight": -0.24189046658129104,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.12515818773962661,
+      "population_weight_variance": 0.11868878670382987
+    },
+    {
+      "samples": 16,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.2031923035209524,
+      "positive_weight_probability": 0.1318,
+      "four_statistic_forecast": 0.49041195023855944,
+      "task_moment_normal_forecast": 0.22330082543154917,
+      "mean_training_weight": -0.24352308450419483,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.061616069451442046,
+      "population_weight_variance": 0.05934439335191494
+    },
+    {
+      "samples": 32,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.1667160724897821,
+      "positive_weight_probability": 0.08655,
+      "four_statistic_forecast": 0.4870202628441839,
+      "task_moment_normal_forecast": 0.15915598205291262,
+      "mean_training_weight": -0.24396481624044022,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.029649903269202214,
+      "population_weight_variance": 0.02967219667595747
+    },
+    {
+      "samples": 64,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.12987709440968304,
+      "positive_weight_probability": 0.04085,
+      "four_statistic_forecast": 0.48301076299198265,
+      "task_moment_normal_forecast": 0.11491841672226459,
+      "mean_training_weight": -0.244221740903633,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.014816265668984419,
+      "population_weight_variance": 0.014836098337978734
+    },
+    {
+      "samples": 128,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.10525060031018575,
+      "positive_weight_probability": 0.0103,
+      "four_statistic_forecast": 0.4788193803583101,
+      "task_moment_normal_forecast": 0.09914935959069346,
+      "mean_training_weight": -0.24486092195962725,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.007416516035349541,
+      "population_weight_variance": 0.007418049168989367
+    },
+    {
+      "samples": 512,
+      "training_repetitions": 20000,
+      "empirical_risk_using_exact_test_population": 0.0969477234124829,
+      "positive_weight_probability": 0.0,
+      "four_statistic_forecast": 0.4722907376944278,
+      "task_moment_normal_forecast": 0.0974200045167553,
+      "mean_training_weight": -0.24588267045834006,
+      "population_mean_weight": -0.24594655185499345,
+      "training_weight_variance": 0.0018493805625789325,
+      "population_weight_variance": 0.0018545122922473418
+    }
+  ],
+  "tie_control": {
+    "ours_half_error": 0.5,
+    "legacy_strict_error": 0.0
+  },
+  "author_selected_function_execution": {
+    "source_sha256": "d1da692ae51790999ae8b3ececfb55867fcffc51e998b4e56f0814311aabd88a",
+    "functions_executed": [
+      "emp_error",
+      "get_geometry",
+      "theory_part",
+      "theta"
+    ],
+    "upstream_training_executed": false,
+    "author_zero_code_error": 0.0,
+    "named_geometry_max_absolute_difference": 0.0,
+    "prediction_error_difference": 0.0,
+    "warning": "Executing exact selected NumPy function definitions via AST; no upstream MLP training, imports or datasets executed. Tie behavior matters for this sparse-code application, not an assertion about the published continuous-model results."
+  }
+}

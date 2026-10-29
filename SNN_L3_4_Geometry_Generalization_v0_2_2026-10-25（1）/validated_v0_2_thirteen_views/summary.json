@@ -1,0 +1,1815 @@
+{
+  "module": "L3.4",
+  "version": "0.2",
+  "semantic_view_count": 13,
+  "target_group_views": 39,
+  "independent_SNN_checkpoints": 1,
+  "source_original_optimizer_updates": 1,
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "checkpoint_unchanged": true,
+  "new_SNN_training_runs": 0,
+  "new_SNN_optimizer_updates": 0,
+  "MLP_vectorized_optimizer_steps": 7680,
+  "audit_test_accessed": false,
+  "formal_benchmark_completed": 0,
+  "formal_benchmark_planned": 435,
+  "all_selections_frozen_before_evaluation": true,
+  "planned_confidence_family_size": 468,
+  "views": [
+    {
+      "folder": "C_last_post_sphere_schedule_0",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.01058197021484375,
+            "simultaneous_Hoeffding_interval": [
+              -0.03842513363791472,
+              0.05958907406760222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.008562088012695312,
+            "simultaneous_Hoeffding_interval": [
+              -0.04044501584006316,
+              0.057569191865453784
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.01058197021484375,
+            "simultaneous_Hoeffding_interval": [
+              -0.03842513363791472,
+              0.05958907406760222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": -0.000125885009765625,
+            "simultaneous_Hoeffding_interval": [
+              -0.049132988862524096,
+              0.048881218842992846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0006256103515625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04838149350119597,
+              0.04963271420432097
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0058727264404296875,
+            "simultaneous_Hoeffding_interval": [
+              -0.043134377412328784,
+              0.05487983029318816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.00572967529296875,
+            "simultaneous_Hoeffding_interval": [
+              -0.04327742855978972,
+              0.05473677914572722
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0058727264404296875,
+            "simultaneous_Hoeffding_interval": [
+              -0.043134377412328784,
+              0.05487983029318816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_post_axis_schedule_0",
+      "prior": "axis",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.00962066650390625,
+            "simultaneous_Hoeffding_interval": [
+              -0.03938643734885222,
+              0.05862777035666472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.00833892822265625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04066817563010222,
+              0.05734603207541472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.00238037109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04662673275900847,
+              0.05138747494650847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": -0.0003509521484375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04935805600119597,
+              0.04865615170432097
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": -0.0003509521484375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04935805600119597,
+              0.04865615170432097
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": -0.0007171630859375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04972426693869597,
+              0.04828994076682097
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.004634857177734375,
+            "simultaneous_Hoeffding_interval": [
+              -0.044372246675024096,
+              0.053641961030492846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.003810882568359375,
+            "simultaneous_Hoeffding_interval": [
+              -0.045196221284399096,
+              0.052817986421117846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.00101470947265625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04799239438010222,
+              0.05002181332541472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_post_equal_support_schedule_0",
+      "prior": "equal_support",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0088043212890625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04020278256369597,
+              0.05781142514182097
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.006549835205078125,
+            "simultaneous_Hoeffding_interval": [
+              -0.042457268647680346,
+              0.055556939057836596
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0088043212890625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04020278256369597,
+              0.05781142514182097
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 8.58306884765625e-05,
+            "simultaneous_Hoeffding_interval": [
+              -0.04892127316428191,
+              0.049092934541235034
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.000148773193359375,
+            "simultaneous_Hoeffding_interval": [
+              -0.048858330659399096,
+              0.049155877046117846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.00555419921875,
+            "simultaneous_Hoeffding_interval": [
+              -0.04345290463400847,
+              0.05456130307150847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0043659210205078125,
+            "simultaneous_Hoeffding_interval": [
+              -0.04464118283225066,
+              0.053373024873266284
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.00555419921875,
+            "simultaneous_Hoeffding_interval": [
+              -0.04345290463400847,
+              0.05456130307150847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        }
+      }
+    },
+    {
+      "folder": "H1_last_post_sphere_schedule_0",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0006351470947265625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04837195675803191,
+              0.049642250947485034
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.008291244506835938,
+            "simultaneous_Hoeffding_interval": [
+              -0.040715859345922534,
+              0.05729834835959441
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.008291244506835938,
+            "simultaneous_Hoeffding_interval": [
+              -0.040715859345922534,
+              0.05729834835959441
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.008291244506835938,
+            "simultaneous_Hoeffding_interval": [
+              -0.040715859345922534,
+              0.05729834835959441
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0058727264404296875,
+            "simultaneous_Hoeffding_interval": [
+              -0.043134377412328784,
+              0.05487983029318816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.00572967529296875,
+            "simultaneous_Hoeffding_interval": [
+              -0.04327742855978972,
+              0.05473677914572722
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0058727264404296875,
+            "simultaneous_Hoeffding_interval": [
+              -0.043134377412328784,
+              0.05487983029318816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_output_sphere_schedule_0",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0001468658447265625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04886023800803191,
+              0.049153969697485034
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.000316619873046875,
+            "simultaneous_Hoeffding_interval": [
+              -0.048690483979711596,
+              0.049323723725805346
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.000171661376953125,
+            "simultaneous_Hoeffding_interval": [
+              -0.048835442475805346,
+              0.049178765229711596
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0010662078857421875,
+            "simultaneous_Hoeffding_interval": [
+              -0.047940895967016284,
+              0.05007331173850066
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0010662078857421875,
+            "simultaneous_Hoeffding_interval": [
+              -0.047940895967016284,
+              0.05007331173850066
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0004558563232421875,
+            "simultaneous_Hoeffding_interval": [
+              -0.048551247529516284,
+              0.04946296017600066
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": -0.000675201416015625,
+            "simultaneous_Hoeffding_interval": [
+              -0.049682305268774096,
+              0.048331902436742846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": -0.000629425048828125,
+            "simultaneous_Hoeffding_interval": [
+              -0.049636528901586596,
+              0.048377678803930346
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": -0.000629425048828125,
+            "simultaneous_Hoeffding_interval": [
+              -0.049636528901586596,
+              0.048377678803930346
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_joint_post_sphere_schedule_0",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.10070991516113281,
+            "simultaneous_Hoeffding_interval": [
+              0.05170281130837434,
+              0.14971701901389128
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.10070991516113281,
+            "simultaneous_Hoeffding_interval": [
+              0.05170281130837434,
+              0.14971701901389128
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.10070991516113281,
+            "simultaneous_Hoeffding_interval": [
+              0.05170281130837434,
+              0.14971701901389128
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.00284576416015625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04616133969260222,
+              0.05185286801291472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.00284576416015625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04616133969260222,
+              0.05185286801291472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.04783058166503906,
+            "simultaneous_Hoeffding_interval": [
+              -0.0011765221877194088,
+              0.09683768551779753
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.04783058166503906,
+            "simultaneous_Hoeffding_interval": [
+              -0.0011765221877194088,
+              0.09683768551779753
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.04783058166503906,
+            "simultaneous_Hoeffding_interval": [
+              -0.0011765221877194088,
+              0.09683768551779753
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_joint_post_axis_schedule_0",
+      "prior": "axis",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.09342193603515625,
+            "simultaneous_Hoeffding_interval": [
+              0.04441483218239778,
+              0.14242903988791472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.09342193603515625,
+            "simultaneous_Hoeffding_interval": [
+              0.04441483218239778,
+              0.14242903988791472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.09342193603515625,
+            "simultaneous_Hoeffding_interval": [
+              0.04441483218239778,
+              0.14242903988791472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.00240325927734375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04660384457541472,
+              0.05141036313010222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": -0.00106048583984375,
+            "simultaneous_Hoeffding_interval": [
+              -0.05006758969260222,
+              0.04794661801291472
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.04791259765625,
+            "simultaneous_Hoeffding_interval": [
+              -0.0010945061965084713,
+              0.09691970150900847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.04791259765625,
+            "simultaneous_Hoeffding_interval": [
+              -0.0010945061965084713,
+              0.09691970150900847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.04791259765625,
+            "simultaneous_Hoeffding_interval": [
+              -0.0010945061965084713,
+              0.09691970150900847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_joint_post_equal_support_schedule_0",
+      "prior": "equal_support",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.10584831237792969,
+            "simultaneous_Hoeffding_interval": [
+              0.056841208525171216,
+              0.15485541623068816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.10584831237792969,
+            "simultaneous_Hoeffding_interval": [
+              0.056841208525171216,
+              0.15485541623068816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.10584831237792969,
+            "simultaneous_Hoeffding_interval": [
+              0.056841208525171216,
+              0.15485541623068816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0070400238037109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.041967080049047534,
+              0.05604712765646941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0070400238037109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.041967080049047534,
+              0.05604712765646941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.05556297302246094,
+            "simultaneous_Hoeffding_interval": [
+              0.006555869169702466,
+              0.10457007687521941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.05556297302246094,
+            "simultaneous_Hoeffding_interval": [
+              0.006555869169702466,
+              0.10457007687521941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.05556297302246094,
+            "simultaneous_Hoeffding_interval": [
+              0.006555869169702466,
+              0.10457007687521941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": true,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_post_sphere_schedule_1",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0041637420654296875,
+            "simultaneous_Hoeffding_interval": [
+              -0.044843361787328784,
+              0.05317084591818816
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.004489898681640625,
+            "simultaneous_Hoeffding_interval": [
+              -0.044517205171117846,
+              0.053497002534399096
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": -0.0010089874267578125,
+            "simultaneous_Hoeffding_interval": [
+              -0.050016091279516284,
+              0.04799811642600066
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          },
+          "direct_development": {
+            "mean_error_reduction": -0.0010089874267578125,
+            "simultaneous_Hoeffding_interval": [
+              -0.050016091279516284,
+              0.04799811642600066
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0044403076171875,
+            "simultaneous_Hoeffding_interval": [
+              -0.04456679623557097,
+              0.05344741146994597
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0038909912109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04511611264182097,
+              0.05289809506369597
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0038909912109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04511611264182097,
+              0.05289809506369597
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_post_sphere_schedule_2",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.010293960571289062,
+            "simultaneous_Hoeffding_interval": [
+              -0.03871314328146941,
+              0.059301064424047534
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.010293960571289062,
+            "simultaneous_Hoeffding_interval": [
+              -0.03871314328146941,
+              0.059301064424047534
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.010293960571289062,
+            "simultaneous_Hoeffding_interval": [
+              -0.03871314328146941,
+              0.059301064424047534
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.00063323974609375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04837386410666472,
+              0.04964034359885222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.00063323974609375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04837386410666472,
+              0.04964034359885222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0076885223388671875,
+            "simultaneous_Hoeffding_interval": [
+              -0.041318581513891284,
+              0.05669562619162566
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0066280364990234375,
+            "simultaneous_Hoeffding_interval": [
+              -0.042379067353735034,
+              0.05563514035178191
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0076885223388671875,
+            "simultaneous_Hoeffding_interval": [
+              -0.041318581513891284,
+              0.05669562619162566
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_post_sphere_schedule_3",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.010591506958007812,
+            "simultaneous_Hoeffding_interval": [
+              -0.03841559689475066,
+              0.059598610810766284
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.009479522705078125,
+            "simultaneous_Hoeffding_interval": [
+              -0.039527581147680346,
+              0.058486626557836596
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.010591506958007812,
+            "simultaneous_Hoeffding_interval": [
+              -0.03841559689475066,
+              0.059598610810766284
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.001220703125,
+            "simultaneous_Hoeffding_interval": [
+              -0.04778640072775847,
+              0.05022780697775847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.00092315673828125,
+            "simultaneous_Hoeffding_interval": [
+              -0.04808394711447722,
+              0.04993026059103972
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.006084442138671875,
+            "simultaneous_Hoeffding_interval": [
+              -0.042922661714086596,
+              0.055091545991430346
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.006137847900390625,
+            "simultaneous_Hoeffding_interval": [
+              -0.042869255952367846,
+              0.055144951753149096
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0023441314697265625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04666297238303191,
+              0.051351235322485034
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_post_sphere_schedule_4",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.008693695068359375,
+            "simultaneous_Hoeffding_interval": [
+              -0.040313408784399096,
+              0.057700798921117846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.00795745849609375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04104964535666472,
+              0.05696456234885222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.00795745849609375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04104964535666472,
+              0.05696456234885222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0013027191162109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.047704384736547534,
+              0.05030982296896941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.00081634521484375,
+            "simultaneous_Hoeffding_interval": [
+              -0.04819075863791472,
+              0.04982344906760222
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0,
+            "simultaneous_Hoeffding_interval": [
+              -0.04900710385275847,
+              0.04900710385275847
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "identity"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.006397247314453125,
+            "simultaneous_Hoeffding_interval": [
+              -0.042609856538305346,
+              0.055404351167211596
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.006191253662109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.042815850190649096,
+              0.055198357514867846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.006191253662109375,
+            "simultaneous_Hoeffding_interval": [
+              -0.042815850190649096,
+              0.055198357514867846
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        }
+      }
+    },
+    {
+      "folder": "C_last_post_sphere_schedule_5",
+      "prior": "sphere",
+      "groups": {
+        "F": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0053958892822265625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04361121457053191,
+              0.054402993134985034
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0063648223876953125,
+            "simultaneous_Hoeffding_interval": [
+              -0.04264228146506316,
+              0.055371926240453784
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0063648223876953125,
+            "simultaneous_Hoeffding_interval": [
+              -0.04264228146506316,
+              0.055371926240453784
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        },
+        "G": {
+          "four_statistic": {
+            "mean_error_reduction": -0.0002460479736328125,
+            "simultaneous_Hoeffding_interval": [
+              -0.049253151826391284,
+              0.04876105587912566
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0001735687255859375,
+            "simultaneous_Hoeffding_interval": [
+              -0.048833535127172534,
+              0.04918067257834441
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_10.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0005130767822265625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04849402707053191,
+              0.049520180634985034
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        },
+        "FG": {
+          "four_statistic": {
+            "mean_error_reduction": 0.0043888092041015625,
+            "simultaneous_Hoeffding_interval": [
+              -0.04461829464865691,
+              0.053395913056860034
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_0.1"
+          },
+          "development_moment": {
+            "mean_error_reduction": 0.0050258636474609375,
+            "simultaneous_Hoeffding_interval": [
+              -0.043981240205297534,
+              0.05403296750021941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          },
+          "direct_development": {
+            "mean_error_reduction": 0.0050258636474609375,
+            "simultaneous_Hoeffding_interval": [
+              -0.043981240205297534,
+              0.05403296750021941
+            ],
+            "family_failure_probability": 0.05,
+            "planned_comparison_count": 468,
+            "independent_evaluation_scenes": 8192,
+            "radius": 0.04900710385275847,
+            "positive_lower_bound": false,
+            "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee.",
+            "selected_candidate": "spectral_eta_1.0"
+          }
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 57.24783842999932
+}

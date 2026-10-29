@@ -1,0 +1,502 @@
+{
+  "kind": "known-answer controls, no SNN training or data download",
+  "finite_Gaussian": [
+    {
+      "response_mean": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p": 1,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.3152608871459961,
+      "direct_training_MC_standard_error": 0.002161265345480491,
+      "conditional_exact_law": {
+        "samples": 1,
+        "predicted_error": 0.3133787123725331,
+        "per_task_error": [
+          0.2950799345836451,
+          0.3088871813472122,
+          0.3200181334892123,
+          0.34797682854629675,
+          0.2966046152557433,
+          0.30014662937510955,
+          0.32162062355376536,
+          0.3166957528292806
+        ],
+        "integration": "analytic p=1 arcsine identity",
+        "inner_draws": 0,
+        "inner_MC_standard_error": 0.0,
+        "scope": "Exact conditional Gaussian risk averaged over the supplied independent reference pool. Reference-pool and fitted-parameter uncertainty remain."
+      },
+      "absolute_difference": 0.0018821747734629746
+    },
+    {
+      "response_mean": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p": 8,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.18163204193115234,
+      "direct_training_MC_standard_error": 0.0008673004925087424,
+      "conditional_exact_law": {
+        "samples": 8,
+        "predicted_error": 0.18261353980802342,
+        "per_task_error": [
+          0.16685003171999147,
+          0.18680099523483373,
+          0.182595944760158,
+          0.21701113010057804,
+          0.16902638718869334,
+          0.1672707309008324,
+          0.18404636043951939,
+          0.1873067381195813
+        ],
+        "integration": "exact half-normal/Rademacher conditional law, normal noise integrated analytically",
+        "inner_draws": 4096,
+        "inner_MC_standard_error": 0.00030594214912343167,
+        "inner_Hoeffding_95_radius": 0.02122033618344718,
+        "response_mean_included": false,
+        "scope": "No CLT approximation to the training weights. Numerical integration, supplied-reference sampling and fitted Gaussian parameter uncertainty are distinct."
+      },
+      "absolute_difference": 0.0009814978768710736
+    },
+    {
+      "response_mean": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p": 32,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.14720487594604492,
+      "direct_training_MC_standard_error": 0.0006044751009586932,
+      "conditional_exact_law": {
+        "samples": 32,
+        "predicted_error": 0.14803835376812566,
+        "per_task_error": [
+          0.13885687414815073,
+          0.1670236471614741,
+          0.13766827193639894,
+          0.1687500509944088,
+          0.14192225917119575,
+          0.137455405292023,
+          0.1388608314578815,
+          0.1537694899834723
+        ],
+        "integration": "exact half-normal/Rademacher conditional law, normal noise integrated analytically",
+        "inner_draws": 4096,
+        "inner_MC_standard_error": 6.272333842269029e-05,
+        "inner_Hoeffding_95_radius": 0.02122033618344718,
+        "response_mean_included": false,
+        "scope": "No CLT approximation to the training weights. Numerical integration, supplied-reference sampling and fitted Gaussian parameter uncertainty are distinct."
+      },
+      "absolute_difference": 0.000833477822080736
+    },
+    {
+      "response_mean": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p": 128,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.13480710983276367,
+      "direct_training_MC_standard_error": 0.00035484685667786154,
+      "conditional_exact_law": {
+        "samples": 128,
+        "predicted_error": 0.1353307272727079,
+        "per_task_error": [
+          0.13448522168136803,
+          0.16114607191557861,
+          0.11472276406868331,
+          0.1455507245735619,
+          0.13908326975223617,
+          0.13201811608246442,
+          0.11695521913699256,
+          0.13868443097077834
+        ],
+        "integration": "exact half-normal/Rademacher conditional law, normal noise integrated analytically",
+        "inner_draws": 4096,
+        "inner_MC_standard_error": 1.027052378117465e-05,
+        "inner_Hoeffding_95_radius": 0.02122033618344718,
+        "response_mean_included": false,
+        "scope": "No CLT approximation to the training weights. Numerical integration, supplied-reference sampling and fitted Gaussian parameter uncertainty are distinct."
+      },
+      "absolute_difference": 0.0005236174399442239
+    },
+    {
+      "response_mean": [
+        0.5,
+        -0.3,
+        0.8
+      ],
+      "p": 1,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.3838005065917969,
+      "direct_training_MC_standard_error": 0.0023037110341345914,
+      "conditional_exact_law": {
+        "samples": 1,
+        "predicted_error": 0.3831850177589667,
+        "per_task_error": [
+          0.3508532264501413,
+          0.36528231480709283,
+          0.3912048270628831,
+          0.43919434200956825,
+          0.3556433894262129,
+          0.3864686839719813,
+          0.40045768346437144,
+          0.37637567487948226
+        ],
+        "integration": "exact half-normal/Rademacher conditional law, normal noise integrated analytically",
+        "inner_draws": 4096,
+        "inner_MC_standard_error": 0.0012503034813463481,
+        "inner_Hoeffding_95_radius": 0.02122033618344718,
+        "response_mean_included": true,
+        "scope": "No CLT approximation to the training weights. Numerical integration, supplied-reference sampling and fitted Gaussian parameter uncertainty are distinct."
+      },
+      "absolute_difference": 0.0006154888328301911
+    },
+    {
+      "response_mean": [
+        0.5,
+        -0.3,
+        0.8
+      ],
+      "p": 8,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.2467327117919922,
+      "direct_training_MC_standard_error": 0.0011368300492223726,
+      "conditional_exact_law": {
+        "samples": 8,
+        "predicted_error": 0.24712819294253252,
+        "per_task_error": [
+          0.19149247654035825,
+          0.2076241317628255,
+          0.2572702723682864,
+          0.35492789780905687,
+          0.198269716354447,
+          0.27578391149359816,
+          0.27006570585667344,
+          0.22159143135501427
+        ],
+        "integration": "exact half-normal/Rademacher conditional law, normal noise integrated analytically",
+        "inner_draws": 4096,
+        "inner_MC_standard_error": 0.0006037161217574883,
+        "inner_Hoeffding_95_radius": 0.02122033618344718,
+        "response_mean_included": true,
+        "scope": "No CLT approximation to the training weights. Numerical integration, supplied-reference sampling and fitted Gaussian parameter uncertainty are distinct."
+      },
+      "absolute_difference": 0.0003954811505403333
+    },
+    {
+      "response_mean": [
+        0.5,
+        -0.3,
+        0.8
+      ],
+      "p": 32,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.19982528686523438,
+      "direct_training_MC_standard_error": 0.0005877431057437068,
+      "conditional_exact_law": {
+        "samples": 32,
+        "predicted_error": 0.1993547635173782,
+        "per_task_error": [
+          0.12753109191951653,
+          0.1482870056300293,
+          0.20758130091068552,
+          0.34102811158015267,
+          0.13791243347339135,
+          0.2444358328986838,
+          0.22374484887408097,
+          0.1643174828524852
+        ],
+        "integration": "exact half-normal/Rademacher conditional law, normal noise integrated analytically",
+        "inner_draws": 4096,
+        "inner_MC_standard_error": 0.00019459177205666635,
+        "inner_Hoeffding_95_radius": 0.02122033618344718,
+        "response_mean_included": true,
+        "scope": "No CLT approximation to the training weights. Numerical integration, supplied-reference sampling and fitted Gaussian parameter uncertainty are distinct."
+      },
+      "absolute_difference": 0.00047052334785618877
+    },
+    {
+      "response_mean": [
+        0.5,
+        -0.3,
+        0.8
+      ],
+      "p": 128,
+      "direct_training_repetitions": 2048,
+      "direct_risk": 0.17919540405273438,
+      "direct_training_MC_standard_error": 0.000261043110073603,
+      "conditional_exact_law": {
+        "samples": 128,
+        "predicted_error": 0.17915632897530057,
+        "per_task_error": [
+          0.09980545394045359,
+          0.12838447693480903,
+          0.18213585612221558,
+          0.3451001931016701,
+          0.11408275515545756,
+          0.23074628886503,
+          0.19997128241355075,
+          0.13302432526921773
+        ],
+        "integration": "exact half-normal/Rademacher conditional law, normal noise integrated analytically",
+        "inner_draws": 4096,
+        "inner_MC_standard_error": 8.302294343140153e-05,
+        "inner_Hoeffding_95_radius": 0.02122033618344718,
+        "response_mean_included": true,
+        "scope": "No CLT approximation to the training weights. Numerical integration, supplied-reference sampling and fitted Gaussian parameter uncertainty are distinct."
+      },
+      "absolute_difference": 3.907507743380889e-05
+    }
+  ],
+  "task_support_Hermite": {
+    "dimension": 16,
+    "linear_coefficient": 0.1,
+    "same_Psi_for_every_task": 1.01,
+    "same_Phi_for_every_task": 0.1,
+    "critical_equal_support": 4.08248290463863,
+    "rows": [
+      {
+        "support": 1,
+        "exact_teacher_projection": -0.24594655185499345,
+        "empirical_teacher_projection": -0.2430114938746112,
+        "exact_projection_MC_standard_error": 0.00217888766763071,
+        "exact_higher_alignment_power": 0.10610329539459691,
+        "crossfit_higher_alignment_power": 0.10781977569237745
+      },
+      {
+        "support": 2,
+        "exact_teacher_projection": -0.08307904788735339,
+        "empirical_teacher_projection": -0.0809098480411248,
+        "exact_projection_MC_standard_error": 0.002239528825224327,
+        "exact_higher_alignment_power": 0.026525823848649207,
+        "crossfit_higher_alignment_power": 0.0264143877604223
+      },
+      {
+        "support": 3,
+        "exact_teacher_projection": -0.02878987989814017,
+        "empirical_teacher_projection": -0.02749494572773077,
+        "exact_projection_MC_standard_error": 0.0022462982246525625,
+        "exact_higher_alignment_power": 0.011789255043844114,
+        "crossfit_higher_alignment_power": 0.011767964686897983
+      },
+      {
+        "support": 4,
+        "exact_teacher_projection": -0.0016452959035334583,
+        "empirical_teacher_projection": -0.002230675765807824,
+        "exact_projection_MC_standard_error": 0.002247217493925977,
+        "exact_higher_alignment_power": 0.0066314559621623095,
+        "crossfit_higher_alignment_power": 0.0065218137656957295
+      },
+      {
+        "support": 5,
+        "exact_teacher_projection": 0.014641454493230548,
+        "empirical_teacher_projection": 0.016635894488634576,
+        "exact_projection_MC_standard_error": 0.00224698200683753,
+        "exact_higher_alignment_power": 0.004244131815783875,
+        "crossfit_higher_alignment_power": 0.004121278724643119
+      },
+      {
+        "support": 8,
+        "exact_teacher_projection": 0.03907158008837655,
+        "empirical_teacher_projection": 0.04075215157189713,
+        "exact_projection_MC_standard_error": 0.002245521555930156,
+        "exact_higher_alignment_power": 0.0016578639905405754,
+        "crossfit_higher_alignment_power": 0.001537365820684292
+      },
+      {
+        "support": 16,
+        "exact_teacher_projection": 0.059430018084331564,
+        "empirical_teacher_projection": 0.06109562216491682,
+        "exact_projection_MC_standard_error": 0.002243287847056744,
+        "exact_higher_alignment_power": 0.00041446599763514456,
+        "crossfit_higher_alignment_power": 0.00034706688924083254
+      }
+    ],
+    "scope": "Known Gaussian latents and explicit nonlinear code; no SNN findings. The k=4 projection is near zero and empirical sign is not treated as proof; the sign transition follows the exact identity."
+  },
+  "task_energy_spectrum": {
+    "target_energy_fraction": 0.009900990099009901,
+    "target_capacity": 1.0000000000000002,
+    "harmonic_reference": {
+      "harmonic": [
+        1.0000000000000004
+      ],
+      "optimal_linear": [
+        1.0000000000000002
+      ],
+      "gap": [
+        -2.220446049250313e-16
+      ],
+      "scope": "Unit-variance centered regression targets and exact population moments. Harmonic value is the best scalar-calibrated readout in the mean/Hebbian direction; not classification accuracy."
+    },
+    "PCR_noise_control": {
+      "absolute_cutoff": 0.02,
+      "rows": [
+        {
+          "added_observation_noise_variance": 0.0,
+          "retained_modes": 1,
+          "PCR_capacity": [
+            0.0
+          ],
+          "unrestricted_capacity": [
+            1.0000000000000002
+          ]
+        },
+        {
+          "added_observation_noise_variance": 0.005,
+          "retained_modes": 1,
+          "PCR_capacity": [
+            0.0
+          ],
+          "unrestricted_capacity": [
+            0.6666666666666669
+          ]
+        },
+        {
+          "added_observation_noise_variance": 0.009,
+          "retained_modes": 1,
+          "PCR_capacity": [
+            0.0
+          ],
+          "unrestricted_capacity": [
+            0.5263157894736843
+          ]
+        },
+        {
+          "added_observation_noise_variance": 0.011,
+          "retained_modes": 2,
+          "PCR_capacity": [
+            0.47619047619047633
+          ],
+          "unrestricted_capacity": [
+            0.47619047619047633
+          ]
+        },
+        {
+          "added_observation_noise_variance": 0.015,
+          "retained_modes": 2,
+          "PCR_capacity": [
+            0.4000000000000001
+          ],
+          "unrestricted_capacity": [
+            0.4000000000000001
+          ]
+        },
+        {
+          "added_observation_noise_variance": 0.03,
+          "retained_modes": 2,
+          "PCR_capacity": [
+            0.25000000000000006
+          ],
+          "unrestricted_capacity": [
+            0.25000000000000006
+          ]
+        },
+        {
+          "added_observation_noise_variance": 0.1,
+          "retained_modes": 2,
+          "PCR_capacity": [
+            0.09090909090909093
+          ],
+          "unrestricted_capacity": [
+            0.09090909090909093
+          ]
+        }
+      ],
+      "scope": "Known fixed representation plus independent isotropic readout noise. PCR support changes with noise; an increase in PCR score is not an increase in unrestricted information."
+    },
+    "capacity_after_invertible_whitening": 1.0,
+    "paired_finite_p_curves": [
+      {
+        "p": 1,
+        "raw_Hebbian": 0.4936981201171875,
+        "whitened_Hebbian": 0.242279052734375,
+        "conditional_scene_gain_interval": {
+          "mean_error_reduction": 0.2514190673828125,
+          "simultaneous_Hoeffding_interval": [
+            0.2162188385876069,
+            0.28661929617801807
+          ],
+          "family_failure_probability": 0.05,
+          "planned_comparison_count": 4,
+          "independent_evaluation_scenes": 8192,
+          "radius": 0.03520022879520559,
+          "positive_lower_bound": true,
+          "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee."
+        }
+      },
+      {
+        "p": 8,
+        "raw_Hebbian": 0.4855194091796875,
+        "whitened_Hebbian": 0.13718414306640625,
+        "conditional_scene_gain_interval": {
+          "mean_error_reduction": 0.34833526611328125,
+          "simultaneous_Hoeffding_interval": [
+            0.3131350373180757,
+            0.3835354949084868
+          ],
+          "family_failure_probability": 0.05,
+          "planned_comparison_count": 4,
+          "independent_evaluation_scenes": 8192,
+          "radius": 0.03520022879520559,
+          "positive_lower_bound": true,
+          "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee."
+        }
+      },
+      {
+        "p": 32,
+        "raw_Hebbian": 0.4574432373046875,
+        "whitened_Hebbian": 0.04004669189453125,
+        "conditional_scene_gain_interval": {
+          "mean_error_reduction": 0.41739654541015625,
+          "simultaneous_Hoeffding_interval": [
+            0.3821963166149507,
+            0.4525967742053618
+          ],
+          "family_failure_probability": 0.05,
+          "planned_comparison_count": 4,
+          "independent_evaluation_scenes": 8192,
+          "radius": 0.03520022879520559,
+          "positive_lower_bound": true,
+          "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee."
+        }
+      },
+      {
+        "p": 128,
+        "raw_Hebbian": 0.37496185302734375,
+        "whitened_Hebbian": 0.020843505859375,
+        "conditional_scene_gain_interval": {
+          "mean_error_reduction": 0.35411834716796875,
+          "simultaneous_Hoeffding_interval": [
+            0.3189181183727632,
+            0.3893185759631743
+          ],
+          "family_failure_probability": 0.05,
+          "planned_comparison_count": 4,
+          "independent_evaluation_scenes": 8192,
+          "radius": 0.03520022879520559,
+          "positive_lower_bound": true,
+          "scope": "Distribution-free conditional bound for preselected frozen readers and fixed task/train collections, over independent evaluation scenes only. No training-seed or architecture guarantee."
+        }
+      }
+    ],
+    "scope": "Known code and fixed observation-noise/PCR protocol; distinct from adding input noise to a nonlinear trained SNN."
+  },
+  "conditional_gain_coverage": {
+    "law": "paired Bernoulli scene losses with exact gain 0.2",
+    "trials": 500,
+    "scenes_per_trial": 256,
+    "empirical_coverage": 1.0,
+    "declared_confidence": 0.95,
+    "scope": "Coverage calibration; valid bound comes from the bounded-loss Hoeffding proof, not this simulation."
+  },
+  "elapsed_seconds": 1.2833570080001664
+}

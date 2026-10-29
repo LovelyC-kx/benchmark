@@ -1,0 +1,27 @@
+test_count_matching_and_zero_jitter (test_theory.Theory.test_count_matching_and_zero_jitter) ... ok
+test_exact_weight_moments (test_theory.Theory.test_exact_weight_moments) ... ok
+test_forecast_scale_invariance (test_theory.Theory.test_forecast_scale_invariance) ... ok
+test_gaussian_information_data_processing (test_theory.Theory.test_gaussian_information_data_processing) ... ok
+test_hermite_task_mean_sign_reversal (test_theory.Theory.test_hermite_task_mean_sign_reversal) ... ok
+test_incompatible_joint_rejected (test_theory.Theory.test_incompatible_joint_rejected) ... ok
+test_invertible_spectral_candidates (test_theory.Theory.test_invertible_spectral_candidates) ... ok
+test_isotropic_noiseless (test_theory.Theory.test_isotropic_noiseless) ... ok
+test_known_gaussian_bottleneck_drops_target (test_theory.Theory.test_known_gaussian_bottleneck_drops_target) ... ok
+test_nonisotropic_noiseless (test_theory.Theory.test_nonisotropic_noiseless) ... ok
+test_orthogonal_time_transport (test_theory.Theory.test_orthogonal_time_transport) ... ok
+test_residual_task_alignment_identity (test_theory.Theory.test_residual_task_alignment_identity) ... ok
+test_rotational_and_global_scale_invariance (test_theory.Theory.test_rotational_and_global_scale_invariance) ... ok
+test_rrr_rank_constraint (test_theory.Theory.test_rrr_rank_constraint) ... ok
+test_rrr_rank_zero (test_theory.Theory.test_rrr_rank_zero) ... ok
+test_selection_has_no_evaluation_argument (test_theory.Theory.test_selection_has_no_evaluation_argument) ... ok
+test_singular_latents_status (test_theory.Theory.test_singular_latents_status) ... ok
+test_spectral_transport (test_theory.Theory.test_spectral_transport) ... ok
+test_task_prior_retains_all_directions (test_theory.Theory.test_task_prior_retains_all_directions) ... ok
+test_tie_is_not_correct (test_theory.Theory.test_tie_is_not_correct) ... ok
+test_zero_code_half_error (test_theory.Theory.test_zero_code_half_error) ... ok
+test_zero_phi_reference_is_not_absence_claim (test_theory.Theory.test_zero_phi_reference_is_not_absence_claim) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.046s
+
+OK

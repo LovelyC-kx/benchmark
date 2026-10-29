@@ -1,0 +1,83 @@
+{
+  "selected_sources": {
+    "superposition": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "b6d9bbfe94941bcb496b1392036a343270b92a98",
+      "read_scope": "Full selected notebook obtained; source/data/model/loss/training code cells reviewed; only cell 7 function definitions executed on fixed tensors; no author training."
+    },
+    "rhythm_align": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "4ad69a4ca1bae31149f533c4a54d1aaa4788ec8d",
+      "read_scope": "Selected slicing, resampling and event-alignment contracts read; first two helpers executed on artificial arrays. Not all figure workflows."
+    },
+    "rhythm_model": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "b1e16db1b307e2aed5bbe2dbe2c05a2842b59f8b",
+      "read_scope": "Entire selected 237-line file read; state/aux update and optional continuation arguments reviewed. No model training."
+    },
+    "MNE": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "3b5078649397d0f95b5188a4d6de3771e8d2cfb5",
+      "read_scope": "GeneralizingEstimator and selected _gl_transform/_gl_init_pred/_gl_score routing read. Two routing functions executed with fake estimators; no whole MNE pipeline."
+    },
+    "rotation_model": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "b752dbebb23713afd49885ce9aa749d66abc4d4a",
+      "read_scope": "Complete file obtained; input/recurrent/state-iteration setup selected for comparison; top-level script not executed."
+    },
+    "rotation_helpers": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "f79a59ff6f1662db47dca86b489b27e1d0ea665e",
+      "read_scope": "Selected split, zscore, angle and cross_auc_clf functions read; not complete neural experiments or all functions."
+    },
+    "RhythmSNN": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "8bae8f9b3d432663422927062b48f75655977cca",
+      "read_scope": "Selected membrane/ALIF skip-update functions and mask construction read. Two functions executed; ALIF .cuda calls adapted to CPU placement only; no author training."
+    },
+    "SciPy": {
+      "blob_bytes_match": true,
+      "git_blob_sha": "e3584b85a0be556b1d43db88ba51447e9d62f1fc",
+      "read_scope": "Entire selected function/documentation read; corresponding installed SciPy 1.17.0 function executed to verify returned scale semantics."
+    }
+  },
+  "source_count": 8,
+  "superposition_four_terms_max_abs": 2.7755575615628914e-17,
+  "rhythm_wholly_outside_slice": {
+    "requested_length": 2,
+    "returned_length": 4,
+    "scope": "Selected helper edge case. Does not establish that paper analyses requested such a window."
+  },
+  "offline_linear_resampling_example": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      1.0
+    ]
+  ],
+  "MNE_source_time_target_time_axes": {
+    "shape": [
+      3,
+      2,
+      4
+    ],
+    "max_abs": 0.0
+  },
+  "RhythmSNN_OFF_state": {
+    "membrane": 0.20000000298023224,
+    "event": 0.0,
+    "ALIF_membrane": 0.20000000298023224,
+    "ALIF_aux_before": 0.5,
+    "ALIF_aux_after": 0.452418714761734,
+    "scope": "Two extracted update functions; Tensor.cuda replaced by identity only for CPU device placement. No author training/SG backward/model runs."
+  },
+  "SciPy_orthogonal_scale_semantics": {
+    "returned_scale": 175.8836837868862,
+    "sum_singular_values": 175.88368378688617,
+    "similarity_multiplier_would_be": 0.5,
+    "matrix_determinant": 1.0000000000000009
+  },
+  "scope": "Pinned source checks and selected functions. No complete author paper reproduction, training, EEG or hardware."
+}

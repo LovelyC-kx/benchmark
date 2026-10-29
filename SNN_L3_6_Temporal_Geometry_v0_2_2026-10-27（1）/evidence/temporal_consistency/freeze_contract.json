@@ -1,0 +1,30 @@
+{
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "map_sha256": "e15fb7c626b8f7a49e24b5027a7d51bdf38021e0c0212c0bba793735eb432d5c",
+  "times": [
+    2,
+    5,
+    8,
+    12,
+    13,
+    15
+  ],
+  "families": [
+    "center",
+    "orthogonal",
+    "affine"
+  ],
+  "paired_calibration": [
+    512,
+    "geometry_fit",
+    7600000
+  ],
+  "evaluation": [
+    2048,
+    "development_test",
+    7700000
+  ],
+  "map_direction": "a:b maps observation at a to observation at b",
+  "frozen_before_evaluation_generation": true,
+  "labels_used_for_maps": false
+}

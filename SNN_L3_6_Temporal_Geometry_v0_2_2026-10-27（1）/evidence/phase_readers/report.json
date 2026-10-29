@@ -1,0 +1,1001 @@
+{
+  "module": "L3.6 causal phase-conditioned observer closure",
+  "known_phase_control": {
+    "raw_MSE": 0.9918867411315626,
+    "phase_conditioned_MSE": 0.00010469745502544024,
+    "phase_observation": "Exact supplied current phase; known-answer measurement permission. No biological or learned-SNN oscillation inferred."
+  },
+  "results": {
+    "first_post": {
+      "H1": {
+        "chosen": "pooled",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.34625462123325895,
+            "MSE": 0.8032285145021776
+          },
+          "calendar": {
+            "classification_error": 0.34770638602120535,
+            "MSE": 0.8020165965524341
+          },
+          "source_age": {
+            "classification_error": 0.34770638602120535,
+            "MSE": 0.8020165965524343
+          },
+          "input_phase": {
+            "classification_error": 0.34802137102399555,
+            "MSE": 0.8027228514937597
+          },
+          "state_phase": {
+            "classification_error": 0.3444279261997768,
+            "MSE": 0.7954045955272124
+          },
+          "phase_only": {
+            "classification_error": 0.50384521484375,
+            "MSE": 1.0221527028868735
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0,
+          "interval": [
+            -0.08213315265245207,
+            0.08213315265245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H2": {
+        "chosen": "state_phase",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.23157348632812502,
+            "MSE": 0.4747499547966059
+          },
+          "calendar": {
+            "classification_error": 0.24166259765625,
+            "MSE": 0.47555223237260247
+          },
+          "source_age": {
+            "classification_error": 0.237933349609375,
+            "MSE": 0.4882606271264496
+          },
+          "input_phase": {
+            "classification_error": 0.2340728759765625,
+            "MSE": 0.450791825959587
+          },
+          "state_phase": {
+            "classification_error": 0.235888671875,
+            "MSE": 0.48324687991792015
+          },
+          "phase_only": {
+            "classification_error": 0.498724365234375,
+            "MSE": 1.014998197002503
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": -0.004315185546875001,
+          "interval": [
+            -0.08644833819932707,
+            0.07781796710557706
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H3": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.28776810385964136,
+            "MSE": 0.6791507232120071
+          },
+          "calendar": {
+            "classification_error": 0.30046636408025573,
+            "MSE": 0.7161387495023672
+          },
+          "source_age": {
+            "classification_error": 0.290344931862571,
+            "MSE": 0.6737656836469851
+          },
+          "input_phase": {
+            "classification_error": 0.29030088944868615,
+            "MSE": 0.6777727903658155
+          },
+          "state_phase": {
+            "classification_error": 0.2908368544145064,
+            "MSE": 0.6865369574859984
+          },
+          "phase_only": {
+            "classification_error": 0.49415865811434656,
+            "MSE": 1.006946266057884
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": -0.0025768280029296866,
+          "interval": [
+            -0.08470998065538175,
+            0.07955632464952238
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H4": {
+        "chosen": "pooled",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.32293631813742896,
+            "MSE": 0.716066292587779
+          },
+          "calendar": {
+            "classification_error": 0.349533427845348,
+            "MSE": 0.8397451004024501
+          },
+          "source_age": {
+            "classification_error": 0.32740870389071375,
+            "MSE": 0.7924687842210607
+          },
+          "input_phase": {
+            "classification_error": 0.32470460371537646,
+            "MSE": 0.7593057030777852
+          },
+          "state_phase": {
+            "classification_error": 0.32536194541237573,
+            "MSE": 0.7340315352945832
+          },
+          "phase_only": {
+            "classification_error": 0.49958003651012073,
+            "MSE": 0.9954792828846335
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0,
+          "interval": [
+            -0.08213315265245207,
+            0.08213315265245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "C": {
+        "chosen": "pooled",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.20356369018554688,
+            "MSE": 0.44020663104987967
+          },
+          "calendar": {
+            "classification_error": 0.206573486328125,
+            "MSE": 0.40270851663088214
+          },
+          "source_age": {
+            "classification_error": 0.206573486328125,
+            "MSE": 0.40270851663088336
+          },
+          "input_phase": {
+            "classification_error": 0.206573486328125,
+            "MSE": 0.4027085166308795
+          },
+          "state_phase": {
+            "classification_error": 0.2099151611328125,
+            "MSE": 0.4632737794724609
+          },
+          "phase_only": {
+            "classification_error": 0.50250244140625,
+            "MSE": 0.9958399765850172
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0,
+          "interval": [
+            -0.08213315265245207,
+            0.08213315265245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      }
+    },
+    "last_post": {
+      "H1": {
+        "chosen": "calendar",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.48199353899274555,
+            "MSE": 1.0236914091208549
+          },
+          "calendar": {
+            "classification_error": 0.47525678362165175,
+            "MSE": 1.0245372606374248
+          },
+          "source_age": {
+            "classification_error": 0.47525678362165175,
+            "MSE": 1.0245372606374248
+          },
+          "input_phase": {
+            "classification_error": 0.47930690220424105,
+            "MSE": 1.0255617945469422
+          },
+          "state_phase": {
+            "classification_error": 0.4783041817801339,
+            "MSE": 1.0247536870790142
+          },
+          "phase_only": {
+            "classification_error": 0.50384521484375,
+            "MSE": 1.0221527028868735
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.00673675537109375,
+          "interval": [
+            -0.07539639728135832,
+            0.08886990802354582
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H2": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.413153076171875,
+            "MSE": 0.9272358276658323
+          },
+          "calendar": {
+            "classification_error": 0.4251861572265625,
+            "MSE": 0.9566660931327007
+          },
+          "source_age": {
+            "classification_error": 0.413677978515625,
+            "MSE": 0.9478664164955642
+          },
+          "input_phase": {
+            "classification_error": 0.417919921875,
+            "MSE": 0.9417100186444766
+          },
+          "state_phase": {
+            "classification_error": 0.4191802978515625,
+            "MSE": 0.947576044251308
+          },
+          "phase_only": {
+            "classification_error": 0.498724365234375,
+            "MSE": 1.014998197002503
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": -0.0005249023437499991,
+          "interval": [
+            -0.08265805499620206,
+            0.08160825030870207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H3": {
+        "chosen": "pooled",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.4217702692205255,
+            "MSE": 0.977012777345827
+          },
+          "calendar": {
+            "classification_error": 0.4220511696555398,
+            "MSE": 0.9833498101803755
+          },
+          "source_age": {
+            "classification_error": 0.41231536865234375,
+            "MSE": 0.9651302200884055
+          },
+          "input_phase": {
+            "classification_error": 0.42640235207297583,
+            "MSE": 0.9821208319350215
+          },
+          "state_phase": {
+            "classification_error": 0.418350566517223,
+            "MSE": 0.9717157812075399
+          },
+          "phase_only": {
+            "classification_error": 0.49415865811434656,
+            "MSE": 1.006946266057884
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0,
+          "interval": [
+            -0.08213315265245207,
+            0.08213315265245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H4": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.44719019803133875,
+            "MSE": 0.9758380531883544
+          },
+          "calendar": {
+            "classification_error": 0.4499137184836648,
+            "MSE": 1.023934684650738
+          },
+          "source_age": {
+            "classification_error": 0.4326953887939453,
+            "MSE": 0.9611542900837692
+          },
+          "input_phase": {
+            "classification_error": 0.44553115151145245,
+            "MSE": 0.9804346860178791
+          },
+          "state_phase": {
+            "classification_error": 0.44624085859818885,
+            "MSE": 0.9871711148589903
+          },
+          "phase_only": {
+            "classification_error": 0.49958003651012073,
+            "MSE": 0.9954792828846335
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.014494809237393467,
+          "interval": [
+            -0.0676383434150586,
+            0.09662796188984553
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "C": {
+        "chosen": "state_phase",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.41455841064453125,
+            "MSE": 0.9188004363947458
+          },
+          "calendar": {
+            "classification_error": 0.4165916442871094,
+            "MSE": 0.9258175487958451
+          },
+          "source_age": {
+            "classification_error": 0.4165916442871094,
+            "MSE": 0.9258175487958442
+          },
+          "input_phase": {
+            "classification_error": 0.4165916442871094,
+            "MSE": 0.9258175487958435
+          },
+          "state_phase": {
+            "classification_error": 0.419189453125,
+            "MSE": 0.9421246106085284
+          },
+          "phase_only": {
+            "classification_error": 0.50250244140625,
+            "MSE": 0.9958399765850172
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": -0.00463104248046875,
+          "interval": [
+            -0.08676419513292082,
+            0.07750211017198332
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      }
+    },
+    "first_spike": {
+      "H1": {
+        "chosen": "calendar",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.5009798322405133,
+            "MSE": 1.0227907066759707
+          },
+          "calendar": {
+            "classification_error": 0.4942844935825893,
+            "MSE": 1.0211908897392177
+          },
+          "source_age": {
+            "classification_error": 0.4942844935825893,
+            "MSE": 1.0211908897392177
+          },
+          "input_phase": {
+            "classification_error": 0.4987444196428571,
+            "MSE": 1.022952601267443
+          },
+          "state_phase": {
+            "classification_error": 0.4975324358258929,
+            "MSE": 1.0254902161509547
+          },
+          "phase_only": {
+            "classification_error": 0.50384521484375,
+            "MSE": 1.0221527028868735
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.006695338657924107,
+          "interval": [
+            -0.07543781399452795,
+            0.08882849131037618
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H2": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.47887268066406247,
+            "MSE": 1.0019740542741395
+          },
+          "calendar": {
+            "classification_error": 0.495147705078125,
+            "MSE": 1.025916496591054
+          },
+          "source_age": {
+            "classification_error": 0.4773193359375,
+            "MSE": 1.0087621651100465
+          },
+          "input_phase": {
+            "classification_error": 0.4860595703125,
+            "MSE": 1.0101083914514306
+          },
+          "state_phase": {
+            "classification_error": 0.48344726562499996,
+            "MSE": 1.011092900335348
+          },
+          "phase_only": {
+            "classification_error": 0.498724365234375,
+            "MSE": 1.014998197002503
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0015533447265624997,
+          "interval": [
+            -0.08057980792588956,
+            0.08368649737901457
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H3": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.4803905487060547,
+            "MSE": 1.0041099992764302
+          },
+          "calendar": {
+            "classification_error": 0.4780223152854226,
+            "MSE": 1.001419813391736
+          },
+          "source_age": {
+            "classification_error": 0.47371482849121094,
+            "MSE": 0.9952468325746402
+          },
+          "input_phase": {
+            "classification_error": 0.48038534684614703,
+            "MSE": 1.0030633500961148
+          },
+          "state_phase": {
+            "classification_error": 0.47681340304288,
+            "MSE": 1.007923464443354
+          },
+          "phase_only": {
+            "classification_error": 0.49415865811434656,
+            "MSE": 1.006946266057884
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.006675720214843751,
+          "interval": [
+            -0.07545743243760832,
+            0.08880887286729582
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H4": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.4935573231090199,
+            "MSE": 0.9953922833183854
+          },
+          "calendar": {
+            "classification_error": 0.5007553100585938,
+            "MSE": 1.0284762813704824
+          },
+          "source_age": {
+            "classification_error": 0.4806945107199929,
+            "MSE": 1.017796811703347
+          },
+          "input_phase": {
+            "classification_error": 0.49364627491344104,
+            "MSE": 1.0243438089008055
+          },
+          "state_phase": {
+            "classification_error": 0.4883265061811968,
+            "MSE": 1.0038583502790996
+          },
+          "phase_only": {
+            "classification_error": 0.49958003651012073,
+            "MSE": 0.9954792828846335
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.012862812389026987,
+          "interval": [
+            -0.06927034026342507,
+            0.09499596504147906
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "C": {
+        "chosen": "pooled",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.47522735595703125,
+            "MSE": 0.9617423110004293
+          },
+          "calendar": {
+            "classification_error": 0.47293853759765625,
+            "MSE": 0.9610488922396002
+          },
+          "source_age": {
+            "classification_error": 0.47293853759765625,
+            "MSE": 0.9610488922396003
+          },
+          "input_phase": {
+            "classification_error": 0.47293853759765625,
+            "MSE": 0.9610488922395992
+          },
+          "state_phase": {
+            "classification_error": 0.4752693176269531,
+            "MSE": 0.9795635547099981
+          },
+          "phase_only": {
+            "classification_error": 0.50250244140625,
+            "MSE": 0.9958399765850172
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0,
+          "interval": [
+            -0.08213315265245207,
+            0.08213315265245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      }
+    },
+    "last_spike": {
+      "H1": {
+        "chosen": "input_phase",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.5033743722098214,
+            "MSE": 1.0230304409429405
+          },
+          "calendar": {
+            "classification_error": 0.49282945905412945,
+            "MSE": 1.0218738201635635
+          },
+          "source_age": {
+            "classification_error": 0.49282945905412945,
+            "MSE": 1.0218738201635635
+          },
+          "input_phase": {
+            "classification_error": 0.4966103690011161,
+            "MSE": 1.0244972112084372
+          },
+          "state_phase": {
+            "classification_error": 0.49479893275669645,
+            "MSE": 1.023773517699033
+          },
+          "phase_only": {
+            "classification_error": 0.50384521484375,
+            "MSE": 1.0221527028868735
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.006764003208705356,
+          "interval": [
+            -0.0753691494437467,
+            0.08889715586115743
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H2": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.4853363037109375,
+            "MSE": 1.0064739991846379
+          },
+          "calendar": {
+            "classification_error": 0.484423828125,
+            "MSE": 1.0203127189682952
+          },
+          "source_age": {
+            "classification_error": 0.4756683349609375,
+            "MSE": 1.0350072423393424
+          },
+          "input_phase": {
+            "classification_error": 0.48663330078125,
+            "MSE": 1.0227124073642822
+          },
+          "state_phase": {
+            "classification_error": 0.4770416259765625,
+            "MSE": 1.0188452691756469
+          },
+          "phase_only": {
+            "classification_error": 0.498724365234375,
+            "MSE": 1.014998197002503
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.00966796875,
+          "interval": [
+            -0.07246518390245206,
+            0.09180112140245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H3": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.48640216480601917,
+            "MSE": 1.0059584061640665
+          },
+          "calendar": {
+            "classification_error": 0.478905591097745,
+            "MSE": 1.010177241975119
+          },
+          "source_age": {
+            "classification_error": 0.4739128459583629,
+            "MSE": 1.0042529404603093
+          },
+          "input_phase": {
+            "classification_error": 0.48211531205610797,
+            "MSE": 1.0098574328190104
+          },
+          "state_phase": {
+            "classification_error": 0.4778038371693004,
+            "MSE": 1.0092219895123549
+          },
+          "phase_only": {
+            "classification_error": 0.49415865811434656,
+            "MSE": 1.006946266057884
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.01248931884765625,
+          "interval": [
+            -0.06964383380479582,
+            0.09462247150010832
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H4": {
+        "chosen": "source_age",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.4950532046231356,
+            "MSE": 0.9955820963055891
+          },
+          "calendar": {
+            "classification_error": 0.49868757074529474,
+            "MSE": 1.0212908284913274
+          },
+          "source_age": {
+            "classification_error": 0.48418339816006745,
+            "MSE": 1.0067857636894613
+          },
+          "input_phase": {
+            "classification_error": 0.4983279488303445,
+            "MSE": 1.0207153855295044
+          },
+          "state_phase": {
+            "classification_error": 0.4928672096946023,
+            "MSE": 1.0060718016071544
+          },
+          "phase_only": {
+            "classification_error": 0.49958003651012073,
+            "MSE": 0.9954792828846335
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.01086980646306818,
+          "interval": [
+            -0.07126334618938389,
+            0.09300295911552024
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "C": {
+        "chosen": "calendar",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.49102020263671875,
+            "MSE": 0.989760023335082
+          },
+          "calendar": {
+            "classification_error": 0.4833526611328125,
+            "MSE": 1.0024732971785963
+          },
+          "source_age": {
+            "classification_error": 0.4833526611328125,
+            "MSE": 1.0024732971785957
+          },
+          "input_phase": {
+            "classification_error": 0.4833526611328125,
+            "MSE": 1.0024732971785795
+          },
+          "state_phase": {
+            "classification_error": 0.4885520935058594,
+            "MSE": 1.013921316955598
+          },
+          "phase_only": {
+            "classification_error": 0.50250244140625,
+            "MSE": 0.9958399765850172
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.00766754150390625,
+          "interval": [
+            -0.07446561114854582,
+            0.08980069415635832
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      }
+    },
+    "core_post": {
+      "H1": {
+        "chosen": "pooled",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.33766937255859375,
+            "MSE": 0.7790283426892355
+          },
+          "calendar": {
+            "classification_error": 0.3394437517438616,
+            "MSE": 0.779292129793413
+          },
+          "source_age": {
+            "classification_error": 0.3394437517438616,
+            "MSE": 0.779292129793414
+          },
+          "input_phase": {
+            "classification_error": 0.33890751429966515,
+            "MSE": 0.7754977469739207
+          },
+          "state_phase": {
+            "classification_error": 0.33723994663783485,
+            "MSE": 0.7751569256763957
+          },
+          "phase_only": {
+            "classification_error": 0.50384521484375,
+            "MSE": 1.0221527028868735
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0,
+          "interval": [
+            -0.08213315265245207,
+            0.08213315265245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H2": {
+        "chosen": "state_phase",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.22780151367187498,
+            "MSE": 0.46067941885317787
+          },
+          "calendar": {
+            "classification_error": 0.24411621093750002,
+            "MSE": 0.48114926185328916
+          },
+          "source_age": {
+            "classification_error": 0.238116455078125,
+            "MSE": 0.4883165845718384
+          },
+          "input_phase": {
+            "classification_error": 0.23302001953124998,
+            "MSE": 0.44111252299876996
+          },
+          "state_phase": {
+            "classification_error": 0.228076171875,
+            "MSE": 0.45679999613691236
+          },
+          "phase_only": {
+            "classification_error": 0.498724365234375,
+            "MSE": 1.014998197002503
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": -0.00027465820312499946,
+          "interval": [
+            -0.08240781085557707,
+            0.08185849444932707
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H3": {
+        "chosen": "pooled",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.2818643396550959,
+            "MSE": 0.6576912588577173
+          },
+          "calendar": {
+            "classification_error": 0.2976689772172408,
+            "MSE": 0.700364373012734
+          },
+          "source_age": {
+            "classification_error": 0.2845412167635831,
+            "MSE": 0.6534199090565831
+          },
+          "input_phase": {
+            "classification_error": 0.28678148443048646,
+            "MSE": 0.6584388477590656
+          },
+          "state_phase": {
+            "classification_error": 0.28484500538219104,
+            "MSE": 0.6574299828907726
+          },
+          "phase_only": {
+            "classification_error": 0.49415865811434656,
+            "MSE": 1.006946266057884
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.0,
+          "interval": [
+            -0.08213315265245207,
+            0.08213315265245207
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "H4": {
+        "chosen": "input_phase",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.33435960249467334,
+            "MSE": 0.7209562805863514
+          },
+          "calendar": {
+            "classification_error": 0.34771953929554333,
+            "MSE": 0.7920541249014564
+          },
+          "source_age": {
+            "classification_error": 0.329147685657848,
+            "MSE": 0.7584196573200772
+          },
+          "input_phase": {
+            "classification_error": 0.31651288812810724,
+            "MSE": 0.6960981030218039
+          },
+          "state_phase": {
+            "classification_error": 0.3422830755060369,
+            "MSE": 0.7492067838987815
+          },
+          "phase_only": {
+            "classification_error": 0.49958003651012073,
+            "MSE": 0.9954792828846335
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": 0.017846714366566055,
+          "interval": [
+            -0.06428643828588601,
+            0.09997986701901812
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      },
+      "C": {
+        "chosen": "calendar",
+        "all_candidate_risks": {
+          "pooled": {
+            "classification_error": 0.20297622680664062,
+            "MSE": 0.42193959645515977
+          },
+          "calendar": {
+            "classification_error": 0.2037353515625,
+            "MSE": 0.3845888504701022
+          },
+          "source_age": {
+            "classification_error": 0.2037353515625,
+            "MSE": 0.38458885047009844
+          },
+          "input_phase": {
+            "classification_error": 0.2037353515625,
+            "MSE": 0.3845888504700945
+          },
+          "state_phase": {
+            "classification_error": 0.2092132568359375,
+            "MSE": 0.43782941681122534
+          },
+          "phase_only": {
+            "classification_error": 0.50250244140625,
+            "MSE": 0.9958399765850172
+          }
+        },
+        "paired_bound_selected_vs_pooled": {
+          "gain": -0.000759124755859375,
+          "interval": [
+            -0.08289227740831144,
+            0.08137402789659269
+          ],
+          "family_size": 25,
+          "delta": 0.05,
+          "independent_scenes": 2048
+        }
+      }
+    }
+  },
+  "family_size": 25,
+  "evaluation_scenes": 2048,
+  "positive_simultaneous_lower_bounds": 0,
+  "new_SNN_optimizer_updates": 0,
+  "audit_test_accessed": false,
+  "scope": "Frozen old checkpoint, 128 unique training labels per head. Different observation permissions and feature costs are disclosed; this is not training the original Rhythm-SNN or establishing a rhythmic neural mechanism. This confidence family is separate from primary/delay families."
+}

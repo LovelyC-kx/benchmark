@@ -1,0 +1,1 @@
+Model interface cases 120

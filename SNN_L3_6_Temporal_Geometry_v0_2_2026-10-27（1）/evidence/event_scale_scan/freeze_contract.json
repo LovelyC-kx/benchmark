@@ -1,0 +1,35 @@
+{
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "primary_reader_sha256": "4bf4727ddc6680e7ab475b85246dfb9bf25c5da8505259bbaac7bc64c969ada8",
+  "grid": {
+    "threshold_multipliers": [
+      0.8,
+      1.0,
+      1.2
+    ],
+    "measurement_sigma": [
+      0.0,
+      0.2,
+      0.5
+    ],
+    "content_delta": [
+      0.001,
+      0.01,
+      0.1,
+      0.3
+    ],
+    "observer_bits": [
+      null,
+      2,
+      4,
+      8
+    ]
+  },
+  "evaluation": [
+    128,
+    "development_test",
+    7740000
+  ],
+  "quantizer": "Uniform finite-level observer quantizer; range +/-4*primary calibration RMS, 2**bits levels, clipping included. No model arithmetic quantization.",
+  "scope": "Predeclared descriptive matched-scene robustness panel. Threshold changes are new frozen inference variants, not newly trained models."
+}

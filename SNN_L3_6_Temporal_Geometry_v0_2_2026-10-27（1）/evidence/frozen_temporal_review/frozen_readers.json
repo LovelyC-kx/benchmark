@@ -1,0 +1,1100 @@
+{
+  "first_pre": {
+    "weights": {
+      "__array__": "array_0"
+    },
+    "origins": {
+      "__array__": "array_1"
+    },
+    "bias": {
+      "__array__": "array_2"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_3"
+        },
+        {
+          "__array__": "array_4"
+        },
+        {
+          "__array__": "array_5"
+        },
+        {
+          "__array__": "array_6"
+        },
+        {
+          "__array__": "array_7"
+        }
+      ],
+      [
+        {
+          "__array__": "array_8"
+        },
+        {
+          "__array__": "array_9"
+        },
+        {
+          "__array__": "array_10"
+        },
+        {
+          "__array__": "array_11"
+        },
+        {
+          "__array__": "array_12"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_13"
+        },
+        {
+          "__array__": "array_14"
+        },
+        {
+          "__array__": "array_15"
+        },
+        {
+          "__array__": "array_16"
+        },
+        {
+          "__array__": "array_17"
+        }
+      ],
+      [
+        {
+          "__array__": "array_18"
+        },
+        {
+          "__array__": "array_19"
+        },
+        {
+          "__array__": "array_20"
+        },
+        {
+          "__array__": "array_21"
+        },
+        {
+          "__array__": "array_22"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_23"
+        },
+        {
+          "__array__": "array_24"
+        },
+        {
+          "__array__": "array_25"
+        },
+        {
+          "__array__": "array_26"
+        },
+        {
+          "__array__": "array_27"
+        }
+      ],
+      [
+        {
+          "__array__": "array_28"
+        },
+        {
+          "__array__": "array_29"
+        },
+        {
+          "__array__": "array_30"
+        },
+        {
+          "__array__": "array_31"
+        },
+        {
+          "__array__": "array_32"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "first_post": {
+    "weights": {
+      "__array__": "array_33"
+    },
+    "origins": {
+      "__array__": "array_34"
+    },
+    "bias": {
+      "__array__": "array_35"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_36"
+        },
+        {
+          "__array__": "array_37"
+        },
+        {
+          "__array__": "array_38"
+        },
+        {
+          "__array__": "array_39"
+        },
+        {
+          "__array__": "array_40"
+        }
+      ],
+      [
+        {
+          "__array__": "array_41"
+        },
+        {
+          "__array__": "array_42"
+        },
+        {
+          "__array__": "array_43"
+        },
+        {
+          "__array__": "array_44"
+        },
+        {
+          "__array__": "array_45"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_46"
+        },
+        {
+          "__array__": "array_47"
+        },
+        {
+          "__array__": "array_48"
+        },
+        {
+          "__array__": "array_49"
+        },
+        {
+          "__array__": "array_50"
+        }
+      ],
+      [
+        {
+          "__array__": "array_51"
+        },
+        {
+          "__array__": "array_52"
+        },
+        {
+          "__array__": "array_53"
+        },
+        {
+          "__array__": "array_54"
+        },
+        {
+          "__array__": "array_55"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_56"
+        },
+        {
+          "__array__": "array_57"
+        },
+        {
+          "__array__": "array_58"
+        },
+        {
+          "__array__": "array_59"
+        },
+        {
+          "__array__": "array_60"
+        }
+      ],
+      [
+        {
+          "__array__": "array_61"
+        },
+        {
+          "__array__": "array_62"
+        },
+        {
+          "__array__": "array_63"
+        },
+        {
+          "__array__": "array_64"
+        },
+        {
+          "__array__": "array_65"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "first_spike": {
+    "weights": {
+      "__array__": "array_66"
+    },
+    "origins": {
+      "__array__": "array_67"
+    },
+    "bias": {
+      "__array__": "array_68"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_69"
+        },
+        {
+          "__array__": "array_70"
+        },
+        {
+          "__array__": "array_71"
+        },
+        {
+          "__array__": "array_72"
+        },
+        {
+          "__array__": "array_73"
+        }
+      ],
+      [
+        {
+          "__array__": "array_74"
+        },
+        {
+          "__array__": "array_75"
+        },
+        {
+          "__array__": "array_76"
+        },
+        {
+          "__array__": "array_77"
+        },
+        {
+          "__array__": "array_78"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_79"
+        },
+        {
+          "__array__": "array_80"
+        },
+        {
+          "__array__": "array_81"
+        },
+        {
+          "__array__": "array_82"
+        },
+        {
+          "__array__": "array_83"
+        }
+      ],
+      [
+        {
+          "__array__": "array_84"
+        },
+        {
+          "__array__": "array_85"
+        },
+        {
+          "__array__": "array_86"
+        },
+        {
+          "__array__": "array_87"
+        },
+        {
+          "__array__": "array_88"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_89"
+        },
+        {
+          "__array__": "array_90"
+        },
+        {
+          "__array__": "array_91"
+        },
+        {
+          "__array__": "array_92"
+        },
+        {
+          "__array__": "array_93"
+        }
+      ],
+      [
+        {
+          "__array__": "array_94"
+        },
+        {
+          "__array__": "array_95"
+        },
+        {
+          "__array__": "array_96"
+        },
+        {
+          "__array__": "array_97"
+        },
+        {
+          "__array__": "array_98"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "last_pre": {
+    "weights": {
+      "__array__": "array_99"
+    },
+    "origins": {
+      "__array__": "array_100"
+    },
+    "bias": {
+      "__array__": "array_101"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_102"
+        },
+        {
+          "__array__": "array_103"
+        },
+        {
+          "__array__": "array_104"
+        },
+        {
+          "__array__": "array_105"
+        },
+        {
+          "__array__": "array_106"
+        }
+      ],
+      [
+        {
+          "__array__": "array_107"
+        },
+        {
+          "__array__": "array_108"
+        },
+        {
+          "__array__": "array_109"
+        },
+        {
+          "__array__": "array_110"
+        },
+        {
+          "__array__": "array_111"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_112"
+        },
+        {
+          "__array__": "array_113"
+        },
+        {
+          "__array__": "array_114"
+        },
+        {
+          "__array__": "array_115"
+        },
+        {
+          "__array__": "array_116"
+        }
+      ],
+      [
+        {
+          "__array__": "array_117"
+        },
+        {
+          "__array__": "array_118"
+        },
+        {
+          "__array__": "array_119"
+        },
+        {
+          "__array__": "array_120"
+        },
+        {
+          "__array__": "array_121"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_122"
+        },
+        {
+          "__array__": "array_123"
+        },
+        {
+          "__array__": "array_124"
+        },
+        {
+          "__array__": "array_125"
+        },
+        {
+          "__array__": "array_126"
+        }
+      ],
+      [
+        {
+          "__array__": "array_127"
+        },
+        {
+          "__array__": "array_128"
+        },
+        {
+          "__array__": "array_129"
+        },
+        {
+          "__array__": "array_130"
+        },
+        {
+          "__array__": "array_131"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "last_post": {
+    "weights": {
+      "__array__": "array_132"
+    },
+    "origins": {
+      "__array__": "array_133"
+    },
+    "bias": {
+      "__array__": "array_134"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_135"
+        },
+        {
+          "__array__": "array_136"
+        },
+        {
+          "__array__": "array_137"
+        },
+        {
+          "__array__": "array_138"
+        },
+        {
+          "__array__": "array_139"
+        }
+      ],
+      [
+        {
+          "__array__": "array_140"
+        },
+        {
+          "__array__": "array_141"
+        },
+        {
+          "__array__": "array_142"
+        },
+        {
+          "__array__": "array_143"
+        },
+        {
+          "__array__": "array_144"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_145"
+        },
+        {
+          "__array__": "array_146"
+        },
+        {
+          "__array__": "array_147"
+        },
+        {
+          "__array__": "array_148"
+        },
+        {
+          "__array__": "array_149"
+        }
+      ],
+      [
+        {
+          "__array__": "array_150"
+        },
+        {
+          "__array__": "array_151"
+        },
+        {
+          "__array__": "array_152"
+        },
+        {
+          "__array__": "array_153"
+        },
+        {
+          "__array__": "array_154"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_155"
+        },
+        {
+          "__array__": "array_156"
+        },
+        {
+          "__array__": "array_157"
+        },
+        {
+          "__array__": "array_158"
+        },
+        {
+          "__array__": "array_159"
+        }
+      ],
+      [
+        {
+          "__array__": "array_160"
+        },
+        {
+          "__array__": "array_161"
+        },
+        {
+          "__array__": "array_162"
+        },
+        {
+          "__array__": "array_163"
+        },
+        {
+          "__array__": "array_164"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "last_spike": {
+    "weights": {
+      "__array__": "array_165"
+    },
+    "origins": {
+      "__array__": "array_166"
+    },
+    "bias": {
+      "__array__": "array_167"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_168"
+        },
+        {
+          "__array__": "array_169"
+        },
+        {
+          "__array__": "array_170"
+        },
+        {
+          "__array__": "array_171"
+        },
+        {
+          "__array__": "array_172"
+        }
+      ],
+      [
+        {
+          "__array__": "array_173"
+        },
+        {
+          "__array__": "array_174"
+        },
+        {
+          "__array__": "array_175"
+        },
+        {
+          "__array__": "array_176"
+        },
+        {
+          "__array__": "array_177"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_178"
+        },
+        {
+          "__array__": "array_179"
+        },
+        {
+          "__array__": "array_180"
+        },
+        {
+          "__array__": "array_181"
+        },
+        {
+          "__array__": "array_182"
+        }
+      ],
+      [
+        {
+          "__array__": "array_183"
+        },
+        {
+          "__array__": "array_184"
+        },
+        {
+          "__array__": "array_185"
+        },
+        {
+          "__array__": "array_186"
+        },
+        {
+          "__array__": "array_187"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_188"
+        },
+        {
+          "__array__": "array_189"
+        },
+        {
+          "__array__": "array_190"
+        },
+        {
+          "__array__": "array_191"
+        },
+        {
+          "__array__": "array_192"
+        }
+      ],
+      [
+        {
+          "__array__": "array_193"
+        },
+        {
+          "__array__": "array_194"
+        },
+        {
+          "__array__": "array_195"
+        },
+        {
+          "__array__": "array_196"
+        },
+        {
+          "__array__": "array_197"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "first_post_spike": {
+    "weights": {
+      "__array__": "array_198"
+    },
+    "origins": {
+      "__array__": "array_199"
+    },
+    "bias": {
+      "__array__": "array_200"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_201"
+        },
+        {
+          "__array__": "array_202"
+        },
+        {
+          "__array__": "array_203"
+        },
+        {
+          "__array__": "array_204"
+        },
+        {
+          "__array__": "array_205"
+        }
+      ],
+      [
+        {
+          "__array__": "array_206"
+        },
+        {
+          "__array__": "array_207"
+        },
+        {
+          "__array__": "array_208"
+        },
+        {
+          "__array__": "array_209"
+        },
+        {
+          "__array__": "array_210"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_211"
+        },
+        {
+          "__array__": "array_212"
+        },
+        {
+          "__array__": "array_213"
+        },
+        {
+          "__array__": "array_214"
+        },
+        {
+          "__array__": "array_215"
+        }
+      ],
+      [
+        {
+          "__array__": "array_216"
+        },
+        {
+          "__array__": "array_217"
+        },
+        {
+          "__array__": "array_218"
+        },
+        {
+          "__array__": "array_219"
+        },
+        {
+          "__array__": "array_220"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_221"
+        },
+        {
+          "__array__": "array_222"
+        },
+        {
+          "__array__": "array_223"
+        },
+        {
+          "__array__": "array_224"
+        },
+        {
+          "__array__": "array_225"
+        }
+      ],
+      [
+        {
+          "__array__": "array_226"
+        },
+        {
+          "__array__": "array_227"
+        },
+        {
+          "__array__": "array_228"
+        },
+        {
+          "__array__": "array_229"
+        },
+        {
+          "__array__": "array_230"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "last_post_spike": {
+    "weights": {
+      "__array__": "array_231"
+    },
+    "origins": {
+      "__array__": "array_232"
+    },
+    "bias": {
+      "__array__": "array_233"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_234"
+        },
+        {
+          "__array__": "array_235"
+        },
+        {
+          "__array__": "array_236"
+        },
+        {
+          "__array__": "array_237"
+        },
+        {
+          "__array__": "array_238"
+        }
+      ],
+      [
+        {
+          "__array__": "array_239"
+        },
+        {
+          "__array__": "array_240"
+        },
+        {
+          "__array__": "array_241"
+        },
+        {
+          "__array__": "array_242"
+        },
+        {
+          "__array__": "array_243"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_244"
+        },
+        {
+          "__array__": "array_245"
+        },
+        {
+          "__array__": "array_246"
+        },
+        {
+          "__array__": "array_247"
+        },
+        {
+          "__array__": "array_248"
+        }
+      ],
+      [
+        {
+          "__array__": "array_249"
+        },
+        {
+          "__array__": "array_250"
+        },
+        {
+          "__array__": "array_251"
+        },
+        {
+          "__array__": "array_252"
+        },
+        {
+          "__array__": "array_253"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_254"
+        },
+        {
+          "__array__": "array_255"
+        },
+        {
+          "__array__": "array_256"
+        },
+        {
+          "__array__": "array_257"
+        },
+        {
+          "__array__": "array_258"
+        }
+      ],
+      [
+        {
+          "__array__": "array_259"
+        },
+        {
+          "__array__": "array_260"
+        },
+        {
+          "__array__": "array_261"
+        },
+        {
+          "__array__": "array_262"
+        },
+        {
+          "__array__": "array_263"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  },
+  "core_post": {
+    "weights": {
+      "__array__": "array_264"
+    },
+    "origins": {
+      "__array__": "array_265"
+    },
+    "bias": {
+      "__array__": "array_266"
+    },
+    "pooled_weights": [
+      [
+        {
+          "__array__": "array_267"
+        },
+        {
+          "__array__": "array_268"
+        },
+        {
+          "__array__": "array_269"
+        },
+        {
+          "__array__": "array_270"
+        },
+        {
+          "__array__": "array_271"
+        }
+      ],
+      [
+        {
+          "__array__": "array_272"
+        },
+        {
+          "__array__": "array_273"
+        },
+        {
+          "__array__": "array_274"
+        },
+        {
+          "__array__": "array_275"
+        },
+        {
+          "__array__": "array_276"
+        }
+      ]
+    ],
+    "pooled_origins": [
+      [
+        {
+          "__array__": "array_277"
+        },
+        {
+          "__array__": "array_278"
+        },
+        {
+          "__array__": "array_279"
+        },
+        {
+          "__array__": "array_280"
+        },
+        {
+          "__array__": "array_281"
+        }
+      ],
+      [
+        {
+          "__array__": "array_282"
+        },
+        {
+          "__array__": "array_283"
+        },
+        {
+          "__array__": "array_284"
+        },
+        {
+          "__array__": "array_285"
+        },
+        {
+          "__array__": "array_286"
+        }
+      ]
+    ],
+    "pooled_bias": [
+      [
+        {
+          "__array__": "array_287"
+        },
+        {
+          "__array__": "array_288"
+        },
+        {
+          "__array__": "array_289"
+        },
+        {
+          "__array__": "array_290"
+        },
+        {
+          "__array__": "array_291"
+        }
+      ],
+      [
+        {
+          "__array__": "array_292"
+        },
+        {
+          "__array__": "array_293"
+        },
+        {
+          "__array__": "array_294"
+        },
+        {
+          "__array__": "array_295"
+        },
+        {
+          "__array__": "array_296"
+        }
+      ]
+    ],
+    "alpha": 0.001,
+    "unique_labels_per_reader": 128,
+    "pooled_time_rows_not_independent_scenes": true
+  }
+}

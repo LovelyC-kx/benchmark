@@ -1,0 +1,10 @@
+event panel threshold 0.8 sigma 0.0
+event panel threshold 0.8 sigma 0.2
+event panel threshold 0.8 sigma 0.5
+event panel threshold 1.0 sigma 0.0
+event panel threshold 1.0 sigma 0.2
+event panel threshold 1.0 sigma 0.5
+event panel threshold 1.2 sigma 0.0
+event panel threshold 1.2 sigma 0.2
+event panel threshold 1.2 sigma 0.5
+Scale panel rows 576 captures 585

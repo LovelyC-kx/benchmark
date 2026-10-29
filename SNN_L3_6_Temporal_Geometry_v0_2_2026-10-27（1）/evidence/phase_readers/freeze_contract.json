@@ -1,0 +1,1437 @@
+{
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "reader_sha256": "da401aa7626bac7b20fca5042b2c6df175fae61d5798b426a8fa61e5a5dae44f",
+  "choices": {
+    "first_post": {
+      "H1": {
+        "chosen": "pooled",
+        "selection_errors": {
+          "pooled": 0.33740670340401785,
+          "calendar": 0.3437412806919643,
+          "source_age": 0.3437412806919643,
+          "input_phase": 0.3393511090959821,
+          "state_phase": 0.33874947684151785,
+          "phase_only": 0.49772426060267855
+        }
+      },
+      "H2": {
+        "chosen": "state_phase",
+        "selection_errors": {
+          "pooled": 0.27436065673828125,
+          "calendar": 0.2769775390625,
+          "source_age": 0.27593231201171875,
+          "input_phase": 0.27501678466796875,
+          "state_phase": 0.2723236083984375,
+          "phase_only": 0.50665283203125
+        }
+      },
+      "H3": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.21649169921875,
+          "calendar": 0.22852783203125,
+          "source_age": 0.2142333984375,
+          "input_phase": 0.21934814453125,
+          "state_phase": 0.2206298828125,
+          "phase_only": 0.5079833984375001
+        }
+      },
+      "H4": {
+        "chosen": "pooled",
+        "selection_errors": {
+          "pooled": 0.35259454900568177,
+          "calendar": 0.38580322265625,
+          "source_age": 0.378173828125,
+          "input_phase": 0.35946932705965906,
+          "state_phase": 0.3563898259943182,
+          "phase_only": 0.4902121803977273
+        }
+      },
+      "C": {
+        "chosen": "pooled",
+        "selection_errors": {
+          "pooled": 0.2138214111328125,
+          "calendar": 0.2142791748046875,
+          "source_age": 0.2142791748046875,
+          "input_phase": 0.2142791748046875,
+          "state_phase": 0.2166900634765625,
+          "phase_only": 0.49835205078125
+        }
+      }
+    },
+    "last_post": {
+      "H1": {
+        "chosen": "calendar",
+        "selection_errors": {
+          "pooled": 0.47923496791294645,
+          "calendar": 0.47520228794642855,
+          "source_age": 0.47520228794642855,
+          "input_phase": 0.4782889229910714,
+          "state_phase": 0.4774823869977679,
+          "phase_only": 0.49772426060267855
+        }
+      },
+      "H2": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.43621063232421875,
+          "calendar": 0.457183837890625,
+          "source_age": 0.434722900390625,
+          "input_phase": 0.44626617431640625,
+          "state_phase": 0.44263458251953125,
+          "phase_only": 0.50665283203125
+        }
+      },
+      "H3": {
+        "chosen": "pooled",
+        "selection_errors": {
+          "pooled": 0.37191162109375,
+          "calendar": 0.3886962890625,
+          "source_age": 0.37880859375,
+          "input_phase": 0.37904052734375,
+          "state_phase": 0.38001708984375004,
+          "phase_only": 0.5079833984375001
+        }
+      },
+      "H4": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.45409046519886365,
+          "calendar": 0.46161443536931823,
+          "source_age": 0.4293434836647727,
+          "input_phase": 0.4511996182528409,
+          "state_phase": 0.4522927024147727,
+          "phase_only": 0.4902121803977273
+        }
+      },
+      "C": {
+        "chosen": "state_phase",
+        "selection_errors": {
+          "pooled": 0.41705322265625,
+          "calendar": 0.4171905517578125,
+          "source_age": 0.4171905517578125,
+          "input_phase": 0.4171905517578125,
+          "state_phase": 0.4169921875,
+          "phase_only": 0.49835205078125
+        }
+      }
+    },
+    "first_spike": {
+      "H1": {
+        "chosen": "calendar",
+        "selection_errors": {
+          "pooled": 0.49611990792410715,
+          "calendar": 0.489654541015625,
+          "source_age": 0.489654541015625,
+          "input_phase": 0.49505615234375,
+          "state_phase": 0.49206978934151785,
+          "phase_only": 0.49772426060267855
+        }
+      },
+      "H2": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.4955291748046875,
+          "calendar": 0.49788665771484375,
+          "source_age": 0.49114990234375,
+          "input_phase": 0.5027236938476562,
+          "state_phase": 0.49552154541015625,
+          "phase_only": 0.50665283203125
+        }
+      },
+      "H3": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.48125000000000007,
+          "calendar": 0.4907470703125,
+          "source_age": 0.47464599609375,
+          "input_phase": 0.47998046875,
+          "state_phase": 0.48692626953125,
+          "phase_only": 0.5079833984375001
+        }
+      },
+      "H4": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.4835648970170454,
+          "calendar": 0.50537109375,
+          "source_age": 0.47458163174715906,
+          "input_phase": 0.49664306640625,
+          "state_phase": 0.4809681285511364,
+          "phase_only": 0.4902121803977273
+        }
+      },
+      "C": {
+        "chosen": "pooled",
+        "selection_errors": {
+          "pooled": 0.4667205810546875,
+          "calendar": 0.4691009521484375,
+          "source_age": 0.4691009521484375,
+          "input_phase": 0.4691009521484375,
+          "state_phase": 0.472564697265625,
+          "phase_only": 0.49835205078125
+        }
+      }
+    },
+    "last_spike": {
+      "H1": {
+        "chosen": "input_phase",
+        "selection_errors": {
+          "pooled": 0.4977024623325893,
+          "calendar": 0.48980712890625006,
+          "source_age": 0.48980712890625006,
+          "input_phase": 0.4895499093191964,
+          "state_phase": 0.4914768763950893,
+          "phase_only": 0.49772426060267855
+        }
+      },
+      "H2": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.49835205078125,
+          "calendar": 0.5077896118164062,
+          "source_age": 0.496795654296875,
+          "input_phase": 0.5053482055664062,
+          "state_phase": 0.5008468627929688,
+          "phase_only": 0.50665283203125
+        }
+      },
+      "H3": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.48890380859375,
+          "calendar": 0.48275146484375,
+          "source_age": 0.4745361328125,
+          "input_phase": 0.4840087890625,
+          "state_phase": 0.47772216796875,
+          "phase_only": 0.5079833984375001
+        }
+      },
+      "H4": {
+        "chosen": "source_age",
+        "selection_errors": {
+          "pooled": 0.4875266335227273,
+          "calendar": 0.5011374733664773,
+          "source_age": 0.4724897904829546,
+          "input_phase": 0.5004993785511365,
+          "state_phase": 0.48469127308238635,
+          "phase_only": 0.4902121803977273
+        }
+      },
+      "C": {
+        "chosen": "calendar",
+        "selection_errors": {
+          "pooled": 0.484283447265625,
+          "calendar": 0.481719970703125,
+          "source_age": 0.481719970703125,
+          "input_phase": 0.481719970703125,
+          "state_phase": 0.4817962646484375,
+          "phase_only": 0.49835205078125
+        }
+      }
+    },
+    "core_post": {
+      "H1": {
+        "chosen": "pooled",
+        "selection_errors": {
+          "pooled": 0.33233206612723215,
+          "calendar": 0.3395603724888393,
+          "source_age": 0.3395603724888393,
+          "input_phase": 0.33523995535714285,
+          "state_phase": 0.333953857421875,
+          "phase_only": 0.49772426060267855
+        }
+      },
+      "H2": {
+        "chosen": "state_phase",
+        "selection_errors": {
+          "pooled": 0.2737884521484375,
+          "calendar": 0.2825469970703125,
+          "source_age": 0.277587890625,
+          "input_phase": 0.27648162841796875,
+          "state_phase": 0.27136993408203125,
+          "phase_only": 0.50665283203125
+        }
+      },
+      "H3": {
+        "chosen": "pooled",
+        "selection_errors": {
+          "pooled": 0.209619140625,
+          "calendar": 0.22532958984375,
+          "source_age": 0.2108642578125,
+          "input_phase": 0.21693115234375,
+          "state_phase": 0.21534423828125,
+          "phase_only": 0.5079833984375001
+        }
+      },
+      "H4": {
+        "chosen": "input_phase",
+        "selection_errors": {
+          "pooled": 0.3566339666193182,
+          "calendar": 0.37580455433238635,
+          "source_age": 0.3691628196022727,
+          "input_phase": 0.3302667791193182,
+          "state_phase": 0.36664928089488635,
+          "phase_only": 0.4902121803977273
+        }
+      },
+      "C": {
+        "chosen": "calendar",
+        "selection_errors": {
+          "pooled": 0.2066650390625,
+          "calendar": 0.205352783203125,
+          "source_age": 0.205352783203125,
+          "input_phase": 0.205352783203125,
+          "state_phase": 0.2100982666015625,
+          "phase_only": 0.49835205078125
+        }
+      }
+    }
+  },
+  "budgets": {
+    "first_post": {
+      "H1": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H2": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H3": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H4": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "C": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      }
+    },
+    "last_post": {
+      "H1": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H2": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H3": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H4": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "C": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      }
+    },
+    "first_spike": {
+      "H1": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H2": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H3": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H4": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "C": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      }
+    },
+    "last_spike": {
+      "H1": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H2": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H3": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H4": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "C": {
+        "pooled": {
+          "feature_dimension": 32,
+          "linear_parameters": 660,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 99,
+          "linear_parameters": 2000,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      }
+    },
+    "core_post": {
+      "H1": {
+        "pooled": {
+          "feature_dimension": 64,
+          "linear_parameters": 1300,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 5376,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H2": {
+        "pooled": {
+          "feature_dimension": 64,
+          "linear_parameters": 1300,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3840,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H3": {
+        "pooled": {
+          "feature_dimension": 64,
+          "linear_parameters": 1300,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 3072,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "H4": {
+        "pooled": {
+          "feature_dimension": 64,
+          "linear_parameters": 1300,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 2304,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      },
+      "C": {
+        "pooled": {
+          "feature_dimension": 64,
+          "linear_parameters": 1300,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "calendar": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "source_age": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "input_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "state_phase": {
+          "feature_dimension": 195,
+          "linear_parameters": 3920,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        },
+        "phase_only": {
+          "feature_dimension": 3,
+          "linear_parameters": 80,
+          "training_rows": 1536,
+          "unique_labelled_scenes": 128,
+          "time_rows_and_schedules_not_independent": true
+        }
+      }
+    }
+  },
+  "frequency_cycles_per_step": 0.125,
+  "frequency_selection": "fixed in code before all pools",
+  "train": [
+    128,
+    "probe_train",
+    7710000,
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "selection": [
+    1024,
+    "probe_val",
+    7720000,
+    [
+      3
+    ]
+  ],
+  "evaluation": [
+    2048,
+    "development_test",
+    7730000,
+    [
+      4,
+      5
+    ]
+  ],
+  "independent_unit": "content/noise scene; schedule and time risks averaged inside each scene",
+  "input_phase_permission": "causal filter of event marker available in sensory input",
+  "source_age_permission": "external source-specific write-onset ledger; extra observer side information",
+  "state_phase_permission": "causal filter of view population mean; nonlinear history observer, not evidence of an autonomous rhythm",
+  "frozen_before_evaluation_generation": true
+}

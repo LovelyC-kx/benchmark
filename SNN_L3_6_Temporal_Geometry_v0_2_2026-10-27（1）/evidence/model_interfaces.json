@@ -1,0 +1,1401 @@
+{
+  "module": "L3.6 named temporal observation compatibility",
+  "classification_cases": 96,
+  "native_image_reconstruction_cases": 24,
+  "cases": [
+    {
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "mlp",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 10,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 10,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 10,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 4,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 4,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 1,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 8,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 2,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 168,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 168,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 168,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 168,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 168,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 210,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 210,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 168,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 210,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 84,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 84,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 21,
+      "views": 168,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 50,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 50,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 50,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 20,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 5,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 32,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 32,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "threshold",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 32,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "if_hard",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 32,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 32,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 32,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 40,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "continuous",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "tanh",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 16,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "objective": "classification",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "cell_modules": 4,
+      "views": 32,
+      "complete_spatial_coordinates": true,
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "threshold",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "if_hard",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "continuous",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "tanh",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    },
+    {
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "objective": "reconstruction",
+      "trained": false,
+      "prediction_max_abs": 0.0,
+      "native_output_shape": [
+        2,
+        1,
+        8,
+        8
+      ],
+      "actual_output_included": true
+    }
+  ],
+  "new_SNN_optimizer_updates": 0,
+  "scope": "120 untrained forward interface cases, not 120 trained benchmark runs. Cell-state observations retain spatial axes; caches, functional merges and readout accumulators are outside this bank. Primary LoadModel loader remains a two-layer MLP adapter."
+}

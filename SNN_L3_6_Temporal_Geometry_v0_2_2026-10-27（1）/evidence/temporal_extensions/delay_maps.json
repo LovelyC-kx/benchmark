@@ -1,0 +1,5708 @@
+{
+  "first_pre": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_0"
+        },
+        "destination_mean": {
+          "__array__": "array_1"
+        },
+        "source_mean": {
+          "__array__": "array_2"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_3"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.05997278181694353,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_4"
+        },
+        "destination_mean": {
+          "__array__": "array_5"
+        },
+        "source_mean": {
+          "__array__": "array_6"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_7"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.028541532036116903,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_8"
+        },
+        "destination_mean": {
+          "__array__": "array_9"
+        },
+        "source_mean": {
+          "__array__": "array_10"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_11"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.000000000000004,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.02791418764561296,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_12"
+        },
+        "destination_mean": {
+          "__array__": "array_13"
+        },
+        "source_mean": {
+          "__array__": "array_14"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_15"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 2.9062761562922022e-11,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.008852648343303668,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_16"
+        },
+        "destination_mean": {
+          "__array__": "array_17"
+        },
+        "source_mean": {
+          "__array__": "array_18"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_19"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.4567039708583597e-08,
+        "scale": 0.5689909426737181,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.011300949021134488,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_20"
+        },
+        "destination_mean": {
+          "__array__": "array_21"
+        },
+        "source_mean": {
+          "__array__": "array_22"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_23"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.000000000000004,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.02791418764561296,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_24"
+        },
+        "destination_mean": {
+          "__array__": "array_25"
+        },
+        "source_mean": {
+          "__array__": "array_26"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_27"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_28"
+        },
+        "destination_mean": {
+          "__array__": "array_29"
+        },
+        "source_mean": {
+          "__array__": "array_30"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_31"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.588161297354448e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_32"
+        },
+        "destination_mean": {
+          "__array__": "array_33"
+        },
+        "source_mean": {
+          "__array__": "array_34"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_35"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.588161297354448e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_36"
+        },
+        "destination_mean": {
+          "__array__": "array_37"
+        },
+        "source_mean": {
+          "__array__": "array_38"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_39"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.588161297354448e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_40"
+        },
+        "destination_mean": {
+          "__array__": "array_41"
+        },
+        "source_mean": {
+          "__array__": "array_42"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_43"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.588161297354448e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_44"
+        },
+        "destination_mean": {
+          "__array__": "array_45"
+        },
+        "source_mean": {
+          "__array__": "array_46"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_47"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.588161297354448e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_48"
+        },
+        "destination_mean": {
+          "__array__": "array_49"
+        },
+        "source_mean": {
+          "__array__": "array_50"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_51"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.10462403430348716,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_52"
+        },
+        "destination_mean": {
+          "__array__": "array_53"
+        },
+        "source_mean": {
+          "__array__": "array_54"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_55"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06266093962034408,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_56"
+        },
+        "destination_mean": {
+          "__array__": "array_57"
+        },
+        "source_mean": {
+          "__array__": "array_58"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_59"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0000000000000029,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.03488054035876188,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_60"
+        },
+        "destination_mean": {
+          "__array__": "array_61"
+        },
+        "source_mean": {
+          "__array__": "array_62"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_63"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.6235712416373264e-07,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.011969560014844493,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_64"
+        },
+        "destination_mean": {
+          "__array__": "array_65"
+        },
+        "source_mean": {
+          "__array__": "array_66"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_67"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 4.098282602787183e-08,
+        "scale": 0.5876839221486422,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.029671554815373986,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_68"
+        },
+        "destination_mean": {
+          "__array__": "array_69"
+        },
+        "source_mean": {
+          "__array__": "array_70"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_71"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0000000000000029,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.03488054035876188,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_72"
+        },
+        "destination_mean": {
+          "__array__": "array_73"
+        },
+        "source_mean": {
+          "__array__": "array_74"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_75"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.11100537282195574,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_76"
+        },
+        "destination_mean": {
+          "__array__": "array_77"
+        },
+        "source_mean": {
+          "__array__": "array_78"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_79"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06011449210757234,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_80"
+        },
+        "destination_mean": {
+          "__array__": "array_81"
+        },
+        "source_mean": {
+          "__array__": "array_82"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_83"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 0.9999999999999991,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.035284408216890085,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_84"
+        },
+        "destination_mean": {
+          "__array__": "array_85"
+        },
+        "source_mean": {
+          "__array__": "array_86"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_87"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 9.904459093893095e-10,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.013700959648632095,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_88"
+        },
+        "destination_mean": {
+          "__array__": "array_89"
+        },
+        "source_mean": {
+          "__array__": "array_90"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_91"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0738919714170932e-07,
+        "scale": 0.6056441387637085,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.031626695688195636,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_92"
+        },
+        "destination_mean": {
+          "__array__": "array_93"
+        },
+        "source_mean": {
+          "__array__": "array_94"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_95"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 0.9999999999999991,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.035284408216890085,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "first_post": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_96"
+        },
+        "destination_mean": {
+          "__array__": "array_97"
+        },
+        "source_mean": {
+          "__array__": "array_98"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_99"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.07871058692578953,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_100"
+        },
+        "destination_mean": {
+          "__array__": "array_101"
+        },
+        "source_mean": {
+          "__array__": "array_102"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_103"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.04763849094110294,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_104"
+        },
+        "destination_mean": {
+          "__array__": "array_105"
+        },
+        "source_mean": {
+          "__array__": "array_106"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_107"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": -0.9999999999999963,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0398709235731118,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_108"
+        },
+        "destination_mean": {
+          "__array__": "array_109"
+        },
+        "source_mean": {
+          "__array__": "array_110"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_111"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": -6.25812709634849e-11,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.017384251058807906,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_112"
+        },
+        "destination_mean": {
+          "__array__": "array_113"
+        },
+        "source_mean": {
+          "__array__": "array_114"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_115"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": -6.342661584881394e-09,
+        "scale": 0.5543971456643076,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.020873288680365774,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_116"
+        },
+        "destination_mean": {
+          "__array__": "array_117"
+        },
+        "source_mean": {
+          "__array__": "array_118"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_119"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 0.9999999999999964,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.039893442659727024,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_120"
+        },
+        "destination_mean": {
+          "__array__": "array_121"
+        },
+        "source_mean": {
+          "__array__": "array_122"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_123"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_124"
+        },
+        "destination_mean": {
+          "__array__": "array_125"
+        },
+        "source_mean": {
+          "__array__": "array_126"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_127"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.1555094951789887e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_128"
+        },
+        "destination_mean": {
+          "__array__": "array_129"
+        },
+        "source_mean": {
+          "__array__": "array_130"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_131"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.1555094951789887e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_132"
+        },
+        "destination_mean": {
+          "__array__": "array_133"
+        },
+        "source_mean": {
+          "__array__": "array_134"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_135"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.1555094951789887e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_136"
+        },
+        "destination_mean": {
+          "__array__": "array_137"
+        },
+        "source_mean": {
+          "__array__": "array_138"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_139"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.1555094951789887e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_140"
+        },
+        "destination_mean": {
+          "__array__": "array_141"
+        },
+        "source_mean": {
+          "__array__": "array_142"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_143"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.1555094951789887e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_144"
+        },
+        "destination_mean": {
+          "__array__": "array_145"
+        },
+        "source_mean": {
+          "__array__": "array_146"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_147"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.14857170616285548,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_148"
+        },
+        "destination_mean": {
+          "__array__": "array_149"
+        },
+        "source_mean": {
+          "__array__": "array_150"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_151"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.08910188235673033,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_152"
+        },
+        "destination_mean": {
+          "__array__": "array_153"
+        },
+        "source_mean": {
+          "__array__": "array_154"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_155"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0000000000000069,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.04892717422265573,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_156"
+        },
+        "destination_mean": {
+          "__array__": "array_157"
+        },
+        "source_mean": {
+          "__array__": "array_158"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_159"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.1112915223954064e-06,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.019727522613979573,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_160"
+        },
+        "destination_mean": {
+          "__array__": "array_161"
+        },
+        "source_mean": {
+          "__array__": "array_162"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_163"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 6.455646691418845e-10,
+        "scale": 0.5161912248074608,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.03914893710748784,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_164"
+        },
+        "destination_mean": {
+          "__array__": "array_165"
+        },
+        "source_mean": {
+          "__array__": "array_166"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_167"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0000000000000069,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.04892717422265573,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_168"
+        },
+        "destination_mean": {
+          "__array__": "array_169"
+        },
+        "source_mean": {
+          "__array__": "array_170"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_171"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.13961832569613764,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_172"
+        },
+        "destination_mean": {
+          "__array__": "array_173"
+        },
+        "source_mean": {
+          "__array__": "array_174"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_175"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.08298558831693094,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_176"
+        },
+        "destination_mean": {
+          "__array__": "array_177"
+        },
+        "source_mean": {
+          "__array__": "array_178"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_179"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": -1.0000000000000016,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.057021811898072615,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_180"
+        },
+        "destination_mean": {
+          "__array__": "array_181"
+        },
+        "source_mean": {
+          "__array__": "array_182"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_183"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": -1.3141127359823077e-11,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.023072497658996875,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_184"
+        },
+        "destination_mean": {
+          "__array__": "array_185"
+        },
+        "source_mean": {
+          "__array__": "array_186"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_187"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": -4.110168694363095e-13,
+        "scale": 0.4101409319999249,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.04396957112204543,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_188"
+        },
+        "destination_mean": {
+          "__array__": "array_189"
+        },
+        "source_mean": {
+          "__array__": "array_190"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_191"
+        },
+        "orthogonal_identifiable_full_rank": true,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.05702214316747447,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "first_spike": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_192"
+        },
+        "destination_mean": {
+          "__array__": "array_193"
+        },
+        "source_mean": {
+          "__array__": "array_194"
+        },
+        "rank_cross_covariance": 3,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_195"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.8653487504662438,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_196"
+        },
+        "destination_mean": {
+          "__array__": "array_197"
+        },
+        "source_mean": {
+          "__array__": "array_198"
+        },
+        "rank_cross_covariance": 3,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_199"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.8558490302126072,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_200"
+        },
+        "destination_mean": {
+          "__array__": "array_201"
+        },
+        "source_mean": {
+          "__array__": "array_202"
+        },
+        "rank_cross_covariance": 3,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_203"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -0.9999999999999992,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.7284388358329554,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_204"
+        },
+        "destination_mean": {
+          "__array__": "array_205"
+        },
+        "source_mean": {
+          "__array__": "array_206"
+        },
+        "rank_cross_covariance": 3,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_207"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.5071479279479881,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_208"
+        },
+        "destination_mean": {
+          "__array__": "array_209"
+        },
+        "source_mean": {
+          "__array__": "array_210"
+        },
+        "rank_cross_covariance": 3,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_211"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.1086783883051175e-29,
+        "scale": 0.12449450261545338,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.5077295218455586,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_212"
+        },
+        "destination_mean": {
+          "__array__": "array_213"
+        },
+        "source_mean": {
+          "__array__": "array_214"
+        },
+        "rank_cross_covariance": 3,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_215"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999992,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.7284388358329554,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_216"
+        },
+        "destination_mean": {
+          "__array__": "array_217"
+        },
+        "source_mean": {
+          "__array__": "array_218"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_219"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_220"
+        },
+        "destination_mean": {
+          "__array__": "array_221"
+        },
+        "source_mean": {
+          "__array__": "array_222"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_223"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_224"
+        },
+        "destination_mean": {
+          "__array__": "array_225"
+        },
+        "source_mean": {
+          "__array__": "array_226"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_227"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_228"
+        },
+        "destination_mean": {
+          "__array__": "array_229"
+        },
+        "source_mean": {
+          "__array__": "array_230"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_231"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_232"
+        },
+        "destination_mean": {
+          "__array__": "array_233"
+        },
+        "source_mean": {
+          "__array__": "array_234"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_235"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_236"
+        },
+        "destination_mean": {
+          "__array__": "array_237"
+        },
+        "source_mean": {
+          "__array__": "array_238"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_239"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_240"
+        },
+        "destination_mean": {
+          "__array__": "array_241"
+        },
+        "source_mean": {
+          "__array__": "array_242"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_243"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.8798955613577022,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_244"
+        },
+        "destination_mean": {
+          "__array__": "array_245"
+        },
+        "source_mean": {
+          "__array__": "array_246"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_247"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.782858541588959,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_248"
+        },
+        "destination_mean": {
+          "__array__": "array_249"
+        },
+        "source_mean": {
+          "__array__": "array_250"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_251"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -0.9999999999999994,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.526092764455131,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_252"
+        },
+        "destination_mean": {
+          "__array__": "array_253"
+        },
+        "source_mean": {
+          "__array__": "array_254"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_255"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.5041570494468313,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_256"
+        },
+        "destination_mean": {
+          "__array__": "array_257"
+        },
+        "source_mean": {
+          "__array__": "array_258"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_259"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -4.33251939534548e-40,
+        "scale": 0.058870556489129054,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.508209414134801,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_260"
+        },
+        "destination_mean": {
+          "__array__": "array_261"
+        },
+        "source_mean": {
+          "__array__": "array_262"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_263"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999994,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.526092764455131,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_264"
+        },
+        "destination_mean": {
+          "__array__": "array_265"
+        },
+        "source_mean": {
+          "__array__": "array_266"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_267"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.6590824319283848,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_268"
+        },
+        "destination_mean": {
+          "__array__": "array_269"
+        },
+        "source_mean": {
+          "__array__": "array_270"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_271"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.5437103692651992,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_272"
+        },
+        "destination_mean": {
+          "__array__": "array_273"
+        },
+        "source_mean": {
+          "__array__": "array_274"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_275"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999994,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.2957363904878694,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_276"
+        },
+        "destination_mean": {
+          "__array__": "array_277"
+        },
+        "source_mean": {
+          "__array__": "array_278"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_279"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.5018876990014858,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_280"
+        },
+        "destination_mean": {
+          "__array__": "array_281"
+        },
+        "source_mean": {
+          "__array__": "array_282"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_283"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 6.362636591149368e-36,
+        "scale": 0.07945361469473179,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.5063113373432553,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_284"
+        },
+        "destination_mean": {
+          "__array__": "array_285"
+        },
+        "source_mean": {
+          "__array__": "array_286"
+        },
+        "rank_cross_covariance": 4,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_287"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999994,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.2957363904878694,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "last_pre": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_288"
+        },
+        "destination_mean": {
+          "__array__": "array_289"
+        },
+        "source_mean": {
+          "__array__": "array_290"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_291"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.07439556837573627,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_292"
+        },
+        "destination_mean": {
+          "__array__": "array_293"
+        },
+        "source_mean": {
+          "__array__": "array_294"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_295"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06478880791797771,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_296"
+        },
+        "destination_mean": {
+          "__array__": "array_297"
+        },
+        "source_mean": {
+          "__array__": "array_298"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_299"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.05249056450175675,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_300"
+        },
+        "destination_mean": {
+          "__array__": "array_301"
+        },
+        "source_mean": {
+          "__array__": "array_302"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_303"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 7.649709824734897e-163,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.02829958729850908,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_304"
+        },
+        "destination_mean": {
+          "__array__": "array_305"
+        },
+        "source_mean": {
+          "__array__": "array_306"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_307"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 7.729242260118604e-13,
+        "scale": 0.4183158099485936,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.03227667864912509,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_308"
+        },
+        "destination_mean": {
+          "__array__": "array_309"
+        },
+        "source_mean": {
+          "__array__": "array_310"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_311"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.05249056450175675,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_312"
+        },
+        "destination_mean": {
+          "__array__": "array_313"
+        },
+        "source_mean": {
+          "__array__": "array_314"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_315"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_316"
+        },
+        "destination_mean": {
+          "__array__": "array_317"
+        },
+        "source_mean": {
+          "__array__": "array_318"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_319"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 4.381181867699991e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_320"
+        },
+        "destination_mean": {
+          "__array__": "array_321"
+        },
+        "source_mean": {
+          "__array__": "array_322"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_323"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 4.381181867699991e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_324"
+        },
+        "destination_mean": {
+          "__array__": "array_325"
+        },
+        "source_mean": {
+          "__array__": "array_326"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_327"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 4.381181867699991e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_328"
+        },
+        "destination_mean": {
+          "__array__": "array_329"
+        },
+        "source_mean": {
+          "__array__": "array_330"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_331"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 4.381181867699991e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_332"
+        },
+        "destination_mean": {
+          "__array__": "array_333"
+        },
+        "source_mean": {
+          "__array__": "array_334"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_335"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 4.381181867699991e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_336"
+        },
+        "destination_mean": {
+          "__array__": "array_337"
+        },
+        "source_mean": {
+          "__array__": "array_338"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_339"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.12931020594775702,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_340"
+        },
+        "destination_mean": {
+          "__array__": "array_341"
+        },
+        "source_mean": {
+          "__array__": "array_342"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_343"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.10449091731503396,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_344"
+        },
+        "destination_mean": {
+          "__array__": "array_345"
+        },
+        "source_mean": {
+          "__array__": "array_346"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_347"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999998,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06575989607150995,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_348"
+        },
+        "destination_mean": {
+          "__array__": "array_349"
+        },
+        "source_mean": {
+          "__array__": "array_350"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_351"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.8300758191446516e-164,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.03134010639313198,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_352"
+        },
+        "destination_mean": {
+          "__array__": "array_353"
+        },
+        "source_mean": {
+          "__array__": "array_354"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_355"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 9.859586332661823e-18,
+        "scale": 0.2941427065055336,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.03789123359370142,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_356"
+        },
+        "destination_mean": {
+          "__array__": "array_357"
+        },
+        "source_mean": {
+          "__array__": "array_358"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_359"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999998,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06575989607150995,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_360"
+        },
+        "destination_mean": {
+          "__array__": "array_361"
+        },
+        "source_mean": {
+          "__array__": "array_362"
+        },
+        "rank_cross_covariance": 24,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_363"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.10701802615814017,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_364"
+        },
+        "destination_mean": {
+          "__array__": "array_365"
+        },
+        "source_mean": {
+          "__array__": "array_366"
+        },
+        "rank_cross_covariance": 24,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_367"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.09238586078561037,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_368"
+        },
+        "destination_mean": {
+          "__array__": "array_369"
+        },
+        "source_mean": {
+          "__array__": "array_370"
+        },
+        "rank_cross_covariance": 24,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_371"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.0000000000000033,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06307269159135216,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_372"
+        },
+        "destination_mean": {
+          "__array__": "array_373"
+        },
+        "source_mean": {
+          "__array__": "array_374"
+        },
+        "rank_cross_covariance": 24,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_375"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -6.739757492148259e-169,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.031893318418605064,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_376"
+        },
+        "destination_mean": {
+          "__array__": "array_377"
+        },
+        "source_mean": {
+          "__array__": "array_378"
+        },
+        "rank_cross_covariance": 24,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_379"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -9.457020426250348e-18,
+        "scale": 0.29375977218596433,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.03847497689411399,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_380"
+        },
+        "destination_mean": {
+          "__array__": "array_381"
+        },
+        "source_mean": {
+          "__array__": "array_382"
+        },
+        "rank_cross_covariance": 24,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_383"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000033,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06307269159135218,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "last_post": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_384"
+        },
+        "destination_mean": {
+          "__array__": "array_385"
+        },
+        "source_mean": {
+          "__array__": "array_386"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_387"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.09956705003937477,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_388"
+        },
+        "destination_mean": {
+          "__array__": "array_389"
+        },
+        "source_mean": {
+          "__array__": "array_390"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_391"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.09243151934523386,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_392"
+        },
+        "destination_mean": {
+          "__array__": "array_393"
+        },
+        "source_mean": {
+          "__array__": "array_394"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_395"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.000000000000001,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06466119311116333,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_396"
+        },
+        "destination_mean": {
+          "__array__": "array_397"
+        },
+        "source_mean": {
+          "__array__": "array_398"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_399"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -8.002854708557342e-161,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.039534061572484264,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_400"
+        },
+        "destination_mean": {
+          "__array__": "array_401"
+        },
+        "source_mean": {
+          "__array__": "array_402"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_403"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -2.9047863260599593e-12,
+        "scale": 0.43598577379840225,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.04338931873077337,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_404"
+        },
+        "destination_mean": {
+          "__array__": "array_405"
+        },
+        "source_mean": {
+          "__array__": "array_406"
+        },
+        "rank_cross_covariance": 28,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_407"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000004,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.06466119311116336,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_408"
+        },
+        "destination_mean": {
+          "__array__": "array_409"
+        },
+        "source_mean": {
+          "__array__": "array_410"
+        },
+        "rank_cross_covariance": 26,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_411"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_412"
+        },
+        "destination_mean": {
+          "__array__": "array_413"
+        },
+        "source_mean": {
+          "__array__": "array_414"
+        },
+        "rank_cross_covariance": 26,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_415"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.3318583677623922e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_416"
+        },
+        "destination_mean": {
+          "__array__": "array_417"
+        },
+        "source_mean": {
+          "__array__": "array_418"
+        },
+        "rank_cross_covariance": 26,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_419"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.3318583677623922e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_420"
+        },
+        "destination_mean": {
+          "__array__": "array_421"
+        },
+        "source_mean": {
+          "__array__": "array_422"
+        },
+        "rank_cross_covariance": 26,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_423"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.3318583677623922e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_424"
+        },
+        "destination_mean": {
+          "__array__": "array_425"
+        },
+        "source_mean": {
+          "__array__": "array_426"
+        },
+        "rank_cross_covariance": 26,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_427"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.3318583677623922e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_428"
+        },
+        "destination_mean": {
+          "__array__": "array_429"
+        },
+        "source_mean": {
+          "__array__": "array_430"
+        },
+        "rank_cross_covariance": 26,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_431"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.3318583677623922e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_432"
+        },
+        "destination_mean": {
+          "__array__": "array_433"
+        },
+        "source_mean": {
+          "__array__": "array_434"
+        },
+        "rank_cross_covariance": 27,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_435"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.1613188134885288,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_436"
+        },
+        "destination_mean": {
+          "__array__": "array_437"
+        },
+        "source_mean": {
+          "__array__": "array_438"
+        },
+        "rank_cross_covariance": 27,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_439"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.13081862871879468,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_440"
+        },
+        "destination_mean": {
+          "__array__": "array_441"
+        },
+        "source_mean": {
+          "__array__": "array_442"
+        },
+        "rank_cross_covariance": 27,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_443"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -0.999999999999999,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.08054116015714025,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_444"
+        },
+        "destination_mean": {
+          "__array__": "array_445"
+        },
+        "source_mean": {
+          "__array__": "array_446"
+        },
+        "rank_cross_covariance": 27,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_447"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.480873956664643e-164,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.04270006312884972,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_448"
+        },
+        "destination_mean": {
+          "__array__": "array_449"
+        },
+        "source_mean": {
+          "__array__": "array_450"
+        },
+        "rank_cross_covariance": 27,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_451"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -4.542714712316592e-17,
+        "scale": 0.3085255308493266,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.05002481688968943,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_452"
+        },
+        "destination_mean": {
+          "__array__": "array_453"
+        },
+        "source_mean": {
+          "__array__": "array_454"
+        },
+        "rank_cross_covariance": 27,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_455"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.000000000000002,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.08054116015714025,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_456"
+        },
+        "destination_mean": {
+          "__array__": "array_457"
+        },
+        "source_mean": {
+          "__array__": "array_458"
+        },
+        "rank_cross_covariance": 25,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_459"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.13333920157926735,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_460"
+        },
+        "destination_mean": {
+          "__array__": "array_461"
+        },
+        "source_mean": {
+          "__array__": "array_462"
+        },
+        "rank_cross_covariance": 25,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_463"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.11801273201276737,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_464"
+        },
+        "destination_mean": {
+          "__array__": "array_465"
+        },
+        "source_mean": {
+          "__array__": "array_466"
+        },
+        "rank_cross_covariance": 25,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_467"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -0.9999999999999951,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.08693700934931592,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_468"
+        },
+        "destination_mean": {
+          "__array__": "array_469"
+        },
+        "source_mean": {
+          "__array__": "array_470"
+        },
+        "rank_cross_covariance": 25,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_471"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -6.5316171590982405e-168,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.044822448217765126,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_472"
+        },
+        "destination_mean": {
+          "__array__": "array_473"
+        },
+        "source_mean": {
+          "__array__": "array_474"
+        },
+        "rank_cross_covariance": 25,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_475"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -2.3046485366057515e-20,
+        "scale": 0.243406065877138,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.05253997632965156,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_476"
+        },
+        "destination_mean": {
+          "__array__": "array_477"
+        },
+        "source_mean": {
+          "__array__": "array_478"
+        },
+        "rank_cross_covariance": 25,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_479"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999948,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.08693700934931595,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "last_spike": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_480"
+        },
+        "destination_mean": {
+          "__array__": "array_481"
+        },
+        "source_mean": {
+          "__array__": "array_482"
+        },
+        "rank_cross_covariance": 8,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_483"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.83734830646622,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_484"
+        },
+        "destination_mean": {
+          "__array__": "array_485"
+        },
+        "source_mean": {
+          "__array__": "array_486"
+        },
+        "rank_cross_covariance": 8,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_487"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.8172206122079333,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_488"
+        },
+        "destination_mean": {
+          "__array__": "array_489"
+        },
+        "source_mean": {
+          "__array__": "array_490"
+        },
+        "rank_cross_covariance": 8,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_491"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000024,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.3318338037756365,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_492"
+        },
+        "destination_mean": {
+          "__array__": "array_493"
+        },
+        "source_mean": {
+          "__array__": "array_494"
+        },
+        "rank_cross_covariance": 8,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_495"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.9098623733773746,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_496"
+        },
+        "destination_mean": {
+          "__array__": "array_497"
+        },
+        "source_mean": {
+          "__array__": "array_498"
+        },
+        "rank_cross_covariance": 8,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_499"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.6350140640485701e-22,
+        "scale": 0.20853192228245218,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.921854347980646,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_500"
+        },
+        "destination_mean": {
+          "__array__": "array_501"
+        },
+        "source_mean": {
+          "__array__": "array_502"
+        },
+        "rank_cross_covariance": 8,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_503"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000024,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.3318338037756365,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_504"
+        },
+        "destination_mean": {
+          "__array__": "array_505"
+        },
+        "source_mean": {
+          "__array__": "array_506"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_507"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_508"
+        },
+        "destination_mean": {
+          "__array__": "array_509"
+        },
+        "source_mean": {
+          "__array__": "array_510"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_511"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 3.659266894335748e-33,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_512"
+        },
+        "destination_mean": {
+          "__array__": "array_513"
+        },
+        "source_mean": {
+          "__array__": "array_514"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_515"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 3.659266894335748e-33,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_516"
+        },
+        "destination_mean": {
+          "__array__": "array_517"
+        },
+        "source_mean": {
+          "__array__": "array_518"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_519"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 3.659266894335748e-33,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_520"
+        },
+        "destination_mean": {
+          "__array__": "array_521"
+        },
+        "source_mean": {
+          "__array__": "array_522"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_523"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 3.659266894335748e-33,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_524"
+        },
+        "destination_mean": {
+          "__array__": "array_525"
+        },
+        "source_mean": {
+          "__array__": "array_526"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_527"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 3.659266894335748e-33,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_528"
+        },
+        "destination_mean": {
+          "__array__": "array_529"
+        },
+        "source_mean": {
+          "__array__": "array_530"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_531"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.1503350842238724,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_532"
+        },
+        "destination_mean": {
+          "__array__": "array_533"
+        },
+        "source_mean": {
+          "__array__": "array_534"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_535"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.1180153051983335,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_536"
+        },
+        "destination_mean": {
+          "__array__": "array_537"
+        },
+        "source_mean": {
+          "__array__": "array_538"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_539"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.0000000000000038,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.6743640368085346,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_540"
+        },
+        "destination_mean": {
+          "__array__": "array_541"
+        },
+        "source_mean": {
+          "__array__": "array_542"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_543"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.9000607082243313,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_544"
+        },
+        "destination_mean": {
+          "__array__": "array_545"
+        },
+        "source_mean": {
+          "__array__": "array_546"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_547"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -2.0531487018420137e-25,
+        "scale": 0.16924394409011206,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.9189633297428357,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_548"
+        },
+        "destination_mean": {
+          "__array__": "array_549"
+        },
+        "source_mean": {
+          "__array__": "array_550"
+        },
+        "rank_cross_covariance": 9,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_551"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000038,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.6743640368085346,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_552"
+        },
+        "destination_mean": {
+          "__array__": "array_553"
+        },
+        "source_mean": {
+          "__array__": "array_554"
+        },
+        "rank_cross_covariance": 7,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_555"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 2.011229849664916,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_556"
+        },
+        "destination_mean": {
+          "__array__": "array_557"
+        },
+        "source_mean": {
+          "__array__": "array_558"
+        },
+        "rank_cross_covariance": 7,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_559"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.9902078427821046,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_560"
+        },
+        "destination_mean": {
+          "__array__": "array_561"
+        },
+        "source_mean": {
+          "__array__": "array_562"
+        },
+        "rank_cross_covariance": 7,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_563"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.0000000000000027,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.6883368143757436,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_564"
+        },
+        "destination_mean": {
+          "__array__": "array_565"
+        },
+        "source_mean": {
+          "__array__": "array_566"
+        },
+        "rank_cross_covariance": 7,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_567"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.9282130944175649,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_568"
+        },
+        "destination_mean": {
+          "__array__": "array_569"
+        },
+        "source_mean": {
+          "__array__": "array_570"
+        },
+        "rank_cross_covariance": 7,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_571"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -2.0568704521859735e-30,
+        "scale": 0.1181102848348956,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 0.9368351123926675,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_572"
+        },
+        "destination_mean": {
+          "__array__": "array_573"
+        },
+        "source_mean": {
+          "__array__": "array_574"
+        },
+        "rank_cross_covariance": 7,
+        "dimension": 32,
+        "singular_values_cross_covariance": {
+          "__array__": "array_575"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.000000000000002,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 1088,
+        "training_state_MSE": 1.6883368143757433,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "first_post_spike": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_576"
+        },
+        "destination_mean": {
+          "__array__": "array_577"
+        },
+        "source_mean": {
+          "__array__": "array_578"
+        },
+        "rank_cross_covariance": 35,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_579"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.106906963485971,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_580"
+        },
+        "destination_mean": {
+          "__array__": "array_581"
+        },
+        "source_mean": {
+          "__array__": "array_582"
+        },
+        "rank_cross_covariance": 35,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_583"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.076608110979166,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_584"
+        },
+        "destination_mean": {
+          "__array__": "array_585"
+        },
+        "source_mean": {
+          "__array__": "array_586"
+        },
+        "rank_cross_covariance": 35,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_587"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000058,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.055453210385431995,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_588"
+        },
+        "destination_mean": {
+          "__array__": "array_589"
+        },
+        "source_mean": {
+          "__array__": "array_590"
+        },
+        "rank_cross_covariance": 35,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_591"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.029738565204458778,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_592"
+        },
+        "destination_mean": {
+          "__array__": "array_593"
+        },
+        "source_mean": {
+          "__array__": "array_594"
+        },
+        "rank_cross_covariance": 35,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_595"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 4.564904977065219e-17,
+        "scale": 0.555493038857423,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.03518722613161748,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_596"
+        },
+        "destination_mean": {
+          "__array__": "array_597"
+        },
+        "source_mean": {
+          "__array__": "array_598"
+        },
+        "rank_cross_covariance": 35,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_599"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000058,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.055453210385431995,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_600"
+        },
+        "destination_mean": {
+          "__array__": "array_601"
+        },
+        "source_mean": {
+          "__array__": "array_602"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_603"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_604"
+        },
+        "destination_mean": {
+          "__array__": "array_605"
+        },
+        "source_mean": {
+          "__array__": "array_606"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_607"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.7084634514818983e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_608"
+        },
+        "destination_mean": {
+          "__array__": "array_609"
+        },
+        "source_mean": {
+          "__array__": "array_610"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_611"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.7084634514818983e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_612"
+        },
+        "destination_mean": {
+          "__array__": "array_613"
+        },
+        "source_mean": {
+          "__array__": "array_614"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_615"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.7084634514818983e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_616"
+        },
+        "destination_mean": {
+          "__array__": "array_617"
+        },
+        "source_mean": {
+          "__array__": "array_618"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_619"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.7084634514818983e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_620"
+        },
+        "destination_mean": {
+          "__array__": "array_621"
+        },
+        "source_mean": {
+          "__array__": "array_622"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_623"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.7084634514818983e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_624"
+        },
+        "destination_mean": {
+          "__array__": "array_625"
+        },
+        "source_mean": {
+          "__array__": "array_626"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_627"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.21062953863437717,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_628"
+        },
+        "destination_mean": {
+          "__array__": "array_629"
+        },
+        "source_mean": {
+          "__array__": "array_630"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_631"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.14981315061008005,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_632"
+        },
+        "destination_mean": {
+          "__array__": "array_633"
+        },
+        "source_mean": {
+          "__array__": "array_634"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_635"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999973,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.09238917245282294,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_636"
+        },
+        "destination_mean": {
+          "__array__": "array_637"
+        },
+        "source_mean": {
+          "__array__": "array_638"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_639"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.034516152209778744,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_640"
+        },
+        "destination_mean": {
+          "__array__": "array_641"
+        },
+        "source_mean": {
+          "__array__": "array_642"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_643"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.8763052802495772e-30,
+        "scale": 0.3431787335439819,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.05724197028786508,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_644"
+        },
+        "destination_mean": {
+          "__array__": "array_645"
+        },
+        "source_mean": {
+          "__array__": "array_646"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_647"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999973,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.09238917245282294,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_648"
+        },
+        "destination_mean": {
+          "__array__": "array_649"
+        },
+        "source_mean": {
+          "__array__": "array_650"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_651"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.19408222548479917,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_652"
+        },
+        "destination_mean": {
+          "__array__": "array_653"
+        },
+        "source_mean": {
+          "__array__": "array_654"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_655"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.135344026902002,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_656"
+        },
+        "destination_mean": {
+          "__array__": "array_657"
+        },
+        "source_mean": {
+          "__array__": "array_658"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_659"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -0.9999999999999976,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.0850707315219909,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_660"
+        },
+        "destination_mean": {
+          "__array__": "array_661"
+        },
+        "source_mean": {
+          "__array__": "array_662"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_663"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.0329996338579513,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_664"
+        },
+        "destination_mean": {
+          "__array__": "array_665"
+        },
+        "source_mean": {
+          "__array__": "array_666"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_667"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.9265521490019592e-28,
+        "scale": 0.3689348656398985,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.05736869998052113,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_668"
+        },
+        "destination_mean": {
+          "__array__": "array_669"
+        },
+        "source_mean": {
+          "__array__": "array_670"
+        },
+        "rank_cross_covariance": 36,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_671"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999976,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.0850707315219909,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "last_post_spike": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_672"
+        },
+        "destination_mean": {
+          "__array__": "array_673"
+        },
+        "source_mean": {
+          "__array__": "array_674"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_675"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.1688123452101052,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_676"
+        },
+        "destination_mean": {
+          "__array__": "array_677"
+        },
+        "source_mean": {
+          "__array__": "array_678"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_679"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.16115911633181226,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_680"
+        },
+        "destination_mean": {
+          "__array__": "array_681"
+        },
+        "source_mean": {
+          "__array__": "array_682"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_683"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999943,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.09948638483726932,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_684"
+        },
+        "destination_mean": {
+          "__array__": "array_685"
+        },
+        "source_mean": {
+          "__array__": "array_686"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_687"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.06527485643432653,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_688"
+        },
+        "destination_mean": {
+          "__array__": "array_689"
+        },
+        "source_mean": {
+          "__array__": "array_690"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_691"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.7295375663344267e-22,
+        "scale": 0.4570541495806424,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.07287167492412483,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_692"
+        },
+        "destination_mean": {
+          "__array__": "array_693"
+        },
+        "source_mean": {
+          "__array__": "array_694"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_695"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999943,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.09948638483726932,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_696"
+        },
+        "destination_mean": {
+          "__array__": "array_697"
+        },
+        "source_mean": {
+          "__array__": "array_698"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_699"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_700"
+        },
+        "destination_mean": {
+          "__array__": "array_701"
+        },
+        "source_mean": {
+          "__array__": "array_702"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_703"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.438996555465529e-34,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_704"
+        },
+        "destination_mean": {
+          "__array__": "array_705"
+        },
+        "source_mean": {
+          "__array__": "array_706"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_707"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.438996555465529e-34,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_708"
+        },
+        "destination_mean": {
+          "__array__": "array_709"
+        },
+        "source_mean": {
+          "__array__": "array_710"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_711"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.438996555465529e-34,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_712"
+        },
+        "destination_mean": {
+          "__array__": "array_713"
+        },
+        "source_mean": {
+          "__array__": "array_714"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_715"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.438996555465529e-34,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_716"
+        },
+        "destination_mean": {
+          "__array__": "array_717"
+        },
+        "source_mean": {
+          "__array__": "array_718"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_719"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 1.438996555465529e-34,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_720"
+        },
+        "destination_mean": {
+          "__array__": "array_721"
+        },
+        "source_mean": {
+          "__array__": "array_722"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_723"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.2405750594959516,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_724"
+        },
+        "destination_mean": {
+          "__array__": "array_725"
+        },
+        "source_mean": {
+          "__array__": "array_726"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_727"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.21000236943197054,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_728"
+        },
+        "destination_mean": {
+          "__array__": "array_729"
+        },
+        "source_mean": {
+          "__array__": "array_730"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_731"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000049,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.13677031272782209,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_732"
+        },
+        "destination_mean": {
+          "__array__": "array_733"
+        },
+        "source_mean": {
+          "__array__": "array_734"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_735"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.07055812773274911,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_736"
+        },
+        "destination_mean": {
+          "__array__": "array_737"
+        },
+        "source_mean": {
+          "__array__": "array_738"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_739"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.382697412889791e-35,
+        "scale": 0.2853145119412586,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.08319292728390039,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_740"
+        },
+        "destination_mean": {
+          "__array__": "array_741"
+        },
+        "source_mean": {
+          "__array__": "array_742"
+        },
+        "rank_cross_covariance": 32,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_743"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000049,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.13677031272782209,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_744"
+        },
+        "destination_mean": {
+          "__array__": "array_745"
+        },
+        "source_mean": {
+          "__array__": "array_746"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_747"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.20816742966846763,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_748"
+        },
+        "destination_mean": {
+          "__array__": "array_749"
+        },
+        "source_mean": {
+          "__array__": "array_750"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_751"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.19261401027087394,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_752"
+        },
+        "destination_mean": {
+          "__array__": "array_753"
+        },
+        "source_mean": {
+          "__array__": "array_754"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_755"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.000000000000004,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.14015068831403255,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_756"
+        },
+        "destination_mean": {
+          "__array__": "array_757"
+        },
+        "source_mean": {
+          "__array__": "array_758"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_759"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.07324889292951134,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_760"
+        },
+        "destination_mean": {
+          "__array__": "array_761"
+        },
+        "source_mean": {
+          "__array__": "array_762"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_763"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.9170485872764374e-39,
+        "scale": 0.24833683538485773,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.08579914036705111,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_764"
+        },
+        "destination_mean": {
+          "__array__": "array_765"
+        },
+        "source_mean": {
+          "__array__": "array_766"
+        },
+        "rank_cross_covariance": 29,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_767"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000047,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.14015068831403255,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  },
+  "core_post": {
+    "13": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_768"
+        },
+        "destination_mean": {
+          "__array__": "array_769"
+        },
+        "source_mean": {
+          "__array__": "array_770"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_771"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.09223548470860221,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_772"
+        },
+        "destination_mean": {
+          "__array__": "array_773"
+        },
+        "source_mean": {
+          "__array__": "array_774"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_775"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.07668565618907265,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_776"
+        },
+        "destination_mean": {
+          "__array__": "array_777"
+        },
+        "source_mean": {
+          "__array__": "array_778"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_779"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000007,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.053562206383322854,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_780"
+        },
+        "destination_mean": {
+          "__array__": "array_781"
+        },
+        "source_mean": {
+          "__array__": "array_782"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_783"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 3.719357751240674e-172,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.028455361821206414,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_784"
+        },
+        "destination_mean": {
+          "__array__": "array_785"
+        },
+        "source_mean": {
+          "__array__": "array_786"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_787"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 8.148865215406376e-20,
+        "scale": 0.5031945083130672,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.03455850733637358,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_788"
+        },
+        "destination_mean": {
+          "__array__": "array_789"
+        },
+        "source_mean": {
+          "__array__": "array_790"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_791"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000007,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.053562206383322854,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "15": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_792"
+        },
+        "destination_mean": {
+          "__array__": "array_793"
+        },
+        "source_mean": {
+          "__array__": "array_794"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_795"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.0,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_796"
+        },
+        "destination_mean": {
+          "__array__": "array_797"
+        },
+        "source_mean": {
+          "__array__": "array_798"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_799"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 2.2382827948688406e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_800"
+        },
+        "destination_mean": {
+          "__array__": "array_801"
+        },
+        "source_mean": {
+          "__array__": "array_802"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_803"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 2.2382827948688406e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_804"
+        },
+        "destination_mean": {
+          "__array__": "array_805"
+        },
+        "source_mean": {
+          "__array__": "array_806"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_807"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 2.2382827948688406e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_808"
+        },
+        "destination_mean": {
+          "__array__": "array_809"
+        },
+        "source_mean": {
+          "__array__": "array_810"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_811"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 2.2382827948688406e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_812"
+        },
+        "destination_mean": {
+          "__array__": "array_813"
+        },
+        "source_mean": {
+          "__array__": "array_814"
+        },
+        "rank_cross_covariance": 53,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_815"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 2.2382827948688406e-35,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "19": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_816"
+        },
+        "destination_mean": {
+          "__array__": "array_817"
+        },
+        "source_mean": {
+          "__array__": "array_818"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_819"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.1568378883370505,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_820"
+        },
+        "destination_mean": {
+          "__array__": "array_821"
+        },
+        "source_mean": {
+          "__array__": "array_822"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_823"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.11615415518485582,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_824"
+        },
+        "destination_mean": {
+          "__array__": "array_825"
+        },
+        "source_mean": {
+          "__array__": "array_826"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_827"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.0000000000000036,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.06743126985377926,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_828"
+        },
+        "destination_mean": {
+          "__array__": "array_829"
+        },
+        "source_mean": {
+          "__array__": "array_830"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_831"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -5.537898759927411e-175,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.032083405243646695,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_832"
+        },
+        "destination_mean": {
+          "__array__": "array_833"
+        },
+        "source_mean": {
+          "__array__": "array_834"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_835"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.4404196285758615e-27,
+        "scale": 0.3807162298666773,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.04592667581238183,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_836"
+        },
+        "destination_mean": {
+          "__array__": "array_837"
+        },
+        "source_mean": {
+          "__array__": "array_838"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_839"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0000000000000033,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.06743126985377927,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    },
+    "23": {
+      "raw": {
+        "family": "raw",
+        "w": {
+          "__array__": "array_840"
+        },
+        "destination_mean": {
+          "__array__": "array_841"
+        },
+        "source_mean": {
+          "__array__": "array_842"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_843"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.13554646982183327,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "center": {
+        "family": "center",
+        "w": {
+          "__array__": "array_844"
+        },
+        "destination_mean": {
+          "__array__": "array_845"
+        },
+        "source_mean": {
+          "__array__": "array_846"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_847"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 1.0,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.10569982013706639,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "orthogonal": {
+        "family": "orthogonal",
+        "w": {
+          "__array__": "array_848"
+        },
+        "destination_mean": {
+          "__array__": "array_849"
+        },
+        "source_mean": {
+          "__array__": "array_850"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_851"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -0.9999999999999922,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.07442094883623211,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "affine": {
+        "family": "affine",
+        "w": {
+          "__array__": "array_852"
+        },
+        "destination_mean": {
+          "__array__": "array_853"
+        },
+        "source_mean": {
+          "__array__": "array_854"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_855"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -1.1203804649998438e-183,
+        "scale": 1.0,
+        "alpha": 0.001,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.035543298874518015,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "similarity": {
+        "family": "similarity",
+        "w": {
+          "__array__": "array_856"
+        },
+        "destination_mean": {
+          "__array__": "array_857"
+        },
+        "source_mean": {
+          "__array__": "array_858"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_859"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": -9.365528147239454e-34,
+        "scale": 0.3047405112236289,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.049210831625358206,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      },
+      "rotation": {
+        "family": "rotation",
+        "w": {
+          "__array__": "array_860"
+        },
+        "destination_mean": {
+          "__array__": "array_861"
+        },
+        "source_mean": {
+          "__array__": "array_862"
+        },
+        "rank_cross_covariance": 52,
+        "dimension": 64,
+        "singular_values_cross_covariance": {
+          "__array__": "array_863"
+        },
+        "orthogonal_identifiable_full_rank": false,
+        "determinant": 0.9999999999999913,
+        "scale": 1.0,
+        "alpha": null,
+        "paired_scenes": 512,
+        "map_parameters_stored": 4224,
+        "training_state_MSE": 0.0744209488362321,
+        "label_access": false,
+        "direction": "destination time -> source time"
+      }
+    }
+  }
+}

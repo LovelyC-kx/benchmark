@@ -1,0 +1,1712 @@
+{
+  "first_post": {
+    "H1": {
+      "pooled": [
+        {
+          "__array__": "array_0"
+        },
+        {
+          "__array__": "array_1"
+        },
+        {
+          "__array__": "array_2"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_3"
+        },
+        {
+          "__array__": "array_4"
+        },
+        {
+          "__array__": "array_5"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_6"
+        },
+        {
+          "__array__": "array_7"
+        },
+        {
+          "__array__": "array_8"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_9"
+        },
+        {
+          "__array__": "array_10"
+        },
+        {
+          "__array__": "array_11"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_12"
+        },
+        {
+          "__array__": "array_13"
+        },
+        {
+          "__array__": "array_14"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_15"
+        },
+        {
+          "__array__": "array_16"
+        },
+        {
+          "__array__": "array_17"
+        }
+      ]
+    },
+    "H2": {
+      "pooled": [
+        {
+          "__array__": "array_18"
+        },
+        {
+          "__array__": "array_19"
+        },
+        {
+          "__array__": "array_20"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_21"
+        },
+        {
+          "__array__": "array_22"
+        },
+        {
+          "__array__": "array_23"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_24"
+        },
+        {
+          "__array__": "array_25"
+        },
+        {
+          "__array__": "array_26"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_27"
+        },
+        {
+          "__array__": "array_28"
+        },
+        {
+          "__array__": "array_29"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_30"
+        },
+        {
+          "__array__": "array_31"
+        },
+        {
+          "__array__": "array_32"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_33"
+        },
+        {
+          "__array__": "array_34"
+        },
+        {
+          "__array__": "array_35"
+        }
+      ]
+    },
+    "H3": {
+      "pooled": [
+        {
+          "__array__": "array_36"
+        },
+        {
+          "__array__": "array_37"
+        },
+        {
+          "__array__": "array_38"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_39"
+        },
+        {
+          "__array__": "array_40"
+        },
+        {
+          "__array__": "array_41"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_42"
+        },
+        {
+          "__array__": "array_43"
+        },
+        {
+          "__array__": "array_44"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_45"
+        },
+        {
+          "__array__": "array_46"
+        },
+        {
+          "__array__": "array_47"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_48"
+        },
+        {
+          "__array__": "array_49"
+        },
+        {
+          "__array__": "array_50"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_51"
+        },
+        {
+          "__array__": "array_52"
+        },
+        {
+          "__array__": "array_53"
+        }
+      ]
+    },
+    "H4": {
+      "pooled": [
+        {
+          "__array__": "array_54"
+        },
+        {
+          "__array__": "array_55"
+        },
+        {
+          "__array__": "array_56"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_57"
+        },
+        {
+          "__array__": "array_58"
+        },
+        {
+          "__array__": "array_59"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_60"
+        },
+        {
+          "__array__": "array_61"
+        },
+        {
+          "__array__": "array_62"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_63"
+        },
+        {
+          "__array__": "array_64"
+        },
+        {
+          "__array__": "array_65"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_66"
+        },
+        {
+          "__array__": "array_67"
+        },
+        {
+          "__array__": "array_68"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_69"
+        },
+        {
+          "__array__": "array_70"
+        },
+        {
+          "__array__": "array_71"
+        }
+      ]
+    },
+    "C": {
+      "pooled": [
+        {
+          "__array__": "array_72"
+        },
+        {
+          "__array__": "array_73"
+        },
+        {
+          "__array__": "array_74"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_75"
+        },
+        {
+          "__array__": "array_76"
+        },
+        {
+          "__array__": "array_77"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_78"
+        },
+        {
+          "__array__": "array_79"
+        },
+        {
+          "__array__": "array_80"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_81"
+        },
+        {
+          "__array__": "array_82"
+        },
+        {
+          "__array__": "array_83"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_84"
+        },
+        {
+          "__array__": "array_85"
+        },
+        {
+          "__array__": "array_86"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_87"
+        },
+        {
+          "__array__": "array_88"
+        },
+        {
+          "__array__": "array_89"
+        }
+      ]
+    }
+  },
+  "last_post": {
+    "H1": {
+      "pooled": [
+        {
+          "__array__": "array_90"
+        },
+        {
+          "__array__": "array_91"
+        },
+        {
+          "__array__": "array_92"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_93"
+        },
+        {
+          "__array__": "array_94"
+        },
+        {
+          "__array__": "array_95"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_96"
+        },
+        {
+          "__array__": "array_97"
+        },
+        {
+          "__array__": "array_98"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_99"
+        },
+        {
+          "__array__": "array_100"
+        },
+        {
+          "__array__": "array_101"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_102"
+        },
+        {
+          "__array__": "array_103"
+        },
+        {
+          "__array__": "array_104"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_105"
+        },
+        {
+          "__array__": "array_106"
+        },
+        {
+          "__array__": "array_107"
+        }
+      ]
+    },
+    "H2": {
+      "pooled": [
+        {
+          "__array__": "array_108"
+        },
+        {
+          "__array__": "array_109"
+        },
+        {
+          "__array__": "array_110"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_111"
+        },
+        {
+          "__array__": "array_112"
+        },
+        {
+          "__array__": "array_113"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_114"
+        },
+        {
+          "__array__": "array_115"
+        },
+        {
+          "__array__": "array_116"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_117"
+        },
+        {
+          "__array__": "array_118"
+        },
+        {
+          "__array__": "array_119"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_120"
+        },
+        {
+          "__array__": "array_121"
+        },
+        {
+          "__array__": "array_122"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_123"
+        },
+        {
+          "__array__": "array_124"
+        },
+        {
+          "__array__": "array_125"
+        }
+      ]
+    },
+    "H3": {
+      "pooled": [
+        {
+          "__array__": "array_126"
+        },
+        {
+          "__array__": "array_127"
+        },
+        {
+          "__array__": "array_128"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_129"
+        },
+        {
+          "__array__": "array_130"
+        },
+        {
+          "__array__": "array_131"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_132"
+        },
+        {
+          "__array__": "array_133"
+        },
+        {
+          "__array__": "array_134"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_135"
+        },
+        {
+          "__array__": "array_136"
+        },
+        {
+          "__array__": "array_137"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_138"
+        },
+        {
+          "__array__": "array_139"
+        },
+        {
+          "__array__": "array_140"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_141"
+        },
+        {
+          "__array__": "array_142"
+        },
+        {
+          "__array__": "array_143"
+        }
+      ]
+    },
+    "H4": {
+      "pooled": [
+        {
+          "__array__": "array_144"
+        },
+        {
+          "__array__": "array_145"
+        },
+        {
+          "__array__": "array_146"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_147"
+        },
+        {
+          "__array__": "array_148"
+        },
+        {
+          "__array__": "array_149"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_150"
+        },
+        {
+          "__array__": "array_151"
+        },
+        {
+          "__array__": "array_152"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_153"
+        },
+        {
+          "__array__": "array_154"
+        },
+        {
+          "__array__": "array_155"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_156"
+        },
+        {
+          "__array__": "array_157"
+        },
+        {
+          "__array__": "array_158"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_159"
+        },
+        {
+          "__array__": "array_160"
+        },
+        {
+          "__array__": "array_161"
+        }
+      ]
+    },
+    "C": {
+      "pooled": [
+        {
+          "__array__": "array_162"
+        },
+        {
+          "__array__": "array_163"
+        },
+        {
+          "__array__": "array_164"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_165"
+        },
+        {
+          "__array__": "array_166"
+        },
+        {
+          "__array__": "array_167"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_168"
+        },
+        {
+          "__array__": "array_169"
+        },
+        {
+          "__array__": "array_170"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_171"
+        },
+        {
+          "__array__": "array_172"
+        },
+        {
+          "__array__": "array_173"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_174"
+        },
+        {
+          "__array__": "array_175"
+        },
+        {
+          "__array__": "array_176"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_177"
+        },
+        {
+          "__array__": "array_178"
+        },
+        {
+          "__array__": "array_179"
+        }
+      ]
+    }
+  },
+  "first_spike": {
+    "H1": {
+      "pooled": [
+        {
+          "__array__": "array_180"
+        },
+        {
+          "__array__": "array_181"
+        },
+        {
+          "__array__": "array_182"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_183"
+        },
+        {
+          "__array__": "array_184"
+        },
+        {
+          "__array__": "array_185"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_186"
+        },
+        {
+          "__array__": "array_187"
+        },
+        {
+          "__array__": "array_188"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_189"
+        },
+        {
+          "__array__": "array_190"
+        },
+        {
+          "__array__": "array_191"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_192"
+        },
+        {
+          "__array__": "array_193"
+        },
+        {
+          "__array__": "array_194"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_195"
+        },
+        {
+          "__array__": "array_196"
+        },
+        {
+          "__array__": "array_197"
+        }
+      ]
+    },
+    "H2": {
+      "pooled": [
+        {
+          "__array__": "array_198"
+        },
+        {
+          "__array__": "array_199"
+        },
+        {
+          "__array__": "array_200"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_201"
+        },
+        {
+          "__array__": "array_202"
+        },
+        {
+          "__array__": "array_203"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_204"
+        },
+        {
+          "__array__": "array_205"
+        },
+        {
+          "__array__": "array_206"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_207"
+        },
+        {
+          "__array__": "array_208"
+        },
+        {
+          "__array__": "array_209"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_210"
+        },
+        {
+          "__array__": "array_211"
+        },
+        {
+          "__array__": "array_212"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_213"
+        },
+        {
+          "__array__": "array_214"
+        },
+        {
+          "__array__": "array_215"
+        }
+      ]
+    },
+    "H3": {
+      "pooled": [
+        {
+          "__array__": "array_216"
+        },
+        {
+          "__array__": "array_217"
+        },
+        {
+          "__array__": "array_218"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_219"
+        },
+        {
+          "__array__": "array_220"
+        },
+        {
+          "__array__": "array_221"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_222"
+        },
+        {
+          "__array__": "array_223"
+        },
+        {
+          "__array__": "array_224"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_225"
+        },
+        {
+          "__array__": "array_226"
+        },
+        {
+          "__array__": "array_227"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_228"
+        },
+        {
+          "__array__": "array_229"
+        },
+        {
+          "__array__": "array_230"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_231"
+        },
+        {
+          "__array__": "array_232"
+        },
+        {
+          "__array__": "array_233"
+        }
+      ]
+    },
+    "H4": {
+      "pooled": [
+        {
+          "__array__": "array_234"
+        },
+        {
+          "__array__": "array_235"
+        },
+        {
+          "__array__": "array_236"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_237"
+        },
+        {
+          "__array__": "array_238"
+        },
+        {
+          "__array__": "array_239"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_240"
+        },
+        {
+          "__array__": "array_241"
+        },
+        {
+          "__array__": "array_242"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_243"
+        },
+        {
+          "__array__": "array_244"
+        },
+        {
+          "__array__": "array_245"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_246"
+        },
+        {
+          "__array__": "array_247"
+        },
+        {
+          "__array__": "array_248"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_249"
+        },
+        {
+          "__array__": "array_250"
+        },
+        {
+          "__array__": "array_251"
+        }
+      ]
+    },
+    "C": {
+      "pooled": [
+        {
+          "__array__": "array_252"
+        },
+        {
+          "__array__": "array_253"
+        },
+        {
+          "__array__": "array_254"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_255"
+        },
+        {
+          "__array__": "array_256"
+        },
+        {
+          "__array__": "array_257"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_258"
+        },
+        {
+          "__array__": "array_259"
+        },
+        {
+          "__array__": "array_260"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_261"
+        },
+        {
+          "__array__": "array_262"
+        },
+        {
+          "__array__": "array_263"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_264"
+        },
+        {
+          "__array__": "array_265"
+        },
+        {
+          "__array__": "array_266"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_267"
+        },
+        {
+          "__array__": "array_268"
+        },
+        {
+          "__array__": "array_269"
+        }
+      ]
+    }
+  },
+  "last_spike": {
+    "H1": {
+      "pooled": [
+        {
+          "__array__": "array_270"
+        },
+        {
+          "__array__": "array_271"
+        },
+        {
+          "__array__": "array_272"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_273"
+        },
+        {
+          "__array__": "array_274"
+        },
+        {
+          "__array__": "array_275"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_276"
+        },
+        {
+          "__array__": "array_277"
+        },
+        {
+          "__array__": "array_278"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_279"
+        },
+        {
+          "__array__": "array_280"
+        },
+        {
+          "__array__": "array_281"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_282"
+        },
+        {
+          "__array__": "array_283"
+        },
+        {
+          "__array__": "array_284"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_285"
+        },
+        {
+          "__array__": "array_286"
+        },
+        {
+          "__array__": "array_287"
+        }
+      ]
+    },
+    "H2": {
+      "pooled": [
+        {
+          "__array__": "array_288"
+        },
+        {
+          "__array__": "array_289"
+        },
+        {
+          "__array__": "array_290"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_291"
+        },
+        {
+          "__array__": "array_292"
+        },
+        {
+          "__array__": "array_293"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_294"
+        },
+        {
+          "__array__": "array_295"
+        },
+        {
+          "__array__": "array_296"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_297"
+        },
+        {
+          "__array__": "array_298"
+        },
+        {
+          "__array__": "array_299"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_300"
+        },
+        {
+          "__array__": "array_301"
+        },
+        {
+          "__array__": "array_302"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_303"
+        },
+        {
+          "__array__": "array_304"
+        },
+        {
+          "__array__": "array_305"
+        }
+      ]
+    },
+    "H3": {
+      "pooled": [
+        {
+          "__array__": "array_306"
+        },
+        {
+          "__array__": "array_307"
+        },
+        {
+          "__array__": "array_308"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_309"
+        },
+        {
+          "__array__": "array_310"
+        },
+        {
+          "__array__": "array_311"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_312"
+        },
+        {
+          "__array__": "array_313"
+        },
+        {
+          "__array__": "array_314"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_315"
+        },
+        {
+          "__array__": "array_316"
+        },
+        {
+          "__array__": "array_317"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_318"
+        },
+        {
+          "__array__": "array_319"
+        },
+        {
+          "__array__": "array_320"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_321"
+        },
+        {
+          "__array__": "array_322"
+        },
+        {
+          "__array__": "array_323"
+        }
+      ]
+    },
+    "H4": {
+      "pooled": [
+        {
+          "__array__": "array_324"
+        },
+        {
+          "__array__": "array_325"
+        },
+        {
+          "__array__": "array_326"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_327"
+        },
+        {
+          "__array__": "array_328"
+        },
+        {
+          "__array__": "array_329"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_330"
+        },
+        {
+          "__array__": "array_331"
+        },
+        {
+          "__array__": "array_332"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_333"
+        },
+        {
+          "__array__": "array_334"
+        },
+        {
+          "__array__": "array_335"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_336"
+        },
+        {
+          "__array__": "array_337"
+        },
+        {
+          "__array__": "array_338"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_339"
+        },
+        {
+          "__array__": "array_340"
+        },
+        {
+          "__array__": "array_341"
+        }
+      ]
+    },
+    "C": {
+      "pooled": [
+        {
+          "__array__": "array_342"
+        },
+        {
+          "__array__": "array_343"
+        },
+        {
+          "__array__": "array_344"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_345"
+        },
+        {
+          "__array__": "array_346"
+        },
+        {
+          "__array__": "array_347"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_348"
+        },
+        {
+          "__array__": "array_349"
+        },
+        {
+          "__array__": "array_350"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_351"
+        },
+        {
+          "__array__": "array_352"
+        },
+        {
+          "__array__": "array_353"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_354"
+        },
+        {
+          "__array__": "array_355"
+        },
+        {
+          "__array__": "array_356"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_357"
+        },
+        {
+          "__array__": "array_358"
+        },
+        {
+          "__array__": "array_359"
+        }
+      ]
+    }
+  },
+  "core_post": {
+    "H1": {
+      "pooled": [
+        {
+          "__array__": "array_360"
+        },
+        {
+          "__array__": "array_361"
+        },
+        {
+          "__array__": "array_362"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_363"
+        },
+        {
+          "__array__": "array_364"
+        },
+        {
+          "__array__": "array_365"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_366"
+        },
+        {
+          "__array__": "array_367"
+        },
+        {
+          "__array__": "array_368"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_369"
+        },
+        {
+          "__array__": "array_370"
+        },
+        {
+          "__array__": "array_371"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_372"
+        },
+        {
+          "__array__": "array_373"
+        },
+        {
+          "__array__": "array_374"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_375"
+        },
+        {
+          "__array__": "array_376"
+        },
+        {
+          "__array__": "array_377"
+        }
+      ]
+    },
+    "H2": {
+      "pooled": [
+        {
+          "__array__": "array_378"
+        },
+        {
+          "__array__": "array_379"
+        },
+        {
+          "__array__": "array_380"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_381"
+        },
+        {
+          "__array__": "array_382"
+        },
+        {
+          "__array__": "array_383"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_384"
+        },
+        {
+          "__array__": "array_385"
+        },
+        {
+          "__array__": "array_386"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_387"
+        },
+        {
+          "__array__": "array_388"
+        },
+        {
+          "__array__": "array_389"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_390"
+        },
+        {
+          "__array__": "array_391"
+        },
+        {
+          "__array__": "array_392"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_393"
+        },
+        {
+          "__array__": "array_394"
+        },
+        {
+          "__array__": "array_395"
+        }
+      ]
+    },
+    "H3": {
+      "pooled": [
+        {
+          "__array__": "array_396"
+        },
+        {
+          "__array__": "array_397"
+        },
+        {
+          "__array__": "array_398"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_399"
+        },
+        {
+          "__array__": "array_400"
+        },
+        {
+          "__array__": "array_401"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_402"
+        },
+        {
+          "__array__": "array_403"
+        },
+        {
+          "__array__": "array_404"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_405"
+        },
+        {
+          "__array__": "array_406"
+        },
+        {
+          "__array__": "array_407"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_408"
+        },
+        {
+          "__array__": "array_409"
+        },
+        {
+          "__array__": "array_410"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_411"
+        },
+        {
+          "__array__": "array_412"
+        },
+        {
+          "__array__": "array_413"
+        }
+      ]
+    },
+    "H4": {
+      "pooled": [
+        {
+          "__array__": "array_414"
+        },
+        {
+          "__array__": "array_415"
+        },
+        {
+          "__array__": "array_416"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_417"
+        },
+        {
+          "__array__": "array_418"
+        },
+        {
+          "__array__": "array_419"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_420"
+        },
+        {
+          "__array__": "array_421"
+        },
+        {
+          "__array__": "array_422"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_423"
+        },
+        {
+          "__array__": "array_424"
+        },
+        {
+          "__array__": "array_425"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_426"
+        },
+        {
+          "__array__": "array_427"
+        },
+        {
+          "__array__": "array_428"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_429"
+        },
+        {
+          "__array__": "array_430"
+        },
+        {
+          "__array__": "array_431"
+        }
+      ]
+    },
+    "C": {
+      "pooled": [
+        {
+          "__array__": "array_432"
+        },
+        {
+          "__array__": "array_433"
+        },
+        {
+          "__array__": "array_434"
+        }
+      ],
+      "calendar": [
+        {
+          "__array__": "array_435"
+        },
+        {
+          "__array__": "array_436"
+        },
+        {
+          "__array__": "array_437"
+        }
+      ],
+      "source_age": [
+        {
+          "__array__": "array_438"
+        },
+        {
+          "__array__": "array_439"
+        },
+        {
+          "__array__": "array_440"
+        }
+      ],
+      "input_phase": [
+        {
+          "__array__": "array_441"
+        },
+        {
+          "__array__": "array_442"
+        },
+        {
+          "__array__": "array_443"
+        }
+      ],
+      "state_phase": [
+        {
+          "__array__": "array_444"
+        },
+        {
+          "__array__": "array_445"
+        },
+        {
+          "__array__": "array_446"
+        }
+      ],
+      "phase_only": [
+        {
+          "__array__": "array_447"
+        },
+        {
+          "__array__": "array_448"
+        },
+        {
+          "__array__": "array_449"
+        }
+      ]
+    }
+  }
+}

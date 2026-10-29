@@ -1,0 +1,40 @@
+{
+  "delay_map_sha256": "1aee50403cefd71b379ba1bc94a0acd350065d59c5f203d7c79fb00cd2134b5a",
+  "primary_reader_sha256": "4bf4727ddc6680e7ab475b85246dfb9bf25c5da8505259bbaac7bc64c969ada8",
+  "calibration": [
+    512,
+    "geometry_fit",
+    7650000
+  ],
+  "delay_evaluation": [
+    1024,
+    "development_test",
+    7660000
+  ],
+  "schedule_evaluation": [
+    1024,
+    "development_test",
+    7640000
+  ],
+  "times": [
+    13,
+    15,
+    19,
+    23
+  ],
+  "blank_delays": [
+    1,
+    3,
+    7,
+    11
+  ],
+  "alignment_families": [
+    "raw",
+    "center",
+    "orthogonal",
+    "affine",
+    "similarity",
+    "rotation"
+  ],
+  "scope": "Supplementary development analysis, not independent SNN/model confirmation; map/reader choices fixed before these new scenes."
+}

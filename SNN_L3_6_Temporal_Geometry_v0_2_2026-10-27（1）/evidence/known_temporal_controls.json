@@ -1,0 +1,189 @@
+{
+  "pure_rotation": [
+    {
+      "angle": 0.0,
+      "raw_MSE": 0.0,
+      "aligned_MSE": 4.385661682878164e-34,
+      "fixed_binary_error": 0.0,
+      "theory_error": 0.0
+    },
+    {
+      "angle": 0.5235987755982988,
+      "raw_MSE": 0.2675308268490043,
+      "aligned_MSE": 1.7680044303593357e-31,
+      "fixed_binary_error": 0.16771697998046875,
+      "theory_error": 0.16666666666666663
+    },
+    {
+      "angle": 1.5707963267948966,
+      "raw_MSE": 1.996877276782793,
+      "aligned_MSE": 1.8504132894265695e-31,
+      "fixed_binary_error": 0.49993896484375,
+      "theory_error": 0.5
+    },
+    {
+      "angle": 3.141592653589793,
+      "raw_MSE": 3.9937545535655863,
+      "aligned_MSE": 1.3828859645555166e-31,
+      "fixed_binary_error": 1.0,
+      "theory_error": 1.0
+    }
+  ],
+  "reflection": {
+    "O2_determinant": -1.0,
+    "SO2_determinant": 1.0,
+    "O2_MSE": 5.564895456581398e-33,
+    "SO2_MSE": 1.993687075395023,
+    "principal_cosines": [
+      1.0,
+      1.0
+    ]
+  },
+  "isotropic_noise_gain": [
+    {
+      "gain": 1.0,
+      "noise": 0.0,
+      "MSE": 0.0,
+      "binary_error": 0.0,
+      "Bayes_MSE_per_coordinate": 0.0,
+      "Bayes_binary_error": 0.0,
+      "fixed_direction_binary_error": 0.0
+    },
+    {
+      "gain": 0.05,
+      "noise": 0.0,
+      "MSE": 1.4796098692959444e-32,
+      "binary_error": 0.0,
+      "Bayes_MSE_per_coordinate": 0.0,
+      "Bayes_binary_error": 0.0,
+      "fixed_direction_binary_error": 0.0
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.5,
+      "MSE": 0.19948311427609727,
+      "binary_error": 0.14751434326171875,
+      "Bayes_MSE_per_coordinate": 0.2,
+      "Bayes_binary_error": 0.1475836176504333,
+      "fixed_direction_binary_error": 0.1475836176504333
+    },
+    {
+      "gain": 0.05,
+      "noise": 0.5,
+      "MSE": 0.9882580682107454,
+      "binary_error": 0.46795654296875,
+      "Bayes_MSE_per_coordinate": 0.9900990099009901,
+      "Bayes_binary_error": 0.4682744825694464,
+      "fixed_direction_binary_error": 0.4682744825694464
+    }
+  ],
+  "dominant_nuisance_alignment": {
+    "raw_target_error": 0.0,
+    "aligned_target_error": 0.14788818359375,
+    "raw_state_MSE": 49.758230151053745,
+    "aligned_state_MSE": 49.268641082968166,
+    "calibration": "Four-point exact first/second moments; evaluation is independent Gaussian",
+    "lesson": "A better whole-state geometric fit can worsen a previously perfect target reader."
+  },
+  "invertible_nonlinear_warp": {
+    "known_inverse_MSE": 4.7060060791523485e-33,
+    "affine_alignment_MSE": 0.337235512540442,
+    "lesson": "Affine failure is compatible with information preserved by a nonlinear bijection."
+  },
+  "serial_recall_loss": {
+    "four_terms": {
+      "total": 0.11751435542106603,
+      "task": 0.09987204096,
+      "projection": 0.05133468419408525,
+      "mean_correction": -0.039528506879999994,
+      "composition": 0.00583613714698076
+    },
+    "exact_general_moment": 0.117514355421066,
+    "Monte_Carlo_iid": 0.11829895232563223,
+    "correlated_exact": 0.2245938326998745,
+    "correlated_Monte_Carlo": 0.224693149112076,
+    "incorrect_if_independence_assumed": 0.3060705994931699,
+    "second_moment_nu_not_variance": 0.3333333333333333
+  },
+  "spectral_visibility": {
+    "full_spectral_radius": 2.0,
+    "observed_impulse_kernel": [
+      1.0,
+      0.5,
+      0.25,
+      0.125,
+      0.0625,
+      0.03125,
+      0.015625,
+      0.0078125,
+      0.00390625,
+      0.001953125
+    ],
+    "lesson": "Input-output memory depends on reachable and observable modes; a full spectral radius alone is insufficient."
+  },
+  "metric_invariance": {
+    "noise_normalized_max_abs": 2.220446049250313e-16,
+    "Euclidean_metric_change": 4.186081337002424
+  },
+  "rhythmic_auxiliary_clock": {
+    "membrane_only_v": [
+      0.2
+    ],
+    "membrane_only_a": [
+      0.45
+    ],
+    "all_frozen_v": [
+      0.2
+    ],
+    "all_frozen_a": [
+      0.5
+    ],
+    "lesson": "An OFF membrane does not by itself imply all persistent states are frozen."
+  },
+  "causal_phase_prefix_max_abs": 0.0,
+  "known_cycle_consistency": 1.1102230246251565e-16,
+  "threshold_scale_dependent_geometry": [
+    {
+      "delta": 0.1,
+      "event_boundary_crossing_probability": 0.07965567455405796,
+      "expected_squared_central_difference": 1.9913918638514487,
+      "small_delta_asymptote": 1.9947114020071635,
+      "ordinary_derivative_almost_everywhere": 0.0,
+      "Bayes_binary_decoding_error_from_event": 0.0
+    },
+    {
+      "delta": 0.03,
+      "event_boundary_crossing_probability": 0.023932946828225287,
+      "expected_squared_central_difference": 6.648040785618136,
+      "small_delta_asymptote": 6.649038006690546,
+      "ordinary_derivative_almost_everywhere": 0.0,
+      "Bayes_binary_decoding_error_from_event": 0.0
+    },
+    {
+      "delta": 0.01,
+      "event_boundary_crossing_probability": 0.007978712629263206,
+      "expected_squared_central_difference": 19.946781573158017,
+      "small_delta_asymptote": 19.947114020071638,
+      "ordinary_derivative_almost_everywhere": 0.0,
+      "Bayes_binary_decoding_error_from_event": 0.0
+    },
+    {
+      "delta": 0.003,
+      "event_boundary_crossing_probability": 0.0023936500919329194,
+      "expected_squared_central_difference": 66.49028033146998,
+      "small_delta_asymptote": 66.49038006690546,
+      "ordinary_derivative_almost_everywhere": 0.0,
+      "Bayes_binary_decoding_error_from_event": 0.0
+    },
+    {
+      "delta": 0.001,
+      "event_boundary_crossing_probability": 0.0007978844278221252,
+      "expected_squared_central_difference": 199.4711069555313,
+      "small_delta_asymptote": 199.47114020071638,
+      "ordinary_derivative_almost_everywhere": 0.0,
+      "Bayes_binary_decoding_error_from_event": 0.0
+    }
+  ],
+  "scope": "Known distributions and independent references. Zero trained SNN runs, no architecture or energy ranking.",
+  "development_revision": "Nuisance witness uses exact population first/second moments. Threshold scale law added after supplementary finite-difference diagnostic; known-law analysis, not independent confirmation."
+}

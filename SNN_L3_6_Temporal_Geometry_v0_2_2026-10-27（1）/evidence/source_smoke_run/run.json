@@ -1,0 +1,50 @@
+{
+  "effective_id": "272ae6230942ebeb",
+  "plan_run_id": "bb90a594ec165dbb",
+  "config": {
+    "data": {
+      "k": 4,
+      "required_history": 1,
+      "blank_delay": 3,
+      "energy_mode": "fixed_rms",
+      "sigma": 0.2,
+      "data_seed": 13400,
+      "projection_seed": 901,
+      "extra_writes": 3,
+      "schedule": "balanced",
+      "content_mode": "physical_k"
+    },
+    "cell": "lif_hard",
+    "width": 32,
+    "seed": 11,
+    "lambda_extra": 1.0,
+    "objective": "regression",
+    "epochs": 1,
+    "encoder_mode": "learned",
+    "loss_mode": "anchored"
+  },
+  "frozen_encoder_sha256": null,
+  "parameters": 8916,
+  "trainable_parameters": 8916,
+  "persistent_cell_scalars_per_sample": 64,
+  "observation_dim_last_post": 32,
+  "observation_dim_joint_post": 64,
+  "torch": "2.14.1+cpu",
+  "device": "cpu",
+  "status": "fit_and_feature_export_completed",
+  "run_kind": "smoke",
+  "split_sizes": {
+    "encoder_train": 64,
+    "encoder_val": 32,
+    "geometry_fit": 64,
+    "probe_train": 64,
+    "probe_val": 32,
+    "audit_test": 3072,
+    "development_test": 32
+  },
+  "interpretation": "separate learned models across L; same raw inputs, task weights differ",
+  "best_epoch": 1,
+  "best_val_weighted_loss": 1.5177689790725708,
+  "optimizer_updates": 1,
+  "noop_max_abs_error": 0.0
+}

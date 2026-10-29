@@ -1,0 +1,45 @@
+{
+  "checked_on": "2026-10-27",
+  "downloads_performed": false,
+  "datasets": [
+    {
+      "name": "SHD",
+      "task": "event audio classification",
+      "official_url": "https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/",
+      "required": "spike times/units, labels, speaker metadata, official split",
+      "adaptation": "controlled episode delays/interfering clips with original recording ID split protection",
+      "status": "awaiting user download"
+    },
+    {
+      "name": "SSC",
+      "task": "event audio classification",
+      "official_url": "https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/",
+      "required": "spike times/units, labels, official train/validation/test",
+      "adaptation": "source-ID episode construction; no source clip reused across splits",
+      "status": "awaiting user download"
+    },
+    {
+      "name": "DVS Gesture",
+      "task": "event vision classification",
+      "official_url": "https://research.ibm.com/publications/a-low-power-fully-event-based-gesture-recognition-system",
+      "required": "official dataset link, events, onset/end labels, subject split",
+      "status": "awaiting user download"
+    },
+    {
+      "name": "MVSEC",
+      "task": "continuous reconstruction",
+      "official_url": "https://daniilidis-group.github.io/mvsec/",
+      "required": "same DAVIS events and APS frames, timestamps/calibration, whole-sequence split",
+      "adaptation": "verify temporal/exposure alignment before defining image reconstruction objective",
+      "status": "awaiting user download"
+    },
+    {
+      "name": "DSEC",
+      "task": "candidate real scene extension",
+      "official_url": "https://dsec.ifi.uzh.ch/",
+      "required": "events/images/timestamps/calibration and appropriate view mapping",
+      "adaptation": "different sensors may have viewpoint and exposure mismatch; no pixel-alignment claim",
+      "status": "candidate; no adapter or download claimed"
+    }
+  ]
+}

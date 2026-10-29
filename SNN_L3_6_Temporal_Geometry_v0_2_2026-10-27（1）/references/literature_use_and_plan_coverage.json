@@ -1,0 +1,139 @@
+{
+  "original_plan_entries": 10,
+  "original_plan_all_routed": true,
+  "items": [
+    {
+      "id": "MEM-MURRAY",
+      "title": "Stable population coding for working memory coexists with heterogeneous neural dynamics in prefrontal cortex",
+      "year": 2017,
+      "primary_url": "https://johndmurray.org/papers/murray_2017_pnas.pdf",
+      "code_url": null,
+      "read_scope": "selected original results/methods",
+      "sections": "3.6.2/3.6.4",
+      "reuse_and_adaptation": "Stable population readout can coexist with dynamic units; pooled and per-time readers",
+      "limits": "Official analysis repository not verified"
+    },
+    {
+      "id": "MEM-WOLFF",
+      "title": "Dynamic hidden states underlying working-memory-guided behavior",
+      "year": 2017,
+      "primary_url": "https://doi.org/10.1038/nn.4546",
+      "code_url": "https://github.com/mijowolff/Dynamic-hidden-states-underlying-working-memory-guided-behavior",
+      "read_scope": "inherited L3.5 selected-paper/code audit",
+      "sections": "3.6.4",
+      "reuse_and_adaptation": "Natural observation versus target-blind probing",
+      "limits": "No new author EEG execution"
+    },
+    {
+      "id": "INT-ROTATION",
+      "title": "Rotational dynamics reduce interference between sensory and memory representations",
+      "year": 2021,
+      "primary_url": "https://doi.org/10.1038/s41593-021-00821-9",
+      "code_url": "https://github.com/buschman-lab/RotationalDynamics",
+      "read_scope": "selected original paper and selected functions in two pinned source files",
+      "sections": "3.6.2/3.6.3/3.6.6",
+      "reuse_and_adaptation": "Temporal transfer and task-related interference controls",
+      "limits": "No full original neural experiment reproduction"
+    },
+    {
+      "id": "INT-STREAMROT",
+      "title": "Orthogonal-Rotational Dynamics Supports Efficient Encoding and Updating for Streaming Information in Working Memory",
+      "year": 2026,
+      "primary_url": "https://doi.org/10.1523/JNEUROSCI.2220-24.2025",
+      "code_url": null,
+      "read_scope": "2026-10-27 closure: PMC primary Methods (model/training, PCA/shared axes, separation metric) and Results (rank coding, W_hh operation, cross-axis correlations) read; supplements and official code not obtained",
+      "sections": "3.6.1/3.6.5",
+      "reuse_and_adaptation": "Compare ordinal-rank organization with identity/event-age tracking; a shared projection, optional scaling and heldout content recovery are separate checks. Testing fitted-map time transfer does not identify a time-varying underlying dynamical rule.",
+      "limits": "Official analysis code and supplementary files not audited; no replication of human EEG or trained N-back RNN",
+      "primary_full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12828889/"
+    },
+    {
+      "id": "GEO-TEMPORALSUPER",
+      "title": "Temporal superposition and feature geometry of RNNs under memory demands",
+      "year": 2026,
+      "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/bfcb583d225b1db8d3ca2331f6785774-Abstract-Conference.html",
+      "code_url": "https://github.com/kashparty/iclr-rnn-superposition",
+      "read_scope": "formal paper sections 3-4 and relevant appendices; selected Fig2/6 notebook code; extracted loss functions executed",
+      "sections": "3.6.1/3.6.6",
+      "reuse_and_adaptation": "Age directions, general time-covariance loss, reachable/observable-mode qualifier",
+      "limits": "No author training or all-figure reproduction"
+    },
+    {
+      "id": "REC-RHYTHM",
+      "title": "Rhythmic temporal structure organizes recurrent dynamics to support sequential working memory",
+      "year": 2026,
+      "primary_url": "https://elifesciences.org/reviewed-preprints/112013",
+      "code_url": "https://github.com/Bold2023/rhythmic_working_memory",
+      "read_scope": "selected Results/Methods; EIRNN file read; alignment helpers checked",
+      "sections": "3.6.5",
+      "reuse_and_adaptation": "Input/event/auxiliary clocks, causal phase versus offline warping",
+      "limits": "Reviewed preprint v1, incomplete assessment; no full model training"
+    },
+    {
+      "id": "MECH-OSCILLATION",
+      "title": "Efficient and robust temporal processing with neural oscillations modulated spiking neural networks",
+      "year": 2025,
+      "primary_url": "https://doi.org/10.1038/s41467-025-63771-x",
+      "code_url": "https://github.com/YinsongYan/Rhythm-SNN",
+      "read_scope": "selected paper/update/mask code; extracted updates executed with explicit CPU placement adaptation",
+      "sections": "3.6.5",
+      "reuse_and_adaptation": "Membrane OFF versus auxiliary-state clock scope",
+      "limits": "No full author model training or hardware reproduction"
+    },
+    {
+      "id": "CAND-OPERATIONS",
+      "title": "Working memory operations emerge from dynamic changes in neural subspace geometry",
+      "year": 2026,
+      "primary_url": "https://doi.org/10.64898/2026.08.31.748237",
+      "code_url": null,
+      "read_scope": "primary metadata and abstract; full text blocked",
+      "sections": "3.6.4 future/L4",
+      "reuse_and_adaptation": "Candidate for priority/update geometry; not used as numerical-method implementation",
+      "limits": "Full original methods/code unavailable; no unsupported findings added"
+    },
+    {
+      "id": "CAND-HIGHROT",
+      "title": "Efficient Working Memory Maintenance via High-Dimensional Rotational Dynamics",
+      "year": 2026,
+      "primary_url": "https://elifesciences.org/reviewed-preprints/111445",
+      "code_url": null,
+      "read_scope": "selected Results/Methods and relevant supplementary derivations",
+      "sections": "3.6.4/3.6.6",
+      "reuse_and_adaptation": "Noise-aware state geometry and continuous linear moment reference",
+      "limits": "Reviewed preprint, incomplete assessment; actual official repository URL not verified"
+    },
+    {
+      "id": "MEM-REACTIVATION",
+      "title": "Reactivating and reorganizing activity-silent working memory: two distinct mechanisms underlying pinging the brain",
+      "year": 2025,
+      "primary_url": "https://doi.org/10.1093/cercor/bhae494",
+      "code_url": "https://osf.io/af54w/",
+      "read_scope": "inherits L3.5 verified identity and explicitly incomplete full-text/code access",
+      "sections": "3.6.4 with L3.5",
+      "reuse_and_adaptation": "Reorganization/noise/access competing explanations",
+      "limits": "No new complete full text or code audit"
+    },
+    {
+      "id": "ADD-TGM",
+      "title": "Characterizing the dynamics of mental representations: the temporal generalization method",
+      "year": 2014,
+      "primary_url": "https://doi.org/10.1016/j.tics.2014.01.002",
+      "code_url": "https://github.com/mne-tools/mne-python",
+      "read_scope": "method and MNE selected source routing audited",
+      "sections": "3.6.2",
+      "reuse_and_adaptation": "Within-time versus fixed-reader transfer with independent scenes",
+      "limits": "MNE fake-estimator routing execution only"
+    },
+    {
+      "id": "ADD-WARP",
+      "title": "RNNs perform task computations by dynamically warping neural representations",
+      "year": 2025,
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0572c069404875ccca76e822aaf48d50-Abstract-Conference.html",
+      "code_url": null,
+      "read_scope": "formal paper sections 2-3 and relevant equations",
+      "sections": "3.6.4",
+      "reuse_and_adaptation": "Input-parametric geometry; SNN event-boundary and scale adaptation",
+      "limits": "Official code package URL not verified; not a smooth-ODE reproduction"
+    }
+  ]
+}

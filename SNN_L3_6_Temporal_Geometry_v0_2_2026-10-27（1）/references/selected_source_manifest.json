@@ -1,0 +1,74 @@
+{
+  "superposition": {
+    "file": "superposition_fig02.ipynb",
+    "repository": "kashparty/iclr-rnn-superposition",
+    "ref": "26b00cbb9cc03bcb2b4f9d989ac3a9d48a5f6bf9",
+    "path": "iclr_figure_02_and_06.ipynb",
+    "git_blob_sha": "b6d9bbfe94941bcb496b1392036a343270b92a98",
+    "read_scope": "Full selected notebook obtained; source/data/model/loss/training code cells reviewed; only cell 7 function definitions executed on fixed tensors; no author training.",
+    "url": "https://github.com/kashparty/iclr-rnn-superposition/blob/26b00cbb9cc03bcb2b4f9d989ac3a9d48a5f6bf9/iclr_figure_02_and_06.ipynb"
+  },
+  "rhythm_align": {
+    "file": "rhythm_align.py",
+    "repository": "Bold2023/rhythmic_working_memory",
+    "ref": "3ff8416e0570bfd466a51fbefaaecbec2890f8df",
+    "path": "code/utils/align.py",
+    "git_blob_sha": "4ad69a4ca1bae31149f533c4a54d1aaa4788ec8d",
+    "read_scope": "Selected slicing, resampling and event-alignment contracts read; first two helpers executed on artificial arrays. Not all figure workflows.",
+    "url": "https://github.com/Bold2023/rhythmic_working_memory/blob/3ff8416e0570bfd466a51fbefaaecbec2890f8df/code/utils/align.py"
+  },
+  "rhythm_model": {
+    "file": "rhythm_model.py",
+    "repository": "Bold2023/rhythmic_working_memory",
+    "ref": "3ff8416e0570bfd466a51fbefaaecbec2890f8df",
+    "path": "code/lib/EIRNN.py",
+    "git_blob_sha": "b1e16db1b307e2aed5bbe2dbe2c05a2842b59f8b",
+    "read_scope": "Entire selected 237-line file read; state/aux update and optional continuation arguments reviewed. No model training.",
+    "url": "https://github.com/Bold2023/rhythmic_working_memory/blob/3ff8416e0570bfd466a51fbefaaecbec2890f8df/code/lib/EIRNN.py"
+  },
+  "MNE": {
+    "file": "mne_search_light.py",
+    "repository": "mne-tools/mne-python",
+    "ref": "v1.13.2",
+    "path": "mne/decoding/search_light.py",
+    "git_blob_sha": "3b5078649397d0f95b5188a4d6de3771e8d2cfb5",
+    "read_scope": "GeneralizingEstimator and selected _gl_transform/_gl_init_pred/_gl_score routing read. Two routing functions executed with fake estimators; no whole MNE pipeline.",
+    "url": "https://github.com/mne-tools/mne-python/blob/v1.13.2/mne/decoding/search_light.py"
+  },
+  "rotation_model": {
+    "file": "rotation_model.py",
+    "repository": "buschman-lab/RotationalDynamics",
+    "ref": "307afcc49ba8124360bca15efe7aa8be6aa9097c",
+    "path": "network_model_rnn.py",
+    "git_blob_sha": "b752dbebb23713afd49885ce9aa749d66abc4d4a",
+    "read_scope": "Complete file obtained; input/recurrent/state-iteration setup selected for comparison; top-level script not executed.",
+    "url": "https://github.com/buschman-lab/RotationalDynamics/blob/307afcc49ba8124360bca15efe7aa8be6aa9097c/network_model_rnn.py"
+  },
+  "rotation_helpers": {
+    "file": "rotation_helpers.py",
+    "repository": "buschman-lab/RotationalDynamics",
+    "ref": "307afcc49ba8124360bca15efe7aa8be6aa9097c",
+    "path": "network_helper_functions.py",
+    "git_blob_sha": "f79a59ff6f1662db47dca86b489b27e1d0ea665e",
+    "read_scope": "Selected split, zscore, angle and cross_auc_clf functions read; not complete neural experiments or all functions.",
+    "url": "https://github.com/buschman-lab/RotationalDynamics/blob/307afcc49ba8124360bca15efe7aa8be6aa9097c/network_helper_functions.py"
+  },
+  "RhythmSNN": {
+    "file": "rhythmsnn_model.py",
+    "repository": "YinsongYan/Rhythm-SNN",
+    "ref": "33c5e29ac2b4715cf7ddde4d9e0b891be32f12d8",
+    "path": "Spiking_pmnist/skip_SRNN/spiking_psmnist_model.py",
+    "git_blob_sha": "8bae8f9b3d432663422927062b48f75655977cca",
+    "read_scope": "Selected membrane/ALIF skip-update functions and mask construction read. Two functions executed; ALIF .cuda calls adapted to CPU placement only; no author training.",
+    "url": "https://github.com/YinsongYan/Rhythm-SNN/blob/33c5e29ac2b4715cf7ddde4d9e0b891be32f12d8/Spiking_pmnist/skip_SRNN/spiking_psmnist_model.py"
+  },
+  "SciPy": {
+    "file": "scipy_procrustes.py",
+    "repository": "scipy/scipy",
+    "ref": "v1.17.0",
+    "path": "scipy/linalg/_procrustes.py",
+    "git_blob_sha": "e3584b85a0be556b1d43db88ba51447e9d62f1fc",
+    "read_scope": "Entire selected function/documentation read; corresponding installed SciPy 1.17.0 function executed to verify returned scale semantics.",
+    "url": "https://github.com/scipy/scipy/blob/v1.17.0/scipy/linalg/_procrustes.py"
+  }
+}

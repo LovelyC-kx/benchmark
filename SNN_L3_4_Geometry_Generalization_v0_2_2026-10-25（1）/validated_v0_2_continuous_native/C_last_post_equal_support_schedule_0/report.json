@@ -1,0 +1,731 @@
+{
+  "module": "L3.4",
+  "version": "0.2",
+  "kind": "post-primary native annotation and separately frozen fresh continuous extension",
+  "source_classification_view": "C_last_post_equal_support_schedule_0",
+  "continuous_evaluation_first_id": 5700000,
+  "continuous_evaluation_scenes": 8192,
+  "native_primary_scene_first_id": 5600000,
+  "groups": {
+    "F": {
+      "latent_coordinate_indices": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_classification_on_primary_scenes": {
+        "mean_error": 0.5058670043945312,
+        "per_task_error": [
+          0.504150390625,
+          0.504150390625,
+          0.499755859375,
+          0.504150390625,
+          0.4974365234375,
+          0.5284423828125,
+          0.504150390625,
+          0.5284423828125,
+          0.499755859375,
+          0.499755859375,
+          0.49560546875,
+          0.49609375,
+          0.504150390625,
+          0.5284423828125,
+          0.49560546875,
+          0.5037841796875
+        ],
+        "tie_fraction": 0.0,
+        "tie_policy": "half",
+        "label_positive_fraction_per_task": [
+          0.495849609375,
+          0.504150390625,
+          0.499755859375,
+          0.504150390625,
+          0.5025634765625,
+          0.5052490234375,
+          0.504150390625,
+          0.4947509765625,
+          0.499755859375,
+          0.500244140625,
+          0.49560546875,
+          0.49609375,
+          0.495849609375,
+          0.4947509765625,
+          0.49560546875,
+          0.49609375
+        ],
+        "permission": "Original regression head reads last_post. Different supervision budget; for a spike-only probe this includes additional carrier access."
+      },
+      "native_continuous_MSE_on_fresh_scenes": 1.5787139946123712,
+      "continuous_learning_curves": {
+        "1": {
+          "moment_plug_in_forecast": {
+            "samples": 1,
+            "gain": 1.0,
+            "expected_MSE_per_target": 104.83056345005049,
+            "population_target_power": 0.9858776722765318,
+            "mean_map_cross_term": -0.5160035995085984,
+            "mean_prediction_power": 0.8530892079738319,
+            "finite_training_variability_power": 103.50760016930872,
+            "oracle_common_scalar_gain": 0.002472212490103209,
+            "oracle_scalar_expected_MSE": 0.9852398370047101,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 110.55016427772168,
+            "per_frozen_reader_MSE": [
+              193.54270566658394,
+              39.80117408102346,
+              25.548579141267282,
+              183.30819822201198
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.00693234842889,
+            "per_frozen_reader_MSE": [
+              1.0026935425532697,
+              1.0074047551346708,
+              1.007833887144475,
+              1.0097972088831442
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.002472212490103209,
+          "ridge": {
+            "MSE_per_target": 1.11503245037291,
+            "per_frozen_reader_MSE": [
+              1.0886588263865222,
+              1.0470800325174463,
+              1.1279710157060088,
+              1.196419926881663
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "8": {
+          "moment_plug_in_forecast": {
+            "samples": 8,
+            "gain": 1.0,
+            "expected_MSE_per_target": 14.261413301905355,
+            "population_target_power": 0.9858776722765318,
+            "mean_map_cross_term": -0.5160035995085984,
+            "mean_prediction_power": 0.8530892079738319,
+            "finite_training_variability_power": 12.93845002116359,
+            "oracle_common_scalar_gain": 0.01870725199470253,
+            "oracle_scalar_expected_MSE": 0.9810511675934414,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 24.83160064451053,
+            "per_frozen_reader_MSE": [
+              40.55586280189499,
+              13.345705032195061,
+              15.907460031336479,
+              29.5173747126156
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.0017856748440597,
+            "per_frozen_reader_MSE": [
+              0.988779194272331,
+              1.0030019114993824,
+              1.0105170775382057,
+              1.0048445160663189
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.01870725199470253,
+          "ridge": {
+            "MSE_per_target": 2.8560237332787484,
+            "per_frozen_reader_MSE": [
+              2.572434077998904,
+              2.549151111348648,
+              3.449926268491982,
+              2.852583475275459
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "32": {
+          "moment_plug_in_forecast": {
+            "samples": 32,
+            "gain": 1.0,
+            "expected_MSE_per_target": 4.557575786032663,
+            "population_target_power": 0.9858776722765318,
+            "mean_map_cross_term": -0.5160035995085984,
+            "mean_prediction_power": 0.8530892079738319,
+            "finite_training_variability_power": 3.2346125052908974,
+            "oracle_common_scalar_gain": 0.0631165916331602,
+            "oracle_scalar_expected_MSE": 0.9695934780408193,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 5.337972920112093,
+            "per_frozen_reader_MSE": [
+              8.138982689326047,
+              3.1263382677263003,
+              4.664920149446791,
+              5.421650573949233
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 0.9948240341649902,
+            "per_frozen_reader_MSE": [
+              1.00491999164278,
+              0.9966907502299405,
+              0.990831412982051,
+              0.9868539818051894
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.0631165916331602,
+          "ridge": {
+            "MSE_per_target": 2.6683651520663982,
+            "per_frozen_reader_MSE": [
+              2.4718362083298624,
+              2.637488721262293,
+              3.8319119064659493,
+              1.7322237722074862
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "128": {
+          "moment_plug_in_forecast": {
+            "samples": 128,
+            "gain": 1.0,
+            "expected_MSE_per_target": 2.13161640706449,
+            "population_target_power": 0.9858776722765318,
+            "mean_map_cross_term": -0.5160035995085984,
+            "mean_prediction_power": 0.8530892079738319,
+            "finite_training_variability_power": 0.8086531263227243,
+            "oracle_common_scalar_gain": 0.1552598103986535,
+            "oracle_scalar_expected_MSE": 0.945820361764168,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 2.1825324521615146,
+            "per_frozen_reader_MSE": [
+              2.0753185145196857,
+              1.804268910599558,
+              2.2458669004866474,
+              2.6046754830401673
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 0.9677505088668964,
+            "per_frozen_reader_MSE": [
+              0.9688336430119247,
+              0.9622512589525414,
+              0.9717210840092667,
+              0.9681960494938529
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.1552598103986535,
+          "ridge": {
+            "MSE_per_target": 1.0388119372191527,
+            "per_frozen_reader_MSE": [
+              1.0924633762974925,
+              1.0085464859791449,
+              1.0186248563944513,
+              1.0356130302055222
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        }
+      },
+      "scope": "Actual continuous labels in this role, not random threshold labels. Population exact formula is evaluated with estimated moments; predicted-vs-measured discrepancy includes moment-estimation and frozen-reader training variation."
+    },
+    "G": {
+      "latent_coordinate_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "native_classification_on_primary_scenes": {
+        "mean_error": 0.500701904296875,
+        "per_task_error": [
+          0.5123291015625,
+          0.4949951171875,
+          0.4976806640625,
+          0.5048828125,
+          0.5123291015625,
+          0.5123291015625,
+          0.4912109375,
+          0.5048828125,
+          0.5048828125,
+          0.4947509765625,
+          0.4947509765625,
+          0.4976806640625,
+          0.4976806640625,
+          0.4947509765625,
+          0.4912109375,
+          0.5048828125
+        ],
+        "tie_fraction": 0.0,
+        "tie_policy": "half",
+        "label_positive_fraction_per_task": [
+          0.5006103515625,
+          0.4949951171875,
+          0.4976806640625,
+          0.4951171875,
+          0.5006103515625,
+          0.4993896484375,
+          0.495849609375,
+          0.4951171875,
+          0.5048828125,
+          0.4947509765625,
+          0.4947509765625,
+          0.5023193359375,
+          0.4976806640625,
+          0.5052490234375,
+          0.504150390625,
+          0.4951171875
+        ],
+        "permission": "Original regression head reads last_post. Different supervision budget; for a spike-only probe this includes additional carrier access."
+      },
+      "native_continuous_MSE_on_fresh_scenes": 1.2973495725464432,
+      "continuous_learning_curves": {
+        "1": {
+          "moment_plug_in_forecast": {
+            "samples": 1,
+            "gain": 1.0,
+            "expected_MSE_per_target": 105.37192138198219,
+            "population_target_power": 0.9815008097583688,
+            "mean_map_cross_term": -0.08872495304746658,
+            "mean_prediction_power": 0.15958955130002367,
+            "finite_training_variability_power": 104.31955597397126,
+            "oracle_common_scalar_gain": 0.00042460604267674593,
+            "oracle_scalar_expected_MSE": 0.9814819731827688,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 52.497024711369946,
+            "per_frozen_reader_MSE": [
+              8.758026030245023,
+              67.32125291942566,
+              5.180381171713059,
+              128.728438724096
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.0013848903805775,
+            "per_frozen_reader_MSE": [
+              1.0013537570971074,
+              1.0015395793580593,
+              1.0013296656708084,
+              1.0013165593963356
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.00042460604267674593,
+          "ridge": {
+            "MSE_per_target": 1.068949454880982,
+            "per_frozen_reader_MSE": [
+              1.0088555024631645,
+              1.1152983987680107,
+              1.0241486569725275,
+              1.1274952613202252
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "8": {
+          "moment_plug_in_forecast": {
+            "samples": 8,
+            "gain": 1.0,
+            "expected_MSE_per_target": 14.092309904757332,
+            "population_target_power": 0.9815008097583688,
+            "mean_map_cross_term": -0.08872495304746658,
+            "mean_prediction_power": 0.15958955130002367,
+            "finite_training_variability_power": 13.039944496746408,
+            "oracle_common_scalar_gain": 0.0033609123141963536,
+            "oracle_scalar_expected_MSE": 0.981351711364732,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 19.44833571354993,
+            "per_frozen_reader_MSE": [
+              10.11201752064168,
+              14.225433618752977,
+              24.806356774386302,
+              28.649534940418768
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.001731623914114,
+            "per_frozen_reader_MSE": [
+              1.001846388915681,
+              1.0017917888801253,
+              1.0017214252454527,
+              1.0015668926151968
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.0033609123141963536,
+          "ridge": {
+            "MSE_per_target": 4.6402878674054415,
+            "per_frozen_reader_MSE": [
+              2.7568343613947235,
+              6.946125587252647,
+              5.427594549859995,
+              3.4305969711144018
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "32": {
+          "moment_plug_in_forecast": {
+            "samples": 32,
+            "gain": 1.0,
+            "expected_MSE_per_target": 4.312351532197528,
+            "population_target_power": 0.9815008097583688,
+            "mean_map_cross_term": -0.08872495304746658,
+            "mean_prediction_power": 0.15958955130002367,
+            "finite_training_variability_power": 3.259986124186602,
+            "oracle_common_scalar_gain": 0.012973093954828254,
+            "oracle_scalar_expected_MSE": 0.9809252911823576,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 4.656998600920547,
+            "per_frozen_reader_MSE": [
+              4.547029935557639,
+              4.47347974177246,
+              5.944486481756714,
+              3.662998244595372
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.000996898285486,
+            "per_frozen_reader_MSE": [
+              1.0011243416110476,
+              1.0007763841470134,
+              1.0016286208612948,
+              1.0004582465225886
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.012973093954828254,
+          "ridge": {
+            "MSE_per_target": 3.6722328244871827,
+            "per_frozen_reader_MSE": [
+              2.3351888194510515,
+              3.693987341901726,
+              4.384408234663134,
+              4.27534690193282
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "128": {
+          "moment_plug_in_forecast": {
+            "samples": 128,
+            "gain": 1.0,
+            "expected_MSE_per_target": 1.8673619390575764,
+            "population_target_power": 0.9815008097583688,
+            "mean_map_cross_term": -0.08872495304746658,
+            "mean_prediction_power": 0.15958955130002367,
+            "finite_training_variability_power": 0.8149965310466505,
+            "oracle_common_scalar_gain": 0.045519300272495504,
+            "oracle_scalar_expected_MSE": 0.9794814608686535,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 2.3028161888590644,
+            "per_frozen_reader_MSE": [
+              1.8315393872800838,
+              2.5119096119778366,
+              3.084381850352962,
+              1.7834339058253768
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.0008092533296877,
+            "per_frozen_reader_MSE": [
+              1.0003392092608154,
+              1.000869731319072,
+              1.0015212769590398,
+              1.0005067957798233
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.045519300272495504,
+          "ridge": {
+            "MSE_per_target": 1.2253637183897848,
+            "per_frozen_reader_MSE": [
+              1.3690098145525234,
+              1.2263048729863772,
+              1.1682823110880731,
+              1.1378578749321653
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        }
+      },
+      "scope": "Actual continuous labels in this role, not random threshold labels. Population exact formula is evaluated with estimated moments; predicted-vs-measured discrepancy includes moment-estimation and frozen-reader training variation."
+    },
+    "FG": {
+      "latent_coordinate_indices": [
+        0,
+        1,
+        2,
+        3,
+        16,
+        17,
+        18,
+        19
+      ],
+      "native_classification_on_primary_scenes": {
+        "mean_error": 0.5006942749023438,
+        "per_task_error": [
+          0.509033203125,
+          0.5052490234375,
+          0.498779296875,
+          0.5050048828125,
+          0.4974365234375,
+          0.5064697265625,
+          0.498779296875,
+          0.4935302734375,
+          0.5009765625,
+          0.4932861328125,
+          0.500732421875,
+          0.5048828125,
+          0.5048828125,
+          0.5010986328125,
+          0.4998779296875,
+          0.4910888671875
+        ],
+        "tie_fraction": 0.0,
+        "tie_policy": "half",
+        "label_positive_fraction_per_task": [
+          0.5040283203125,
+          0.4947509765625,
+          0.501953125,
+          0.5050048828125,
+          0.4974365234375,
+          0.4935302734375,
+          0.498779296875,
+          0.5064697265625,
+          0.4990234375,
+          0.4932861328125,
+          0.500732421875,
+          0.5045166015625,
+          0.4954833984375,
+          0.4989013671875,
+          0.4998779296875,
+          0.4910888671875
+        ],
+        "permission": "Original regression head reads last_post. Different supervision budget; for a spike-only probe this includes additional carrier access."
+      },
+      "native_continuous_MSE_on_fresh_scenes": 1.4380317835794072,
+      "continuous_learning_curves": {
+        "1": {
+          "moment_plug_in_forecast": {
+            "samples": 1,
+            "gain": 1.0,
+            "expected_MSE_per_target": 105.10124241601633,
+            "population_target_power": 0.9836892410174501,
+            "mean_map_cross_term": -0.30236427627803253,
+            "mean_prediction_power": 0.5063393796369278,
+            "finite_training_variability_power": 103.91357807163999,
+            "oracle_common_scalar_gain": 0.0014478285544475644,
+            "oracle_scalar_expected_MSE": 0.9834703552009301,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 81.5235944945458,
+            "per_frozen_reader_MSE": [
+              101.15036584841448,
+              53.56121350022457,
+              15.364480156490169,
+              156.01831847305402
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.0044763504452017,
+            "per_frozen_reader_MSE": [
+              1.003086732552457,
+              1.00494186377454,
+              1.004674680796561,
+              1.0052021246572496
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.0014478285544475644,
+          "ridge": {
+            "MSE_per_target": 1.0919909526269462,
+            "per_frozen_reader_MSE": [
+              1.0487571644248432,
+              1.0811892156427283,
+              1.0760598363392682,
+              1.1619575941009441
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "8": {
+          "moment_plug_in_forecast": {
+            "samples": 8,
+            "gain": 1.0,
+            "expected_MSE_per_target": 14.176861603331343,
+            "population_target_power": 0.9836892410174501,
+            "mean_map_cross_term": -0.30236427627803253,
+            "mean_prediction_power": 0.5063393796369278,
+            "finite_training_variability_power": 12.989197258954999,
+            "oracle_common_scalar_gain": 0.01120238062313838,
+            "oracle_scalar_expected_MSE": 0.981995641162597,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 22.139968179030234,
+            "per_frozen_reader_MSE": [
+              25.333940161268334,
+              13.785569325474018,
+              20.35690840286139,
+              29.083454826517183
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 1.0033176268400659,
+            "per_frozen_reader_MSE": [
+              0.9984982578838848,
+              1.004045905281993,
+              1.0065534661737658,
+              1.00417287802062
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.01120238062313838,
+          "ridge": {
+            "MSE_per_target": 3.7481558003420945,
+            "per_frozen_reader_MSE": [
+              2.664634219696814,
+              4.747638349300647,
+              4.438760409175989,
+              3.14159022319493
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "32": {
+          "moment_plug_in_forecast": {
+            "samples": 32,
+            "gain": 1.0,
+            "expected_MSE_per_target": 4.434963659115095,
+            "population_target_power": 0.9836892410174501,
+            "mean_map_cross_term": -0.30236427627803253,
+            "mean_prediction_power": 0.5063393796369278,
+            "finite_training_variability_power": 3.2472993147387497,
+            "oracle_common_scalar_gain": 0.04027615613765447,
+            "oracle_scalar_expected_MSE": 0.9776002056165387,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 4.997485760516319,
+            "per_frozen_reader_MSE": [
+              6.343006312441844,
+              3.799909004749381,
+              5.304703315601753,
+              4.542324409272301
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 0.9998286073284892,
+            "per_frozen_reader_MSE": [
+              1.001884314211361,
+              1.0010894608042604,
+              1.0005247936932438,
+              0.9958158606050922
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.04027615613765447,
+          "ridge": {
+            "MSE_per_target": 3.17029898827679,
+            "per_frozen_reader_MSE": [
+              2.4035125138904565,
+              3.165738031582009,
+              4.108160070564542,
+              3.0037853370701533
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        },
+        "128": {
+          "moment_plug_in_forecast": {
+            "samples": 128,
+            "gain": 1.0,
+            "expected_MSE_per_target": 1.9994891730610327,
+            "population_target_power": 0.9836892410174501,
+            "mean_map_cross_term": -0.30236427627803253,
+            "mean_prediction_power": 0.5063393796369278,
+            "finite_training_variability_power": 0.8118248286846874,
+            "oracle_common_scalar_gain": 0.1146914300848091,
+            "oracle_scalar_expected_MSE": 0.9663499453910072,
+            "scope": "Exact for the supplied TRUE population moments and W_p=mean(r*y^T), fixed gain and origin. An oracle gain estimated from data requires independent development fitting and its own budget."
+          },
+          "raw_Hebbian": {
+            "MSE_per_target": 2.2426743205102895,
+            "per_frozen_reader_MSE": [
+              1.9534289508998848,
+              2.158089261288697,
+              2.6651243754198046,
+              2.1940546944327717
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_gain_Hebbian": {
+            "MSE_per_target": 0.9906918654000574,
+            "per_frozen_reader_MSE": [
+              0.9888985749430492,
+              0.9905445353332498,
+              0.9961345323624756,
+              0.9871898189614549
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "moment_selected_scalar_gain": 0.1146914300848091,
+          "ridge": {
+            "MSE_per_target": 1.1320878278044688,
+            "per_frozen_reader_MSE": [
+              1.2307365954250078,
+              1.117425679482761,
+              1.0934535837412622,
+              1.0867354525688437
+            ],
+            "aggregation": "Mean individual-reader risk; no deployment ensemble and no bounded classification-loss confidence interval."
+          },
+          "gain_fitting_extra_labelled_scenes": 2048
+        }
+      },
+      "scope": "Actual continuous labels in this role, not random threshold labels. Population exact formula is evaluated with estimated moments; predicted-vs-measured discrepancy includes moment-estimation and frozen-reader training variation."
+    }
+  },
+  "new_SNN_optimizer_updates": 0,
+  "audit_test_accessed": false
+}

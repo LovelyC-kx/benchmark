@@ -4,6 +4,7 @@ import sys,json,hashlib
 import numpy as np
 ROOT=Path(__file__).resolve().parent
 PARENT=ROOT/'parent_l44'
+if not PARENT.is_dir(): PARENT=ROOT/'parentl44'
 sys.path.insert(0,str(PARENT))
 from bridge44 import BenchmarkModel,ModelConfig,Cell,NEURONS,parameter_hash,save_tree,load_tree,tree_hash,write_json
 
@@ -17,8 +18,11 @@ def model_for(backbone,neuron):
     cfg=ModelConfig(backbone=backbone,neuron=neuron,width=8,depth=2,beta=.85,gain=2.,threshold=.6,
         normalization='none',observation='post',readout='last')
     m=BenchmarkModel((5,16,16),(4,16,16),6,cfg,objective='reconstruction').eval()
-    snapshot=ROOT/'evidence/fitted/initializations'/(config_key(backbone,neuron)+'.pt')
-    if snapshot.exists():m.load_state_dict(torch.load(snapshot,map_location='cpu',weights_only=True),strict=True)
+    evidence=ROOT/'evidence' if (ROOT/'evidence/fitted/initializations').is_dir() else ROOT/'evidence1'
+    snapshot=evidence/'fitted/initializations'/(config_key(backbone,neuron)+'.pt')
+    if not snapshot.is_file(): raise FileNotFoundError('Required historical initialization missing; no silent random fallback: '+str(snapshot))
+    m.load_state_dict(torch.load(snapshot,map_location='cpu',weights_only=True),strict=True)
+    m.historical_checkpoint_status='untrained_initialization_not_benchmark_result'
     return m
 
 def site_paths(model):

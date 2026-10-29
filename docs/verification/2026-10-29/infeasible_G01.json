@@ -1,0 +1,282 @@
+[
+  {
+    "items": 2,
+    "age": 8,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 8,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 8,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 8,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 16,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 16,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 16,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 16,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 32,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 2,
+    "age": 32,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 8,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 8,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 8,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 8,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 16,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 16,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 16,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 16,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 32,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 4,
+    "age": 32,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 8,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 8,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 8,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 8,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 16,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 16,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 16,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 16,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 32,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 8,
+    "age": 32,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 8,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 8,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 8,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 8,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 16,
+    "writes": 16,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 16,
+    "writes": 16,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 16,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 16,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 32,
+    "writes": 32,
+    "objective": "classification",
+    "reason": "Post-target writes must fit before query"
+  },
+  {
+    "items": 16,
+    "age": 32,
+    "writes": 32,
+    "objective": "regression",
+    "reason": "Post-target writes must fit before query"
+  }
+]

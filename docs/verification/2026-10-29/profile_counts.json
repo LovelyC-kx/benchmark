@@ -1,0 +1,89 @@
+{
+  "smoke": {
+    "task_contracts": 4,
+    "runs_per_seed": 8,
+    "runs_five_seeds": 40,
+    "by_family_objective_per_seed": {
+      "tagged/regression": 2,
+      "tagged/classification": 2,
+      "spatial/classification": 2,
+      "spatial/reconstruction": 2
+    }
+  },
+  "screen": {
+    "task_contracts": 62,
+    "runs_per_seed": 2984,
+    "runs_five_seeds": 14920,
+    "by_family_objective_per_seed": {
+      "legacy/classification": 814,
+      "legacy/regression": 520,
+      "legacy/reconstruction": 150,
+      "tagged/classification": 208,
+      "tagged/regression": 208,
+      "official_adding/classification": 52,
+      "copy_memory/sequence_classification": 52,
+      "mqar/classification": 52,
+      "mqar/sequence_classification": 52,
+      "protocol/classification": 462,
+      "protocol/regression": 364,
+      "protocol/reconstruction": 50
+    }
+  },
+  "full": {
+    "task_contracts": 762,
+    "runs_per_seed": 39384,
+    "runs_five_seeds": 196920,
+    "by_family_objective_per_seed": {
+      "legacy/classification": 814,
+      "legacy/regression": 520,
+      "legacy/reconstruction": 150,
+      "tagged/classification": 10972,
+      "tagged/regression": 10972,
+      "official_adding/classification": 52,
+      "copy_memory/sequence_classification": 52,
+      "mqar/classification": 52,
+      "mqar/sequence_classification": 52,
+      "protocol/classification": 7898,
+      "protocol/regression": 7800,
+      "protocol/reconstruction": 50
+    }
+  },
+  "paired": {
+    "task_contracts": 62,
+    "runs_per_seed": 22824,
+    "runs_five_seeds": 114120,
+    "by_family_objective_per_seed": {
+      "legacy/classification": 5934,
+      "legacy/regression": 3720,
+      "legacy/reconstruction": 2070,
+      "tagged/classification": 1488,
+      "tagged/regression": 1488,
+      "official_adding/classification": 372,
+      "copy_memory/sequence_classification": 372,
+      "mqar/classification": 372,
+      "mqar/sequence_classification": 372,
+      "protocol/classification": 3342,
+      "protocol/regression": 2604,
+      "protocol/reconstruction": 690
+    }
+  },
+  "learning": {
+    "task_contracts": 62,
+    "runs_per_seed": 14640,
+    "runs_five_seeds": 73200,
+    "by_family_objective_per_seed": {
+      "legacy/classification": 3822,
+      "legacy/regression": 2400,
+      "legacy/reconstruction": 1278,
+      "tagged/classification": 960,
+      "tagged/regression": 960,
+      "official_adding/classification": 240,
+      "copy_memory/sequence_classification": 240,
+      "mqar/classification": 240,
+      "mqar/sequence_classification": 240,
+      "protocol/classification": 2154,
+      "protocol/regression": 1680,
+      "protocol/reconstruction": 426
+    }
+  }
+}

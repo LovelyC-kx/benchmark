@@ -19,7 +19,7 @@ from .utils import atomic_json,atomic_torch,digest,file_hash,parameter_hash,seed
 
 def implementation_hash(scope='training'):
     root=Path(__file__).parent
-    training=('engine.py','utils.py','specs.py','models.py','extended_models.py','data.py','protocols.py','reference/__init__.py','reference/models.py','reference/neurons.py','legacy/tasks.py','legacy/l1_contracts.py')
+    training=('engine.py','telemetry.py','utils.py','specs.py','models.py','extended_models.py','data.py','protocols.py','reference/__init__.py','reference/models.py','reference/neurons.py','legacy/tasks.py','legacy/l1_contracts.py')
     paths=[root/p for p in training] if scope=='training' else sorted(root.rglob('*.py'))
     return digest({'scope':scope,'files':{str(p.relative_to(root)):file_hash(p) for p in paths if '__pycache__' not in str(p)}})
 
@@ -118,7 +118,10 @@ def evaluate(model,data,batch_size,device):
 def environment(device):
     return {'torch':str(torch.__version__),'numpy':np.__version__,'python':__import__('platform').python_version(),
             'device':str(device),'cuda':torch.version.cuda,'gpu':torch.cuda.get_device_name(device) if str(device).startswith('cuda') else None,
-            'cuda_count':torch.cuda.device_count() if str(device).startswith('cuda') else 0}
+            'cuda_count':torch.cuda.device_count() if str(device).startswith('cuda') else 0,
+            'total_gpu_memory_bytes':torch.cuda.get_device_properties(device).total_memory if str(device).startswith('cuda') else None,
+            'deterministic_algorithms':torch.are_deterministic_algorithms_enabled(),'matmul_allow_tf32':torch.backends.cuda.matmul.allow_tf32,
+            'cudnn_allow_tf32':torch.backends.cudnn.allow_tf32,'CUDA_VISIBLE_DEVICES':os.environ.get('CUDA_VISIBLE_DEVICES')}
 
 
 def train(spec,out_root='runs',data_root='prepared',device='cpu',resume=True,max_updates=None):
@@ -153,7 +156,9 @@ def _train_locked(spec,run,data_root,device,resume,max_updates):
     progress={'epoch':0,'cursor':0,'updates':0,'epoch_loss_sum':0.,'epoch_scenes':0,'best_val':None,'history':[]}
     last=run/'last.pt';total=cfg.epochs*math.ceil(cfg.train_scenes/cfg.batch_size)
     milestones={int(math.ceil(float(f)*total)) for f in cfg.checkpoint_fractions}
+    journal=None
     def save(path):
+        if journal is not None:journal.sync()
         atomic_torch(path,{'schema':'snnbench_checkpoint_v2','run_id':spec.run_id,'spec':spec.to_dict(),'contract':contract,
             'implementation_sha256':impl,'environment':env,'model':model.state_dict(),'optimizer':opt.state_dict(),
             'rng':rng_state(),'progress':progress,'parameter_sha256':parameter_hash(model),'initial_parameter_sha256':initial})
@@ -166,17 +171,38 @@ def _train_locked(spec,run,data_root,device,resume,max_updates):
         if parameter_hash(model)!=ck['parameter_sha256']:raise ValueError('Checkpoint parameter hash mismatch')
     else:
         atomic_json(run/'spec.json',spec.to_dict());save(run/'step_00000000.pt');save(last)
+    from .telemetry import UpdateJournal,gradient_statistics,torch_safe
+    journal=UpdateJournal(run,progress['updates'],spec.run_id)
     invocation_updates=0;started=time.monotonic()
     while progress['epoch']<cfg.epochs:
         epoch=progress['epoch'];order=seeded(cfg.order_seed,'epoch_order',epoch).permutation(cfg.train_scenes)
         while progress['cursor']<len(order):
             start=progress['cursor'];ids=order[start:start+cfg.batch_size];batch=subset(train_data,ids)
-            model.train();opt.zero_grad(set_to_none=True);prediction=model(tensor_input(batch,device));loss,_=native_losses(prediction,batch,device)
-            loss.mean().backward();norm=torch.nn.utils.clip_grad_norm_(model.parameters(),cfg.clip_norm,error_if_nonfinite=True);opt.step()
+            before=time.monotonic();model.train();opt.zero_grad(set_to_none=True);stage='forward';before_rng=rng_state()
+            try:
+                prediction=model(tensor_input(batch,device));stage='native_loss';loss,correct=native_losses(prediction,batch,device)
+                stage='backward';loss.mean().backward();stage='gradient_clip';norm=torch.nn.utils.clip_grad_norm_(model.parameters(),cfg.clip_norm,error_if_nonfinite=True)
+                gradient=gradient_statistics(model);stage='optimizer';opt.step()
+            except Exception as exc:
+                failure=run/f'failure_update_{progress["updates"]+1:08d}.pt'
+                atomic_torch(failure,{'schema':'failed_update_evidence_v1','stage':stage,'run_id':spec.run_id,'progress':progress,
+                    'batch':torch_safe(batch),'pre_forward_rng':before_rng,'post_failure_rng':rng_state(),'model':model.state_dict(),'optimizer':opt.state_dict(),
+                    'implementation_sha256':impl,'error':type(exc).__name__+': '+str(exc)})
+                atomic_json(run/'failure.json',{'stage':stage,'update':progress['updates']+1,'evidence':failure.name,'error':type(exc).__name__+': '+str(exc)})
+                atomic_json(run/'status.json',{'status':'failed','run_id':spec.run_id,'progress':progress,'failure_stage':stage,
+                    'failure_evidence':failure.name,'error':type(exc).__name__+': '+str(exc),'environment':env})
+                raise
             progress['cursor']+=len(ids);progress['updates']+=1;invocation_updates+=1
             progress['last_gradient_norm']=float(norm.cpu())
             progress['epoch_loss_sum']+=float(loss.detach().sum().cpu());progress['epoch_scenes']+=len(ids)
             u=progress['updates']
+            journal.append({'update':u,'epoch':epoch,'cursor_after_update':progress['cursor'],'train_indices':ids.tolist(),
+                'scene_ids':batch['scene_ids'],'source_ids':batch.get('source_ids'),'group_ids':batch['group_ids'],
+                'native_losses':loss.detach().cpu().numpy(),'correct':None if correct is None else correct.detach().cpu().numpy(),
+                'gradient_norm_before_clip':float(norm.cpu()),'gradient_statistics_after_clip':gradient,
+                'learning_rates':[g['lr'] for g in opt.param_groups],'elapsed_seconds':time.monotonic()-before,
+                'cuda_peak_allocated_bytes':torch.cuda.max_memory_allocated(device) if str(device).startswith('cuda') else None,
+                'cuda_peak_reserved_bytes':torch.cuda.max_memory_reserved(device) if str(device).startswith('cuda') else None})
             if u in milestones:save(run/f'step_{u:08d}.pt')
             if u%cfg.save_every_updates==0:save(last)
             if max_updates is not None and invocation_updates>=max_updates:

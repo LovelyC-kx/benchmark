@@ -24,8 +24,8 @@ def connect(path):
 
 def enqueue(database,manifest,shard=0,shards=1):
     if not 0<=shard<shards:raise ValueError('0 <= shard < shards')
-    with connect(database) as con:
-        for line in Path(manifest).open(encoding='utf-8'):
+    with connect(database) as con,Path(manifest).open(encoding='utf-8') as source:
+        for line in source:
             spec=RunSpec.from_dict(json.loads(line))
             if int(spec.run_id,16)%shards==shard:con.execute('INSERT OR IGNORE INTO jobs(id,spec) VALUES(?,?)',(spec.run_id,json.dumps(spec.to_dict())))
         return dict(con.execute('SELECT state,COUNT(*) FROM jobs GROUP BY state').fetchall())

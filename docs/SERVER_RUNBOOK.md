@@ -2,7 +2,30 @@
 
 所有命令在仓库根目录运行。先查看当前分支/PR交付的版本，再安装项目；原main旧档案没有这些新入口。
 
-v0.3新增真实预测/惯性/EEG/声音等适配与32种公共参考骨架。先读[真实数据及模型扩展](REAL_DATA_AND_MODEL_EXPANSION.md)和[近期基准复核](BENCHMARK_REVIEW_2025_2026.md)，使用`expanded`及显式`--archives`加入真实数据。旧checkpoint的严格代码hash不能跨版本强行续跑；新版本建议另用`--out runs_v03`。
+v0.4的首要入口见[四阶段执行方案](FOUR_PHASE_EXECUTION_PLAN.md)。84GB资源按实际设备字节检测；先广泛跑并完整保存，随后执行原L1—L6全部分析。真实数据及32种公共参考骨架见[扩展说明](REAL_DATA_AND_MODEL_EXPANSION.md)，作者轨道见[近期基准复核](BENCHMARK_REVIEW_2025_2026.md)。新实验另用`campaign_v04`，旧checkpoint在原代码版本读取。
+
+## 0. 全量campaign入口
+
+以下命令生成完整配置、来源/硬件/原计划索引，并在同一个队列中按run ID去重。真实数据用`--archives`加入，去掉`--materialize`可先查看设计而不编译大清单。
+
+```bash
+python -m snnbench campaign-plan --root /local/snn/campaign_v04 \
+  --profiles full paired learning --seeds 11 22 33 44 55 \
+  --archives /data/snn/canonical/har /data/snn/canonical/shd --materialize
+python scripts/launch_local_gpus.py --gpus 0 1 2 3 \
+  --db /local/snn/campaign_v04/train.sqlite \
+  --runs /local/snn/campaign_v04/runs --data /local/snn/campaign_v04/data
+python -m snnbench campaign-stage --root /local/snn/campaign_v04 \
+  --phase preliminary --checkpoints all --archive-batch 8
+python -m snnbench post-worker \
+  --db /local/snn/campaign_v04/post_preliminary.sqlite --device cuda:0
+python -m snnbench campaign-stage --root /local/snn/campaign_v04 \
+  --phase all_shared --checkpoints all
+python -m snnbench post-worker \
+  --db /local/snn/campaign_v04/post_all_shared.sqlite --device cuda:0
+```
+
+`campaign-stage`重复执行会加入新完成模型；post-worker处理当前队列后退出。训练、完整归档和后处理按卡分配；不要直接让示例中的进程争用同一张卡。`preliminary`默认保存所有声明场景和所有保存进度；`all_shared`执行14项公共分析，原专用小节另沿`all_layer_coverage.json`逐项完成。
 
 ## 1. 环境与CPU/GPU验收
 
@@ -106,7 +129,16 @@ python -m snnbench analyze --run runs/RUN_ID --data prepared --device cuda:0 \
 python -m snnbench summarize --runs runs --out results_summary
 ```
 
-每份analysis目录有：report.json、receipt.json、scene_statistics.npz、评价集完整native_outputs.npz，以及observations/{split}/的分批NPY、坐标index与labels_and_ids。可以重读中间表征、完整预测和真值，避免只留平均分。若只取了128个状态/诊断目标坐标，报告分别给出原维数与具体坐标；完整原生图像损失始终使用所有合法像素。需要完整诊断时增大max_features/max_targets并重新分析；不能将像素坐标自动视为独立潜在因素。
+每份analysis目录有：report.json、receipt.json、scene_statistics.npz、评价集完整native_outputs.npz、fitted_readers/，以及observations/{split}/的分批NPY、坐标index与labels_and_ids。已接通的线性/非线性读出、标准化/实际投影、几何和transport拟合参数列出文件SHA。可以重读中间表征、完整预测、真值与拟合器。若只取了128个状态/诊断目标坐标，报告分别给出原维数与具体坐标；原生图像损失使用所有合法像素。
+
+完整档案独立于快速分析缓存：
+
+```bash
+python -m snnbench archive --run runs/RUN_ID --checkpoint best.pt \
+  --data prepared --device cuda:0 --batch-size 8
+```
+
+archive保存全部坐标和原精度，每时步状态、cache、读出及全部叶子模块输入输出；固定场景库数量写入合同。工程测量可显式`--scenes 8`；正式全量不加该覆盖参数。追加诊断预算可用analyze的`--max-features`、`--max-targets`、`--batch-size`，实际设置进入独立分析ID。
 
 理论/探针与原生风险分开读取。优先看来源恢复随时间、请求负荷与不相关写入的变化，然后看编码/几何、时间迁移、局部干预和四组恢复是否形成一致解释。失败、不适用、负R²、有限交叉项和未定义恢复比都应保留。
 
@@ -118,8 +150,8 @@ python -m snnbench summarize --runs runs --out results_summary
 
 ## 10. 存储与吞吐
 
-先用每种真实形状的一次GPU smoke实测单步耗时、峰值显存、检查点体积和表征文件体积，再乘具体manifest数量。表征约随N×T×站点数×被采样维数增长；不要拿小向量结果估整幅图的存储。
+先用每种实际形状实测单步耗时、峰值显存、检查点、逐更新日志、完整轨迹和拟合器体积，再按实际唯一run/进度/场景数汇总。完整轨迹按全部坐标估算，同时记录逻辑字节与压缩落盘字节。二值位压缩、内容去重与精确KV前缀复用已经接通；空间叶子输出按实际形状测量。
 
-训练中已保存初始、指定进度、best和last；若要对所有进度做分析，逐个 `--checkpoint step_*.pt`调用并使用相同场景/读出预算。第一轮可对全部终点做轻量分析，对机制深挖与轨迹保留明确的固定抽样和验证集，完整配置不因结果失败而丢弃。
+训练中保存初始、指定进度、best和last；campaign-stage默认将所有这些进度加入归档与初析队列。每次更新的样本/损失、梯度统计和资源记录在updates.jsonl，失败现场单独保存。完整轨迹采集固定场景库的全部时步，所有训练batch的激活按检查点、RNG和确定性数据重放追加。
 
-调整max_features/max_targets等尚未作为CLI简写暴露的分析字段时，编辑该run目录spec.json中的analysis部分，再调用analyze；训练身份不变，原始训练配置仍保存在checkpoint。不要修改task/model/train部分来冒充同一个实验。
+改变分析配置会生成新的analysis身份；训练身份和checkpoint保留。旧原计划的专用分析逐项适配已训练检查点，并把实际输出回写覆盖总账。

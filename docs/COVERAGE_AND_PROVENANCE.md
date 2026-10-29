@@ -2,11 +2,13 @@
 
 研究论证仍以旧Master、各节Deep Review、Literature and Code Map及Mathematical Specification为来源。本轮没有把旧文献综述改成新的已验证论文结果；新增的是共同执行链和明确的数据/模型合同。
 
+v0.4将原计划纳入机器可读总账：40个Master模块、29个编号细分节、33份来源文件及907个标题上下文。`campaign-plan`生成`all_layer_coverage.json`，保留原编号命名空间、路径、SHA、执行要求和当前runner映射。[四阶段方案](FOUR_PHASE_EXECUTION_PLAN.md)规定L1—L6全部分析的执行与发现流程。
+
 ## 1. 来源与迁移
 
 `source_migration_provenance.json`逐文件列旧来源与原SHA。`legacy/`恢复完整旧L2的14个模块，保留其任务与接口。`reference/`来自最新L3.2父代码的12单元/8骨架。19份 `kernels/`来自既有L3.3—L4.5数学模块，仅把跨目录隐式import改为相对import；明确的辅助函数以原公式移入。
 
-新模型工厂、持续状态/读出快照、连续参照、计数器数据包装、训练与恢复、真实数据转换、工作队列、数据下载器、公共分析和测试是本轮工程实现。它们服务研究，不能单独作为“首次提出时序保持/概念擦除/ANOVA”的方法新颖性主张。
+新模型工厂、持续状态/读出快照、连续参照、计数器数据包装、训练与恢复、真实数据转换、工作队列、数据下载器、公共分析和测试是本轮工程实现。v0.4继续加入原精度完整轨迹、逐更新证据、拟合器保存和全进度后处理。它们为新设置、新测量、机制发现和模型设计提供共同基础；对应公式与思想保持来源可追踪。
 
 ## 2. 按旧层级逐项定位
 
@@ -28,6 +30,8 @@
 | L4.3选择操作 | selective | LEACE/orthogonal、随机秩/剂量、独立验证 | 连续局部状态操作；不是全状态非线性擦除证明 |
 | L4.4恢复 | recovery＋recovery_math44 | 四风险、patch-only、Ω、平方风险恒等式 | 当前精确来源世界仅tagged；oracle patch明确记录 |
 | L4.5空间恢复 | spatial generators、reconstruction | 区域、频率交叉项、PSNR次序、SAM | 真正空间头、干净目标与配准缺口单列 |
+| L5跨条件与指导意义 | coverage索引、全部任务/模型结果和训练资源记录 | 原Master的时间/负荷、保护/干扰、真实任务、未见条件预测和系统价值 | 原专用分析逐项迁移；跨条件发现和设计收益由实际结果形成 |
+| L6学习与形成 | learning配置、逐更新日志、全部保存进度与完整状态归档 | 原Master的时间信用、SG/reset梯度、初始化/工作点、优化/课程/预算及表征形成 | 梯度张量、Jacobian和专用学习对照按实际问题接入 |
 
 ## 3. 与核心同类benchmark的关系
 
@@ -35,7 +39,7 @@
 
 对《Benchmarking spiking neural networks across sensing modalities on edge devices》及其数据路线，我们保留跨模态分类和实际资源观察；新增受控历史需求、连续重建、表示与机制分析。当前PyTorch状态计数不能替代边缘设备延迟/能耗实验，数据格式统一也不能替代各传感模态的原生任务审核。
 
-对表示/因果领域，线性探针、LEACE、functional ANOVA、Procrustes/affine alignment等思想均有既有来源。我们应争取的贡献是：针对SNN时序任务形成角色明确、阶段明确、权限明确的系统诊断，发现可复现规律，并预测和验证改动怎样影响后续模型；不是给既有公式换名。
+对表示/因果领域，线性探针、LEACE、functional ANOVA、Procrustes/affine alignment等思想均有既有来源。复用与适配可以支持新的研究设置、系统诊断、测量方式、机制规律、理论联系和模型改动。最终重点由实际发现的解释力、预测能力和设计收益决定，原六层覆盖为持续挖掘提供基础。
 
 ## 4. 需要服务器证据才能更新的状态
 

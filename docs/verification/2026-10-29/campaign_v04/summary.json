@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-29",
+  "version": "0.4.0",
+  "scope": "CPU engineering verification; broad campaign counted, not launched",
+  "test_suite": {
+    "command": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m unittest discover -s tests -v",
+    "tests": 60,
+    "passed": 60,
+    "seconds": 124.611
+  },
+  "training_implementation_sha256": "d53c78c7c1de31dfbbe94c6c76a1847fa6e695f223919317615ecd70206c6a9a",
+  "analysis_implementation_sha256": "6fb412a1efd1ae9c2839f3eb8fad4560b13190ed8d975f1763e01f48e5a61e48",
+  "environment": {
+    "torch": "2.9.1+cpu",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "device": "cpu",
+    "cuda": null,
+    "gpu": null,
+    "cuda_count": 0,
+    "total_gpu_memory_bytes": null,
+    "deterministic_algorithms": false,
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "CUDA_VISIBLE_DEVICES": null
+  },
+  "design_counts_before_cross_profile_dedup": {
+    "full": 315270,
+    "paired": 125210,
+    "learning": 84290,
+    "total": 524770
+  },
+  "source_inventory_counts": {
+    "master_cards": 40,
+    "specialized_subsections": 29,
+    "source_documents": 33,
+    "reference_headings": 907
+  },
+  "evidence": {
+    "README.md": {
+      "sha256": "edcc22d30205576d45de638147e48b526ab2a37a45eb569a61b6b3f3c6c7d329",
+      "bytes": 2702
+    },
+    "dry_campaign.json": {
+      "sha256": "ec9f38d4a1677593c48484f625770a33e8cb9d3b488e289bb365c868c4aea03c",
+      "bytes": 3101
+    },
+    "local_hardware.json": {
+      "sha256": "08fd1c917b5b92e058a0ae1e6b55bd44c68fddbc0894b24844c9c5f52b848613",
+      "bytes": 455
+    },
+    "plan_inventory.json": {
+      "sha256": "db8f916eea20d6dfe47dbf892ded8a19edeb53384928502239ee82c73679ac25",
+      "bytes": 56282
+    },
+    "unit_tests.log": {
+      "sha256": "1fa83a937086eec5dfd11f2d00a1999c0cbb539a1b1d1ca75241ac0a595339ee",
+      "bytes": 11684
+    }
+  },
+  "gpu_full_campaign_started": false,
+  "all_original_analysis_complete": false
+}

@@ -147,6 +147,12 @@ class ExecutionContracts(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);s=self.tiny();run=train(s,root/'runs',root/'data');out=analyze(run,root/'data');r=json.loads((out/'report.json').read_text())
             self.assertEqual(set(r['modules']),set(s.analysis.modules));self.assertEqual(r['modules']['recovery']['status'],'computed');self.assertTrue(r['modules']['selective']['rows'])
+            self.assertTrue((out/'fitted_readers/linear_probes.zip').exists());self.assertTrue((out/'fitted_readers/nonlinear_probe.pt').exists());self.assertTrue(r['fitted_artifacts'])
+            artifact=r['modules']['task_controls']['views']['current']['fitted_reader']['file'];reader=torch.load(artifact,weights_only=True)
+            batch=DataStore(s.task,root/'data').ensure('development',s.analysis.eval_scenes);x=np.asarray(batch['x'][:,-1],dtype='float32').reshape(len(batch['x']),-1)
+            if reader['projection'] is not None:x=x@reader['projection'].numpy()
+            x=torch.tensor((x-reader['input_mean'].numpy())/reader['input_scale'].numpy(),dtype=torch.float32);prediction=torch.nn.functional.linear(x,reader['model']['weight'],reader['model']['bias']).reshape(len(x),*reader['output_shape'])
+            loss=native_losses(prediction,batch)[0].mean();self.assertAlmostEqual(float(loss),r['modules']['task_controls']['views']['current']['native_loss'],places=6)
             self.assertFalse((DataStore(s.task,root/'data').root/'audit').exists());self.assertGreater(r['resources']['parameters'],0)
             status=json.loads((run/'status.json').read_text());self.assertTrue(status['parameters_changed']);self.assertEqual(status['updates'],8)
 

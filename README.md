@@ -1,11 +1,12 @@
 # SNN时序能力判断与归因基准
 
-当前执行入口是 `snnbench/`，版本0.3.0，更新于2026-10-29。旧L3/L4目录保留为研究档案；其中的初始化、一次更新和数学控制不能计作全量训练结果。
+当前执行入口是 `snnbench/`，版本0.4.0，更新于2026-10-29。研究按四步推进：**广泛训练与完整留存 → 原计划全部层级分析 → 深入发现、机制和理论 → 据实际发现组织论文。** 旧L3/L4目录保留为研究档案，连同原Master一起进入逐项覆盖总账。
 
 研究对象是：**任务需要哪种历史 → 系统实际保留什么 → 内容如何组织和传递 → 原下游实际使用什么，以及怎样改变它。** 各层复用同一数据世界、训练检查点和来源合同。
 
 | 先读哪份文件 | 内容 |
 |---|---|
+| [四阶段全量执行方案](docs/FOUR_PHASE_EXECUTION_PLAN.md) | 实验空间、84GB资源、完整归档、L1—L6覆盖、发现链与论文形成；当前首要执行方案 |
 | [当前进展与边界](docs/CURRENT_STATUS.md) | 已实现、已验收、待服务器数据/GPU验证分别列出 |
 | [实验与分析设计](docs/EXPERIMENT_DESIGN.md) | L1—L4逐模块、变量、对照、读出和理论范围 |
 | [服务器执行](docs/SERVER_RUNBOOK.md) | 环境、下载、转换、多GPU/Slurm、恢复及结果读取 |
@@ -46,6 +47,17 @@ bash scripts/download_real_priority.sh downloads
 
 ## 正式设计入口
 
+广泛全量运行优先使用v0.4的campaign入口。下面会生成完整设计、硬件/原计划索引，并物化扩展模型名单的full、paired、learning配置到同一个去重队列；去掉`--materialize`可先检查计划。
+
+```bash
+python -m snnbench campaign-plan --root /data/snn/campaign_v04 \
+  --profiles full paired learning --seeds 11 22 33 44 55 --materialize
+```
+
+真实数据通过`--archives`显式加入。三族合成设计共524,770配置/五seed，尚未跨族去重；该数量不代表已训练结果。全进度归档、初析和14项公共分析使用独立后处理队列，详见[四阶段方案](docs/FOUR_PHASE_EXECUTION_PLAN.md)。原L1—L6专用小节沿覆盖表继续接通和执行。
+
+单独编译入口继续保留，可用`--model-roster expanded`切换扩展名单：
+
 ```bash
 python -m snnbench compile --profile screen --seeds 11 22 33 44 55 --out manifests/screen.jsonl
 python -m snnbench compile --profile full --seeds 11 22 33 44 55 --out manifests/full.jsonl
@@ -58,4 +70,4 @@ python -m snnbench compile --profile expanded --seeds 11 22 33 44 55 --out manif
 
 `expanded`使用新的14种可注入骨架和18种连续参照、output访问、gain=0.5；62任务设置每seed 4954配置。真实数据先转换/verify，再通过`--archives`加入；不会生成替身。重要官方模型通过`models --sources`和`upstream-checkout`/`upstream-run`独立执行，不能把参考实现当作官方复现。
 
-v0.3修正了归一化层尺度初始化并新增模型代码；严格source hash会拒绝在新代码中续跑旧checkpoint。旧结果用原源码分析，新训练另用输出目录（如`--out runs_v03`），不要删除检查以强行兼容。
+v0.4新增完整状态档案、逐更新训练证据、关键拟合器保存、四阶段执行队列及原六层覆盖索引。严格source hash按版本校验；旧结果用原源码分析，新训练另用目录（如`campaign_v04`）。[工程验收记录](docs/verification/2026-10-29/campaign_v04/README.md)与历史v0.3记录分别保存。

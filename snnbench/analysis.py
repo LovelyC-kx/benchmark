@@ -11,10 +11,10 @@ import numpy as np
 import torch
 from torch import nn
 from .data import DataStore,generate,source_pair,subset,render_tagged
-from .engine import load_run,numpy_losses,implementation_hash,forecast_metrics
+from .engine import load_run,numpy_losses,implementation_hash,forecast_metrics,environment
 from .runtime import collect,tensor_input,intervene,message_edit,event_edit
 from .models import Cell,MemoryBackbone
-from .utils import atomic_json,digest,file_hash,seeded,exclusive_file
+from .utils import atomic_json,atomic_torch,digest,file_hash,seeded,exclusive_file
 from .kernels.linear_reference import fit_ridge,predict_ridge,regression_metrics
 from .kernels.decomposition import fit_joint,apply_joint,covariance_accounting,representation_score
 from .kernels.subspace_geometry import basis,overlap
@@ -155,7 +155,7 @@ def fitted_probes(groups,data,schema,a):
     return rows,readers,matrices
 
 
-def nonlinear_probe(fit,sel,ev,y,vy,ey,steps,seed):
+def nonlinear_probe(fit,sel,ev,y,vy,ey,steps,seed,artifact_path=None):
     torch.manual_seed(seed);mean=fit.mean(0);scale=np.maximum(fit.std(0),1e-6)
     x=torch.tensor((fit-mean)/scale,dtype=torch.float32);v=torch.tensor((sel-mean)/scale,dtype=torch.float32);e=torch.tensor((ev-mean)/scale,dtype=torch.float32)
     target=torch.tensor(y,dtype=torch.float32);model=nn.Sequential(nn.Linear(x.shape[1],min(128,2*x.shape[1]+8)),nn.Tanh(),nn.Linear(min(128,2*x.shape[1]+8),target.shape[1]))
@@ -166,11 +166,16 @@ def nonlinear_probe(fit,sel,ev,y,vy,ey,steps,seed):
         if vl<bestloss:bestloss=vl;best={k:z.detach().clone() for k,z in model.state_dict().items()};beststep=step+1
     model.load_state_dict(best)
     with torch.no_grad():pred=model(e).numpy()
-    return {'metrics':regression_metrics(pred,ey),'selected_step':beststep,'selection_MSE':bestloss,
+    result={'metrics':regression_metrics(pred,ey),'selected_step':beststep,'selection_MSE':bestloss,
             'scope':'finite trained nonlinear decoder; failure is not an information-absence certificate'}
+    if artifact_path is not None:
+        atomic_torch(artifact_path,{'schema':'fitted_nonlinear_probe_v1','model':best,'input_mean':torch.from_numpy(mean),'input_scale':torch.from_numpy(scale),
+            'input_dimension':x.shape[1],'hidden_dimension':min(128,2*x.shape[1]+8),'output_dimension':target.shape[1],'selected_updates':beststep,'seed':seed})
+        result['fitted_reader']={'file':str(artifact_path),'sha256':file_hash(artifact_path)}
+    return result
 
 
-def geometry(groups,data,schema,a):
+def geometry(groups,data,schema,a,artifact_writer=None):
     keys=[k for k in groups['probe_train']['traces'] if k.endswith(('::pre','::post','::output','::a','::syn','::h0','::c0','::h'))];out=[]
     z=np.asarray(data['probe_train']['targets'],float);ez=np.asarray(data[a.eval_split]['targets'],float)
     roles=[s['role'] if i in set(s['requested_coordinates']) else 'unrequested' for s in schema for i in range(s['stop']-s['start'])]
@@ -180,6 +185,7 @@ def geometry(groups,data,schema,a):
         cov=account['total_covariance'];values=np.linalg.eigvalsh(cov);axes={}
         for role in ('focal','cotarget','unrequested'):axes[role]=basis(fit['a'][:,np.array(roles)==role])
         overlaps={r+'__'+s:overlap(axes[r],axes[s]) for r,s in (('focal','cotarget'),('focal','unrequested'),('cotarget','unrequested'))}
+        if artifact_writer is not None:artifact_writer.tree(key,{'joint_encoding':fit,'role_axes':axes,'eigenvalues':values,'coordinate_roles':roles})
         out.append({'site_channel':key,'coefficient_identifiable':fit['coefficients_identifiable'],'design_rank':fit['design_rank'],
             'coordinate_role_counts':{r:roles.count(r) for r in ('focal','cotarget','unrequested')},
             'linear_encoding':representation_score(e,e-parts['unexplained_by_joint_linear_model'],fit['rmean']),
@@ -190,7 +196,7 @@ def geometry(groups,data,schema,a):
     return out
 
 
-def temporal(groups,data,readers,a):
+def temporal(groups,data,readers,a,artifact_writer=None):
     rows=[];f=groups['probe_train'];ev=groups[a.eval_split];y=data[a.eval_split]['targets']
     for key,x in f['traces'].items():
         if (key,0) not in readers:continue
@@ -198,6 +204,7 @@ def temporal(groups,data,readers,a):
         for dest in range(x.shape[1]):
             for family in ('raw','center','orthogonal','similarity','affine'):
                 transport_fit=fit_transport(x[:,dest],x[:,source_time],family)
+                if artifact_writer is not None:artifact_writer.tree(key+'|'+str(dest)+'|'+family,transport_fit)
                 pred=probe_predict(p,transport(transport_fit,e[:,dest]));scores=regression_metrics(pred,y)
                 rows.append({'site_channel':key,'reader_time':source_time,'observed_time':dest,'transport':family,
                     'MSE':scores['mean_mse'],'rank':transport_fit['rank_cross_covariance'],
@@ -412,7 +419,7 @@ def _analyze(run,data_root='prepared',checkpoint='best.pt',device='cpu',analysis
     if a.eval_split not in ('development','confirmation','audit'):raise ValueError('Unknown evaluation role')
     # Audit is only opened by this explicit split request, never by the trainer/compiler.
     contract={'checkpoint_sha256':file_hash(path),'parameter_sha256':ck['parameter_sha256'],'analysis':a.__dict__,
-              'implementation_sha256':implementation_hash('analysis'),'training_implementation_sha256':ck['implementation_sha256'],'run_id':spec.run_id}
+              'implementation_sha256':implementation_hash('analysis'),'training_implementation_sha256':ck['implementation_sha256'],'run_id':spec.run_id,'environment':environment(device)}
     analysis_id=digest(contract)[:20];out=Path(run)/'analysis'/analysis_id;out.mkdir(parents=True,exist_ok=True)
     if (out/'receipt.json').exists() and (out/'report.json').exists():
         receipt=json.loads((out/'receipt.json').read_text())
@@ -431,13 +438,15 @@ def _analyze(run,data_root='prepared',checkpoint='best.pt',device='cpu',analysis
         'data_roles':{k:{'scenes':len(v['x']),'groups':len(allgroups[k])} for k,v in data.items()},'source_schema':source_schema(ev['meta']),
         'observation_contracts':ec['observation_contracts'],'diagnostic_target_contract':target_contract,'resources':ec['resources'],'modules':{}}
     raw={'native_loss':loss,'scene_ids':ev['scene_ids'],'group_ids':ev['group_ids']};schema=report['source_schema'];modules=report['modules'];readers=None
+    from .archive import TensorArchive
+    fitted=out/'fitted_readers';fitted.mkdir(exist_ok=True)
     forecast=forecast_metrics(ec['prediction'],ev)
     if forecast:
         report['native']['forecasting']={name:interval(values,a.interval_resamples,a.delta,groups=ev['group_ids']) for name,values in forecast.items()}
         raw.update({'forecast_'+name:values for name,values in forecast.items()})
     if 'task_controls' in a.modules:
         from .readouts import task_controls
-        modules['task_controls']=task_controls(data,a)
+        modules['task_controls']=task_controls(data,a,fitted/'task_controls')
         from .oracles import task_reference
         modules['task_controls']['population_observation_reference']=task_reference(spec.task)
     if 'working_point' in a.modules:
@@ -449,18 +458,22 @@ def _analyze(run,data_root='prepared',checkpoint='best.pt',device='cpu',analysis
         rows,readers,tgm=fitted_probes(captured,data,schema,a);modules['probes']={'rows':rows,'TGM_orientation':'train time, evaluation time, source',
             'label_shuffle_control':{},'nonlinear_control':{}}
         for key,matrix in tgm.items():raw['TGM|'+key]=matrix
+        with TensorArchive(fitted/'linear_probes.zip') as writer:
+            for (site,t),parameters in readers.items():writer.tree(site+'|'+str(t),parameters)
         outputkeys=[k for k in captured['probe_train']['traces'] if k.endswith('::output')]
         if outputkeys:
             key=outputkeys[-1];x=captured['probe_train']['traces'][key][:,-1];v=captured['probe_val']['traces'][key][:,-1];e=ec['traces'][key][:,-1]
             y=data['probe_train']['targets'];vy=data['probe_val']['targets'];ey=ev['targets']
             shuffled=y[seeded(881,'shuffle_labels').permutation(len(y))];p=select_probe(x,shuffled,v,vy,a.ridge_alphas)
             modules['probes']['label_shuffle_control']=regression_metrics(probe_predict(p,e),ey)
-            if a.mlp_steps>0:modules['probes']['nonlinear_control']=nonlinear_probe(x,v,e,y,vy,ey,a.mlp_steps,spec.train.seed+1000)
-    if 'geometry' in a.modules:modules['geometry']=geometry(captured,data,schema,a)
-    if 'temporal' in a.modules:modules['temporal']=temporal(captured,data,readers,a)
+            if a.mlp_steps>0:modules['probes']['nonlinear_control']=nonlinear_probe(x,v,e,y,vy,ey,a.mlp_steps,spec.train.seed+1000,fitted/'nonlinear_probe.pt')
+    if 'geometry' in a.modules:
+        with TensorArchive(fitted/'geometry.zip') as writer:modules['geometry']=geometry(captured,data,schema,a,writer)
+    if 'temporal' in a.modules:
+        with TensorArchive(fitted/'transport.zip') as writer:modules['temporal']=temporal(captured,data,readers,a,writer)
     if 'access' in a.modules:
         from .readouts import access_controls
-        modules['access']=access_controls(captured,data,a)
+        modules['access']=access_controls(captured,data,a,fitted/'access')
     if 'selective' in a.modules:
         from .selective import selective_analysis
         modules['selective'],rows=selective_analysis(model,captured,data,schema,a,device);raw.update({'selective|'+k:v for k,v in rows.items()})
@@ -478,10 +491,12 @@ def _analyze(run,data_root='prepared',checkpoint='best.pt',device='cpu',analysis
     for split,c in captured.items():
         np.savez_compressed(out/'observations'/split/'labels_and_ids.npz',targets=data[split]['targets'],scene_ids=data[split]['scene_ids'],
                             group_ids=data[split]['group_ids'],source_times=data[split]['source_times'],source_present=data[split]['source_present'])
-    np.savez_compressed(out/'scene_statistics.npz',**raw);atomic_json(out/'report.json',report)
+    np.savez_compressed(out/'scene_statistics.npz',**raw)
     pred=ec['prediction'];native={'prediction':pred[0] if isinstance(pred,tuple) else pred,'target':ev['y'],'loss_mask':ev['loss_mask'],'scene_ids':ev['scene_ids'],'group_ids':ev['group_ids']}
     if isinstance(pred,tuple):native['sequence_prediction']=pred[1]
     np.savez_compressed(out/'native_outputs.npz',**native)
+    report['fitted_artifacts']={str(p.relative_to(out)):{'sha256':file_hash(p),'bytes':p.stat().st_size} for p in fitted.rglob('*') if p.is_file()}
+    atomic_json(out/'report.json',report)
     atomic_json(out/'receipt.json',{'status':'analyzed','contract':contract,'report_sha256':file_hash(out/'report.json'),
         'statistical_scope':'Exploratory marginal bootstrap intervals. Confirmatory families and stopping rules must be frozen before audit.'})
     return out

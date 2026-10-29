@@ -10,6 +10,11 @@ def main(argv=None):
     p=sub.add_parser('download');p.add_argument('args',nargs=argparse.REMAINDER)
     p=sub.add_parser('datasets');p.add_argument('--tier',default='all');p.add_argument('--ids',nargs='*')
     p=sub.add_parser('doctor')
+    p=sub.add_parser('campaign-plan');p.add_argument('--root',required=True);p.add_argument('--archives',nargs='*',default=[]);p.add_argument('--seeds',nargs='+',type=int,default=[11,22,33,44,55]);p.add_argument('--profiles',nargs='+',default=['full','paired','learning']);p.add_argument('--materialize',action='store_true')
+    p=sub.add_parser('campaign-stage');p.add_argument('--root',required=True);p.add_argument('--phase',choices=('preliminary','all_shared'),default='preliminary');p.add_argument('--checkpoints',choices=('all','terminal'),default='all');p.add_argument('--archive-scenes',type=int);p.add_argument('--archive-batch',type=int,default=8)
+    p=sub.add_parser('post-worker');p.add_argument('--db',required=True);p.add_argument('--device',default='cuda:0');p.add_argument('--one',action='store_true')
+    p=sub.add_parser('post-job');p.add_argument('--job',required=True);p.add_argument('--device',default='cpu')
+    p=sub.add_parser('archive');p.add_argument('--run',required=True);p.add_argument('--data',default='prepared');p.add_argument('--checkpoint',default='best.pt');p.add_argument('--device',default='cpu');p.add_argument('--roles',nargs='+');p.add_argument('--scenes',type=int);p.add_argument('--batch-size',type=int,default=8);p.add_argument('--owners-only',action='store_true')
     p=sub.add_parser('models');p.add_argument('--sources',action='store_true')
     p=sub.add_parser('upstream-checkout');p.add_argument('--suite',required=True);p.add_argument('--out',required=True)
     p=sub.add_parser('upstream-run');p.add_argument('--suite',required=True);p.add_argument('--source',required=True);p.add_argument('--config',required=True);p.add_argument('--out',required=True)
@@ -19,7 +24,7 @@ def main(argv=None):
     p=sub.add_parser('init-spec');p.add_argument('--out',required=True);p.add_argument('--image',action='store_true');p.add_argument('--classification',action='store_true')
     p=sub.add_parser('compile');p.add_argument('--out',required=True);p.add_argument('--profile',choices=('smoke','screen','full','paired','learning','expanded'),default='screen');p.add_argument('--model-roster',choices=('legacy','expanded'));p.add_argument('--seeds',nargs='+',type=int,default=[11,22,33]);p.add_argument('--archives',nargs='*',default=[]);p.add_argument('--limit',type=int)
     p=sub.add_parser('train');p.add_argument('--spec',required=True);p.add_argument('--out',default='runs');p.add_argument('--data',default='prepared');p.add_argument('--device',default='cpu');p.add_argument('--max-updates',type=int)
-    p=sub.add_parser('analyze');p.add_argument('--run',required=True);p.add_argument('--data',default='prepared');p.add_argument('--device',default='cpu');p.add_argument('--checkpoint',default='best.pt');p.add_argument('--split',choices=('development','confirmation','audit'));p.add_argument('--modules',nargs='+');p.add_argument('--fit-scenes',type=int);p.add_argument('--select-scenes',type=int);p.add_argument('--eval-scenes',type=int)
+    p=sub.add_parser('analyze');p.add_argument('--run',required=True);p.add_argument('--data',default='prepared');p.add_argument('--device',default='cpu');p.add_argument('--checkpoint',default='best.pt');p.add_argument('--split',choices=('development','confirmation','audit'));p.add_argument('--modules',nargs='+');p.add_argument('--fit-scenes',type=int);p.add_argument('--select-scenes',type=int);p.add_argument('--eval-scenes',type=int);p.add_argument('--batch-size',type=int);p.add_argument('--max-features',type=int);p.add_argument('--max-targets',type=int)
     p=sub.add_parser('prepare');prep=p.add_subparsers(dest='adapter',required=True)
     for name in ('har','gsc','gesture'):
         q=prep.add_parser(name);q.add_argument('--root',required=True);q.add_argument('--out',required=True)
@@ -56,11 +61,29 @@ def main(argv=None):
     elif args.command=='upstream-run':
         from .upstream import run_suite
         result=run_suite(args.suite,args.source,args.config,args.out)
+    elif args.command=='campaign-plan':
+        from .campaign import campaign_plan
+        result=campaign_plan(args.root,args.archives,args.seeds,args.profiles,args.materialize)
+    elif args.command=='campaign-stage':
+        from .campaign import stage_postprocessing
+        result=stage_postprocessing(args.root,args.phase,args.checkpoints,args.archive_scenes,args.archive_batch)
+    elif args.command=='post-worker':
+        from .campaign import post_worker
+        result=post_worker(args.db,args.device,args.one)
+        if result.get('failed',0):print(json.dumps(result));raise SystemExit(1)
+    elif args.command=='post-job':
+        from .campaign import run_post_job
+        result=run_post_job(json.loads(Path(args.job).read_text()),args.device)
+    elif args.command=='archive':
+        from .archive import archive_run
+        result={'archive':str(archive_run(args.run,args.data,args.checkpoint,args.device,args.roles,args.scenes,args.batch_size,not args.owners_only))}
     elif args.command=='doctor':
         import importlib,torch,numpy,sys
         modules=[p.stem for p in (Path(__file__).parent/'kernels').glob('*.py') if p.stem!='__init__']
         for m in modules:importlib.import_module('snnbench.kernels.'+m)
         result={'python':sys.version,'torch':str(torch.__version__),'numpy':numpy.__version__,'cuda_available':torch.cuda.is_available(),'gpus':torch.cuda.device_count(),'kernel_imports':len(modules)}
+        from .campaign import hardware_inventory
+        result['hardware']=hardware_inventory()
     elif args.command=='sweep':
         from .study import sweep
         result=sweep(args.base,args.grid,args.out)
@@ -81,7 +104,7 @@ def main(argv=None):
         result={'run':str(train(RunSpec.load(args.spec),args.out,args.data,args.device,max_updates=args.max_updates))}
     elif args.command=='analyze':
         from .analysis import analyze
-        s=RunSpec.load(Path(args.run)/'spec.json');changes={k:getattr(args,k) for k in ('fit_scenes','select_scenes','eval_scenes') if getattr(args,k) is not None}
+        s=RunSpec.load(Path(args.run)/'spec.json');changes={k:getattr(args,k) for k in ('fit_scenes','select_scenes','eval_scenes','batch_size','max_features','max_targets') if getattr(args,k) is not None}
         if args.split:changes['eval_split']=args.split
         if args.modules:changes['modules']=tuple(args.modules)
         a=replace(s.analysis,**changes);RunSpec(task=s.task,model=s.model,train=s.train,analysis=a).validate()

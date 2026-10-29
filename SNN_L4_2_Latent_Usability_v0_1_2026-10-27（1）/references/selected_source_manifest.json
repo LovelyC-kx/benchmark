@@ -1,0 +1,58 @@
+{
+  "layer_harness": {
+    "repository": "OFSkean/information_flow",
+    "path": "Metric-Harness.py",
+    "ref": "dde387a70254e21c95a6fdda2ab7db93fb5c2a00",
+    "git_blob_sha": "66cb228b247353117f631f65c2b605416e2d50b4",
+    "file": "layer_harness.py"
+  },
+  "layer_metrics": {
+    "repository": "OFSkean/information_flow",
+    "path": "experiments/utils/metrics/metric_functions.py",
+    "ref": "dde387a70254e21c95a6fdda2ab7db93fb5c2a00",
+    "git_blob_sha": "4d241f8dc69a38125e7b728b88ae63364d2e679a",
+    "file": "layer_metrics.py"
+  },
+  "concept_from_models": {
+    "repository": "KihoPark/LLM_Categorical_Hierarchical_Representations",
+    "path": "hierarchical/from_models.py",
+    "ref": "1952532543fc1b6f14f5efb0b42e1f5d65e98842",
+    "git_blob_sha": "c51bd557118962bb4736ebbbfcd7d53f60957499",
+    "file": "concept_from_models.py"
+  },
+  "concept_category": {
+    "repository": "KihoPark/LLM_Categorical_Hierarchical_Representations",
+    "path": "hierarchical/category.py",
+    "ref": "1952532543fc1b6f14f5efb0b42e1f5d65e98842",
+    "git_blob_sha": "02a1403f50f22fda0b8dfb8dba46b2d81dc39b14",
+    "file": "concept_category.py"
+  },
+  "wakhloo_utils": {
+    "repository": "awakhloo/population_geometry_optimal_coding",
+    "path": "code/utils.py",
+    "ref": "9674a6cb0c39926d70746024ce17de35f87df8f9",
+    "git_blob_sha": "ca103732e125e9cb1282e80e667b661c5f83b39d",
+    "file": "wakhloo_utils.py"
+  },
+  "repa_loss": {
+    "repository": "sihyun-yu/REPA",
+    "path": "loss.py",
+    "ref": "67f714503e3892f993844aab088ffc5791c92613",
+    "git_blob_sha": "ae8f3f89217b074ca9909f41bf8c9829dd31e4fd",
+    "file": "repa_loss.py"
+  },
+  "reg_loss": {
+    "repository": "Martinser/REG",
+    "path": "loss.py",
+    "ref": "dc3b6bbbcbdb109e7af7090907f83ef93a462158",
+    "git_blob_sha": "43bf202aa7d533ec21cfe076e31ab6b43c5c5bd1",
+    "file": "reg_loss.py"
+  },
+  "rae_stage1": {
+    "repository": "bytetriper/RAE",
+    "path": "src/stage1/rae.py",
+    "ref": "a4d18c4db766419cbe7cb8c02cd9f7ceb0ec9041",
+    "git_blob_sha": "add53bac5d5862e4cf02478300a5ff9b7bb2086d",
+    "file": "rae_stage1.py"
+  }
+}

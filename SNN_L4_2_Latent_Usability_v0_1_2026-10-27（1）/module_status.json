@@ -1,0 +1,72 @@
+{
+  "module": "L4.2",
+  "version": "0.1",
+  "date": "2026-10-27",
+  "L4_original_parts_preserved": 5,
+  "whole_L4_mathematical_and_latent_framework": "written with explicit assumptions and analytic controls",
+  "L42_development_analysis": "complete",
+  "L43_L45": "specified, not executed",
+  "unit_tests_passed": 25,
+  "analytic_control_families": 12,
+  "reader_ladder": {
+    "view_count": 6,
+    "draws": 2,
+    "selected_main_readers": 96,
+    "risk_cells": 384,
+    "evaluation_scenes": 8192,
+    "ridge_matrix_solves_including_shuffle_and_verification": 150,
+    "MLP_optimization_fits": 96,
+    "MLP_optimizer_updates": 38400,
+    "classification_comparison_family": 96,
+    "positive_classification_lower_bounds": 0
+  },
+  "subspace_analysis": {
+    "subspace_configurations": 24,
+    "selected_readers": 48,
+    "matrix_solves": 144,
+    "risk_cells": 192,
+    "constant_baseline_risk_cells": 8,
+    "evaluation_scenes": 4096
+  },
+  "fit_selection_total_labels": {
+    "128_fit": {
+      "fit": 128,
+      "select": 32,
+      "total": 160
+    },
+    "512_fit": {
+      "fit": 512,
+      "select": 128,
+      "total": 640
+    }
+  },
+  "independent_verification_labels": {
+    "fit": 512,
+    "select": 128,
+    "total": 640,
+    "shared_by_two_views": true
+  },
+  "unlabeled_calibration_scenes": 512,
+  "original_checkpoint_optimizer_updates": 1,
+  "new_SNN_training_runs": 0,
+  "formal_benchmark_completed": 0,
+  "formal_benchmark_planned": 435,
+  "audit_test_accessed": false,
+  "real_datasets_downloaded": false,
+  "author_pretrained_models_downloaded": false,
+  "A40_used": false,
+  "pinned_author_source_files": 8,
+  "literature_plan_entries": 7,
+  "new_literature_entries": 7,
+  "verified_oral_papers": 4,
+  "replay_max_abs": {
+    "reader_ladder": 8.881784197001252e-15,
+    "task_subspaces": 1.7763568394002505e-15
+  },
+  "limitations": [
+    "One weak frozen two-layer MLP, not trained architecture comparisons",
+    "Auxiliary classification is derived from predicted continuous targets",
+    "No native content/state intervention or future continuation in L4.2",
+    "No original-image reconstruction performance experiment"
+  ]
+}

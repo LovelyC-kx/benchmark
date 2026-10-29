@@ -1,0 +1,1057 @@
+{
+  "module": "L4.1 frozen native and same-head alternatives",
+  "cases": [
+    {
+      "phase": "output",
+      "readout": "last",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 3.3527612686157227e-08,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 1536,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 1536,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "output",
+      "readout": "mean",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 9.66247171163559e-09,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 2048,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "output",
+      "readout": "sum",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 1.043081283569336e-07,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 2048,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "output",
+      "readout": "exponential",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 8.620935715297762e-09,
+      "stream_vs_batch_prediction_max_abs": 1.4901161193847656e-08,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 4.859262511644673,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 2048,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "pre",
+      "readout": "last",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 2.378827759219604e-07,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 1536,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 1536,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "pre",
+      "readout": "mean",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 1.4838953543705458e-07,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 2048,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "pre",
+      "readout": "sum",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 2.0429779326036623e-06,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 2048,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "pre",
+      "readout": "exponential",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 2.1248766435277844e-07,
+      "stream_vs_batch_prediction_max_abs": 2.384185791015625e-07,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 4.859262511644673,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 2048,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "post",
+      "readout": "last",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 2.3463879861296277e-07,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 1536,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 1024,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": true
+    },
+    {
+      "phase": "post",
+      "readout": "mean",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 1.656513641812296e-07,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 1536,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "post",
+      "readout": "sum",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 2.851587503016617e-06,
+      "stream_vs_batch_prediction_max_abs": 0.0,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 0.0,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 1536,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    },
+    {
+      "phase": "post",
+      "readout": "exponential",
+      "cell_module": "backbone.cells.1",
+      "raw_carrier_shape": [
+        4,
+        16,
+        32
+      ],
+      "deployed_feature_shape": [
+        4,
+        16,
+        32
+      ],
+      "spatial_coordinates_pooled_for_classification": false,
+      "carrier_to_features_max_abs": 0.0,
+      "manual_GPR_prediction_max_abs": 1.3541731214150587e-07,
+      "stream_vs_batch_prediction_max_abs": 2.384185791015625e-07,
+      "batch_forward_retained_feature_stack_bytes": 8192,
+      "stream_registry": {
+        "rows": [
+          {
+            "path": "backbone.cells.0.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "backbone.cells.1.state.v",
+            "owner": "cell",
+            "role": "core",
+            "updates": "every Cell call; post-update state",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.accumulator",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "each consumed observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          },
+          {
+            "path": "readout.last_feature",
+            "owner": "readout",
+            "role": "readout",
+            "updates": "latest observation",
+            "shape": [
+              4,
+              32
+            ],
+            "dtype": "torch.float32",
+            "scalars": 128,
+            "tensor_bytes": 512,
+            "device": "cpu"
+          }
+        ],
+        "cursor": 16,
+        "readout_count": 16,
+        "readout_denominator": 4.859262511644673,
+        "logical_tensor_bytes_sum": 2048,
+        "note": "logical role-wise tensor sizes can alias; excludes parameters, autograd and allocator overhead; not peak/hardware memory",
+        "scalar_bookkeeping": "cursor/count are Python integers, denominator is a Python float; reported separately",
+        "unique_storage_bytes_within_registered_operational_tensors": 1536,
+        "unique_storage_scope": "Only registered operational tensors; excludes cell.last diagnostics, traces, parameters, autograd, allocator overhead and peak/device power."
+      },
+      "parameters_unchanged": true,
+      "scope": "Numerical G/P/R/streaming consistency, not a trained performance comparison.",
+      "actual_trained_configuration": false
+    }
+  ],
+  "same_original_parameters": true,
+  "scope": "Only post/last is the actual trained configuration. Eleven same-W alternatives audit G/P/R compatibility, not adaptation or trained performance. Trajectory is excluded because the original head has no compatible dimension."
+}

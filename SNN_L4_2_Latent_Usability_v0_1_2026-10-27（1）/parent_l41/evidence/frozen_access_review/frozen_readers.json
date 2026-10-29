@@ -1,0 +1,1082 @@
+{
+  "output__last": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_0"
+        },
+        {
+          "__array__": "array_1"
+        },
+        {
+          "__array__": "array_2"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_3"
+        },
+        {
+          "__array__": "array_4"
+        },
+        {
+          "__array__": "array_5"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_6"
+        },
+        {
+          "__array__": "array_7"
+        },
+        {
+          "__array__": "array_8"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_9"
+        },
+        {
+          "__array__": "array_10"
+        },
+        {
+          "__array__": "array_11"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_12"
+        },
+        {
+          "__array__": "array_13"
+        },
+        {
+          "__array__": "array_14"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_15"
+        },
+        {
+          "__array__": "array_16"
+        },
+        {
+          "__array__": "array_17"
+        }
+      ]
+    }
+  },
+  "output__mean": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_18"
+        },
+        {
+          "__array__": "array_19"
+        },
+        {
+          "__array__": "array_20"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_21"
+        },
+        {
+          "__array__": "array_22"
+        },
+        {
+          "__array__": "array_23"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_24"
+        },
+        {
+          "__array__": "array_25"
+        },
+        {
+          "__array__": "array_26"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_27"
+        },
+        {
+          "__array__": "array_28"
+        },
+        {
+          "__array__": "array_29"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_30"
+        },
+        {
+          "__array__": "array_31"
+        },
+        {
+          "__array__": "array_32"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_33"
+        },
+        {
+          "__array__": "array_34"
+        },
+        {
+          "__array__": "array_35"
+        }
+      ]
+    }
+  },
+  "output__sum": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_36"
+        },
+        {
+          "__array__": "array_37"
+        },
+        {
+          "__array__": "array_38"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_39"
+        },
+        {
+          "__array__": "array_40"
+        },
+        {
+          "__array__": "array_41"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_42"
+        },
+        {
+          "__array__": "array_43"
+        },
+        {
+          "__array__": "array_44"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_45"
+        },
+        {
+          "__array__": "array_46"
+        },
+        {
+          "__array__": "array_47"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_48"
+        },
+        {
+          "__array__": "array_49"
+        },
+        {
+          "__array__": "array_50"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_51"
+        },
+        {
+          "__array__": "array_52"
+        },
+        {
+          "__array__": "array_53"
+        }
+      ]
+    }
+  },
+  "output__exponential": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_54"
+        },
+        {
+          "__array__": "array_55"
+        },
+        {
+          "__array__": "array_56"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_57"
+        },
+        {
+          "__array__": "array_58"
+        },
+        {
+          "__array__": "array_59"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_60"
+        },
+        {
+          "__array__": "array_61"
+        },
+        {
+          "__array__": "array_62"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_63"
+        },
+        {
+          "__array__": "array_64"
+        },
+        {
+          "__array__": "array_65"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_66"
+        },
+        {
+          "__array__": "array_67"
+        },
+        {
+          "__array__": "array_68"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_69"
+        },
+        {
+          "__array__": "array_70"
+        },
+        {
+          "__array__": "array_71"
+        }
+      ]
+    }
+  },
+  "output__trajectory": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_72"
+        },
+        {
+          "__array__": "array_73"
+        },
+        {
+          "__array__": "array_74"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_75"
+        },
+        {
+          "__array__": "array_76"
+        },
+        {
+          "__array__": "array_77"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_78"
+        },
+        {
+          "__array__": "array_79"
+        },
+        {
+          "__array__": "array_80"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_81"
+        },
+        {
+          "__array__": "array_82"
+        },
+        {
+          "__array__": "array_83"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_84"
+        },
+        {
+          "__array__": "array_85"
+        },
+        {
+          "__array__": "array_86"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_87"
+        },
+        {
+          "__array__": "array_88"
+        },
+        {
+          "__array__": "array_89"
+        }
+      ]
+    }
+  },
+  "pre__last": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_90"
+        },
+        {
+          "__array__": "array_91"
+        },
+        {
+          "__array__": "array_92"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_93"
+        },
+        {
+          "__array__": "array_94"
+        },
+        {
+          "__array__": "array_95"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_96"
+        },
+        {
+          "__array__": "array_97"
+        },
+        {
+          "__array__": "array_98"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_99"
+        },
+        {
+          "__array__": "array_100"
+        },
+        {
+          "__array__": "array_101"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_102"
+        },
+        {
+          "__array__": "array_103"
+        },
+        {
+          "__array__": "array_104"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_105"
+        },
+        {
+          "__array__": "array_106"
+        },
+        {
+          "__array__": "array_107"
+        }
+      ]
+    }
+  },
+  "pre__mean": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_108"
+        },
+        {
+          "__array__": "array_109"
+        },
+        {
+          "__array__": "array_110"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_111"
+        },
+        {
+          "__array__": "array_112"
+        },
+        {
+          "__array__": "array_113"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_114"
+        },
+        {
+          "__array__": "array_115"
+        },
+        {
+          "__array__": "array_116"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_117"
+        },
+        {
+          "__array__": "array_118"
+        },
+        {
+          "__array__": "array_119"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_120"
+        },
+        {
+          "__array__": "array_121"
+        },
+        {
+          "__array__": "array_122"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_123"
+        },
+        {
+          "__array__": "array_124"
+        },
+        {
+          "__array__": "array_125"
+        }
+      ]
+    }
+  },
+  "pre__sum": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_126"
+        },
+        {
+          "__array__": "array_127"
+        },
+        {
+          "__array__": "array_128"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_129"
+        },
+        {
+          "__array__": "array_130"
+        },
+        {
+          "__array__": "array_131"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_132"
+        },
+        {
+          "__array__": "array_133"
+        },
+        {
+          "__array__": "array_134"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_135"
+        },
+        {
+          "__array__": "array_136"
+        },
+        {
+          "__array__": "array_137"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_138"
+        },
+        {
+          "__array__": "array_139"
+        },
+        {
+          "__array__": "array_140"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_141"
+        },
+        {
+          "__array__": "array_142"
+        },
+        {
+          "__array__": "array_143"
+        }
+      ]
+    }
+  },
+  "pre__exponential": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_144"
+        },
+        {
+          "__array__": "array_145"
+        },
+        {
+          "__array__": "array_146"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_147"
+        },
+        {
+          "__array__": "array_148"
+        },
+        {
+          "__array__": "array_149"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_150"
+        },
+        {
+          "__array__": "array_151"
+        },
+        {
+          "__array__": "array_152"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_153"
+        },
+        {
+          "__array__": "array_154"
+        },
+        {
+          "__array__": "array_155"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_156"
+        },
+        {
+          "__array__": "array_157"
+        },
+        {
+          "__array__": "array_158"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_159"
+        },
+        {
+          "__array__": "array_160"
+        },
+        {
+          "__array__": "array_161"
+        }
+      ]
+    }
+  },
+  "pre__trajectory": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_162"
+        },
+        {
+          "__array__": "array_163"
+        },
+        {
+          "__array__": "array_164"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_165"
+        },
+        {
+          "__array__": "array_166"
+        },
+        {
+          "__array__": "array_167"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_168"
+        },
+        {
+          "__array__": "array_169"
+        },
+        {
+          "__array__": "array_170"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_171"
+        },
+        {
+          "__array__": "array_172"
+        },
+        {
+          "__array__": "array_173"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_174"
+        },
+        {
+          "__array__": "array_175"
+        },
+        {
+          "__array__": "array_176"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_177"
+        },
+        {
+          "__array__": "array_178"
+        },
+        {
+          "__array__": "array_179"
+        }
+      ]
+    }
+  },
+  "post__last": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_180"
+        },
+        {
+          "__array__": "array_181"
+        },
+        {
+          "__array__": "array_182"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_183"
+        },
+        {
+          "__array__": "array_184"
+        },
+        {
+          "__array__": "array_185"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_186"
+        },
+        {
+          "__array__": "array_187"
+        },
+        {
+          "__array__": "array_188"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_189"
+        },
+        {
+          "__array__": "array_190"
+        },
+        {
+          "__array__": "array_191"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_192"
+        },
+        {
+          "__array__": "array_193"
+        },
+        {
+          "__array__": "array_194"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_195"
+        },
+        {
+          "__array__": "array_196"
+        },
+        {
+          "__array__": "array_197"
+        }
+      ]
+    }
+  },
+  "post__mean": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_198"
+        },
+        {
+          "__array__": "array_199"
+        },
+        {
+          "__array__": "array_200"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_201"
+        },
+        {
+          "__array__": "array_202"
+        },
+        {
+          "__array__": "array_203"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_204"
+        },
+        {
+          "__array__": "array_205"
+        },
+        {
+          "__array__": "array_206"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_207"
+        },
+        {
+          "__array__": "array_208"
+        },
+        {
+          "__array__": "array_209"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_210"
+        },
+        {
+          "__array__": "array_211"
+        },
+        {
+          "__array__": "array_212"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_213"
+        },
+        {
+          "__array__": "array_214"
+        },
+        {
+          "__array__": "array_215"
+        }
+      ]
+    }
+  },
+  "post__sum": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_216"
+        },
+        {
+          "__array__": "array_217"
+        },
+        {
+          "__array__": "array_218"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_219"
+        },
+        {
+          "__array__": "array_220"
+        },
+        {
+          "__array__": "array_221"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_222"
+        },
+        {
+          "__array__": "array_223"
+        },
+        {
+          "__array__": "array_224"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_225"
+        },
+        {
+          "__array__": "array_226"
+        },
+        {
+          "__array__": "array_227"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_228"
+        },
+        {
+          "__array__": "array_229"
+        },
+        {
+          "__array__": "array_230"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_231"
+        },
+        {
+          "__array__": "array_232"
+        },
+        {
+          "__array__": "array_233"
+        }
+      ]
+    }
+  },
+  "post__exponential": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_234"
+        },
+        {
+          "__array__": "array_235"
+        },
+        {
+          "__array__": "array_236"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_237"
+        },
+        {
+          "__array__": "array_238"
+        },
+        {
+          "__array__": "array_239"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_240"
+        },
+        {
+          "__array__": "array_241"
+        },
+        {
+          "__array__": "array_242"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_243"
+        },
+        {
+          "__array__": "array_244"
+        },
+        {
+          "__array__": "array_245"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_246"
+        },
+        {
+          "__array__": "array_247"
+        },
+        {
+          "__array__": "array_248"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_249"
+        },
+        {
+          "__array__": "array_250"
+        },
+        {
+          "__array__": "array_251"
+        }
+      ]
+    }
+  },
+  "post__trajectory": {
+    "128": {
+      "0.0001": [
+        {
+          "__array__": "array_252"
+        },
+        {
+          "__array__": "array_253"
+        },
+        {
+          "__array__": "array_254"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_255"
+        },
+        {
+          "__array__": "array_256"
+        },
+        {
+          "__array__": "array_257"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_258"
+        },
+        {
+          "__array__": "array_259"
+        },
+        {
+          "__array__": "array_260"
+        }
+      ]
+    },
+    "512": {
+      "0.0001": [
+        {
+          "__array__": "array_261"
+        },
+        {
+          "__array__": "array_262"
+        },
+        {
+          "__array__": "array_263"
+        }
+      ],
+      "0.001": [
+        {
+          "__array__": "array_264"
+        },
+        {
+          "__array__": "array_265"
+        },
+        {
+          "__array__": "array_266"
+        }
+      ],
+      "0.01": [
+        {
+          "__array__": "array_267"
+        },
+        {
+          "__array__": "array_268"
+        },
+        {
+          "__array__": "array_269"
+        }
+      ]
+    }
+  }
+}

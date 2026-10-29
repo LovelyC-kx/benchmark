@@ -1,0 +1,75 @@
+{
+  "module": "L4.4",
+  "date": "2026-10-27",
+  "version": "v0.1",
+  "development_delivery": "complete",
+  "formal_benchmark_completed": 0,
+  "formal_benchmark_planned": 435,
+  "new_SNN_training_updates": 0,
+  "inherited_checkpoint_training_updates": 1,
+  "device": "CPU",
+  "A40_used": false,
+  "audit_test_accessed": false,
+  "external_datasets_downloaded": false,
+  "pretrained_author_models_downloaded": false,
+  "offline_probe_training": {
+    "selected_probes": 24,
+    "ridge_candidate_solves": 36,
+    "MLP_fits": 24,
+    "MLP_updates": 9600
+  },
+  "main": {
+    "independent_scene_pairs_by_pool": {
+      "development": 1024,
+      "confirmation": 2048
+    },
+    "damage_contexts": 14,
+    "recovery_contexts": 38,
+    "methods": 10,
+    "four_group_cells_total": 760,
+    "saved_scene_loss_arrays": 9300,
+    "bounded_comparisons_per_pool": 4616,
+    "original_MSE_recovery_ratios_defined": 0,
+    "positive_bounded_lower_bounds": 0
+  },
+  "supplements": {
+    "scene_pairs": 256,
+    "subset_of_confirmation": true,
+    "event_policy_four_group_cells": 72,
+    "joint_contexts": 30,
+    "joint_subset_conditions": 120,
+    "binary_four_group_cells": 63,
+    "binary_repair_loss_arrays": 378,
+    "path_reblocking_cases": 12,
+    "event_geometry_dose_conditions": 72,
+    "event_geometry_post_main_diagnostic": true,
+    "untrained_snapshot_configurations": 240,
+    "snapshot_scope_conditions": 1920
+  },
+  "verification": {
+    "unit_tests_passed": 38,
+    "known_answer_control_families": 14,
+    "main_cells_prefix_replayed": 760,
+    "prefix_scene_count": 16,
+    "replay_batch_size": 128,
+    "payload_prediction_state_max_abs": 0,
+    "unchanged_inherited_files": 171
+  },
+  "author_sources": {
+    "repositories": 2,
+    "fixed_files": 6,
+    "scope": "Selected original definitions/modules on artificial Torch inputs; not full paper reproduction"
+  },
+  "literature": {
+    "original_plan_references_covered": 3,
+    "additional_direct_neighbors": 4
+  },
+  "next_section": "L4.5",
+  "material_limits": [
+    "One inherited undertrained model, no trained-model seed replication",
+    "External clean/donor/future references are diagnostic information",
+    "Supplementary cases reuse confirmation scenes",
+    "No native trained classification or image reconstruction performance",
+    "Nonlinear patch families, complex feedback, online repair and equal-budget design improvements remain unexecuted"
+  ]
+}

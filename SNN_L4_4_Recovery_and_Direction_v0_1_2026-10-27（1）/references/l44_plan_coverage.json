@@ -1,0 +1,142 @@
+{
+  "module": "L4.4",
+  "original_structure_preserved": {
+    "layers": 6,
+    "L4_sections": [
+      "L4.1",
+      "L4.2",
+      "L4.3",
+      "L4.4",
+      "L4.5"
+    ]
+  },
+  "inherited_plan_sources": [
+    "SRC010 SNN_Cross_Layer_Claims_and_Evidence_v1.md",
+    "SRC008 SNN_Benchmark_Research_Argument_Draft_v0_2026-10-20.md",
+    "SRC019 SNN_Memory_Readout_Interference_Literature_2026-10-17.md"
+  ],
+  "original_reference_coverage": [
+    {
+      "id": "READ-DECODESHARE",
+      "implemented": [
+        "donor/time/context controls",
+        "dimension and norm awareness",
+        "patchback",
+        "source hook audit"
+      ],
+      "added_SNN_adaptation": [
+        "ordered post edits",
+        "future events",
+        "native risk and independent content validation"
+      ]
+    },
+    {
+      "id": "REC-LINEARATTN",
+      "implemented": [
+        "write/retain/read interpretation",
+        "multiple memory owners",
+        "joint restoration",
+        "development/confirmation separation"
+      ],
+      "code_gap": "Official public package URL unresolved; no GLA/GDN execution"
+    },
+    {
+      "id": "CAUSE-RELIABILITY",
+      "implemented": [
+        "independent natural-state validators",
+        "target/cotarget/other-content risks",
+        "damaged-state baseline",
+        "native task separate"
+      ],
+      "code_gap": "Official repository unverified; nonlinear patch families not implemented"
+    }
+  ],
+  "original_recovery_scopes": [
+    {
+      "scope": "baseline full snapshot",
+      "evidence": "evidence/scoped_snapshot_grid.json"
+    },
+    {
+      "scope": "donor full suffix",
+      "evidence": "evidence/binary_recovery/report.json"
+    },
+    {
+      "scope": "carrier and time window",
+      "evidence": "evidence/confirmation/report.json"
+    },
+    {
+      "scope": "target direction and controls",
+      "evidence": "evidence/confirmation/report.json"
+    },
+    {
+      "scope": "multiple paths/owners",
+      "evidence": "evidence/supplements/report.json"
+    }
+  ],
+  "eight_subsections": [
+    {
+      "id": "4.4.1",
+      "purpose": "Four groups and information permissions",
+      "code": [
+        "run_recovery_main.py",
+        "recovery_math44.py"
+      ]
+    },
+    {
+      "id": "4.4.2",
+      "purpose": "Operational restoration ceilings",
+      "code": [
+        "snapshot_recovery44.py",
+        "run_scoped_snapshot_grid.py"
+      ]
+    },
+    {
+      "id": "4.4.3",
+      "purpose": "Content, donor, time and dose specificity",
+      "code": [
+        "fit_recovery_bank.py",
+        "run_recovery_main.py"
+      ]
+    },
+    {
+      "id": "4.4.4",
+      "purpose": "Joint owners and nonadditivity",
+      "code": [
+        "run_recovery_supplements.py",
+        "recovery_math44.py"
+      ]
+    },
+    {
+      "id": "4.4.5",
+      "purpose": "Actual communication and reblocking",
+      "code": [
+        "run_binary_recovery.py",
+        "edge_reblock44.py",
+        "run_path_reblocking.py"
+      ]
+    },
+    {
+      "id": "4.4.6",
+      "purpose": "Risk/output interaction and event geometry",
+      "code": [
+        "run_event_geometry.py",
+        "run_recovery_supplements.py",
+        "recovery_math44.py"
+      ]
+    },
+    {
+      "id": "4.4.7",
+      "purpose": "Independent scene confirmation and eligibility",
+      "code": [
+        "verify_l44_artifacts.py",
+        "tests/test_recovery44.py"
+      ]
+    },
+    {
+      "id": "4.4.8",
+      "purpose": "Frozen diagnostic-to-design predictions",
+      "code": [],
+      "scope": "Research predictions specified; trained design improvements unexecuted"
+    }
+  ]
+}

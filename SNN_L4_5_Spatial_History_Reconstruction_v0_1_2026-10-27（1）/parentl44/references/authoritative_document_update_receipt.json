@@ -1,0 +1,46 @@
+{
+  "module": "L4.4",
+  "updates": [
+    {
+      "file": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_library_file_id": "libfile_6a24daf8211081919033d46e4b282680",
+      "expected_current_version": 15,
+      "source_sha256": "c82675554858f753ef09a96abd0c9342fde803c4aa8703b336e2fc3c9aed34d6",
+      "new_sha256": "17a4c7ef939c022a80acaf789e371cdbd5564ea5794e3ef8435d1bab7fe6fe1a",
+      "focused_replacements": 4,
+      "unchanged_outside_listed_replacements_and_append_verified": true,
+      "changed_scopes": [
+        "L4.4 card",
+        "REC-LINEARATTN current reading scope",
+        "top status and latest pointer",
+        "append-only execution record"
+      ]
+    },
+    {
+      "file": "SNN_L4_Framework_and_Research_Plan_2026-10-27.md",
+      "source_library_file_id": "libfile_973385a790688191b5f98e80425dbaba",
+      "expected_current_version": 2,
+      "source_sha256": "8d502c990b2782e2e4db5a68d7ec3e0a545dcfab2340e37959d7a6c1df8d3eff",
+      "new_sha256": "4bec2a9a1612f3b93f3b78ebe8ff66698ba7658710510a1092414fe522b1bbe4",
+      "content_version_from": "v0.3",
+      "content_version_to": "v0.4",
+      "preserved_sections": [
+        "L4.1",
+        "L4.2",
+        "L4.3",
+        "L4.5",
+        "whole-L4 math/representation/latent-space framework"
+      ]
+    },
+    {
+      "file": "SNN_L4_Mathematical_and_Latent_Framework_2026-10-27.md",
+      "source_library_file_id": "libfile_30cbbd56a8048191a6b3b6956c3fef08",
+      "expected_current_version": 1,
+      "source_sha256": "075ce16213ec9751ec587712ee20a01b991c6462e4d280a0834140b207d8f640",
+      "new_sha256": "cd5bfffdd96d83e0d6a5545c750368f206631388f51aa11fef4744be706fe60f",
+      "content_version_from": "v0.2",
+      "content_version_to": "v0.3",
+      "scope": "Whole-L4 theory retained, L4.4 subsections 7.7-7.9 and execution record added."
+    }
+  ]
+}

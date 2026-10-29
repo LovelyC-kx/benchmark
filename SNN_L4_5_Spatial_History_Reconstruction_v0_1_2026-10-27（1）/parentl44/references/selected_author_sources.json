@@ -1,0 +1,74 @@
+{
+  "retrieved": "2026-10-27",
+  "files": [
+    {
+      "repository": "Zishan-Shao/decodeshare",
+      "commit": "89ed6a36603d81d024b0bd5438048a93d3fff2ac",
+      "path": "downstream/patchback_provenance/README.md",
+      "blob_sha1": "d6dbe0cc5c4a477f93000b27b47ff1243e8d7f58",
+      "sha256": "4a19ed8ee41c854ffbe15b2cf8a2d1b9f8f3ad7ad5a24136ed9056ebcd49363e",
+      "bytes": 1003,
+      "source_url": "https://github.com/Zishan-Shao/decodeshare/blob/89ed6a36603d81d024b0bd5438048a93d3fff2ac/downstream/patchback_provenance/README.md"
+    },
+    {
+      "repository": "Zishan-Shao/decodeshare",
+      "commit": "89ed6a36603d81d024b0bd5438048a93d3fff2ac",
+      "path": "downstream/patchback_provenance/exp_subspace_patching_transfer.py",
+      "blob_sha1": "eb1b77bcd924047fdee2053940ddbdf2213f1dda",
+      "sha256": "eb34fed80033ff3c402856d41e86dfecaa8026aea9cfe7bde5eb4ca5431d50c0",
+      "bytes": 50779,
+      "source_url": "https://github.com/Zishan-Shao/decodeshare/blob/89ed6a36603d81d024b0bd5438048a93d3fff2ac/downstream/patchback_provenance/exp_subspace_patching_transfer.py"
+    },
+    {
+      "repository": "Zishan-Shao/decodeshare",
+      "commit": "89ed6a36603d81d024b0bd5438048a93d3fff2ac",
+      "path": "downstream/patchback_provenance/exp_subspace_patching_transfer_controls.py",
+      "blob_sha1": "dfa461bdceb5dc33d0d32160d6f56dd697ee29b9",
+      "sha256": "af385a0694ab5839a401614e4b73e05734cfcd0d13272eef28330e8716d850f6",
+      "bytes": 51596,
+      "source_url": "https://github.com/Zishan-Shao/decodeshare/blob/89ed6a36603d81d024b0bd5438048a93d3fff2ac/downstream/patchback_provenance/exp_subspace_patching_transfer_controls.py"
+    },
+    {
+      "repository": "Zishan-Shao/decodeshare",
+      "commit": "89ed6a36603d81d024b0bd5438048a93d3fff2ac",
+      "path": "experiments/03_patchback/subspace_patching_transfer.py",
+      "blob_sha1": "8d312b46ffbe22db12a66a87246c100df61666c4",
+      "sha256": "8baa5ef2a60c56c2a5fa570635372dde9a241ef4b8aeb28996a8d54393ed8db6",
+      "bytes": 52113,
+      "source_url": "https://github.com/Zishan-Shao/decodeshare/blob/89ed6a36603d81d024b0bd5438048a93d3fff2ac/experiments/03_patchback/subspace_patching_transfer.py"
+    },
+    {
+      "repository": "kmeng01/rome",
+      "commit": "0874014cd9837e4365f3e6f3c71400ef11509e04",
+      "path": "experiments/causal_trace.py",
+      "blob_sha1": "39efcb307a1ff47c0b9f6ec62968bc05c2ee0b63",
+      "sha256": "78af1c55d0353351bcdfff04dae747e5d2c09ce05ba0733ea8ec4c34cf74a155",
+      "bytes": 24920,
+      "source_url": "https://github.com/kmeng01/rome/blob/0874014cd9837e4365f3e6f3c71400ef11509e04/experiments/causal_trace.py"
+    },
+    {
+      "repository": "kmeng01/rome",
+      "commit": "0874014cd9837e4365f3e6f3c71400ef11509e04",
+      "path": "util/nethook.py",
+      "blob_sha1": "12177ca712671bde288d4bae7592b3c80257d4e8",
+      "sha256": "75d1b6353aae539f56aed3f721fdae9762776414e7a97f2c13734fc77bb29ce1",
+      "bytes": 15506,
+      "source_url": "https://github.com/kmeng01/rome/blob/0874014cd9837e4365f3e6f3c71400ef11509e04/util/nethook.py"
+    }
+  ],
+  "unavailable": [
+    {
+      "paper": "How Linear Attention Remembers",
+      "status": "Original arXiv v1 HTML methods and appendices read; public official package URL not resolved from primary sources."
+    },
+    {
+      "paper": "How Reliable are Causal Probing Interventions?",
+      "status": "Formal PDF read; official repository unverified."
+    },
+    {
+      "paper": "The Curse of Multiple Mediators",
+      "paper_code_url": "https://github.com/sankaranv/mech-interp-mediation-analysis",
+      "status": "Original paper supplies this URL; GitHub repository/commits/contents requests returned404 in this session."
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "post__last__draw0__p128": {
+    "alpha": 0.01,
+    "steps": 2000,
+    "fixed_step": 4.1592358687818844,
+    "closed_form_objective": 6.710406077954838,
+    "condition_number": 24.04287786383301,
+    "initial_native_unregularized_MSE": 1.452732056849905,
+    "runs": {
+      "cold": {
+        "initial_centered_regularized_objective": 8.09813068587761,
+        "final_centered_regularized_objective": 6.710406077954838,
+        "excess_over_closed_form": 0.0,
+        "weight_distance_to_closed_form": 4.362635945459303e-15,
+        "optimized_intercept": [
+          -1.686611869983203,
+          -1.25414940791656,
+          -0.43692181940454544,
+          -1.2646751664246758,
+          -1.441677095532472,
+          -0.3648741624114548,
+          -0.4283956002735509,
+          0.6151946395660913
+        ]
+      },
+      "native": {
+        "initial_centered_regularized_objective": 8.146974451879508,
+        "final_centered_regularized_objective": 6.710406077954838,
+        "excess_over_closed_form": 0.0,
+        "weight_distance_to_closed_form": 3.999940907927182e-15,
+        "optimized_intercept": [
+          -1.6866118699832033,
+          -1.2541494079165592,
+          -0.43692181940454533,
+          -1.2646751664246754,
+          -1.4416770955324745,
+          -0.3648741624114556,
+          -0.4283956002735565,
+          0.6151946395660951
+        ]
+      }
+    },
+    "scope": "Frozen-core affine empirical optimization control; does not establish full-network training sufficiency."
+  },
+  "post__last__draw0__p512": {
+    "alpha": 0.01,
+    "steps": 2000,
+    "fixed_step": 3.8693654149314454,
+    "closed_form_objective": 7.368191833565006,
+    "condition_number": 25.84403106879132,
+    "initial_native_unregularized_MSE": 1.4701842873732038,
+    "runs": {
+      "cold": {
+        "initial_centered_regularized_objective": 8.06956593064014,
+        "final_centered_regularized_objective": 7.368191833565007,
+        "excess_over_closed_form": 8.881784197001252e-16,
+        "weight_distance_to_closed_form": 4.786367974075627e-15,
+        "optimized_intercept": [
+          -0.5672790893189034,
+          -0.047614645256989614,
+          -0.2923393314486153,
+          0.2760102976713912,
+          0.6518278547224868,
+          -1.4344377754787339,
+          -0.8040786799941847,
+          -0.12777987553174924
+        ]
+      },
+      "native": {
+        "initial_centered_regularized_objective": 8.188018473373527,
+        "final_centered_regularized_objective": 7.368191833565006,
+        "excess_over_closed_form": 0.0,
+        "weight_distance_to_closed_form": 5.318342334330591e-15,
+        "optimized_intercept": [
+          -0.5672790893189028,
+          -0.04761464525698944,
+          -0.2923393314486164,
+          0.27601029767139107,
+          0.6518278547224827,
+          -1.4344377754787354,
+          -0.8040786799941895,
+          -0.1277798755317418
+        ]
+      }
+    },
+    "scope": "Frozen-core affine empirical optimization control; does not establish full-network training sufficiency."
+  },
+  "post__last__draw1__p128": {
+    "alpha": 0.01,
+    "steps": 2000,
+    "fixed_step": 3.342653642603252,
+    "closed_form_objective": 6.714847097907584,
+    "condition_number": 29.916351106636668,
+    "initial_native_unregularized_MSE": 1.4103184600874275,
+    "runs": {
+      "cold": {
+        "initial_centered_regularized_objective": 7.951113759969553,
+        "final_centered_regularized_objective": 6.714847097907583,
+        "excess_over_closed_form": -8.881784197001252e-16,
+        "weight_distance_to_closed_form": 5.113913851630313e-15,
+        "optimized_intercept": [
+          0.09209109029980628,
+          -0.3843922312799223,
+          -1.4907030382401416,
+          -1.4828803159846464,
+          1.622743281811099,
+          0.17370471714160426,
+          -0.678462282657978,
+          -0.9092441060593133
+        ]
+      },
+      "native": {
+        "initial_centered_regularized_objective": 8.091311503969747,
+        "final_centered_regularized_objective": 6.714847097907583,
+        "excess_over_closed_form": -8.881784197001252e-16,
+        "weight_distance_to_closed_form": 6.546074167572604e-15,
+        "optimized_intercept": [
+          0.0920910902998047,
+          -0.384392231279921,
+          -1.490703038240142,
+          -1.482880315984648,
+          1.622743281811094,
+          0.17370471714160923,
+          -0.6784622826579807,
+          -0.909244106059311
+        ]
+      }
+    },
+    "scope": "Frozen-core affine empirical optimization control; does not establish full-network training sufficiency."
+  },
+  "post__last__draw1__p512": {
+    "alpha": 0.01,
+    "steps": 2000,
+    "fixed_step": 3.7828350625794336,
+    "closed_form_objective": 7.385310315925967,
+    "condition_number": 26.43519961766669,
+    "initial_native_unregularized_MSE": 1.4525268276257461,
+    "runs": {
+      "cold": {
+        "initial_centered_regularized_objective": 8.02897668946176,
+        "final_centered_regularized_objective": 7.385310315925967,
+        "excess_over_closed_form": 0.0,
+        "weight_distance_to_closed_form": 5.25907026744795e-15,
+        "optimized_intercept": [
+          0.04264907695895727,
+          -0.8029079200670003,
+          -0.3486636345451491,
+          -0.7005010619931568,
+          0.9960114234170655,
+          -0.46469416912362044,
+          -1.0202075374439652,
+          0.2295036605852005
+        ]
+      },
+      "native": {
+        "initial_centered_regularized_objective": 8.14466453169217,
+        "final_centered_regularized_objective": 7.385310315925967,
+        "excess_over_closed_form": 0.0,
+        "weight_distance_to_closed_form": 6.7220355660607346e-15,
+        "optimized_intercept": [
+          0.04264907695895648,
+          -0.8029079200670003,
+          -0.3486636345451494,
+          -0.7005010619931586,
+          0.9960114234170614,
+          -0.46469416912361966,
+          -1.02020753744397,
+          0.22950366058520846
+        ]
+      }
+    },
+    "scope": "Frozen-core affine empirical optimization control; does not establish full-network training sufficiency."
+  }
+}

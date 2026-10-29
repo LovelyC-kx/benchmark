@@ -1,0 +1,98 @@
+{
+  "module": "L4.2 latent theory known controls",
+  "risk_chain": {
+    "risks": [
+      0.3000000000000001,
+      0.5000000000000001,
+      0.7000000000000001,
+      0.9
+    ],
+    "pieces": {
+      "state_floor": 0.3000000000000001,
+      "access_gap": 0.2,
+      "summary_gap": 0.19999999999999996,
+      "family_gap": 0.19999999999999996,
+      "fitted_gap": 0.20000000000000007
+    },
+    "native_risk": 1.1,
+    "assumptions": "Joint Gaussian linear z; explicitly nested maps; square loss; population moments."
+  },
+  "variance_vs_task": {
+    "low_noise_variance_risk": 0.0,
+    "high_nuisance_first_PC_risk": 1.0,
+    "full_code_risk_before": 0.0,
+    "full_code_risk_after": 0.0,
+    "participation_ratio_before": 1.0204336111115226,
+    "participation_ratio_after": 1.019568033079153
+  },
+  "nonlinear_task_in_linear_latents": {
+    "affine_MSE": 1.0,
+    "product_reader_MSE": 4.930380657631324e-32,
+    "target_deterministic_from_code": true,
+    "marginal_coordinate_correlations": [
+      0.0,
+      0.0
+    ]
+  },
+  "conditional_utility": {
+    "baseline_risk": 1.0,
+    "joint_risk": 0.0,
+    "gain": 1.0,
+    "scope": "Conditional task utility, not native causal use."
+  },
+  "coordinate_gauge": {
+    "prediction_difference": 0.0,
+    "original_Euclidean_step": 0.25,
+    "transformed_Euclidean_step": 900.000016,
+    "original_task_step": 0.09,
+    "transformed_task_step": 0.09
+  },
+  "query_family": {
+    "fixed_task": {
+      "readable": true,
+      "residual": 0.0,
+      "code_rank": 1,
+      "task_rank": 1
+    },
+    "two_late_queries": {
+      "readable": false,
+      "residual": 1.0,
+      "code_rank": 1,
+      "task_rank": 2
+    },
+    "minimum_linear_code_rank_for_both_queries": 2
+  },
+  "all_latents_vs_task": {
+    "all_latent_MSE": 0.005,
+    "target_variance": 0.01,
+    "target_relative_MSE": 1.0
+  },
+  "accessible_but_native_ignored": {
+    "Bayes_task_risk": 0.0,
+    "native_task_risk": 2.0
+  },
+  "spatial_reconstruction": {
+    "full_spatial_MSE": 0.0,
+    "GAP_MSE": 0.5,
+    "scope": "Four-pixel exact linear image reference, not a trained image reconstructor."
+  },
+  "redundant_extra_content": {
+    "baseline_risk": 0.0,
+    "joint_risk": 0.0,
+    "gain": 0.0,
+    "scope": "Conditional task utility, not native causal use."
+  },
+  "loss_specificity": {
+    "true_label_probability": 0.8,
+    "baseline_probability": 0.6,
+    "better_probability": 0.8,
+    "zero_one_risk_both": 0.2,
+    "baseline_logloss": 0.5919186453876236,
+    "better_logloss": 0.5004024235381879
+  },
+  "spectral_normalization": {
+    "singular_value_effective_rank": 1.8898815748423097,
+    "covariance_entropy_rank": 1.649384888466118
+  },
+  "scope": "Analytic/exhaustive finite controls; no trained SNN evidence."
+}

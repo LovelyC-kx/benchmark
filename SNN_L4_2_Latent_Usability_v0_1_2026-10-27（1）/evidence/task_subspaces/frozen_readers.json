@@ -1,0 +1,722 @@
+{
+  "requested8__row__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_0"
+      },
+      {
+        "__array__": "array_1"
+      },
+      {
+        "__array__": "array_2"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__row__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_3"
+      },
+      {
+        "__array__": "array_4"
+      },
+      {
+        "__array__": "array_5"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_0__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_6"
+      },
+      {
+        "__array__": "array_7"
+      },
+      {
+        "__array__": "array_8"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_0__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_9"
+      },
+      {
+        "__array__": "array_10"
+      },
+      {
+        "__array__": "array_11"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_1__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_12"
+      },
+      {
+        "__array__": "array_13"
+      },
+      {
+        "__array__": "array_14"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_1__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_15"
+      },
+      {
+        "__array__": "array_16"
+      },
+      {
+        "__array__": "array_17"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_2__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_18"
+      },
+      {
+        "__array__": "array_19"
+      },
+      {
+        "__array__": "array_20"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_2__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_21"
+      },
+      {
+        "__array__": "array_22"
+      },
+      {
+        "__array__": "array_23"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_3__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_24"
+      },
+      {
+        "__array__": "array_25"
+      },
+      {
+        "__array__": "array_26"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_3__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_27"
+      },
+      {
+        "__array__": "array_28"
+      },
+      {
+        "__array__": "array_29"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_4__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_30"
+      },
+      {
+        "__array__": "array_31"
+      },
+      {
+        "__array__": "array_32"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__random_row_4__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_33"
+      },
+      {
+        "__array__": "array_34"
+      },
+      {
+        "__array__": "array_35"
+      }
+    ],
+    "parameters": 72
+  },
+  "requested8__null__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_36"
+      },
+      {
+        "__array__": "array_37"
+      },
+      {
+        "__array__": "array_38"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__null__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_39"
+      },
+      {
+        "__array__": "array_40"
+      },
+      {
+        "__array__": "array_41"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_0__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_42"
+      },
+      {
+        "__array__": "array_43"
+      },
+      {
+        "__array__": "array_44"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_0__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_45"
+      },
+      {
+        "__array__": "array_46"
+      },
+      {
+        "__array__": "array_47"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_1__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_48"
+      },
+      {
+        "__array__": "array_49"
+      },
+      {
+        "__array__": "array_50"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_1__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_51"
+      },
+      {
+        "__array__": "array_52"
+      },
+      {
+        "__array__": "array_53"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_2__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_54"
+      },
+      {
+        "__array__": "array_55"
+      },
+      {
+        "__array__": "array_56"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_2__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_57"
+      },
+      {
+        "__array__": "array_58"
+      },
+      {
+        "__array__": "array_59"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_3__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_60"
+      },
+      {
+        "__array__": "array_61"
+      },
+      {
+        "__array__": "array_62"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_3__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_63"
+      },
+      {
+        "__array__": "array_64"
+      },
+      {
+        "__array__": "array_65"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_4__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_66"
+      },
+      {
+        "__array__": "array_67"
+      },
+      {
+        "__array__": "array_68"
+      }
+    ],
+    "parameters": 200
+  },
+  "requested8__random_null_4__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_69"
+      },
+      {
+        "__array__": "array_70"
+      },
+      {
+        "__array__": "array_71"
+      }
+    ],
+    "parameters": 200
+  },
+  "all20__row__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_72"
+      },
+      {
+        "__array__": "array_73"
+      },
+      {
+        "__array__": "array_74"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__row__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_75"
+      },
+      {
+        "__array__": "array_76"
+      },
+      {
+        "__array__": "array_77"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_0__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_78"
+      },
+      {
+        "__array__": "array_79"
+      },
+      {
+        "__array__": "array_80"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_0__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_81"
+      },
+      {
+        "__array__": "array_82"
+      },
+      {
+        "__array__": "array_83"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_1__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_84"
+      },
+      {
+        "__array__": "array_85"
+      },
+      {
+        "__array__": "array_86"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_1__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_87"
+      },
+      {
+        "__array__": "array_88"
+      },
+      {
+        "__array__": "array_89"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_2__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_90"
+      },
+      {
+        "__array__": "array_91"
+      },
+      {
+        "__array__": "array_92"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_2__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_93"
+      },
+      {
+        "__array__": "array_94"
+      },
+      {
+        "__array__": "array_95"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_3__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_96"
+      },
+      {
+        "__array__": "array_97"
+      },
+      {
+        "__array__": "array_98"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_3__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_99"
+      },
+      {
+        "__array__": "array_100"
+      },
+      {
+        "__array__": "array_101"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_4__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_102"
+      },
+      {
+        "__array__": "array_103"
+      },
+      {
+        "__array__": "array_104"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__random_row_4__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_105"
+      },
+      {
+        "__array__": "array_106"
+      },
+      {
+        "__array__": "array_107"
+      }
+    ],
+    "parameters": 168
+  },
+  "all20__null__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_108"
+      },
+      {
+        "__array__": "array_109"
+      },
+      {
+        "__array__": "array_110"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__null__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_111"
+      },
+      {
+        "__array__": "array_112"
+      },
+      {
+        "__array__": "array_113"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_0__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_114"
+      },
+      {
+        "__array__": "array_115"
+      },
+      {
+        "__array__": "array_116"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_0__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_117"
+      },
+      {
+        "__array__": "array_118"
+      },
+      {
+        "__array__": "array_119"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_1__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_120"
+      },
+      {
+        "__array__": "array_121"
+      },
+      {
+        "__array__": "array_122"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_1__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_123"
+      },
+      {
+        "__array__": "array_124"
+      },
+      {
+        "__array__": "array_125"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_2__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_126"
+      },
+      {
+        "__array__": "array_127"
+      },
+      {
+        "__array__": "array_128"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_2__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_129"
+      },
+      {
+        "__array__": "array_130"
+      },
+      {
+        "__array__": "array_131"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_3__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_132"
+      },
+      {
+        "__array__": "array_133"
+      },
+      {
+        "__array__": "array_134"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_3__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_135"
+      },
+      {
+        "__array__": "array_136"
+      },
+      {
+        "__array__": "array_137"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_4__draw0": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_138"
+      },
+      {
+        "__array__": "array_139"
+      },
+      {
+        "__array__": "array_140"
+      }
+    ],
+    "parameters": 104
+  },
+  "all20__random_null_4__draw1": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_141"
+      },
+      {
+        "__array__": "array_142"
+      },
+      {
+        "__array__": "array_143"
+      }
+    ],
+    "parameters": 104
+  }
+}

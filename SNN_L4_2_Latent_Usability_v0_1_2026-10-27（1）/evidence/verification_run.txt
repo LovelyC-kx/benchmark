@@ -1,0 +1,24 @@
+{
+  "module": "L4.2",
+  "unit_tests_passed": 25,
+  "unit_test_skips": 0,
+  "analytic_control_families": 12,
+  "replayed_scene_prefix_per_analysis": 128,
+  "replayed_saved_loss_arrays": {
+    "reader_ladder": 384,
+    "task_subspaces": 192
+  },
+  "replay_max_abs": {
+    "reader_ladder": 8.881784197001252e-15,
+    "task_subspaces": 1.7763568394002505e-15
+  },
+  "frozen_hashes_match": true,
+  "inherited_files_verified": 92,
+  "pinned_author_sources": 8,
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "original_optimizer_updates": 1,
+  "new_SNN_training": 0,
+  "formal_benchmark_completed": 0,
+  "audit_test_accessed": false,
+  "scope": "Consistency replay on the same saved development scenes, not independent scientific replication."
+}

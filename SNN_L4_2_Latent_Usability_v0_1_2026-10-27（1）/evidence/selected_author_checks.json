@@ -1,0 +1,81 @@
+{
+  "module": "L4.2 selected author checks",
+  "source_count": 8,
+  "verified_sources": {
+    "layer_harness": {
+      "git_blob_sha": "66cb228b247353117f631f65c2b605416e2d50b4",
+      "bytes": 8695,
+      "bytes_match": true
+    },
+    "layer_metrics": {
+      "git_blob_sha": "4d241f8dc69a38125e7b728b88ae63364d2e679a",
+      "bytes": 10859,
+      "bytes_match": true
+    },
+    "concept_from_models": {
+      "git_blob_sha": "c51bd557118962bb4736ebbbfcd7d53f60957499",
+      "bytes": 1954,
+      "bytes_match": true
+    },
+    "concept_category": {
+      "git_blob_sha": "02a1403f50f22fda0b8dfb8dba46b2d81dc39b14",
+      "bytes": 3800,
+      "bytes_match": true
+    },
+    "wakhloo_utils": {
+      "git_blob_sha": "ca103732e125e9cb1282e80e667b661c5f83b39d",
+      "bytes": 5861,
+      "bytes_match": true
+    },
+    "repa_loss": {
+      "git_blob_sha": "ae8f3f89217b074ca9909f41bf8c9829dd31e4fd",
+      "bytes": 3277,
+      "bytes_match": true
+    },
+    "reg_loss": {
+      "git_blob_sha": "43bf202aa7d533ec21cfe076e31ab6b43c5c5bd1",
+      "bytes": 3849,
+      "bytes_match": true
+    },
+    "rae_stage1": {
+      "git_blob_sha": "add53bac5d5862e4cf02478300a5ff9b7bb2086d",
+      "bytes": 5595,
+      "bytes_match": true
+    }
+  },
+  "wakhloo_theory_formulations_absolute_difference": 5.551115123125783e-17,
+  "wakhloo_Gaussian_Hebbian_predicted_error": 0.2040726957520554,
+  "wakhloo_zero_code_original_emp_error": 0.0,
+  "our_zero_prediction_balanced_classification_tie_loss": 0.5,
+  "layer_normalize_zero_input_nonfinite_elements": 32,
+  "concept_get_g_full_rank_whitening_max_abs": 2.220446049250313e-16,
+  "concept_get_g_rank_deficient_is_finite": false,
+  "adapted_range_whitener_rank": 1,
+  "REPA_artificial_forward": {
+    "aligned": {
+      "projection_loss": -1.0,
+      "denoising_loss_finite": true
+    },
+    "reversed": {
+      "projection_loss": 1.0,
+      "denoising_loss_finite": true
+    },
+    "zero": {
+      "projection_loss": 0.0,
+      "denoising_loss_finite": true
+    }
+  },
+  "REG_top_level_symbols_read_not_executed": [
+    "mean_flat",
+    "sum_flat",
+    "SILoss"
+  ],
+  "RAE_selected_methods_artificial_identity_roundtrip_max_abs": 9.5367431640625e-07,
+  "RAE_selected_encode_detaches_gradient": true,
+  "spectral_inequality_definition_check": {
+    "singular_value_effective_rank": 1.8898815748423097,
+    "covariance_entropy_rank": 1.649384888466118
+  },
+  "execution_scope": "AST-selected original definitions. get_gamma uses artificial tensors; RAE encode/decode use identity stubs and explicit normalization. No original LLM loading, sklearn LDA, repitl entropy, REG model, full RAE, diffusion training or author datasets executed.",
+  "interpretation": "Degenerate-input boundary checks motivate explicit SNN tie/silence/rank handling. They do not establish failures in the papers reported experiments."
+}

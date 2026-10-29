@@ -1,0 +1,34 @@
+{
+  "output__last": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_0"
+      },
+      {
+        "__array__": "array_1"
+      },
+      {
+        "__array__": "array_2"
+      }
+    ],
+    "parameters": 264,
+    "alpha": 0.01
+  },
+  "post__last": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_3"
+      },
+      {
+        "__array__": "array_4"
+      },
+      {
+        "__array__": "array_5"
+      }
+    ],
+    "parameters": 264,
+    "alpha": 0.01
+  }
+}

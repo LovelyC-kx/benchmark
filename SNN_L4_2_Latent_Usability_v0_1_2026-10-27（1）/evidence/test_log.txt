@@ -1,0 +1,30 @@
+test_all_latent_average_can_hide_required_feature (test_latent42.LatentMathematics.test_all_latent_average_can_hide_required_feature) ... ok
+test_exact_nested_gaussian_risks (test_latent42.LatentMathematics.test_exact_nested_gaussian_risks) ... ok
+test_extra_access_conditional_gain_is_nonnegative (test_latent42.LatentMathematics.test_extra_access_conditional_gain_is_nonnegative) ... ok
+test_extra_redundant_information_has_no_conditional_gain (test_latent42.LatentMathematics.test_extra_redundant_information_has_no_conditional_gain) ... ok
+test_gaussian_singular_covariance_is_supported (test_latent42.LatentMathematics.test_gaussian_singular_covariance_is_supported) ... ok
+test_information_preserving_change_can_change_restricted_readability (test_latent42.LatentMathematics.test_information_preserving_change_can_change_restricted_readability) ... ok
+test_negative_or_asymmetric_covariance_is_rejected (test_latent42.LatentMathematics.test_negative_or_asymmetric_covariance_is_rejected) ... ok
+test_nonfinite_code_is_rejected (test_latent42.LatentMathematics.test_nonfinite_code_is_rejected) ... ok
+test_nonfinite_output_metric_rejected (test_latent42.LatentMathematics.test_nonfinite_output_metric_rejected) ... ok
+test_output_metric_is_coordinate_covariant (test_latent42.LatentMathematics.test_output_metric_is_coordinate_covariant) ... ok
+test_perfect_availability_does_not_force_native_reading (test_latent42.LatentMathematics.test_perfect_availability_does_not_force_native_reading) ... ok
+test_query_dimension_and_gauge_are_checked (test_latent42.LatentMathematics.test_query_dimension_and_gauge_are_checked) ... ok
+test_query_family_requires_union_of_task_directions (test_latent42.LatentMathematics.test_query_family_requires_union_of_task_directions) ... ok
+test_range_whitening_retains_null_directions (test_latent42.LatentMathematics.test_range_whitening_retains_null_directions) ... ok
+test_singular_value_entropy_is_not_covariance_entropy (test_latent42.LatentMathematics.test_singular_value_entropy_is_not_covariance_entropy) ... ok
+test_spatial_pooling_cannot_restore_pixel_identity (test_latent42.LatentMathematics.test_spatial_pooling_cannot_restore_pixel_identity) ... ok
+test_zero_code_rank_does_not_create_information (test_latent42.LatentMathematics.test_zero_code_rank_does_not_create_information) ... ok
+test_zero_one_and_logloss_are_distinct (test_latent42.LatentMathematics.test_zero_one_and_logloss_are_distinct) ... ok
+test_empirical_optimizer_competes_with_same_closed_form_objective (test_latent42.ReaderControls.test_empirical_optimizer_competes_with_same_closed_form_objective) ... ok
+test_fit_and_selection_labels_are_counted_separately (test_latent42.ReaderControls.test_fit_and_selection_labels_are_counted_separately) ... ok
+test_numpy_deployment_matches_torch_forward (test_latent42.ReaderControls.test_numpy_deployment_matches_torch_forward) ... ok
+test_overlap_in_probe_splits_rejected (test_latent42.ReaderControls.test_overlap_in_probe_splits_rejected) ... ok
+test_parameter_budget_for_all_used_dimensions (test_latent42.ReaderControls.test_parameter_budget_for_all_used_dimensions) ... ok
+test_residual_contains_exact_affine_baseline_at_zero_adapter (test_latent42.ReaderControls.test_residual_contains_exact_affine_baseline_at_zero_adapter) ... ok
+test_residual_requires_same_permission_base (test_latent42.ReaderControls.test_residual_requires_same_permission_base) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.071s
+
+OK

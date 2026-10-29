@@ -1,0 +1,530 @@
+{
+  "module": "L4.2 task/readout subspaces",
+  "subspace_configurations": 24,
+  "selected_readers": 48,
+  "matrix_solves": 144,
+  "risk_cells": 192,
+  "evaluation_scenes": 4096,
+  "head_identities": {
+    "requested8": {
+      "row_only_head_prediction_max_abs": 2.1094237467877974e-15,
+      "null_component_head_effect_max_abs": 4.2038405934782976e-16,
+      "feature_reconstruction_max_abs": 2.220446049250313e-15
+    },
+    "all20": {
+      "row_only_head_prediction_max_abs": 3.608224830031759e-15,
+      "null_component_head_effect_max_abs": 5.10990561601969e-16,
+      "feature_reconstruction_max_abs": 4.440892098500626e-15
+    }
+  },
+  "risks": {
+    "requested8__row__draw0": {
+      "H1": {
+        "MSE": 0.9954163498488212,
+        "derived_classification": 0.48492431640625
+      },
+      "C": {
+        "MSE": 0.9711949342820292,
+        "derived_classification": 0.4522857666015625
+      }
+    },
+    "requested8__row__draw1": {
+      "H1": {
+        "MSE": 0.9945731473881054,
+        "derived_classification": 0.492095947265625
+      },
+      "C": {
+        "MSE": 0.9688855248200492,
+        "derived_classification": 0.4466400146484375
+      }
+    },
+    "requested8__random_row_0__draw0": {
+      "H1": {
+        "MSE": 0.9968949413776621,
+        "derived_classification": 0.4811859130859375
+      },
+      "C": {
+        "MSE": 0.944361809781932,
+        "derived_classification": 0.4341278076171875
+      }
+    },
+    "requested8__random_row_0__draw1": {
+      "H1": {
+        "MSE": 1.0010874385620254,
+        "derived_classification": 0.492431640625
+      },
+      "C": {
+        "MSE": 0.9334795591643822,
+        "derived_classification": 0.4296875
+      }
+    },
+    "requested8__random_row_1__draw0": {
+      "H1": {
+        "MSE": 0.999213967396983,
+        "derived_classification": 0.4836883544921875
+      },
+      "C": {
+        "MSE": 0.9636086455430275,
+        "derived_classification": 0.4442291259765625
+      }
+    },
+    "requested8__random_row_1__draw1": {
+      "H1": {
+        "MSE": 0.9976494306862923,
+        "derived_classification": 0.4918975830078125
+      },
+      "C": {
+        "MSE": 0.9533690857673168,
+        "derived_classification": 0.431121826171875
+      }
+    },
+    "requested8__random_row_2__draw0": {
+      "H1": {
+        "MSE": 0.9993906361648796,
+        "derived_classification": 0.48895263671875
+      },
+      "C": {
+        "MSE": 0.9624839014113468,
+        "derived_classification": 0.4567108154296875
+      }
+    },
+    "requested8__random_row_2__draw1": {
+      "H1": {
+        "MSE": 0.9996019958959723,
+        "derived_classification": 0.489013671875
+      },
+      "C": {
+        "MSE": 0.950316241704621,
+        "derived_classification": 0.4428253173828125
+      }
+    },
+    "requested8__random_row_3__draw0": {
+      "H1": {
+        "MSE": 0.9941133032160463,
+        "derived_classification": 0.483795166015625
+      },
+      "C": {
+        "MSE": 0.9588264252265066,
+        "derived_classification": 0.4481048583984375
+      }
+    },
+    "requested8__random_row_3__draw1": {
+      "H1": {
+        "MSE": 0.9971360698414613,
+        "derived_classification": 0.49261474609375
+      },
+      "C": {
+        "MSE": 0.9539536143641658,
+        "derived_classification": 0.439971923828125
+      }
+    },
+    "requested8__random_row_4__draw0": {
+      "H1": {
+        "MSE": 0.9988160201107513,
+        "derived_classification": 0.48492431640625
+      },
+      "C": {
+        "MSE": 0.9712572934737949,
+        "derived_classification": 0.4523468017578125
+      }
+    },
+    "requested8__random_row_4__draw1": {
+      "H1": {
+        "MSE": 0.9966051831083372,
+        "derived_classification": 0.47894287109375
+      },
+      "C": {
+        "MSE": 0.9626600012568596,
+        "derived_classification": 0.438201904296875
+      }
+    },
+    "requested8__null__draw0": {
+      "H1": {
+        "MSE": 1.0071413090821566,
+        "derived_classification": 0.4809722900390625
+      },
+      "C": {
+        "MSE": 0.9046253629233496,
+        "derived_classification": 0.414276123046875
+      }
+    },
+    "requested8__null__draw1": {
+      "H1": {
+        "MSE": 1.0016071105257662,
+        "derived_classification": 0.485321044921875
+      },
+      "C": {
+        "MSE": 0.9025993082736423,
+        "derived_classification": 0.409942626953125
+      }
+    },
+    "requested8__random_null_0__draw0": {
+      "H1": {
+        "MSE": 1.00725598704087,
+        "derived_classification": 0.4816741943359375
+      },
+      "C": {
+        "MSE": 0.9129232145781221,
+        "derived_classification": 0.416473388671875
+      }
+    },
+    "requested8__random_null_0__draw1": {
+      "H1": {
+        "MSE": 1.0043541115621966,
+        "derived_classification": 0.4849853515625
+      },
+      "C": {
+        "MSE": 0.9071325642045596,
+        "derived_classification": 0.4110107421875
+      }
+    },
+    "requested8__random_null_1__draw0": {
+      "H1": {
+        "MSE": 1.0043948593128202,
+        "derived_classification": 0.4796600341796875
+      },
+      "C": {
+        "MSE": 0.9110871448674891,
+        "derived_classification": 0.419036865234375
+      }
+    },
+    "requested8__random_null_1__draw1": {
+      "H1": {
+        "MSE": 1.0002779994408468,
+        "derived_classification": 0.485137939453125
+      },
+      "C": {
+        "MSE": 0.9094383930663613,
+        "derived_classification": 0.4125518798828125
+      }
+    },
+    "requested8__random_null_2__draw0": {
+      "H1": {
+        "MSE": 1.0069093300999326,
+        "derived_classification": 0.48382568359375
+      },
+      "C": {
+        "MSE": 0.9091796413711254,
+        "derived_classification": 0.41668701171875
+      }
+    },
+    "requested8__random_null_2__draw1": {
+      "H1": {
+        "MSE": 1.0022176926161364,
+        "derived_classification": 0.4874420166015625
+      },
+      "C": {
+        "MSE": 0.9063980049063886,
+        "derived_classification": 0.414398193359375
+      }
+    },
+    "requested8__random_null_3__draw0": {
+      "H1": {
+        "MSE": 1.003671196268264,
+        "derived_classification": 0.48101806640625
+      },
+      "C": {
+        "MSE": 0.906191865813176,
+        "derived_classification": 0.4170379638671875
+      }
+    },
+    "requested8__random_null_3__draw1": {
+      "H1": {
+        "MSE": 1.0006655838708687,
+        "derived_classification": 0.4885101318359375
+      },
+      "C": {
+        "MSE": 0.9004018059974719,
+        "derived_classification": 0.4116363525390625
+      }
+    },
+    "requested8__random_null_4__draw0": {
+      "H1": {
+        "MSE": 1.0031833134795385,
+        "derived_classification": 0.480072021484375
+      },
+      "C": {
+        "MSE": 0.9068093027355264,
+        "derived_classification": 0.417144775390625
+      }
+    },
+    "requested8__random_null_4__draw1": {
+      "H1": {
+        "MSE": 0.9991331130637943,
+        "derived_classification": 0.48321533203125
+      },
+      "C": {
+        "MSE": 0.9018188987488251,
+        "derived_classification": 0.4104156494140625
+      }
+    },
+    "all20__row__draw0": {
+      "H1": {
+        "MSE": 1.0003072647030087,
+        "derived_classification": 0.48309326171875
+      },
+      "C": {
+        "MSE": 0.9179984027254564,
+        "derived_classification": 0.42132568359375
+      }
+    },
+    "all20__row__draw1": {
+      "H1": {
+        "MSE": 0.9987552369971164,
+        "derived_classification": 0.4882354736328125
+      },
+      "C": {
+        "MSE": 0.9156092342633325,
+        "derived_classification": 0.419769287109375
+      }
+    },
+    "all20__random_row_0__draw0": {
+      "H1": {
+        "MSE": 0.9986803115046767,
+        "derived_classification": 0.4718475341796875
+      },
+      "C": {
+        "MSE": 0.9106897045373427,
+        "derived_classification": 0.41925048828125
+      }
+    },
+    "all20__random_row_0__draw1": {
+      "H1": {
+        "MSE": 0.9979868715928428,
+        "derived_classification": 0.4820404052734375
+      },
+      "C": {
+        "MSE": 0.9097746022393499,
+        "derived_classification": 0.4134368896484375
+      }
+    },
+    "all20__random_row_1__draw0": {
+      "H1": {
+        "MSE": 1.0070521738596077,
+        "derived_classification": 0.4849395751953125
+      },
+      "C": {
+        "MSE": 0.9202822174380048,
+        "derived_classification": 0.4207611083984375
+      }
+    },
+    "all20__random_row_1__draw1": {
+      "H1": {
+        "MSE": 1.0029270755901465,
+        "derived_classification": 0.490325927734375
+      },
+      "C": {
+        "MSE": 0.9155901720389111,
+        "derived_classification": 0.4151611328125
+      }
+    },
+    "all20__random_row_2__draw0": {
+      "H1": {
+        "MSE": 1.0061361672873812,
+        "derived_classification": 0.483184814453125
+      },
+      "C": {
+        "MSE": 0.9111139829177317,
+        "derived_classification": 0.4193115234375
+      }
+    },
+    "all20__random_row_2__draw1": {
+      "H1": {
+        "MSE": 1.0040185612640946,
+        "derived_classification": 0.4890289306640625
+      },
+      "C": {
+        "MSE": 0.9033774024743066,
+        "derived_classification": 0.4119720458984375
+      }
+    },
+    "all20__random_row_3__draw0": {
+      "H1": {
+        "MSE": 1.003669434605491,
+        "derived_classification": 0.482696533203125
+      },
+      "C": {
+        "MSE": 0.9122978647417136,
+        "derived_classification": 0.41888427734375
+      }
+    },
+    "all20__random_row_3__draw1": {
+      "H1": {
+        "MSE": 0.9999731627519333,
+        "derived_classification": 0.4858856201171875
+      },
+      "C": {
+        "MSE": 0.9073991021537283,
+        "derived_classification": 0.4126434326171875
+      }
+    },
+    "all20__random_row_4__draw0": {
+      "H1": {
+        "MSE": 1.0033060377202012,
+        "derived_classification": 0.4823150634765625
+      },
+      "C": {
+        "MSE": 0.9112084115604044,
+        "derived_classification": 0.420806884765625
+      }
+    },
+    "all20__random_row_4__draw1": {
+      "H1": {
+        "MSE": 1.000695280919303,
+        "derived_classification": 0.4901123046875
+      },
+      "C": {
+        "MSE": 0.9079553754632419,
+        "derived_classification": 0.41473388671875
+      }
+    },
+    "all20__null__draw0": {
+      "H1": {
+        "MSE": 1.0047766274541936,
+        "derived_classification": 0.4814300537109375
+      },
+      "C": {
+        "MSE": 0.9332563884680645,
+        "derived_classification": 0.4310150146484375
+      }
+    },
+    "all20__null__draw1": {
+      "H1": {
+        "MSE": 0.9980162730121733,
+        "derived_classification": 0.4896697998046875
+      },
+      "C": {
+        "MSE": 0.926886469791607,
+        "derived_classification": 0.4219970703125
+      }
+    },
+    "all20__random_null_0__draw0": {
+      "H1": {
+        "MSE": 0.9985386634898655,
+        "derived_classification": 0.4841766357421875
+      },
+      "C": {
+        "MSE": 0.9354450098215172,
+        "derived_classification": 0.4248046875
+      }
+    },
+    "all20__random_null_0__draw1": {
+      "H1": {
+        "MSE": 1.0008612891497997,
+        "derived_classification": 0.4920654296875
+      },
+      "C": {
+        "MSE": 0.9289584988860867,
+        "derived_classification": 0.41888427734375
+      }
+    },
+    "all20__random_null_1__draw0": {
+      "H1": {
+        "MSE": 0.9982137284926,
+        "derived_classification": 0.48529052734375
+      },
+      "C": {
+        "MSE": 0.9564318977938695,
+        "derived_classification": 0.445556640625
+      }
+    },
+    "all20__random_null_1__draw1": {
+      "H1": {
+        "MSE": 0.995769937719723,
+        "derived_classification": 0.49468994140625
+      },
+      "C": {
+        "MSE": 0.9528393332334126,
+        "derived_classification": 0.437286376953125
+      }
+    },
+    "all20__random_null_2__draw0": {
+      "H1": {
+        "MSE": 1.0017753602647885,
+        "derived_classification": 0.4871826171875
+      },
+      "C": {
+        "MSE": 0.9411081910002109,
+        "derived_classification": 0.43212890625
+      }
+    },
+    "all20__random_null_2__draw1": {
+      "H1": {
+        "MSE": 0.9991663794626107,
+        "derived_classification": 0.4940338134765625
+      },
+      "C": {
+        "MSE": 0.934724073767387,
+        "derived_classification": 0.4224853515625
+      }
+    },
+    "all20__random_null_3__draw0": {
+      "H1": {
+        "MSE": 0.9983845510419294,
+        "derived_classification": 0.473724365234375
+      },
+      "C": {
+        "MSE": 0.9285337772709853,
+        "derived_classification": 0.4265289306640625
+      }
+    },
+    "all20__random_null_3__draw1": {
+      "H1": {
+        "MSE": 0.9967654510334891,
+        "derived_classification": 0.4842529296875
+      },
+      "C": {
+        "MSE": 0.9277900730585426,
+        "derived_classification": 0.420257568359375
+      }
+    },
+    "all20__random_null_4__draw0": {
+      "H1": {
+        "MSE": 0.9960594054421527,
+        "derived_classification": 0.4791259765625
+      },
+      "C": {
+        "MSE": 0.945708238162904,
+        "derived_classification": 0.4317626953125
+      }
+    },
+    "all20__random_null_4__draw1": {
+      "H1": {
+        "MSE": 1.004797958285978,
+        "derived_classification": 0.484954833984375
+      },
+      "C": {
+        "MSE": 0.9261314058824176,
+        "derived_classification": 0.421051025390625
+      }
+    }
+  },
+  "constant_risks": {
+    "0": {
+      "H1": {
+        "MSE": 0.9924951588527431,
+        "derived_classification": 0.5021514892578125
+      },
+      "C": {
+        "MSE": 1.0063928846873706,
+        "derived_classification": 0.50286865234375
+      }
+    },
+    "1": {
+      "H1": {
+        "MSE": 0.9921543156415998,
+        "derived_classification": 0.5006256103515625
+      },
+      "C": {
+        "MSE": 1.0023547851277375,
+        "derived_classification": 0.4951171875
+      }
+    }
+  },
+  "constant_baseline_risk_cells": 8,
+  "core_parameters_unchanged": true,
+  "new_SNN_training": 0,
+  "formal_benchmark_completed": 0,
+  "audit_test_accessed": false,
+  "scope": "Independent new evaluation pool. Recoverable content in a current head-null component does not imply unique storage, whole-system disuse or future output-nullness. Matched-rank random controls are all retained, never selected by test performance."
+}

@@ -1,0 +1,2186 @@
+{
+  "output__last__draw0__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_0"
+      },
+      {
+        "__array__": "array_1"
+      },
+      {
+        "__array__": "array_2"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__last__draw0__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_3"
+      },
+      "input.bias": {
+        "__array__": "array_4"
+      },
+      "output.weight": {
+        "__array__": "array_5"
+      },
+      "output.bias": {
+        "__array__": "array_6"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170
+  },
+  "output__last__draw0__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_7"
+      },
+      "input.bias": {
+        "__array__": "array_8"
+      },
+      "output.weight": {
+        "__array__": "array_9"
+      },
+      "output.bias": {
+        "__array__": "array_10"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_11"
+      },
+      {
+        "__array__": "array_12"
+      },
+      {
+        "__array__": "array_13"
+      }
+    ]
+  },
+  "output__last__draw0__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_14"
+      },
+      {
+        "__array__": "array_15"
+      },
+      {
+        "__array__": "array_16"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__last__draw0__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_17"
+      },
+      {
+        "__array__": "array_18"
+      },
+      {
+        "__array__": "array_19"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__last__draw0__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_20"
+      },
+      "input.bias": {
+        "__array__": "array_21"
+      },
+      "output.weight": {
+        "__array__": "array_22"
+      },
+      "output.bias": {
+        "__array__": "array_23"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "output__last__draw0__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_24"
+      },
+      "input.bias": {
+        "__array__": "array_25"
+      },
+      "output.weight": {
+        "__array__": "array_26"
+      },
+      "output.bias": {
+        "__array__": "array_27"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_28"
+      },
+      {
+        "__array__": "array_29"
+      },
+      {
+        "__array__": "array_30"
+      }
+    ]
+  },
+  "output__last__draw0__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_31"
+      },
+      {
+        "__array__": "array_32"
+      },
+      {
+        "__array__": "array_33"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__last__draw1__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_34"
+      },
+      {
+        "__array__": "array_35"
+      },
+      {
+        "__array__": "array_36"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__last__draw1__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_37"
+      },
+      "input.bias": {
+        "__array__": "array_38"
+      },
+      "output.weight": {
+        "__array__": "array_39"
+      },
+      "output.bias": {
+        "__array__": "array_40"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "output__last__draw1__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_41"
+      },
+      "input.bias": {
+        "__array__": "array_42"
+      },
+      "output.weight": {
+        "__array__": "array_43"
+      },
+      "output.bias": {
+        "__array__": "array_44"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_45"
+      },
+      {
+        "__array__": "array_46"
+      },
+      {
+        "__array__": "array_47"
+      }
+    ]
+  },
+  "output__last__draw1__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_48"
+      },
+      {
+        "__array__": "array_49"
+      },
+      {
+        "__array__": "array_50"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__last__draw1__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_51"
+      },
+      {
+        "__array__": "array_52"
+      },
+      {
+        "__array__": "array_53"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__last__draw1__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_54"
+      },
+      "input.bias": {
+        "__array__": "array_55"
+      },
+      "output.weight": {
+        "__array__": "array_56"
+      },
+      "output.bias": {
+        "__array__": "array_57"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.02,
+    "selected_step": 200,
+    "initialization_seed": 420171
+  },
+  "output__last__draw1__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_58"
+      },
+      "input.bias": {
+        "__array__": "array_59"
+      },
+      "output.weight": {
+        "__array__": "array_60"
+      },
+      "output.bias": {
+        "__array__": "array_61"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_62"
+      },
+      {
+        "__array__": "array_63"
+      },
+      {
+        "__array__": "array_64"
+      }
+    ]
+  },
+  "output__last__draw1__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_65"
+      },
+      {
+        "__array__": "array_66"
+      },
+      {
+        "__array__": "array_67"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw0__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_68"
+      },
+      {
+        "__array__": "array_69"
+      },
+      {
+        "__array__": "array_70"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw0__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_71"
+      },
+      "input.bias": {
+        "__array__": "array_72"
+      },
+      "output.weight": {
+        "__array__": "array_73"
+      },
+      "output.bias": {
+        "__array__": "array_74"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170
+  },
+  "output__mean__draw0__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_75"
+      },
+      "input.bias": {
+        "__array__": "array_76"
+      },
+      "output.weight": {
+        "__array__": "array_77"
+      },
+      "output.bias": {
+        "__array__": "array_78"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_79"
+      },
+      {
+        "__array__": "array_80"
+      },
+      {
+        "__array__": "array_81"
+      }
+    ]
+  },
+  "output__mean__draw0__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_82"
+      },
+      {
+        "__array__": "array_83"
+      },
+      {
+        "__array__": "array_84"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw0__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_85"
+      },
+      {
+        "__array__": "array_86"
+      },
+      {
+        "__array__": "array_87"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw0__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_88"
+      },
+      "input.bias": {
+        "__array__": "array_89"
+      },
+      "output.weight": {
+        "__array__": "array_90"
+      },
+      "output.bias": {
+        "__array__": "array_91"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "output__mean__draw0__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_92"
+      },
+      "input.bias": {
+        "__array__": "array_93"
+      },
+      "output.weight": {
+        "__array__": "array_94"
+      },
+      "output.bias": {
+        "__array__": "array_95"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_96"
+      },
+      {
+        "__array__": "array_97"
+      },
+      {
+        "__array__": "array_98"
+      }
+    ]
+  },
+  "output__mean__draw0__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_99"
+      },
+      {
+        "__array__": "array_100"
+      },
+      {
+        "__array__": "array_101"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw1__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_102"
+      },
+      {
+        "__array__": "array_103"
+      },
+      {
+        "__array__": "array_104"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw1__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_105"
+      },
+      "input.bias": {
+        "__array__": "array_106"
+      },
+      "output.weight": {
+        "__array__": "array_107"
+      },
+      "output.bias": {
+        "__array__": "array_108"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "output__mean__draw1__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_109"
+      },
+      "input.bias": {
+        "__array__": "array_110"
+      },
+      "output.weight": {
+        "__array__": "array_111"
+      },
+      "output.bias": {
+        "__array__": "array_112"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_113"
+      },
+      {
+        "__array__": "array_114"
+      },
+      {
+        "__array__": "array_115"
+      }
+    ]
+  },
+  "output__mean__draw1__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_116"
+      },
+      {
+        "__array__": "array_117"
+      },
+      {
+        "__array__": "array_118"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw1__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_119"
+      },
+      {
+        "__array__": "array_120"
+      },
+      {
+        "__array__": "array_121"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__mean__draw1__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_122"
+      },
+      "input.bias": {
+        "__array__": "array_123"
+      },
+      "output.weight": {
+        "__array__": "array_124"
+      },
+      "output.bias": {
+        "__array__": "array_125"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "output__mean__draw1__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_126"
+      },
+      "input.bias": {
+        "__array__": "array_127"
+      },
+      "output.weight": {
+        "__array__": "array_128"
+      },
+      "output.bias": {
+        "__array__": "array_129"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_130"
+      },
+      {
+        "__array__": "array_131"
+      },
+      {
+        "__array__": "array_132"
+      }
+    ]
+  },
+  "output__mean__draw1__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_133"
+      },
+      {
+        "__array__": "array_134"
+      },
+      {
+        "__array__": "array_135"
+      }
+    ],
+    "parameters": 264
+  },
+  "output__trajectory__draw0__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_136"
+      },
+      {
+        "__array__": "array_137"
+      },
+      {
+        "__array__": "array_138"
+      }
+    ],
+    "parameters": 4104
+  },
+  "output__trajectory__draw0__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_139"
+      },
+      "input.bias": {
+        "__array__": "array_140"
+      },
+      "output.weight": {
+        "__array__": "array_141"
+      },
+      "output.bias": {
+        "__array__": "array_142"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170
+  },
+  "output__trajectory__draw0__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_143"
+      },
+      "input.bias": {
+        "__array__": "array_144"
+      },
+      "output.weight": {
+        "__array__": "array_145"
+      },
+      "output.bias": {
+        "__array__": "array_146"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_147"
+      },
+      {
+        "__array__": "array_148"
+      },
+      {
+        "__array__": "array_149"
+      }
+    ]
+  },
+  "output__trajectory__draw0__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_150"
+      },
+      {
+        "__array__": "array_151"
+      },
+      {
+        "__array__": "array_152"
+      }
+    ],
+    "parameters": 4104
+  },
+  "output__trajectory__draw0__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_153"
+      },
+      {
+        "__array__": "array_154"
+      },
+      {
+        "__array__": "array_155"
+      }
+    ],
+    "parameters": 4104
+  },
+  "output__trajectory__draw0__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_156"
+      },
+      "input.bias": {
+        "__array__": "array_157"
+      },
+      "output.weight": {
+        "__array__": "array_158"
+      },
+      "output.bias": {
+        "__array__": "array_159"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "output__trajectory__draw0__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_160"
+      },
+      "input.bias": {
+        "__array__": "array_161"
+      },
+      "output.weight": {
+        "__array__": "array_162"
+      },
+      "output.bias": {
+        "__array__": "array_163"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_164"
+      },
+      {
+        "__array__": "array_165"
+      },
+      {
+        "__array__": "array_166"
+      }
+    ]
+  },
+  "output__trajectory__draw0__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_167"
+      },
+      {
+        "__array__": "array_168"
+      },
+      {
+        "__array__": "array_169"
+      }
+    ],
+    "parameters": 4104
+  },
+  "output__trajectory__draw1__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_170"
+      },
+      {
+        "__array__": "array_171"
+      },
+      {
+        "__array__": "array_172"
+      }
+    ],
+    "parameters": 4104
+  },
+  "output__trajectory__draw1__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_173"
+      },
+      "input.bias": {
+        "__array__": "array_174"
+      },
+      "output.weight": {
+        "__array__": "array_175"
+      },
+      "output.bias": {
+        "__array__": "array_176"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171
+  },
+  "output__trajectory__draw1__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_177"
+      },
+      "input.bias": {
+        "__array__": "array_178"
+      },
+      "output.weight": {
+        "__array__": "array_179"
+      },
+      "output.bias": {
+        "__array__": "array_180"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_181"
+      },
+      {
+        "__array__": "array_182"
+      },
+      {
+        "__array__": "array_183"
+      }
+    ]
+  },
+  "output__trajectory__draw1__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_184"
+      },
+      {
+        "__array__": "array_185"
+      },
+      {
+        "__array__": "array_186"
+      }
+    ],
+    "parameters": 4104
+  },
+  "output__trajectory__draw1__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_187"
+      },
+      {
+        "__array__": "array_188"
+      },
+      {
+        "__array__": "array_189"
+      }
+    ],
+    "parameters": 4104
+  },
+  "output__trajectory__draw1__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_190"
+      },
+      "input.bias": {
+        "__array__": "array_191"
+      },
+      "output.weight": {
+        "__array__": "array_192"
+      },
+      "output.bias": {
+        "__array__": "array_193"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "output__trajectory__draw1__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_194"
+      },
+      "input.bias": {
+        "__array__": "array_195"
+      },
+      "output.weight": {
+        "__array__": "array_196"
+      },
+      "output.bias": {
+        "__array__": "array_197"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_198"
+      },
+      {
+        "__array__": "array_199"
+      },
+      {
+        "__array__": "array_200"
+      }
+    ]
+  },
+  "output__trajectory__draw1__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_201"
+      },
+      {
+        "__array__": "array_202"
+      },
+      {
+        "__array__": "array_203"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__last__draw0__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_204"
+      },
+      {
+        "__array__": "array_205"
+      },
+      {
+        "__array__": "array_206"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__last__draw0__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_207"
+      },
+      "input.bias": {
+        "__array__": "array_208"
+      },
+      "output.weight": {
+        "__array__": "array_209"
+      },
+      "output.bias": {
+        "__array__": "array_210"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "post__last__draw0__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_211"
+      },
+      "input.bias": {
+        "__array__": "array_212"
+      },
+      "output.weight": {
+        "__array__": "array_213"
+      },
+      "output.bias": {
+        "__array__": "array_214"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_215"
+      },
+      {
+        "__array__": "array_216"
+      },
+      {
+        "__array__": "array_217"
+      }
+    ]
+  },
+  "post__last__draw0__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_218"
+      },
+      {
+        "__array__": "array_219"
+      },
+      {
+        "__array__": "array_220"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__last__draw0__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_221"
+      },
+      {
+        "__array__": "array_222"
+      },
+      {
+        "__array__": "array_223"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__last__draw0__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_224"
+      },
+      "input.bias": {
+        "__array__": "array_225"
+      },
+      "output.weight": {
+        "__array__": "array_226"
+      },
+      "output.bias": {
+        "__array__": "array_227"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 200,
+    "initialization_seed": 420170
+  },
+  "post__last__draw0__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_228"
+      },
+      "input.bias": {
+        "__array__": "array_229"
+      },
+      "output.weight": {
+        "__array__": "array_230"
+      },
+      "output.bias": {
+        "__array__": "array_231"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 400,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_232"
+      },
+      {
+        "__array__": "array_233"
+      },
+      {
+        "__array__": "array_234"
+      }
+    ]
+  },
+  "post__last__draw0__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_235"
+      },
+      {
+        "__array__": "array_236"
+      },
+      {
+        "__array__": "array_237"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__last__draw1__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_238"
+      },
+      {
+        "__array__": "array_239"
+      },
+      {
+        "__array__": "array_240"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__last__draw1__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_241"
+      },
+      "input.bias": {
+        "__array__": "array_242"
+      },
+      "output.weight": {
+        "__array__": "array_243"
+      },
+      "output.bias": {
+        "__array__": "array_244"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "post__last__draw1__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_245"
+      },
+      "input.bias": {
+        "__array__": "array_246"
+      },
+      "output.weight": {
+        "__array__": "array_247"
+      },
+      "output.bias": {
+        "__array__": "array_248"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_249"
+      },
+      {
+        "__array__": "array_250"
+      },
+      {
+        "__array__": "array_251"
+      }
+    ]
+  },
+  "post__last__draw1__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_252"
+      },
+      {
+        "__array__": "array_253"
+      },
+      {
+        "__array__": "array_254"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__last__draw1__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_255"
+      },
+      {
+        "__array__": "array_256"
+      },
+      {
+        "__array__": "array_257"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__last__draw1__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_258"
+      },
+      "input.bias": {
+        "__array__": "array_259"
+      },
+      "output.weight": {
+        "__array__": "array_260"
+      },
+      "output.bias": {
+        "__array__": "array_261"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "post__last__draw1__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_262"
+      },
+      "input.bias": {
+        "__array__": "array_263"
+      },
+      "output.weight": {
+        "__array__": "array_264"
+      },
+      "output.bias": {
+        "__array__": "array_265"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.02,
+    "selected_step": 400,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_266"
+      },
+      {
+        "__array__": "array_267"
+      },
+      {
+        "__array__": "array_268"
+      }
+    ]
+  },
+  "post__last__draw1__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_269"
+      },
+      {
+        "__array__": "array_270"
+      },
+      {
+        "__array__": "array_271"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw0__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_272"
+      },
+      {
+        "__array__": "array_273"
+      },
+      {
+        "__array__": "array_274"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw0__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_275"
+      },
+      "input.bias": {
+        "__array__": "array_276"
+      },
+      "output.weight": {
+        "__array__": "array_277"
+      },
+      "output.bias": {
+        "__array__": "array_278"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "post__mean__draw0__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_279"
+      },
+      "input.bias": {
+        "__array__": "array_280"
+      },
+      "output.weight": {
+        "__array__": "array_281"
+      },
+      "output.bias": {
+        "__array__": "array_282"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_283"
+      },
+      {
+        "__array__": "array_284"
+      },
+      {
+        "__array__": "array_285"
+      }
+    ]
+  },
+  "post__mean__draw0__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_286"
+      },
+      {
+        "__array__": "array_287"
+      },
+      {
+        "__array__": "array_288"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw0__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_289"
+      },
+      {
+        "__array__": "array_290"
+      },
+      {
+        "__array__": "array_291"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw0__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_292"
+      },
+      "input.bias": {
+        "__array__": "array_293"
+      },
+      "output.weight": {
+        "__array__": "array_294"
+      },
+      "output.bias": {
+        "__array__": "array_295"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "post__mean__draw0__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_296"
+      },
+      "input.bias": {
+        "__array__": "array_297"
+      },
+      "output.weight": {
+        "__array__": "array_298"
+      },
+      "output.bias": {
+        "__array__": "array_299"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_300"
+      },
+      {
+        "__array__": "array_301"
+      },
+      {
+        "__array__": "array_302"
+      }
+    ]
+  },
+  "post__mean__draw0__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_303"
+      },
+      {
+        "__array__": "array_304"
+      },
+      {
+        "__array__": "array_305"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw1__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_306"
+      },
+      {
+        "__array__": "array_307"
+      },
+      {
+        "__array__": "array_308"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw1__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_309"
+      },
+      "input.bias": {
+        "__array__": "array_310"
+      },
+      "output.weight": {
+        "__array__": "array_311"
+      },
+      "output.bias": {
+        "__array__": "array_312"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "post__mean__draw1__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_313"
+      },
+      "input.bias": {
+        "__array__": "array_314"
+      },
+      "output.weight": {
+        "__array__": "array_315"
+      },
+      "output.bias": {
+        "__array__": "array_316"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_317"
+      },
+      {
+        "__array__": "array_318"
+      },
+      {
+        "__array__": "array_319"
+      }
+    ]
+  },
+  "post__mean__draw1__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_320"
+      },
+      {
+        "__array__": "array_321"
+      },
+      {
+        "__array__": "array_322"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw1__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_323"
+      },
+      {
+        "__array__": "array_324"
+      },
+      {
+        "__array__": "array_325"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__mean__draw1__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_326"
+      },
+      "input.bias": {
+        "__array__": "array_327"
+      },
+      "output.weight": {
+        "__array__": "array_328"
+      },
+      "output.bias": {
+        "__array__": "array_329"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 6,
+    "trained_parameters": 254,
+    "parameters": 254,
+    "lr": 0.02,
+    "selected_step": 400,
+    "initialization_seed": 420171
+  },
+  "post__mean__draw1__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_330"
+      },
+      "input.bias": {
+        "__array__": "array_331"
+      },
+      "output.weight": {
+        "__array__": "array_332"
+      },
+      "output.bias": {
+        "__array__": "array_333"
+      }
+    },
+    "input_dimension": 32,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 172,
+    "parameters": 436,
+    "lr": 0.005,
+    "selected_step": 0,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_334"
+      },
+      {
+        "__array__": "array_335"
+      },
+      {
+        "__array__": "array_336"
+      }
+    ]
+  },
+  "post__mean__draw1__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_337"
+      },
+      {
+        "__array__": "array_338"
+      },
+      {
+        "__array__": "array_339"
+      }
+    ],
+    "parameters": 264
+  },
+  "post__trajectory__draw0__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_340"
+      },
+      {
+        "__array__": "array_341"
+      },
+      {
+        "__array__": "array_342"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__trajectory__draw0__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_343"
+      },
+      "input.bias": {
+        "__array__": "array_344"
+      },
+      "output.weight": {
+        "__array__": "array_345"
+      },
+      "output.bias": {
+        "__array__": "array_346"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "post__trajectory__draw0__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_347"
+      },
+      "input.bias": {
+        "__array__": "array_348"
+      },
+      "output.weight": {
+        "__array__": "array_349"
+      },
+      "output.bias": {
+        "__array__": "array_350"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_351"
+      },
+      {
+        "__array__": "array_352"
+      },
+      {
+        "__array__": "array_353"
+      }
+    ]
+  },
+  "post__trajectory__draw0__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_354"
+      },
+      {
+        "__array__": "array_355"
+      },
+      {
+        "__array__": "array_356"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__trajectory__draw0__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_357"
+      },
+      {
+        "__array__": "array_358"
+      },
+      {
+        "__array__": "array_359"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__trajectory__draw0__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_360"
+      },
+      "input.bias": {
+        "__array__": "array_361"
+      },
+      "output.weight": {
+        "__array__": "array_362"
+      },
+      "output.bias": {
+        "__array__": "array_363"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420170
+  },
+  "post__trajectory__draw0__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_364"
+      },
+      "input.bias": {
+        "__array__": "array_365"
+      },
+      "output.weight": {
+        "__array__": "array_366"
+      },
+      "output.bias": {
+        "__array__": "array_367"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420170,
+    "base_head": [
+      {
+        "__array__": "array_368"
+      },
+      {
+        "__array__": "array_369"
+      },
+      {
+        "__array__": "array_370"
+      }
+    ]
+  },
+  "post__trajectory__draw0__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_371"
+      },
+      {
+        "__array__": "array_372"
+      },
+      {
+        "__array__": "array_373"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__trajectory__draw1__p128__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_374"
+      },
+      {
+        "__array__": "array_375"
+      },
+      {
+        "__array__": "array_376"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__trajectory__draw1__p128__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_377"
+      },
+      "input.bias": {
+        "__array__": "array_378"
+      },
+      "output.weight": {
+        "__array__": "array_379"
+      },
+      "output.bias": {
+        "__array__": "array_380"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "post__trajectory__draw1__p128__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_381"
+      },
+      "input.bias": {
+        "__array__": "array_382"
+      },
+      "output.weight": {
+        "__array__": "array_383"
+      },
+      "output.bias": {
+        "__array__": "array_384"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.02,
+    "selected_step": 100,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_385"
+      },
+      {
+        "__array__": "array_386"
+      },
+      {
+        "__array__": "array_387"
+      }
+    ]
+  },
+  "post__trajectory__draw1__p128__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_388"
+      },
+      {
+        "__array__": "array_389"
+      },
+      {
+        "__array__": "array_390"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__trajectory__draw1__p512__ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_391"
+      },
+      {
+        "__array__": "array_392"
+      },
+      {
+        "__array__": "array_393"
+      }
+    ],
+    "parameters": 4104
+  },
+  "post__trajectory__draw1__p512__budget_mlp": {
+    "kind": "budget_mlp",
+    "state": {
+      "input.weight": {
+        "__array__": "array_394"
+      },
+      "input.bias": {
+        "__array__": "array_395"
+      },
+      "output.weight": {
+        "__array__": "array_396"
+      },
+      "output.bias": {
+        "__array__": "array_397"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 7,
+    "trained_parameters": 3655,
+    "parameters": 3655,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171
+  },
+  "post__trajectory__draw1__p512__residual": {
+    "kind": "residual",
+    "state": {
+      "input.weight": {
+        "__array__": "array_398"
+      },
+      "input.bias": {
+        "__array__": "array_399"
+      },
+      "output.weight": {
+        "__array__": "array_400"
+      },
+      "output.bias": {
+        "__array__": "array_401"
+      }
+    },
+    "input_dimension": 512,
+    "output_dimension": 8,
+    "hidden": 4,
+    "trained_parameters": 2092,
+    "parameters": 6196,
+    "lr": 0.005,
+    "selected_step": 100,
+    "initialization_seed": 420171,
+    "base_head": [
+      {
+        "__array__": "array_402"
+      },
+      {
+        "__array__": "array_403"
+      },
+      {
+        "__array__": "array_404"
+      }
+    ]
+  },
+  "post__trajectory__draw1__p512__shuffled_ridge": {
+    "kind": "ridge",
+    "head": [
+      {
+        "__array__": "array_405"
+      },
+      {
+        "__array__": "array_406"
+      },
+      {
+        "__array__": "array_407"
+      }
+    ],
+    "parameters": 4104
+  }
+}

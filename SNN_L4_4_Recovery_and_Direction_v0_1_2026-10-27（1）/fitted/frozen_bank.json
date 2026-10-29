@@ -1,0 +1,1142 @@
+{
+  "damage_erasers": {
+    "H1_l0_t3": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_0"
+      },
+      "matrix": {
+        "__array__": "array_1"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 1.5186638998727185e-15,
+      "operator_norm": 1.9341658648587094,
+      "condition_bound": 32.3827713447237,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t3": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_2"
+      },
+      "matrix": {
+        "__array__": "array_3"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.315027047179906e-17,
+      "operator_norm": 1.1882546816181712,
+      "condition_bound": 46.093269316954306,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l0_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_4"
+      },
+      "matrix": {
+        "__array__": "array_5"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 2.0097561208623086e-16,
+      "operator_norm": 5.38125177089964,
+      "condition_bound": 23.87325451479028,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_6"
+      },
+      "matrix": {
+        "__array__": "array_7"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 4.570836689895991e-16,
+      "operator_norm": 4.28391826665826,
+      "condition_bound": 23.555489387226192,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l0_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_8"
+      },
+      "matrix": {
+        "__array__": "array_9"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.230579062278858e-17,
+      "operator_norm": 5.451713338275167,
+      "condition_bound": 24.035793989940892,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_10"
+      },
+      "matrix": {
+        "__array__": "array_11"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 1.666026820422029e-16,
+      "operator_norm": 4.268287334936236,
+      "condition_bound": 24.849450623014096,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l0_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_12"
+      },
+      "matrix": {
+        "__array__": "array_13"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 9.36731100950368e-16,
+      "operator_norm": 5.30455496676976,
+      "condition_bound": 23.87325451479028,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l1_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_14"
+      },
+      "matrix": {
+        "__array__": "array_15"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.618575327556498e-16,
+      "operator_norm": 2.744843955127794,
+      "condition_bound": 23.555489387226192,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l0_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_16"
+      },
+      "matrix": {
+        "__array__": "array_17"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 4.715008893313188e-16,
+      "operator_norm": 4.925491438448122,
+      "condition_bound": 24.035793989940892,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l1_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_18"
+      },
+      "matrix": {
+        "__array__": "array_19"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 3.982796278919464e-16,
+      "operator_norm": 2.995097376672712,
+      "condition_bound": 24.849450623014096,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l0_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_20"
+      },
+      "matrix": {
+        "__array__": "array_21"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 9.675266619082488e-16,
+      "operator_norm": 4.4299216787175615,
+      "condition_bound": 23.87325451479028,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l1_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_22"
+      },
+      "matrix": {
+        "__array__": "array_23"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.045050818798821e-16,
+      "operator_norm": 4.29726950496365,
+      "condition_bound": 23.555489387226192,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l0_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_24"
+      },
+      "matrix": {
+        "__array__": "array_25"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 5.097160516413088e-16,
+      "operator_norm": 4.2064411448197525,
+      "condition_bound": 24.035793989940892,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l1_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_26"
+      },
+      "matrix": {
+        "__array__": "array_27"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 5.570337388979822e-16,
+      "operator_norm": 2.877954889709054,
+      "condition_bound": 24.849450623014096,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    }
+  },
+  "patch_erasers": {
+    "H1_l0_t3": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_28"
+      },
+      "matrix": {
+        "__array__": "array_29"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 1.5186638998727185e-15,
+      "operator_norm": 1.9341658648587094,
+      "condition_bound": 32.3827713447237,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l0_t4": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_30"
+      },
+      "matrix": {
+        "__array__": "array_31"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 7.920290925718316e-16,
+      "operator_norm": 1.7940046460236962,
+      "condition_bound": 31.82059416029571,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l0_t14": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_32"
+      },
+      "matrix": {
+        "__array__": "array_33"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 1.9401253533764626e-16,
+      "operator_norm": 5.068868329090514,
+      "condition_bound": 23.13894842655902,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l0_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_34"
+      },
+      "matrix": {
+        "__array__": "array_35"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.230579062278858e-17,
+      "operator_norm": 5.451713338275167,
+      "condition_bound": 24.035793989940892,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t3": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_36"
+      },
+      "matrix": {
+        "__array__": "array_37"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.315027047179906e-17,
+      "operator_norm": 1.1882546816181712,
+      "condition_bound": 46.093269316954306,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t4": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_38"
+      },
+      "matrix": {
+        "__array__": "array_39"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 9.615475134226856e-17,
+      "operator_norm": 4.1431743963039205,
+      "condition_bound": 38.01936540580304,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t14": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_40"
+      },
+      "matrix": {
+        "__array__": "array_41"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 2.587164176152564e-16,
+      "operator_norm": 3.9337745399347694,
+      "condition_bound": 23.969478782749437,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_42"
+      },
+      "matrix": {
+        "__array__": "array_43"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 1.666026820422029e-16,
+      "operator_norm": 4.268287334936236,
+      "condition_bound": 24.849450623014096,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l0_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_44"
+      },
+      "matrix": {
+        "__array__": "array_45"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 2.0097561208623086e-16,
+      "operator_norm": 5.38125177089964,
+      "condition_bound": 23.87325451479028,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l0_t13": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_46"
+      },
+      "matrix": {
+        "__array__": "array_47"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 2.5768247682527807e-16,
+      "operator_norm": 5.1694003927803704,
+      "condition_bound": 23.728164689240593,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_48"
+      },
+      "matrix": {
+        "__array__": "array_49"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 4.570836689895991e-16,
+      "operator_norm": 4.28391826665826,
+      "condition_bound": 23.555489387226192,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H1_l1_t13": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_50"
+      },
+      "matrix": {
+        "__array__": "array_51"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 2.682201477031376e-16,
+      "operator_norm": 3.9158843519933764,
+      "condition_bound": 24.2242688955653,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l0_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_52"
+      },
+      "matrix": {
+        "__array__": "array_53"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 9.36731100950368e-16,
+      "operator_norm": 5.30455496676976,
+      "condition_bound": 23.87325451479028,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l0_t13": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_54"
+      },
+      "matrix": {
+        "__array__": "array_55"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 7.43201095486774e-16,
+      "operator_norm": 5.207494488282373,
+      "condition_bound": 23.728164689240593,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l0_t14": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_56"
+      },
+      "matrix": {
+        "__array__": "array_57"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 9.127506154696576e-16,
+      "operator_norm": 4.869323606493779,
+      "condition_bound": 23.13894842655902,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l0_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_58"
+      },
+      "matrix": {
+        "__array__": "array_59"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 4.715008893313188e-16,
+      "operator_norm": 4.925491438448122,
+      "condition_bound": 24.035793989940892,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l1_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_60"
+      },
+      "matrix": {
+        "__array__": "array_61"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.618575327556498e-16,
+      "operator_norm": 2.744843955127794,
+      "condition_bound": 23.555489387226192,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l1_t13": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_62"
+      },
+      "matrix": {
+        "__array__": "array_63"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 6.832992636986221e-16,
+      "operator_norm": 3.93283445636297,
+      "condition_bound": 24.2242688955653,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l1_t14": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_64"
+      },
+      "matrix": {
+        "__array__": "array_65"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 5.176946507366297e-16,
+      "operator_norm": 4.152146249000326,
+      "condition_bound": 23.969478782749437,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "H4_l1_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_66"
+      },
+      "matrix": {
+        "__array__": "array_67"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 3.982796278919464e-16,
+      "operator_norm": 2.995097376672712,
+      "condition_bound": 24.849450623014096,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l0_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_68"
+      },
+      "matrix": {
+        "__array__": "array_69"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 9.675266619082488e-16,
+      "operator_norm": 4.4299216787175615,
+      "condition_bound": 23.87325451479028,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l0_t13": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_70"
+      },
+      "matrix": {
+        "__array__": "array_71"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 1.0146177338903126e-15,
+      "operator_norm": 4.390261818864297,
+      "condition_bound": 23.728164689240593,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l0_t14": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_72"
+      },
+      "matrix": {
+        "__array__": "array_73"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 1.2640998752934235e-15,
+      "operator_norm": 4.283473954135673,
+      "condition_bound": 23.13894842655902,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l0_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_74"
+      },
+      "matrix": {
+        "__array__": "array_75"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 5.097160516413088e-16,
+      "operator_norm": 4.2064411448197525,
+      "condition_bound": 24.035793989940892,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l1_t12": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_76"
+      },
+      "matrix": {
+        "__array__": "array_77"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 8.045050818798821e-16,
+      "operator_norm": 4.29726950496365,
+      "condition_bound": 23.555489387226192,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l1_t13": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_78"
+      },
+      "matrix": {
+        "__array__": "array_79"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 6.353964756363693e-16,
+      "operator_norm": 3.8146466911533405,
+      "condition_bound": 24.2242688955653,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l1_t14": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_80"
+      },
+      "matrix": {
+        "__array__": "array_81"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 4.954477144404389e-16,
+      "operator_norm": 3.0763017703272237,
+      "condition_bound": 23.969478782749437,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    },
+    "C_l1_t15": {
+      "method": "leace_fixed_covariance_shrinkage",
+      "mean": {
+        "__array__": "array_82"
+      },
+      "matrix": {
+        "__array__": "array_83"
+      },
+      "removed_rank": 4,
+      "shrinkage": 0.01,
+      "fit_cross_covariance_after_norm": 5.570337388979822e-16,
+      "operator_norm": 2.877954889709054,
+      "condition_bound": 24.849450623014096,
+      "guarantee": "Exact fit cross-covariance removal in full-rank regularized covariance metric. Not the original unregularized empirical minimum-distortion solution; no population or nonlinear guarantee."
+    }
+  },
+  "validation_probes": {
+    "l0_t3": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_84"
+          },
+          {
+            "__array__": "array_85"
+          },
+          {
+            "__array__": "array_86"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_87"
+          },
+          "input.bias": {
+            "__array__": "array_88"
+          },
+          "output.weight": {
+            "__array__": "array_89"
+          },
+          "output.bias": {
+            "__array__": "array_90"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.005,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l0_t4": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_91"
+          },
+          {
+            "__array__": "array_92"
+          },
+          {
+            "__array__": "array_93"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_94"
+          },
+          "input.bias": {
+            "__array__": "array_95"
+          },
+          "output.weight": {
+            "__array__": "array_96"
+          },
+          "output.bias": {
+            "__array__": "array_97"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 200,
+        "initialization_seed": 44044
+      }
+    },
+    "l0_t12": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_98"
+          },
+          {
+            "__array__": "array_99"
+          },
+          {
+            "__array__": "array_100"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_101"
+          },
+          "input.bias": {
+            "__array__": "array_102"
+          },
+          "output.weight": {
+            "__array__": "array_103"
+          },
+          "output.bias": {
+            "__array__": "array_104"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.005,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l0_t13": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_105"
+          },
+          {
+            "__array__": "array_106"
+          },
+          {
+            "__array__": "array_107"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_108"
+          },
+          "input.bias": {
+            "__array__": "array_109"
+          },
+          "output.weight": {
+            "__array__": "array_110"
+          },
+          "output.bias": {
+            "__array__": "array_111"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l0_t14": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_112"
+          },
+          {
+            "__array__": "array_113"
+          },
+          {
+            "__array__": "array_114"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_115"
+          },
+          "input.bias": {
+            "__array__": "array_116"
+          },
+          "output.weight": {
+            "__array__": "array_117"
+          },
+          "output.bias": {
+            "__array__": "array_118"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l0_t15": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_119"
+          },
+          {
+            "__array__": "array_120"
+          },
+          {
+            "__array__": "array_121"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_122"
+          },
+          "input.bias": {
+            "__array__": "array_123"
+          },
+          "output.weight": {
+            "__array__": "array_124"
+          },
+          "output.bias": {
+            "__array__": "array_125"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l1_t3": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_126"
+          },
+          {
+            "__array__": "array_127"
+          },
+          {
+            "__array__": "array_128"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_129"
+          },
+          "input.bias": {
+            "__array__": "array_130"
+          },
+          "output.weight": {
+            "__array__": "array_131"
+          },
+          "output.bias": {
+            "__array__": "array_132"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 100,
+        "initialization_seed": 44044
+      }
+    },
+    "l1_t4": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_133"
+          },
+          {
+            "__array__": "array_134"
+          },
+          {
+            "__array__": "array_135"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_136"
+          },
+          "input.bias": {
+            "__array__": "array_137"
+          },
+          "output.weight": {
+            "__array__": "array_138"
+          },
+          "output.bias": {
+            "__array__": "array_139"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.005,
+        "selected_step": 200,
+        "initialization_seed": 44044
+      }
+    },
+    "l1_t12": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_140"
+          },
+          {
+            "__array__": "array_141"
+          },
+          {
+            "__array__": "array_142"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_143"
+          },
+          "input.bias": {
+            "__array__": "array_144"
+          },
+          "output.weight": {
+            "__array__": "array_145"
+          },
+          "output.bias": {
+            "__array__": "array_146"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l1_t13": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_147"
+          },
+          {
+            "__array__": "array_148"
+          },
+          {
+            "__array__": "array_149"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_150"
+          },
+          "input.bias": {
+            "__array__": "array_151"
+          },
+          "output.weight": {
+            "__array__": "array_152"
+          },
+          "output.bias": {
+            "__array__": "array_153"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l1_t14": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_154"
+          },
+          {
+            "__array__": "array_155"
+          },
+          {
+            "__array__": "array_156"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_157"
+          },
+          "input.bias": {
+            "__array__": "array_158"
+          },
+          "output.weight": {
+            "__array__": "array_159"
+          },
+          "output.bias": {
+            "__array__": "array_160"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    },
+    "l1_t15": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_161"
+          },
+          {
+            "__array__": "array_162"
+          },
+          {
+            "__array__": "array_163"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_164"
+          },
+          "input.bias": {
+            "__array__": "array_165"
+          },
+          "output.weight": {
+            "__array__": "array_166"
+          },
+          "output.bias": {
+            "__array__": "array_167"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 44044
+      }
+    }
+  }
+}

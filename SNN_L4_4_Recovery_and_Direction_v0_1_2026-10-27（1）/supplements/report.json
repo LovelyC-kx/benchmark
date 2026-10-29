@@ -1,0 +1,2912 @@
+{
+  "module": "L4.4 event-policy and joint-owner recovery",
+  "confirmation_subset_scene_pairs": 256,
+  "event_contexts": 12,
+  "event_four_group_cells": 72,
+  "event_results": {
+    "H1_l0_t12_p13": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.007864072321494307,
+          "output_interaction_max_abs": 0.6342154741287231,
+          "risk_interaction": 0.00086437280823985,
+          "damage_patch_alignment": 0.0036620469038424596,
+          "baseline_error_response": -0.0050856622520646525,
+          "patch_energy_difference": 0.0022879881564620464,
+          "risk_identity_absolute_residual": 3.469446951953614e-18,
+          "damaged_clean_prediction_MSE": 0.006591447565507129,
+          "repaired_clean_prediction_MSE": 0.006646596239771612,
+          "prediction_recovery_ratio": -0.008366701504700425,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.007599174145628053,
+          "output_interaction_max_abs": 0.5225229561328888,
+          "risk_interaction": -0.010559629192445737,
+          "damage_patch_alignment": 0.0024110044633684196,
+          "baseline_error_response": -0.015085337646059419,
+          "patch_energy_difference": 0.002114703990245267,
+          "risk_identity_absolute_residual": 5.637851296924623e-18,
+          "damaged_clean_prediction_MSE": 0.006591447565507129,
+          "repaired_clean_prediction_MSE": 0.007210897787114488,
+          "prediction_recovery_ratio": -0.09397787291048565,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.005037141195368913,
+          "output_interaction_max_abs": 0.5225229561328888,
+          "risk_interaction": 0.003741492764696644,
+          "damage_patch_alignment": 0.0015209172994756991,
+          "baseline_error_response": 0.0009412063537276431,
+          "patch_energy_difference": 0.0012793691114933018,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.006591447565507129,
+          "repaired_clean_prediction_MSE": 0.0077337216662435836,
+          "prediction_recovery_ratio": -0.17329639497004345,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "H1_l0_t12_p14": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.00852284841895471,
+          "output_interaction_max_abs": 0.6342154741287231,
+          "risk_interaction": -0.003110526118325111,
+          "damage_patch_alignment": 0.0026502911233336713,
+          "baseline_error_response": -0.010336999095009928,
+          "patch_energy_difference": 0.004576181853351149,
+          "risk_identity_absolute_residual": 3.469446951953614e-18,
+          "damaged_clean_prediction_MSE": 0.006591447565507129,
+          "repaired_clean_prediction_MSE": 0.006741729847621242,
+          "prediction_recovery_ratio": -0.022799586983068165,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.007244867958216465,
+          "output_interaction_max_abs": 0.5652770400047302,
+          "risk_interaction": -0.003947576489180853,
+          "damage_patch_alignment": 0.003447079056229796,
+          "baseline_error_response": -0.006500293963698691,
+          "patch_energy_difference": -0.0008943615817119544,
+          "risk_identity_absolute_residual": 3.469446951953614e-18,
+          "damaged_clean_prediction_MSE": 0.006591447565507129,
+          "repaired_clean_prediction_MSE": 0.007581378328477285,
+          "prediction_recovery_ratio": -0.15018412164126693,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.004762355075742256,
+          "output_interaction_max_abs": 0.5025819391012192,
+          "risk_interaction": 0.003949240176604531,
+          "damage_patch_alignment": 0.0011952739702438004,
+          "baseline_error_response": 0.0015310109630074227,
+          "patch_energy_difference": 0.0012229552433533075,
+          "risk_identity_absolute_residual": 4.336808689942018e-19,
+          "damaged_clean_prediction_MSE": 0.006591447565507129,
+          "repaired_clean_prediction_MSE": 0.008058594030126988,
+          "prediction_recovery_ratio": -0.22258334759384235,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "H1_l1_t12_p13": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.00834869717754447,
+          "output_interaction_max_abs": 0.4107716679573059,
+          "risk_interaction": -0.0009158914213542226,
+          "damage_patch_alignment": 0.006851809826968741,
+          "baseline_error_response": -0.007101209068774015,
+          "patch_energy_difference": -0.0006664921795489455,
+          "risk_identity_absolute_residual": 3.469446951953614e-18,
+          "damaged_clean_prediction_MSE": 0.006290608929285841,
+          "repaired_clean_prediction_MSE": 0.005452099921038371,
+          "prediction_recovery_ratio": 0.13329536419658883,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.5863070405852664e-14,
+          "output_interaction_max_abs": 7.152557373046875e-07,
+          "risk_interaction": 0.0003051746836346593,
+          "damage_patch_alignment": 0.0003051639528080091,
+          "baseline_error_response": 1.0763376344904533e-08,
+          "patch_energy_difference": -3.254969427671228e-11,
+          "risk_identity_absolute_residual": 4.0512659424887126e-19,
+          "damaged_clean_prediction_MSE": 0.0002890191535235187,
+          "repaired_clean_prediction_MSE": 0.00048118221517377054,
+          "prediction_recovery_ratio": -0.6648800237200012,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.008571216300378097,
+          "output_interaction_max_abs": 0.41682493686676025,
+          "risk_interaction": 0.011007131300375634,
+          "damage_patch_alignment": 0.0022907384496838002,
+          "baseline_error_response": 0.007750600548013343,
+          "patch_energy_difference": 0.0009657923026784966,
+          "risk_identity_absolute_residual": 6.613633252161577e-18,
+          "damaged_clean_prediction_MSE": 0.006290608929285841,
+          "repaired_clean_prediction_MSE": 0.008931054481111249,
+          "prediction_recovery_ratio": -0.41974403138189875,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3907413632177623e-14,
+          "output_interaction_max_abs": 4.76837158203125e-07,
+          "risk_interaction": -0.0003051613067351481,
+          "damage_patch_alignment": -0.00030516408551926405,
+          "baseline_error_response": 2.738313293925522e-09,
+          "patch_energy_difference": 4.047082452691454e-11,
+          "risk_identity_absolute_residual": 2.5034608831208194e-18,
+          "damaged_clean_prediction_MSE": 0.0002890191535235187,
+          "repaired_clean_prediction_MSE": 0.0010915104229488478,
+          "prediction_recovery_ratio": -2.7766023796067443,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.005262830261517618,
+          "output_interaction_max_abs": 0.3685276061296463,
+          "risk_interaction": 0.0015033500711053257,
+          "damage_patch_alignment": 0.002883684534495016,
+          "baseline_error_response": -0.0011780479512112814,
+          "patch_energy_difference": -0.00020228651217840682,
+          "risk_identity_absolute_residual": 2.1141942363467336e-18,
+          "damaged_clean_prediction_MSE": 0.006290608929285841,
+          "repaired_clean_prediction_MSE": 0.007740861728555878,
+          "prediction_recovery_ratio": -0.2305425143372697,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.453796528690446e-14,
+          "output_interaction_max_abs": 8.344650268554688e-07,
+          "risk_interaction": 3.092178519500302e-05,
+          "damage_patch_alignment": 3.092346010412974e-05,
+          "baseline_error_response": -1.888765497440475e-09,
+          "patch_energy_difference": 2.1385637266727086e-10,
+          "risk_identity_absolute_residual": 1.942773462104307e-18,
+          "damaged_clean_prediction_MSE": 0.0002890191535235187,
+          "repaired_clean_prediction_MSE": 0.0010421850396626683,
+          "prediction_recovery_ratio": -2.6059376237079084,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "H1_l1_t12_p14": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.007682319096252743,
+          "output_interaction_max_abs": 0.37548965215682983,
+          "risk_interaction": 0.005058061814533584,
+          "damage_patch_alignment": 0.005340936727796518,
+          "baseline_error_response": -0.0015601574108611259,
+          "patch_energy_difference": 0.0012772824975981834,
+          "risk_identity_absolute_residual": 8.673617379884035e-18,
+          "damaged_clean_prediction_MSE": 0.006290608929285841,
+          "repaired_clean_prediction_MSE": 0.006024148417154316,
+          "prediction_recovery_ratio": 0.04235846086235329,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3684772716057725e-14,
+          "output_interaction_max_abs": 8.344650268554688e-07,
+          "risk_interaction": 0.00034750214691775527,
+          "damage_patch_alignment": 0.00034749890057132683,
+          "baseline_error_response": 3.1658030231132776e-09,
+          "patch_energy_difference": 8.054340389627469e-11,
+          "risk_identity_absolute_residual": 1.4286186728566588e-18,
+          "damaged_clean_prediction_MSE": 0.0002890191535235187,
+          "repaired_clean_prediction_MSE": 0.0006828742036329933,
+          "prediction_recovery_ratio": -1.3627299274386147,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.007702561527071128,
+          "output_interaction_max_abs": 0.41557812690734863,
+          "risk_interaction": 0.011312219122086032,
+          "damage_patch_alignment": 0.0032029462053799786,
+          "baseline_error_response": 0.009911583351575012,
+          "patch_energy_difference": -0.0018023104348689582,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.006290608929285841,
+          "repaired_clean_prediction_MSE": 0.008595696678073653,
+          "prediction_recovery_ratio": -0.36643316643902457,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3727896857468336e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": -0.000347496540111222,
+          "damage_patch_alignment": -0.0003474988760496527,
+          "baseline_error_response": 2.517944586969095e-09,
+          "patch_energy_difference": -1.8200615797478448e-10,
+          "risk_identity_absolute_residual": 1.7021325598422178e-18,
+          "damaged_clean_prediction_MSE": 0.0002890191535235187,
+          "repaired_clean_prediction_MSE": 0.0013778720422651758,
+          "prediction_recovery_ratio": -3.7674073689135366,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.0052941690729238385,
+          "output_interaction_max_abs": 0.3355410099029541,
+          "risk_interaction": 0.0035333332588556527,
+          "damage_patch_alignment": 0.0030873753644244093,
+          "baseline_error_response": 0.0009273081272746225,
+          "patch_energy_difference": -0.0004813502328433812,
+          "risk_identity_absolute_residual": 2.0057740190981832e-18,
+          "damaged_clean_prediction_MSE": 0.006290608929285841,
+          "repaired_clean_prediction_MSE": 0.007496395358782345,
+          "prediction_recovery_ratio": -0.1916803989965079,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.370288566860181e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": 2.2294688872610726e-05,
+          "damage_patch_alignment": 2.2289409999476633e-05,
+          "baseline_error_response": 4.974460779975958e-09,
+          "patch_energy_difference": 3.044123594758458e-10,
+          "risk_identity_absolute_residual": 5.3591898649871465e-18,
+          "damaged_clean_prediction_MSE": 0.0002890191535235187,
+          "repaired_clean_prediction_MSE": 0.001153725780878996,
+          "prediction_recovery_ratio": -2.9918661680846435,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "H4_l0_t12_p13": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.008223433228155164,
+          "output_interaction_max_abs": 0.5190381407737732,
+          "risk_interaction": 0.0118103045255657,
+          "damage_patch_alignment": 0.004984127668641465,
+          "baseline_error_response": 0.005413595883904533,
+          "patch_energy_difference": 0.001412580973019705,
+          "risk_identity_absolute_residual": 3.686287386450715e-18,
+          "damaged_clean_prediction_MSE": 0.0038853070495563297,
+          "repaired_clean_prediction_MSE": 0.0025677614816030994,
+          "prediction_recovery_ratio": 0.33910976691113337,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.006121202173733398,
+          "output_interaction_max_abs": 0.5817783325910568,
+          "risk_interaction": 0.0030525674654469483,
+          "damage_patch_alignment": 0.0015221550151750373,
+          "baseline_error_response": 0.0014621739430509756,
+          "patch_energy_difference": 6.82385072209361e-05,
+          "risk_identity_absolute_residual": 7.318364664277155e-19,
+          "damaged_clean_prediction_MSE": 0.0038853070495563297,
+          "repaired_clean_prediction_MSE": 0.00578128170605836,
+          "prediction_recovery_ratio": -0.4879857968287309,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.0061348151534387566,
+          "output_interaction_max_abs": 0.5225229561328888,
+          "risk_interaction": 0.0037276092317346135,
+          "damage_patch_alignment": 0.002664704033616902,
+          "baseline_error_response": -6.855048095655953e-05,
+          "patch_energy_difference": 0.0011314556790742712,
+          "risk_identity_absolute_residual": 4.336808689942018e-19,
+          "damaged_clean_prediction_MSE": 0.0038853070495563297,
+          "repaired_clean_prediction_MSE": 0.005917244561644022,
+          "prediction_recovery_ratio": -0.5229799051067852,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "H4_l0_t12_p14": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.0061849572103602835,
+          "output_interaction_max_abs": 0.5869130790233612,
+          "risk_interaction": 0.007784840040430547,
+          "damage_patch_alignment": 0.003433673445662936,
+          "baseline_error_response": 0.002821742247557002,
+          "patch_energy_difference": 0.0015294243472106085,
+          "risk_identity_absolute_residual": 4.336808689942018e-19,
+          "damaged_clean_prediction_MSE": 0.0038853070495563297,
+          "repaired_clean_prediction_MSE": 0.0032936467043225897,
+          "prediction_recovery_ratio": 0.15228148964476373,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.004712577427673321,
+          "output_interaction_max_abs": 0.5527714192867279,
+          "risk_interaction": 0.003869744069852208,
+          "damage_patch_alignment": 0.0003175476757709811,
+          "baseline_error_response": 0.0029774770034759856,
+          "patch_energy_difference": 0.0005747193906052417,
+          "risk_identity_absolute_residual": 8.673617379884035e-19,
+          "damaged_clean_prediction_MSE": 0.0038853070495563297,
+          "repaired_clean_prediction_MSE": 0.005736651620989538,
+          "prediction_recovery_ratio": -0.47649890930618133,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.005436877727975604,
+          "output_interaction_max_abs": 0.5187937021255493,
+          "risk_interaction": 0.0048000056755719105,
+          "damage_patch_alignment": 0.002096008687513108,
+          "baseline_error_response": 0.0013845444507962251,
+          "patch_energy_difference": 0.0013194525372625795,
+          "risk_identity_absolute_residual": 2.168404344971009e-18,
+          "damaged_clean_prediction_MSE": 0.0038853070495563297,
+          "repaired_clean_prediction_MSE": 0.005868321258168146,
+          "prediction_recovery_ratio": -0.5103880293935226,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "H4_l1_t12_p13": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.005964392123354095,
+          "output_interaction_max_abs": 0.5166680812835693,
+          "risk_interaction": 0.0009313176686862675,
+          "damage_patch_alignment": 0.005798373656339477,
+          "baseline_error_response": -0.004745963060507172,
+          "patch_energy_difference": -0.00012109292714603209,
+          "risk_identity_absolute_residual": 5.5294310796760726e-18,
+          "damaged_clean_prediction_MSE": 0.004685302330194657,
+          "repaired_clean_prediction_MSE": 0.003929809513691002,
+          "prediction_recovery_ratio": 0.16124739947619704,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3362439410177784e-14,
+          "output_interaction_max_abs": 7.152557373046875e-07,
+          "risk_interaction": 0.0008932152209902516,
+          "damage_patch_alignment": 0.0008932220927361954,
+          "baseline_error_response": -6.908622120156442e-09,
+          "patch_energy_difference": 3.687617835331121e-11,
+          "risk_identity_absolute_residual": 1.951858386771977e-18,
+          "damaged_clean_prediction_MSE": 0.0006070187064245365,
+          "repaired_clean_prediction_MSE": 0.00022790442957316682,
+          "prediction_recovery_ratio": 0.6245512252570102,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.006121047496721429,
+          "output_interaction_max_abs": 0.4277368187904358,
+          "risk_interaction": 0.00017323303292092647,
+          "damage_patch_alignment": 0.00033842225032287,
+          "baseline_error_response": -3.6426977198769596e-05,
+          "patch_energy_difference": -0.0001287622402031753,
+          "risk_identity_absolute_residual": 1.328147661294743e-18,
+          "damaged_clean_prediction_MSE": 0.004685302330194657,
+          "repaired_clean_prediction_MSE": 0.008865610039975831,
+          "prediction_recovery_ratio": -0.8922172818690866,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3923920610253715e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": -0.0008932259247091812,
+          "damage_patch_alignment": -0.0008932219662437784,
+          "baseline_error_response": -3.971410000323542e-09,
+          "patch_energy_difference": 1.2944600740697615e-11,
+          "risk_identity_absolute_residual": 3.212537061403832e-18,
+          "damaged_clean_prediction_MSE": 0.0006070187064245365,
+          "repaired_clean_prediction_MSE": 0.0020143484444052513,
+          "prediction_recovery_ratio": -2.318428943104856,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.00555620070815374,
+          "output_interaction_max_abs": 0.3769877552986145,
+          "risk_interaction": 0.004660049540973732,
+          "damage_patch_alignment": 0.002775893114336221,
+          "baseline_error_response": 0.002569877265666592,
+          "patch_energy_difference": -0.0006857208390290755,
+          "risk_identity_absolute_residual": 4.9873299934333204e-18,
+          "damaged_clean_prediction_MSE": 0.004685302330194657,
+          "repaired_clean_prediction_MSE": 0.007744882144680086,
+          "prediction_recovery_ratio": -0.653016518222916,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3067441551571635e-14,
+          "output_interaction_max_abs": 4.76837158203125e-07,
+          "risk_interaction": -8.678306436469402e-05,
+          "damage_patch_alignment": -8.678473703905632e-05,
+          "baseline_error_response": 1.7197252102855566e-09,
+          "patch_energy_difference": -4.705083959705321e-11,
+          "risk_identity_absolute_residual": 8.388689227625857e-18,
+          "damaged_clean_prediction_MSE": 0.0006070187064245365,
+          "repaired_clean_prediction_MSE": 0.0016838835028257799,
+          "prediction_recovery_ratio": -1.7740224230389798,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "H4_l1_t12_p14": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.006038861266183615,
+          "output_interaction_max_abs": 0.5075929164886475,
+          "risk_interaction": -0.005435172176451707,
+          "damage_patch_alignment": 0.004483053034670083,
+          "baseline_error_response": -0.009182446223974504,
+          "patch_energy_difference": -0.0007357789871472824,
+          "risk_identity_absolute_residual": 2.8189256484623115e-18,
+          "damaged_clean_prediction_MSE": 0.004685302330194657,
+          "repaired_clean_prediction_MSE": 0.00535073727774564,
+          "prediction_recovery_ratio": -0.14202604243114814,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3094316212922119e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": 0.0009586456711291647,
+          "damage_patch_alignment": 0.0009586482078792408,
+          "baseline_error_response": -2.5183362594045314e-09,
+          "patch_energy_difference": -1.841381992088824e-11,
+          "risk_identity_absolute_residual": 3.1592794512549117e-18,
+          "damaged_clean_prediction_MSE": 0.0006070187064245365,
+          "repaired_clean_prediction_MSE": 0.00042583337038486425,
+          "prediction_recovery_ratio": 0.29848394147009183,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.0044932494194717,
+          "output_interaction_max_abs": 0.31293004751205444,
+          "risk_interaction": 0.002847578851853158,
+          "damage_patch_alignment": 0.001196644570784533,
+          "baseline_error_response": 0.001506427662645854,
+          "patch_energy_difference": 0.0001445066184227745,
+          "risk_identity_absolute_residual": 3.848917712323541e-18,
+          "damaged_clean_prediction_MSE": 0.004685302330194657,
+          "repaired_clean_prediction_MSE": 0.007639874209069251,
+          "prediction_recovery_ratio": -0.6306043176410865,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.2456615600120458e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": -0.0009586465202344389,
+          "damage_patch_alignment": -0.0009586480923583346,
+          "baseline_error_response": 1.5936853635951835e-09,
+          "patch_energy_difference": -2.1561461221054207e-11,
+          "risk_identity_absolute_residual": 6.6817809405170645e-18,
+          "damaged_clean_prediction_MSE": 0.0006070187064245365,
+          "repaired_clean_prediction_MSE": 0.0023431295504628734,
+          "prediction_recovery_ratio": -2.8600615197913464,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.005114800605430056,
+          "output_interaction_max_abs": 0.37113118171691895,
+          "risk_interaction": 0.004943889472763944,
+          "damage_patch_alignment": 0.0026095355051848216,
+          "baseline_error_response": 0.0031998688183962542,
+          "patch_energy_difference": -0.0008655148508171305,
+          "risk_identity_absolute_residual": 1.0842021724855044e-18,
+          "damaged_clean_prediction_MSE": 0.004685302330194657,
+          "repaired_clean_prediction_MSE": 0.007578429757265426,
+          "prediction_recovery_ratio": -0.6174900194648849,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.2634262126082207e-14,
+          "output_interaction_max_abs": 7.152557373046875e-07,
+          "risk_interaction": -8.449594357348543e-05,
+          "damage_patch_alignment": -8.450507598573476e-05,
+          "baseline_error_response": 9.266039159405469e-09,
+          "patch_energy_difference": -1.336269012108815e-10,
+          "risk_identity_absolute_residual": 8.864624963851105e-18,
+          "damaged_clean_prediction_MSE": 0.0006070187064245365,
+          "repaired_clean_prediction_MSE": 0.0017815773127220838,
+          "prediction_recovery_ratio": -1.934962784287055,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "C_l0_t12_p13": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.008558440475783309,
+          "output_interaction_max_abs": 0.6209029853343964,
+          "risk_interaction": 0.004594055325340546,
+          "damage_patch_alignment": 0.004048923776001151,
+          "baseline_error_response": -0.0026798223190291504,
+          "patch_energy_difference": 0.003224953868368545,
+          "risk_identity_absolute_residual": 4.336808689942018e-19,
+          "damaged_clean_prediction_MSE": 0.003566851314596828,
+          "repaired_clean_prediction_MSE": 0.0019949250473452317,
+          "prediction_recovery_ratio": 0.4407041753657387,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.005489733084708081,
+          "output_interaction_max_abs": 0.6621928662061691,
+          "risk_interaction": 0.00648950253430874,
+          "damage_patch_alignment": 0.0006897955145655967,
+          "baseline_error_response": 0.0056679775598664104,
+          "patch_energy_difference": 0.00013172945987673272,
+          "risk_identity_absolute_residual": 2.710505431213761e-20,
+          "damaged_clean_prediction_MSE": 0.003566851314596828,
+          "repaired_clean_prediction_MSE": 0.005900851759637395,
+          "prediction_recovery_ratio": -0.6543587716956423,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.006172290835386797,
+          "output_interaction_max_abs": 0.6380425691604614,
+          "risk_interaction": 0.002601331473374453,
+          "damage_patch_alignment": 0.002763593332299224,
+          "baseline_error_response": -0.0008138975390102445,
+          "patch_energy_difference": 0.0006516356800854723,
+          "risk_identity_absolute_residual": 1.0842021724855044e-18,
+          "damaged_clean_prediction_MSE": 0.003566851314596828,
+          "repaired_clean_prediction_MSE": 0.005870861404857347,
+          "prediction_recovery_ratio": -0.645950696299475,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "C_l0_t12_p14": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.006163783356238282,
+          "output_interaction_max_abs": 0.4578295350074768,
+          "risk_interaction": 0.00335235709041461,
+          "damage_patch_alignment": 0.0027551275859476103,
+          "baseline_error_response": -0.002012963004547911,
+          "patch_energy_difference": 0.0026101925090149113,
+          "risk_identity_absolute_residual": 4.336808689942018e-19,
+          "damaged_clean_prediction_MSE": 0.003566851314596828,
+          "repaired_clean_prediction_MSE": 0.0034453814137623802,
+          "prediction_recovery_ratio": 0.034055218488460604,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.005517588415359162,
+          "output_interaction_max_abs": 0.6621928662061691,
+          "risk_interaction": 0.005025194213561318,
+          "damage_patch_alignment": 0.0007233901591737573,
+          "baseline_error_response": 0.004082967964236605,
+          "patch_energy_difference": 0.00021883609015095612,
+          "risk_identity_absolute_residual": 8.131516293641283e-19,
+          "damaged_clean_prediction_MSE": 0.003566851314596828,
+          "repaired_clean_prediction_MSE": 0.005696126271508448,
+          "prediction_recovery_ratio": -0.5969620735795369,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.005250579386421728,
+          "output_interaction_max_abs": 0.6380425691604614,
+          "risk_interaction": 0.0010525504279117039,
+          "damage_patch_alignment": 0.0022011082917885905,
+          "baseline_error_response": -0.0018469233327473703,
+          "patch_energy_difference": 0.0006983654688704857,
+          "risk_identity_absolute_residual": 1.951563910473908e-18,
+          "damaged_clean_prediction_MSE": 0.003566851314596828,
+          "repaired_clean_prediction_MSE": 0.0060232235638258335,
+          "prediction_recovery_ratio": -0.6886668471928319,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 0.0,
+          "output_interaction_max_abs": 0.0,
+          "risk_interaction": 0.0,
+          "damage_patch_alignment": -0.0,
+          "baseline_error_response": 0.0,
+          "patch_energy_difference": 0.0,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.0,
+          "repaired_clean_prediction_MSE": 0.0,
+          "prediction_recovery_ratio": null,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "C_l1_t12_p13": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.0047692707374275105,
+          "output_interaction_max_abs": 0.45120853185653687,
+          "risk_interaction": -0.0016762489048212943,
+          "damage_patch_alignment": 0.004204966013261062,
+          "baseline_error_response": -0.006966430599597495,
+          "patch_energy_difference": 0.0010852156815151423,
+          "risk_identity_absolute_residual": 3.2526065174565133e-18,
+          "damaged_clean_prediction_MSE": 0.004751735078359438,
+          "repaired_clean_prediction_MSE": 0.003665638292483484,
+          "prediction_recovery_ratio": 0.22856846351184512,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.4219474122473263e-14,
+          "output_interaction_max_abs": 7.152557373046875e-07,
+          "risk_interaction": 0.0014769781762289304,
+          "damage_patch_alignment": 0.0014769719817678167,
+          "baseline_error_response": 6.027797258550679e-09,
+          "patch_energy_difference": 1.666638619647609e-10,
+          "risk_identity_absolute_residual": 6.759589271246559e-18,
+          "damaged_clean_prediction_MSE": 0.0009494959600035882,
+          "repaired_clean_prediction_MSE": 0.00013299970832329064,
+          "prediction_recovery_ratio": 0.859925988181363,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.005570158141457088,
+          "output_interaction_max_abs": 0.39821915328502655,
+          "risk_interaction": 0.0033269292699135864,
+          "damage_patch_alignment": 0.0001398130790714694,
+          "baseline_error_response": 0.004576389199910202,
+          "patch_energy_difference": -0.0013892730090680897,
+          "risk_identity_absolute_residual": 4.553649124439119e-18,
+          "damaged_clean_prediction_MSE": 0.004751735078359438,
+          "repaired_clean_prediction_MSE": 0.008790877845988993,
+          "prediction_recovery_ratio": -0.8500353451994405,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3968942105466176e-14,
+          "output_interaction_max_abs": 7.152557373046875e-07,
+          "risk_interaction": -0.001476967386870151,
+          "damage_patch_alignment": -0.0014769719686333446,
+          "baseline_error_response": 4.6884765541035355e-09,
+          "patch_energy_difference": -1.067133548139556e-10,
+          "risk_identity_absolute_residual": 5.618095742355019e-18,
+          "damaged_clean_prediction_MSE": 0.0009494959600035882,
+          "repaired_clean_prediction_MSE": 0.0030869435475508623,
+          "prediction_recovery_ratio": -2.2511392123661027,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.0053677590926790655,
+          "output_interaction_max_abs": 0.37518393993377686,
+          "risk_interaction": 0.0032004002572772784,
+          "damage_patch_alignment": 0.0025792594054316704,
+          "baseline_error_response": 0.0012281307142088548,
+          "patch_energy_difference": -0.0006069898623632477,
+          "risk_identity_absolute_residual": 8.673617379884035e-19,
+          "damaged_clean_prediction_MSE": 0.004751735078359438,
+          "repaired_clean_prediction_MSE": 0.007771894582452506,
+          "prediction_recovery_ratio": -0.6355908850742988,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3573567454478602e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": -7.415098787222634e-05,
+          "damage_patch_alignment": -7.415773587215752e-05,
+          "baseline_error_response": 6.605628622595643e-09,
+          "patch_energy_difference": 1.4237130699764006e-10,
+          "risk_identity_absolute_residual": 1.5928355311443612e-18,
+          "damaged_clean_prediction_MSE": 0.0009494959600035882,
+          "repaired_clean_prediction_MSE": 0.0019425181139939042,
+          "prediction_recovery_ratio": -1.045841368284035,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    },
+    "C_l1_t12_p14": {
+      "target_self_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.00521893602055485,
+          "output_interaction_max_abs": 0.35989660024642944,
+          "risk_interaction": 0.001574833249590092,
+          "damage_patch_alignment": 0.0037073024104343714,
+          "baseline_error_response": -0.0010666696074495285,
+          "patch_energy_difference": -0.001065799553394751,
+          "risk_identity_absolute_residual": 0.0,
+          "damaged_clean_prediction_MSE": 0.004751735078359438,
+          "repaired_clean_prediction_MSE": 0.005767491702440951,
+          "prediction_recovery_ratio": -0.21376541564943663,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3277871640723915e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": 0.0013489462790145907,
+          "damage_patch_alignment": 0.0013489416985174047,
+          "baseline_error_response": 4.487080339649131e-09,
+          "patch_energy_difference": 9.341685213467947e-11,
+          "risk_identity_absolute_residual": 5.8103068741133536e-18,
+          "damaged_clean_prediction_MSE": 0.0009494959600035882,
+          "repaired_clean_prediction_MSE": 0.0002911146796431284,
+          "prediction_recovery_ratio": 0.6934008232725621,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "target_reverse_delta": {
+        "natural": {
+          "output_interaction_MSE": 0.004315485883994074,
+          "output_interaction_max_abs": 0.32098235189914703,
+          "risk_interaction": -0.005289666315310123,
+          "damage_patch_alignment": 0.0004863447477420747,
+          "baseline_error_response": -0.005689580394665778,
+          "patch_energy_difference": -8.643066838642075e-05,
+          "risk_identity_absolute_residual": 1.4365678785432934e-18,
+          "damaged_clean_prediction_MSE": 0.004751735078359438,
+          "repaired_clean_prediction_MSE": 0.007307550488174723,
+          "prediction_recovery_ratio": -0.5378699291244355,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.2530368452903784e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": -0.0013489385355178937,
+          "damage_patch_alignment": -0.0013489417313775353,
+          "baseline_error_response": 3.371595589034394e-09,
+          "patch_energy_difference": -1.7573594080053274e-10,
+          "risk_identity_absolute_residual": 6.638866396747507e-18,
+          "damaged_clean_prediction_MSE": 0.0009494959600035882,
+          "repaired_clean_prediction_MSE": 0.002988998191074574,
+          "prediction_recovery_ratio": -2.147984106286538,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      },
+      "norm_random_0": {
+        "natural": {
+          "output_interaction_MSE": 0.004904114109160122,
+          "output_interaction_max_abs": 0.331082746386528,
+          "risk_interaction": 0.0002771435180895028,
+          "damage_patch_alignment": 0.0022377145074593905,
+          "baseline_error_response": -0.0012290722065662844,
+          "patch_energy_difference": -0.0007314987828036043,
+          "risk_identity_absolute_residual": 9.75781955236954e-19,
+          "damaged_clean_prediction_MSE": 0.004751735078359438,
+          "repaired_clean_prediction_MSE": 0.007668494623344254,
+          "prediction_recovery_ratio": -0.6138304212851537,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+        },
+        "fixed_clean_events": {
+          "output_interaction_MSE": 1.3478638778013918e-14,
+          "output_interaction_max_abs": 5.960464477539062e-07,
+          "risk_interaction": -8.5304122933987e-05,
+          "damage_patch_alignment": -8.53068068667473e-05,
+          "baseline_error_response": 2.739652224739402e-09,
+          "patch_energy_difference": -5.571945964517877e-11,
+          "risk_identity_absolute_residual": 4.796876620476661e-18,
+          "damaged_clean_prediction_MSE": 0.0009494959600035882,
+          "repaired_clean_prediction_MSE": 0.0020290428186052235,
+          "prediction_recovery_ratio": -1.1369683538174882,
+          "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model.",
+          "maximum_forced_emit_policy_gap": 0.0
+        }
+      }
+    }
+  },
+  "joint_contexts": 30,
+  "joint_subset_conditions": 120,
+  "joint_results": {
+    "H1_t3_p4_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0005391201785924358,
+        "joint_output_interaction_max_abs": 0.3688685894012451,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3295858321251508,
+            "capped_MSE4": 0.32371747723674327,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5836636394362686,
+            "capped_MSE4": 0.38284036346078965,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3248544361566905,
+            "capped_MSE4": 0.32217945483342486,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5660217598525215,
+            "capped_MSE4": 0.3799487380653766,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.006825354415923357,
+      "conditional_effect_A_with_B_MSE": 0.006957417353987694
+    },
+    "H1_t3_p4_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.00028626554140252477,
+        "joint_output_interaction_max_abs": 0.30679185688495636,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3283680073004411,
+            "capped_MSE4": 0.3235124321041225,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5813825325789845,
+            "capped_MSE4": 0.38266187212998715,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3227570949798735,
+            "capped_MSE4": 0.32165503123972716,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5662338956697162,
+            "capped_MSE4": 0.37981894326902715,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.328504208758991,
+            "capped_MSE4": 0.3234690064850097,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5770367100058933,
+            "capped_MSE4": 0.38191705379513247,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.2898944318294525,
+      "conditional_effect_A_without_B_MSE": 0.00591647531837225,
+      "conditional_effect_A_with_B_MSE": 0.006107885390520096
+    },
+    "H1_t3_p14_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.004782251483874621,
+        "joint_output_interaction_max_abs": 0.5764375925064087,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3168166458902681,
+            "capped_MSE4": 0.32016933674729786,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5703199102937893,
+            "capped_MSE4": 0.38064722161114095,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3250327297017597,
+            "capped_MSE4": 0.32261016118816543,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5802853648420352,
+            "capped_MSE4": 0.38214506010578775,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0036688861437141895,
+      "conditional_effect_A_with_B_MSE": 0.003107611322775483
+    },
+    "H1_t3_p14_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.002017434534447671,
+        "joint_output_interaction_max_abs": 0.4114944338798523,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3222602687484573,
+            "capped_MSE4": 0.3215302424618451,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5711718526777183,
+            "capped_MSE4": 0.38098992118303443,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3185326417910452,
+            "capped_MSE4": 0.3204809518194938,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5751388100037085,
+            "capped_MSE4": 0.3815384942385068,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3181683107280249,
+            "capped_MSE4": 0.3203898690537388,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5716565582544124,
+            "capped_MSE4": 0.3807976451449915,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.5013170838356018,
+      "conditional_effect_A_without_B_MSE": 0.002588394097983837,
+      "conditional_effect_A_with_B_MSE": 0.0026632738299667835
+    },
+    "H1_t3_p15_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H1_t3_p15_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3205836373879354,
+            "capped_MSE4": 0.32111108462171467,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5700545084956614,
+            "capped_MSE4": 0.380580871161609,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.323555516320266,
+            "capped_MSE4": 0.32175574018405634,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.575416523153512,
+            "capped_MSE4": 0.3815726584549626,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.323555516320266,
+            "capped_MSE4": 0.32175574018405634,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.575416523153512,
+            "capped_MSE4": 0.3815726584549626,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.35575783252716064,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H1_t12_p13_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.005572515606244626,
+        "joint_output_interaction_max_abs": 0.5853240415453911,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3288870354485334,
+            "capped_MSE4": 0.32393314185938016,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5906608918717162,
+            "capped_MSE4": 0.3855655593987598,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3305058033361195,
+            "capped_MSE4": 0.3239784295967554,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5785098465315914,
+            "capped_MSE4": 0.3812593202895912,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.004940828774124384,
+      "conditional_effect_A_with_B_MSE": 0.00585268996655941
+    },
+    "H1_t12_p13_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0028482299873093054,
+        "joint_output_interaction_max_abs": 0.40652722120285034,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3286725588517867,
+            "capped_MSE4": 0.32387952271019343,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5930415172940047,
+            "capped_MSE4": 0.3861607157543319,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3198676591990268,
+            "capped_MSE4": 0.32143523531334006,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5745322189339164,
+            "capped_MSE4": 0.3814655179623132,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3261497654484615,
+            "capped_MSE4": 0.32300576187569874,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5835086894971275,
+            "capped_MSE4": 0.38362703660723924,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.4724275469779968,
+      "conditional_effect_A_without_B_MSE": 0.00353861297480762,
+      "conditional_effect_A_with_B_MSE": 0.0036827786825597286
+    },
+    "H1_t12_p14_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.004910898131365178,
+        "joint_output_interaction_max_abs": 0.5853240415453911,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3274217586194683,
+            "capped_MSE4": 0.32356682265211384,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5881780461641075,
+            "capped_MSE4": 0.38494484797185763,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3261817596419179,
+            "capped_MSE4": 0.32289741867320493,
+            "derived_sign": 0.484375
+          },
+          "C": {
+            "MSE": 1.5857180009074492,
+            "capped_MSE4": 0.3830613588835556,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0041768187656998634,
+      "conditional_effect_A_with_B_MSE": 0.003997853025794029
+    },
+    "H1_t12_p14_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0014437908521159107,
+        "joint_output_interaction_max_abs": 0.3577485680580139,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3324113835895846,
+            "capped_MSE4": 0.32481422889464295,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5841458903347925,
+            "capped_MSE4": 0.38416401730358185,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.319198905296858,
+            "capped_MSE4": 0.321483691588548,
+            "derived_sign": 0.484375
+          },
+          "C": {
+            "MSE": 1.584108355168878,
+            "capped_MSE4": 0.382720561652401,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3235628782472328,
+            "capped_MSE4": 0.3225746848261417,
+            "derived_sign": 0.484375
+          },
+          "C": {
+            "MSE": 1.578564249252823,
+            "capped_MSE4": 0.38253005339118407,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.45312219858169556,
+      "conditional_effect_A_without_B_MSE": 0.002549149561673403,
+      "conditional_effect_A_with_B_MSE": 0.0028698339592665434
+    },
+    "H1_t12_p15_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H1_t12_p15_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3300462555173922,
+            "capped_MSE4": 0.3242229468765948,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5890039446314885,
+            "capped_MSE4": 0.3841916322417996,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3244845746310994,
+            "capped_MSE4": 0.3229106807707506,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.579247365152134,
+            "capped_MSE4": 0.3816327969608144,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3244845746310994,
+            "capped_MSE4": 0.3229106807707506,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.579247365152134,
+            "capped_MSE4": 0.3816327969608144,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.439470499753952,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H1_t15_p15_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3289762943863739,
+            "capped_MSE4": 0.3236719922946152,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5747919718156067,
+            "capped_MSE4": 0.3823996597729378,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3289762943863739,
+            "capped_MSE4": 0.3236719922946152,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5747919718156067,
+            "capped_MSE4": 0.3823996597729378,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H1_t15_p15_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3289762943863739,
+            "capped_MSE4": 0.3236719922946152,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5747919718156067,
+            "capped_MSE4": 0.3823996597729378,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3289762943863739,
+            "capped_MSE4": 0.3236719922946152,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5747919718156067,
+            "capped_MSE4": 0.3823996597729378,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.329511163410832,
+            "capped_MSE4": 0.32372976955210137,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297775456628,
+            "capped_MSE4": 0.38275616316566974,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.329511163410832,
+            "capped_MSE4": 0.32372976955210137,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297775456628,
+            "capped_MSE4": 0.38275616316566974,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 2.384185791015625e-07,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H4_t12_p13_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0059290363893667285,
+        "joint_output_interaction_max_abs": 0.5949072241783142,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3271032973496628,
+            "capped_MSE4": 0.3229946897395606,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5856348998602452,
+            "capped_MSE4": 0.3832440503978374,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.331168746010623,
+            "capped_MSE4": 0.32419028571208686,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5721420062312288,
+            "capped_MSE4": 0.3800598491582702,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0056080324575304985,
+      "conditional_effect_A_with_B_MSE": 0.005311213433742523
+    },
+    "H4_t12_p13_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0022701363264204934,
+        "joint_output_interaction_max_abs": 0.4380722641944885,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3363794009415833,
+            "capped_MSE4": 0.32508168328981063,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5828613730523249,
+            "capped_MSE4": 0.3823964839871927,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.340080681436901,
+            "capped_MSE4": 0.32606417271911736,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5727923116918394,
+            "capped_MSE4": 0.37988178043582416,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3318076128504674,
+            "capped_MSE4": 0.3241805010054796,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5737458041793775,
+            "capped_MSE4": 0.3801369162461784,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.36921265721321106,
+      "conditional_effect_A_without_B_MSE": 0.003548721317201853,
+      "conditional_effect_A_with_B_MSE": 0.0034513529390096664
+    },
+    "H4_t12_p14_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.005232534737203522,
+        "joint_output_interaction_max_abs": 0.4920925721526146,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3325508965151478,
+            "capped_MSE4": 0.32412455718320177,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5782277649906924,
+            "capped_MSE4": 0.3813922666804491,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3304719859102179,
+            "capped_MSE4": 0.3241815512651728,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.579302246414868,
+            "capped_MSE4": 0.38184990920417994,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0047665806487202644,
+      "conditional_effect_A_with_B_MSE": 0.004549422767013311
+    },
+    "H4_t12_p14_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0014857713907986938,
+        "joint_output_interaction_max_abs": 0.36582016944885254,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3318533317557595,
+            "capped_MSE4": 0.3239501659933547,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5822671318985566,
+            "capped_MSE4": 0.38224792369875077,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3312192418957611,
+            "capped_MSE4": 0.32399944041963324,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5848666807254705,
+            "capped_MSE4": 0.38240614108877913,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.324884972030337,
+            "capped_MSE4": 0.3224273211700292,
+            "derived_sign": 0.49609375
+          },
+          "C": {
+            "MSE": 1.5896391576088735,
+            "capped_MSE4": 0.3832704986446013,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.4098587930202484,
+      "conditional_effect_A_without_B_MSE": 0.0028174903709441423,
+      "conditional_effect_A_with_B_MSE": 0.002775884233415127
+    },
+    "H4_t12_p15_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H4_t12_p15_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3338131562063862,
+            "capped_MSE4": 0.3244560759129441,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.57525513496357,
+            "capped_MSE4": 0.3806336040362333,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3345002708481204,
+            "capped_MSE4": 0.3246463406211647,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5861388789892437,
+            "capped_MSE4": 0.3826761470656893,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3345002708481204,
+            "capped_MSE4": 0.3246463406211647,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5861388789892437,
+            "capped_MSE4": 0.3826761470656893,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.5421993732452393,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H4_t15_p15_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3276114133259531,
+            "capped_MSE4": 0.32324678647716487,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5729062338453985,
+            "capped_MSE4": 0.3811016067798154,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3276114133259531,
+            "capped_MSE4": 0.32324678647716487,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5729062338453985,
+            "capped_MSE4": 0.3811016067798154,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "H4_t15_p15_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.3276114133259531,
+            "capped_MSE4": 0.32324678647716487,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5729062338453985,
+            "capped_MSE4": 0.3811016067798154,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3276114133259531,
+            "capped_MSE4": 0.32324678647716487,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5729062338453985,
+            "capped_MSE4": 0.3811016067798154,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111620832716,
+            "capped_MSE4": 0.3237297688714897,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297746929108,
+            "capped_MSE4": 0.38275616273713764,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111620832716,
+            "capped_MSE4": 0.3237297688714897,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297746929108,
+            "capped_MSE4": 0.38275616273713764,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 1.1920928955078125e-07,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "C_t12_p13_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.003334291826558698,
+        "joint_output_interaction_max_abs": 0.5424060821533203,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3285631839575713,
+            "capped_MSE4": 0.3233500378481594,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5825543228006251,
+            "capped_MSE4": 0.3822395284777736,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3320314562899631,
+            "capped_MSE4": 0.3243598428352163,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5796163759212063,
+            "capped_MSE4": 0.38167306563686915,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0036052479408681393,
+      "conditional_effect_A_with_B_MSE": 0.003912433050572872
+    },
+    "C_t12_p13_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0011347660766519974,
+        "joint_output_interaction_max_abs": 0.33286958932876587,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.332004804743033,
+            "capped_MSE4": 0.32421044304452484,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5855869347932394,
+            "capped_MSE4": 0.3829543518480167,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.33567377078918,
+            "capped_MSE4": 0.3252809222757393,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5875798124866418,
+            "capped_MSE4": 0.383328317946302,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.330770944158378,
+            "capped_MSE4": 0.32405521561803874,
+            "derived_sign": 0.484375
+          },
+          "C": {
+            "MSE": 1.5888364593291082,
+            "capped_MSE4": 0.38351002209613033,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.39448416233062744,
+      "conditional_effect_A_without_B_MSE": 0.002511543920263648,
+      "conditional_effect_A_with_B_MSE": 0.002705605234950781
+    },
+    "C_t12_p14_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.003344790387552269,
+        "joint_output_interaction_max_abs": 0.5898525714874268,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3297603319570825,
+            "capped_MSE4": 0.3236493248480372,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5809449620953615,
+            "capped_MSE4": 0.3822426617719834,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.330372451924597,
+            "capped_MSE4": 0.32394509174387476,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.581353437049012,
+            "capped_MSE4": 0.382412078157532,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0032634201925247908,
+      "conditional_effect_A_with_B_MSE": 0.0034045567736029625
+    },
+    "C_t12_p14_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0010407128377566636,
+        "joint_output_interaction_max_abs": 0.41407887637615204,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.3321257840326983,
+            "capped_MSE4": 0.32424068786694116,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.569531885074499,
+            "capped_MSE4": 0.3793893925167678,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3285526697119256,
+            "capped_MSE4": 0.32399876351939966,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.589807074182364,
+            "capped_MSE4": 0.3845371801131785,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3241083046379498,
+            "capped_MSE4": 0.32288767225090564,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5793452569164104,
+            "capped_MSE4": 0.38192172579669015,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.4651404619216919,
+      "conditional_effect_A_without_B_MSE": 0.0028834620025008917,
+      "conditional_effect_A_with_B_MSE": 0.0026243971660733223
+    },
+    "C_t12_p15_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "C_t12_p15_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.332775989247648,
+            "capped_MSE4": 0.32440323917067854,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5777599813445682,
+            "capped_MSE4": 0.38144641658428513,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3322482299248202,
+            "capped_MSE4": 0.32447526637901947,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5772912440508622,
+            "capped_MSE4": 0.38219939621579013,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3322482299248202,
+            "capped_MSE4": 0.32447526637901947,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5772912440508622,
+            "capped_MSE4": 0.38219939621579013,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.5475245714187622,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "C_t15_p15_full": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.327577133219474,
+            "capped_MSE4": 0.32324505842537604,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5790727863377105,
+            "capped_MSE4": 0.3810960476174814,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.327577133219474,
+            "capped_MSE4": 0.32324505842537604,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5790727863377105,
+            "capped_MSE4": 0.3810960476174814,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111604987868,
+            "capped_MSE4": 0.32372976888742216,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297740988757,
+            "capped_MSE4": 0.3827561624199979,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 0.0,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    },
+    "C_t15_p15_target": {
+      "output_factorial": {
+        "joint_output_interaction_MSE": 0.0,
+        "joint_output_interaction_max_abs": 0.0,
+        "reconstruction_max_abs": 0.0,
+        "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+      },
+      "native_risks": {
+        "0": {
+          "H1": {
+            "MSE": 1.327577133219474,
+            "capped_MSE4": 0.32324505842537604,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5790727863377105,
+            "capped_MSE4": 0.3810960476174814,
+            "derived_sign": 0.51953125
+          }
+        },
+        "1": {
+          "H1": {
+            "MSE": 1.327577133219474,
+            "capped_MSE4": 0.32324505842537604,
+            "derived_sign": 0.4921875
+          },
+          "C": {
+            "MSE": 1.5790727863377105,
+            "capped_MSE4": 0.3810960476174814,
+            "derived_sign": 0.51953125
+          }
+        },
+        "2": {
+          "H1": {
+            "MSE": 1.3295111644168314,
+            "capped_MSE4": 0.3237297697287529,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297757493957,
+            "capped_MSE4": 0.3827561624351908,
+            "derived_sign": 0.51953125
+          }
+        },
+        "3": {
+          "H1": {
+            "MSE": 1.3295111644168314,
+            "capped_MSE4": 0.3237297697287529,
+            "derived_sign": 0.48828125
+          },
+          "C": {
+            "MSE": 1.5827297757493957,
+            "capped_MSE4": 0.3827561624351908,
+            "derived_sign": 0.51953125
+          }
+        }
+      },
+      "full_joint_clean_prediction_max_abs": 2.384185791015625e-07,
+      "conditional_effect_A_without_B_MSE": 0.0,
+      "conditional_effect_A_with_B_MSE": 0.0
+    }
+  },
+  "full_joint_exact_restoration_is_operational_ceiling": true,
+  "scope": "First256 of the main confirmation cohort, not another independent sample. Same patch vectors across natural and fixed-event policies. Fixed policy externally replays all emit/reset/aux branches; conditional diagnostic, not natural online dynamics."
+}

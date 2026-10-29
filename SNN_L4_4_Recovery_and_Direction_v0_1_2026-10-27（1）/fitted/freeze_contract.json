@@ -1,0 +1,1277 @@
+{
+  "module": "L4.4",
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "original_optimizer_updates": 1,
+  "bank_sha256": "6a7a05c5c8f4ac7db5030562bdfefab1264d94aaa1c99e7fed6c3b45a41a8abb",
+  "parent_stable_bank_sha256": "fb4c8c3007c6cd94b2479071b5cfcf50e23e74f71fc2809defdf63f243c50034",
+  "damage_contexts": [
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 0,
+      "site": "l0_t3",
+      "key": "H1_l0_t3"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 1,
+      "site": "l1_t3",
+      "key": "H1_l1_t3"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H1_l0_t12"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H1_l1_t12"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H1_l0_t15"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H1_l1_t15"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H4_l0_t12"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H4_l1_t12"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H4_l0_t15"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H4_l1_t15"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "C_l0_t12"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "C_l1_t12"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "C_l0_t15"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "C_l1_t15"
+    }
+  ],
+  "recovery_contexts": [
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 0,
+      "site": "l0_t3",
+      "key": "H1_l0_t3",
+      "damage_time": 3,
+      "patch_time": 3,
+      "patch_site": "l0_t3",
+      "patch_key": "H1_l0_t3",
+      "key44": "H1_l0_t3_p3"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 0,
+      "site": "l0_t3",
+      "key": "H1_l0_t3",
+      "damage_time": 3,
+      "patch_time": 4,
+      "patch_site": "l0_t4",
+      "patch_key": "H1_l0_t4",
+      "key44": "H1_l0_t3_p4"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 0,
+      "site": "l0_t3",
+      "key": "H1_l0_t3",
+      "damage_time": 3,
+      "patch_time": 14,
+      "patch_site": "l0_t14",
+      "patch_key": "H1_l0_t14",
+      "key44": "H1_l0_t3_p14"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 0,
+      "site": "l0_t3",
+      "key": "H1_l0_t3",
+      "damage_time": 3,
+      "patch_time": 15,
+      "patch_site": "l0_t15",
+      "patch_key": "H1_l0_t15",
+      "key44": "H1_l0_t3_p15"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 1,
+      "site": "l1_t3",
+      "key": "H1_l1_t3",
+      "damage_time": 3,
+      "patch_time": 3,
+      "patch_site": "l1_t3",
+      "patch_key": "H1_l1_t3",
+      "key44": "H1_l1_t3_p3"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 1,
+      "site": "l1_t3",
+      "key": "H1_l1_t3",
+      "damage_time": 3,
+      "patch_time": 4,
+      "patch_site": "l1_t4",
+      "patch_key": "H1_l1_t4",
+      "key44": "H1_l1_t3_p4"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 1,
+      "site": "l1_t3",
+      "key": "H1_l1_t3",
+      "damage_time": 3,
+      "patch_time": 14,
+      "patch_site": "l1_t14",
+      "patch_key": "H1_l1_t14",
+      "key44": "H1_l1_t3_p14"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 1,
+      "site": "l1_t3",
+      "key": "H1_l1_t3",
+      "damage_time": 3,
+      "patch_time": 15,
+      "patch_site": "l1_t15",
+      "patch_key": "H1_l1_t15",
+      "key44": "H1_l1_t3_p15"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H1_l0_t12",
+      "damage_time": 12,
+      "patch_time": 12,
+      "patch_site": "l0_t12",
+      "patch_key": "H1_l0_t12",
+      "key44": "H1_l0_t12_p12"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H1_l0_t12",
+      "damage_time": 12,
+      "patch_time": 13,
+      "patch_site": "l0_t13",
+      "patch_key": "H1_l0_t13",
+      "key44": "H1_l0_t12_p13"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H1_l0_t12",
+      "damage_time": 12,
+      "patch_time": 14,
+      "patch_site": "l0_t14",
+      "patch_key": "H1_l0_t14",
+      "key44": "H1_l0_t12_p14"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H1_l0_t12",
+      "damage_time": 12,
+      "patch_time": 15,
+      "patch_site": "l0_t15",
+      "patch_key": "H1_l0_t15",
+      "key44": "H1_l0_t12_p15"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H1_l1_t12",
+      "damage_time": 12,
+      "patch_time": 12,
+      "patch_site": "l1_t12",
+      "patch_key": "H1_l1_t12",
+      "key44": "H1_l1_t12_p12"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H1_l1_t12",
+      "damage_time": 12,
+      "patch_time": 13,
+      "patch_site": "l1_t13",
+      "patch_key": "H1_l1_t13",
+      "key44": "H1_l1_t12_p13"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H1_l1_t12",
+      "damage_time": 12,
+      "patch_time": 14,
+      "patch_site": "l1_t14",
+      "patch_key": "H1_l1_t14",
+      "key44": "H1_l1_t12_p14"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H1_l1_t12",
+      "damage_time": 12,
+      "patch_time": 15,
+      "patch_site": "l1_t15",
+      "patch_key": "H1_l1_t15",
+      "key44": "H1_l1_t12_p15"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H1_l0_t15",
+      "damage_time": 15,
+      "patch_time": 15,
+      "patch_site": "l0_t15",
+      "patch_key": "H1_l0_t15",
+      "key44": "H1_l0_t15_p15"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H1_l1_t15",
+      "damage_time": 15,
+      "patch_time": 15,
+      "patch_site": "l1_t15",
+      "patch_key": "H1_l1_t15",
+      "key44": "H1_l1_t15_p15"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H4_l0_t12",
+      "damage_time": 12,
+      "patch_time": 12,
+      "patch_site": "l0_t12",
+      "patch_key": "H4_l0_t12",
+      "key44": "H4_l0_t12_p12"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H4_l0_t12",
+      "damage_time": 12,
+      "patch_time": 13,
+      "patch_site": "l0_t13",
+      "patch_key": "H4_l0_t13",
+      "key44": "H4_l0_t12_p13"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H4_l0_t12",
+      "damage_time": 12,
+      "patch_time": 14,
+      "patch_site": "l0_t14",
+      "patch_key": "H4_l0_t14",
+      "key44": "H4_l0_t12_p14"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H4_l0_t12",
+      "damage_time": 12,
+      "patch_time": 15,
+      "patch_site": "l0_t15",
+      "patch_key": "H4_l0_t15",
+      "key44": "H4_l0_t12_p15"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H4_l1_t12",
+      "damage_time": 12,
+      "patch_time": 12,
+      "patch_site": "l1_t12",
+      "patch_key": "H4_l1_t12",
+      "key44": "H4_l1_t12_p12"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H4_l1_t12",
+      "damage_time": 12,
+      "patch_time": 13,
+      "patch_site": "l1_t13",
+      "patch_key": "H4_l1_t13",
+      "key44": "H4_l1_t12_p13"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H4_l1_t12",
+      "damage_time": 12,
+      "patch_time": 14,
+      "patch_site": "l1_t14",
+      "patch_key": "H4_l1_t14",
+      "key44": "H4_l1_t12_p14"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H4_l1_t12",
+      "damage_time": 12,
+      "patch_time": 15,
+      "patch_site": "l1_t15",
+      "patch_key": "H4_l1_t15",
+      "key44": "H4_l1_t12_p15"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H4_l0_t15",
+      "damage_time": 15,
+      "patch_time": 15,
+      "patch_site": "l0_t15",
+      "patch_key": "H4_l0_t15",
+      "key44": "H4_l0_t15_p15"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H4_l1_t15",
+      "damage_time": 15,
+      "patch_time": 15,
+      "patch_site": "l1_t15",
+      "patch_key": "H4_l1_t15",
+      "key44": "H4_l1_t15_p15"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "C_l0_t12",
+      "damage_time": 12,
+      "patch_time": 12,
+      "patch_site": "l0_t12",
+      "patch_key": "C_l0_t12",
+      "key44": "C_l0_t12_p12"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "C_l0_t12",
+      "damage_time": 12,
+      "patch_time": 13,
+      "patch_site": "l0_t13",
+      "patch_key": "C_l0_t13",
+      "key44": "C_l0_t12_p13"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "C_l0_t12",
+      "damage_time": 12,
+      "patch_time": 14,
+      "patch_site": "l0_t14",
+      "patch_key": "C_l0_t14",
+      "key44": "C_l0_t12_p14"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "C_l0_t12",
+      "damage_time": 12,
+      "patch_time": 15,
+      "patch_site": "l0_t15",
+      "patch_key": "C_l0_t15",
+      "key44": "C_l0_t12_p15"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "C_l1_t12",
+      "damage_time": 12,
+      "patch_time": 12,
+      "patch_site": "l1_t12",
+      "patch_key": "C_l1_t12",
+      "key44": "C_l1_t12_p12"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "C_l1_t12",
+      "damage_time": 12,
+      "patch_time": 13,
+      "patch_site": "l1_t13",
+      "patch_key": "C_l1_t13",
+      "key44": "C_l1_t12_p13"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "C_l1_t12",
+      "damage_time": 12,
+      "patch_time": 14,
+      "patch_site": "l1_t14",
+      "patch_key": "C_l1_t14",
+      "key44": "C_l1_t12_p14"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "C_l1_t12",
+      "damage_time": 12,
+      "patch_time": 15,
+      "patch_site": "l1_t15",
+      "patch_key": "C_l1_t15",
+      "key44": "C_l1_t12_p15"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "C_l0_t15",
+      "damage_time": 15,
+      "patch_time": 15,
+      "patch_site": "l0_t15",
+      "patch_key": "C_l0_t15",
+      "key44": "C_l0_t15_p15"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "C_l1_t15",
+      "damage_time": 15,
+      "patch_time": 15,
+      "patch_site": "l1_t15",
+      "patch_key": "C_l1_t15",
+      "key44": "C_l1_t15_p15"
+    }
+  ],
+  "methods": [
+    "full_self_delta",
+    "target_self_delta",
+    "target_reverse_delta",
+    "wrong_F_delta",
+    "right_F_other_context_delta",
+    "unmatched_donor_delta",
+    "wrong_time_delta",
+    "norm_random_0",
+    "norm_random_1",
+    "norm_random_2"
+  ],
+  "evaluation_pools": {
+    "development": {
+      "n": 1024,
+      "recipient": 9200000,
+      "donor": 9210000
+    },
+    "confirmation": {
+      "n": 2048,
+      "recipient": 9220000,
+      "donor": 9230000
+    }
+  },
+  "fit_pool": [
+    2048,
+    "geometry_fit",
+    9120000
+  ],
+  "independent_validation_fit_pool": [
+    1024,
+    "probe_train",
+    9160000
+  ],
+  "independent_validation_selection_pool": [
+    256,
+    "probe_val",
+    9170000
+  ],
+  "scales": {
+    "l0_t3": 0.43187577782481895,
+    "l0_t4": 0.4821019049938812,
+    "l0_t12": 0.6263748669537907,
+    "l0_t13": 0.6214496184171104,
+    "l0_t14": 0.6233616333203641,
+    "l0_t15": 0.6279302666469035,
+    "l1_t3": 0.5510507179794404,
+    "l1_t4": 0.6269531004236399,
+    "l1_t12": 0.8624150369485329,
+    "l1_t13": 0.8548367377450113,
+    "l1_t14": 0.8524778183234331,
+    "l1_t15": 0.8505044491474738
+  },
+  "selection": {
+    "l0_t3": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.115747849308758
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8444821161177937
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8353298086467147
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.8338780664093369
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.115747849308758
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.8344811645949579
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.8359732512418705
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.839246013261848
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l0_t4": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1124495965457464
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8515985947706608
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8360326381802899
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.8347479603367496
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1124495965457464
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.8365636977774034
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.8328133968655373
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.8351347799868934
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l0_t12": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1087992531855384
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8250879502696024
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.7627340324568266
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.7045388602733765
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1087992531855384
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.7570352853023412
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7175388655030908
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.7093111741566239
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l0_t13": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.107493893157324
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8397566613052533
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.7784528118040651
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.7200660298853719
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.107493893157324
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.7750129272656165
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7481151954920008
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.7048878498501644
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l0_t14": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1068754972134838
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8555291692647912
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.7904724666848332
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.733550736134956
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1068754972134838
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.7969119529874036
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7536360018942874
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.7218857582554754
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l0_t15": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1050121495778054
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8778026061317129
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8142207757697715
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.7588597746807446
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1050121495778054
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.8298782803164673
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7747947949836842
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.7388961317207127
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l1_t3": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1291317528078761
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 1.0189585616387735
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 1.0179517417171393
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 1.0179932154157347
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1291317528078761
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 1.0175723986677336
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 1.0181156221174388
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 1.0183635305963832
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l1_t4": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1293757190187053
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 1.0184116738930942
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 1.0152666490616553
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 1.0166369332486132
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1293757190187053
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 1.0159581217372533
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 1.016454514877209
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 1.018095500145542
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l1_t12": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.126968583761661
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9760282924315753
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9708527973427705
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9654913597729297
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.126968583761661
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9711411233466558
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9635684241217035
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9439583809566744
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l1_t13": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.128428530538473
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9728662232936209
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.966792082855228
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9628809554992321
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.128428530538473
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9668642012454282
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.96315142154954
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9615242486558436
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l1_t14": {
+      "ridge": {
+        "alpha": 0.001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1287558207298622
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9811672696986625
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9744862104025683
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9680173248913531
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1287558207298622
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.974844455805684
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9699316259572973
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9624646590830076
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "l1_t15": {
+      "ridge": {
+        "alpha": 0.001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.128638545988131
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9897206827400085
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9822072588747711
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9745554122010864
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.128638545988131
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9801525678678584
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9724479245687995
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9663930031560682
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    }
+  },
+  "inherited_frozen_damage_erasers": 14,
+  "patch_erasers": 28,
+  "new_regularized_operator_fits": 14,
+  "selected_validation_probes": 24,
+  "ridge_candidate_solves": 36,
+  "MLP_optimization_fits": 24,
+  "MLP_optimizer_updates": 9600,
+  "damage_ratio_floor_MSE": 0.01,
+  "prediction_fidelity_floor": 1e-08,
+  "capped_MSE_scale": 4.0,
+  "bounded_comparison_family_per_pool": 4616,
+  "family_delta": 0.05,
+  "four_groups": "Clean, damaged, clean plus delta, damaged plus exactly the same external delta. Delta is computed from the unpatched damaged reference before either patch run.",
+  "patch_permissions": "All clean/donor trajectory patches are external diagnostic information. Wrong-time control may use the next time step and is explicitly future-oracle. No autonomous online-repair claim.",
+  "supplementary_protocol": "Natural vs clean-event replay for 12 tau12/p13-or14 contexts and target/reverse/random0; two-owner factorial full/target patches; binary edge recovery; complete and scoped snapshot controls.",
+  "core_parameters_unchanged": true,
+  "choices_frozen_before_evaluation_generation": true,
+  "new_SNN_training": 0,
+  "formal_benchmark_completed": 0,
+  "audit_test_accessed": false,
+  "scope": "Two disjoint scene cohorts of the same one-update old model; confirmation is a scene replication, not independently trained architecture confirmation."
+}

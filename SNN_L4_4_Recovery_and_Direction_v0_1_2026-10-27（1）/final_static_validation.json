@@ -1,0 +1,12 @@
+{
+  "module": "L4.4 final static delivery validation",
+  "python_AST_files": 106,
+  "strict_JSON_files_before_manifest": 63,
+  "unchanged_inherited_files_verified": 171,
+  "complete_root_reports": 3,
+  "archive_excludes": [
+    "__pycache__",
+    "*.pyc"
+  ],
+  "numerical_verification": "See evidence/artifact_verification.json; no numerical code changed after full replay."
+}

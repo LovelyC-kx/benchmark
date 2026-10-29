@@ -1,0 +1,98 @@
+{
+  "H1_l0_t12_p13::full": {
+    "repair": {
+      "__array__": "array_0"
+    },
+    "blocked": {
+      "__array__": "array_1"
+    }
+  },
+  "H1_l0_t12_p13::target": {
+    "repair": {
+      "__array__": "array_2"
+    },
+    "blocked": {
+      "__array__": "array_3"
+    }
+  },
+  "H1_l0_t12_p14::full": {
+    "repair": {
+      "__array__": "array_4"
+    },
+    "blocked": {
+      "__array__": "array_5"
+    }
+  },
+  "H1_l0_t12_p14::target": {
+    "repair": {
+      "__array__": "array_6"
+    },
+    "blocked": {
+      "__array__": "array_7"
+    }
+  },
+  "H4_l0_t12_p13::full": {
+    "repair": {
+      "__array__": "array_8"
+    },
+    "blocked": {
+      "__array__": "array_9"
+    }
+  },
+  "H4_l0_t12_p13::target": {
+    "repair": {
+      "__array__": "array_10"
+    },
+    "blocked": {
+      "__array__": "array_11"
+    }
+  },
+  "H4_l0_t12_p14::full": {
+    "repair": {
+      "__array__": "array_12"
+    },
+    "blocked": {
+      "__array__": "array_13"
+    }
+  },
+  "H4_l0_t12_p14::target": {
+    "repair": {
+      "__array__": "array_14"
+    },
+    "blocked": {
+      "__array__": "array_15"
+    }
+  },
+  "C_l0_t12_p13::full": {
+    "repair": {
+      "__array__": "array_16"
+    },
+    "blocked": {
+      "__array__": "array_17"
+    }
+  },
+  "C_l0_t12_p13::target": {
+    "repair": {
+      "__array__": "array_18"
+    },
+    "blocked": {
+      "__array__": "array_19"
+    }
+  },
+  "C_l0_t12_p14::full": {
+    "repair": {
+      "__array__": "array_20"
+    },
+    "blocked": {
+      "__array__": "array_21"
+    }
+  },
+  "C_l0_t12_p14::target": {
+    "repair": {
+      "__array__": "array_22"
+    },
+    "blocked": {
+      "__array__": "array_23"
+    }
+  }
+}

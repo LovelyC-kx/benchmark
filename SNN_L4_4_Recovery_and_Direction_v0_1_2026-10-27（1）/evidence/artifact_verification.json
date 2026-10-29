@@ -1,0 +1,31 @@
+{
+  "module": "L4.4 artifact verification",
+  "python_AST_files": 105,
+  "strict_JSON_files": 59,
+  "unchanged_parent_files_verified": 171,
+  "main_four_group_cells_recomputed": 760,
+  "main_scene_loss_arrays_recomputed": 9300,
+  "binary_repair_scene_loss_arrays_recomputed": 378,
+  "bounded_intervals_recomputed": 9232,
+  "main_payload_and_prediction_prefix_cases_replayed": 760,
+  "prefix_scenes_per_case": 16,
+  "original_replay_batch_size": 128,
+  "prefix_payload_max_abs": 0.0,
+  "prefix_prediction_max_abs": 0.0,
+  "prefix_state_max_abs": 0.0,
+  "cohort_summaries": {
+    "development": {
+      "independent_scene_pairs": 1024,
+      "positive_bounded_lower_bounds": 0,
+      "MSE_recovery_ratios_defined": 0
+    },
+    "confirmation": {
+      "independent_scene_pairs": 2048,
+      "positive_bounded_lower_bounds": 0,
+      "MSE_recovery_ratios_defined": 0
+    }
+  },
+  "fixed_event_output_interaction_max_abs": 8.344650268554688e-07,
+  "snapshot_binary_joint_and_reblocking_contracts_verified": true,
+  "scope": "Main model predictions, patch construction, risk contrasts and intervals reproduced. Supplementary exact contracts and saved loss means checked; supplements are shared confirmation subsets, not independent replications. Formal benchmark remains unrun."
+}

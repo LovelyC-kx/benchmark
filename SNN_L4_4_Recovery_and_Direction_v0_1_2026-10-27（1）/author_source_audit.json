@@ -1,0 +1,13 @@
+{
+  "module": "L4.4 author source audit",
+  "verified_source_files": 6,
+  "DecodeShare_canonical_patch_hook_max_abs": 0.0,
+  "DecodeShare_tuple_and_prefill_policies_verified": true,
+  "DecodeShare_per_row_random_norm_gap": 2.384185791015625e-07,
+  "DecodeShare_zero_dimensional_span_nonzero_requested_norm_returned_norm": 0.0,
+  "DecodeShare_empty_flip_set_percentage_is_NaN": true,
+  "DecodeShare_nonempty_conditional_rescue_percentage": 50.0,
+  "ROME_original_trace_restore_clean_probability_max_abs": 0.0,
+  "ROME_original_repatch_damage_probability_max_abs": 0.0,
+  "scope": "Canonical DecodeShare definitions and ROME trace_with_patch/trace_with_repatch/layername executed unchanged via AST; original nethook module imported unchanged. Artificial Torch inputs only; no pretrained LLM or author dataset. Legacy DecodeShare files reviewed for provenance, not counted as another experiment."
+}

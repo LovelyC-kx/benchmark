@@ -1,0 +1,11 @@
+{
+  "context_baselines_added": {
+    "development": 38,
+    "confirmation": 38
+  },
+  "reason": "Explicit delayed damaged-state probe baseline is needed to distinguish recovered content from a mere return toward the clean state.",
+  "new_probe_fitting": 0,
+  "predictions_or_risks_changed": false,
+  "method_choices_changed": false,
+  "evaluation_cohorts_changed": false
+}

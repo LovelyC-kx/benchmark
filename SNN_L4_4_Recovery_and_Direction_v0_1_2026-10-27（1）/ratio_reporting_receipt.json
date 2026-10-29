@@ -1,0 +1,8 @@
+{
+  "change": "Disable recovery percentages for capped-MSE and auxiliary-sign loss; the declared .01 floor applies only to original MSE.",
+  "metadata_records_updated": 3292,
+  "predictions_changed": false,
+  "scene_losses_changed": false,
+  "bounded_comparisons_changed": false,
+  "selection_or_hypothesis_family_changed": false
+}

@@ -1,0 +1,13 @@
+frozen independent recovery probes l0_t3
+frozen independent recovery probes l0_t4
+frozen independent recovery probes l0_t12
+frozen independent recovery probes l0_t13
+frozen independent recovery probes l0_t14
+frozen independent recovery probes l0_t15
+frozen independent recovery probes l1_t3
+frozen independent recovery probes l1_t4
+frozen independent recovery probes l1_t12
+frozen independent recovery probes l1_t13
+frozen independent recovery probes l1_t14
+frozen independent recovery probes l1_t15
+Frozen recovery contexts 38 family 4616

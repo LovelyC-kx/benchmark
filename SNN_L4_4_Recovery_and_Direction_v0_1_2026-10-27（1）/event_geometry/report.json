@@ -1,0 +1,763 @@
+{
+  "module": "L4.4 event-conditioned recovery geometry",
+  "confirmation_subset_scene_pairs": 256,
+  "contexts": 12,
+  "alpha_grid": [
+    -1.0,
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    1.5
+  ],
+  "dose_conditions": 72,
+  "results": {
+    "H1_l0_t12_p13": {
+      "endpoint_same_pattern_scenes": 207,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4601850713844884,
+          "same_events_as_zero_fraction": 0.84375,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.022785685598632074
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.454006149388771,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 207,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4555175819883965,
+          "same_events_as_zero_fraction": 0.96484375,
+          "endpoint_certified_scene_count": 207,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0033642761429360435
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.457890197309478,
+          "same_events_as_zero_fraction": 0.9296875,
+          "endpoint_certified_scene_count": 207,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.005755141079774481
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4608846343955173,
+          "same_events_as_zero_fraction": 0.80859375,
+          "endpoint_certified_scene_count": 207,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4636274678007717,
+          "same_events_as_zero_fraction": 0.66015625,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.012440455857224773
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 109,
+      "same_pattern_output_interaction_max_abs": 0.0,
+      "different_pattern_output_interaction_MSE": 0.013695255199337024
+    },
+    "H1_l0_t12_p14": {
+      "endpoint_same_pattern_scenes": 225,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.456710474981525,
+          "same_events_as_zero_fraction": 0.8203125,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.027279617206308403
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.454006149388771,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4548781396125952,
+          "same_events_as_zero_fraction": 0.96484375,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.005371992495789271
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.4566764192732595,
+          "same_events_as_zero_fraction": 0.953125,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0063631038083920635
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4543121357300386,
+          "same_events_as_zero_fraction": 0.87890625,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4551831695673687,
+          "same_events_as_zero_fraction": 0.7265625,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.00926606256598036
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 117,
+      "same_pattern_output_interaction_max_abs": 0.0,
+      "different_pattern_output_interaction_MSE": 0.01569675680037702
+    },
+    "H1_l1_t12_p13": {
+      "endpoint_same_pattern_scenes": 120,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4537620373814846,
+          "same_events_as_zero_fraction": 0.55859375,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.01852191880214941
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.458939782918498,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 120,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.460454972156846,
+          "same_events_as_zero_fraction": 0.75390625,
+          "endpoint_certified_scene_count": 120,
+          "certified_output_affine_max_abs": 3.5762786865234375e-07,
+          "certified_MSE_quadratic_max_abs": 2.48974413530334e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0027946949883052167
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.4605378518821472,
+          "same_events_as_zero_fraction": 0.59765625,
+          "endpoint_certified_scene_count": 120,
+          "certified_output_affine_max_abs": 3.5762786865234375e-07,
+          "certified_MSE_quadratic_max_abs": 1.950372094938757e-07,
+          "noncertified_output_affine_mean_squared_error": 0.003320676084664154
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4538269165666948,
+          "same_events_as_zero_fraction": 0.46875,
+          "endpoint_certified_scene_count": 120,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 4.440892098500626e-16,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4559647708689534,
+          "same_events_as_zero_fraction": 0.37890625,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.005336577813340804
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 50,
+      "same_pattern_output_interaction_max_abs": 4.76837158203125e-07,
+      "different_pattern_output_interaction_MSE": 0.010375079987624014
+    },
+    "H1_l1_t12_p14": {
+      "endpoint_same_pattern_scenes": 178,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4565006086233108,
+          "same_events_as_zero_fraction": 0.6796875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.024553885932548578
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.458939782918498,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 178,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4585311979942808,
+          "same_events_as_zero_fraction": 0.88671875,
+          "endpoint_certified_scene_count": 178,
+          "certified_output_affine_max_abs": 4.172325134277344e-07,
+          "certified_MSE_quadratic_max_abs": 3.461180360098126e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0031072932137445894
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.461923923956056,
+          "same_events_as_zero_fraction": 0.8046875,
+          "endpoint_certified_scene_count": 178,
+          "certified_output_affine_max_abs": 3.5762786865234375e-07,
+          "certified_MSE_quadratic_max_abs": 3.549894707077783e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0037062762736787213
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4541693737750632,
+          "same_events_as_zero_fraction": 0.6953125,
+          "endpoint_certified_scene_count": 178,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 4.440892098500626e-16,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4482615869472517,
+          "same_events_as_zero_fraction": 0.58203125,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.007387663513777333
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 62,
+      "same_pattern_output_interaction_max_abs": 5.960464477539062e-07,
+      "different_pattern_output_interaction_MSE": 0.010137493240411468
+    },
+    "H4_l0_t12_p13": {
+      "endpoint_same_pattern_scenes": 200,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4539033562307897,
+          "same_events_as_zero_fraction": 0.8046875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.029475253340772656
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4545003645512757,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 200,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4541503370004438,
+          "same_events_as_zero_fraction": 0.91015625,
+          "endpoint_certified_scene_count": 200,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.004618526371413488
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.4521027620889055,
+          "same_events_as_zero_fraction": 0.875,
+          "endpoint_certified_scene_count": 200,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0055400583101091515
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4555059126989045,
+          "same_events_as_zero_fraction": 0.78125,
+          "endpoint_certified_scene_count": 200,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.461392753343172,
+          "same_events_as_zero_fraction": 0.71875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.008687249318287264
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 137,
+      "same_pattern_output_interaction_max_abs": 0.0,
+      "different_pattern_output_interaction_MSE": 0.017690747112669932
+    },
+    "H4_l0_t12_p14": {
+      "endpoint_same_pattern_scenes": 225,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.450995093020075,
+          "same_events_as_zero_fraction": 0.91015625,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.02515640229228281
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4545003645512757,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4543937645814298,
+          "same_events_as_zero_fraction": 0.953125,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.006839638740320818
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.4539385536231242,
+          "same_events_as_zero_fraction": 0.9375,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.006886210522171765
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.454511948435397,
+          "same_events_as_zero_fraction": 0.87890625,
+          "endpoint_certified_scene_count": 225,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4531988524553956,
+          "same_events_as_zero_fraction": 0.8125,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.00979794493142987
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 146,
+      "same_pattern_output_interaction_max_abs": 0.0,
+      "different_pattern_output_interaction_MSE": 0.014394082235020296
+    },
+    "H4_l1_t12_p13": {
+      "endpoint_same_pattern_scenes": 117,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4543157197285939,
+          "same_events_as_zero_fraction": 0.53125,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.01480427275182506
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4563255096914105,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 117,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4555410398653903,
+          "same_events_as_zero_fraction": 0.80078125,
+          "endpoint_certified_scene_count": 117,
+          "certified_output_affine_max_abs": 3.8743019104003906e-07,
+          "certified_MSE_quadratic_max_abs": 2.3030889728659076e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0021454459670700345
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.453950864197911,
+          "same_events_as_zero_fraction": 0.66015625,
+          "endpoint_certified_scene_count": 117,
+          "certified_output_affine_max_abs": 3.5762786865234375e-07,
+          "certified_MSE_quadratic_max_abs": 2.1598498278763145e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0024547518698975978
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.451440579591008,
+          "same_events_as_zero_fraction": 0.45703125,
+          "endpoint_certified_scene_count": 117,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 4.440892098500626e-16,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4504874992230978,
+          "same_events_as_zero_fraction": 0.3671875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.004691372085246771
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 57,
+      "same_pattern_output_interaction_max_abs": 4.76837158203125e-07,
+      "different_pattern_output_interaction_MSE": 0.007672785847125061
+    },
+    "H4_l1_t12_p14": {
+      "endpoint_same_pattern_scenes": 172,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4518540261157806,
+          "same_events_as_zero_fraction": 0.71484375,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.016937059412764705
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4563255096914105,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 172,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4598755123448488,
+          "same_events_as_zero_fraction": 0.8671875,
+          "endpoint_certified_scene_count": 172,
+          "certified_output_affine_max_abs": 4.470348358154297e-07,
+          "certified_MSE_quadratic_max_abs": 3.2698797647334743e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0039805849937294335
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.4563082919394401,
+          "same_events_as_zero_fraction": 0.7578125,
+          "endpoint_certified_scene_count": 172,
+          "certified_output_affine_max_abs": 4.172325134277344e-07,
+          "certified_MSE_quadratic_max_abs": 2.2014338396658673e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0038527657365607696
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4600492326506798,
+          "same_events_as_zero_fraction": 0.671875,
+          "endpoint_certified_scene_count": 172,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 8.881784197001252e-16,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4570531913734353,
+          "same_events_as_zero_fraction": 0.58984375,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.004476778519921945
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 90,
+      "same_pattern_output_interaction_max_abs": 5.960464477539062e-07,
+      "different_pattern_output_interaction_MSE": 0.009312942675552742
+    },
+    "C_l0_t12_p13": {
+      "endpoint_same_pattern_scenes": 217,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4589223215066065,
+          "same_events_as_zero_fraction": 0.828125,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.025047639126286728
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4586636937826634,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 217,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4575770396640428,
+          "same_events_as_zero_fraction": 0.96484375,
+          "endpoint_certified_scene_count": 217,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.002980488511944544
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.4577254804875965,
+          "same_events_as_zero_fraction": 0.9375,
+          "endpoint_certified_scene_count": 217,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.004331656492017245
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4587976384873524,
+          "same_events_as_zero_fraction": 0.84765625,
+          "endpoint_certified_scene_count": 217,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4540973365774938,
+          "same_events_as_zero_fraction": 0.765625,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.008803830313668727
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 154,
+      "same_pattern_output_interaction_max_abs": 0.0,
+      "different_pattern_output_interaction_MSE": 0.021480007468632618
+    },
+    "C_l0_t12_p14": {
+      "endpoint_same_pattern_scenes": 229,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.456733063478577,
+          "same_events_as_zero_fraction": 0.890625,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.026360957438475576
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4586636937826634,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 229,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.457964985521902,
+          "same_events_as_zero_fraction": 0.98046875,
+          "endpoint_certified_scene_count": 229,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.003917656354112068
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.456097344210042,
+          "same_events_as_zero_fraction": 0.95703125,
+          "endpoint_certified_scene_count": 229,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.007062965591445332
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4522697131794842,
+          "same_events_as_zero_fraction": 0.89453125,
+          "endpoint_certified_scene_count": 229,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4496134144023618,
+          "same_events_as_zero_fraction": 0.79296875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.006936434944421952
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 163,
+      "same_pattern_output_interaction_max_abs": 0.0,
+      "different_pattern_output_interaction_MSE": 0.016966973539752694
+    },
+    "C_l1_t12_p13": {
+      "endpoint_same_pattern_scenes": 179,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4555888298485482,
+          "same_events_as_zero_fraction": 0.60546875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.015054682998553153
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4560772123755088,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 179,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4570505696593317,
+          "same_events_as_zero_fraction": 0.91796875,
+          "endpoint_certified_scene_count": 179,
+          "certified_output_affine_max_abs": 5.662441253662109e-07,
+          "certified_MSE_quadratic_max_abs": 2.505290317422748e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0018892118312044419
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.4558469951076305,
+          "same_events_as_zero_fraction": 0.828125,
+          "endpoint_certified_scene_count": 179,
+          "certified_output_affine_max_abs": 3.5762786865234375e-07,
+          "certified_MSE_quadratic_max_abs": 2.7305551197898126e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0021171050518527493
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4563175137465465,
+          "same_events_as_zero_fraction": 0.69921875,
+          "endpoint_certified_scene_count": 179,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 4.440892098500626e-16,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4576053633537525,
+          "same_events_as_zero_fraction": 0.578125,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0036456796697311735
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 85,
+      "same_pattern_output_interaction_max_abs": 5.960464477539062e-07,
+      "different_pattern_output_interaction_MSE": 0.007139960870059526
+    },
+    "C_l1_t12_p14": {
+      "endpoint_same_pattern_scenes": 177,
+      "dose_curve": [
+        {
+          "alpha": -1.0,
+          "native_H1_C_MSE": 1.4599636512499878,
+          "same_events_as_zero_fraction": 0.8046875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.015809059175923606
+        },
+        {
+          "alpha": 0.0,
+          "native_H1_C_MSE": 1.4560772123755088,
+          "same_events_as_zero_fraction": 1.0,
+          "endpoint_certified_scene_count": 177,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 0.25,
+          "native_H1_C_MSE": 1.4581810493529768,
+          "same_events_as_zero_fraction": 0.87890625,
+          "endpoint_certified_scene_count": 177,
+          "certified_output_affine_max_abs": 3.5762786865234375e-07,
+          "certified_MSE_quadratic_max_abs": 2.2952944034315692e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0035631757716282466
+        },
+        {
+          "alpha": 0.5,
+          "native_H1_C_MSE": 1.457605266861786,
+          "same_events_as_zero_fraction": 0.8359375,
+          "endpoint_certified_scene_count": 177,
+          "certified_output_affine_max_abs": 4.172325134277344e-07,
+          "certified_MSE_quadratic_max_abs": 2.2616643047257412e-07,
+          "noncertified_output_affine_mean_squared_error": 0.0033659025440563365
+        },
+        {
+          "alpha": 1.0,
+          "native_H1_C_MSE": 1.4574918196531423,
+          "same_events_as_zero_fraction": 0.69140625,
+          "endpoint_certified_scene_count": 177,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 4.440892098500626e-16,
+          "noncertified_output_affine_mean_squared_error": 0.0
+        },
+        {
+          "alpha": 1.5,
+          "native_H1_C_MSE": 1.4567642877396874,
+          "same_events_as_zero_fraction": 0.6171875,
+          "endpoint_certified_scene_count": 0,
+          "certified_output_affine_max_abs": 0.0,
+          "certified_MSE_quadratic_max_abs": 0.0,
+          "noncertified_output_affine_mean_squared_error": 0.0047123403362724844
+        }
+      ],
+      "four_vertex_same_pattern_scenes": 100,
+      "same_pattern_output_interaction_max_abs": 4.76837158203125e-07,
+      "different_pattern_output_interaction_MSE": 0.00856440782859416
+    }
+  },
+  "analysis_added_after_main_development": true,
+  "no_method_or_alpha_selected_using_these_outcomes": true,
+  "scope": "Post-main diagnostic on first256 confirmation scenes. Fixed weights, linear MLP operations, no normalization, fixed-beta hard-LIF. Equal endpoint event patterns certify the intervening convex alpha interval in exact arithmetic; FP32 checked separately. No tanh/attention/general-SNN theorem is claimed."
+}

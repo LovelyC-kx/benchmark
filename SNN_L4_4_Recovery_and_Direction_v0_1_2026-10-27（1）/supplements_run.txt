@@ -1,0 +1,13 @@
+event replay recovery H1_l0_t12_p13
+event replay recovery H1_l0_t12_p14
+event replay recovery H1_l1_t12_p13
+event replay recovery H1_l1_t12_p14
+event replay recovery H4_l0_t12_p13
+event replay recovery H4_l0_t12_p14
+event replay recovery H4_l1_t12_p13
+event replay recovery H4_l1_t12_p14
+event replay recovery C_l0_t12_p13
+event replay recovery C_l0_t12_p14
+event replay recovery C_l1_t12_p13
+event replay recovery C_l1_t12_p14
+Event four-group cells 72 joint conditions 120

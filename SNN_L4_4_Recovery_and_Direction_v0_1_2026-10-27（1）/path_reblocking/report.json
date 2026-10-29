@@ -1,0 +1,104 @@
+{
+  "module": "L4.4 actual communication reblocking",
+  "confirmation_subset_scene_pairs": 256,
+  "cases": 12,
+  "results": {
+    "H1_l0_t12_p13::full": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.005679039284586906,
+      "reblocked_vs_repaired_prediction_MSE": 0.005679039284586906
+    },
+    "H1_l0_t12_p13::target": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.003806843189522624,
+      "reblocked_vs_repaired_prediction_MSE": 0.003806843189522624
+    },
+    "H1_l0_t12_p14::full": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.004464699421077967,
+      "reblocked_vs_repaired_prediction_MSE": 0.004464699421077967
+    },
+    "H1_l0_t12_p14::target": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.0031886245124042034,
+      "reblocked_vs_repaired_prediction_MSE": 0.0031886245124042034
+    },
+    "H4_l0_t12_p13::full": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.005824004299938679,
+      "reblocked_vs_repaired_prediction_MSE": 0.005824004299938679
+    },
+    "H4_l0_t12_p13::target": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.003975521773099899,
+      "reblocked_vs_repaired_prediction_MSE": 0.003975521773099899
+    },
+    "H4_l0_t12_p14::full": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.005032059270888567,
+      "reblocked_vs_repaired_prediction_MSE": 0.005032059270888567
+    },
+    "H4_l0_t12_p14::target": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.0030608023516833782,
+      "reblocked_vs_repaired_prediction_MSE": 0.0030608023516833782
+    },
+    "C_l0_t12_p13::full": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.0037453025579452515,
+      "reblocked_vs_repaired_prediction_MSE": 0.0037453025579452515
+    },
+    "C_l0_t12_p13::target": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.0026992917992174625,
+      "reblocked_vs_repaired_prediction_MSE": 0.0026992917992174625
+    },
+    "C_l0_t12_p14::full": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.0032935142517089844,
+      "reblocked_vs_repaired_prediction_MSE": 0.0032935142517089844
+    },
+    "C_l0_t12_p14::target": {
+      "reblocked_unpatched_damage_prediction_max_abs": 0.0,
+      "offwindow_repaired_prediction_max_abs": 0.0,
+      "sender_state_reblock_change_max_abs": 0.0,
+      "actual_edge_arrival_max_abs": 0.0,
+      "unblocked_repair_vs_damage_prediction_MSE": 0.0025222257245332003,
+      "reblocked_vs_repaired_prediction_MSE": 0.0025222257245332003
+    }
+  },
+  "scope": "First256 confirmation scenes. Restored sender v retained; only future returned-output messages replaced by unpatched damaged messages. Off-window reblocking is a temporal negative control. Exact equalities are specific to this feedforward graph; they do not establish uniqueness in other backbones."
+}

@@ -1,0 +1,134 @@
+{
+  "module": "L4.4 known-answer controls",
+  "control_families": 14,
+  "results": {
+    "affine_risk_interaction_without_output_interaction": {
+      "output_interaction_MSE": 0.0,
+      "output_interaction_max_abs": 0.0,
+      "risk_interaction": 2.0,
+      "damage_patch_alignment": 2.0,
+      "baseline_error_response": 0.0,
+      "patch_energy_difference": 0.0,
+      "risk_identity_absolute_residual": 0.0,
+      "damaged_clean_prediction_MSE": 1.0,
+      "repaired_clean_prediction_MSE": 0.0,
+      "prediction_recovery_ratio": 1.0,
+      "scope": "Output interaction measures context dependence of the declared patch. Positive squared-risk interaction can occur with zero output interaction in an affine model."
+    },
+    "zero_damage_ratio": {
+      "R00": 0.0,
+      "R10": 0.0,
+      "R01": 0.0,
+      "R11": 0.0,
+      "damage": 0.0,
+      "rescue": 0.0,
+      "patch_only_gain": 0.0,
+      "risk_interaction": 0.0,
+      "recovery_ratio": null,
+      "ratio_defined": false,
+      "damage_floor": 0.01,
+      "ratio_clipped": false
+    },
+    "uncropped_recovery_ratio": {
+      "R00": 0.2,
+      "R10": 0.8,
+      "R01": 0.2,
+      "R11": 0.1,
+      "damage": 0.6000000000000001,
+      "rescue": 0.7000000000000001,
+      "patch_only_gain": 0.0,
+      "risk_interaction": 0.7000000000000001,
+      "recovery_ratio": 1.1666666666666665,
+      "ratio_defined": true,
+      "damage_floor": 0.01,
+      "ratio_clipped": false
+    },
+    "AND_owner_interaction": {
+      "joint_output_interaction_MSE": 1.0,
+      "joint_output_interaction_max_abs": 1.0,
+      "reconstruction_max_abs": 0.0,
+      "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility.",
+      "outputs": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "OR_owner_interaction": {
+      "joint_output_interaction_MSE": 1.0,
+      "joint_output_interaction_max_abs": 1.0,
+      "reconstruction_max_abs": 0.0,
+      "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility.",
+      "outputs": [
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "XOR_owner_interaction": {
+      "joint_output_interaction_MSE": 4.0,
+      "joint_output_interaction_max_abs": 2.0,
+      "reconstruction_max_abs": 0.0,
+      "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility.",
+      "outputs": [
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "zero_direction_matching_failure": {
+      "unmatchable_nonzero_reference_scenes": 3,
+      "maximum_norm_gap_on_matchable_scenes": 0.0
+    },
+    "finite_event_boundary": {
+      "natural_output_interaction": 1.001,
+      "all_events_fixed_off_output_interaction": 1.1102230246251565e-16
+    },
+    "external_information_permission": {
+      "MSE_from_surviving_G": 1.0,
+      "MSE_after_clean_F_patch": 0.0,
+      "autonomous_recovery_claim": false
+    },
+    "additive_owner_factorial": {
+      "joint_output_interaction_MSE": 9.979526995166526e-32,
+      "joint_output_interaction_max_abs": 8.881784197001252e-16,
+      "reconstruction_max_abs": 8.881784197001252e-16,
+      "scope": "Exact two-owner factorial contrast; not unique percentages of causal responsibility."
+    },
+    "same_output_can_have_wrong_content": {
+      "clean_prediction": 1,
+      "wrong_donor_prediction": -1,
+      "clean_label_error": 1,
+      "donor_label_error": 0
+    },
+    "time_invariant_signal_wrong_time_patch": {
+      "correct_time_patch_max_abs": 0.0,
+      "wrong_time_patch_max_abs": 0.0
+    },
+    "competent_LIF_known_answer": {
+      "clean_target_MSE": 1.6460221857403368e-16,
+      "damaged_F_MSE": 0.049180589616298676,
+      "repaired_F_MSE": 1.6656733501166365e-16,
+      "reverse_patch_F_MSE": 0.1967223584651947,
+      "cotarget_prediction_change_max_abs": 0.0,
+      "natural_spike_count": 0,
+      "scope": "Hand-calibrated subthreshold LIF reference; no optimizer training and no spike-coding advantage claim."
+    },
+    "bounded_scene_interval": {
+      "mean": 0.0,
+      "interval": [
+        -1.7308183826022854,
+        1.7308183826022854
+      ],
+      "family_size": 10,
+      "independent_scene_pairs": 4,
+      "half_width": 1.0,
+      "delta": 0.05
+    }
+  },
+  "new_SNN_training": 0,
+  "scope": "Analytic, logical and manually calibrated reference controls; no architecture or formal task-performance conclusion."
+}

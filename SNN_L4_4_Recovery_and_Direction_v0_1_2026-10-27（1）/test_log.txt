@@ -1,0 +1,43 @@
+test_affine_risk_interaction_does_not_imply_output_interaction (test_recovery44.MathematicalContracts.test_affine_risk_interaction_does_not_imply_output_interaction) ... ok
+test_and_requires_joint_restoration (test_recovery44.MathematicalContracts.test_and_requires_joint_restoration) ... ok
+test_beneficial_damage_has_no_ratio (test_recovery44.MathematicalContracts.test_beneficial_damage_has_no_ratio) ... ok
+test_binary_assignment_is_the_same_declared_operator (test_recovery44.MathematicalContracts.test_binary_assignment_is_the_same_declared_operator) ... ok
+test_competent_lif_restores_target_and_preserves_cotarget (test_recovery44.MathematicalContracts.test_competent_lif_restores_target_and_preserves_cotarget) ... ok
+test_empty_scene_units_rejected (test_recovery44.MathematicalContracts.test_empty_scene_units_rejected) ... ok
+test_event_boundary_interaction_disappears_when_fixed (test_recovery44.MathematicalContracts.test_event_boundary_interaction_disappears_when_fixed) ... ok
+test_external_donor_adds_information (test_recovery44.MathematicalContracts.test_external_donor_adds_information) ... ok
+test_factorial_reconstructs_every_subset (test_recovery44.MathematicalContracts.test_factorial_reconstructs_every_subset) ... ok
+test_factorial_requires_joint_condition (test_recovery44.MathematicalContracts.test_factorial_requires_joint_condition) ... ok
+test_general_squared_risk_identity (test_recovery44.MathematicalContracts.test_general_squared_risk_identity) ... ok
+test_mismatched_output_coordinates_rejected (test_recovery44.MathematicalContracts.test_mismatched_output_coordinates_rejected) ... ok
+test_nonfinite_recovery_losses_rejected (test_recovery44.MathematicalContracts.test_nonfinite_recovery_losses_rejected) ... ok
+test_norm_matching_is_per_scene (test_recovery44.MathematicalContracts.test_norm_matching_is_per_scene) ... ok
+test_or_can_hide_single_owner_necessity (test_recovery44.MathematicalContracts.test_or_can_hide_single_owner_necessity) ... ok
+test_random_dose_preserves_declared_norm (test_recovery44.MathematicalContracts.test_random_dose_preserves_declared_norm) ... ok
+test_ratio_can_be_disabled_for_other_loss_units (test_recovery44.MathematicalContracts.test_ratio_can_be_disabled_for_other_loss_units) ... ok
+test_recovery_ratio_is_not_clipped (test_recovery44.MathematicalContracts.test_recovery_ratio_is_not_clipped) ... ok
+test_unbounded_contrast_rejected (test_recovery44.MathematicalContracts.test_unbounded_contrast_rejected) ... ok
+test_xor_restoration_is_nonmonotonic (test_recovery44.MathematicalContracts.test_xor_restoration_is_nonmonotonic) ... ok
+test_zero_damage_has_no_ratio (test_recovery44.MathematicalContracts.test_zero_damage_has_no_ratio) ... ok
+test_zero_direction_is_reported_not_replaced (test_recovery44.MathematicalContracts.test_zero_direction_is_reported_not_replaced) ... ok
+test_bad_shape_removes_all_hooks (test_recovery44.RuntimeContracts.test_bad_shape_removes_all_hooks) ... ok
+test_complete_snapshot_restores_exactly (test_recovery44.RuntimeContracts.test_complete_snapshot_restores_exactly) ... ok
+test_core_restoration_leaves_mean_readout_damage (test_recovery44.RuntimeContracts.test_core_restoration_leaves_mean_readout_damage) ... ok
+test_duplicate_labels_rejected (test_recovery44.RuntimeContracts.test_duplicate_labels_rejected) ... ok
+test_edit_order_changes_the_result (test_recovery44.RuntimeContracts.test_edit_order_changes_the_result) ... ok
+test_event_controls_do_not_leak (test_recovery44.RuntimeContracts.test_event_controls_do_not_leak) ... ok
+test_event_replay_preserves_clean_baseline (test_recovery44.RuntimeContracts.test_event_replay_preserves_clean_baseline) ... ok
+test_immediate_inverse_is_an_execution_ceiling (test_recovery44.RuntimeContracts.test_immediate_inverse_is_an_execution_ceiling) ... ok
+test_joint_auxiliary_owner_noop (test_recovery44.RuntimeContracts.test_joint_auxiliary_owner_noop) ... ok
+test_missing_auxiliary_owner_rejected (test_recovery44.RuntimeContracts.test_missing_auxiliary_owner_rejected) ... ok
+test_nan_state_edit_rejected (test_recovery44.RuntimeContracts.test_nan_state_edit_rejected) ... ok
+test_nonbinary_event_policy_rejected (test_recovery44.RuntimeContracts.test_nonbinary_event_policy_rejected) ... ok
+test_noop_predictions_and_parameters (test_recovery44.RuntimeContracts.test_noop_predictions_and_parameters) ... ok
+test_snapshot_cross_time_rejected (test_recovery44.RuntimeContracts.test_snapshot_cross_time_rejected) ... ok
+test_snapshot_zeroing_keeps_clock (test_recovery44.RuntimeContracts.test_snapshot_zeroing_keeps_clock) ... ok
+test_unknown_path_and_horizon_rejected (test_recovery44.RuntimeContracts.test_unknown_path_and_horizon_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.059s
+
+OK

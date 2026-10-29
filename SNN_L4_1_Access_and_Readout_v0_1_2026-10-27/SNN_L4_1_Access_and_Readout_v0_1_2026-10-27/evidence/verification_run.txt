@@ -1,0 +1,20 @@
+{
+  "module": "L4.1",
+  "unit_tests_passed": 31,
+  "skipped": 0,
+  "untrained_interface_cases": 1728,
+  "folded_linear_trajectory_cases": 288,
+  "risk_cells": 120,
+  "constant_baseline_risk_cells": 8,
+  "saved_scene_arrays": 120,
+  "frozen_reader_hash_match": true,
+  "native_head_replay_max_abs": 4.304047356296081e-07,
+  "replayed_scenes": 128,
+  "classification_scene_replay_max_abs": 0.0,
+  "MSE_scene_replay_max_abs": 0.0,
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "pinned_author_files": 5,
+  "formal_training_completed": 0,
+  "audit_test_accessed": false,
+  "scope": "Same saved development scenes replayed for consistency, not independent scientific confirmation."
+}

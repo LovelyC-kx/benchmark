@@ -1,0 +1,5479 @@
+{
+  "module": "L4.1 folded linear trajectory deployment",
+  "cases": [
+    {
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 8.940696716308594e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 3.725290298461914e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 3.725290298461914e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "mlp",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "recurrent_mlp",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "temporal_conv",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn1d",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 3.725290298461914e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 4.470348358154297e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 3.814697265625e-06,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 3.814697265625e-06,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "sew_resnet18",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 3.814697265625e-06,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 3.725290298461914e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 2.384185791015625e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 2.384185791015625e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 2.384185791015625e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 2.384185791015625e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 2.384185791015625e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "spike_attention",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "threshold",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "threshold",
+      "phase": "pre",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "threshold",
+      "phase": "post",
+      "max_abs": 2.9802322387695312e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "if_hard",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "if_hard",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "if_hard",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "phase": "post",
+      "max_abs": 1.4901161193847656e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "phase": "pre",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "phase": "post",
+      "max_abs": 7.450580596923828e-09,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "continuous",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "continuous",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "continuous",
+      "phase": "post",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "tanh",
+      "phase": "output",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "tanh",
+      "phase": "pre",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "tanh",
+      "phase": "post",
+      "max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "phase": "output",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "phase": "pre",
+      "max_abs": 5.960464477539063e-08,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    },
+    {
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "phase": "post",
+      "max_abs": 1.1920928955078125e-07,
+      "parameters_unchanged": true,
+      "trained": false,
+      "retained_trajectory_length": 0,
+      "output_accumulator_shape": [
+        2,
+        3
+      ],
+      "output_accumulator_tensor_bytes": 24,
+      "per_step_feature_dimension": 2,
+      "head_parameters": 21,
+      "clock": 3,
+      "fixed_horizon": 3,
+      "scope": "Output accumulator plus current feature and core/cache state. No retained T-feature history; parameters/time-indexed access and Python bookkeeping remain. No peak/hardware energy claim."
+    }
+  ],
+  "case_count": 288,
+  "scope": "Same 288 trajectory interface configurations, a second deployment algorithm. Not 288 additional trained models. Linear fixed-T equivalence does not extend automatically to arbitrary nonlinear trajectory decoders."
+}

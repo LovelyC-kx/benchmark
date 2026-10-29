@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "name": "controls",
+      "exit_code": 0,
+      "elapsed_seconds": 1.2649668309998106
+    },
+    {
+      "name": "access",
+      "exit_code": 0,
+      "elapsed_seconds": 5.446430630999885
+    },
+    {
+      "name": "interfaces",
+      "exit_code": 0,
+      "elapsed_seconds": 11.025523888999942
+    }
+  ],
+  "scope": "L4.1 controlled analysis; no SNN training or dataset download",
+  "subsequent_access_stage_validation": "Added train-only constant baselines and re-executed access stage; original 120 main risks and 12 comparison certificates matched exactly. Folded deployment checked separately on 288 trajectory configurations."
+}

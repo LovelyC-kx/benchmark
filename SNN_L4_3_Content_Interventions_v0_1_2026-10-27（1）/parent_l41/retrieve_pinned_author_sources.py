@@ -9,7 +9,7 @@ def run(destination):
     dst.mkdir(parents=True);manifest=json.loads((ROOT/'references/selected_source_manifest.json').read_text());receipts={}
     for name,row in manifest.items():
         url=f'https://raw.githubusercontent.com/{row["repository"]}/{row["ref"]}/{row["path"]}'
-        req=urllib.request.Request(url,headers={'User-Agent':'SNN-L4.1-pinned-source-audit'})
+        req=urllib.request.Request(url,headers={'User-Agent':'SNN-L4.2-pinned-source-audit'})
         with urllib.request.urlopen(req,timeout=60) as response:blob=response.read()
         sha=hashlib.sha1(b'blob '+str(len(blob)).encode()+b'\0'+blob).hexdigest()
         if sha!=row['git_blob_sha']:raise ValueError(f'{name}: downloaded bytes differ from pinned Git blob')

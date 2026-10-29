@@ -1,0 +1,188 @@
+{
+  "files": [
+    {
+      "repository": "prs-eth/U-TILISE",
+      "commit": "1ea50fe1e4f1840a14b3f23062334077fc5f943b",
+      "path": "lib/models/ImageSeriesInterpolator.py",
+      "blob_sha1": "fc8d19ff451948849f576dcdfd53b102a394efe4",
+      "bytes": 17730,
+      "sha256": "cdf7b6adc4dd61119f983a5588f3fcbc0e3df3b9782245af4d57d6b9631b85c7",
+      "source_url": "https://raw.githubusercontent.com/prs-eth/U-TILISE/1ea50fe1e4f1840a14b3f23062334077fc5f943b/lib/models/ImageSeriesInterpolator.py"
+    },
+    {
+      "repository": "prs-eth/U-TILISE",
+      "commit": "1ea50fe1e4f1840a14b3f23062334077fc5f943b",
+      "path": "lib/models/utilise.py",
+      "blob_sha1": "d67ac97ff876bda7d7ee3f2b9749d4cdd3dcd903",
+      "bytes": 32070,
+      "sha256": "102c4ad960ba90b7ef01ceb52d9954303574f5ae89c81b7442bb1d1ed8d964e8",
+      "source_url": "https://raw.githubusercontent.com/prs-eth/U-TILISE/1ea50fe1e4f1840a14b3f23062334077fc5f943b/lib/models/utilise.py"
+    },
+    {
+      "repository": "prs-eth/U-TILISE",
+      "commit": "1ea50fe1e4f1840a14b3f23062334077fc5f943b",
+      "path": "lib/metrics.py",
+      "blob_sha1": "fe3b7a49b0a98fefc5a927da4af1dfe7b220ae5e",
+      "bytes": 9401,
+      "sha256": "dbf77162227b143e4163a344223bbb95dffdf688fc6ce47125020fbf1f19b67b",
+      "source_url": "https://raw.githubusercontent.com/prs-eth/U-TILISE/1ea50fe1e4f1840a14b3f23062334077fc5f943b/lib/metrics.py"
+    },
+    {
+      "repository": "prs-eth/U-TILISE",
+      "commit": "1ea50fe1e4f1840a14b3f23062334077fc5f943b",
+      "path": "lib/datasets/EarthNet2021Dataset.py",
+      "blob_sha1": "3f3690aa9da12abd50e39cb3cf4f42321fa780da",
+      "bytes": 49871,
+      "sha256": "abcd77f19ea9b375236455abba49bc27b37fdb75d9a6a59ffd311ec9e0ea894a",
+      "source_url": "https://raw.githubusercontent.com/prs-eth/U-TILISE/1ea50fe1e4f1840a14b3f23062334077fc5f943b/lib/datasets/EarthNet2021Dataset.py"
+    },
+    {
+      "repository": "bytetriper/RAE",
+      "commit": "a4d18c4db766419cbe7cb8c02cd9f7ceb0ec9041",
+      "path": "src/stage1/rae.py",
+      "blob_sha1": "add53bac5d5862e4cf02478300a5ff9b7bb2086d",
+      "bytes": 5595,
+      "sha256": "6564d285518c8a80cac7cf54fb4eb116181c298fea349d48ad0fb14ffc0239d9",
+      "source_url": "https://raw.githubusercontent.com/bytetriper/RAE/a4d18c4db766419cbe7cb8c02cd9f7ceb0ec9041/src/stage1/rae.py"
+    },
+    {
+      "repository": "bytetriper/RAE",
+      "commit": "a4d18c4db766419cbe7cb8c02cd9f7ceb0ec9041",
+      "path": "src/stage1/decoders/decoder.py",
+      "blob_sha1": "e47fb5b65fc2a25318d583ca07013047f98f4a32",
+      "bytes": 33822,
+      "sha256": "44ac509202ce4f48ae4cb59fda54aa87d7b5be36f16164a73c7221aabe5f9428",
+      "source_url": "https://raw.githubusercontent.com/bytetriper/RAE/a4d18c4db766419cbe7cb8c02cd9f7ceb0ec9041/src/stage1/decoders/decoder.py"
+    },
+    {
+      "repository": "End2End-Diffusion/iREPA",
+      "commit": "99ad4ac234efe8de52ce157120f72856e836d09f",
+      "path": "jit/spnorm.py",
+      "blob_sha1": "9dbe200d100b81d2ebecc11697e73a013c9cd5ab",
+      "bytes": 1239,
+      "sha256": "8d73e99de3ef3e05947e01444b9cd470b34e597a907b9d2ead3f3e86f554ebfe",
+      "source_url": "https://raw.githubusercontent.com/End2End-Diffusion/iREPA/99ad4ac234efe8de52ce157120f72856e836d09f/jit/spnorm.py"
+    },
+    {
+      "repository": "End2End-Diffusion/iREPA",
+      "commit": "99ad4ac234efe8de52ce157120f72856e836d09f",
+      "path": "jit/projectors.py",
+      "blob_sha1": "f2ab60593966c9d5168804b08a1ece09b55059d2",
+      "bytes": 2677,
+      "sha256": "b7b4e18749d52b8edda3511ec23c034bd2c7f6d1aec1a30dd3b7c2ae1e255e09",
+      "source_url": "https://raw.githubusercontent.com/End2End-Diffusion/iREPA/99ad4ac234efe8de52ce157120f72856e836d09f/jit/projectors.py"
+    },
+    {
+      "repository": "End2End-Diffusion/iREPA",
+      "commit": "99ad4ac234efe8de52ce157120f72856e836d09f",
+      "path": "metrics/spatial_metrics.py",
+      "blob_sha1": "97b00f9a4f590e434b8fa45d88d2508e6af66b66",
+      "bytes": 13715,
+      "sha256": "84b05c38c60f7dcd928a573a7c0d2c633993b3605c2c3309ae09f5835cb073fc",
+      "source_url": "https://raw.githubusercontent.com/End2End-Diffusion/iREPA/99ad4ac234efe8de52ce157120f72856e836d09f/metrics/spatial_metrics.py"
+    },
+    {
+      "repository": "LinZhu111/EVSNN",
+      "commit": "9404c0a8dfc4a692ce7332774f36575b3213cb7c",
+      "path": "neurons/spiking_neuron.py",
+      "blob_sha1": "2c44da22f92e39bc6b8ab8904ec304537d3c625c",
+      "bytes": 18930,
+      "sha256": "55cd7fe098291ca54be6b42be0c45ea2d83e98ab0fd2bec45356256e44d227db",
+      "source_url": "https://raw.githubusercontent.com/LinZhu111/EVSNN/9404c0a8dfc4a692ce7332774f36575b3213cb7c/neurons/spiking_neuron.py"
+    },
+    {
+      "repository": "LinZhu111/EVSNN",
+      "commit": "9404c0a8dfc4a692ce7332774f36575b3213cb7c",
+      "path": "model/snn_network.py",
+      "blob_sha1": "4f798109e0b890eb1219b6a096efe5387e24f443",
+      "bytes": 20405,
+      "sha256": "a5bb5df27ee0fa356e1907864507c24d3e6f2973bd9b0538d983ca6a3edf733b",
+      "source_url": "https://raw.githubusercontent.com/LinZhu111/EVSNN/9404c0a8dfc4a692ce7332774f36575b3213cb7c/model/snn_network.py"
+    },
+    {
+      "repository": "sunpengfei1122/Dual_memory_pathways",
+      "commit": "05cc0a3306b311e37ef9bc439ba7ac5186242672",
+      "path": "psmnist/src/dual_pathway.py",
+      "blob_sha1": "dbae082575ef5da547b5beba99d09bfe2796a076",
+      "bytes": 7112,
+      "sha256": "c4c52740734b059f58dde58c7eba1e867195eb2dce3aedb9c3074c4126cb8ff4",
+      "source_url": "https://raw.githubusercontent.com/sunpengfei1122/Dual_memory_pathways/05cc0a3306b311e37ef9bc439ba7ac5186242672/psmnist/src/dual_pathway.py"
+    },
+    {
+      "repository": "lqnankai/MuSpike",
+      "commit": "520fa0de26052d064d6450182c2744ac050c2f22",
+      "path": "evaluation/objective_evaluation/mgeval/utils.py",
+      "blob_sha1": "14fdb157a2a58302bb8f5eef6e70e9962f23fde2",
+      "bytes": 1860,
+      "sha256": "da8e34b8d8ab91ad86cae24195332cf1f3464bd8ea09e34fc1c1d59fe1a20ea6",
+      "source_url": "https://raw.githubusercontent.com/lqnankai/MuSpike/520fa0de26052d064d6450182c2744ac050c2f22/evaluation/objective_evaluation/mgeval/utils.py"
+    },
+    {
+      "repository": "Zhou-Hangyu/allclear",
+      "commit": "3db4f86c1c58f106462f3a57ef0bc74da7ec455b",
+      "path": "allclear/dataset.py",
+      "blob_sha1": "b65327224f6d03f83090d57f5426baad4bc062f8",
+      "sha256": "64f7ce8b62d54e7938a9230bc12d986a58dd6bdfd29beed4b5c95f7f55449241",
+      "bytes": 18038,
+      "source_url": "https://raw.githubusercontent.com/Zhou-Hangyu/allclear/3db4f86c1c58f106462f3a57ef0bc74da7ec455b/allclear/dataset.py"
+    },
+    {
+      "repository": "Zhou-Hangyu/allclear",
+      "commit": "3db4f86c1c58f106462f3a57ef0bc74da7ec455b",
+      "path": "allclear/utils.py",
+      "blob_sha1": "c145ef4e5599e4f3bca26c839ad7484385aeac55",
+      "sha256": "617cce588350569607cddf05c4ecc910189f680accddc87d841d24aed5f0e998",
+      "bytes": 20958,
+      "source_url": "https://raw.githubusercontent.com/Zhou-Hangyu/allclear/3db4f86c1c58f106462f3a57ef0bc74da7ec455b/allclear/utils.py"
+    },
+    {
+      "repository": "LiWeitu/EvDiff",
+      "commit": "3a510d18549704313b2d626dde495e04244cc98b",
+      "path": "tools/dsec/convert_small_align_rgb.py",
+      "blob_sha1": "3a2f9b746dae799542942204de75f87622ad13ad",
+      "sha256": "569bd12920407abdc30c234b16e8f16cbebb28b0f02ad067d7892f3805fe6f0e",
+      "bytes": 21289,
+      "source_url": "https://raw.githubusercontent.com/LiWeitu/EvDiff/3a510d18549704313b2d626dde495e04244cc98b/tools/dsec/convert_small_align_rgb.py"
+    },
+    {
+      "repository": "LiWeitu/EvDiff",
+      "commit": "3a510d18549704313b2d626dde495e04244cc98b",
+      "path": "models/voxel_model.py",
+      "blob_sha1": "3967ad4ef62778f4b4f30e4e24f3fa3ea4e6b20f",
+      "sha256": "3555048c6ca4118db190bbc31119f7693aa45c29e9eb0b56793d5c98415a6e04",
+      "bytes": 67343,
+      "source_url": "https://raw.githubusercontent.com/LiWeitu/EvDiff/3a510d18549704313b2d626dde495e04244cc98b/models/voxel_model.py"
+    },
+    {
+      "repository": "yudi-mars/Soul-NeuSim",
+      "commit": "e3dc3237bfbe1876886f3beb77b6d53c6c016232",
+      "path": "README.md",
+      "blob_sha1": "1c0cb70ff8405898795cc2ef06c24bbdf5fada75",
+      "sha256": "3394743709d294209c57f2ea7f9a6965a1d7898053b789a85c5dd76bcba263b6",
+      "bytes": 10573,
+      "source_url": "https://github.com/yudi-mars/Soul-NeuSim/blob/e3dc3237bfbe1876886f3beb77b6d53c6c016232/README.md"
+    },
+    {
+      "repository": "yudi-mars/Soul-NeuSim",
+      "commit": "e3dc3237bfbe1876886f3beb77b6d53c6c016232",
+      "path": "soul/neuron/LIF.py",
+      "blob_sha1": "848b25ab43e7591ba55f163d69ce71723c408728",
+      "sha256": "3f8a178f602cbda9ccb8809ee62a99e4a8207ec4bc8db777c5d1dc53b592cfc4",
+      "bytes": 1330,
+      "source_url": "https://github.com/yudi-mars/Soul-NeuSim/blob/e3dc3237bfbe1876886f3beb77b6d53c6c016232/soul/neuron/LIF.py"
+    }
+  ],
+  "errors": [],
+  "date": "2026-10-27",
+  "unavailable": [
+    {
+      "paper": "Intel Neuromorphic DNS Challenge",
+      "status": "Paper official IntelLabs repo returned404; public forks found, not relabeled official or executed."
+    },
+    {
+      "paper": "Spike Stream Memory Transfer for Dynamic Scene Reconstruction",
+      "code_url": "https://github.com/csycdong/SSMT",
+      "status": "Original 9-page AAAI2026 PDF method read; original supplied repository commits endpoint returned404, no author execution."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "module": "L4.5",
+  "updates": [
+    {
+      "file": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_library_file_id": "libfile_6a24daf8211081919033d46e4b282680",
+      "expected_current_version": 16,
+      "source_sha256": "17a4c7ef939c022a80acaf789e371cdbd5564ea5794e3ef8435d1bab7fe6fe1a",
+      "new_sha256": "11cb22c13da6dd66a1af6985dc2bd69afbbc3a44c83d3c9586d1d69f40a29f41",
+      "focused_replacements": 6,
+      "unchanged_outside_replacements_and_append_verified": true
+    },
+    {
+      "file": "SNN_L4_Framework_and_Research_Plan_2026-10-27.md",
+      "source_library_file_id": "libfile_973385a790688191b5f98e80425dbaba",
+      "expected_current_version": 3,
+      "source_sha256": "4bec2a9a1612f3b93f3b78ebe8ff66698ba7658710510a1092414fe522b1bbe4",
+      "new_sha256": "0a4d08cd4167654230a3e795634c02cdc0f2686676156af048c802a88868cdcc",
+      "content_version_from": "v0.4",
+      "content_version_to": "v0.5",
+      "scope": "Preserve L4.1-4.4 and whole-L4 math; complete7.1/7.2 L4.5 and stage status; disambiguate coverage/source U."
+    },
+    {
+      "file": "SNN_L4_Mathematical_and_Latent_Framework_2026-10-27.md",
+      "source_library_file_id": "libfile_30cbbd56a8048191a6b3b6956c3fef08",
+      "expected_current_version": 2,
+      "source_sha256": "cd5bfffdd96d83e0d6a5545c750368f206631388f51aa11fef4744be706fe60f",
+      "new_sha256": "92739d2215e92d2418782ff4a4bddd5018598e6b9de6739fa0f30b78004017c4",
+      "content_version_from": "v0.3",
+      "content_version_to": "v0.4",
+      "scope": "Whole-L4 math retained;8.1-8.4 spatial theory and execution record added."
+    }
+  ]
+}

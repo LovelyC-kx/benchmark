@@ -1,0 +1,115 @@
+{
+  "module": "L4.5",
+  "date": "2026-10-27",
+  "version": "v0.1",
+  "development_delivery": "complete",
+  "original_layers": 6,
+  "L4_sections_preserved": [
+    "L4.1",
+    "L4.2",
+    "L4.3",
+    "L4.4",
+    "L4.5"
+  ],
+  "new_SNN_optimizer_updates": 0,
+  "image_core_initializations": 6,
+  "trained_image_cores": 0,
+  "image_core_initialization_seed": 45001,
+  "old_vector_checkpoint_used_as_image_model": false,
+  "formal_benchmark_completed": 0,
+  "formal_benchmark_planned": 435,
+  "audit_test_accessed": false,
+  "A40_used": false,
+  "external_datasets_downloaded": false,
+  "author_pretrained_models_downloaded": false,
+  "primary_fit": {
+    "selected_pixel_decoders": 36,
+    "selected_independent_probes": 36,
+    "auxiliary_factor_sign_probes": 12,
+    "ridge_candidate_solves": 228,
+    "optimizer_updates": 0
+  },
+  "main": {
+    "scene_pairs_development": 256,
+    "scene_pairs_confirmation": 512,
+    "state_four_group_cells_per_pool": 144,
+    "view_four_group_units_per_pool": 288,
+    "saved_scene_loss_arrays_total": 9216,
+    "bounded_intervals_total": 3456,
+    "positive_bounded_lower_bounds": 0,
+    "qualified_ratio_entries_per_pool": 60,
+    "unique_qualified_damage_config_site_view_region_per_pool": 5
+  },
+  "supplementary": {
+    "confirmation_subset": 128,
+    "independent_texture_OOD_scenes": 256,
+    "saved_scene_loss_arrays": 480,
+    "ALIF_joint_owner_factorials": 2,
+    "frequency_patch_factorials": 6,
+    "SSIM_conditions": 38,
+    "untrained_new_spatial_interfaces": 24
+  },
+  "post_main_exploration": {
+    "label": "Equal decoder-dimension summaries; not original main confirmation",
+    "new_evaluation_scenes": 512,
+    "selected_decoders": 36,
+    "ridge_candidate_solves": 108,
+    "equal_decoder_affine_coefficients": 9216,
+    "total_summary_cost_equal": false
+  },
+  "verification": {
+    "module": "L4.5 artifact verification",
+    "python_AST_files": 121,
+    "strict_JSON_files": 81,
+    "unchanged_parent_files_verified": 254,
+    "main_scene_loss_arrays_recomputed": 9216,
+    "main_view_four_group_units_recomputed": 576,
+    "bounded_intervals_recomputed": 3456,
+    "main_prefix_view_units_replayed": 576,
+    "scenes_saved_per_prefix": 8,
+    "original_replay_batch_size": 64,
+    "maximum_replay_absolute_gaps": {
+      "payload": 0.0,
+      "state": 0.0,
+      "prediction": 0.0
+    },
+    "supplement_scene_loss_arrays_checked": 480,
+    "SSIM_arrays_checked": 38,
+    "matched_summary_arrays_checked": 36,
+    "pool_summaries": {
+      "development": {
+        "independent_scene_pairs": 256,
+        "qualified_ratio_method_view_region_entries": 60,
+        "unique_qualified_damage_config_site_view_region": 5,
+        "positive_bounded_lower_bounds": 0
+      },
+      "confirmation": {
+        "independent_scene_pairs": 512,
+        "qualified_ratio_method_view_region_entries": 60,
+        "unique_qualified_damage_config_site_view_region": 5,
+        "positive_bounded_lower_bounds": 0
+      }
+    },
+    "joint_ALIF_last_full_owner_restoration_verified": true,
+    "new_SNN_training_updates": 0,
+    "formal_benchmark_completed": 0,
+    "scope": "All main saved scene risks/intervals recomputed; every main saved prefix replayed. Supplement arrays and exact owner contracts checked, not all supplementary forward passes rerun. No trained-core or real-data conclusion."
+  },
+  "tests_passed": 49,
+  "known_answer_control_families": 20,
+  "source_audit": {
+    "fixed_repositories": 9,
+    "fixed_text_files": 19,
+    "full_author_models_reproduced": 0
+  },
+  "real_adapter": "Input schema / target and availability / group boundary only; raw-format loaders, actual geospatial/temporal content audits pending datasets",
+  "next_layer": "L5 ability boundaries, extrapolation and diagnostic design prediction",
+  "material_limits": [
+    "No end-to-end trained image core or training seed replication",
+    "Diagnostic donor/normal/true-motion references have external information permission",
+    "Limited affine image readers and linear probes; no exhaustive nonlinear family",
+    "Synthetic four-band data, not satellite/event/spike sensor physics",
+    "No real-data benchmark, optimized deployment latency/memory or hardware energy",
+    "Equal decoder coefficients do not equal total costs; positive architecture design gain remains unconfirmed"
+  ]
+}

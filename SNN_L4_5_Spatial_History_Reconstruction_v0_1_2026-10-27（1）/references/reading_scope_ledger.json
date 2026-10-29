@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "sources": [
+    {
+      "key": "BEN-SOUL-upload",
+      "source": "https://chatgpt.com/library?file_id=libfile_f3056fc0bbb081918b688a3c270085fa&account_id=personal",
+      "scope": "24page main manuscript selected spectral/reconstruction methods, code paragraph and Fig3 caption reread; not whole supplement or author model execution"
+    },
+    {
+      "key": "DMP",
+      "source": "https://www.nature.com/articles/s42256-026-01255-3",
+      "scope": "Formal2026 article methods slow state,head,hardware/code availability"
+    },
+    {
+      "key": "MuSpike",
+      "source": "https://arxiv.org/html/2508.19251v1",
+      "scope": "Methods, objective/subjective evaluation; symbolic music not pixel reconstruction"
+    },
+    {
+      "key": "DNS",
+      "source": "https://arxiv.org/html/2303.09503v3",
+      "scope": "Task/evaluation/baseline; official source404 recorded"
+    },
+    {
+      "key": "U-TILISE",
+      "source": "https://github.com/prs-eth/U-TILISE",
+      "scope": "Official data/preprocessing plus four fixed code files; formal paper record; not full paper rerun"
+    },
+    {
+      "key": "AllClear",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/60095e1d7ebb292dbba93c4d8f7b2463-Abstract-Datasets_and_Benchmarks_Track.html",
+      "scope": "Formal record,project,data/dataset utilities code; no full experimental reproduction"
+    },
+    {
+      "key": "RAE",
+      "source": "https://arxiv.org/html/2510.11690v1",
+      "scope": "Frozen encoder/reconstruction/normalization and selected code; original unpatchify artificial execution"
+    },
+    {
+      "key": "iREPA",
+      "source": "https://arxiv.org/html/2512.10794v1",
+      "scope": "Spatial similarity and normalization methods/appendix,3 fixed files; selected original module/functions"
+    },
+    {
+      "key": "EVSNN",
+      "source": "https://openaccess.thecvf.com/content/CVPR2022/html/Zhu_Event-Based_Video_Reconstruction_via_Potential-Assisted_Spiking_Neural_Network_CVPR_2022_paper.html",
+      "scope": "Original method and fixed neuron/network code; original MP methods on fixture only"
+    },
+    {
+      "key": "SSMT",
+      "source": "https://ojs.aaai.org/index.php/AAAI/article/view/37364/41326",
+      "scope": "9page formal PDF selected memory/motion/overall method; code404 and oral identity verified"
+    },
+    {
+      "key": "EvDiff",
+      "source": "https://arxiv.org/html/2511.17492v2",
+      "scope": "v2 motivation/architecture/training and fixed alignment/voxel sources; no diffusion model execution"
+    },
+    {
+      "key": "REPA",
+      "source": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/d9e42b4d7163931f3689d6d6fbaa11d0-Abstract-Conference.html",
+      "scope": "Formal identity refreshed; detailed prior L4.2 code record inherited, not new execution"
+    },
+    {
+      "key": "REG",
+      "source": "https://proceedings.nips.cc/paper_files/paper/2025/hash/0b99315234cc95e6ef281f9155b68832-Abstract-Conference.html",
+      "scope": "Formal title/identity refreshed; detailed prior L4.2 record inherited, not new execution"
+    }
+  ]
+}

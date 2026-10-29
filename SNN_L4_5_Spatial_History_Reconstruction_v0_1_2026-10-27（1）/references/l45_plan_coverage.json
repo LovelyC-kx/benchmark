@@ -1,0 +1,136 @@
+{
+  "module": "L4.5",
+  "original_master_references": [
+    {
+      "id": "BEN-DNS",
+      "read_scope": "Original paper task/evaluation/baseline",
+      "adaptation": [
+        "causal/offline permissions",
+        "quality/resource separation"
+      ],
+      "code_status": "Official repository404; forks not relabeled official"
+    },
+    {
+      "id": "BEN-SOUL",
+      "read_scope": "Uploaded24-page manuscript spectral/FMS/reconstruction method, Fig3 caption and code availability",
+      "adaptation": [
+        "retain existing reconstruction/representation contributions",
+        "add target-specific source/region interventions"
+      ],
+      "code_status": "Fixed public Git commit README/LIF; no author model or Fig3l reproduction"
+    },
+    {
+      "id": "MEM-DMP",
+      "read_scope": "Formal2026 paper methods/state/cost and selected official FFT implementation",
+      "adaptation": [
+        "all state owners counted",
+        "aux and readout restoration separate"
+      ],
+      "code_status": "Pinned source read; not executed full DMP"
+    },
+    {
+      "id": "GEN-MUSPIKE",
+      "read_scope": "Original2025 methods and objective/subjective evaluation",
+      "adaptation": [
+        "task-specific metrics",
+        "generation does not imply source recovery"
+      ],
+      "code_status": "Pinned original Euclidean helper executed; no music generation"
+    }
+  ],
+  "original_plan_documents": [
+    {
+      "name": "SNN_spatiotemporal_capacity_plan_v1.md",
+      "library_file_id": "libfile_407355ae78508191bf9cde83894086f9",
+      "read_scope": "Full plan; keep EarthNet/U-TILISE first, AllClear later, causal/offline and state/readout budgets"
+    },
+    {
+      "name": "SNN_L1_Completion_2026-10-21.md",
+      "library_file_id": "libfile_b6624a13ae048191bb14e9c59e42cced",
+      "read_scope": "Image contracts, coverage, permissions, controls and reconstruction boundaries"
+    },
+    {
+      "name": "SNN_Dataset_Plan_2026-10-21.md",
+      "library_file_id": "libfile_332a06981cd08191a5fe84be6ca8d135",
+      "read_scope": "Principles,15 continuous/reconstruction candidates, derived-protocol and scope records"
+    }
+  ],
+  "original_axes_preserved": [
+    "current/history independent requirements",
+    "same content repeated noisy views",
+    "cross-time relation and query visibility",
+    "causal current target vs offline seq-to-seq",
+    "original ROI/scene splits",
+    "state/projection/readout costs"
+  ],
+  "symbol_disambiguation": {
+    "U_vis": "L1 never-seen target region",
+    "U_src": "outdated/conflicting source; separate axis"
+  },
+  "subsections": [
+    {
+      "id": "4.5.1",
+      "topic": "Target and permissions",
+      "code": [
+        "spatial_data45.py",
+        "real_reconstruction_contract45.py"
+      ]
+    },
+    {
+      "id": "4.5.2",
+      "topic": "Source,coverage,alignment",
+      "code": [
+        "spatial_data45.py",
+        "run_spatial_controls45.py"
+      ]
+    },
+    {
+      "id": "4.5.3",
+      "topic": "Spatial readers and budgets",
+      "code": [
+        "spatial_readers45.py",
+        "fit_spatial_bank45.py",
+        "run_matched_summaries45.py"
+      ]
+    },
+    {
+      "id": "4.5.4",
+      "topic": "Actual post-state/source interventions",
+      "code": [
+        "spatial_runtime45.py",
+        "run_spatial_main45.py"
+      ]
+    },
+    {
+      "id": "4.5.5",
+      "topic": "Frequency,geometry,absolute content",
+      "code": [
+        "spatial_metrics45.py",
+        "run_spatial_supplements45.py",
+        "audit_spatial_authors45.py"
+      ]
+    },
+    {
+      "id": "4.5.6",
+      "topic": "Outdated history and joint owners",
+      "code": [
+        "run_spatial_supplements45.py",
+        "resource_accounting45.py"
+      ]
+    },
+    {
+      "id": "4.5.7",
+      "topic": "Real data transition",
+      "code": [
+        "real_reconstruction_contract45.py"
+      ],
+      "scope": "Adapter boundary tested, no actual dataset audit"
+    },
+    {
+      "id": "4.5.8",
+      "topic": "Paper and design forecasts",
+      "code": [],
+      "scope": "Predictions specified; trained same-total-budget design experiments pending"
+    }
+  ]
+}

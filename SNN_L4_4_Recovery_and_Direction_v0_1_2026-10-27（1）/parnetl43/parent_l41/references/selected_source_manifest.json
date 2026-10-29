@@ -1,0 +1,42 @@
+{
+  "TRQR_0": {
+    "file": "trqr_models.py",
+    "repository": "dfxue/MI-TRQR",
+    "ref": "bc47d8a8240d9c3bad74fb5968281821f8031641",
+    "path": "cifar10-dvs/models.py",
+    "git_blob_sha": "a882bb58967afd367da1726f61555798631e1ab8",
+    "read_scope": "Selected MI probability function, train-only mask module and model output/count contract"
+  },
+  "TRQR_1": {
+    "file": "trqr_functions.py",
+    "repository": "dfxue/MI-TRQR",
+    "ref": "bc47d8a8240d9c3bad74fb5968281821f8031641",
+    "path": "cifar10-dvs/functions.py",
+    "git_blob_sha": "b3a86555065b398973142fd8f218abb63449ea68",
+    "read_scope": "Full small helper file; selected TET_loss executed"
+  },
+  "TRQR_2": {
+    "file": "trqr_sew_resnet.py",
+    "repository": "dfxue/MI-TRQR",
+    "ref": "bc47d8a8240d9c3bad74fb5968281821f8031641",
+    "path": "imagenet/sew_resnet.py",
+    "git_blob_sha": "697bd97fadb09b35c727c9f29f70dfea250ed51e",
+    "read_scope": "Selected MI/mask, spike-count axes and output contract"
+  },
+  "TRQR_3": {
+    "file": "trqr_vgg_train.py",
+    "repository": "dfxue/MI-TRQR",
+    "ref": "bc47d8a8240d9c3bad74fb5968281821f8031641",
+    "path": "cifar10-dvs/train_vgg.py",
+    "git_blob_sha": "98f22708ed2c0fbaa1f8a7d451fd0171570f13ab",
+    "read_scope": "Selected train/test aggregation and loss branches"
+  },
+  "TRQR_4": {
+    "file": "trqr_imagenet_train.py",
+    "repository": "dfxue/MI-TRQR",
+    "ref": "bc47d8a8240d9c3bad74fb5968281821f8031641",
+    "path": "imagenet/train.py",
+    "git_blob_sha": "c488cab9d9a36a93f3deab3d3d53ccae376d5762",
+    "read_scope": "Selected AMP weighted training and evaluation output[0] branches"
+  }
+}

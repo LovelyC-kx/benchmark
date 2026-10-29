@@ -1,0 +1,119 @@
+{
+  "original_L41_plan_entries": 7,
+  "all_original_L41_entries_routed": true,
+  "all_full_texts_or_author_models_reproduced": false,
+  "plan_sources": [
+    {
+      "name": "SNN_Benchmark_Question_Taxonomy_v1.md",
+      "library_file_id": "libfile_d90c95b4a3508191a11f6e894dd6f6b0",
+      "read_scope": "Section IV observation/readout and A/B/C experiment definitions"
+    },
+    {
+      "name": "SNN_Cross_Layer_Claims_and_Evidence_v1.md",
+      "library_file_id": "libfile_daa1ba49b6848191ba143da487a626a1",
+      "read_scope": "P1/P2 experiment and layer responsibility sections"
+    },
+    {
+      "name": "SNN_Benchmark_Research_Argument_Draft_v0_2026-10-20.md",
+      "library_file_id": "libfile_227716fbec188191b4bd36b57d41464a",
+      "read_scope": "Research claims, evidence chain and six-layer responsibilities"
+    },
+    {
+      "name": "SNN_Research_Master_Index_2026-10-24.md",
+      "library_file_id": "libfile_6a24daf8211081919033d46e4b282680",
+      "read_version": 12,
+      "read_scope": "All five L4 routing cards and selected paper records"
+    }
+  ],
+  "papers": [
+    {
+      "id": "REP-TEMPORALDESIGN",
+      "title": "Design and Analysis of Temporal Representations in Neural Networks",
+      "year": 2026,
+      "status": "October 14 preprint",
+      "primary_url": "https://arxiv.org/abs/2610.19730",
+      "code_url": null,
+      "read_scope": "Primary indexed metadata/abstract; direct HTML/PDF requests blocked",
+      "use": "Direct framework neighbor; do not claim encoding/activation/decoding split itself is new",
+      "adaptation": "Actual G/P/R contracts, readout-owned state, frozen access and task effects"
+    },
+    {
+      "id": "BEN-STP",
+      "title": "Spiking Neural Networks for Temporal Processing: Status Quo and Future Prospects",
+      "year": 2025,
+      "primary_url": "https://arxiv.org/abs/2502.09449",
+      "code_url": "https://github.com/liyc5929/neuroseqbench",
+      "read_scope": "STP/NoTD definitions and comparison criteria reread; no new author training",
+      "adaptation": "Cell recurrence vs readout/cache history, permutation/order and owner controls"
+    },
+    {
+      "id": "BEN-SOUL",
+      "title": "Benchmarking spiking neural networks across sensing modalities on edge devices",
+      "PDF_title": "A modality-aware benchmark reveals when spiking neural networks benefit edge sensing",
+      "year": 2026,
+      "primary_url": "https://arxiv.org/abs/2609.00026",
+      "code_url": "https://github.com/yudi-mars/Soul-NeuSim",
+      "read_scope": "Selected primary scope, feature/system framing and code availability; no per-model deployment audit in this run",
+      "adaptation": "Native task-specific spatial access and permission/resource boundary"
+    },
+    {
+      "id": "READ-NULL",
+      "title": "Cortical activity in the null space: permitting preparation without movement",
+      "year": 2014,
+      "primary_url": "https://doi.org/10.1038/nn.3643",
+      "code_url": null,
+      "read_scope": "Identity/abstract reconfirmed; full PMC request blocked",
+      "adaptation": "Declare exact head/query for output null and distinguish future observability"
+    },
+    {
+      "id": "BEN-RETHINK",
+      "title": "Rethinking the performance comparison between SNNS and ANNS",
+      "year": 2020,
+      "primary_url": "https://pubmed.ncbi.nlm.nih.gov/31586857/",
+      "code_url": null,
+      "read_scope": "Primary bibliographic identity/abstract only",
+      "adaptation": "Comparison/workload context; no unverified technical method imported"
+    },
+    {
+      "id": "REP-TRQR",
+      "title": "MI-TRQR: Mutual Information-Based Temporal Redundancy Quantification and Reduction for Energy-Efficient Spiking Neural Networks",
+      "year": 2025,
+      "status": "NeurIPS",
+      "primary_url": "https://papers.nips.cc/paper_files/paper/2025/file/dfb89b72be941eeeaeb5ee53bd3e7fc1-Paper-Conference.pdf",
+      "code_url": "https://github.com/dfxue/MI-TRQR",
+      "read_scope": "Selected methods 3.1-3.3 and relevant controls; five pinned source files selected definitions/branches",
+      "adaptation": "Separate mask training policy, training aggregation/loss, inference aggregation and auxiliary/batch observation permissions; MI axes and entropy-degenerate inputs explicit"
+    },
+    {
+      "id": "READ-FEEDBACK",
+      "title": "Motor Cortical Visuomotor Feedback Activity Is Initially Isolated from Downstream Targets in Output-Null Neural State Space Dimensions",
+      "year": 2017,
+      "primary_url": "https://doi.org/10.1016/j.neuron.2017.05.023",
+      "code_url": null,
+      "read_scope": "Inherits L3.7 selected mapping/method reading; no new animal or full-author-code execution",
+      "adaptation": "Actual downstream map and finite future head effects"
+    }
+  ],
+  "future_L4_primary_neighbors": [
+    {
+      "title": "Improving Causal Interventions in Amnesic Probing with Mean Projection or LEACE",
+      "year": 2025,
+      "primary_url": "https://aclanthology.org/2025.findings-acl.674/",
+      "current_scope": "Primary identity/abstract; full method/code audit reserved for L4.3"
+    },
+    {
+      "title": "How Reliable are Causal Probing Interventions?",
+      "year": 2025,
+      "primary_url": "https://arxiv.org/html/2408.15510v5",
+      "version": "v5 2025-12-22; IJCNLP-AACL2025",
+      "current_scope": "Selected completeness/selectivity/reliability definitions; official project page checked, actual code repository not verified"
+    },
+    {
+      "title": "LEACE: Perfect linear concept erasure in closed form",
+      "year": 2023,
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d066d21c619d0a78c5b557fa3291a8f4-Abstract-Conference.html",
+      "code_url": "https://github.com/EleutherAI/concept-erasure",
+      "current_scope": "Primary identity/code entry; exact implementation and SNN adaptation reserved for L4.3"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "H1__write_only::content_donor": {
+    "__array__": "array_0"
+  },
+  "H1__write_only::count_flip_matched_0": {
+    "__array__": "array_1"
+  },
+  "H1__write_only::count_flip_matched_1": {
+    "__array__": "array_2"
+  },
+  "H1__write_only::count_flip_matched_2": {
+    "__array__": "array_3"
+  },
+  "H1__complete_suffix::content_donor": {
+    "__array__": "array_4"
+  },
+  "H1__complete_suffix::count_flip_matched_0": {
+    "__array__": "array_5"
+  },
+  "H1__complete_suffix::count_flip_matched_1": {
+    "__array__": "array_6"
+  },
+  "H1__complete_suffix::count_flip_matched_2": {
+    "__array__": "array_7"
+  },
+  "H4__write_only::content_donor": {
+    "__array__": "array_8"
+  },
+  "H4__write_only::count_flip_matched_0": {
+    "__array__": "array_9"
+  },
+  "H4__write_only::count_flip_matched_1": {
+    "__array__": "array_10"
+  },
+  "H4__write_only::count_flip_matched_2": {
+    "__array__": "array_11"
+  },
+  "H4__complete_suffix::content_donor": {
+    "__array__": "array_12"
+  },
+  "H4__complete_suffix::count_flip_matched_0": {
+    "__array__": "array_13"
+  },
+  "H4__complete_suffix::count_flip_matched_1": {
+    "__array__": "array_14"
+  },
+  "H4__complete_suffix::count_flip_matched_2": {
+    "__array__": "array_15"
+  },
+  "C__write_only::content_donor": {
+    "__array__": "array_16"
+  },
+  "C__write_only::count_flip_matched_0": {
+    "__array__": "array_17"
+  },
+  "C__write_only::count_flip_matched_1": {
+    "__array__": "array_18"
+  },
+  "C__write_only::count_flip_matched_2": {
+    "__array__": "array_19"
+  },
+  "C__complete_suffix::content_donor": {
+    "__array__": "array_20"
+  },
+  "C__complete_suffix::count_flip_matched_0": {
+    "__array__": "array_21"
+  },
+  "C__complete_suffix::count_flip_matched_1": {
+    "__array__": "array_22"
+  },
+  "C__complete_suffix::count_flip_matched_2": {
+    "__array__": "array_23"
+  }
+}

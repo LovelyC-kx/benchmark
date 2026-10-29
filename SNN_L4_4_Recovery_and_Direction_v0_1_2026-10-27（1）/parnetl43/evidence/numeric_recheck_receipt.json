@@ -1,0 +1,11 @@
+{
+  "reason": "Use the actual stored float32 beta and report an explicit arithmetic allowance for very large state values, rather than requiring an unscaled absolute real-arithmetic residual.",
+  "original_max_raw_excess": 0.02348127361619845,
+  "actual_beta": 0.800000011920929,
+  "updated_max_raw_excess": 0.019474213127978146,
+  "max_excess_after_declared_allowance": 0.0,
+  "all_952_scene_loss_arrays_bitwise_unchanged": true,
+  "protocol_choices_changed": false,
+  "core_weights_changed": false,
+  "tensor_layout_noop_fix": "Value-identical edits retain the original tensor object and strides; this resolves ~6e-8 reduction differences in the spike-attention no-op interface. No attention operator or original model code changed."
+}

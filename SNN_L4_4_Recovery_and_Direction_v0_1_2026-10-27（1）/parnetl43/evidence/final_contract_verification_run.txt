@@ -1,0 +1,20 @@
+{
+  "module": "L4.3 artifact verification",
+  "strict_json_files": 36,
+  "python_AST_files": 87,
+  "inherited_files_verified": 104,
+  "loss_arrays_recomputed": 1496,
+  "initial_state_prefix_conditions_replayed": 0,
+  "edge_prefix_conditions_replayed": 0,
+  "operator_scope_and_risk_bound_records_verified": 350,
+  "max_scaled_identity_residual": 2.3631306127502556e-16,
+  "prefix_native_prediction_max_abs": 0,
+  "prefix_state_max_abs": 0,
+  "max_raw_real_arithmetic_envelope_excess": 0.019474213127978146,
+  "max_envelope_excess_after_declared_FP32_allowance": 0.0,
+  "no_op_snapshot_edge_and_binary_budgets_verified": true,
+  "frozen_banks_and_checkpoint_verified": true,
+  "state_classification_family_positive_lower_count": 0,
+  "edge_classification_family_positive_lower_count": 0,
+  "scope": "Recomputed every saved scene-loss mean and bounded comparison; replayed first32 of all initial conditions using original batch128. Adaptive follow-up means/hash verified; its full native reruns are the evaluation log, not a second independent validation sample."
+}

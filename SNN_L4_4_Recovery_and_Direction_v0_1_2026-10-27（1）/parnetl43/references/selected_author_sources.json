@@ -1,0 +1,86 @@
+{
+  "retrieved": "2026-10-27",
+  "files": [
+    {
+      "repository": "EleutherAI/concept-erasure",
+      "commit": "9f51753821316a1edacf78b52b464ab26d40e60a",
+      "path": "concept_erasure/leace.py",
+      "blob_sha1": "ce58f3655e01969d22272bcdff254fe3e161d1c5",
+      "sha256": "e4145ae6a1ae6671b3eb68fe1df7dbbbe3ea06eb077dfac8bf169ed4c908b463",
+      "bytes": 10314,
+      "source_url": "https://github.com/EleutherAI/concept-erasure/blob/9f51753821316a1edacf78b52b464ab26d40e60a/concept_erasure/leace.py"
+    },
+    {
+      "repository": "EleutherAI/concept-erasure",
+      "commit": "9f51753821316a1edacf78b52b464ab26d40e60a",
+      "path": "concept_erasure/caching.py",
+      "blob_sha1": "c8f658647f844323a3f9e16e6f4e3313438301e5",
+      "sha256": "4bdf3865c0aebd70cf241642e4f4f068625687f82e81c7f2f1906bfc76a9992a",
+      "bytes": 1326,
+      "source_url": "https://github.com/EleutherAI/concept-erasure/blob/9f51753821316a1edacf78b52b464ab26d40e60a/concept_erasure/caching.py"
+    },
+    {
+      "repository": "EleutherAI/concept-erasure",
+      "commit": "9f51753821316a1edacf78b52b464ab26d40e60a",
+      "path": "concept_erasure/shrinkage.py",
+      "blob_sha1": "eab429165d05de5c44c4dd1441169295810f805f",
+      "sha256": "05f3269524e4f612691605325407e72a56a1305678d1b9cee56b1177d3335988",
+      "bytes": 2397,
+      "source_url": "https://github.com/EleutherAI/concept-erasure/blob/9f51753821316a1edacf78b52b464ab26d40e60a/concept_erasure/shrinkage.py"
+    },
+    {
+      "repository": "efemeryds/amnesic-probing-with-single-projection",
+      "commit": "972d6b9a88b5134a29a35e7a66979c118df54d57",
+      "path": "projection_methods/MPMethod.py",
+      "blob_sha1": "73ef89bd5d39c4643855991424db85b2e94f34d9",
+      "sha256": "76d1b5388cf51cda00e6afe9cd356ec8ca5a64df340982699b72594b0af69598",
+      "bytes": 2738,
+      "source_url": "https://github.com/efemeryds/amnesic-probing-with-single-projection/blob/972d6b9a88b5134a29a35e7a66979c118df54d57/projection_methods/MPMethod.py"
+    },
+    {
+      "repository": "efemeryds/amnesic-probing-with-single-projection",
+      "commit": "972d6b9a88b5134a29a35e7a66979c118df54d57",
+      "path": "projection_methods/LEACE.py",
+      "blob_sha1": "99f36612b453cbfba18ecd72d1056328804add34",
+      "sha256": "236a79398c2a220b4c7f608b6293468f0518a38c1d69502cda046bead4c8b927",
+      "bytes": 14559,
+      "source_url": "https://github.com/efemeryds/amnesic-probing-with-single-projection/blob/972d6b9a88b5134a29a35e7a66979c118df54d57/projection_methods/LEACE.py"
+    },
+    {
+      "repository": "brcsomnath/PEF",
+      "commit": "a0f708b126920da4240ceca8771e50286faf2b7d",
+      "path": "src/pef.py",
+      "blob_sha1": "43c6bdd9ed54b3ea90ec4d1aa0403ccf76428dfa",
+      "sha256": "4c9546629c0e0dfbca0b3a9d2e9e6319acb7cb82e16b97d61e418802fb6be62f",
+      "bytes": 10227,
+      "source_url": "https://github.com/brcsomnath/PEF/blob/a0f708b126920da4240ceca8771e50286faf2b7d/src/pef.py"
+    },
+    {
+      "repository": "Zishan-Shao/decodeshare",
+      "commit": "89ed6a36603d81d024b0bd5438048a93d3fff2ac",
+      "path": "decodeshare/subspace.py",
+      "blob_sha1": "e9fcdb6dcaadf89c598eaa897d10e159a9d6d4fe",
+      "sha256": "70348c4c1c36fa860c38efd5057c1b89326eab08730cf304cfdca87980aae9a1",
+      "bytes": 19919,
+      "source_url": "https://github.com/Zishan-Shao/decodeshare/blob/89ed6a36603d81d024b0bd5438048a93d3fff2ac/decodeshare/subspace.py"
+    },
+    {
+      "repository": "Zishan-Shao/decodeshare",
+      "commit": "89ed6a36603d81d024b0bd5438048a93d3fff2ac",
+      "path": "README.md",
+      "blob_sha1": "0b85d82fef69e816e483769cb6d69ce413a815ce",
+      "sha256": "13695628c1cf6716e0b2d002b6f260a246e91aa5db6f7fafd608d92a59c3cecf",
+      "bytes": 4943,
+      "source_url": "https://github.com/Zishan-Shao/decodeshare/blob/89ed6a36603d81d024b0bd5438048a93d3fff2ac/README.md"
+    },
+    {
+      "repository": "yanaiela/amnesic_probing",
+      "commit": "a96e3067a9f9918099015a7173c94830584bbe61",
+      "path": "amnesic_probing/debias/debias.py",
+      "blob_sha1": "4e7a14b7ef6806598f3a4c6ccd5e72803dcdf514",
+      "sha256": "a05c4f34253e642ae176df2bf0922f8ace3a9aad38a9bdda614a90a04746646a",
+      "bytes": 14760,
+      "source_url": "https://github.com/yanaiela/amnesic_probing/blob/a96e3067a9f9918099015a7173c94830584bbe61/amnesic_probing/debias/debias.py"
+    }
+  ]
+}

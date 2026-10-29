@@ -1,0 +1,2409 @@
+{
+  "module": "L4.3 hook interface controls",
+  "cases": [
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "recurrent_mlp",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.cells.1",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "temporal_conv",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn1d",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.a2",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "sew_resnet18",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "spike_attention",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.final",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "classification",
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.b.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "lif_hard",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "lif_soft",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "threshold",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "threshold",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "if_hard",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "if_hard",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "plif_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "alif_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "adlif_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "hetero_lif",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "two_state_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "continuous",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "continuous",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "tanh",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "tanh",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "readout": "last",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    },
+    {
+      "objective": "reconstruction",
+      "backbone": "unet",
+      "cell": "analog_hard_ref",
+      "readout": "mean",
+      "path": "backbone.d.act",
+      "noop_max_abs": 0.0,
+      "parameters_unchanged": true,
+      "trained": false
+    }
+  ],
+  "case_count": 240,
+  "classification_cases": 192,
+  "image_reconstruction_cases": 48,
+  "scope": "Width2,T3,normalization none, post observation, one Cell call per step. No-op hook compatibility only; not content-selective intervention validity or trained performance."
+}

@@ -1,0 +1,77 @@
+{
+  "module": "L4.3 known-answer mathematical controls",
+  "Gaussian_erasure": {
+    "leace_cross_covariance_norm": 6.283054034964515e-16,
+    "orth_cross_covariance_norm": 1.7807789112693443e-16,
+    "leace_displacement_MSE": 0.32875657633767513,
+    "orth_displacement_MSE": 1.6559545096891488
+  },
+  "nonlinear_residual": {
+    "linear_F_covariance_after": 0.0,
+    "F_squared_recovery_MSE": 0.0,
+    "meaning": "F^2 remains; zero linear cross-covariance does not imply universal nonlinear erasure."
+  },
+  "matched_dose": {
+    "max_per_scene_norm_gap": 8.881784197001252e-16
+  },
+  "binary_message_budget": {
+    "count_mismatches": 0,
+    "flip_mismatches": 0
+  },
+  "operator_scope_cancellation": {
+    "operator_fidelity_MSE": 1.0,
+    "scope_fidelity_MSE": 1.0,
+    "interaction": -2.0,
+    "natural_fidelity_MSE": 0.0,
+    "identity_max_abs": 0.0,
+    "risk_difference": 0.0,
+    "risk_difference_absolute_upper_bound": 0.0,
+    "scope": "Measured finite-output Cauchy bound; not a global state Lipschitz assumption."
+  },
+  "correlated_content_floor": [
+    {
+      "correlation": 0.0,
+      "minimum_MSE_for_G_after_independent_F_erasure": 0.0,
+      "attainable_with_U_only": true,
+      "assumptions": "F,U independent N(0,1); G=rho F+sqrt(1-rho^2)U; erased code independent of F."
+    },
+    {
+      "correlation": 0.5,
+      "minimum_MSE_for_G_after_independent_F_erasure": 0.25,
+      "attainable_with_U_only": true,
+      "assumptions": "F,U independent N(0,1); G=rho F+sqrt(1-rho^2)U; erased code independent of F."
+    },
+    {
+      "correlation": 0.9,
+      "minimum_MSE_for_G_after_independent_F_erasure": 0.81,
+      "attainable_with_U_only": true,
+      "assumptions": "F,U independent N(0,1); G=rho F+sqrt(1-rho^2)U; erased code independent of F."
+    },
+    {
+      "correlation": 1.0,
+      "minimum_MSE_for_G_after_independent_F_erasure": 1.0,
+      "attainable_with_U_only": true,
+      "assumptions": "F,U independent N(0,1); G=rho F+sqrt(1-rho^2)U; erased code independent of F."
+    }
+  ],
+  "threshold_boundary": {
+    "pre_difference": 0.0019999999999998908,
+    "post_difference": 0.999,
+    "event_difference": 1,
+    "hard_reset_bound": 1.0029999999999997
+  },
+  "zero_mean_MP": {
+    "removed_rank": 0,
+    "identity_max_abs": 0.0
+  },
+  "convex_vs_zero_one": {
+    "class_centroids_equal": true,
+    "best_constant_binary_error": 0.5,
+    "one_sided_threshold_error": 0.25,
+    "scope": "Zero-one loss is not convex in an affine score; do not replace the LEACE convex-loss theorem with this claim."
+  },
+  "transport_identity": {
+    "identity_transport_max_abs": 0.0
+  },
+  "scope": "Analytic or finite controls. No new SNN training or empirical architecture conclusion."
+}

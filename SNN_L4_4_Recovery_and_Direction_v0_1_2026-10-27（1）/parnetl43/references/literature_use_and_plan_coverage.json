@@ -1,0 +1,92 @@
+{
+  "module": "L4.3",
+  "original_plan_ids_preserved": true,
+  "entries": [
+    {
+      "plan_id": "CAUSE-AMNESIC",
+      "reference_id": "R1",
+      "title": "Amnesic Probing: Behavioral Explanation with Amnesic Counterfactuals",
+      "paper_url": "https://aclanthology.org/2021.tacl-1.10/",
+      "code_url": "https://github.com/yanaiela/amnesic_probing",
+      "sections": [
+        "4.3.1",
+        "4.3.7"
+      ],
+      "execution_scope": "Selected original projection definitions executed; no full INLP training"
+    },
+    {
+      "plan_id": "CAUSE-MEANLEACE",
+      "reference_id": "R2",
+      "title": "Improving Causal Interventions in Amnesic Probing with Mean Projection or LEACE",
+      "paper_url": "https://aclanthology.org/2025.findings-acl.674/",
+      "code_url": "https://github.com/efemeryds/amnesic-probing-with-single-projection",
+      "sections": [
+        "4.3.2",
+        "4.3.3"
+      ],
+      "execution_scope": "Original MP definitions executed; bundled LEACE source inspected"
+    },
+    {
+      "plan_id": "CAUSE-RELIABILITY",
+      "reference_id": "R3",
+      "title": "How Reliable are Causal Probing Interventions?",
+      "paper_url": "https://aclanthology.org/2025.ijcnlp-long.47/",
+      "code_url": null,
+      "sections": [
+        "4.3.3"
+      ],
+      "execution_scope": "Formal paper and project checked; official code repository unverified; principles adapted independently"
+    },
+    {
+      "plan_id": "CAUSE-LEACE",
+      "reference_id": "R4",
+      "title": "LEACE: Perfect linear concept erasure in closed form",
+      "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/d066d21c619d0a78c5b557fa3291a8f4-Paper-Conference.pdf",
+      "code_url": "https://github.com/EleutherAI/concept-erasure",
+      "sections": [
+        "4.3.2",
+        "4.3.6"
+      ],
+      "execution_scope": "Original classes and dependencies executed on artificial data and 14 declared project fit contexts"
+    },
+    {
+      "plan_id": "CAUSE-ERASURE",
+      "reference_id": "R5",
+      "title": "Fundamental Limits of Perfect Concept Erasure",
+      "paper_url": "https://proceedings.mlr.press/v258/chowdhury25a.html",
+      "code_url": "https://github.com/brcsomnath/PEF",
+      "sections": [
+        "4.3.6"
+      ],
+      "execution_scope": "Original two coupling definitions executed; no full PEF optimization or author dataset"
+    },
+    {
+      "plan_id": "READ-DECODESHARE",
+      "reference_id": "R6",
+      "title": "DecodeShare: Tracing the Shared Subspace of LLM Decode-Time Decisions",
+      "paper_url": "https://proceedings.mlr.press/v306/shao26j.html",
+      "code_url": "https://github.com/Zishan-Shao/decodeshare",
+      "sections": [
+        "4.3.4",
+        "4.3.5",
+        "L4.4 input"
+      ],
+      "execution_scope": "36-page author PDF selected methods/patchback/energy controls; maintained original hook executed on artificial inputs; ICML2026 Spotlight verified"
+    }
+  ],
+  "additional": [
+    {
+      "reference_id": "R7",
+      "title": "Event-based backpropagation can compute exact gradients for spiking neural networks",
+      "paper_url": "https://www.nature.com/articles/s41598-021-91786-z",
+      "code_url": "https://github.com/eventprop",
+      "scope": "Theory background only; author implementation not inspected or executed"
+    },
+    {
+      "reference_id": "R8",
+      "title": "Right Answer, Wrong Mechanism: Detecting Pernicious Divergence in Causal Interventions",
+      "paper_url": "https://arxiv.org/abs/2609.39243",
+      "scope": "2026-09 indexed arXiv abstract only; full text/code unverified; no numerical or algorithmic reuse"
+    }
+  ]
+}

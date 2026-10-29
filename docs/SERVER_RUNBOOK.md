@@ -2,6 +2,8 @@
 
 所有命令在仓库根目录运行。先查看当前分支/PR交付的版本，再安装项目；原main旧档案没有这些新入口。
 
+v0.3新增真实预测/惯性/EEG/声音等适配与32种公共参考骨架。先读[真实数据及模型扩展](REAL_DATA_AND_MODEL_EXPANSION.md)和[近期基准复核](BENCHMARK_REVIEW_2025_2026.md)，使用`expanded`及显式`--archives`加入真实数据。旧checkpoint的严格代码hash不能跨版本强行续跑；新版本建议另用`--out runs_v03`。
+
 ## 1. 环境与CPU/GPU验收
 
 推荐单独Python3.12环境。保留服务器与驱动匹配的PyTorch GPU版本。安装依赖会遵循当前pip环境；如已配好GPU框架，先确认 `python -c "import torch; print(torch.__version__,torch.cuda.is_available())"`。

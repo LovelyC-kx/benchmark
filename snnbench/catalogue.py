@@ -11,7 +11,7 @@ from .specs import *
 from .utils import atomic_json,file_hash,digest
 
 VECTOR_BACKBONES=('mlp','recurrent_mlp','temporal_conv','cnn1d')
-IMAGE_BACKBONES=('cnn2d','sew_resnet18','spike_attention','unet')
+LEGACY_IMAGE_BACKBONES=('cnn2d','sew_resnet18','spike_attention','unet')
 
 
 def task_bank(profile):
@@ -59,13 +59,14 @@ def task_bank(profile):
 def _is_image(t):return t.family=='spatial' or t.name in IMAGE_TASKS or (t.family=='protocol' and t.name in ('G07','G08'))
 
 
-def model_bank(task,profile):
+def model_bank(task,profile,roster=None):
     image=_is_image(task);recon=task.objective=='reconstruction'
     if profile=='smoke':return [ModelSpec(backbone='cnn2d' if image else 'mlp',width=4,encoder_width=8),ModelSpec(backbone='convgru' if image else 'gru',width=4,encoder_width=8,observation='output')]
-    backbones=('cnn2d','unet') if recon else IMAGE_BACKBONES if image else VECTOR_BACKBONES
+    expanded=profile=='expanded' or roster=='expanded'
+    backbones=(('cnn2d','unet','conv_lif_rnn') if expanded else ('cnn2d','unet')) if recon else (LEGACY_IMAGE_BACKBONES+EXTRA_SNN_IMAGE if expanded else LEGACY_IMAGE_BACKBONES) if image else (VECTOR_BACKBONES+EXTRA_SNN_VECTOR if expanded else VECTOR_BACKBONES)
     cells=CELLS
-    for_backbones=[ModelSpec(backbone=b,neuron=n) for b,n in product(backbones,cells)]
-    baseline=('convgru',) if image else ('gru','lstm','diagonal_ssm','causal_attention')
+    for_backbones=[ModelSpec(backbone=b,neuron=n,gain=.5 if expanded else 2.,observation='output' if expanded else 'post') for b,n in product(backbones,cells)]
+    baseline=(('convgru','causal_conv3d','ann_unet') if recon else ('convgru',)+EXTRA_ANN_IMAGE) if image and expanded else ('convgru',) if image else ('gru','lstm','diagonal_ssm','causal_attention')+(EXTRA_ANN_VECTOR if expanded else ())
     for_backbones.extend(ModelSpec(backbone=b,observation='output') for b in baseline)
     if profile=='paired':
         # Dynamics/readout/observation changes live on the same scientific scene bank.
@@ -77,18 +78,21 @@ def model_bank(task,profile):
     return list({digest(m):m for m in for_backbones}.values())
 
 
-def compile_manifest(out,profile='screen',seeds=(11,22,33),archives=(),limit=None):
-    if profile not in ('smoke','screen','full','paired','learning'):raise ValueError('Profile')
+def compile_manifest(out,profile='screen',seeds=(11,22,33),archives=(),limit=None,model_roster=None):
+    if profile not in ('smoke','screen','full','paired','learning','expanded'):raise ValueError('Profile')
+    if model_roster not in (None,'legacy','expanded'):raise ValueError('Model roster')
+    if profile=='expanded' and model_roster=='legacy':raise ValueError('expanded profile requires expanded model roster')
+    roster=model_roster or ('expanded' if profile=='expanded' else 'legacy')
     out=Path(out);out.parent.mkdir(parents=True,exist_ok=True);count=0;seen=set();counts={};training=TrainSpec()
     if profile=='smoke':training=TrainSpec(epochs=2,train_scenes=32,val_scenes=16,batch_size=8,save_every_updates=2)
     tasks=task_bank(profile);external=[]
     for root in archives:
-        p=Path(root);d=json.loads((p/'dataset.json').read_text());c=d['contract'];objective='classification' if c['target_mode']=='class_index' else 'reconstruction' if len(c['output_shape'])==3 else 'regression'
+        p=Path(root);d=json.loads((p/'dataset.json').read_text());c=d['contract'];objective=c.get('objective') or ('classification' if c['target_mode']=='class_index' else 'reconstruction' if len(c['output_shape'])==3 else 'regression')
         t=TaskSpec(family='archive',name=c['dataset_id'],objective=objective,T=c['steps'],archive_root=str(p.resolve()),archive_manifest_sha256=file_hash(p/'dataset.json'))
         external.append((t,d))
     with out.open('w',encoding='utf-8') as f:
         for task,manifest in [(t,None) for t in tasks]+external:
-            for model in model_bank(task,profile) if manifest is None else model_bank(replace(task,family='spatial' if len(manifest['contract']['input_shape'])==3 else 'tagged'),profile):
+            for model in model_bank(task,profile,roster) if manifest is None else model_bank(replace(task,family='spatial' if len(manifest['contract']['input_shape'])==3 else 'tagged'),profile,roster):
                 for seed in seeds:
                     train=replace(training,seed=int(seed),order_seed=int(seed)+1000);analysis=AnalysisSpec()
                     if profile=='smoke':analysis=AnalysisSpec(fit_scenes=24,select_scenes=16,eval_scenes=16,batch_size=8,max_features=8,interval_resamples=50,mlp_steps=5,anova_scenes=8)
@@ -102,7 +106,7 @@ def compile_manifest(out,profile='screen',seeds=(11,22,33),archives=(),limit=Non
                     if limit is not None and count>=limit:break
                 if limit is not None and count>=limit:break
             if limit is not None and count>=limit:break
-    receipt={'schema':'executable_manifest_v2','profile':profile,'seeds':list(seeds),'runs':count,'counts':counts,'manifest_sha256':file_hash(out),
+    receipt={'schema':'executable_manifest_v2','profile':profile,'model_roster':roster,'seeds':list(seeds),'runs':count,'counts':counts,'manifest_sha256':file_hash(out),
         'meaning':'validated runnable specifications; no trained-model claim','external_archives':list(archives),
         'external_without_preparation':'registry candidates are excluded, never synthesized or silently substituted'}
     atomic_json(out.with_suffix(out.suffix+'.receipt.json'),receipt);return receipt

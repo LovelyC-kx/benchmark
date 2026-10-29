@@ -7,8 +7,16 @@ from .utils import digest
 
 CELLS=('lif_hard','lif_soft','threshold','if_hard','plif_ref','alif_ref','adlif_ref',
        'hetero_lif','two_state_ref','continuous','tanh','analog_hard_ref')
-REFERENCE_BACKBONES=('mlp','recurrent_mlp','temporal_conv','cnn1d','cnn2d','sew_resnet18','spike_attention','unet')
-BASELINES=('gru','lstm','diagonal_ssm','causal_attention','convgru')
+LEGACY_REFERENCE_BACKBONES=('mlp','recurrent_mlp','temporal_conv','cnn1d','cnn2d','sew_resnet18','spike_attention','unet')
+EXTRA_SNN_VECTOR=('dilated_spiking_tcn','causal_spike_attention_ref')
+EXTRA_SNN_IMAGE=('sew_resnet34','ms_resnet18_ref','spiking_vgg11_ref','conv_lif_rnn')
+REFERENCE_BACKBONES=LEGACY_REFERENCE_BACKBONES+EXTRA_SNN_VECTOR+EXTRA_SNN_IMAGE
+LEGACY_BASELINES=('gru','lstm','diagonal_ssm','causal_attention','convgru')
+EXTRA_ANN_VECTOR=('rnn_tanh','dilated_tcn','transformer','conformer','s4d_ref','lru_ref','mamba_ref')
+EXTRA_ANN_IMAGE=('cnn_lstm','causal_conv3d','ann_unet','ann_resnet18_ref','convnext_ref','vit_ref')
+BASELINES=LEGACY_BASELINES+EXTRA_ANN_VECTOR+EXTRA_ANN_IMAGE
+IMAGE_BACKBONES=('cnn2d','sew_resnet18','spike_attention','unet')+EXTRA_SNN_IMAGE+('convgru',)+EXTRA_ANN_IMAGE
+SPATIAL_DECODERS=('cnn2d','unet','convgru','conv_lif_rnn','causal_conv3d','ann_unet')
 VECTOR_TASKS=('repeat','stale','complement','order','interval','delay','xor','crosslag','drift','binary_adding')
 IMAGE_TASKS=('image_repeat','image_complement','image_stale','image_misaligned','image_rain','image_cloud')
 
@@ -112,8 +120,8 @@ class ModelSpec:
         if not 0<self.readout_decay<=1 or not 0<=self.adapt_decay<1 or self.adapt_gain<0:raise ValueError('Decay/adaptation')
         if self.dc_normalize and (self.neuron=='if_hard' or self.beta==1):raise ValueError('No finite DC normalization for IF/beta1')
         if self.backbone in BASELINES and self.observation!='output':raise ValueError('Continuous baselines expose output/hidden; no spiking pre/post claim')
-        if self.backbone not in ('mlp','recurrent_mlp','gru','lstm') and self.depth!=2:raise ValueError('This backbone uses a fixed skeleton; depth=2 is its compatibility sentinel, not a layer-count sweep')
-        if self.normalization=='group' and self.backbone not in ('cnn2d','sew_resnet18','spike_attention','unet'):raise ValueError('Sample-local group normalization is implemented for spatial SNN backbones only')
+        if self.backbone not in ('mlp','recurrent_mlp','gru','lstm','rnn_tanh','dilated_tcn','dilated_spiking_tcn','transformer','conformer','cnn_lstm','vit_ref') and self.depth!=2:raise ValueError('This backbone uses a fixed skeleton; depth=2 is its compatibility sentinel, not a layer-count sweep')
+        if self.normalization=='group' and self.backbone not in ('cnn2d','sew_resnet18','spike_attention','unet','sew_resnet34','ms_resnet18_ref','spiking_vgg11_ref'):raise ValueError('Sample-local group normalization is implemented for spatial SNN backbones only')
         if self.surrogate not in ('atan','triangle','sigmoid','rectangle') or not math.isfinite(self.sg_scale) or self.sg_scale<=0:raise ValueError('Declared surrogate and positive scale')
         if not math.isfinite(self.gain) or self.gain<0:raise ValueError('Finite nonnegative input gain')
 
@@ -174,7 +182,11 @@ class RunSpec:
         if not 0<a.delta<1 or a.interval_resamples<1:raise ValueError('Statistical configuration')
         valid={'task_controls','working_point','mechanism','probes','geometry','temporal','communication','access','selective','interventions','recovery','reconstruction','anova','theory'}
         if set(a.modules)-valid:raise ValueError('Unknown analysis module')
-        if self.task.objective=='reconstruction' and self.model.backbone not in ('cnn2d','unet','convgru'):raise ValueError('Native spatial decoder required')
+        if self.task.objective=='reconstruction' and self.model.backbone not in SPATIAL_DECODERS:raise ValueError('Native spatial decoder required')
+        if self.task.family!='archive':
+            image=self.task.family=='spatial' or self.task.name in IMAGE_TASKS or (self.task.family=='protocol' and self.task.name in ('G07','G08'))
+            if self.model.backbone in IMAGE_BACKBONES and not image:raise ValueError('Image backbone requires a spatial task/input')
+            if self.model.encoder=='mlp' and image:raise ValueError('Frame MLP cannot silently flatten image axes')
         if self.task.objective=='reconstruction' and self.model.readout=='trajectory':raise ValueError('Spatial trajectory decoder not defined')
         if self.task.objective=='sequence_classification' and self.model.readout=='trajectory':raise ValueError('Sequence head requires per-step output, not fixed-T flatten')
         if t.encoder_checkpoint and not t.encoder_checkpoint_sha256:raise ValueError('Pin frozen encoder checkpoint')

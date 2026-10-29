@@ -1,0 +1,5 @@
+{
+  "protocol": "Author-native TSL ETTh1 anchor: run.py global RNG is hardcoded to 2021 in this commit; --seed alone does not establish multiple initialization seeds. Freeze selection settings and pin a raw-data inventory.",
+  "argv": ["run.py", "--task_name", "long_term_forecast", "--is_training", "1", "--root_path", "/data/snn/raw/D96/", "--data_path", "ETTh1.csv", "--model_id", "etth1_DLinear_L96_H96_global2021", "--model", "DLinear", "--data", "ETTh1", "--features", "M", "--seq_len", "96", "--pred_len", "96", "--enc_in", "7", "--dec_in", "7", "--c_out", "7", "--train_epochs", "10", "--num_workers", "2", "--seed", "2021"],
+  "input_files": ["/data/snn/raw/D96/ETTh1.csv", "/data/snn/protocols/tsl_frozen_selection.json"]
+}

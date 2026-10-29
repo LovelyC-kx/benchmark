@@ -98,21 +98,21 @@ class ModelContracts(unittest.TestCase):
             p=m(torch.from_numpy(b['x']));predictions.append(p.detach());native_losses(p,b)[0].mean().backward();grad.append(m.encoder[0].weight.grad)
         self.assertTrue(torch.equal(predictions[0],predictions[1]));self.assertFalse(torch.equal(grad[0],grad[1]));self.assertFalse(torch.equal(predictions[0],predictions[2]))
 
-    def test_96_backbone_cell_pairs_backward_and_replay(self):
+    def test_all_backbone_cell_pairs_backward_and_replay(self):
         for bb in REFERENCE_BACKBONES:
-            image=bb in ('cnn2d','sew_resnet18','spike_attention','unet')
+            image=bb in IMAGE_BACKBONES
             t=TaskSpec(family='spatial',name='spatial_v2',objective='classification',T=6,image_size=8) if image else TaskSpec()
             b=contract_batch(t,2)
             for cell in CELLS:
                 with self.subTest(backbone=bb,cell=cell):
-                    s=RunSpec(task=t,model=ModelSpec(backbone=bb,neuron=cell,width=4,encoder_width=8,observation='output'));m=create_model(s,b['meta'])
+                    s=RunSpec(task=t,model=ModelSpec(backbone=bb,neuron=cell,width=4,encoder_width=8,gain=.5,observation='output'));m=create_model(s,b['meta'])
                     p=m(torch.from_numpy(b['x']));loss,_=native_losses(p,b);loss.mean().backward();self.assertTrue(all(torch.isfinite(p.grad).all() for p in m.parameters() if p.grad is not None))
                     capture=collect(m,b,snapshots=True);replay=replay_suffix(m,b,capture['snapshots'][2]);self.assertTrue(np.array_equal(replay,capture['prediction']))
                     thin=collect_store(m,b,2,4,'cpu');self.assertTrue(np.array_equal(thin['prediction'],capture['prediction']))
 
     def test_continuous_baselines_and_native_spatial_reconstruction(self):
         for bb in BASELINES+('cnn2d','unet'):
-            image=bb in ('convgru','cnn2d','unet');t=TaskSpec(family='spatial',name='spatial_v2',T=6,image_size=8,objective='reconstruction') if image else TaskSpec()
+            image=bb in IMAGE_BACKBONES;t=TaskSpec(family='spatial',name='spatial_v2',T=6,image_size=8,objective='reconstruction' if bb in SPATIAL_DECODERS else 'classification') if image else TaskSpec()
             b=contract_batch(t,2);s=RunSpec(task=t,model=ModelSpec(backbone=bb,width=4,encoder_width=8,observation='output'));m=create_model(s,b['meta']);p=m(torch.from_numpy(b['x']));loss,_=native_losses(p,b);loss.mean().backward()
             self.assertTrue(np.array_equal(collect(m,b)['prediction'],collect_store(m,b,2,4,'cpu')['prediction']))
 

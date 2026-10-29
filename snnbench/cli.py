@@ -10,11 +10,14 @@ def main(argv=None):
     p=sub.add_parser('download');p.add_argument('args',nargs=argparse.REMAINDER)
     p=sub.add_parser('datasets');p.add_argument('--tier',default='all');p.add_argument('--ids',nargs='*')
     p=sub.add_parser('doctor')
+    p=sub.add_parser('models');p.add_argument('--sources',action='store_true')
+    p=sub.add_parser('upstream-checkout');p.add_argument('--suite',required=True);p.add_argument('--out',required=True)
+    p=sub.add_parser('upstream-run');p.add_argument('--suite',required=True);p.add_argument('--source',required=True);p.add_argument('--config',required=True);p.add_argument('--out',required=True)
     p=sub.add_parser('sweep');p.add_argument('--base',required=True);p.add_argument('--grid',required=True);p.add_argument('--out',required=True)
     p=sub.add_parser('preflight');p.add_argument('--manifest',required=True);p.add_argument('--data',default='prepared');p.add_argument('--limit',type=int)
     p=sub.add_parser('export-encoder');p.add_argument('--run',required=True);p.add_argument('--out',required=True);p.add_argument('--checkpoint',default='best.pt')
     p=sub.add_parser('init-spec');p.add_argument('--out',required=True);p.add_argument('--image',action='store_true');p.add_argument('--classification',action='store_true')
-    p=sub.add_parser('compile');p.add_argument('--out',required=True);p.add_argument('--profile',choices=('smoke','screen','full','paired','learning'),default='screen');p.add_argument('--seeds',nargs='+',type=int,default=[11,22,33]);p.add_argument('--archives',nargs='*',default=[]);p.add_argument('--limit',type=int)
+    p=sub.add_parser('compile');p.add_argument('--out',required=True);p.add_argument('--profile',choices=('smoke','screen','full','paired','learning','expanded'),default='screen');p.add_argument('--model-roster',choices=('legacy','expanded'));p.add_argument('--seeds',nargs='+',type=int,default=[11,22,33]);p.add_argument('--archives',nargs='*',default=[]);p.add_argument('--limit',type=int)
     p=sub.add_parser('train');p.add_argument('--spec',required=True);p.add_argument('--out',default='runs');p.add_argument('--data',default='prepared');p.add_argument('--device',default='cpu');p.add_argument('--max-updates',type=int)
     p=sub.add_parser('analyze');p.add_argument('--run',required=True);p.add_argument('--data',default='prepared');p.add_argument('--device',default='cpu');p.add_argument('--checkpoint',default='best.pt');p.add_argument('--split',choices=('development','confirmation','audit'));p.add_argument('--modules',nargs='+');p.add_argument('--fit-scenes',type=int);p.add_argument('--select-scenes',type=int);p.add_argument('--eval-scenes',type=int)
     p=sub.add_parser('prepare');prep=p.add_subparsers(dest='adapter',required=True)
@@ -24,6 +27,11 @@ def main(argv=None):
     q=prep.add_parser('spikes');q.add_argument('--train',required=True);q.add_argument('--val');q.add_argument('--test',required=True);q.add_argument('--out',required=True);q.add_argument('--dataset',choices=('SHD','SSC'),default='SHD');q.add_argument('--steps',type=int,default=100);q.add_argument('--window',type=float,default=1.4)
     q=prep.add_parser('manifest');q.add_argument('--manifest',required=True);q.add_argument('--out',required=True);q.add_argument('--objective',choices=('classification','regression','reconstruction'),default='classification');q.add_argument('--classes',type=int)
     q=prep.add_parser('earthnet');q.add_argument('--train',required=True);q.add_argument('--test',required=True);q.add_argument('--out',required=True);q.add_argument('--steps',type=int,default=6);q.add_argument('--size',type=int,default=32);q.add_argument('--group-unit',choices=('tile','cube'),default='tile')
+    q=prep.add_parser('mnist');q.add_argument('--root',required=True);q.add_argument('--out',required=True);q.add_argument('--mode',choices=('sequential','permuted','repeat'),default='sequential');q.add_argument('--permutation-seed',type=int,default=20261029);q.add_argument('--steps',type=int,default=16)
+    q=prep.add_parser('esc50');q.add_argument('--root',required=True);q.add_argument('--out',required=True);q.add_argument('--test-fold',type=int,default=5)
+    q=prep.add_parser('forecast-csv');q.add_argument('--csv',required=True);q.add_argument('--out',required=True);q.add_argument('--context',type=int,default=96);q.add_argument('--horizon',type=int,default=24);q.add_argument('--stride',type=int,default=24);q.add_argument('--columns',nargs='+');q.add_argument('--date-column',default='date');q.add_argument('--dataset-id',default='real_forecast');q.add_argument('--embargo',type=int,default=0);q.add_argument('--block-size',type=int,default=1024);q.add_argument('--role-allocation',choices=('proportional','minimum_first'),default='proportional')
+    q=prep.add_parser('wisdm');q.add_argument('--root',required=True);q.add_argument('--out',required=True);q.add_argument('--window',type=int,default=200);q.add_argument('--stride',type=int,default=100);q.add_argument('--device',choices=('watch','phone'),default='watch');q.add_argument('--sensor',choices=('gyro','accel'),default='gyro')
+    q=prep.add_parser('openbmi');q.add_argument('--root',required=True);q.add_argument('--out',required=True);q.add_argument('--sampling-hz',type=float,required=True);q.add_argument('--downsample',type=int,default=10)
     p=sub.add_parser('verify-data');p.add_argument('--root',required=True)
     p=sub.add_parser('queue-init');p.add_argument('--db',required=True);p.add_argument('--manifest',required=True);p.add_argument('--shard',type=int,default=0);p.add_argument('--shards',type=int,default=1)
     p=sub.add_parser('worker');p.add_argument('--db',required=True);p.add_argument('--out',default='runs');p.add_argument('--data',default='prepared');p.add_argument('--device',default='cuda:0');p.add_argument('--analyze',action='store_true');p.add_argument('--one',action='store_true')
@@ -39,7 +47,16 @@ def main(argv=None):
         return download_main(['--list','--tier',args.tier]+(['--ids',*args.ids] if args.ids else []))
     from .specs import RunSpec,TaskSpec,ModelSpec
     from .utils import atomic_json,jsonable
-    if args.command=='doctor':
+    if args.command=='models':
+        from .specs import REFERENCE_BACKBONES,BASELINES,CELLS
+        result=json.loads((Path(__file__).parent/'resources'/'model_sources.json').read_text()) if args.sources else {'snn_reference_backbones':REFERENCE_BACKBONES,'continuous_reference_backbones':BASELINES,'injectable_reference_cells':CELLS,'official_reproduction':False}
+    elif args.command=='upstream-checkout':
+        from .upstream import checkout_suite
+        result=checkout_suite(args.suite,args.out)
+    elif args.command=='upstream-run':
+        from .upstream import run_suite
+        result=run_suite(args.suite,args.source,args.config,args.out)
+    elif args.command=='doctor':
         import importlib,torch,numpy,sys
         modules=[p.stem for p in (Path(__file__).parent/'kernels').glob('*.py') if p.stem!='__init__']
         for m in modules:importlib.import_module('snnbench.kernels.'+m)
@@ -58,7 +75,7 @@ def main(argv=None):
         s=RunSpec(task=task,model=ModelSpec(backbone='cnn2d' if args.image else 'mlp'));atomic_json(args.out,s.to_dict());result={'spec':args.out,'run_id':s.run_id}
     elif args.command=='compile':
         from .catalogue import compile_manifest
-        result=compile_manifest(args.out,args.profile,args.seeds,args.archives,args.limit)
+        result=compile_manifest(args.out,args.profile,args.seeds,args.archives,args.limit,args.model_roster)
     elif args.command=='train':
         from .engine import train
         result={'run':str(train(RunSpec.load(args.spec),args.out,args.data,args.device,max_updates=args.max_updates))}
@@ -81,6 +98,13 @@ def main(argv=None):
         elif args.adapter=='earthnet':
             from .earthnet import prepare_earthnet
             result=prepare_earthnet(args.train,args.test,args.out,args.steps,args.size,args.group_unit)
+        elif args.adapter in ('mnist','esc50','forecast-csv','wisdm','openbmi'):
+            from .real_data import prepare_mnist,prepare_esc50,prepare_forecast_csv,prepare_wisdm,prepare_openbmi
+            if args.adapter=='mnist':result=prepare_mnist(args.root,args.out,args.mode,args.permutation_seed,args.steps)
+            elif args.adapter=='esc50':result=prepare_esc50(args.root,args.out,args.test_fold)
+            elif args.adapter=='wisdm':result=prepare_wisdm(args.root,args.out,args.window,args.stride,args.device,args.sensor)
+            elif args.adapter=='openbmi':result=prepare_openbmi(args.root,args.out,args.sampling_hz,args.downsample)
+            else:result=prepare_forecast_csv(args.csv,args.out,args.context,args.horizon,args.stride,args.columns,args.date_column,args.dataset_id,args.embargo,args.block_size,role_allocation=args.role_allocation)
         else:result=prepare_manifest(args.manifest,args.out,args.objective,args.classes)
     elif args.command=='verify-data':
         from .prepare import verify_dataset

@@ -1,5 +1,5 @@
 {
-  "schema": "snnbench_data_registry_v2",
+  "schema": "snnbench_data_registry_v3",
   "updated": "2026-10-29",
   "previous_candidates": 93,
   "datasets": [
@@ -365,7 +365,16 @@
       "access": "code_or_generated_task",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [
+        {
+          "filename": "AL_NSA_author.zip",
+          "url": "https://huggingface.co/datasets/liyc5929/neuroseqbench/resolve/main/neuromorphic_sequential_arena/AL/AL.zip",
+          "track": "author_native_preprocessed",
+          "optional": true,
+          "purpose": "作者原生预处理；不自动满足本文受试者/来源分组合同"
+        }
+      ],
+      "author_native_preprocessed": "https://huggingface.co/datasets/liyc5929/neuroseqbench/tree/main/neuromorphic_sequential_arena/AL"
     },
     {
       "id": "D27",
@@ -446,7 +455,9 @@
           "url": "https://zenkelab.org/datasets/shd/shd_test.h5.gz",
           "md5": "3062a80ec0c5719404d5b02e166543b1"
         }
-      ]
+      ],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D32",
@@ -476,7 +487,9 @@
           "url": "https://zenkelab.org/datasets/ssc/ssc_test.h5.gz",
           "md5": "e3cf5aa4524459b8e5141b9b34a9e759"
         }
-      ]
+      ],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D33",
@@ -495,7 +508,9 @@
           "filename": "speech_commands_v0.02.tar.gz",
           "url": "https://storage.googleapis.com/download.tensorflow.org/data/speech_commands_v0.02.tar.gz"
         }
-      ]
+      ],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D34",
@@ -534,7 +549,9 @@
           "url": "https://figshare.com/ndownloader/files/38020584",
           "md5": "56070e45dadaa85fff82e0fbfbc06de5"
         }
-      ]
+      ],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D36",
@@ -544,11 +561,15 @@
       "input_target": "事件嘴部序列→词类别",
       "reuse": "动态视觉语音；复用NSA适配路径；核对样本/说话者划分",
       "limitations": "词汇、身份和局部外观可混杂",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "NSA2025"
+      ]
     },
     {
       "id": "D37",
@@ -613,12 +634,20 @@
       "source_role": "扩展",
       "input_target": "波形→环境声类别",
       "reuse": "自然声学泛化；复用官方折与来源元数据",
-      "limitations": "与UrbanSound功能重叠，优先择一",
-      "priority": "P2",
+      "limitations": "保持官方五折外层测试来源；其余来源按原Freesound recording分8个研究角色；单次研究协议分数不同于五折原论文完整训练分数。",
+      "priority": "P0",
       "access": "official_page_or_generator",
-      "adapter": "canonical_manifest_required",
-      "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "adapter": "raw_wav_csv_esc50_to_canonical",
+      "verification": "primary source and loader code inspected 2026-10-29; full corpus not downloaded",
+      "files": [
+        {
+          "filename": "ESC-50-33c8ce9.zip",
+          "url": "https://github.com/karolpiczak/ESC-50/archive/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6.zip",
+          "track": "raw"
+        }
+      ],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D42",
@@ -693,6 +722,10 @@
           "filename": "uci_har.zip",
           "url": "https://archive.ics.uci.edu/static/public/240/human%2Bactivity%2Brecognition%2Busing%2Bsmartphones.zip"
         }
+      ],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "Soul2026"
       ]
     },
     {
@@ -702,12 +735,30 @@
       "source_role": "扩展",
       "input_target": "多设备惯性流→活动类别",
       "reuse": "跨设备、跨人动态；优先复用NSA已处理版本，并保留原始来源",
-      "limitations": "与旧WISDM不同；不能混用类别和采样率",
-      "priority": "P2",
+      "limitations": "watch/phone与gyro/accel分别导出，窗口不能跨受试者/活动/采集间断；归一化仅用实际train角色。与NSA预处理四NPY的原生试次划分分开。",
+      "priority": "P0",
       "access": "official_page_or_generator",
-      "adapter": "canonical_manifest_required",
-      "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "adapter": "raw_wisdm_subject_to_canonical",
+      "verification": "primary source and loader code inspected 2026-10-29; full corpus not downloaded",
+      "files": [
+        {
+          "filename": "wisdm_uci_outer.zip",
+          "url": "https://archive.ics.uci.edu/static/public/507/wisdm+smartphone+and+smartwatch+activity+and+biometrics+dataset.zip",
+          "track": "raw_subject"
+        },
+        {
+          "filename": "WISDM_NSA_author.zip",
+          "url": "https://huggingface.co/datasets/liyc5929/neuroseqbench/resolve/main/neuromorphic_sequential_arena/WISDM/WISDM.zip",
+          "track": "author_native_preprocessed",
+          "optional": true,
+          "purpose": "作者原生预处理；不自动满足本文受试者/来源分组合同"
+        }
+      ],
+      "author_native_preprocessed": "https://huggingface.co/datasets/liyc5929/neuroseqbench/tree/main/neuromorphic_sequential_arena/WISDM",
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "NSA2025"
+      ]
     },
     {
       "id": "D48",
@@ -735,7 +786,10 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D50",
@@ -749,7 +803,10 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D51",
@@ -805,7 +862,11 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D55",
@@ -815,11 +876,15 @@
       "input_target": "CSI幅度序列→活动类别",
       "reuse": "无线动态外推；与UT-HAR择一主用，另一外部检查",
       "limitations": "别把子载波轴当时间轴",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D56",
@@ -833,7 +898,11 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D57",
@@ -843,11 +912,15 @@
       "input_target": "CSI/DFS/BVP之一→手势类别",
       "reuse": "速度结构与跨域；固定具体表示及跨人/场景划分",
       "limitations": "BVP、DFS、原始CSI不是同一输入权限",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D58",
@@ -861,7 +934,10 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D59",
@@ -875,7 +951,10 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D60",
@@ -889,7 +968,10 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D61",
@@ -903,7 +985,10 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D62",
@@ -917,7 +1002,10 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "benchmark_membership": [
+        "Soul2026"
+      ]
     },
     {
       "id": "D63",
@@ -926,26 +1014,52 @@
       "source_role": "扩展",
       "input_target": "时空热图PNG→活动类别",
       "reuse": "频谱/热图分类备选；可用热图版本；另核对对标论文mmFiT版本",
-      "limitations": "PNG不是原始雷达时序；不得当同版原始数据",
+      "limitations": "PNG不是原始雷达时序；不得当同版原始数据；另列原始点云v1，只包含2位参与者，不能构造十个subject互斥角色，更不能冒称跨人群评估。与MM-Fit多模态惯性/视频、MM-Fi 4D数据不是同一数据集。",
       "priority": "P2",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "related_raw_sources": [
+        {
+          "name": "mmFiT raw radar point-cloud v1, distinct from heatmap release",
+          "source_url": "https://data.mendeley.com/datasets/d3dt5tb74h/1",
+          "doi": "10.17632/d3dt5tb74h.1",
+          "participants": 2,
+          "classes": 7,
+          "benchmark_membership": [
+            "FrequencyMatching ICML2026"
+          ],
+          "verification": "primary Mendeley dataset page checked 2026-10-29; complete files not downloaded"
+        }
+      ]
     },
     {
       "id": "D64",
       "name": "OpenBMI／运动想象脑电",
-      "source_url": "https://github.com/liyc5929/neuroseqbench/blob/main/experiments/neuromorphic_sequential_arena/README.md",
+      "source_url": "https://gigadb.org/dataset/100542",
       "source_role": "扩展",
       "input_target": "多通道EEG→运动想象类别",
       "reuse": "生物信号外部验证；复用NSA适配与GigaDB原始数据，按人/会话划分",
-      "limitations": "强个体差异与频谱线索；不是历史必要性证明",
-      "priority": "P2",
+      "limitations": "统一适配读取保留subject的data_N.mat/label_N.mat；原始_MI.mat须先经作者预处理保留受试者，采样率必须显式传入。四个混合NPY不能恢复subject，不能用于跨受试者结论。",
+      "priority": "P0",
       "access": "official_page_or_generator",
-      "adapter": "canonical_manifest_required",
-      "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "adapter": "author_subject_mat_openbmi_to_canonical",
+      "verification": "primary source and loader code inspected 2026-10-29; full corpus not downloaded",
+      "files": [
+        {
+          "filename": "OpenBMI_NSA_author.zip",
+          "url": "https://huggingface.co/datasets/liyc5929/neuroseqbench/resolve/main/neuromorphic_sequential_arena/OpenBMI/OpenBMI.zip",
+          "track": "author_native_preprocessed",
+          "optional": true,
+          "purpose": "作者原生预处理；不自动满足本文受试者/来源分组合同"
+        }
+      ],
+      "author_native_preprocessed": "https://huggingface.co/datasets/liyc5929/neuroseqbench/tree/main/neuromorphic_sequential_arena/OpenBMI",
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "NSA2025"
+      ]
     },
     {
       "id": "D65",
@@ -969,11 +1083,24 @@
       "input_target": "多通道音频→方向或声音类别",
       "reuse": "多通道相对时序；复用NSA处理版或原始多通道音频",
       "limitations": "方向估计不是波形重建，目标分别登记",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [
+        {
+          "filename": "SLoClas_NSA_author.zip",
+          "url": "https://huggingface.co/datasets/liyc5929/neuroseqbench/resolve/main/neuromorphic_sequential_arena/SLoClas/SLoClas.zip",
+          "track": "author_native_preprocessed",
+          "optional": true,
+          "purpose": "作者原生预处理；不自动满足本文受试者/来源分组合同"
+        }
+      ],
+      "author_native_preprocessed": "https://huggingface.co/datasets/liyc5929/neuroseqbench/tree/main/neuromorphic_sequential_arena/SLoClas",
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "NSA2025"
+      ]
     },
     {
       "id": "D67",
@@ -987,7 +1114,20 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [
+        {
+          "filename": "N-DNS_NSA_author.zip",
+          "url": "https://huggingface.co/datasets/liyc5929/neuroseqbench/resolve/main/neuromorphic_sequential_arena/N-DNS/N-DNS.zip",
+          "track": "author_native_preprocessed",
+          "optional": true,
+          "purpose": "作者原生预处理；不自动满足本文受试者/来源分组合同"
+        }
+      ],
+      "author_native_preprocessed": "https://huggingface.co/datasets/liyc5929/neuroseqbench/tree/main/neuromorphic_sequential_arena/N-DNS",
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "NSA2025"
+      ]
     },
     {
       "id": "D68",
@@ -997,11 +1137,15 @@
       "input_target": "波形→文本序列",
       "reuse": "序列到序列语音任务；作为NSA七任务的复用扩展",
       "limitations": "识别不是信号重建，算力与解码器负担较高",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": [
+        "NSA2025"
+      ]
     },
     {
       "id": "D69",
@@ -1015,7 +1159,9 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D70",
@@ -1029,7 +1175,9 @@
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D71",
@@ -1123,11 +1271,13 @@
       "input_target": "事件、帧与其他传感→指定目标",
       "reuse": "物理时间与异步融合；按原数据任务使用；恢复需另定同步和参考",
       "limitations": "不能假定所有流都有可用的干净重建真值",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D78",
@@ -1137,11 +1287,13 @@
       "input_target": "不同时相光学/SAR→目标光学",
       "reuse": "不规则多时相整合、旧历史风险；直接复用作者时序数据与独立地域划分",
       "limitations": "真实地表变化与观测时间差可能使旧内容失效",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D79",
@@ -1165,11 +1317,13 @@
       "input_target": "光学/SAR/其他时相→清晰目标",
       "reuse": "多时相真实应用；复用作者下载脚本与固定ROI划分，可先取既定小子集",
       "limitations": "体量较大，跨日期目标差异需单列",
-      "priority": "P2",
+      "priority": "P1",
       "access": "official_page_or_generator",
       "adapter": "canonical_manifest_required",
       "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D81",
@@ -1290,12 +1444,37 @@
       "source_role": "对照",
       "input_target": "图像或像素序列→数字类别",
       "reuse": "静态重复、序列化对照；复用STP置换与标签协议，明确所用版本",
-      "limitations": "位置编码承载空间结构，非物理时间",
-      "priority": "P2",
+      "limitations": "真实静态手写图像；像素展开、固定置换或静态重复形成派生时间，不可列为真实动态传感器序列；固定置换种子和IDX校验。",
+      "priority": "P0",
       "access": "official_page_or_generator",
-      "adapter": "canonical_manifest_required",
-      "verification": "archived source entry; not revalidated in current update",
-      "files": []
+      "adapter": "raw_idx_mnist_scan_permutation_repeat",
+      "verification": "primary source and loader code inspected 2026-10-29; full corpus not downloaded",
+      "files": [
+        {
+          "filename": "train-images-idx3-ubyte.gz",
+          "url": "https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz",
+          "md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+          "provider_checksum_source": "https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py"
+        },
+        {
+          "filename": "train-labels-idx1-ubyte.gz",
+          "url": "https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz",
+          "md5": "d53e105ee54ea40749a09fcbcd1e9432",
+          "provider_checksum_source": "https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py"
+        },
+        {
+          "filename": "t10k-images-idx3-ubyte.gz",
+          "url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz",
+          "md5": "9fb629c4189551a2d022fa330f9573f3",
+          "provider_checksum_source": "https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py"
+        },
+        {
+          "filename": "t10k-labels-idx1-ubyte.gz",
+          "url": "https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz",
+          "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+          "provider_checksum_source": "https://github.com/pytorch/vision/blob/main/torchvision/datasets/mnist.py"
+        }
+      ]
     },
     {
       "id": "D90",
@@ -1365,7 +1544,9 @@
       "input_target": "four-band causal current-target reconstruction; native seq2seq separate",
       "reuse": "author toolbox and gap simulation, then export canonical causal manifest",
       "limitations": "14GB iid demo is not training data; preserve tile/ROI and clean-target quality",
-      "files": []
+      "files": [],
+      "dataset_nature": "real recording or derived task from real source; see limitations",
+      "benchmark_membership": []
     },
     {
       "id": "D95",
@@ -1379,6 +1560,344 @@
       "input_target": "video to 48 classes",
       "reuse": "V2 labels, original split and parent-video groups",
       "limitations": "V1/V2 must not mix; acquisition may require account agreement",
+      "files": []
+    },
+    {
+      "id": "D96",
+      "name": "ETTh1／真实变压器负载与油温",
+      "source_url": "https://github.com/zhouhaoyi/ETDataset",
+      "source_role": "真实应用桥接",
+      "input_target": "过去L×7变量→未来H×7变量",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "ETTh小时、ETTm 15分钟；原作者README中逐分钟的文字与实际频率不同，以时间戳验证。本文10角色无跨边界协议与原生LTSF 12/4/4月划分单独报告。",
+      "priority": "P0",
+      "access": "direct_files",
+      "adapter": "raw_forecast_csv_purged_ten_roles",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "SpikingTSF2026",
+        "SpikF2025"
+      ],
+      "files": [
+        {
+          "filename": "ETTh1.csv",
+          "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTh1.csv"
+        }
+      ]
+    },
+    {
+      "id": "D97",
+      "name": "ETTh2／真实变压器负载与油温",
+      "source_url": "https://github.com/zhouhaoyi/ETDataset",
+      "source_role": "真实应用桥接",
+      "input_target": "过去L×7变量→未来H×7变量",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "ETTh小时、ETTm 15分钟；原作者README中逐分钟的文字与实际频率不同，以时间戳验证。本文10角色无跨边界协议与原生LTSF 12/4/4月划分单独报告。",
+      "priority": "P0",
+      "access": "direct_files",
+      "adapter": "raw_forecast_csv_purged_ten_roles",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "SpikingTSF2026",
+        "SpikF2025"
+      ],
+      "files": [
+        {
+          "filename": "ETTh2.csv",
+          "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTh2.csv"
+        }
+      ]
+    },
+    {
+      "id": "D98",
+      "name": "ETTm1／真实变压器负载与油温",
+      "source_url": "https://github.com/zhouhaoyi/ETDataset",
+      "source_role": "真实应用桥接",
+      "input_target": "过去L×7变量→未来H×7变量",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "ETTh小时、ETTm 15分钟；原作者README中逐分钟的文字与实际频率不同，以时间戳验证。本文10角色无跨边界协议与原生LTSF 12/4/4月划分单独报告。",
+      "priority": "P0",
+      "access": "direct_files",
+      "adapter": "raw_forecast_csv_purged_ten_roles",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "SpikingTSF2026",
+        "SpikF2025"
+      ],
+      "files": [
+        {
+          "filename": "ETTm1.csv",
+          "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTm1.csv"
+        }
+      ]
+    },
+    {
+      "id": "D99",
+      "name": "ETTm2／真实变压器负载与油温",
+      "source_url": "https://github.com/zhouhaoyi/ETDataset",
+      "source_role": "真实应用桥接",
+      "input_target": "过去L×7变量→未来H×7变量",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "ETTh小时、ETTm 15分钟；原作者README中逐分钟的文字与实际频率不同，以时间戳验证。本文10角色无跨边界协议与原生LTSF 12/4/4月划分单独报告。",
+      "priority": "P0",
+      "access": "direct_files",
+      "adapter": "raw_forecast_csv_purged_ten_roles",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "SpikingTSF2026",
+        "SpikF2025"
+      ],
+      "files": [
+        {
+          "filename": "ETTm2.csv",
+          "url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTm2.csv"
+        }
+      ]
+    },
+    {
+      "id": "D100",
+      "name": "Electricity",
+      "source_url": "https://huggingface.co/datasets/thuml/Time-Series-Library",
+      "source_role": "真实应用桥接",
+      "input_target": "过去负载→未来多变量负载",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "以具体release变量数、小时聚合与缺失处理为准。本文派生split分数不混入作者原生排行榜。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "raw_forecast_csv_purged_ten_roles_if_timestamped",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "Time-Series-Library",
+        "SpikF2025"
+      ],
+      "files": []
+    },
+    {
+      "id": "D101",
+      "name": "Weather",
+      "source_url": "https://huggingface.co/datasets/thuml/Time-Series-Library",
+      "source_role": "真实应用桥接",
+      "input_target": "过去气象变量→未来多变量气象",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "10分钟数据与其他聚合版本不能混用；核对21变量版本。本文派生split分数不混入作者原生排行榜。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "raw_forecast_csv_purged_ten_roles_if_timestamped",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "Time-Series-Library",
+        "SpikF2025"
+      ],
+      "files": []
+    },
+    {
+      "id": "D102",
+      "name": "Traffic",
+      "source_url": "https://huggingface.co/datasets/thuml/Time-Series-Library",
+      "source_role": "真实应用桥接",
+      "input_target": "历史道路占用率→未来多站点占用率",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "核对站点选择、时间粒度和缺失处理，禁止未来插值。本文派生split分数不混入作者原生排行榜。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "raw_forecast_csv_purged_ten_roles_if_timestamped",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "Time-Series-Library",
+        "SpikF2025"
+      ],
+      "files": []
+    },
+    {
+      "id": "D103",
+      "name": "Solar-Energy",
+      "source_url": "https://huggingface.co/datasets/thuml/Time-Series-Library",
+      "source_role": "真实应用桥接",
+      "input_target": "历史太阳能发电→未来多站点发电",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "SeqSNN原始TXT与其他forecast库CSV版本分别登记。本文派生split分数不混入作者原生排行榜。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "raw_forecast_csv_purged_ten_roles_if_timestamped",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "Time-Series-Library",
+        "SpikF2025"
+      ],
+      "files": []
+    },
+    {
+      "id": "D104",
+      "name": "Exchange-Rate",
+      "source_url": "https://huggingface.co/datasets/thuml/Time-Series-Library",
+      "source_role": "真实应用桥接",
+      "input_target": "历史汇率→未来多变量汇率",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "频率、交易日与日期列须明确；只有数字TXT不得伪造时间戳。本文派生split分数不混入作者原生排行榜。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "raw_forecast_csv_purged_ten_roles_if_timestamped",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "Time-Series-Library",
+        "SpikF2025"
+      ],
+      "files": []
+    },
+    {
+      "id": "D105",
+      "name": "ILI",
+      "source_url": "https://huggingface.co/datasets/thuml/Time-Series-Library",
+      "source_role": "真实应用桥接",
+      "input_target": "历史流感监测→未来周监测值",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "低样本、多角色长上下文可能不可行，协议会拒绝；不强行复制数据补齐。本文派生split分数不混入作者原生排行榜。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "raw_forecast_csv_purged_ten_roles_if_timestamped",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "Time-Series-Library",
+        "SpikF2025"
+      ],
+      "files": []
+    },
+    {
+      "id": "D106",
+      "name": "METR-LA",
+      "source_url": "https://github.com/liyaguang/DCRNN",
+      "source_role": "真实应用桥接",
+      "input_target": "历史路网速度→未来路网速度",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "原作者HDF5/图结构单独保留；当前通用骨架不冒充图卷积模型，图边权限需匹配。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "author_hdf5_to_explicit_timestamp_csv_or_manifest",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "SeqSNN",
+        "TS-LIF"
+      ],
+      "files": []
+    },
+    {
+      "id": "D107",
+      "name": "PEMS-BAY",
+      "source_url": "https://github.com/liyaguang/DCRNN",
+      "source_role": "真实应用桥接",
+      "input_target": "历史路网速度→未来路网速度",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "原作者HDF5/图结构单独保留；当前通用骨架不冒充图卷积模型，图边权限需匹配。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "author_hdf5_to_explicit_timestamp_csv_or_manifest",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real measured time series",
+      "benchmark_membership": [
+        "SeqSNN",
+        "TS-LIF"
+      ],
+      "files": []
+    },
+    {
+      "id": "D108",
+      "name": "PTB-XL",
+      "source_url": "https://physionet.org/content/ptb-xl/1.0.3/",
+      "source_role": "真实应用桥接",
+      "input_target": "12导联ECG→诊断多标签",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "原生诊断超类允许多标签；SpikeMamba单标签5类预处理另命名；按patient及官方fold、采样率和标签映射固定；报告macro-AUROC/F1需另配指标。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "canonical_manifest_required",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real biomedical recording",
+      "benchmark_membership": [
+        "SpikeMamba MICCAI2026"
+      ],
+      "files": []
+    },
+    {
+      "id": "D109",
+      "name": "PTB Diagnostic ECG",
+      "source_url": "https://physionet.org/content/ptbdb/1.0.0/",
+      "source_role": "真实应用桥接",
+      "input_target": "ECG→健康/心肌梗死等临床标签",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "不与Penn Treebank同缩写混淆；按patient划分；作者二分类版本不等于原生全部诊断。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "canonical_manifest_required",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real biomedical recording",
+      "benchmark_membership": [
+        "SpikeMamba MICCAI2026"
+      ],
+      "files": []
+    },
+    {
+      "id": "D110",
+      "name": "ADFTD EEG",
+      "source_url": "https://openneuro.org/datasets/ds004504",
+      "source_role": "真实应用桥接",
+      "input_target": "EEG→CN/FTD/AD",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "按受试者划分；预处理、通道与记录分段保留，不能随机把同人窗口跨集合。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "canonical_manifest_required",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real biomedical recording",
+      "benchmark_membership": [
+        "SpikeMamba MICCAI2026"
+      ],
+      "files": []
+    },
+    {
+      "id": "D111",
+      "name": "MIT-BIH Arrhythmia",
+      "source_url": "https://physionet.org/content/mitdb/1.0.0/",
+      "source_role": "真实应用桥接",
+      "input_target": "ECG心拍/窗口→心律失常类别",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "AAMI映射、患者划分、心拍切窗时序权限须固定；原始类别与5类版本分开。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "canonical_manifest_required",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real biomedical recording",
+      "benchmark_membership": [
+        "SpikeMamba MICCAI2026"
+      ],
+      "files": []
+    },
+    {
+      "id": "D112",
+      "name": "CHB-MIT",
+      "source_url": "https://physionet.org/content/chbmit/1.0.0/",
+      "source_role": "真实应用桥接",
+      "input_target": "EEG→发作预测或检测（不同任务）",
+      "reuse": "与控制任务共享时间/内容/读出诊断；完整原生损失独立计算",
+      "limitations": "pre-ictal定义、seizure occurrence单位、inter-patient vs within-patient分开；SpikeMamba segment-mixed 6:2:2原生协议不支持跨患者结论。",
+      "priority": "P1",
+      "access": "official_page_or_generator",
+      "adapter": "canonical_manifest_required",
+      "verification": "primary source inspected 2026-10-29; complete raw corpus not downloaded",
+      "dataset_nature": "real biomedical recording",
+      "benchmark_membership": [
+        "SpikeMamba MICCAI2026"
+      ],
       "files": []
     },
     {
@@ -1507,5 +2026,6 @@
       "limitations": "not an official benchmark reproduction or by itself a novelty claim",
       "files": []
     }
-  ]
+  ],
+  "count_meaning": "112 source/task/material entries including synthetic references plus nine derived protocols; NOT 121 real datasets or completed experiments"
 }

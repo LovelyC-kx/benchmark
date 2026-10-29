@@ -1,0 +1,30 @@
+{
+  "package_version": "0.3.0",
+  "unit_tests": 52,
+  "full_test_status": "passed",
+  "snn_skeletons": 14,
+  "injectable_cells": 12,
+  "backbone_cell_pairs": 168,
+  "continuous_reference_models": 18,
+  "new_architectures": 19,
+  "native_suites_registered": 9,
+  "native_author_training_executed": false,
+  "dataset_registry_entries": 121,
+  "registered_download_files": 24,
+  "default_download_files": 19,
+  "training_implementation_sha256": "d7203d18d6814afc2925dd1f63ec4d938f611a44c208d463ebcc9e01438da9b9",
+  "analysis_implementation_sha256": "b2a05f8c48ac76a472176c94f1c463ddcd4bae3a53de45354b2367d6e91183db",
+  "environment": {
+    "torch": "2.9.1+cpu",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "device": "cpu",
+    "cuda": null,
+    "gpu": null,
+    "cuda_count": 0
+  },
+  "full_real_corpora_downloaded": false,
+  "gpu_validated": false,
+  "short_trained_acceptance_runs": 4,
+  "scope": "CPU native loss/gradient/snapshot/replay, format-fixture contracts and tiny trained analysis; not convergence or official full reproduction"
+}

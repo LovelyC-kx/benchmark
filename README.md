@@ -1,6 +1,6 @@
 # SNN时序能力判断与归因基准
 
-当前执行入口是 `snnbench/`，版本0.2.0，更新于2026-10-29。旧L3/L4目录保留为研究档案；其中的初始化、一次更新和数学控制不能计作全量训练结果。
+当前执行入口是 `snnbench/`，版本0.3.0，更新于2026-10-29。旧L3/L4目录保留为研究档案；其中的初始化、一次更新和数学控制不能计作全量训练结果。
 
 研究对象是：**任务需要哪种历史 → 系统实际保留什么 → 内容如何组织和传递 → 原下游实际使用什么，以及怎样改变它。** 各层复用同一数据世界、训练检查点和来源合同。
 
@@ -9,8 +9,10 @@
 | [当前进展与边界](docs/CURRENT_STATUS.md) | 已实现、已验收、待服务器数据/GPU验证分别列出 |
 | [实验与分析设计](docs/EXPERIMENT_DESIGN.md) | L1—L4逐模块、变量、对照、读出和理论范围 |
 | [服务器执行](docs/SERVER_RUNBOOK.md) | 环境、下载、转换、多GPU/Slurm、恢复及结果读取 |
-| [数据下载说明](docs/DATA_DOWNLOAD.md) | 优先下载、9个直接文件、校验、转换命令 |
-| [全部104项来源/协议](docs/DATASETS_ALL.md) | 原93项＋2项来源＋G01—G09；每项来源和适配状态 |
+| [近期基准与作者代码复核](docs/BENCHMARK_REVIEW_2025_2026.md) | STP/NSA/NeuroBench/Soul/SpikingTSF与2025—2026重要模型；相近之处、差异和复用 |
+| [真实数据与模型扩展](docs/REAL_DATA_AND_MODEL_EXPANSION.md) | 真实数据适配、14种注入骨架、18种连续参照、作者原生轨道与缺口 |
+| [数据下载说明](docs/DATA_DOWNLOAD.md) | 24个注册文件（5个可选作者包）、校验、转换命令 |
+| [全部121项来源/协议](docs/DATASETS_ALL.md) | 112项来源/任务/素材＋G01—G09；不能计作121个真实数据集 |
 | [原研究计划到代码的对应](docs/COVERAGE_AND_PROVENANCE.md) | 文献/旧实现复用、改动、本轮新增及未移植边界 |
 
 ## 安装与第一条运行
@@ -37,6 +39,7 @@ python -m snnbench summarize --runs runs --out results_summary
 ```bash
 python -m snnbench.download --list --tier all
 python -m snnbench.download --ids D31 D32 D33 D35 D46 --out downloads --extract
+bash scripts/download_real_priority.sh downloads
 ```
 
 默认不下载任何数据。EarthNet/U-TILISE、视频、无线等沿作者入口获取后使用对应转换接口；候选条目不会被编译器悄悄替换成合成数据。
@@ -46,8 +49,13 @@ python -m snnbench.download --ids D31 D32 D33 D35 D46 --out downloads --extract
 ```bash
 python -m snnbench compile --profile screen --seeds 11 22 33 44 55 --out manifests/screen.jsonl
 python -m snnbench compile --profile full --seeds 11 22 33 44 55 --out manifests/full.jsonl
+python -m snnbench compile --profile expanded --seeds 11 22 33 44 55 --out manifests/expanded.jsonl
 ```
 
 `screen`覆盖原16任务、分类/连续目标、12单元、8参考骨架、连续基线、tagged、符号任务和G01—G09。`full`增加内容/需求、负荷、年龄、写入、能量、版本、频率、采样等受控轴。`paired`增加机制/观察/读出对照；`learning`增加梯度、SG、reset梯度与编码对照。具体数量由伴随receipt计算，配置数不等于完成模型数。
 
 所有参考骨架和单元是独立实现；官方模型复现需要另外固定原作者代码、数据与训练协议。本文不把简单对角SSM称作S4/Mamba，也不把逐帧spike attention称作完整时间Transformer。
+
+`expanded`使用新的14种可注入骨架和18种连续参照、output访问、gain=0.5；62任务设置每seed 4954配置。真实数据先转换/verify，再通过`--archives`加入；不会生成替身。重要官方模型通过`models --sources`和`upstream-checkout`/`upstream-run`独立执行，不能把参考实现当作官方复现。
+
+v0.3修正了归一化层尺度初始化并新增模型代码；严格source hash会拒绝在新代码中续跑旧checkpoint。旧结果用原源码分析，新训练另用输出目录（如`--out runs_v03`），不要删除检查以强行兼容。

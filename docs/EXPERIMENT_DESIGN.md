@@ -76,7 +76,7 @@
 
 8参考骨架为MLP、recurrent MLP、causal temporal conv、CNN1D、CNN2D、小宽度SEW-ResNet18骨架、逐帧spike spatial attention、两尺度U-Net。空间重建仅cnn2d/unet，连续对照可用ConvGRU；没有定义的trajectory空间头直接拒绝。
 
-连续控制为多层GRU/LSTM、可学习对角稳定线性SSM、完整前缀因果attention和ConvGRU。其数量、状态与参数按实际模型统计。固定骨架的depth字段不被假装成可变深度；MLP/recurrent MLP/GRU/LSTM才能扫描该深度字段。
+v0.3公共工厂包含14种可注入骨架与18种连续参照，新增TCN、位置Transformer/Conformer、S4D/LRU/Mamba-style、残差/VGG及空间/视频参照，逐项见[扩展说明](REAL_DATA_AND_MODEL_EXPANSION.md)。旧screen/full等profile保持原八骨架/五连续控制口径，新expanded选择32种模型的兼容子集。实际状态与参数单独统计；固定骨架的depth仍用兼容哨兵2，真正支持的深度扫描以ModelSpec.validate为准，不能把同一固定网络重复计成不同深度。
 
 帧MLP编码器无跨步状态；tagged及key/write协议用显式valid门保持空白为零。`encoder=none/auto`可对照；导出实际已训练encoder后用SHA锁定并冻结，可进一步拆分共同观察映射与核心机制。不同单元的同路径同形状参数使用相同初始值，数据和样本顺序也配对。
 

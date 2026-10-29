@@ -12,7 +12,7 @@ import torch
 from torch import nn
 from .reference.models import BenchmarkModel, ModelConfig
 from .reference.neurons import Cell
-from .specs import BASELINES
+from .specs import BASELINES,LEGACY_REFERENCE_BACKBONES,LEGACY_BASELINES
 
 
 def tree_map(fn, obj):
@@ -87,9 +87,15 @@ class ResearchModel(nn.Module):
         if self.cfg.encoder=='mlp' or (self.cfg.encoder=='auto' and len(shape)==1):
             if len(shape)!=1:raise ValueError('Frame MLP encoder cannot silently flatten image axes')
             self.encoder=nn.Sequential(nn.Linear(shape[0],self.cfg.encoder_width),nn.Tanh());shape=[self.cfg.encoder_width]
-        output=contract['output_shape']
+        output=contract['output_shape'];self.output_shape=tuple(output)
         cfg=ModelConfig(**{f.name:getattr(self.cfg,f.name) for f in fields(ModelConfig)})
-        if self.cfg.backbone in BASELINES:
+        if self.cfg.backbone not in LEGACY_REFERENCE_BACKBONES+LEGACY_BASELINES:
+            from .extended_models import build_extended
+            s=shape.copy()
+            if self.cfg.push_pull:s[0]*=2
+            self.backbone=build_extended(s,cfg)
+            self.head=nn.Conv2d(cfg.width,output[0],1) if self.image_output else nn.Linear(cfg.width*(self.T if cfg.readout=='trajectory' else 1),math.prod(output))
+        elif self.cfg.backbone in BASELINES:
             if self.cfg.normalization!='none':raise ValueError('Baseline normalization is not implemented')
             s=shape.copy()
             if self.cfg.push_pull:s[0]*=2
@@ -97,7 +103,7 @@ class ResearchModel(nn.Module):
             self.backbone=MemoryBackbone(cfg,math.prod(s),s[0])
             self.head=nn.Conv2d(cfg.width,output[0],1) if self.image_output else nn.Linear(cfg.width*(self.T if cfg.readout=='trajectory' else 1),math.prod(output))
         else:
-            ref=BenchmarkModel(shape,output,self.T,cfg,spec.task.objective);self.backbone=ref.backbone;self.head=ref.head
+            ref=BenchmarkModel(shape,output if self.image_output else [math.prod(output)],self.T,cfg,spec.task.objective);self.backbone=ref.backbone;self.head=ref.head
         self.last_features=None;self.time=0;self.readout_state={};self.capture=False
 
     def temporal_owners(self):
@@ -115,6 +121,9 @@ class ResearchModel(nn.Module):
             x=self.encoder(x)
             if gate is not None:x=x*gate  # learned biases cannot turn exact blanks into writes
         if self.cfg.push_pull:x=torch.cat([x.relu(),(-x).relu()],1)
+        # Stream position is an exogenous clock, derived from the replay cursor.
+        # Removing recurrent memory must not also erase positional encoding.
+        self.backbone.position_t=self.time
         f=self.backbone.step(x)
         if self.cfg.observation!='output':f=self.backbone.last_cell.last[self.cfg.observation]
         if not self.image_output and f.ndim>2:f=f.flatten(2).mean(-1)
@@ -141,7 +150,8 @@ class ResearchModel(nn.Module):
         elif k=='sum':a=r['sum']
         elif k=='mean':a=r['sum']/r['count']
         else:a=r['weighted']/r['weight']
-        return self.head(a)
+        result=self.head(a)
+        return result if self.image_output else result.reshape(len(result),*self.output_shape)
 
     def forward(self,x,capture=False,return_sequence=False,after_step=None):
         self.reset(capture);features=[]
@@ -153,7 +163,7 @@ class ResearchModel(nn.Module):
         if return_sequence or self.sequence_output:
             if self.cfg.readout=='trajectory':raise ValueError('No trajectory per-step classifier')
             fs=self.last_features
-            seq=self.head(fs.flatten(0,1)).reshape(len(x),x.shape[1],*pred.shape[1:]) if self.image_output else self.head(fs)
+            seq=self.head(fs.flatten(0,1)).reshape(len(x),x.shape[1],*pred.shape[1:]) if self.image_output else self.head(fs).reshape(len(x),x.shape[1],*self.output_shape)
             return pred,seq
         return pred
 
@@ -187,13 +197,16 @@ class ResearchModel(nn.Module):
 
 def initialize_paired(model,seed):
     """Shared parameter path+shape gets identical initial weights across cells."""
+    preserved={prefix+'.'+name if prefix else name for prefix,module in model.named_modules() for name in getattr(module,'preserve_initialization',set())}
+    normalized={id(module.weight) for module in model.modules() if isinstance(module,(nn.LayerNorm,nn.GroupNorm)) and module.weight is not None}
     for name,p in model.named_parameters():
         # Respect declared learned decay initialization.
-        if name.endswith('raw_beta') or name.endswith('raw_decay'):continue
+        if name.endswith('raw_beta') or name.endswith('raw_decay') or name in preserved:continue
         key=hashlib.sha256((str(seed)+'|'+name+'|'+str(tuple(p.shape))).encode()).digest()
         g=torch.Generator(device='cpu').manual_seed(int.from_bytes(key[:8],'little')%(2**63-1))
         with torch.no_grad():
-            if p.ndim>=2:
+            if id(p) in normalized:p.fill_(1.)
+            elif p.ndim>=2:
                 fan_in,fan_out=nn.init._calculate_fan_in_and_fan_out(p);bound=math.sqrt(6/(fan_in+fan_out))
                 p.copy_(torch.empty_like(p,device='cpu').uniform_(-bound,bound,generator=g).to(p.device))
             else:p.zero_()

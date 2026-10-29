@@ -11,7 +11,7 @@ import numpy as np
 import torch
 from torch import nn
 from .data import DataStore,generate,source_pair,subset,render_tagged
-from .engine import load_run,numpy_losses,implementation_hash
+from .engine import load_run,numpy_losses,implementation_hash,forecast_metrics
 from .runtime import collect,tensor_input,intervene,message_edit,event_edit
 from .models import Cell,MemoryBackbone
 from .utils import atomic_json,digest,file_hash,seeded,exclusive_file
@@ -431,6 +431,10 @@ def _analyze(run,data_root='prepared',checkpoint='best.pt',device='cpu',analysis
         'data_roles':{k:{'scenes':len(v['x']),'groups':len(allgroups[k])} for k,v in data.items()},'source_schema':source_schema(ev['meta']),
         'observation_contracts':ec['observation_contracts'],'diagnostic_target_contract':target_contract,'resources':ec['resources'],'modules':{}}
     raw={'native_loss':loss,'scene_ids':ev['scene_ids'],'group_ids':ev['group_ids']};schema=report['source_schema'];modules=report['modules'];readers=None
+    forecast=forecast_metrics(ec['prediction'],ev)
+    if forecast:
+        report['native']['forecasting']={name:interval(values,a.interval_resamples,a.delta,groups=ev['group_ids']) for name,values in forecast.items()}
+        raw.update({'forecast_'+name:values for name,values in forecast.items()})
     if 'task_controls' in a.modules:
         from .readouts import task_controls
         modules['task_controls']=task_controls(data,a)

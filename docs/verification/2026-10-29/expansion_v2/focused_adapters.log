@@ -1,0 +1,20 @@
+test_author_runner_executes_pinned_source_and_rejects_edits (test_expansion.ExpandedProtocols.test_author_runner_executes_pinned_source_and_rejects_edits) ... ok
+test_esc50_original_recording_groups (test_expansion.ExpandedProtocols.test_esc50_original_recording_groups) ... ok
+test_expanded_catalogue_compatible_and_native_output (test_expansion.ExpandedProtocols.test_expanded_catalogue_compatible_and_native_output) ... ok
+test_forecast_no_overlap_train_only_scale_and_native_horizon (test_expansion.ExpandedProtocols.test_forecast_no_overlap_train_only_scale_and_native_horizon) ... ok
+test_mnist_scan_permutation_and_repeat (test_expansion.ExpandedProtocols.test_mnist_scan_permutation_and_repeat) ... ok
+test_notd_transformer_keeps_exogenous_position_and_replays (test_expansion.ExpandedProtocols.test_notd_transformer_keeps_exogenous_position_and_replays) ... ok
+test_openbmi_subjects_and_right_boundary_time (test_expansion.ExpandedProtocols.test_openbmi_subjects_and_right_boundary_time) ... ok
+test_optional_author_archives_do_not_download_by_default (test_expansion.ExpandedProtocols.test_optional_author_archives_do_not_download_by_default) ... {"id": "D1", "name": "fixture", "priority": "P0", "access": null, "adapter": null, "source_url": null}
+{"filename": "raw", "sha256": "fixture"}
+{"id": "D1", "name": "fixture", "priority": "P0", "access": null, "adapter": null, "source_url": null}
+{"filename": "raw", "sha256": "fixture"}
+{"filename": "pooled", "sha256": "fixture"}
+ok
+test_specialized_dynamics_and_normalization_survive_initialization (test_expansion.ExpandedProtocols.test_specialized_dynamics_and_normalization_survive_initialization) ... ok
+test_wisdm_subjects_and_activity_boundaries (test_expansion.ExpandedProtocols.test_wisdm_subjects_and_activity_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.590s
+
+OK

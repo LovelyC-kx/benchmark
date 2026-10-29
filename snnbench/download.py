@@ -122,7 +122,7 @@ def extract_archive(path,out):
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--manifest',default=str(Path(__file__).parent/'resources'/'datasets.json'))
     p.add_argument('--out',default='downloads');p.add_argument('--ids',nargs='*');p.add_argument('--tier',choices=('P0','P1','P2','all'),default='P0')
-    p.add_argument('--list',action='store_true');p.add_argument('--extract',action='store_true');p.add_argument('--verify-only',action='store_true');args=p.parse_args(argv)
+    p.add_argument('--list',action='store_true');p.add_argument('--extract',action='store_true');p.add_argument('--verify-only',action='store_true');p.add_argument('--include-native',action='store_true',help='Also fetch optional author-native preprocessed archives; these may omit required group identities');args=p.parse_args(argv)
     manifest=json.loads(Path(args.manifest).read_text());items=[x for x in manifest['datasets'] if (not args.ids or x['id'] in args.ids) and (args.tier=='all' or x['priority']==args.tier or bool(args.ids))]
     if args.ids and set(args.ids)-{x['id'] for x in items}:raise ValueError('Unknown dataset ID')
     for item in items:
@@ -132,6 +132,7 @@ def main(argv=None):
             print('No direct binary file registered; follow the official source/generator instructions above.',flush=True);continue
         folder=Path(args.out)/item['id']
         for f in item['files']:
+            if f.get('optional') and not args.include_native:continue
             info=verify(folder/f['filename'],f) if args.verify_only else download_file(f,folder)
             print(json.dumps(dict(filename=f['filename'],**info)),flush=True)
             if args.extract:extract_archive(folder/f['filename'],folder/'extracted')

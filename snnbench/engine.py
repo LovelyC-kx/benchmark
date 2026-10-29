@@ -19,7 +19,7 @@ from .utils import atomic_json,atomic_torch,digest,file_hash,parameter_hash,seed
 
 def implementation_hash(scope='training'):
     root=Path(__file__).parent
-    training=('engine.py','utils.py','specs.py','models.py','data.py','protocols.py','reference/__init__.py','reference/models.py','reference/neurons.py','legacy/tasks.py','legacy/l1_contracts.py')
+    training=('engine.py','utils.py','specs.py','models.py','extended_models.py','data.py','protocols.py','reference/__init__.py','reference/models.py','reference/neurons.py','legacy/tasks.py','legacy/l1_contracts.py')
     paths=[root/p for p in training] if scope=='training' else sorted(root.rglob('*.py'))
     return digest({'scope':scope,'files':{str(p.relative_to(root)):file_hash(p) for p in paths if '__pycache__' not in str(p)}})
 
@@ -80,19 +80,39 @@ def numpy_losses(pred,batch):
     return loss.numpy(),None if correct is None else correct.numpy()
 
 
+def forecast_metrics(pred,batch):
+    """Descriptive metrics, including original units and the last-value control.
+
+    Training/selection still use the native standardized MSE. Raw-unit MSE pooled
+    across heterogeneous channels is descriptive, not a scale-free ranking.
+    """
+    c=batch['meta']
+    if c.get('protocol')!='chronological_ten_role_no_crossing_v1':return {}
+    p=pred[0] if isinstance(pred,tuple) else pred
+    if isinstance(p,torch.Tensor):p=p.detach().cpu().numpy()
+    y=np.asarray(batch['y']);error=np.asarray(p,dtype='float64')-y;scale=np.asarray(c['normalization']['std'])
+    persistence=np.asarray(batch['x'])[:,-1,None,:]-y
+    return {name:value.reshape(len(y),-1).mean(1) for name,value in {
+        'MSE_standardized':error**2,'MAE_standardized':np.abs(error),'MSE_original_units':(error*scale)**2,'MAE_original_units':np.abs(error*scale),
+        'persistence_MSE_standardized':persistence**2,'persistence_MAE_standardized':np.abs(persistence)}.items()}
+
+
 @torch.no_grad()
 def evaluate(model,data,batch_size,device):
-    model.eval();losses=[];corrects=[]
+    model.eval();losses=[];corrects=[];forecast={}
     for start in range(0,len(data['x']),batch_size):
         batch=subset(data,np.arange(start,min(start+batch_size,len(data['x']))));p=model(tensor_input(batch,device))
         loss,c=native_losses(p,batch,device);losses.append(loss.cpu().numpy())
+        for name,values in forecast_metrics(p,batch).items():forecast.setdefault(name,[]).append(values)
         if c is not None:corrects.append(c.cpu().numpy())
     loss=np.concatenate(losses)
     _,groups=np.unique(data['group_ids'],return_inverse=True);g=int(groups.max())+1
     sums=np.bincount(groups,weights=loss.astype(float)-float(loss.mean()))
     se=float(np.sqrt(g/(g-1)*np.sum(sums*sums))/len(loss)) if g>1 else None
-    return {'native_loss':float(loss.mean()),'native_loss_se':se,'native_loss_se_unit':'source group; cluster robust descriptive SE','independent_groups':g,
+    result={'native_loss':float(loss.mean()),'native_loss_se':se,'native_loss_se_unit':'source group; cluster robust descriptive SE','independent_groups':g,
             'accuracy':float(np.concatenate(corrects).mean()) if corrects else None,'scenes':len(loss)}
+    if forecast:result['forecasting']={name:float(np.concatenate(values).mean()) for name,values in forecast.items()}
+    return result
 
 
 def environment(device):

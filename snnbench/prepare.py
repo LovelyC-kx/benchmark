@@ -50,24 +50,34 @@ def partition_groups(records,seed=20261029):
     return mapping
 
 
-def write_records(records,loader,out,contract,seed=20261029):
+def write_records(records,loader,out,contract,seed=20261029,group_assignment=None):
     out=Path(out)
     if out.exists():raise FileExistsError('Use a fresh canonical output directory: '+str(out))
-    temp=out.with_name(out.name+'.preparing-'+str(os.getpid()));temp.mkdir(parents=True)
-    mapping=partition_groups(records,seed);byrole=defaultdict(list)
+    mapping=partition_groups(records,seed) if group_assignment is None else dict(group_assignment)
+    if set(mapping)!={str(r['group_id']) for r in records} or set(mapping.values())!=set(TRAIN_ROLES+TEST_ROLES):raise ValueError('Explicit assignment must cover exactly the source groups and all ten roles')
+    official={}
+    for r in records:
+        g=str(r['group_id']);split=r['official_split']
+        if split not in ('train','val','test') or (g in official and official[g]!=split):raise ValueError('Source group crosses official splits')
+        official[g]=split
+        if (mapping[g] in TEST_ROLES)!=(split=='test'):raise ValueError('Official test data cannot enter fitting roles')
+        if split=='val' and mapping[g] not in ('val','calibration'):raise ValueError('Official validation cannot enter fitting roles')
+    byrole=defaultdict(list)
     if len({str(r['scene_id']) for r in records})!=len(records):raise ValueError('Unique original-window scene IDs required')
     if any(len(str(r[k]))>256 for r in records for k in ('scene_id','group_id')):raise ValueError('Scene/group IDs exceed canonical Unicode storage limit')
     for r in records:byrole[mapping[str(r['group_id'])]].append(r)
+    temp=out.with_name(out.name+'.preparing-'+str(os.getpid()));temp.mkdir(parents=True)
     manifest={'schema':'snnbench_canonical_v2','contract':dict(contract,model_fields=['x'],independent_factors=False),
               'split_seed':seed,'group_assignment':mapping,'splits':{},'raw_sources':contract.get('raw_sources',[])}
     expected=None
     try:
         for role,rows in byrole.items():
             rows=sorted(rows,key=lambda r:hashlib.sha256((str(seed)+'|'+str(r['scene_id'])).encode()).hexdigest())
-            folder=temp/role;folder.mkdir();maps={};N=len(rows)
+            folder=temp/role;folder.mkdir();maps={};N=len(rows);label_counts=defaultdict(int)
             for j,r in enumerate(rows):
                 values=loader(r);x=np.asarray(values['x'],'float32');y=np.asarray(values['y'],'int64' if contract['target_mode']=='class_index' else 'float32')
                 if contract['target_mode']=='class_index' and (y.ndim!=0 or not 0<=int(y)<contract['classes']):raise ValueError('Scalar label outside declared classes')
+                if contract['target_mode']=='class_index':label_counts[str(int(y))]+=1
                 if x.ndim not in (2,4) or not np.isfinite(x).all() or not np.isfinite(y).all():raise ValueError('Finite T,F or T,C,H,W and native target required')
                 shape=(x.shape,y.shape)
                 if expected is None:expected=shape
@@ -82,6 +92,9 @@ def write_records(records,loader,out,contract,seed=20261029):
                     'source_ids':np.array(str(r['scene_id']),dtype='<U256'),'timestamps':times,'availability_times':available,
                     'source_times':np.array([len(x)-1],'int64'),'source_present':np.ones(1,bool)}
                 fields.update({k:np.asarray(v) for k,v in values.items() if k.startswith('region_')})
+                # Future target coordinates remain analysis metadata, never model inputs.
+                for key in ('target_timestamps','input_indices','target_indices'):
+                    if key in values:fields[key]=np.asarray(values[key])
                 for key,value in fields.items():
                     if key not in maps:maps[key]=np.lib.format.open_memmap(folder/(key+'.npy'),mode='w+',dtype=value.dtype,shape=(N,*value.shape))
                     if maps[key].shape[1:]!=value.shape:raise ValueError('Inconsistent field shape: '+key)
@@ -90,6 +103,7 @@ def write_records(records,loader,out,contract,seed=20261029):
             maps.clear()
             manifest['splits'][role]={'directory':role,'samples':N,'groups':len(set(str(r['group_id']) for r in rows)),
                 'files':{p.name:{'sha256':file_hash(p),'bytes':p.stat().st_size} for p in folder.glob('*.npy')}}
+            if label_counts:manifest['splits'][role]['label_counts']=dict(label_counts)
         c=manifest['contract'];c.update(source_names=['native_target'],source_dims=[contract['classes'] if c['target_mode']=='class_index' else int(np.prod(expected[1]))],
             requested_sources=['native_target'],input_shape=list(expected[0][1:]),steps=expected[0][0],
             target_semantics='one-hot native class label' if c['target_mode']=='class_index' else 'native continuous target flattened for probes')

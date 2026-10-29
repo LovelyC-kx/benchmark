@@ -1,8 +1,10 @@
 # 服务器数据下载与转换交接
 
-完整机器清单：[JSON](../snnbench/resources/datasets.json)、[CSV](../snnbench/resources/datasets.csv)。完整可读目录：[104项总表](DATASETS_ALL.md)。
+完整机器清单：[JSON](../snnbench/resources/datasets.json)、[CSV](../snnbench/resources/datasets.csv)。完整可读目录：[121项总表](DATASETS_ALL.md)。本轮新增真实任务、适配合同与模型配套见 [扩展说明](REAL_DATA_AND_MODEL_EXPANSION.md)。
 
-原93项是来源、生成器、任务族和参照协议，不能计为93个独立实测数据集。本轮再加EarthNet与Diving48，共95项来源；另有无需下载的G01—G09。
+原93项是来源、生成器、任务族和参照协议。加EarthNet、Diving48及本轮17项真实预测/生物信号来源后，共112项来源/任务/素材；另有无需下载的G01—G09。不能计为121个真实数据集或完成实验。
+
+注册直接文件共24个，其中5个NSA作者预处理包默认跳过。`--include-native`才获取这些可选包；它们可能没有subject/session身份，不自动满足本文隔离协议。新增真实来源优先下载脚本是`bash scripts/download_real_priority.sh /data/snn/raw`；CSV/IDX/WAV/WISDM/subject-MAT命令详见扩展说明。
 
 ## 优先下载的文件
 

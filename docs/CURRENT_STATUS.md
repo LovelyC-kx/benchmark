@@ -18,14 +18,20 @@
 | tagged内容/负荷任务 | 接通分类与回归，角色随需求变化 | 固定底层维数、投影、噪声；`physical_k`与`demand_only`分开 |
 | G01—G09 | 版本化生成接口 | 本项目派生协议；具体简化见实验设计，不能换名宣称官方复现 |
 | Binary Adding/Copy/MQAR | 单独合同与掩码损失 | 九标记十分类、复制、单/多查询；MQAR是参考生成器 |
-| 12单元×8骨架 | 共用模型工厂 | 96组合的CPU前向/反传/采集/回放检查；重建仅使用有原生空间头的配置 |
-| GRU/LSTM/对角SSM/因果attention/ConvGRU | 连续参照 | 逐步状态明确；不附会官方SOTA复现 |
+| 12单元×14骨架 | 共用模型工厂，v0.3新增6种 | 168组合的CPU前向/反传/采集/回放检查；重建仅使用有原生空间头的配置 |
+| 18种连续参照 | v0.3新增13种 | RNN/TCN/Transformer/Conformer、S4D/LRU/Mamba-style、空间/视频参考；不附会官方SOTA复现 |
 | L1—L4公共分析 | 14个命令可选模块 | 结果关联实际checkpoint SHA；不适用分支写出原因 |
-| 数据下载 | 104项目录、9个直接文件 | 优先来源当前核对；其余保留历史核对状态，没有声称全部链接重新实测 |
-| 原始数据适配 | HAR、SHD/SSC、GSC35、Tonic Gesture | 小型人工格式fixture可验收；实际完整数据仍由服务器下载后核对 |
-| 通用视频/无线/遥感 | 显式NPY/NPZ清单 | 原生ROS/GeoTIFF/MAT等由作者加载器转换；没有伪造95个原始格式加载器 |
+| 数据下载 | 121项目录、24个注册文件 | 112项来源/任务/素材＋9派生协议，不是121真实数据集；5个作者原生包默认跳过；历史候选未全部实测 |
+| 原始数据适配 | HAR、SHD/SSC、GSC35、Tonic Gesture、MNIST、ESC50、WISDM、OpenBMI subject-MAT、真实预测CSV | 人工格式fixture验收；完整语料由服务器下载后校验；OpenBMI原始_MI.mat预处理仍需执行 |
+| 多步真实预测 | 原生H×F目标、MSE/MAE、持久值对照 | train-only标准化、purged十角色；长预测可显式minimum_first；不冒充原生LTSF分数 |
+| 通用视频/无线/遥感 | 显式NPY/NPZ清单 | 原生ROS/GeoTIFF等由作者加载器转换；未虚构全部候选的专用加载器 |
 | EarthNet真实重建 | 作者转换HDF5专用入口 | schema按作者commit核对；干净帧、日期、tile与本文因果人工缺失合同；完整语料仍待下载 |
 | 批量执行 | 编译、预检、SQLite、单机多GPU、Slurm分片 | SQLite放单主机本地盘；跨节点不共享NFS SQLite |
+| 近期作者模型 | 固定21仓库版本，9套运行入口 | 原生作者轨道与公共独立参考分开；不声称完整依赖/GPU训练已复现 |
+
+新增内容先读[真实数据和模型扩展](REAL_DATA_AND_MODEL_EXPANSION.md)、[2025—2026基准复核](BENCHMARK_REVIEW_2025_2026.md)。`models --sources`可读取来源和状态；`expanded`以output访问覆盖32参考骨架的兼容子集，每seed 4954份配置。
+
+v0.3修正LayerNorm/GroupNorm尺度初始化，保留SSM专用动态初始化。代码hash变化后旧checkpoint需要原源码；新实验应另开输出目录，不能跳过严格校验。
 
 ## 已修订的陈旧问题
 

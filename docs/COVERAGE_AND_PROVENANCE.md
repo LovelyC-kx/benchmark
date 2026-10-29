@@ -13,7 +13,7 @@
 | 原层级/子节 | 统一实现 | 复用思想/代码 | 当前边界 |
 |---|---|---|---|
 | L1任务与数据 | specs/data/protocols/prepare/oracles/readouts | 原16任务、G01—G09、adding/TCN/Zoology参照 | 新生成版本与官方语料分开；额外真实格式不自动伪装 |
-| L2状态与骨架 | reference/models/runtime | 原12单元、8骨架、显式状态作用域 | 新增连续controls；官方模型需独立复现合同 |
+| L2状态与骨架 | reference/models/extended_models/runtime | 原12单元、8骨架来源保留；v0.3扩到14种注入骨架和18种连续参照 | 作者来源与公共独立实现分列；官方模型需独立复现合同 |
 | L3.1合同 | source_schema、RunSpec、provenance | 目标/来源/角色/权限与单位 | 训练身份和分析身份分开 |
 | L3.2读取 | fitted_probes、readouts | 训练/选择/评价分离与负R²保留 | 不是探针失败即可判无信息 |
 | L3.3.1统计分解 | kernels/decomposition、geometry | 联合编码、协方差与全部交叉项 | 残差不改名为内禀噪声 |

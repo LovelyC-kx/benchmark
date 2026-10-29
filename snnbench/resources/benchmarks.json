@@ -1,0 +1,324 @@
+{
+  "schema": "snnbench_research_source_map_v1",
+  "checked_on": "2026-10-29",
+  "meaning": "evidence levels and reuse plans, not claims of having read every full paper or reproduced every repository",
+  "sources": [
+    {
+      "id": "STP",
+      "kind": "benchmark_paper",
+      "title": "Spiking Neural Networks for Temporal Processing: Status Quo and Future Prospects",
+      "date": "2025 preprint / TNNLS online 2026-10-08",
+      "paper": "https://arxiv.org/abs/2502.09449",
+      "final_record": "https://pubmed.ncbi.nlm.nih.gov/42848555/",
+      "code_source": "neuroseq",
+      "evidence": "2025/2026 abstracts, author README, source tree and selected loaders",
+      "data_ids": [
+        "D01",
+        "D27",
+        "D89"
+      ],
+      "adopt": [
+        "full/detach/notd comparisons",
+        "native task anchors"
+      ],
+      "extension": [
+        "fixed-checkpoint state/message/readout interventions",
+        "retention vs use"
+      ],
+      "open_issue": "3 tasks in preprint/README, 4 in final abstract, additional folders in current code; final fourth task not inferred"
+    },
+    {
+      "id": "NSA2025",
+      "kind": "benchmark_paper",
+      "title": "Neuromorphic Sequential Arena: A Benchmark for Neuromorphic Temporal Processing",
+      "date": "IJCAI2025",
+      "paper": "https://arxiv.org/html/2505.22035v1",
+      "code_source": "neuroseq",
+      "evidence": "paper HTML and author task guide; AL/WISDM/OpenBMI/SLoClas loaders read",
+      "data_ids": [
+        "D26",
+        "D47",
+        "D64",
+        "D66",
+        "D36",
+        "D67",
+        "D68"
+      ],
+      "adopt": [
+        "7 application tasks",
+        "official cells and architectures",
+        "native SI-SNR/CER"
+      ],
+      "extension": [
+        "subject-first partition and train-only normalization",
+        "separate common and author-native protocols"
+      ],
+      "open_issue": "AL is generated, not a real sensor corpus; pooled OpenBMI arrays cannot restore subjects"
+    },
+    {
+      "id": "Soul2026",
+      "kind": "benchmark_preprint",
+      "title": "Benchmarking spiking neural networks across sensing modalities on edge devices",
+      "date": "2026",
+      "paper": "https://arxiv.org/abs/2609.00026",
+      "code_source": "soul",
+      "evidence": "author README, modality docs, model registration, Spikformer, wireless loaders, run_soul",
+      "data_ids": [
+        "D31",
+        "D32",
+        "D33",
+        "D35",
+        "D41",
+        "D46",
+        "D49",
+        "D50",
+        "D54",
+        "D55",
+        "D56",
+        "D57",
+        "D58",
+        "D60",
+        "D61",
+        "D62"
+      ],
+      "adopt": [
+        "cross-modality real tasks",
+        "domain-specific architectures",
+        "separate software/hardware metrics"
+      ],
+      "extension": [
+        "mechanistic capacity/retention/access/use/interference analysis"
+      ],
+      "open_issue": "source About title now differs; native static-repeat and physical-time axes must be checked; deployment not reproduced"
+    },
+    {
+      "id": "NeuroBench2025",
+      "kind": "benchmark_paper_and_harness",
+      "title": "The neurobench framework for benchmarking neuromorphic computing algorithms and systems",
+      "date": "Nature Communications2025",
+      "paper": "https://www.nature.com/articles/s41467-025-56739-4",
+      "code_source": "neurobench",
+      "evidence": "official paper record, project and repository documentation",
+      "data_ids": [],
+      "adopt": [
+        "algorithm/system distinction",
+        "operation, memory and sparsity metrics"
+      ],
+      "extension": [
+        "task-conditioned state and downstream attribution"
+      ],
+      "open_issue": "NHP/event detection/native incremental-learning adapters not integrated"
+    },
+    {
+      "id": "SpikingTSF2026",
+      "kind": "benchmark_library",
+      "title": "SpikingTSF",
+      "date": "2026 public library",
+      "paper": null,
+      "code_source": "spikingtsf",
+      "evidence": "README, model/data trees, DATASETS and requirements",
+      "data_ids": [
+        "D96",
+        "D97",
+        "D98",
+        "D99"
+      ],
+      "adopt": [
+        "real long-term forecasting and strong native baselines"
+      ],
+      "extension": [
+        "full horizon in common pipeline",
+        "purged ten-role protocol",
+        "inverse-unit metrics"
+      ],
+      "open_issue": "library/model-count and included-data documentation drift; not assigned an invented conference"
+    },
+    {
+      "id": "SeqSNN",
+      "kind": "author_framework",
+      "title": "SeqSNN",
+      "date": "ICML2024 / NeurIPS2024 / NeurIPS2025 implementations",
+      "paper": null,
+      "code_source": "seqsnn",
+      "evidence": "repository README and source tree",
+      "data_ids": [
+        "D100",
+        "D103",
+        "D106",
+        "D107"
+      ],
+      "adopt": [
+        "forecasting encoders and positional/CPG models"
+      ],
+      "extension": [
+        "representation vs state compression comparisons"
+      ],
+      "open_issue": "physical time vs simulation T and whole-context access need per-model audit"
+    },
+    {
+      "id": "SpikF2025",
+      "kind": "model_paper",
+      "title": "SpikF: Spiking Fourier Network for Efficient Long-term Prediction",
+      "date": "ICML2025",
+      "paper": "https://proceedings.mlr.press/v267/wu25m.html",
+      "code_source": "spikf",
+      "evidence": "official paper abstract and author source tree",
+      "data_ids": [
+        "D96",
+        "D97",
+        "D98",
+        "D99",
+        "D100",
+        "D101",
+        "D102",
+        "D104"
+      ],
+      "adopt": [
+        "attention-free Fourier forecasting baseline"
+      ],
+      "extension": [
+        "frequency selectivity vs retention/access"
+      ],
+      "open_issue": "native whole-context patch encoding is not step-by-step online state"
+    },
+    {
+      "id": "TSLIF2025",
+      "kind": "neuron_model_paper",
+      "title": "TS-LIF: A Temporal Segment Spiking Neuron Network for Time Series Forecasting",
+      "date": "ICLR2025",
+      "paper": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/45bd303ea32a8193d3c19de5d5eaf138-Abstract-Conference.html",
+      "code_source": "tslif",
+      "evidence": "official abstract, author README and tree",
+      "data_ids": [
+        "D100",
+        "D103",
+        "D106",
+        "D107"
+      ],
+      "adopt": [
+        "dual compartments",
+        "frequency/stability analysis"
+      ],
+      "extension": [
+        "cell content vs transmission vs readout"
+      ],
+      "open_issue": "not equivalent to two_state_ref; actual code nested in TS-LIF/"
+    },
+    {
+      "id": "SpikingSSMs2025",
+      "kind": "model_paper",
+      "title": "SpikingSSMs: Learning Long Sequences with Sparse and Parallel Spiking State Space Models",
+      "date": "AAAI2025",
+      "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/34245",
+      "code_source": "spikingssm",
+      "evidence": "official paper record and author tree",
+      "data_ids": [],
+      "adopt": [
+        "long-sequence sparse SSM baseline"
+      ],
+      "extension": [
+        "parallel training vs recurrent inference state"
+      ],
+      "open_issue": "native full training and common state hooks not executed"
+    },
+    {
+      "id": "SpikeMamba2026",
+      "kind": "model_paper",
+      "title": "SpikeMamba: Spike-Driven State Space Models for Energy-Efficient Biomedical Sequence Modeling",
+      "date": "MICCAI2026",
+      "paper": "https://papers.miccai.org/miccai-2026/paper/4698_paper.pdf",
+      "code_source": "spikemamba",
+      "evidence": "paper PDF, author README and tree",
+      "data_ids": [
+        "D108",
+        "D109",
+        "D110",
+        "D111",
+        "D112"
+      ],
+      "adopt": [
+        "biomedical real tasks",
+        "activity-conditioned state update"
+      ],
+      "extension": [
+        "useful vs interfering retained contents under subject-disjoint evaluation"
+      ],
+      "open_issue": "segment-mixed CHB-MIT is not unseen-patient prediction; PTB-XL label protocol differs; energy is estimated"
+    },
+    {
+      "id": "SpikySpace2026",
+      "kind": "model_preprint",
+      "title": "SpikySpace: A Spiking State Space Model for Energy-Efficient Time Series Forecasting",
+      "date": "2026-02-10 v2",
+      "paper": "https://arxiv.org/abs/2601.02411",
+      "code_source": null,
+      "evidence": "arXiv abstract; linked anonymous code landing, not pinned",
+      "data_ids": [],
+      "adopt": [
+        "spiking selective scan candidate"
+      ],
+      "extension": [
+        "activity threshold and state access comparison"
+      ],
+      "open_issue": "anonymous code and full equations not audited; not runnable in common factory"
+    },
+    {
+      "id": "FrequencyMatching2026",
+      "kind": "mechanism_model_paper",
+      "title": "Frequency Matching in Spiking Neural Networks for mmWave Sensing",
+      "date": "ICML2026",
+      "paper": "https://proceedings.mlr.press/v306/liao26e.html",
+      "code_source": "soul",
+      "evidence": "official PMLR record/software link and selected arXiv full-text sections/appendices on datasets, beta, DI, low-pass scope and validity",
+      "data_ids": [
+        "D58",
+        "D59",
+        "D60"
+      ],
+      "adopt": [
+        "membrane/data spectral matching control"
+      ],
+      "extension": [
+        "same input PSD, different task-relevant content and downstream use"
+      ],
+      "open_issue": "Discriminative spectral matching, beta sweeps, validity bounds and spatial low-pass controls already exist. Distinguish frame/time/simulation axes; not our novel theorem or measured energy.",
+      "external_data_versions": [
+        {
+          "name": "mmFiT raw point cloud",
+          "url": "https://data.mendeley.com/datasets/d3dt5tb74h/1",
+          "relation": "D63 is an archived heatmap source; this raw release is separately linked, not assumed equivalent"
+        }
+      ]
+    },
+    {
+      "id": "Fairness2026",
+      "kind": "benchmark_preprint_watchlist",
+      "title": "Benchmarking Fairness in Spiking Neural Networks: Data Bias, Spurious Features, and Hardware Effects",
+      "date": "2026 preprint",
+      "paper": "https://arxiv.org/abs/2605.27407",
+      "code_source": null,
+      "evidence": "arXiv abstract only",
+      "data_ids": [],
+      "adopt": [
+        "explicit confound/group and deployment permissions"
+      ],
+      "extension": [],
+      "open_issue": "anonymous code, datasets and hardware claims unverified; not added as completed experiments"
+    },
+    {
+      "id": "ANTShapes2026",
+      "kind": "synthetic_dataset_benchmark_watchlist",
+      "title": "ANTShapes Benchmarking Datasets for Event-Based Neuromorphic Object Classification",
+      "date": "2026 preprint",
+      "paper": "https://arxiv.org/abs/2608.27150",
+      "code_source": null,
+      "evidence": "arXiv indexed metadata only",
+      "data_ids": [],
+      "adopt": [
+        "possible geometric motion controls"
+      ],
+      "extension": [],
+      "open_issue": "simulated events, not real recordings; code/full paper not audited"
+    }
+  ]
+}

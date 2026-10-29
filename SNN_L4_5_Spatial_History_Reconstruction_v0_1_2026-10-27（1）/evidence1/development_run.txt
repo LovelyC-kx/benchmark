@@ -1,0 +1,7 @@
+development cnn2d__lif_hard four_group_cells 24 elapsed 12.8
+development cnn2d__alif_ref four_group_cells 48 elapsed 25.4
+development cnn2d__continuous four_group_cells 72 elapsed 37.0
+development unet__lif_hard four_group_cells 96 elapsed 52.3
+development unet__alif_ref four_group_cells 120 elapsed 68.3
+development unet__continuous four_group_cells 144 elapsed 81.8
+Four-group cells 144 scene arrays 4608

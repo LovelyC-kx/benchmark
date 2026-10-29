@@ -1,0 +1,80 @@
+{
+  "module": "L4.5 known-answer controls",
+  "control_families": 20,
+  "results": {
+    "coverage_partition": {
+      "C_pixels": 128,
+      "H_pixels": 64,
+      "U_vis_pixels": 64,
+      "changed_C_is_subset_of_C": true
+    },
+    "exact_current_and_history_reference": {
+      "history_H_MSE": 0.0,
+      "current_H_MSE": 0.0033449044237968996,
+      "never_seen_MSE": 0.003511333280974912
+    },
+    "unseen_Bayes_floor": {
+      "analytic_expected_MSE": 0.0033687503488691595,
+      "finite_scene_MSE": 0.003511333280974912,
+      "information_condition": "All U_vis factors independent and absent from every model input."
+    },
+    "unseen_input_identical_target_changes": true,
+    "stale_source_pair_same_target_current": true,
+    "informative_source_requires_recomputed_supervised_target": true,
+    "classification_can_ignore_history_details": {
+      "current_factor_sign_accuracy": 1.0,
+      "H_counterfactual_changes_pixel_target_but_not_this_class": true,
+      "scope": "Exact toy current-content class; not a real semantic classifier or a learned SNN accuracy result."
+    },
+    "periodic_alignment_oracle_exact": true,
+    "area_weighted_full_risk": {
+      "max_abs": 5.204170427930421e-17
+    },
+    "empty_regions_are_undefined": true,
+    "frequency_and_region_commutator": {
+      "identity_max_abs": 6.678685382510707e-17,
+      "regional_cross_max_abs": 0.0031704082822826933
+    },
+    "PSNR_aggregation_order": {
+      "PSNR_of_mean_MSE": 12.967086218813385,
+      "mean_scene_PSNR": 20.0,
+      "zero_error_scenes": 0,
+      "infinite_PSNR_if_zero_error": true,
+      "peak_value": 1.0
+    },
+    "zero_MSE_infinite_PSNR_is_flagged": {
+      "PSNR_of_mean_MSE": null,
+      "mean_scene_PSNR": null,
+      "zero_error_scenes": 1,
+      "infinite_PSNR_if_zero_error": true,
+      "peak_value": 1.0
+    },
+    "SAM_zero_norm_is_undefined": true,
+    "GAP_spatial_ambiguity": {
+      "same_mean": 0.5,
+      "target_MSE": 1.0
+    },
+    "permutation_is_coordinate_change_not_information_loss": true,
+    "spatial_normalization_absolute_content": {
+      "shift_invariance_max_abs": 2.6645352591003757e-15,
+      "mean_scale_restore_max_abs": 4.440892098500626e-16,
+      "meaning": "A sole normalized code loses additive channel offsets. Saving channel mean/scale restores this map; counts 2C extra scalars. This does not refute normalization as an auxiliary alignment loss."
+    },
+    "local_state_edit_can_affect_other_regions": {
+      "outside_H_energy": 0.06172839506172839
+    },
+    "repeated_noise_effective_information": {
+      "independent_mean_MSE": 0.00013342285156250002,
+      "independent_theory": 0.00013333333333333334,
+      "repeated_mean_MSE": 0.00040000000000000013,
+      "repeated_theory": 0.0004
+    },
+    "competent_image_recovery_known_answer": {
+      "H_damage_MSE": 0.0033449044237968996,
+      "H_repaired_MSE": 0.0,
+      "C_prediction_change_max_abs": 0.0,
+      "scope": "Hand-specified last-valid image memory, not learned SNN or energy advantage."
+    }
+  },
+  "new_SNN_training_updates": 0
+}

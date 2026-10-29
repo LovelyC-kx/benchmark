@@ -1,0 +1,1270 @@
+{
+  "module": "L4.5",
+  "generator": "spatial_history45_v1",
+  "initialization_seed": 45001,
+  "model_configs": [
+    [
+      "cnn2d",
+      "lif_hard"
+    ],
+    [
+      "cnn2d",
+      "alif_ref"
+    ],
+    [
+      "cnn2d",
+      "continuous"
+    ],
+    [
+      "unet",
+      "lif_hard"
+    ],
+    [
+      "unet",
+      "alif_ref"
+    ],
+    [
+      "unet",
+      "continuous"
+    ]
+  ],
+  "core_training_updates": 0,
+  "native_random_heads_unchanged": true,
+  "fitted_readouts_are_separate_adapters": true,
+  "parameter_hashes": {
+    "cnn2d__lif_hard": "2f69ebbd9bb7a5c500cc935120f2e6c1195536e468c650e62edf1a3f69398634",
+    "cnn2d__alif_ref": "2f69ebbd9bb7a5c500cc935120f2e6c1195536e468c650e62edf1a3f69398634",
+    "cnn2d__continuous": "2f69ebbd9bb7a5c500cc935120f2e6c1195536e468c650e62edf1a3f69398634",
+    "unet__lif_hard": "9e88bf5dbc982aab2013a4b305c1d35b120eb99d4411ee2e3bb07e2db194f57c",
+    "unet__alif_ref": "9e88bf5dbc982aab2013a4b305c1d35b120eb99d4411ee2e3bb07e2db194f57c",
+    "unet__continuous": "9e88bf5dbc982aab2013a4b305c1d35b120eb99d4411ee2e3bb07e2db194f57c"
+  },
+  "bank_sha256": "c936b674fd29e9856117ba5c3b155929902473be6a73783675cd628e11c2f60c",
+  "pools": {
+    "train": {
+      "n": 512,
+      "first_id": 45000000
+    },
+    "val": {
+      "n": 128,
+      "first_id": 45010000
+    },
+    "probe_train": {
+      "n": 256,
+      "first_id": 45020000
+    },
+    "probe_val": {
+      "n": 128,
+      "first_id": 45030000
+    },
+    "development": {
+      "n": 256,
+      "first_id": 45040000
+    },
+    "development_donor": {
+      "n": 256,
+      "first_id": 45050000
+    },
+    "confirmation": {
+      "n": 512,
+      "first_id": 45060000
+    },
+    "confirmation_donor": {
+      "n": 512,
+      "first_id": 45070000
+    }
+  },
+  "input_hashes_fit_pools": {
+    "train": "ebb015618f261294080c1020c43b46627f4149ed9cd35cbe5f7e25079ee0632a",
+    "val": "f58c315214e2970c5703a16947c65abfef84e3cf273ff7419528b475de3c8818",
+    "probe_train": "ef5be97c1596247aaece5bf415bb8a1e3300065bc8e63c15c8be57a32bccaf59",
+    "probe_val": "4061ab92da0b92fd77837d0ceb8b4fd974ac9c1716175a58020b3e92a2156bf0"
+  },
+  "views": [
+    "last",
+    "mean"
+  ],
+  "methods": [
+    "owner_self",
+    "region_self",
+    "region_reverse",
+    "wrong_H",
+    "wrong_time",
+    "random_region"
+  ],
+  "damage_time": 2,
+  "patch_times": [
+    3,
+    5
+  ],
+  "selected_decoders": 36,
+  "selected_independent_probes": 36,
+  "classification_auxiliary_probes": 12,
+  "ridge_candidate_solves_total": 228,
+  "selection": {
+    "cnn2d__lif_hard": {
+      "last": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003247696855060685
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032477168435348456
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032479880968961056
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003075860297810619
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0030758749619824843
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0030789849631599787
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003149363171565268
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0031475424327024083
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003143199467849558
+          }
+        ]
+      },
+      "mean": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032666958646593693
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032666927433450538
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032666670293610895
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0031848830867955316
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0031853237797734987
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0031974884980549845
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032711504440197346
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032698675039518313
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003261586700853348
+          }
+        ]
+      },
+      "backbone.a.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.40970602741583706
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.3951710754427166
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3177003138369207
+          }
+        ]
+      },
+      "backbone.a.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.40747083249622057
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.39296176494241125
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3148451272800905
+          }
+        ]
+      },
+      "backbone.a.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.17277009945989788
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.17121055416509043
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.15937145674501166
+          }
+        ]
+      },
+      "backbone.b.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5370388253589508
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.5290956924722391
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.4708225532376154
+          }
+        ]
+      },
+      "backbone.b.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.4713084387961349
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.46651845260537295
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.42911986846397854
+          }
+        ]
+      },
+      "backbone.b.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.26985361766819377
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.26879424655358714
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.25956814488749796
+          }
+        ]
+      }
+    },
+    "cnn2d__alif_ref": {
+      "last": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003269865616878288
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032697992232985926
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032692543775495763
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003234318524066724
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003234403576874317
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003239733250235373
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003112349084054683
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003110500255517349
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003105880340008897
+          }
+        ]
+      },
+      "mean": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003271171551572123
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003271121991442765
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003270680832661889
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032625271257631606
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032624360357736944
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032640944816481675
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003215698785219459
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032135959163997656
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032031297714245534
+          }
+        ]
+      },
+      "backbone.a.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.4014513593561835
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.388223595348057
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.31426136925439546
+          }
+        ]
+      },
+      "backbone.a.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.3975791771824431
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.38454293847177196
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3117783034796196
+          }
+        ]
+      },
+      "backbone.a.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.13987817560183002
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.13867989646753046
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.12948093889351261
+          }
+        ]
+      },
+      "backbone.b.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5096633194262131
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.5027773748928567
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.45125578929891524
+          }
+        ]
+      },
+      "backbone.b.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.4990443732683907
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.492809384772622
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.44533356699273335
+          }
+        ]
+      },
+      "backbone.b.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.3149320471133314
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.3130793442107919
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.29737928903658833
+          }
+        ]
+      }
+    },
+    "cnn2d__continuous": {
+      "last": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003265073729701035
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032648546225154808
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032645010637779807
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003047288840196679
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0030672129800955214
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0031534340447577896
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0030579984180792615
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0031150302057061283
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003159520398126496
+          }
+        ]
+      },
+      "mean": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032704181344356815
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032702328211919422
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032695402796306637
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0031993878607020614
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003207050783043302
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003234349988438196
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003202733507356371
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032071611770214626
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032195831294246297
+          }
+        ]
+      },
+      "backbone.a.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5648712136588633
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.519834344903962
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3671411661029757
+          }
+        ]
+      },
+      "backbone.a.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5648712823770433
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.5198344026322101
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.367141194641353
+          }
+        ]
+      },
+      "backbone.a.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.32072671048343326
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.31355970658432675
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.26961817735164556
+          }
+        ]
+      },
+      "backbone.b.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5889031389599256
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.5360976061527386
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.367396224068732
+          }
+        ]
+      },
+      "backbone.b.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5912010784812015
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.537431115516514
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.36835998307705475
+          }
+        ]
+      },
+      "backbone.b.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.3481994109577531
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.33611820408236404
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.2712777750849586
+          }
+        ]
+      }
+    },
+    "unet__lif_hard": {
+      "last": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032487053026239994
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003248682947008593
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003248561190398907
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003121754785027991
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003121343056214708
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003125729170866404
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003044167391494227
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0030422833269575377
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0030431030411522684
+          }
+        ]
+      },
+      "mean": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003269553253031894
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.00326946804760682
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032687561961198134
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032453253255681916
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003244863274059558
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032463955963157277
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032259458904232295
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003226276282189182
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003227970783829889
+          }
+        ]
+      },
+      "backbone.e1.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.40970602741583706
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.3951710754427166
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3177003138369207
+          }
+        ]
+      },
+      "backbone.e1.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.40747083249622057
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.39296176494241125
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3148451272800905
+          }
+        ]
+      },
+      "backbone.e1.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.17277009945989788
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.17121055416509043
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.15937145674501166
+          }
+        ]
+      },
+      "backbone.d.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5091541142812096
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.5049821855463742
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.4711609004281383
+          }
+        ]
+      },
+      "backbone.d.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.4527153024564659
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.45031546878607154
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.4296566934405683
+          }
+        ]
+      },
+      "backbone.d.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.2868373328314357
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.2862680282710441
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.28104328394014166
+          }
+        ]
+      }
+    },
+    "unet__alif_ref": {
+      "last": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032658872356179027
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032658684339703526
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032657151733244912
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003257693792194921
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032574560314983037
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003256800387516773
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032046127849499994
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032026095330125104
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003196366882332633
+          }
+        ]
+      },
+      "mean": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032701338703846746
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003270080172689131
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032696208391391965
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032695322003282908
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032692220343665222
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032681910361005593
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003238058422684352
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032352911624428725
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032289769771980583
+          }
+        ]
+      },
+      "backbone.e1.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.4014513593561835
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.388223595348057
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.31426136925439546
+          }
+        ]
+      },
+      "backbone.e1.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.3975791771824431
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.38454293847177196
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3117783034796196
+          }
+        ]
+      },
+      "backbone.e1.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.13987817560183002
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.13867989646753046
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.12948093889351261
+          }
+        ]
+      },
+      "backbone.d.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5019098756789694
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.4975212993201114
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.4619653590977229
+          }
+        ]
+      },
+      "backbone.d.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5113541492707384
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.507463804717399
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.4751437446925421
+          }
+        ]
+      },
+      "backbone.d.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.30403684691314176
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.30319894710119405
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.2955903661263059
+          }
+        ]
+      }
+    },
+    "unet__continuous": {
+      "last": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003266209822413075
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003266204260038005
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032661715111113095
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.003265079358765209
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032653222622801483
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003267266008946594
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0030128208037623087
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003015066163930829
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003102630975669684
+          }
+        ]
+      },
+      "mean": {
+        "spatial1": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032671060705633075
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.003267091294880507
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003266977197871182
+          }
+        ],
+        "spatial3": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0032683396114633234
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0032682980093768246
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.003269176546659829
+          }
+        ],
+        "gap_dense": [
+          {
+            "alpha": 0.001,
+            "validation_raw_MSE": 0.0031917387210890326
+          },
+          {
+            "alpha": 0.01,
+            "validation_raw_MSE": 0.0031791444799321206
+          },
+          {
+            "alpha": 0.1,
+            "validation_raw_MSE": 0.0032022648473908977
+          }
+        ]
+      },
+      "backbone.e1.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5648712136588633
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.519834344903962
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.3671411661029757
+          }
+        ]
+      },
+      "backbone.e1.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.5648712823770433
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.5198344026322101
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.367141194641353
+          }
+        ]
+      },
+      "backbone.e1.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.32072671048343326
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.31355970658432675
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.26961817735164556
+          }
+        ]
+      },
+      "backbone.d.act::2": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.4629721952384493
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.4246357894045058
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.2956901424805511
+          }
+        ]
+      },
+      "backbone.d.act::3": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.48660141972882487
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.43965951210596016
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.2973051901371692
+          }
+        ]
+      },
+      "backbone.d.act::5": {
+        "alpha": 0.1,
+        "candidate_validation_MSE": [
+          {
+            "alpha": 0.001,
+            "MSE": 0.19620502117731112
+          },
+          {
+            "alpha": 0.01,
+            "MSE": 0.1823714990767014
+          },
+          {
+            "alpha": 0.1,
+            "MSE": 0.14086579215623016
+          }
+        ]
+      }
+    }
+  },
+  "primary_task": "Four-band synthetic image reconstruction at t5; core is untrained, decoders fitted offline.",
+  "intervention_decoder": "spatial3, fixed before both evaluation cohorts; both last/mean access reported",
+  "damage": "post-v in H target footprint replaced by neutral-H reference at t2; actual current emit not recomputed",
+  "four_groups": "Same frozen external additive payload on clean and damaged backgrounds; original recipient label fixed",
+  "bounded_family_per_pool": 1728,
+  "family_delta": 0.05,
+  "MSE_damage_floor": 0.0001,
+  "supplements": "Confirmation first128: source/time map, stale source, alignment, noise coupling, area/frequency accounting. Texture OOD uses 256 new scenes and changed basis.",
+  "choices_frozen_before_evaluation": true,
+  "formal_benchmark_completed": 0,
+  "audit_test_accessed": false,
+  "fit_elapsed_seconds": 10.01401565399999
+}

@@ -1,0 +1,54 @@
+test_H_changes_only_history (test_spatial45.DataAndMetrics.test_H_changes_only_history) ... ok
+test_alignment (test_spatial45.DataAndMetrics.test_alignment) ... ok
+test_bounded_scene_count (test_spatial45.DataAndMetrics.test_bounded_scene_count) ... ok
+test_changed_is_subset_current (test_spatial45.DataAndMetrics.test_changed_is_subset_current) ... ok
+test_deterministic (test_spatial45.DataAndMetrics.test_deterministic) ... ok
+test_distinct_scenes (test_spatial45.DataAndMetrics.test_distinct_scenes) ... ok
+test_empty_region (test_spatial45.DataAndMetrics.test_empty_region) ... ok
+test_exact_history_reference (test_spatial45.DataAndMetrics.test_exact_history_reference) ... ok
+test_input_contract (test_spatial45.DataAndMetrics.test_input_contract) ... ok
+test_invalid_mask (test_spatial45.DataAndMetrics.test_invalid_mask) ... ok
+test_mask_partition (test_spatial45.DataAndMetrics.test_mask_partition) ... ok
+test_negative_losses_rejected (test_spatial45.DataAndMetrics.test_negative_losses_rejected) ... ok
+test_nonfinite_rejected (test_spatial45.DataAndMetrics.test_nonfinite_rejected) ... ok
+test_norm_per_scene (test_spatial45.DataAndMetrics.test_norm_per_scene) ... ok
+test_parseval (test_spatial45.DataAndMetrics.test_parseval) ... ok
+test_psnr_order (test_spatial45.DataAndMetrics.test_psnr_order) ... ok
+test_ratio_floor (test_spatial45.DataAndMetrics.test_ratio_floor) ... ok
+test_ratio_not_clipped (test_spatial45.DataAndMetrics.test_ratio_not_clipped) ... ok
+test_region_frequency_cross (test_spatial45.DataAndMetrics.test_region_frequency_cross) ... ok
+test_sam_undefined (test_spatial45.DataAndMetrics.test_sam_undefined) ... ok
+test_stale_same_target (test_spatial45.DataAndMetrics.test_stale_same_target) ... ok
+test_target_range (test_spatial45.DataAndMetrics.test_target_range) ... ok
+test_unbounded_rejected (test_spatial45.DataAndMetrics.test_unbounded_rejected) ... ok
+test_zero_direction_flagged (test_spatial45.DataAndMetrics.test_zero_direction_flagged) ... ok
+test_zero_psnr (test_spatial45.DataAndMetrics.test_zero_psnr) ... ok
+test_UNet_spatial_axes (test_spatial45.DecoderAndRuntime.test_UNet_spatial_axes) ... ok
+test_absent_owner (test_spatial45.DecoderAndRuntime.test_absent_owner) ... ok
+test_access_mean (test_spatial45.DecoderAndRuntime.test_access_mean) ... ok
+test_first_post_does_not_retroactively_emit (test_spatial45.DecoderAndRuntime.test_first_post_does_not_retroactively_emit) ... ok
+test_gap_decoder_shape (test_spatial45.DecoderAndRuntime.test_gap_decoder_shape) ... ok
+test_hook_cleanup_after_failure (test_spatial45.DecoderAndRuntime.test_hook_cleanup_after_failure) ... ok
+test_inverse_same_stage (test_spatial45.DecoderAndRuntime.test_inverse_same_stage) ... ok
+test_noop_exact (test_spatial45.DecoderAndRuntime.test_noop_exact) ... ok
+test_ridge_affine (test_spatial45.DecoderAndRuntime.test_ridge_affine) ... ok
+test_spatial_decoder_shape (test_spatial45.DecoderAndRuntime.test_spatial_decoder_shape) ... ok
+test_terminal_post_changes_observation (test_spatial45.DecoderAndRuntime.test_terminal_post_changes_observation) ... ok
+test_unknown_site (test_spatial45.DecoderAndRuntime.test_unknown_site) ... ok
+test_weights_unchanged (test_spatial45.DecoderAndRuntime.test_weights_unchanged) ... ok
+test_availability_must_be_supplied (test_spatial45.RealInputBoundary.test_availability_must_be_supplied) ... ok
+test_causal_prefix (test_spatial45.RealInputBoundary.test_causal_prefix) ... ok
+test_derived_future_support_rejected (test_spatial45.RealInputBoundary.test_derived_future_support_rejected) ... ok
+test_explicit_compatibility (test_spatial45.RealInputBoundary.test_explicit_compatibility) ... ok
+test_mask_convention (test_spatial45.RealInputBoundary.test_mask_convention) ... ok
+test_no_H_without_compatibility (test_spatial45.RealInputBoundary.test_no_H_without_compatibility) ... ok
+test_offline_permission_separate (test_spatial45.RealInputBoundary.test_offline_permission_separate) ... ok
+test_source_split_leakage_rejected (test_spatial45.RealInputBoundary.test_source_split_leakage_rejected) ... ok
+test_standard_SSIM_identity (test_spatial45.RealInputBoundary.test_standard_SSIM_identity) ... ok
+test_standard_SSIM_nonfinite (test_spatial45.RealInputBoundary.test_standard_SSIM_nonfinite) ... ok
+test_unverified_target_rejected (test_spatial45.RealInputBoundary.test_unverified_target_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.217s
+
+OK

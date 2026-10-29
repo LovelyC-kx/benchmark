@@ -1,0 +1,7 @@
+frozen cnn2d__lif_hard elapsed 1.64
+frozen cnn2d__alif_ref elapsed 3.16
+frozen cnn2d__continuous elapsed 4.61
+frozen unet__lif_hard elapsed 6.39
+frozen unet__alif_ref elapsed 8.07
+frozen unet__continuous elapsed 9.59
+Ridge candidate solves 228

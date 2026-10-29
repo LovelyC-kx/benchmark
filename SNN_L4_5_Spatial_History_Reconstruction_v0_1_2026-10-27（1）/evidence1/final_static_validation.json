@@ -1,0 +1,23 @@
+{
+  "module": "L4.5 final static delivery validation",
+  "python_AST_files": 124,
+  "strict_JSON_files_before_final_receipt_and_manifest": 86,
+  "unchanged_parent_files": 254,
+  "reports": [
+    "SNN_L4_5_Deep_Review_and_Execution_2026-10-27.md",
+    "SNN_L4_5_Mathematical_Specification_2026-10-27.md",
+    "SNN_L4_5_Data_Download_and_Adaptation_2026-10-27.md",
+    "SNN_L4_5_Literature_and_Code_Map_2026-10-27.md"
+  ],
+  "tests_passed": 49,
+  "known_control_families": 20,
+  "numerical_validation": "Full main replay/statistic audit already passed. Later changes add documentation, metadata and independently tested real-input boundary; no main numerical policy changed.",
+  "plots_visually_checked": [
+    "figures/L4_5_evidence_overview.png",
+    "figures/L4_5_source_and_frequency.png"
+  ],
+  "exclusions": [
+    "__pycache__",
+    "*.pyc"
+  ]
+}

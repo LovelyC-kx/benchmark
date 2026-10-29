@@ -1,0 +1,1634 @@
+{
+  "cnn2d__lif_hard": {
+    "decoders": {
+      "last": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_0"
+          },
+          "mean": {
+            "__array__": "array_1"
+          },
+          "scale": {
+            "__array__": "array_2"
+          },
+          "y_mean": {
+            "__array__": "array_3"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_4"
+          },
+          "mean": {
+            "__array__": "array_5"
+          },
+          "scale": {
+            "__array__": "array_6"
+          },
+          "y_mean": {
+            "__array__": "array_7"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_8"
+          },
+          "mean": {
+            "__array__": "array_9"
+          },
+          "scale": {
+            "__array__": "array_10"
+          },
+          "y_mean": {
+            "__array__": "array_11"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      },
+      "mean": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_12"
+          },
+          "mean": {
+            "__array__": "array_13"
+          },
+          "scale": {
+            "__array__": "array_14"
+          },
+          "y_mean": {
+            "__array__": "array_15"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_16"
+          },
+          "mean": {
+            "__array__": "array_17"
+          },
+          "scale": {
+            "__array__": "array_18"
+          },
+          "y_mean": {
+            "__array__": "array_19"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_20"
+          },
+          "mean": {
+            "__array__": "array_21"
+          },
+          "scale": {
+            "__array__": "array_22"
+          },
+          "y_mean": {
+            "__array__": "array_23"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      }
+    },
+    "probes": {
+      "backbone.a.act": {
+        "2": {
+          "w": {
+            "__array__": "array_24"
+          },
+          "mean": {
+            "__array__": "array_25"
+          },
+          "scale": {
+            "__array__": "array_26"
+          },
+          "y_mean": {
+            "__array__": "array_27"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_28"
+          },
+          "mean": {
+            "__array__": "array_29"
+          },
+          "scale": {
+            "__array__": "array_30"
+          },
+          "y_mean": {
+            "__array__": "array_31"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_32"
+          },
+          "mean": {
+            "__array__": "array_33"
+          },
+          "scale": {
+            "__array__": "array_34"
+          },
+          "y_mean": {
+            "__array__": "array_35"
+          }
+        }
+      },
+      "backbone.b.act": {
+        "2": {
+          "w": {
+            "__array__": "array_36"
+          },
+          "mean": {
+            "__array__": "array_37"
+          },
+          "scale": {
+            "__array__": "array_38"
+          },
+          "y_mean": {
+            "__array__": "array_39"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_40"
+          },
+          "mean": {
+            "__array__": "array_41"
+          },
+          "scale": {
+            "__array__": "array_42"
+          },
+          "y_mean": {
+            "__array__": "array_43"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_44"
+          },
+          "mean": {
+            "__array__": "array_45"
+          },
+          "scale": {
+            "__array__": "array_46"
+          },
+          "y_mean": {
+            "__array__": "array_47"
+          }
+        }
+      }
+    },
+    "class_probes": {
+      "last": {
+        "w": {
+          "__array__": "array_48"
+        },
+        "mean": {
+          "__array__": "array_49"
+        },
+        "scale": {
+          "__array__": "array_50"
+        },
+        "y_mean": {
+          "__array__": "array_51"
+        }
+      },
+      "mean": {
+        "w": {
+          "__array__": "array_52"
+        },
+        "mean": {
+          "__array__": "array_53"
+        },
+        "scale": {
+          "__array__": "array_54"
+        },
+        "y_mean": {
+          "__array__": "array_55"
+        }
+      }
+    }
+  },
+  "cnn2d__alif_ref": {
+    "decoders": {
+      "last": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_56"
+          },
+          "mean": {
+            "__array__": "array_57"
+          },
+          "scale": {
+            "__array__": "array_58"
+          },
+          "y_mean": {
+            "__array__": "array_59"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_60"
+          },
+          "mean": {
+            "__array__": "array_61"
+          },
+          "scale": {
+            "__array__": "array_62"
+          },
+          "y_mean": {
+            "__array__": "array_63"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_64"
+          },
+          "mean": {
+            "__array__": "array_65"
+          },
+          "scale": {
+            "__array__": "array_66"
+          },
+          "y_mean": {
+            "__array__": "array_67"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      },
+      "mean": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_68"
+          },
+          "mean": {
+            "__array__": "array_69"
+          },
+          "scale": {
+            "__array__": "array_70"
+          },
+          "y_mean": {
+            "__array__": "array_71"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_72"
+          },
+          "mean": {
+            "__array__": "array_73"
+          },
+          "scale": {
+            "__array__": "array_74"
+          },
+          "y_mean": {
+            "__array__": "array_75"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.01,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_76"
+          },
+          "mean": {
+            "__array__": "array_77"
+          },
+          "scale": {
+            "__array__": "array_78"
+          },
+          "y_mean": {
+            "__array__": "array_79"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      }
+    },
+    "probes": {
+      "backbone.a.act": {
+        "2": {
+          "w": {
+            "__array__": "array_80"
+          },
+          "mean": {
+            "__array__": "array_81"
+          },
+          "scale": {
+            "__array__": "array_82"
+          },
+          "y_mean": {
+            "__array__": "array_83"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_84"
+          },
+          "mean": {
+            "__array__": "array_85"
+          },
+          "scale": {
+            "__array__": "array_86"
+          },
+          "y_mean": {
+            "__array__": "array_87"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_88"
+          },
+          "mean": {
+            "__array__": "array_89"
+          },
+          "scale": {
+            "__array__": "array_90"
+          },
+          "y_mean": {
+            "__array__": "array_91"
+          }
+        }
+      },
+      "backbone.b.act": {
+        "2": {
+          "w": {
+            "__array__": "array_92"
+          },
+          "mean": {
+            "__array__": "array_93"
+          },
+          "scale": {
+            "__array__": "array_94"
+          },
+          "y_mean": {
+            "__array__": "array_95"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_96"
+          },
+          "mean": {
+            "__array__": "array_97"
+          },
+          "scale": {
+            "__array__": "array_98"
+          },
+          "y_mean": {
+            "__array__": "array_99"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_100"
+          },
+          "mean": {
+            "__array__": "array_101"
+          },
+          "scale": {
+            "__array__": "array_102"
+          },
+          "y_mean": {
+            "__array__": "array_103"
+          }
+        }
+      }
+    },
+    "class_probes": {
+      "last": {
+        "w": {
+          "__array__": "array_104"
+        },
+        "mean": {
+          "__array__": "array_105"
+        },
+        "scale": {
+          "__array__": "array_106"
+        },
+        "y_mean": {
+          "__array__": "array_107"
+        }
+      },
+      "mean": {
+        "w": {
+          "__array__": "array_108"
+        },
+        "mean": {
+          "__array__": "array_109"
+        },
+        "scale": {
+          "__array__": "array_110"
+        },
+        "y_mean": {
+          "__array__": "array_111"
+        }
+      }
+    }
+  },
+  "cnn2d__continuous": {
+    "decoders": {
+      "last": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_112"
+          },
+          "mean": {
+            "__array__": "array_113"
+          },
+          "scale": {
+            "__array__": "array_114"
+          },
+          "y_mean": {
+            "__array__": "array_115"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_116"
+          },
+          "mean": {
+            "__array__": "array_117"
+          },
+          "scale": {
+            "__array__": "array_118"
+          },
+          "y_mean": {
+            "__array__": "array_119"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_120"
+          },
+          "mean": {
+            "__array__": "array_121"
+          },
+          "scale": {
+            "__array__": "array_122"
+          },
+          "y_mean": {
+            "__array__": "array_123"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      },
+      "mean": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_124"
+          },
+          "mean": {
+            "__array__": "array_125"
+          },
+          "scale": {
+            "__array__": "array_126"
+          },
+          "y_mean": {
+            "__array__": "array_127"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_128"
+          },
+          "mean": {
+            "__array__": "array_129"
+          },
+          "scale": {
+            "__array__": "array_130"
+          },
+          "y_mean": {
+            "__array__": "array_131"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_132"
+          },
+          "mean": {
+            "__array__": "array_133"
+          },
+          "scale": {
+            "__array__": "array_134"
+          },
+          "y_mean": {
+            "__array__": "array_135"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      }
+    },
+    "probes": {
+      "backbone.a.act": {
+        "2": {
+          "w": {
+            "__array__": "array_136"
+          },
+          "mean": {
+            "__array__": "array_137"
+          },
+          "scale": {
+            "__array__": "array_138"
+          },
+          "y_mean": {
+            "__array__": "array_139"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_140"
+          },
+          "mean": {
+            "__array__": "array_141"
+          },
+          "scale": {
+            "__array__": "array_142"
+          },
+          "y_mean": {
+            "__array__": "array_143"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_144"
+          },
+          "mean": {
+            "__array__": "array_145"
+          },
+          "scale": {
+            "__array__": "array_146"
+          },
+          "y_mean": {
+            "__array__": "array_147"
+          }
+        }
+      },
+      "backbone.b.act": {
+        "2": {
+          "w": {
+            "__array__": "array_148"
+          },
+          "mean": {
+            "__array__": "array_149"
+          },
+          "scale": {
+            "__array__": "array_150"
+          },
+          "y_mean": {
+            "__array__": "array_151"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_152"
+          },
+          "mean": {
+            "__array__": "array_153"
+          },
+          "scale": {
+            "__array__": "array_154"
+          },
+          "y_mean": {
+            "__array__": "array_155"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_156"
+          },
+          "mean": {
+            "__array__": "array_157"
+          },
+          "scale": {
+            "__array__": "array_158"
+          },
+          "y_mean": {
+            "__array__": "array_159"
+          }
+        }
+      }
+    },
+    "class_probes": {
+      "last": {
+        "w": {
+          "__array__": "array_160"
+        },
+        "mean": {
+          "__array__": "array_161"
+        },
+        "scale": {
+          "__array__": "array_162"
+        },
+        "y_mean": {
+          "__array__": "array_163"
+        }
+      },
+      "mean": {
+        "w": {
+          "__array__": "array_164"
+        },
+        "mean": {
+          "__array__": "array_165"
+        },
+        "scale": {
+          "__array__": "array_166"
+        },
+        "y_mean": {
+          "__array__": "array_167"
+        }
+      }
+    }
+  },
+  "unet__lif_hard": {
+    "decoders": {
+      "last": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_168"
+          },
+          "mean": {
+            "__array__": "array_169"
+          },
+          "scale": {
+            "__array__": "array_170"
+          },
+          "y_mean": {
+            "__array__": "array_171"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_172"
+          },
+          "mean": {
+            "__array__": "array_173"
+          },
+          "scale": {
+            "__array__": "array_174"
+          },
+          "y_mean": {
+            "__array__": "array_175"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.01,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_176"
+          },
+          "mean": {
+            "__array__": "array_177"
+          },
+          "scale": {
+            "__array__": "array_178"
+          },
+          "y_mean": {
+            "__array__": "array_179"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.01,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      },
+      "mean": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_180"
+          },
+          "mean": {
+            "__array__": "array_181"
+          },
+          "scale": {
+            "__array__": "array_182"
+          },
+          "y_mean": {
+            "__array__": "array_183"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_184"
+          },
+          "mean": {
+            "__array__": "array_185"
+          },
+          "scale": {
+            "__array__": "array_186"
+          },
+          "y_mean": {
+            "__array__": "array_187"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.01,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_188"
+          },
+          "mean": {
+            "__array__": "array_189"
+          },
+          "scale": {
+            "__array__": "array_190"
+          },
+          "y_mean": {
+            "__array__": "array_191"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      }
+    },
+    "probes": {
+      "backbone.e1.act": {
+        "2": {
+          "w": {
+            "__array__": "array_192"
+          },
+          "mean": {
+            "__array__": "array_193"
+          },
+          "scale": {
+            "__array__": "array_194"
+          },
+          "y_mean": {
+            "__array__": "array_195"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_196"
+          },
+          "mean": {
+            "__array__": "array_197"
+          },
+          "scale": {
+            "__array__": "array_198"
+          },
+          "y_mean": {
+            "__array__": "array_199"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_200"
+          },
+          "mean": {
+            "__array__": "array_201"
+          },
+          "scale": {
+            "__array__": "array_202"
+          },
+          "y_mean": {
+            "__array__": "array_203"
+          }
+        }
+      },
+      "backbone.d.act": {
+        "2": {
+          "w": {
+            "__array__": "array_204"
+          },
+          "mean": {
+            "__array__": "array_205"
+          },
+          "scale": {
+            "__array__": "array_206"
+          },
+          "y_mean": {
+            "__array__": "array_207"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_208"
+          },
+          "mean": {
+            "__array__": "array_209"
+          },
+          "scale": {
+            "__array__": "array_210"
+          },
+          "y_mean": {
+            "__array__": "array_211"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_212"
+          },
+          "mean": {
+            "__array__": "array_213"
+          },
+          "scale": {
+            "__array__": "array_214"
+          },
+          "y_mean": {
+            "__array__": "array_215"
+          }
+        }
+      }
+    },
+    "class_probes": {
+      "last": {
+        "w": {
+          "__array__": "array_216"
+        },
+        "mean": {
+          "__array__": "array_217"
+        },
+        "scale": {
+          "__array__": "array_218"
+        },
+        "y_mean": {
+          "__array__": "array_219"
+        }
+      },
+      "mean": {
+        "w": {
+          "__array__": "array_220"
+        },
+        "mean": {
+          "__array__": "array_221"
+        },
+        "scale": {
+          "__array__": "array_222"
+        },
+        "y_mean": {
+          "__array__": "array_223"
+        }
+      }
+    }
+  },
+  "unet__alif_ref": {
+    "decoders": {
+      "last": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_224"
+          },
+          "mean": {
+            "__array__": "array_225"
+          },
+          "scale": {
+            "__array__": "array_226"
+          },
+          "y_mean": {
+            "__array__": "array_227"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_228"
+          },
+          "mean": {
+            "__array__": "array_229"
+          },
+          "scale": {
+            "__array__": "array_230"
+          },
+          "y_mean": {
+            "__array__": "array_231"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_232"
+          },
+          "mean": {
+            "__array__": "array_233"
+          },
+          "scale": {
+            "__array__": "array_234"
+          },
+          "y_mean": {
+            "__array__": "array_235"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      },
+      "mean": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_236"
+          },
+          "mean": {
+            "__array__": "array_237"
+          },
+          "scale": {
+            "__array__": "array_238"
+          },
+          "y_mean": {
+            "__array__": "array_239"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_240"
+          },
+          "mean": {
+            "__array__": "array_241"
+          },
+          "scale": {
+            "__array__": "array_242"
+          },
+          "y_mean": {
+            "__array__": "array_243"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_244"
+          },
+          "mean": {
+            "__array__": "array_245"
+          },
+          "scale": {
+            "__array__": "array_246"
+          },
+          "y_mean": {
+            "__array__": "array_247"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      }
+    },
+    "probes": {
+      "backbone.e1.act": {
+        "2": {
+          "w": {
+            "__array__": "array_248"
+          },
+          "mean": {
+            "__array__": "array_249"
+          },
+          "scale": {
+            "__array__": "array_250"
+          },
+          "y_mean": {
+            "__array__": "array_251"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_252"
+          },
+          "mean": {
+            "__array__": "array_253"
+          },
+          "scale": {
+            "__array__": "array_254"
+          },
+          "y_mean": {
+            "__array__": "array_255"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_256"
+          },
+          "mean": {
+            "__array__": "array_257"
+          },
+          "scale": {
+            "__array__": "array_258"
+          },
+          "y_mean": {
+            "__array__": "array_259"
+          }
+        }
+      },
+      "backbone.d.act": {
+        "2": {
+          "w": {
+            "__array__": "array_260"
+          },
+          "mean": {
+            "__array__": "array_261"
+          },
+          "scale": {
+            "__array__": "array_262"
+          },
+          "y_mean": {
+            "__array__": "array_263"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_264"
+          },
+          "mean": {
+            "__array__": "array_265"
+          },
+          "scale": {
+            "__array__": "array_266"
+          },
+          "y_mean": {
+            "__array__": "array_267"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_268"
+          },
+          "mean": {
+            "__array__": "array_269"
+          },
+          "scale": {
+            "__array__": "array_270"
+          },
+          "y_mean": {
+            "__array__": "array_271"
+          }
+        }
+      }
+    },
+    "class_probes": {
+      "last": {
+        "w": {
+          "__array__": "array_272"
+        },
+        "mean": {
+          "__array__": "array_273"
+        },
+        "scale": {
+          "__array__": "array_274"
+        },
+        "y_mean": {
+          "__array__": "array_275"
+        }
+      },
+      "mean": {
+        "w": {
+          "__array__": "array_276"
+        },
+        "mean": {
+          "__array__": "array_277"
+        },
+        "scale": {
+          "__array__": "array_278"
+        },
+        "y_mean": {
+          "__array__": "array_279"
+        }
+      }
+    }
+  },
+  "unet__continuous": {
+    "decoders": {
+      "last": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_280"
+          },
+          "mean": {
+            "__array__": "array_281"
+          },
+          "scale": {
+            "__array__": "array_282"
+          },
+          "y_mean": {
+            "__array__": "array_283"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_284"
+          },
+          "mean": {
+            "__array__": "array_285"
+          },
+          "scale": {
+            "__array__": "array_286"
+          },
+          "y_mean": {
+            "__array__": "array_287"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_288"
+          },
+          "mean": {
+            "__array__": "array_289"
+          },
+          "scale": {
+            "__array__": "array_290"
+          },
+          "y_mean": {
+            "__array__": "array_291"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.001,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      },
+      "mean": {
+        "spatial1": {
+          "w": {
+            "__array__": "array_292"
+          },
+          "mean": {
+            "__array__": "array_293"
+          },
+          "scale": {
+            "__array__": "array_294"
+          },
+          "y_mean": {
+            "__array__": "array_295"
+          },
+          "kind": "spatial1",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.1,
+          "parameter_count": 36,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "spatial3": {
+          "w": {
+            "__array__": "array_296"
+          },
+          "mean": {
+            "__array__": "array_297"
+          },
+          "scale": {
+            "__array__": "array_298"
+          },
+          "y_mean": {
+            "__array__": "array_299"
+          },
+          "kind": "spatial3",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.01,
+          "parameter_count": 292,
+          "persistent_feature_scalars_per_scene": 2048
+        },
+        "gap_dense": {
+          "w": {
+            "__array__": "array_300"
+          },
+          "mean": {
+            "__array__": "array_301"
+          },
+          "scale": {
+            "__array__": "array_302"
+          },
+          "y_mean": {
+            "__array__": "array_303"
+          },
+          "kind": "gap_dense",
+          "target_shape": [
+            4,
+            16,
+            16
+          ],
+          "fit_scene_count": 512,
+          "alpha": 0.01,
+          "parameter_count": 9216,
+          "persistent_feature_scalars_per_scene": 8
+        }
+      }
+    },
+    "probes": {
+      "backbone.e1.act": {
+        "2": {
+          "w": {
+            "__array__": "array_304"
+          },
+          "mean": {
+            "__array__": "array_305"
+          },
+          "scale": {
+            "__array__": "array_306"
+          },
+          "y_mean": {
+            "__array__": "array_307"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_308"
+          },
+          "mean": {
+            "__array__": "array_309"
+          },
+          "scale": {
+            "__array__": "array_310"
+          },
+          "y_mean": {
+            "__array__": "array_311"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_312"
+          },
+          "mean": {
+            "__array__": "array_313"
+          },
+          "scale": {
+            "__array__": "array_314"
+          },
+          "y_mean": {
+            "__array__": "array_315"
+          }
+        }
+      },
+      "backbone.d.act": {
+        "2": {
+          "w": {
+            "__array__": "array_316"
+          },
+          "mean": {
+            "__array__": "array_317"
+          },
+          "scale": {
+            "__array__": "array_318"
+          },
+          "y_mean": {
+            "__array__": "array_319"
+          }
+        },
+        "3": {
+          "w": {
+            "__array__": "array_320"
+          },
+          "mean": {
+            "__array__": "array_321"
+          },
+          "scale": {
+            "__array__": "array_322"
+          },
+          "y_mean": {
+            "__array__": "array_323"
+          }
+        },
+        "5": {
+          "w": {
+            "__array__": "array_324"
+          },
+          "mean": {
+            "__array__": "array_325"
+          },
+          "scale": {
+            "__array__": "array_326"
+          },
+          "y_mean": {
+            "__array__": "array_327"
+          }
+        }
+      }
+    },
+    "class_probes": {
+      "last": {
+        "w": {
+          "__array__": "array_328"
+        },
+        "mean": {
+          "__array__": "array_329"
+        },
+        "scale": {
+          "__array__": "array_330"
+        },
+        "y_mean": {
+          "__array__": "array_331"
+        }
+      },
+      "mean": {
+        "w": {
+          "__array__": "array_332"
+        },
+        "mean": {
+          "__array__": "array_333"
+        },
+        "scale": {
+          "__array__": "array_334"
+        },
+        "y_mean": {
+          "__array__": "array_335"
+        }
+      }
+    }
+  }
+}

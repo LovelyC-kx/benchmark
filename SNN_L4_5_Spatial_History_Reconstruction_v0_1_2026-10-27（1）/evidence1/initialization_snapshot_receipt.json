@@ -1,0 +1,41 @@
+{
+  "scope": "Random untrained initialization weights materialized after main runs for portability; all match original pre-evaluation frozen parameter hashes. No training or selection changed.",
+  "snapshots": [
+    {
+      "config": "cnn2d__lif_hard",
+      "model_parameter_hash": "2f69ebbd9bb7a5c500cc935120f2e6c1195536e468c650e62edf1a3f69398634",
+      "file_sha256": "de68b8e041f781b8f5272e03ada5a7ac1539e8f44796f981c85555041edc5866",
+      "bytes": 7741
+    },
+    {
+      "config": "cnn2d__alif_ref",
+      "model_parameter_hash": "2f69ebbd9bb7a5c500cc935120f2e6c1195536e468c650e62edf1a3f69398634",
+      "file_sha256": "1ecdb5b8945497b6e66a4242b2eb208523e684a3d0fda683146a00bb87cc6cff",
+      "bytes": 7741
+    },
+    {
+      "config": "cnn2d__continuous",
+      "model_parameter_hash": "2f69ebbd9bb7a5c500cc935120f2e6c1195536e468c650e62edf1a3f69398634",
+      "file_sha256": "00fc3801ee82c0ef51a3e14fe1d1d699c5aa244e50e1fd071eec4b7caa6701e0",
+      "bytes": 7769
+    },
+    {
+      "config": "unet__lif_hard",
+      "model_parameter_hash": "9e88bf5dbc982aab2013a4b305c1d35b120eb99d4411ee2e3bb07e2db194f57c",
+      "file_sha256": "84d4510340f68829eb1bc0c7feeaf376f6f4bdf4b0320999644d26f394d6fdbd",
+      "bytes": 28557
+    },
+    {
+      "config": "unet__alif_ref",
+      "model_parameter_hash": "9e88bf5dbc982aab2013a4b305c1d35b120eb99d4411ee2e3bb07e2db194f57c",
+      "file_sha256": "3bd3ef17b166d474aa5cf80c1bf5c2773e61e0d29db09c028e06377cd99e7694",
+      "bytes": 28557
+    },
+    {
+      "config": "unet__continuous",
+      "model_parameter_hash": "9e88bf5dbc982aab2013a4b305c1d35b120eb99d4411ee2e3bb07e2db194f57c",
+      "file_sha256": "a8706976927c30fbfc1dc1cbcb4378081c78f2ca09c37bc4212f08f8f42683b5",
+      "bytes": 28601
+    }
+  ]
+}

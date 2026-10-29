@@ -1,0 +1,216 @@
+{
+  "module": "L4.5 state and decoder resource ledger",
+  "results": {
+    "cnn2d__lif_hard": {
+      "intrinsic_recurrent_state_scalars_per_scene": 4096,
+      "intrinsic_recurrent_state_float32_bytes_per_scene": 16384,
+      "actual_all_cell_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "learned_core_parameters": 952,
+      "original_random_head_parameters": 36,
+      "diagnostic_full_feature_trajectory_scalars": 12288,
+      "online_known_affine_mean_output_accumulator_scalars": 1024,
+      "mean_count_scalar_extra": 1,
+      "reader_parameters": {
+        "last": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        },
+        "mean": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        }
+      },
+      "last_observation": "Reads final post state already counted in core; output storage is separate.",
+      "online_mean": "A fixed affine decoder may accumulate its 4-band output instead of storing every feature. This is a derived deployment option, not a measured optimized implementation."
+    },
+    "cnn2d__alif_ref": {
+      "intrinsic_recurrent_state_scalars_per_scene": 8192,
+      "intrinsic_recurrent_state_float32_bytes_per_scene": 32768,
+      "actual_all_cell_owners": {
+        "backbone.a.act": {
+          "v": 2048,
+          "a": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048,
+          "a": 2048
+        }
+      },
+      "learned_core_parameters": 952,
+      "original_random_head_parameters": 36,
+      "diagnostic_full_feature_trajectory_scalars": 12288,
+      "online_known_affine_mean_output_accumulator_scalars": 1024,
+      "mean_count_scalar_extra": 1,
+      "reader_parameters": {
+        "last": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        },
+        "mean": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        }
+      },
+      "last_observation": "Reads final post state already counted in core; output storage is separate.",
+      "online_mean": "A fixed affine decoder may accumulate its 4-band output instead of storing every feature. This is a derived deployment option, not a measured optimized implementation."
+    },
+    "cnn2d__continuous": {
+      "intrinsic_recurrent_state_scalars_per_scene": 4096,
+      "intrinsic_recurrent_state_float32_bytes_per_scene": 16384,
+      "actual_all_cell_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "learned_core_parameters": 952,
+      "original_random_head_parameters": 36,
+      "diagnostic_full_feature_trajectory_scalars": 12288,
+      "online_known_affine_mean_output_accumulator_scalars": 1024,
+      "mean_count_scalar_extra": 1,
+      "reader_parameters": {
+        "last": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        },
+        "mean": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        }
+      },
+      "last_observation": "Reads final post state already counted in core; output storage is separate.",
+      "online_mean": "A fixed affine decoder may accumulate its 4-band output instead of storing every feature. This is a derived deployment option, not a measured optimized implementation."
+    },
+    "unet__lif_hard": {
+      "intrinsic_recurrent_state_scalars_per_scene": 6144,
+      "intrinsic_recurrent_state_float32_bytes_per_scene": 24576,
+      "actual_all_cell_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.e2.act": {
+          "v": 1024
+        },
+        "backbone.b.act": {
+          "v": 1024
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "learned_core_parameters": 5536,
+      "original_random_head_parameters": 36,
+      "diagnostic_full_feature_trajectory_scalars": 12288,
+      "online_known_affine_mean_output_accumulator_scalars": 1024,
+      "mean_count_scalar_extra": 1,
+      "reader_parameters": {
+        "last": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        },
+        "mean": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        }
+      },
+      "last_observation": "Reads final post state already counted in core; output storage is separate.",
+      "online_mean": "A fixed affine decoder may accumulate its 4-band output instead of storing every feature. This is a derived deployment option, not a measured optimized implementation."
+    },
+    "unet__alif_ref": {
+      "intrinsic_recurrent_state_scalars_per_scene": 12288,
+      "intrinsic_recurrent_state_float32_bytes_per_scene": 49152,
+      "actual_all_cell_owners": {
+        "backbone.e1.act": {
+          "v": 2048,
+          "a": 2048
+        },
+        "backbone.e2.act": {
+          "v": 1024,
+          "a": 1024
+        },
+        "backbone.b.act": {
+          "v": 1024,
+          "a": 1024
+        },
+        "backbone.d.act": {
+          "v": 2048,
+          "a": 2048
+        }
+      },
+      "learned_core_parameters": 5536,
+      "original_random_head_parameters": 36,
+      "diagnostic_full_feature_trajectory_scalars": 12288,
+      "online_known_affine_mean_output_accumulator_scalars": 1024,
+      "mean_count_scalar_extra": 1,
+      "reader_parameters": {
+        "last": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        },
+        "mean": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        }
+      },
+      "last_observation": "Reads final post state already counted in core; output storage is separate.",
+      "online_mean": "A fixed affine decoder may accumulate its 4-band output instead of storing every feature. This is a derived deployment option, not a measured optimized implementation."
+    },
+    "unet__continuous": {
+      "intrinsic_recurrent_state_scalars_per_scene": 6144,
+      "intrinsic_recurrent_state_float32_bytes_per_scene": 24576,
+      "actual_all_cell_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.e2.act": {
+          "v": 1024
+        },
+        "backbone.b.act": {
+          "v": 1024
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "learned_core_parameters": 5536,
+      "original_random_head_parameters": 36,
+      "diagnostic_full_feature_trajectory_scalars": 12288,
+      "online_known_affine_mean_output_accumulator_scalars": 1024,
+      "mean_count_scalar_extra": 1,
+      "reader_parameters": {
+        "last": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        },
+        "mean": {
+          "spatial1": 36,
+          "spatial3": 292,
+          "gap_dense": 9216
+        }
+      },
+      "last_observation": "Reads final post state already counted in core; output storage is separate.",
+      "online_mean": "A fixed affine decoder may accumulate its 4-band output instead of storing every feature. This is a derived deployment option, not a measured optimized implementation."
+    }
+  },
+  "scope": "Per-scene scalar/parameter counts only. Diagnostic runtime stores full feature trajectories; no measured deployment peak memory, latency, asynchronous SOP or hardware energy claim."
+}

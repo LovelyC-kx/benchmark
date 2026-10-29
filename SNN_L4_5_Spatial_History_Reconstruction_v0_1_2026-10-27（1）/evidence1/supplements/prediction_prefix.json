@@ -1,0 +1,326 @@
+{
+  "cnn2d__lif_hard::last::source_H": {
+    "__array__": "array_0"
+  },
+  "cnn2d__lif_hard::last::source_U_src": {
+    "__array__": "array_1"
+  },
+  "cnn2d__lif_hard::last::source_C": {
+    "__array__": "array_2"
+  },
+  "cnn2d__lif_hard::last::drop_frame_0": {
+    "__array__": "array_3"
+  },
+  "cnn2d__lif_hard::last::drop_frame_2": {
+    "__array__": "array_4"
+  },
+  "cnn2d__lif_hard::last::drop_frame_5": {
+    "__array__": "array_5"
+  },
+  "cnn2d__lif_hard::last::motion_raw": {
+    "__array__": "array_6"
+  },
+  "cnn2d__lif_hard::last::motion_oracle_aligned": {
+    "__array__": "array_7"
+  },
+  "cnn2d__lif_hard::last::texture_ood": {
+    "__array__": "array_8"
+  },
+  "cnn2d__lif_hard::mean::source_H": {
+    "__array__": "array_9"
+  },
+  "cnn2d__lif_hard::mean::source_U_src": {
+    "__array__": "array_10"
+  },
+  "cnn2d__lif_hard::mean::source_C": {
+    "__array__": "array_11"
+  },
+  "cnn2d__lif_hard::mean::drop_frame_0": {
+    "__array__": "array_12"
+  },
+  "cnn2d__lif_hard::mean::drop_frame_2": {
+    "__array__": "array_13"
+  },
+  "cnn2d__lif_hard::mean::drop_frame_5": {
+    "__array__": "array_14"
+  },
+  "cnn2d__lif_hard::mean::motion_raw": {
+    "__array__": "array_15"
+  },
+  "cnn2d__lif_hard::mean::motion_oracle_aligned": {
+    "__array__": "array_16"
+  },
+  "cnn2d__lif_hard::mean::texture_ood": {
+    "__array__": "array_17"
+  },
+  "cnn2d__alif_ref::last::source_H": {
+    "__array__": "array_18"
+  },
+  "cnn2d__alif_ref::last::source_U_src": {
+    "__array__": "array_19"
+  },
+  "cnn2d__alif_ref::last::source_C": {
+    "__array__": "array_20"
+  },
+  "cnn2d__alif_ref::last::drop_frame_0": {
+    "__array__": "array_21"
+  },
+  "cnn2d__alif_ref::last::drop_frame_2": {
+    "__array__": "array_22"
+  },
+  "cnn2d__alif_ref::last::drop_frame_5": {
+    "__array__": "array_23"
+  },
+  "cnn2d__alif_ref::last::motion_raw": {
+    "__array__": "array_24"
+  },
+  "cnn2d__alif_ref::last::motion_oracle_aligned": {
+    "__array__": "array_25"
+  },
+  "cnn2d__alif_ref::last::texture_ood": {
+    "__array__": "array_26"
+  },
+  "cnn2d__alif_ref::mean::source_H": {
+    "__array__": "array_27"
+  },
+  "cnn2d__alif_ref::mean::source_U_src": {
+    "__array__": "array_28"
+  },
+  "cnn2d__alif_ref::mean::source_C": {
+    "__array__": "array_29"
+  },
+  "cnn2d__alif_ref::mean::drop_frame_0": {
+    "__array__": "array_30"
+  },
+  "cnn2d__alif_ref::mean::drop_frame_2": {
+    "__array__": "array_31"
+  },
+  "cnn2d__alif_ref::mean::drop_frame_5": {
+    "__array__": "array_32"
+  },
+  "cnn2d__alif_ref::mean::motion_raw": {
+    "__array__": "array_33"
+  },
+  "cnn2d__alif_ref::mean::motion_oracle_aligned": {
+    "__array__": "array_34"
+  },
+  "cnn2d__alif_ref::mean::texture_ood": {
+    "__array__": "array_35"
+  },
+  "cnn2d__continuous::last::source_H": {
+    "__array__": "array_36"
+  },
+  "cnn2d__continuous::last::source_U_src": {
+    "__array__": "array_37"
+  },
+  "cnn2d__continuous::last::source_C": {
+    "__array__": "array_38"
+  },
+  "cnn2d__continuous::last::drop_frame_0": {
+    "__array__": "array_39"
+  },
+  "cnn2d__continuous::last::drop_frame_2": {
+    "__array__": "array_40"
+  },
+  "cnn2d__continuous::last::drop_frame_5": {
+    "__array__": "array_41"
+  },
+  "cnn2d__continuous::last::motion_raw": {
+    "__array__": "array_42"
+  },
+  "cnn2d__continuous::last::motion_oracle_aligned": {
+    "__array__": "array_43"
+  },
+  "cnn2d__continuous::last::texture_ood": {
+    "__array__": "array_44"
+  },
+  "cnn2d__continuous::mean::source_H": {
+    "__array__": "array_45"
+  },
+  "cnn2d__continuous::mean::source_U_src": {
+    "__array__": "array_46"
+  },
+  "cnn2d__continuous::mean::source_C": {
+    "__array__": "array_47"
+  },
+  "cnn2d__continuous::mean::drop_frame_0": {
+    "__array__": "array_48"
+  },
+  "cnn2d__continuous::mean::drop_frame_2": {
+    "__array__": "array_49"
+  },
+  "cnn2d__continuous::mean::drop_frame_5": {
+    "__array__": "array_50"
+  },
+  "cnn2d__continuous::mean::motion_raw": {
+    "__array__": "array_51"
+  },
+  "cnn2d__continuous::mean::motion_oracle_aligned": {
+    "__array__": "array_52"
+  },
+  "cnn2d__continuous::mean::texture_ood": {
+    "__array__": "array_53"
+  },
+  "unet__lif_hard::last::source_H": {
+    "__array__": "array_54"
+  },
+  "unet__lif_hard::last::source_U_src": {
+    "__array__": "array_55"
+  },
+  "unet__lif_hard::last::source_C": {
+    "__array__": "array_56"
+  },
+  "unet__lif_hard::last::drop_frame_0": {
+    "__array__": "array_57"
+  },
+  "unet__lif_hard::last::drop_frame_2": {
+    "__array__": "array_58"
+  },
+  "unet__lif_hard::last::drop_frame_5": {
+    "__array__": "array_59"
+  },
+  "unet__lif_hard::last::motion_raw": {
+    "__array__": "array_60"
+  },
+  "unet__lif_hard::last::motion_oracle_aligned": {
+    "__array__": "array_61"
+  },
+  "unet__lif_hard::last::texture_ood": {
+    "__array__": "array_62"
+  },
+  "unet__lif_hard::mean::source_H": {
+    "__array__": "array_63"
+  },
+  "unet__lif_hard::mean::source_U_src": {
+    "__array__": "array_64"
+  },
+  "unet__lif_hard::mean::source_C": {
+    "__array__": "array_65"
+  },
+  "unet__lif_hard::mean::drop_frame_0": {
+    "__array__": "array_66"
+  },
+  "unet__lif_hard::mean::drop_frame_2": {
+    "__array__": "array_67"
+  },
+  "unet__lif_hard::mean::drop_frame_5": {
+    "__array__": "array_68"
+  },
+  "unet__lif_hard::mean::motion_raw": {
+    "__array__": "array_69"
+  },
+  "unet__lif_hard::mean::motion_oracle_aligned": {
+    "__array__": "array_70"
+  },
+  "unet__lif_hard::mean::texture_ood": {
+    "__array__": "array_71"
+  },
+  "unet__alif_ref::last::source_H": {
+    "__array__": "array_72"
+  },
+  "unet__alif_ref::last::source_U_src": {
+    "__array__": "array_73"
+  },
+  "unet__alif_ref::last::source_C": {
+    "__array__": "array_74"
+  },
+  "unet__alif_ref::last::drop_frame_0": {
+    "__array__": "array_75"
+  },
+  "unet__alif_ref::last::drop_frame_2": {
+    "__array__": "array_76"
+  },
+  "unet__alif_ref::last::drop_frame_5": {
+    "__array__": "array_77"
+  },
+  "unet__alif_ref::last::motion_raw": {
+    "__array__": "array_78"
+  },
+  "unet__alif_ref::last::motion_oracle_aligned": {
+    "__array__": "array_79"
+  },
+  "unet__alif_ref::last::texture_ood": {
+    "__array__": "array_80"
+  },
+  "unet__alif_ref::mean::source_H": {
+    "__array__": "array_81"
+  },
+  "unet__alif_ref::mean::source_U_src": {
+    "__array__": "array_82"
+  },
+  "unet__alif_ref::mean::source_C": {
+    "__array__": "array_83"
+  },
+  "unet__alif_ref::mean::drop_frame_0": {
+    "__array__": "array_84"
+  },
+  "unet__alif_ref::mean::drop_frame_2": {
+    "__array__": "array_85"
+  },
+  "unet__alif_ref::mean::drop_frame_5": {
+    "__array__": "array_86"
+  },
+  "unet__alif_ref::mean::motion_raw": {
+    "__array__": "array_87"
+  },
+  "unet__alif_ref::mean::motion_oracle_aligned": {
+    "__array__": "array_88"
+  },
+  "unet__alif_ref::mean::texture_ood": {
+    "__array__": "array_89"
+  },
+  "unet__continuous::last::source_H": {
+    "__array__": "array_90"
+  },
+  "unet__continuous::last::source_U_src": {
+    "__array__": "array_91"
+  },
+  "unet__continuous::last::source_C": {
+    "__array__": "array_92"
+  },
+  "unet__continuous::last::drop_frame_0": {
+    "__array__": "array_93"
+  },
+  "unet__continuous::last::drop_frame_2": {
+    "__array__": "array_94"
+  },
+  "unet__continuous::last::drop_frame_5": {
+    "__array__": "array_95"
+  },
+  "unet__continuous::last::motion_raw": {
+    "__array__": "array_96"
+  },
+  "unet__continuous::last::motion_oracle_aligned": {
+    "__array__": "array_97"
+  },
+  "unet__continuous::last::texture_ood": {
+    "__array__": "array_98"
+  },
+  "unet__continuous::mean::source_H": {
+    "__array__": "array_99"
+  },
+  "unet__continuous::mean::source_U_src": {
+    "__array__": "array_100"
+  },
+  "unet__continuous::mean::source_C": {
+    "__array__": "array_101"
+  },
+  "unet__continuous::mean::drop_frame_0": {
+    "__array__": "array_102"
+  },
+  "unet__continuous::mean::drop_frame_2": {
+    "__array__": "array_103"
+  },
+  "unet__continuous::mean::drop_frame_5": {
+    "__array__": "array_104"
+  },
+  "unet__continuous::mean::motion_raw": {
+    "__array__": "array_105"
+  },
+  "unet__continuous::mean::motion_oracle_aligned": {
+    "__array__": "array_106"
+  },
+  "unet__continuous::mean::texture_ood": {
+    "__array__": "array_107"
+  }
+}

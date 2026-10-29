@@ -1,0 +1,18 @@
+{
+  "module": "L4.5 selected author code audit",
+  "fixed_source_files_verified": 19,
+  "iREPA_spatial_zscore_translation_invariance_max_abs": 1.3322676295501878e-15,
+  "iREPA_mean_scale_restore_max_abs": 4.440892098500626e-16,
+  "iREPA_single_token_sample_std_is_nonfinite": true,
+  "iREPA_original_LDS_manual_4neighbor_max_abs": 3.725290298461914e-09,
+  "LDS_scope": "Author code uses 4-neighbor local average; our broader local-distance contrast is a named adapted variant, not numerically equated.",
+  "UTILISE_original_SAM_max_abs": 1.1102230246251565e-16,
+  "UTILISE_zero_norm_returns_None": true,
+  "UTILISE_original_last_visible_indices_verified": true,
+  "RAE_original_unpatchify_exact": true,
+  "RAE_invalid_patch_count_rejected": true,
+  "EVSNN_original_MP_charge_and_state_handoff_verified": true,
+  "EVSNN_scope": "Selected original methods; artificial state fixture and supplied registration, not the full SpikingJelly class or paper model.",
+  "MuSpike_original_Euclidean_metric_verified": true,
+  "scope": "Original selected AST definitions and standalone iREPA metric module on artificial inputs. No pretrained vision model, satellite/event/music dataset, diffusion training, SpikingJelly model training or full paper reproduction."
+}

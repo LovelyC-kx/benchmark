@@ -1,0 +1,7 @@
+confirmation cnn2d__lif_hard four_group_cells 24 elapsed 26.5
+confirmation cnn2d__alif_ref four_group_cells 48 elapsed 57.9
+confirmation cnn2d__continuous four_group_cells 72 elapsed 83.3
+confirmation unet__lif_hard four_group_cells 96 elapsed 114.9
+confirmation unet__alif_ref four_group_cells 120 elapsed 150.9
+confirmation unet__continuous four_group_cells 144 elapsed 179.7
+Four-group cells 144 scene arrays 4608

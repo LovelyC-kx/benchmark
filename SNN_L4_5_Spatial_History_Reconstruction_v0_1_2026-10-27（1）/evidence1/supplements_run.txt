@@ -1,0 +1,7 @@
+supplement cnn2d__lif_hard elapsed 1.7
+supplement cnn2d__alif_ref elapsed 3.9
+supplement cnn2d__continuous elapsed 5.4
+supplement unet__lif_hard elapsed 7.5
+supplement unet__alif_ref elapsed 10.1
+supplement unet__continuous elapsed 11.9
+Supplement loss arrays 480

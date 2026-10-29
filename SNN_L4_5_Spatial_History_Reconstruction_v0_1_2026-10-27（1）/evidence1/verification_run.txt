@@ -1,0 +1,13 @@
+replayed development cnn2d__lif_hard
+replayed development cnn2d__alif_ref
+replayed development cnn2d__continuous
+replayed development unet__lif_hard
+replayed development unet__alif_ref
+replayed development unet__continuous
+replayed confirmation cnn2d__lif_hard
+replayed confirmation cnn2d__alif_ref
+replayed confirmation cnn2d__continuous
+replayed confirmation unet__lif_hard
+replayed confirmation unet__alif_ref
+replayed confirmation unet__continuous
+{'module': 'L4.5 artifact verification', 'python_AST_files': 121, 'strict_JSON_files': 81, 'unchanged_parent_files_verified': 254, 'main_scene_loss_arrays_recomputed': 9216, 'main_view_four_group_units_recomputed': 576, 'bounded_intervals_recomputed': 3456, 'main_prefix_view_units_replayed': 576, 'scenes_saved_per_prefix': 8, 'original_replay_batch_size': 64, 'maximum_replay_absolute_gaps': {'payload': 0.0, 'state': 0.0, 'prediction': 0.0}, 'supplement_scene_loss_arrays_checked': 480, 'SSIM_arrays_checked': 38, 'matched_summary_arrays_checked': 36, 'pool_summaries': {'development': {'independent_scene_pairs': 256, 'qualified_ratio_method_view_region_entries': 60, 'unique_qualified_damage_config_site_view_region': 5, 'positive_bounded_lower_bounds': 0}, 'confirmation': {'independent_scene_pairs': 512, 'qualified_ratio_method_view_region_entries': 60, 'unique_qualified_damage_config_site_view_region': 5, 'positive_bounded_lower_bounds': 0}}, 'joint_ALIF_last_full_owner_restoration_verified': True, 'new_SNN_training_updates': 0, 'formal_benchmark_completed': 0, 'scope': 'All main saved scene risks/intervals recomputed; every main saved prefix replayed. Supplement arrays and exact owner contracts checked, not all supplementary forward passes rerun. No trained-core or real-data conclusion.'}

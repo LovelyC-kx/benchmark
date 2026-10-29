@@ -1,0 +1,830 @@
+{
+  "cnn2d__lif_hard": {
+    "last": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_0"
+        },
+        "feature_mean": {
+          "__array__": "array_1"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_2"
+          },
+          "mean": {
+            "__array__": "array_3"
+          },
+          "scale": {
+            "__array__": "array_4"
+          },
+          "y_mean": {
+            "__array__": "array_5"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_6"
+        },
+        "feature_mean": {
+          "__array__": "array_7"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_8"
+          },
+          "mean": {
+            "__array__": "array_9"
+          },
+          "scale": {
+            "__array__": "array_10"
+          },
+          "y_mean": {
+            "__array__": "array_11"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_12"
+        },
+        "feature_mean": {
+          "__array__": "array_13"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_14"
+          },
+          "mean": {
+            "__array__": "array_15"
+          },
+          "scale": {
+            "__array__": "array_16"
+          },
+          "y_mean": {
+            "__array__": "array_17"
+          }
+        }
+      }
+    },
+    "mean": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_18"
+        },
+        "feature_mean": {
+          "__array__": "array_19"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_20"
+          },
+          "mean": {
+            "__array__": "array_21"
+          },
+          "scale": {
+            "__array__": "array_22"
+          },
+          "y_mean": {
+            "__array__": "array_23"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_24"
+        },
+        "feature_mean": {
+          "__array__": "array_25"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_26"
+          },
+          "mean": {
+            "__array__": "array_27"
+          },
+          "scale": {
+            "__array__": "array_28"
+          },
+          "y_mean": {
+            "__array__": "array_29"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_30"
+        },
+        "feature_mean": {
+          "__array__": "array_31"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_32"
+          },
+          "mean": {
+            "__array__": "array_33"
+          },
+          "scale": {
+            "__array__": "array_34"
+          },
+          "y_mean": {
+            "__array__": "array_35"
+          }
+        }
+      }
+    }
+  },
+  "cnn2d__alif_ref": {
+    "last": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_36"
+        },
+        "feature_mean": {
+          "__array__": "array_37"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_38"
+          },
+          "mean": {
+            "__array__": "array_39"
+          },
+          "scale": {
+            "__array__": "array_40"
+          },
+          "y_mean": {
+            "__array__": "array_41"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_42"
+        },
+        "feature_mean": {
+          "__array__": "array_43"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_44"
+          },
+          "mean": {
+            "__array__": "array_45"
+          },
+          "scale": {
+            "__array__": "array_46"
+          },
+          "y_mean": {
+            "__array__": "array_47"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_48"
+        },
+        "feature_mean": {
+          "__array__": "array_49"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_50"
+          },
+          "mean": {
+            "__array__": "array_51"
+          },
+          "scale": {
+            "__array__": "array_52"
+          },
+          "y_mean": {
+            "__array__": "array_53"
+          }
+        }
+      }
+    },
+    "mean": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_54"
+        },
+        "feature_mean": {
+          "__array__": "array_55"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_56"
+          },
+          "mean": {
+            "__array__": "array_57"
+          },
+          "scale": {
+            "__array__": "array_58"
+          },
+          "y_mean": {
+            "__array__": "array_59"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_60"
+        },
+        "feature_mean": {
+          "__array__": "array_61"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_62"
+          },
+          "mean": {
+            "__array__": "array_63"
+          },
+          "scale": {
+            "__array__": "array_64"
+          },
+          "y_mean": {
+            "__array__": "array_65"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_66"
+        },
+        "feature_mean": {
+          "__array__": "array_67"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_68"
+          },
+          "mean": {
+            "__array__": "array_69"
+          },
+          "scale": {
+            "__array__": "array_70"
+          },
+          "y_mean": {
+            "__array__": "array_71"
+          }
+        }
+      }
+    }
+  },
+  "cnn2d__continuous": {
+    "last": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_72"
+        },
+        "feature_mean": {
+          "__array__": "array_73"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_74"
+          },
+          "mean": {
+            "__array__": "array_75"
+          },
+          "scale": {
+            "__array__": "array_76"
+          },
+          "y_mean": {
+            "__array__": "array_77"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_78"
+        },
+        "feature_mean": {
+          "__array__": "array_79"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_80"
+          },
+          "mean": {
+            "__array__": "array_81"
+          },
+          "scale": {
+            "__array__": "array_82"
+          },
+          "y_mean": {
+            "__array__": "array_83"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_84"
+        },
+        "feature_mean": {
+          "__array__": "array_85"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_86"
+          },
+          "mean": {
+            "__array__": "array_87"
+          },
+          "scale": {
+            "__array__": "array_88"
+          },
+          "y_mean": {
+            "__array__": "array_89"
+          }
+        }
+      }
+    },
+    "mean": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_90"
+        },
+        "feature_mean": {
+          "__array__": "array_91"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_92"
+          },
+          "mean": {
+            "__array__": "array_93"
+          },
+          "scale": {
+            "__array__": "array_94"
+          },
+          "y_mean": {
+            "__array__": "array_95"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_96"
+        },
+        "feature_mean": {
+          "__array__": "array_97"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_98"
+          },
+          "mean": {
+            "__array__": "array_99"
+          },
+          "scale": {
+            "__array__": "array_100"
+          },
+          "y_mean": {
+            "__array__": "array_101"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_102"
+        },
+        "feature_mean": {
+          "__array__": "array_103"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_104"
+          },
+          "mean": {
+            "__array__": "array_105"
+          },
+          "scale": {
+            "__array__": "array_106"
+          },
+          "y_mean": {
+            "__array__": "array_107"
+          }
+        }
+      }
+    }
+  },
+  "unet__lif_hard": {
+    "last": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_108"
+        },
+        "feature_mean": {
+          "__array__": "array_109"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_110"
+          },
+          "mean": {
+            "__array__": "array_111"
+          },
+          "scale": {
+            "__array__": "array_112"
+          },
+          "y_mean": {
+            "__array__": "array_113"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_114"
+        },
+        "feature_mean": {
+          "__array__": "array_115"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_116"
+          },
+          "mean": {
+            "__array__": "array_117"
+          },
+          "scale": {
+            "__array__": "array_118"
+          },
+          "y_mean": {
+            "__array__": "array_119"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_120"
+        },
+        "feature_mean": {
+          "__array__": "array_121"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_122"
+          },
+          "mean": {
+            "__array__": "array_123"
+          },
+          "scale": {
+            "__array__": "array_124"
+          },
+          "y_mean": {
+            "__array__": "array_125"
+          }
+        }
+      }
+    },
+    "mean": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_126"
+        },
+        "feature_mean": {
+          "__array__": "array_127"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_128"
+          },
+          "mean": {
+            "__array__": "array_129"
+          },
+          "scale": {
+            "__array__": "array_130"
+          },
+          "y_mean": {
+            "__array__": "array_131"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_132"
+        },
+        "feature_mean": {
+          "__array__": "array_133"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_134"
+          },
+          "mean": {
+            "__array__": "array_135"
+          },
+          "scale": {
+            "__array__": "array_136"
+          },
+          "y_mean": {
+            "__array__": "array_137"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_138"
+        },
+        "feature_mean": {
+          "__array__": "array_139"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_140"
+          },
+          "mean": {
+            "__array__": "array_141"
+          },
+          "scale": {
+            "__array__": "array_142"
+          },
+          "y_mean": {
+            "__array__": "array_143"
+          }
+        }
+      }
+    }
+  },
+  "unet__alif_ref": {
+    "last": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_144"
+        },
+        "feature_mean": {
+          "__array__": "array_145"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_146"
+          },
+          "mean": {
+            "__array__": "array_147"
+          },
+          "scale": {
+            "__array__": "array_148"
+          },
+          "y_mean": {
+            "__array__": "array_149"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_150"
+        },
+        "feature_mean": {
+          "__array__": "array_151"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_152"
+          },
+          "mean": {
+            "__array__": "array_153"
+          },
+          "scale": {
+            "__array__": "array_154"
+          },
+          "y_mean": {
+            "__array__": "array_155"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_156"
+        },
+        "feature_mean": {
+          "__array__": "array_157"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_158"
+          },
+          "mean": {
+            "__array__": "array_159"
+          },
+          "scale": {
+            "__array__": "array_160"
+          },
+          "y_mean": {
+            "__array__": "array_161"
+          }
+        }
+      }
+    },
+    "mean": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_162"
+        },
+        "feature_mean": {
+          "__array__": "array_163"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_164"
+          },
+          "mean": {
+            "__array__": "array_165"
+          },
+          "scale": {
+            "__array__": "array_166"
+          },
+          "y_mean": {
+            "__array__": "array_167"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_168"
+        },
+        "feature_mean": {
+          "__array__": "array_169"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_170"
+          },
+          "mean": {
+            "__array__": "array_171"
+          },
+          "scale": {
+            "__array__": "array_172"
+          },
+          "y_mean": {
+            "__array__": "array_173"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_174"
+        },
+        "feature_mean": {
+          "__array__": "array_175"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_176"
+          },
+          "mean": {
+            "__array__": "array_177"
+          },
+          "scale": {
+            "__array__": "array_178"
+          },
+          "y_mean": {
+            "__array__": "array_179"
+          }
+        }
+      }
+    }
+  },
+  "unet__continuous": {
+    "last": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_180"
+        },
+        "feature_mean": {
+          "__array__": "array_181"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_182"
+          },
+          "mean": {
+            "__array__": "array_183"
+          },
+          "scale": {
+            "__array__": "array_184"
+          },
+          "y_mean": {
+            "__array__": "array_185"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_186"
+        },
+        "feature_mean": {
+          "__array__": "array_187"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_188"
+          },
+          "mean": {
+            "__array__": "array_189"
+          },
+          "scale": {
+            "__array__": "array_190"
+          },
+          "y_mean": {
+            "__array__": "array_191"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_192"
+        },
+        "feature_mean": {
+          "__array__": "array_193"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_194"
+          },
+          "mean": {
+            "__array__": "array_195"
+          },
+          "scale": {
+            "__array__": "array_196"
+          },
+          "y_mean": {
+            "__array__": "array_197"
+          }
+        }
+      }
+    },
+    "mean": {
+      "GAP8": {
+        "projection": {
+          "__array__": "array_198"
+        },
+        "feature_mean": {
+          "__array__": "array_199"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_200"
+          },
+          "mean": {
+            "__array__": "array_201"
+          },
+          "scale": {
+            "__array__": "array_202"
+          },
+          "y_mean": {
+            "__array__": "array_203"
+          }
+        }
+      },
+      "PCA8": {
+        "projection": {
+          "__array__": "array_204"
+        },
+        "feature_mean": {
+          "__array__": "array_205"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_206"
+          },
+          "mean": {
+            "__array__": "array_207"
+          },
+          "scale": {
+            "__array__": "array_208"
+          },
+          "y_mean": {
+            "__array__": "array_209"
+          }
+        }
+      },
+      "random8": {
+        "projection": {
+          "__array__": "array_210"
+        },
+        "feature_mean": {
+          "__array__": "array_211"
+        },
+        "reader": {
+          "w": {
+            "__array__": "array_212"
+          },
+          "mean": {
+            "__array__": "array_213"
+          },
+          "scale": {
+            "__array__": "array_214"
+          },
+          "y_mean": {
+            "__array__": "array_215"
+          }
+        }
+      }
+    }
+  }
+}

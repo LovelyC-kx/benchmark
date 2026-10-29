@@ -1,0 +1,6 @@
+matched summaries cnn2d__lif_hard elapsed 1.2
+matched summaries cnn2d__alif_ref elapsed 2.4
+matched summaries cnn2d__continuous elapsed 3.4
+matched summaries unet__lif_hard elapsed 4.9
+matched summaries unet__alif_ref elapsed 6.5
+matched summaries unet__continuous elapsed 8.1

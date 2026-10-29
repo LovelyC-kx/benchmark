@@ -1,0 +1,802 @@
+{
+  "module": "L4.5 additional quality and image interfaces",
+  "skimage_version": "0.26.0",
+  "SSIM_definition": "skimage structural_similarity; NCHW per scene, channel_axis=0, win_size=7, data_range=1, default uniform weights/sample covariance; clipped predictions; arithmetic mean over independent scenes.",
+  "confirmation_subset_scenes": 128,
+  "SSIM_conditions": 38,
+  "SSIM": {
+    "current_only": {
+      "mean_sequence_SSIM": 0.6712595920490518,
+      "n_sequences": 128
+    },
+    "latest_valid_history": {
+      "mean_sequence_SSIM": 0.8276794824205445,
+      "n_sequences": 128
+    },
+    "cnn2d__lif_hard::last::spatial1": {
+      "mean_sequence_SSIM": 0.3100269894723664,
+      "n_sequences": 128
+    },
+    "cnn2d__lif_hard::last::spatial3": {
+      "mean_sequence_SSIM": 0.39718045693378684,
+      "n_sequences": 128
+    },
+    "cnn2d__lif_hard::last::gap_dense": {
+      "mean_sequence_SSIM": 0.3644884389214265,
+      "n_sequences": 128
+    },
+    "cnn2d__lif_hard::mean::spatial1": {
+      "mean_sequence_SSIM": 0.30375525104816486,
+      "n_sequences": 128
+    },
+    "cnn2d__lif_hard::mean::spatial3": {
+      "mean_sequence_SSIM": 0.3438539846049199,
+      "n_sequences": 128
+    },
+    "cnn2d__lif_hard::mean::gap_dense": {
+      "mean_sequence_SSIM": 0.32432483830741643,
+      "n_sequences": 128
+    },
+    "cnn2d__alif_ref::last::spatial1": {
+      "mean_sequence_SSIM": 0.3032187955182057,
+      "n_sequences": 128
+    },
+    "cnn2d__alif_ref::last::spatial3": {
+      "mean_sequence_SSIM": 0.323324189039488,
+      "n_sequences": 128
+    },
+    "cnn2d__alif_ref::last::gap_dense": {
+      "mean_sequence_SSIM": 0.3527098638534757,
+      "n_sequences": 128
+    },
+    "cnn2d__alif_ref::mean::spatial1": {
+      "mean_sequence_SSIM": 0.303212264597145,
+      "n_sequences": 128
+    },
+    "cnn2d__alif_ref::mean::spatial3": {
+      "mean_sequence_SSIM": 0.30605157844670683,
+      "n_sequences": 128
+    },
+    "cnn2d__alif_ref::mean::gap_dense": {
+      "mean_sequence_SSIM": 0.3210767967264658,
+      "n_sequences": 128
+    },
+    "cnn2d__continuous::last::spatial1": {
+      "mean_sequence_SSIM": 0.3049900197252893,
+      "n_sequences": 128
+    },
+    "cnn2d__continuous::last::spatial3": {
+      "mean_sequence_SSIM": 0.37626482742246925,
+      "n_sequences": 128
+    },
+    "cnn2d__continuous::last::gap_dense": {
+      "mean_sequence_SSIM": 0.3476137711410905,
+      "n_sequences": 128
+    },
+    "cnn2d__continuous::mean::spatial1": {
+      "mean_sequence_SSIM": 0.30399251537012517,
+      "n_sequences": 128
+    },
+    "cnn2d__continuous::mean::spatial3": {
+      "mean_sequence_SSIM": 0.32815703021748815,
+      "n_sequences": 128
+    },
+    "cnn2d__continuous::mean::gap_dense": {
+      "mean_sequence_SSIM": 0.3239359733887368,
+      "n_sequences": 128
+    },
+    "unet__lif_hard::last::spatial1": {
+      "mean_sequence_SSIM": 0.31496932022818125,
+      "n_sequences": 128
+    },
+    "unet__lif_hard::last::spatial3": {
+      "mean_sequence_SSIM": 0.3804548443791317,
+      "n_sequences": 128
+    },
+    "unet__lif_hard::last::gap_dense": {
+      "mean_sequence_SSIM": 0.371466622131875,
+      "n_sequences": 128
+    },
+    "unet__lif_hard::mean::spatial1": {
+      "mean_sequence_SSIM": 0.30461524004318574,
+      "n_sequences": 128
+    },
+    "unet__lif_hard::mean::spatial3": {
+      "mean_sequence_SSIM": 0.3208317063051883,
+      "n_sequences": 128
+    },
+    "unet__lif_hard::mean::gap_dense": {
+      "mean_sequence_SSIM": 0.32682048921853324,
+      "n_sequences": 128
+    },
+    "unet__alif_ref::last::spatial1": {
+      "mean_sequence_SSIM": 0.3039318156769364,
+      "n_sequences": 128
+    },
+    "unet__alif_ref::last::spatial3": {
+      "mean_sequence_SSIM": 0.3109328987480377,
+      "n_sequences": 128
+    },
+    "unet__alif_ref::last::gap_dense": {
+      "mean_sequence_SSIM": 0.3410224960384902,
+      "n_sequences": 128
+    },
+    "unet__alif_ref::mean::spatial1": {
+      "mean_sequence_SSIM": 0.3037219860583579,
+      "n_sequences": 128
+    },
+    "unet__alif_ref::mean::spatial3": {
+      "mean_sequence_SSIM": 0.3038005913969593,
+      "n_sequences": 128
+    },
+    "unet__alif_ref::mean::gap_dense": {
+      "mean_sequence_SSIM": 0.31800997280601606,
+      "n_sequences": 128
+    },
+    "unet__continuous::last::spatial1": {
+      "mean_sequence_SSIM": 0.3028748306273801,
+      "n_sequences": 128
+    },
+    "unet__continuous::last::spatial3": {
+      "mean_sequence_SSIM": 0.3054503528807375,
+      "n_sequences": 128
+    },
+    "unet__continuous::last::gap_dense": {
+      "mean_sequence_SSIM": 0.3493097762779703,
+      "n_sequences": 128
+    },
+    "unet__continuous::mean::spatial1": {
+      "mean_sequence_SSIM": 0.302884317200591,
+      "n_sequences": 128
+    },
+    "unet__continuous::mean::spatial3": {
+      "mean_sequence_SSIM": 0.3036589698778998,
+      "n_sequences": 128
+    },
+    "unet__continuous::mean::gap_dense": {
+      "mean_sequence_SSIM": 0.32272376150838694,
+      "n_sequences": 128
+    }
+  },
+  "untrained_spatial_interfaces": 24,
+  "interfaces": [
+    {
+      "backbone": "cnn2d",
+      "neuron": "lif_hard",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "lif_soft",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "threshold",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "if_hard",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "plif_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "alif_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048,
+          "a": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048,
+          "a": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "adlif_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048,
+          "a": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048,
+          "a": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "hetero_lif",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "two_state_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "syn": 2048,
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "syn": 2048,
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "continuous",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "tanh",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "cnn2d",
+      "neuron": "analog_hard_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.a.act": {
+          "v": 2048
+        },
+        "backbone.b.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "lif_hard",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "lif_soft",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "threshold",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "if_hard",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "plif_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "alif_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048,
+          "a": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048,
+          "a": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "adlif_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048,
+          "a": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048,
+          "a": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "hetero_lif",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "two_state_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "syn": 2048,
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "syn": 2048,
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "continuous",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "tanh",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    },
+    {
+      "backbone": "unet",
+      "neuron": "analog_hard_ref",
+      "features_shape": [
+        2,
+        6,
+        8,
+        16,
+        16
+      ],
+      "image_shape": [
+        2,
+        4,
+        16,
+        16
+      ],
+      "state_owners": {
+        "backbone.e1.act": {
+          "v": 2048
+        },
+        "backbone.d.act": {
+          "v": 2048
+        }
+      },
+      "trained": false
+    }
+  ],
+  "LPIPS": "Not computed: no pretrained perceptual weights downloaded.",
+  "scope": "SSIM diagnostic and new 5-channel/4-band shape validation only; no new SNN training, no dataset or energy result."
+}

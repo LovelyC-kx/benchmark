@@ -1,0 +1,15 @@
+frozen intervention H1_l0_t3
+frozen intervention H1_l1_t3
+frozen intervention H1_l0_t12
+frozen intervention H1_l1_t12
+frozen intervention H1_l0_t15
+frozen intervention H1_l1_t15
+frozen intervention H4_l0_t12
+frozen intervention H4_l1_t12
+frozen intervention H4_l0_t15
+frozen intervention H4_l1_t15
+frozen intervention C_l0_t12
+frozen intervention C_l1_t12
+frozen intervention C_l0_t15
+frozen intervention C_l1_t15
+Frozen contexts 14 ridge solves 144 MLP updates 16000

@@ -1,0 +1,10 @@
+{
+  "record": "Inherited MLP selection-objective description corrected at L4.3 adapter boundary",
+  "original_literal": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader.",
+  "actual_selection_used": "Unweighted coordinate MSE on all 23 supplied diagnostic targets: 20 continuous factors and 3 binary sign scores. This includes the sign scores; they were not excluded.",
+  "affected_records": "Initial fitted freeze_contract.json selection.*.mlp descriptions only",
+  "changed_choices": false,
+  "changed_fitted_parameters": false,
+  "changed_initial_bank_hash": false,
+  "fix": "bridge43.fit_mlp wraps inherited implementation and returns correct task metadata for future runs."
+}

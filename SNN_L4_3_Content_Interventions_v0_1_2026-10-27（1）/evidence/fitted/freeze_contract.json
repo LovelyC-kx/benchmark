@@ -1,0 +1,1419 @@
+{
+  "module": "L4.3",
+  "checkpoint_sha256": "f46effd40083643fc4d298b7390657488dd91b4fcb989c2fd13a1f3b35a8410e",
+  "original_optimizer_updates": 1,
+  "bank_sha256": "463eeb5ca03ff007598cf01c7e907a55bb84b55eed7eece58855b533dd257577",
+  "contexts": [
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 0,
+      "site": "l0_t3",
+      "key": "H1_l0_t3"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 1,
+      "site": "l1_t3",
+      "key": "H1_l1_t3"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H1_l0_t12"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H1_l1_t12"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H1_l0_t15"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H1_l1_t15"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H4_l0_t12"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H4_l1_t12"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H4_l0_t15"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H4_l1_t15"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "C_l0_t12"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "C_l1_t12"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "C_l0_t15"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "C_l1_t15"
+    }
+  ],
+  "scales": {
+    "l0_t3": 0.4320681866572657,
+    "l0_t12": 0.6260822126987585,
+    "l0_t15": 0.6283002226665555,
+    "l1_t3": 0.5506148129542277,
+    "l1_t12": 0.8618511687445284,
+    "l1_t15": 0.8496354643348514
+  },
+  "selection": {
+    "base_l0_t3": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1735909244068552
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8271156023400271
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8103358288058149
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.8114107714797136
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1735909244068552
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.8074819843607455
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.8118395788607848
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.8221912669859409
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+      }
+    },
+    "base_l0_t12": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1474278522254553
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.800276129908272
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.7502712983894376
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.7054370292979991
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1474278522254553
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.7469203327723146
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7175582159129222
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.6952157546356423
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+      }
+    },
+    "base_l0_t15": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1686734791997964
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8610509075312776
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.7996531194811354
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.7532082678074538
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1686734791997964
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.7924673430352979
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7579613433700123
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.7337721694110815
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+      }
+    },
+    "base_l1_t3": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0890542900648637
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 1.0043974700863623
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 1.0040383401435462
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 1.0047589890056707
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0890542900648637
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 1.0037087992177995
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 1.0040348564389163
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 1.0048038778319444
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+      }
+    },
+    "base_l1_t12": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0775753002344604
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9509023309954455
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9471107651068568
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9453919376074845
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0775753002344604
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9496700604236975
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9482229580886135
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9189324475345214
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+      }
+    },
+    "base_l1_t15": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0810206677749368
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.96369672095989
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9520374550024597
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9497396465076775
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0810206677749368
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9549813737812025
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9509938735929582
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9457870920796524
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+      }
+    },
+    "H1_l0_t3": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.1745687394769853
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 1.0061946389453347
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 1.0080563840865764
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 1.012190304234849
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.1745687394769853
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 1.0098997642772745
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 1.0129445456114567
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 1.0004344660502327
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H1_l1_t3": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.0885008049557774
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 1.0044016602637742
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 1.0043861869783293
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 1.0047869473863633
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.0885008049557774
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 1.0044083153039143
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 1.0042794183299584
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 1.0106129792256133
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H1_l0_t12": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.1462604770552933
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.8176261646741366
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.7688917629156
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.7211511018264487
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.1462604770552933
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.760614725551996
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.725104367714589
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.7093043697597952
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H1_l1_t12": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.077991805187901
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9695023044502483
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.965130731321257
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.9600110375568877
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.077991805187901
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.9686318138104172
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.9662097073686774
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.9537589053098958
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H1_l0_t15": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.1684845268901172
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.8783107578101071
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.8166983126962907
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.7678256460293471
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.1684845268901172
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.8197029321808078
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.7880247030440194
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.7587429370536062
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H1_l1_t15": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.0800753700293202
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9757888940892454
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.9721677693136412
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.9688130991580278
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.0800753700293202
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.9730718645658104
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.9712680878509675
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.963816055436029
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H4_l0_t12": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.147657285279071
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.8653464248518522
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.8455817891694365
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.8307443764245753
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.147657285279071
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.844195495514423
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.8420105748211467
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.8208970951825808
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H4_l1_t12": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.0774818447984362
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9928258696803713
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.9952103271785455
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.9891824531820492
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.0774818447984362
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.9959305046948945
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.9924487103029029
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.9826905812737486
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H4_l0_t15": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.1689392315740559
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9281245718135258
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.8672621544200413
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.854117284529094
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.1689392315740559
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.8709057522864789
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.8561027201185057
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.8455318095208896
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "H4_l1_t15": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.0814077409327185
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9879111703218264
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.9841987870056694
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.9788169247015339
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.0814077409327185
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.9859509461255997
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.9841892916358574
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.9786531575546403
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "C_l0_t12": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.1462223481702762
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.8988333536190977
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.858138098851471
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.8380008872445027
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.1462223481702762
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.8558000642102341
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.8488410842342304
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.8313525821753924
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "C_l1_t12": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.0785242973451827
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9829345625660837
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.9843473412905621
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.9790041682895467
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.0785242973451827
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.9842862545212496
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.9839285593932976
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.9774063490684834
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      }
+    },
+    "C_l0_t15": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.1699252446275898
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9580847611830758
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.89342542027209
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.8686909768020586
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.1699252446275898
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.8906341221348187
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.878168429865951
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.8597112850405781
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    },
+    "C_l1_t15": {
+      "leace": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        },
+        "mlp": {
+          "candidates": [
+            {
+              "lr": 0.005,
+              "step": 0,
+              "selection_MSE": 1.082153684923854
+            },
+            {
+              "lr": 0.005,
+              "step": 100,
+              "selection_MSE": 0.9962548116912215
+            },
+            {
+              "lr": 0.005,
+              "step": 200,
+              "selection_MSE": 0.9904484986209635
+            },
+            {
+              "lr": 0.005,
+              "step": 400,
+              "selection_MSE": 0.9831364142042017
+            },
+            {
+              "lr": 0.02,
+              "step": 0,
+              "selection_MSE": 1.082153684923854
+            },
+            {
+              "lr": 0.02,
+              "step": 100,
+              "selection_MSE": 0.996863671996283
+            },
+            {
+              "lr": 0.02,
+              "step": 200,
+              "selection_MSE": 0.9854812469279071
+            },
+            {
+              "lr": 0.02,
+              "step": 400,
+              "selection_MSE": 0.9733278326506319
+            }
+          ],
+          "optimizer_updates": 800,
+          "optimization_fits": 2,
+          "selection_objective": "Mean squared error on all eight original continuous targets; auxiliary class loss never selects this reader."
+        }
+      },
+      "orth": {
+        "ridge": {
+          "alpha": 0.01,
+          "candidate_count": 3
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "alpha": 0.0001,
+          "candidate_count": 3
+        }
+      }
+    }
+  },
+  "alphas": [
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "probe_steps_per_optimization_fit": 400,
+  "fit_pool": [
+    2048,
+    "geometry_fit",
+    9000000
+  ],
+  "paired_donor_fit_pool": [
+    2048,
+    "geometry_fit",
+    9010000
+  ],
+  "independent_validation_probe_fit_pool": [
+    1024,
+    "probe_train",
+    9020000
+  ],
+  "independent_validation_probe_selection_pool": [
+    256,
+    "probe_val",
+    9040000
+  ],
+  "evaluation_recipient_pool": [
+    2048,
+    "development_test",
+    9060000
+  ],
+  "evaluation_donor_pool": [
+    2048,
+    "development_test",
+    9070000
+  ],
+  "probe_label_order": "20 continuous source coordinates H1,H2,H3,H4,C; 3 binary first-coordinate signs H1,H4,C",
+  "ridge_matrix_solves": 144,
+  "paired_delta_matrix_solves": 14,
+  "MLP_optimization_fits": 40,
+  "MLP_optimizer_updates": 16000,
+  "selected_baseline_probes": 12,
+  "selected_refit_probes": 56,
+  "choices_frozen_before_evaluation_generation": true,
+  "core_parameters_unchanged": true,
+  "label_cost": "Operator fit uses 2048 scene factor labels plus 2048 matched donor labels for delta maps. Independent probes use 1024+256 scene labels across all 23 diagnostic targets; no per-dimension sample multiplication.",
+  "scope": "Operations and probe families specified before evaluation. Label-informed paired delta maps are diagnostic oracle-access interventions, not free online mechanisms."
+}

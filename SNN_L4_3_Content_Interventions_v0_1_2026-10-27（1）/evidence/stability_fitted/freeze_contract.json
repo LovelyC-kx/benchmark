@@ -1,0 +1,1197 @@
+{
+  "module": "L4.3 post-review stability follow-up",
+  "adaptive_reason": "Large unregularized operator amplification observed in the initial development run. Methods frozen next, before new development scenes; not preregistered confirmation of the original family.",
+  "bank_sha256": "fb4c8c3007c6cd94b2479071b5cfcf50e23e74f71fc2809defdf63f243c50034",
+  "original_bank_sha256": "463eeb5ca03ff007598cf01c7e907a55bb84b55eed7eece58855b533dd257577",
+  "contexts": [
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 0,
+      "site": "l0_t3",
+      "key": "H1_l0_t3"
+    },
+    {
+      "source": "H1",
+      "time": 3,
+      "layer": 1,
+      "site": "l1_t3",
+      "key": "H1_l1_t3"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H1_l0_t12"
+    },
+    {
+      "source": "H1",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H1_l1_t12"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H1_l0_t15"
+    },
+    {
+      "source": "H1",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H1_l1_t15"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "H4_l0_t12"
+    },
+    {
+      "source": "H4",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "H4_l1_t12"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "H4_l0_t15"
+    },
+    {
+      "source": "H4",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "H4_l1_t15"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 0,
+      "site": "l0_t12",
+      "key": "C_l0_t12"
+    },
+    {
+      "source": "C",
+      "time": 12,
+      "layer": 1,
+      "site": "l1_t12",
+      "key": "C_l1_t12"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 0,
+      "site": "l0_t15",
+      "key": "C_l0_t15"
+    },
+    {
+      "source": "C",
+      "time": 15,
+      "layer": 1,
+      "site": "l1_t15",
+      "key": "C_l1_t15"
+    }
+  ],
+  "selection": {
+    "H1_l0_t3": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.174596308473198
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 1.006293077520178
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 1.008358101241701
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 1.0125880964548155
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.174596308473198
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 1.0102739441799904
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 1.0140691067548573
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 1.0028158601321082
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H1_l1_t3": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0885004979203847
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 1.0044012992668345
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 1.0043854897488242
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 1.0047154706946921
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0885004979203847
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 1.0044075110132353
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 1.00444473936671
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 1.0043974932391209
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H1_l0_t12": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.145389484567198
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8231870516446594
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.7723625920518807
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.7245653821765674
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.145389484567198
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.7574380486470254
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7257532715895169
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.709131868887102
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H1_l1_t12": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.077594701449312
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9745030115042406
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9724057530264882
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.964468492185254
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.077594701449312
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9732182233618396
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9743857520396536
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9598928678691996
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H1_l0_t15": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1681124683194903
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8821402075193268
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8216459603362756
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.7742148809820789
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1681124683194903
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.817091670555304
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.7949481725235279
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.7522463875862396
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H1_l1_t15": {
+      "ridge": {
+        "alpha": 0.001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0805329777167896
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.98034870810897
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9750170971622275
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9685732123065891
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0805329777167896
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.978848752711929
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9751800968423652
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9664793984429194
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H4_l0_t12": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1475456088707376
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.8706989626217189
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8472726311729504
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.8296716193132084
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1475456088707376
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.8451590591708645
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.833539542588943
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.8318355606014292
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H4_l1_t12": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0778229147742544
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9928745254944071
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9947847195619117
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9867127807166033
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0778229147742544
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9958358315303014
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9905774878970801
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9818107854440244
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H4_l0_t15": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1691353590600961
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9351753659654638
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8738873223680707
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.8554092757887782
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1691353590600961
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.8769833508570745
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.861027333259203
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.8459096253778138
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "H4_l1_t15": {
+      "ridge": {
+        "alpha": 0.01,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0812043563707279
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9877561006819701
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9838214468410299
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9784042944216694
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0812043563707279
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9855316151645203
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9809544642822631
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9735258673798057
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "C_l0_t12": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1463621308467489
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.906430376001017
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.8617293673677774
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.8393302518893426
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1463621308467489
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.8599147203251966
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.841953545015359
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.8273228785063271
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "C_l1_t12": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.0782218210570464
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9866015175959303
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9889272462055132
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9824557841748986
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.0782218210570464
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9902622937317807
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.98286695184006
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9777979944942332
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "C_l0_t15": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.1699471059962725
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9639443493517994
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9027658673855948
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.8730849591566947
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.1699471059962725
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.913377048145054
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.8802815062630563
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.8746916452490276
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    },
+    "C_l1_t15": {
+      "ridge": {
+        "alpha": 0.0001,
+        "candidate_count": 3
+      },
+      "mlp": {
+        "candidates": [
+          {
+            "lr": 0.005,
+            "step": 0,
+            "selection_MSE": 1.081963567827395
+          },
+          {
+            "lr": 0.005,
+            "step": 100,
+            "selection_MSE": 0.9961202026064373
+          },
+          {
+            "lr": 0.005,
+            "step": 200,
+            "selection_MSE": 0.9919534391608221
+          },
+          {
+            "lr": 0.005,
+            "step": 400,
+            "selection_MSE": 0.9877037093717204
+          },
+          {
+            "lr": 0.02,
+            "step": 0,
+            "selection_MSE": 1.081963567827395
+          },
+          {
+            "lr": 0.02,
+            "step": 100,
+            "selection_MSE": 0.9932871750781346
+          },
+          {
+            "lr": 0.02,
+            "step": 200,
+            "selection_MSE": 0.9925192938783931
+          },
+          {
+            "lr": 0.02,
+            "step": 400,
+            "selection_MSE": 0.9769584811152476
+          }
+        ],
+        "optimizer_updates": 800,
+        "optimization_fits": 2,
+        "selection_objective": "Mean squared error on all 23 diagnostic targets: 20 continuous factor coordinates and 3 binary sign scores, with equal coordinate weight. No native SNN objective is optimized."
+      }
+    }
+  },
+  "fit_diagnostics": {
+    "H1_l0_t3": {
+      "initial_unregularized": {
+        "operator_norm": 3.3177449348200274,
+        "fit_state_displacement_MSE": 0.007727895820278647,
+        "independent_selection_displacement_MSE": 0.008275731248559348,
+        "fit_cross_covariance_after_norm": 1.3660578497555682e-15,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 1.9341658648587097,
+        "fit_state_displacement_MSE": 0.007740634440529724,
+        "independent_selection_displacement_MSE": 0.008309330708082279,
+        "fit_cross_covariance_after_norm": 1.6788328765373497e-15,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 2.539673439633686,
+        "fit_state_displacement_MSE": 0.007730639371386625,
+        "independent_selection_displacement_MSE": 0.00828705544813313,
+        "fit_cross_covariance_after_norm": 1.488099596568316e-15,
+        "removed_rank": 4
+      }
+    },
+    "H1_l1_t3": {
+      "initial_unregularized": {
+        "operator_norm": 1.1928873148239714,
+        "fit_state_displacement_MSE": 0.0006622125288311656,
+        "independent_selection_displacement_MSE": 0.000330432535523879,
+        "fit_cross_covariance_after_norm": 1.07077412797248e-16,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 1.1882546816181714,
+        "fit_state_displacement_MSE": 0.0006622137141552612,
+        "independent_selection_displacement_MSE": 0.0003307063532979449,
+        "fit_cross_covariance_after_norm": 1.0690856302840569e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 1.1923703911361976,
+        "fit_state_displacement_MSE": 0.0006622125434680424,
+        "independent_selection_displacement_MSE": 0.00033046294056642103,
+        "fit_cross_covariance_after_norm": 3.7623030293369546e-16,
+        "removed_rank": 4
+      }
+    },
+    "H1_l0_t12": {
+      "initial_unregularized": {
+        "operator_norm": 8.61062083098985,
+        "fit_state_displacement_MSE": 0.004948629305719519,
+        "independent_selection_displacement_MSE": 0.00441516812619892,
+        "fit_cross_covariance_after_norm": 3.6515031094418463e-16,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 5.381251770899638,
+        "fit_state_displacement_MSE": 0.005237231410233038,
+        "independent_selection_displacement_MSE": 0.0046550053781688715,
+        "fit_cross_covariance_after_norm": 3.0648797281612974e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 6.2223737867988325,
+        "fit_state_displacement_MSE": 0.005079974124662854,
+        "independent_selection_displacement_MSE": 0.00450123410701361,
+        "fit_cross_covariance_after_norm": 4.943841725636744e-16,
+        "removed_rank": 4
+      }
+    },
+    "H1_l1_t12": {
+      "initial_unregularized": {
+        "operator_norm": 2845332.216020137,
+        "fit_state_displacement_MSE": 0.008379242337114632,
+        "independent_selection_displacement_MSE": 0.007356511829182088,
+        "fit_cross_covariance_after_norm": 4.388614509208658e-09,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 4.283918266658259,
+        "fit_state_displacement_MSE": 0.011083688700956062,
+        "independent_selection_displacement_MSE": 0.010320524089344665,
+        "fit_cross_covariance_after_norm": 4.845419898181119e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 4.6773242736144125,
+        "fit_state_displacement_MSE": 0.011021450471830082,
+        "independent_selection_displacement_MSE": 0.010232777267271925,
+        "fit_cross_covariance_after_norm": 3.714700217153651e-16,
+        "removed_rank": 4
+      }
+    },
+    "H1_l0_t15": {
+      "initial_unregularized": {
+        "operator_norm": 8.648570252861711,
+        "fit_state_displacement_MSE": 0.001436219982559863,
+        "independent_selection_displacement_MSE": 0.0013432812758021819,
+        "fit_cross_covariance_after_norm": 1.619647037027399e-16,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 5.4517133382751695,
+        "fit_state_displacement_MSE": 0.0015467271635681069,
+        "independent_selection_displacement_MSE": 0.001451486852732991,
+        "fit_cross_covariance_after_norm": 1.4262567590850374e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 6.195990449859535,
+        "fit_state_displacement_MSE": 0.0014863653304041696,
+        "independent_selection_displacement_MSE": 0.0013882130780056398,
+        "fit_cross_covariance_after_norm": 2.7898063887562825e-16,
+        "removed_rank": 4
+      }
+    },
+    "H1_l1_t15": {
+      "initial_unregularized": {
+        "operator_norm": 2167065.6125278077,
+        "fit_state_displacement_MSE": 0.004383618402906098,
+        "independent_selection_displacement_MSE": 0.004199600159633716,
+        "fit_cross_covariance_after_norm": 1.9212339039042966e-09,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 4.268287334936237,
+        "fit_state_displacement_MSE": 0.006076026219811528,
+        "independent_selection_displacement_MSE": 0.006553402856276414,
+        "fit_cross_covariance_after_norm": 2.041130548996528e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 4.821835794960454,
+        "fit_state_displacement_MSE": 0.00602018860034721,
+        "independent_selection_displacement_MSE": 0.0064537121785647154,
+        "fit_cross_covariance_after_norm": 3.5767437909697894e-16,
+        "removed_rank": 4
+      }
+    },
+    "H4_l0_t12": {
+      "initial_unregularized": {
+        "operator_norm": 7.998425002223978,
+        "fit_state_displacement_MSE": 0.009964630754220608,
+        "independent_selection_displacement_MSE": 0.0096462506671839,
+        "fit_cross_covariance_after_norm": 2.4555166539516026e-15,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 5.304554966769759,
+        "fit_state_displacement_MSE": 0.01019969599489088,
+        "independent_selection_displacement_MSE": 0.009954370228798476,
+        "fit_cross_covariance_after_norm": 1.2007998991772572e-15,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 6.173989753068028,
+        "fit_state_displacement_MSE": 0.010066918427243207,
+        "independent_selection_displacement_MSE": 0.009798060784715599,
+        "fit_cross_covariance_after_norm": 1.3477132808585737e-15,
+        "removed_rank": 4
+      }
+    },
+    "H4_l1_t12": {
+      "initial_unregularized": {
+        "operator_norm": 1118210.8965620946,
+        "fit_state_displacement_MSE": 0.013277297212106586,
+        "independent_selection_displacement_MSE": 0.013119355044195776,
+        "fit_cross_covariance_after_norm": 4.600808853227931e-09,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 2.7448439551277937,
+        "fit_state_displacement_MSE": 0.013680504413684272,
+        "independent_selection_displacement_MSE": 0.013818963129120627,
+        "fit_cross_covariance_after_norm": 9.630291488783804e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 2.9160859666598062,
+        "fit_state_displacement_MSE": 0.01365656755894874,
+        "independent_selection_displacement_MSE": 0.01378336568698213,
+        "fit_cross_covariance_after_norm": 1.0210969956282549e-15,
+        "removed_rank": 4
+      }
+    },
+    "H4_l0_t15": {
+      "initial_unregularized": {
+        "operator_norm": 7.8688850190259565,
+        "fit_state_displacement_MSE": 0.0026396195203872443,
+        "independent_selection_displacement_MSE": 0.002606560750036249,
+        "fit_cross_covariance_after_norm": 9.001118224413541e-16,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 4.925491438448123,
+        "fit_state_displacement_MSE": 0.0027243108439067767,
+        "independent_selection_displacement_MSE": 0.0027154199003255187,
+        "fit_cross_covariance_after_norm": 6.227373571796457e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 5.844227779349297,
+        "fit_state_displacement_MSE": 0.0026767105402861822,
+        "independent_selection_displacement_MSE": 0.002660448785314389,
+        "fit_cross_covariance_after_norm": 9.136619927572345e-16,
+        "removed_rank": 4
+      }
+    },
+    "H4_l1_t15": {
+      "initial_unregularized": {
+        "operator_norm": 1228814.663500015,
+        "fit_state_displacement_MSE": 0.004873391193714674,
+        "independent_selection_displacement_MSE": 0.00458277312708852,
+        "fit_cross_covariance_after_norm": 2.6977007221299303e-09,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 2.9950973766727107,
+        "fit_state_displacement_MSE": 0.005151489242902952,
+        "independent_selection_displacement_MSE": 0.004868022120757091,
+        "fit_cross_covariance_after_norm": 4.817812544872433e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 3.216543426439122,
+        "fit_state_displacement_MSE": 0.005133910996552299,
+        "independent_selection_displacement_MSE": 0.0048482326233475126,
+        "fit_cross_covariance_after_norm": 5.187320567419389e-16,
+        "removed_rank": 4
+      }
+    },
+    "C_l0_t12": {
+      "initial_unregularized": {
+        "operator_norm": 6.513449566294439,
+        "fit_state_displacement_MSE": 0.012567256920418234,
+        "independent_selection_displacement_MSE": 0.013027379398366356,
+        "fit_cross_covariance_after_norm": 1.819212415251664e-15,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 4.429921678717563,
+        "fit_state_displacement_MSE": 0.01274574160952956,
+        "independent_selection_displacement_MSE": 0.013255470010033011,
+        "fit_cross_covariance_after_norm": 1.3716037363031717e-15,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 5.10443582067776,
+        "fit_state_displacement_MSE": 0.012643801082563386,
+        "independent_selection_displacement_MSE": 0.01313322390779315,
+        "fit_cross_covariance_after_norm": 1.4431001473948045e-15,
+        "removed_rank": 4
+      }
+    },
+    "C_l1_t12": {
+      "initial_unregularized": {
+        "operator_norm": 2207552.741374533,
+        "fit_state_displacement_MSE": 0.013021986166081339,
+        "independent_selection_displacement_MSE": 0.011914668680434448,
+        "fit_cross_covariance_after_norm": 3.0959477901042633e-09,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 4.29726950496365,
+        "fit_state_displacement_MSE": 0.014265547665010527,
+        "independent_selection_displacement_MSE": 0.013595406955539069,
+        "fit_cross_covariance_after_norm": 8.748582747146167e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 4.864509680842104,
+        "fit_state_displacement_MSE": 0.014192563894932562,
+        "independent_selection_displacement_MSE": 0.01348825724371384,
+        "fit_cross_covariance_after_norm": 8.560110715314839e-16,
+        "removed_rank": 4
+      }
+    },
+    "C_l0_t15": {
+      "initial_unregularized": {
+        "operator_norm": 6.588482264216509,
+        "fit_state_displacement_MSE": 0.003379687911326765,
+        "independent_selection_displacement_MSE": 0.0035027894717990244,
+        "fit_cross_covariance_after_norm": 1.0887366844145591e-15,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 4.206441144819752,
+        "fit_state_displacement_MSE": 0.0034451321373838565,
+        "independent_selection_displacement_MSE": 0.0035850537069360582,
+        "fit_cross_covariance_after_norm": 6.615349257018354e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 4.953793404809427,
+        "fit_state_displacement_MSE": 0.0034079256914915923,
+        "independent_selection_displacement_MSE": 0.003541200043213748,
+        "fit_cross_covariance_after_norm": 7.415405568271004e-16,
+        "removed_rank": 4
+      }
+    },
+    "C_l1_t15": {
+      "initial_unregularized": {
+        "operator_norm": 1895995.1243359013,
+        "fit_state_displacement_MSE": 0.005909845619660177,
+        "independent_selection_displacement_MSE": 0.0058653589221010355,
+        "fit_cross_covariance_after_norm": 2.4061246677632328e-09,
+        "removed_rank": 4
+      },
+      "shrink_fixed": {
+        "operator_norm": 2.877954889709052,
+        "fit_state_displacement_MSE": 0.006687426976139236,
+        "independent_selection_displacement_MSE": 0.0068832230549585975,
+        "fit_cross_covariance_after_norm": 6.178704549627247e-16,
+        "removed_rank": 4
+      },
+      "author_default": {
+        "operator_norm": 3.487053063105129,
+        "fit_state_displacement_MSE": 0.00665187324056551,
+        "independent_selection_displacement_MSE": 0.006839712447288242,
+        "fit_cross_covariance_after_norm": 7.937714973609318e-16,
+        "removed_rank": 4
+      }
+    }
+  },
+  "shrinkage": 0.01,
+  "author_default": {
+    "shrinkage": true,
+    "constrain_cov_trace": true,
+    "svd_tol": 0.01,
+    "pinned_commit": "9f51753821316a1edacf78b52b464ab26d40e60a"
+  },
+  "fresh_evaluation_recipient_pool": [
+    1024,
+    "development_test",
+    9100000
+  ],
+  "fresh_evaluation_donor_pool": [
+    1024,
+    "development_test",
+    9110000
+  ],
+  "ridge_matrix_solves": 42,
+  "MLP_optimization_fits": 28,
+  "MLP_optimizer_updates": 11200,
+  "selected_refit_probes": 28,
+  "core_parameters_unchanged": true,
+  "formal_confirmation": false
+}

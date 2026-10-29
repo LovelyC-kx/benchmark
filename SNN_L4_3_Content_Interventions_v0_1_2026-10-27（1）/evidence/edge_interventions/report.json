@@ -1,0 +1,793 @@
+{
+  "module": "L4.3 content-specific binary edge",
+  "evaluation_pairs": 2048,
+  "contexts": 6,
+  "conditions": 24,
+  "results": {
+    "H1__write_only": {
+      "content_donor": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.3047656298336872,
+            "derived_classification": 0.4990234375
+          },
+          "C": {
+            "MSE": 1.617032719210126,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2877612413523973,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.617032719210126,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.009962762705981731,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0
+      },
+      "count_flip_matched_0": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.3045911159272956,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.6175161015459625,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2875808284005694,
+            "derived_classification": 0.5
+          },
+          "C": {
+            "MSE": 1.6175161015459625,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.009999936446547508,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_1": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.3042969593161857,
+            "derived_classification": 0.4990234375
+          },
+          "C": {
+            "MSE": 1.617687302173624,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.287588945024963,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.617687302173624,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.010022034868597984,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_2": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.3043260328770083,
+            "derived_classification": 0.4990234375
+          },
+          "C": {
+            "MSE": 1.617729835472137,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2876834099761871,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.617729835472137,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.010022533126175404,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      }
+    },
+    "H1__complete_suffix": {
+      "content_donor": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.3067754047198141,
+            "derived_classification": 0.4990234375
+          },
+          "C": {
+            "MSE": 1.6167990897746238,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2913488936515596,
+            "derived_classification": 0.50341796875
+          },
+          "C": {
+            "MSE": 1.6167990897746238,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.0,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "receiver_donor_replay_max_abs": 0.0,
+        "native_donor_replay_max_abs": 0.0
+      },
+      "count_flip_matched_0": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2902485337649812,
+            "derived_classification": 0.49609375
+          },
+          "C": {
+            "MSE": 1.6028746606005373,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2728965902024174,
+            "derived_classification": 0.50341796875
+          },
+          "C": {
+            "MSE": 1.6028746606005373,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.014029152691364288,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_1": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2898717298938562,
+            "derived_classification": 0.49658203125
+          },
+          "C": {
+            "MSE": 1.6011389789959214,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2754191892589302,
+            "derived_classification": 0.501953125
+          },
+          "C": {
+            "MSE": 1.6011389789959214,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.013807972893118858,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_2": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.292123189958191,
+            "derived_classification": 0.5
+          },
+          "C": {
+            "MSE": 1.6042473023510444,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2798335431354728,
+            "derived_classification": 0.50732421875
+          },
+          "C": {
+            "MSE": 1.6042473023510444,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.014097750186920166,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      }
+    },
+    "H4__write_only": {
+      "content_donor": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2993641745539883,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.6078523143495258,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2993641745539883,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.6078523143495258,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.012913095764815807,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0
+      },
+      "count_flip_matched_0": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2955877348040086,
+            "derived_classification": 0.49853515625
+          },
+          "C": {
+            "MSE": 1.6092319406165458,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2955877348040086,
+            "derived_classification": 0.49853515625
+          },
+          "C": {
+            "MSE": 1.6092319406165458,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.01432568859308958,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_1": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2932954713609026,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.6055002984511626,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2932954713609026,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.6055002984511626,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.014475872740149498,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_2": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.297854417472529,
+            "derived_classification": 0.5029296875
+          },
+          "C": {
+            "MSE": 1.6110495575090424,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.297854417472529,
+            "derived_classification": 0.5029296875
+          },
+          "C": {
+            "MSE": 1.6110495575090424,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.014320338144898415,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      }
+    },
+    "H4__complete_suffix": {
+      "content_donor": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.304809108662819,
+            "derived_classification": 0.4990234375
+          },
+          "C": {
+            "MSE": 1.6134631634928067,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.304809108662819,
+            "derived_classification": 0.4990234375
+          },
+          "C": {
+            "MSE": 1.6134631634928067,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.0,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "receiver_donor_replay_max_abs": 0.0,
+        "native_donor_replay_max_abs": 0.0
+      },
+      "count_flip_matched_0": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2894053903675666,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.600842259676273,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2894053903675666,
+            "derived_classification": 0.49951171875
+          },
+          "C": {
+            "MSE": 1.600842259676273,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.0157330222427845,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_1": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2879078365906351,
+            "derived_classification": 0.49609375
+          },
+          "C": {
+            "MSE": 1.6051553943131567,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2879078365906351,
+            "derived_classification": 0.49609375
+          },
+          "C": {
+            "MSE": 1.6051553943131567,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.015828756615519524,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_2": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2910774126408222,
+            "derived_classification": 0.5
+          },
+          "C": {
+            "MSE": 1.6059122892926534,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2910774126408222,
+            "derived_classification": 0.5
+          },
+          "C": {
+            "MSE": 1.6059122892926534,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "natural_donor_prediction_MSE": 0.016278324648737907,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      }
+    },
+    "C__write_only": {
+      "content_donor": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.3022042465145056,
+            "derived_classification": 0.5
+          },
+          "C": {
+            "MSE": 1.603171898864607,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.3022042465145056,
+            "derived_classification": 0.5
+          },
+          "C": {
+            "MSE": 1.57778356707151,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.011327207088470459,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0
+      },
+      "count_flip_matched_0": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2991008440805454,
+            "derived_classification": 0.49853515625
+          },
+          "C": {
+            "MSE": 1.6045313646581234,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2991008440805454,
+            "derived_classification": 0.49853515625
+          },
+          "C": {
+            "MSE": 1.5741390029689226,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.013204810209572315,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_1": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.296575571224395,
+            "derived_classification": 0.498046875
+          },
+          "C": {
+            "MSE": 1.6086386935658656,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.296575571224395,
+            "derived_classification": 0.498046875
+          },
+          "C": {
+            "MSE": 1.5782134189024908,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.013191550970077515,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_2": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.296279106570997,
+            "derived_classification": 0.498046875
+          },
+          "C": {
+            "MSE": 1.609679916131948,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.296279106570997,
+            "derived_classification": 0.498046875
+          },
+          "C": {
+            "MSE": 1.5772113136670334,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.013208439573645592,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      }
+    },
+    "C__complete_suffix": {
+      "content_donor": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.3029661088514335,
+            "derived_classification": 0.49755859375
+          },
+          "C": {
+            "MSE": 1.614858779191373,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.3029661088514335,
+            "derived_classification": 0.49755859375
+          },
+          "C": {
+            "MSE": 1.5866636355978803,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.0,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "receiver_donor_replay_max_abs": 0.0,
+        "native_donor_replay_max_abs": 0.0
+      },
+      "count_flip_matched_0": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2938444682487824,
+            "derived_classification": 0.498046875
+          },
+          "C": {
+            "MSE": 1.603120733144313,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2938444682487824,
+            "derived_classification": 0.498046875
+          },
+          "C": {
+            "MSE": 1.5629806481644088,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.013560937717556953,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_1": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2940336431385033,
+            "derived_classification": 0.5009765625
+          },
+          "C": {
+            "MSE": 1.6030158475411107,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2940336431385033,
+            "derived_classification": 0.5009765625
+          },
+          "C": {
+            "MSE": 1.5703407751366212,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.013335555791854858,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      },
+      "count_flip_matched_2": {
+        "original_label_risks": {
+          "H1": {
+            "MSE": 1.2941842915984836,
+            "derived_classification": 0.4951171875
+          },
+          "C": {
+            "MSE": 1.6014426776650863,
+            "derived_classification": 0.49853515625
+          }
+        },
+        "hybrid_label_risks": {
+          "H1": {
+            "MSE": 1.2941842915984836,
+            "derived_classification": 0.4951171875
+          },
+          "C": {
+            "MSE": 1.5691470221082988,
+            "derived_classification": 0.5048828125
+          }
+        },
+        "natural_donor_prediction_MSE": 0.013460281305015087,
+        "sender_state_change_max_abs": 0.0,
+        "actual_edge_arrival_max_abs": 0.0,
+        "per_step_spike_count_mismatch": 0,
+        "per_step_flip_count_mismatch": 0
+      }
+    }
+  },
+  "identities": {
+    "no_op_prediction_max_abs": 0.0
+  },
+  "bounded_classification_comparison_family": 12,
+  "classification_donor_gain_vs_count_flip_matched": {
+    "H1__write_only::H1": {
+      "gain": 0.00016276041666666666,
+      "interval": [
+        -0.07748444167131416,
+        0.0778099625046475
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "H1__write_only::C": {
+      "gain": 0.0,
+      "interval": [
+        -0.07764720208798083,
+        0.07764720208798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "H1__complete_suffix::H1": {
+      "gain": 0.0008138020833333317,
+      "interval": [
+        -0.0768334000046475,
+        0.07846100417131416
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "H1__complete_suffix::C": {
+      "gain": 0.0,
+      "interval": [
+        -0.07764720208798083,
+        0.07764720208798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "H4__write_only::H1": {
+      "gain": 0.0008138020833333328,
+      "interval": [
+        -0.0768334000046475,
+        0.07846100417131416
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "H4__write_only::C": {
+      "gain": 0.0,
+      "interval": [
+        -0.07764720208798083,
+        0.07764720208798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "H4__complete_suffix::H1": {
+      "gain": -0.0004882812500000011,
+      "interval": [
+        -0.07813548333798083,
+        0.07715892083798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "H4__complete_suffix::C": {
+      "gain": 0.0,
+      "interval": [
+        -0.07764720208798083,
+        0.07764720208798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "C__write_only::H1": {
+      "gain": -0.0017903645833333335,
+      "interval": [
+        -0.07943756667131416,
+        0.0758568375046475
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "C__write_only::C": {
+      "gain": 0.0,
+      "interval": [
+        -0.07764720208798083,
+        0.07764720208798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "C__complete_suffix::H1": {
+      "gain": 0.0004882812499999987,
+      "interval": [
+        -0.07715892083798083,
+        0.07813548333798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    },
+    "C__complete_suffix::C": {
+      "gain": 0.0,
+      "interval": [
+        -0.07764720208798083,
+        0.07764720208798083
+      ],
+      "family_size": 12,
+      "delta": 0.05,
+      "independent_scenes": 2048
+    }
+  },
+  "core_parameters_unchanged": true,
+  "new_SNN_training": 0,
+  "formal_benchmark_completed": 0,
+  "audit_test_accessed": false,
+  "scope": "Actual two-layer feedforward MLP edge. Same pair rows as state analysis; not an independent replication. Each random control matches flips and total emitted count at every scene/time, so this tests unit/path pattern beyond these counts, not an isolated millisecond timing advantage."
+}

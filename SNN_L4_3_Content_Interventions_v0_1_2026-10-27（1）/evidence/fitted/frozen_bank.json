@@ -1,0 +1,2516 @@
+{
+  "erasers": {
+    "H1_l0_t3": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_0"
+        },
+        "matrix": {
+          "__array__": "array_1"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.0125818644824477e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_2"
+        },
+        "matrix": {
+          "__array__": "array_3"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.859273011172241e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_4"
+        },
+        "matrix": {
+          "__array__": "array_5"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 6.625286901112751e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_6"
+        },
+        "matrix": {
+          "__array__": "array_7"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.0125818644824477e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_8"
+        },
+        "matrix": {
+          "__array__": "array_9"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.0125818644824477e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_10"
+        },
+        "matrix": {
+          "__array__": "array_11"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.0125818644824477e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H1_l1_t3": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_12"
+        },
+        "matrix": {
+          "__array__": "array_13"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.110115291531014e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_14"
+        },
+        "matrix": {
+          "__array__": "array_15"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.8221817498427035e-17,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_16"
+        },
+        "matrix": {
+          "__array__": "array_17"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 1.0406001723291175e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_18"
+        },
+        "matrix": {
+          "__array__": "array_19"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.110115291531014e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_20"
+        },
+        "matrix": {
+          "__array__": "array_21"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.110115291531014e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_22"
+        },
+        "matrix": {
+          "__array__": "array_23"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.110115291531014e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H1_l0_t12": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_24"
+        },
+        "matrix": {
+          "__array__": "array_25"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.148898347800841e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_26"
+        },
+        "matrix": {
+          "__array__": "array_27"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 6.804674220172745e-17,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_28"
+        },
+        "matrix": {
+          "__array__": "array_29"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 2.296354342491812e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_30"
+        },
+        "matrix": {
+          "__array__": "array_31"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.148898347800841e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_32"
+        },
+        "matrix": {
+          "__array__": "array_33"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.148898347800841e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_34"
+        },
+        "matrix": {
+          "__array__": "array_35"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.148898347800841e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H1_l1_t12": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_36"
+        },
+        "matrix": {
+          "__array__": "array_37"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.387978207396512e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_38"
+        },
+        "matrix": {
+          "__array__": "array_39"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 8.723407908957826e-17,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_40"
+        },
+        "matrix": {
+          "__array__": "array_41"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 1.1050770615794414e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_42"
+        },
+        "matrix": {
+          "__array__": "array_43"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.387978207396512e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_44"
+        },
+        "matrix": {
+          "__array__": "array_45"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.387978207396512e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_46"
+        },
+        "matrix": {
+          "__array__": "array_47"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.387978207396512e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H1_l0_t15": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_48"
+        },
+        "matrix": {
+          "__array__": "array_49"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.4772303339398311e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_50"
+        },
+        "matrix": {
+          "__array__": "array_51"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.6006360311473432e-17,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_52"
+        },
+        "matrix": {
+          "__array__": "array_53"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 1.375435718820952e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_54"
+        },
+        "matrix": {
+          "__array__": "array_55"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.4772303339398311e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_56"
+        },
+        "matrix": {
+          "__array__": "array_57"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.4772303339398311e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_58"
+        },
+        "matrix": {
+          "__array__": "array_59"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.4772303339398311e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H1_l1_t15": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_60"
+        },
+        "matrix": {
+          "__array__": "array_61"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.921276731663499e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_62"
+        },
+        "matrix": {
+          "__array__": "array_63"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 5.76846725746153e-17,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_64"
+        },
+        "matrix": {
+          "__array__": "array_65"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 1.749390992989056e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_66"
+        },
+        "matrix": {
+          "__array__": "array_67"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.921276731663499e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_68"
+        },
+        "matrix": {
+          "__array__": "array_69"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.921276731663499e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_70"
+        },
+        "matrix": {
+          "__array__": "array_71"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.921276731663499e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H4_l0_t12": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_72"
+        },
+        "matrix": {
+          "__array__": "array_73"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.5696856639702843e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_74"
+        },
+        "matrix": {
+          "__array__": "array_75"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.2227924142908096e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_76"
+        },
+        "matrix": {
+          "__array__": "array_77"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 6.043059403561741e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_78"
+        },
+        "matrix": {
+          "__array__": "array_79"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.5696856639702843e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_80"
+        },
+        "matrix": {
+          "__array__": "array_81"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.5696856639702843e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_82"
+        },
+        "matrix": {
+          "__array__": "array_83"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.5696856639702843e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H4_l1_t12": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_84"
+        },
+        "matrix": {
+          "__array__": "array_85"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.5981979840156515e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_86"
+        },
+        "matrix": {
+          "__array__": "array_87"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.3715950255084397e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_88"
+        },
+        "matrix": {
+          "__array__": "array_89"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 2.1042406431439284e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_90"
+        },
+        "matrix": {
+          "__array__": "array_91"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.5981979840156515e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_92"
+        },
+        "matrix": {
+          "__array__": "array_93"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.5981979840156515e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_94"
+        },
+        "matrix": {
+          "__array__": "array_95"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 4.5981979840156515e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H4_l0_t15": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_96"
+        },
+        "matrix": {
+          "__array__": "array_97"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 5.575013114816356e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_98"
+        },
+        "matrix": {
+          "__array__": "array_99"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.0382001319342856e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_100"
+        },
+        "matrix": {
+          "__array__": "array_101"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 2.1444245900839296e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_102"
+        },
+        "matrix": {
+          "__array__": "array_103"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 5.575013114816356e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_104"
+        },
+        "matrix": {
+          "__array__": "array_105"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 5.575013114816356e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_106"
+        },
+        "matrix": {
+          "__array__": "array_107"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 5.575013114816356e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "H4_l1_t15": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_108"
+        },
+        "matrix": {
+          "__array__": "array_109"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.6961380536095663e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_110"
+        },
+        "matrix": {
+          "__array__": "array_111"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 5.240970949706208e-17,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_112"
+        },
+        "matrix": {
+          "__array__": "array_113"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 1.3438388523506311e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_114"
+        },
+        "matrix": {
+          "__array__": "array_115"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.6961380536095663e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_116"
+        },
+        "matrix": {
+          "__array__": "array_117"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.6961380536095663e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_118"
+        },
+        "matrix": {
+          "__array__": "array_119"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.6961380536095663e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "C_l0_t12": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_120"
+        },
+        "matrix": {
+          "__array__": "array_121"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.875927241876336e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_122"
+        },
+        "matrix": {
+          "__array__": "array_123"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 5.333852890863196e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_124"
+        },
+        "matrix": {
+          "__array__": "array_125"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 6.2079508986380755e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_126"
+        },
+        "matrix": {
+          "__array__": "array_127"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.875927241876336e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_128"
+        },
+        "matrix": {
+          "__array__": "array_129"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.875927241876336e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_130"
+        },
+        "matrix": {
+          "__array__": "array_131"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.875927241876336e-15,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "C_l1_t12": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_132"
+        },
+        "matrix": {
+          "__array__": "array_133"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.0885046013857216e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_134"
+        },
+        "matrix": {
+          "__array__": "array_135"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.2723416224164121e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_136"
+        },
+        "matrix": {
+          "__array__": "array_137"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 1.227690574350441e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_138"
+        },
+        "matrix": {
+          "__array__": "array_139"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.0885046013857216e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_140"
+        },
+        "matrix": {
+          "__array__": "array_141"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.0885046013857216e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_142"
+        },
+        "matrix": {
+          "__array__": "array_143"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 3.0885046013857216e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "C_l0_t15": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_144"
+        },
+        "matrix": {
+          "__array__": "array_145"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 8.227111260123397e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_146"
+        },
+        "matrix": {
+          "__array__": "array_147"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 1.4353014631571077e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_148"
+        },
+        "matrix": {
+          "__array__": "array_149"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 2.9156200017226457e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_150"
+        },
+        "matrix": {
+          "__array__": "array_151"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 8.227111260123397e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_152"
+        },
+        "matrix": {
+          "__array__": "array_153"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 8.227111260123397e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_154"
+        },
+        "matrix": {
+          "__array__": "array_155"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 8.227111260123397e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    },
+    "C_l1_t15": {
+      "leace": {
+        "method": "leace",
+        "mean": {
+          "__array__": "array_156"
+        },
+        "matrix": {
+          "__array__": "array_157"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.405550237526252e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "orth": {
+        "method": "orth",
+        "mean": {
+          "__array__": "array_158"
+        },
+        "matrix": {
+          "__array__": "array_159"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 7.793984724875715e-17,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "binary_mp": {
+        "method": "binary_mp",
+        "mean": {
+          "__array__": "array_160"
+        },
+        "matrix": {
+          "__array__": "array_161"
+        },
+        "removed_rank": 1,
+        "fit_cross_covariance_after_norm": 1.548756926723077e-16,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_0": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_162"
+        },
+        "matrix": {
+          "__array__": "array_163"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.405550237526252e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_1": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_164"
+        },
+        "matrix": {
+          "__array__": "array_165"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.405550237526252e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      },
+      "random_2": {
+        "method": "matched_rank_random",
+        "mean": {
+          "__array__": "array_166"
+        },
+        "matrix": {
+          "__array__": "array_167"
+        },
+        "removed_rank": 4,
+        "fit_cross_covariance_after_norm": 2.405550237526252e-09,
+        "relative_tolerance": 1e-10,
+        "guarantee": "Fit cross-covariance removal. Continuous target: affine squared-loss access; binary one-hot theory also requires declared convex loss. Not arbitrary nonlinear erasure."
+      }
+    }
+  },
+  "baseline_probes": {
+    "l0_t3": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_168"
+          },
+          {
+            "__array__": "array_169"
+          },
+          {
+            "__array__": "array_170"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_171"
+          },
+          "input.bias": {
+            "__array__": "array_172"
+          },
+          "output.weight": {
+            "__array__": "array_173"
+          },
+          "output.bias": {
+            "__array__": "array_174"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 100,
+        "initialization_seed": 43042
+      }
+    },
+    "l0_t12": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_175"
+          },
+          {
+            "__array__": "array_176"
+          },
+          {
+            "__array__": "array_177"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_178"
+          },
+          "input.bias": {
+            "__array__": "array_179"
+          },
+          "output.weight": {
+            "__array__": "array_180"
+          },
+          "output.bias": {
+            "__array__": "array_181"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 43042
+      }
+    },
+    "l0_t15": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_182"
+          },
+          {
+            "__array__": "array_183"
+          },
+          {
+            "__array__": "array_184"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_185"
+          },
+          "input.bias": {
+            "__array__": "array_186"
+          },
+          "output.weight": {
+            "__array__": "array_187"
+          },
+          "output.bias": {
+            "__array__": "array_188"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 43042
+      }
+    },
+    "l1_t3": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_189"
+          },
+          {
+            "__array__": "array_190"
+          },
+          {
+            "__array__": "array_191"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_192"
+          },
+          "input.bias": {
+            "__array__": "array_193"
+          },
+          "output.weight": {
+            "__array__": "array_194"
+          },
+          "output.bias": {
+            "__array__": "array_195"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 100,
+        "initialization_seed": 43042
+      }
+    },
+    "l1_t12": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_196"
+          },
+          {
+            "__array__": "array_197"
+          },
+          {
+            "__array__": "array_198"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_199"
+          },
+          "input.bias": {
+            "__array__": "array_200"
+          },
+          "output.weight": {
+            "__array__": "array_201"
+          },
+          "output.bias": {
+            "__array__": "array_202"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 43042
+      }
+    },
+    "l1_t15": {
+      "ridge": {
+        "kind": "ridge",
+        "head": [
+          {
+            "__array__": "array_203"
+          },
+          {
+            "__array__": "array_204"
+          },
+          {
+            "__array__": "array_205"
+          }
+        ],
+        "parameters": 759
+      },
+      "mlp": {
+        "kind": "budget_mlp",
+        "state": {
+          "input.weight": {
+            "__array__": "array_206"
+          },
+          "input.bias": {
+            "__array__": "array_207"
+          },
+          "output.weight": {
+            "__array__": "array_208"
+          },
+          "output.bias": {
+            "__array__": "array_209"
+          }
+        },
+        "input_dimension": 32,
+        "output_dimension": 23,
+        "hidden": 13,
+        "trained_parameters": 751,
+        "parameters": 751,
+        "lr": 0.02,
+        "selected_step": 400,
+        "initialization_seed": 43042
+      }
+    }
+  },
+  "refit_probes": {
+    "H1_l0_t3": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_210"
+            },
+            {
+              "__array__": "array_211"
+            },
+            {
+              "__array__": "array_212"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_213"
+            },
+            "input.bias": {
+              "__array__": "array_214"
+            },
+            "output.weight": {
+              "__array__": "array_215"
+            },
+            "output.bias": {
+              "__array__": "array_216"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_217"
+            },
+            {
+              "__array__": "array_218"
+            },
+            {
+              "__array__": "array_219"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_220"
+            },
+            {
+              "__array__": "array_221"
+            },
+            {
+              "__array__": "array_222"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H1_l1_t3": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_223"
+            },
+            {
+              "__array__": "array_224"
+            },
+            {
+              "__array__": "array_225"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_226"
+            },
+            "input.bias": {
+              "__array__": "array_227"
+            },
+            "output.weight": {
+              "__array__": "array_228"
+            },
+            "output.bias": {
+              "__array__": "array_229"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 200,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_230"
+            },
+            {
+              "__array__": "array_231"
+            },
+            {
+              "__array__": "array_232"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_233"
+            },
+            {
+              "__array__": "array_234"
+            },
+            {
+              "__array__": "array_235"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H1_l0_t12": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_236"
+            },
+            {
+              "__array__": "array_237"
+            },
+            {
+              "__array__": "array_238"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_239"
+            },
+            "input.bias": {
+              "__array__": "array_240"
+            },
+            "output.weight": {
+              "__array__": "array_241"
+            },
+            "output.bias": {
+              "__array__": "array_242"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_243"
+            },
+            {
+              "__array__": "array_244"
+            },
+            {
+              "__array__": "array_245"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_246"
+            },
+            {
+              "__array__": "array_247"
+            },
+            {
+              "__array__": "array_248"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H1_l1_t12": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_249"
+            },
+            {
+              "__array__": "array_250"
+            },
+            {
+              "__array__": "array_251"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_252"
+            },
+            "input.bias": {
+              "__array__": "array_253"
+            },
+            "output.weight": {
+              "__array__": "array_254"
+            },
+            "output.bias": {
+              "__array__": "array_255"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_256"
+            },
+            {
+              "__array__": "array_257"
+            },
+            {
+              "__array__": "array_258"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_259"
+            },
+            {
+              "__array__": "array_260"
+            },
+            {
+              "__array__": "array_261"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H1_l0_t15": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_262"
+            },
+            {
+              "__array__": "array_263"
+            },
+            {
+              "__array__": "array_264"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_265"
+            },
+            "input.bias": {
+              "__array__": "array_266"
+            },
+            "output.weight": {
+              "__array__": "array_267"
+            },
+            "output.bias": {
+              "__array__": "array_268"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_269"
+            },
+            {
+              "__array__": "array_270"
+            },
+            {
+              "__array__": "array_271"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_272"
+            },
+            {
+              "__array__": "array_273"
+            },
+            {
+              "__array__": "array_274"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H1_l1_t15": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_275"
+            },
+            {
+              "__array__": "array_276"
+            },
+            {
+              "__array__": "array_277"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_278"
+            },
+            "input.bias": {
+              "__array__": "array_279"
+            },
+            "output.weight": {
+              "__array__": "array_280"
+            },
+            "output.bias": {
+              "__array__": "array_281"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_282"
+            },
+            {
+              "__array__": "array_283"
+            },
+            {
+              "__array__": "array_284"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_285"
+            },
+            {
+              "__array__": "array_286"
+            },
+            {
+              "__array__": "array_287"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H4_l0_t12": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_288"
+            },
+            {
+              "__array__": "array_289"
+            },
+            {
+              "__array__": "array_290"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_291"
+            },
+            "input.bias": {
+              "__array__": "array_292"
+            },
+            "output.weight": {
+              "__array__": "array_293"
+            },
+            "output.bias": {
+              "__array__": "array_294"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_295"
+            },
+            {
+              "__array__": "array_296"
+            },
+            {
+              "__array__": "array_297"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_298"
+            },
+            {
+              "__array__": "array_299"
+            },
+            {
+              "__array__": "array_300"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H4_l1_t12": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_301"
+            },
+            {
+              "__array__": "array_302"
+            },
+            {
+              "__array__": "array_303"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_304"
+            },
+            "input.bias": {
+              "__array__": "array_305"
+            },
+            "output.weight": {
+              "__array__": "array_306"
+            },
+            "output.bias": {
+              "__array__": "array_307"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_308"
+            },
+            {
+              "__array__": "array_309"
+            },
+            {
+              "__array__": "array_310"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_311"
+            },
+            {
+              "__array__": "array_312"
+            },
+            {
+              "__array__": "array_313"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H4_l0_t15": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_314"
+            },
+            {
+              "__array__": "array_315"
+            },
+            {
+              "__array__": "array_316"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_317"
+            },
+            "input.bias": {
+              "__array__": "array_318"
+            },
+            "output.weight": {
+              "__array__": "array_319"
+            },
+            "output.bias": {
+              "__array__": "array_320"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_321"
+            },
+            {
+              "__array__": "array_322"
+            },
+            {
+              "__array__": "array_323"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_324"
+            },
+            {
+              "__array__": "array_325"
+            },
+            {
+              "__array__": "array_326"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "H4_l1_t15": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_327"
+            },
+            {
+              "__array__": "array_328"
+            },
+            {
+              "__array__": "array_329"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_330"
+            },
+            "input.bias": {
+              "__array__": "array_331"
+            },
+            "output.weight": {
+              "__array__": "array_332"
+            },
+            "output.bias": {
+              "__array__": "array_333"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_334"
+            },
+            {
+              "__array__": "array_335"
+            },
+            {
+              "__array__": "array_336"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_337"
+            },
+            {
+              "__array__": "array_338"
+            },
+            {
+              "__array__": "array_339"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "C_l0_t12": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_340"
+            },
+            {
+              "__array__": "array_341"
+            },
+            {
+              "__array__": "array_342"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_343"
+            },
+            "input.bias": {
+              "__array__": "array_344"
+            },
+            "output.weight": {
+              "__array__": "array_345"
+            },
+            "output.bias": {
+              "__array__": "array_346"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_347"
+            },
+            {
+              "__array__": "array_348"
+            },
+            {
+              "__array__": "array_349"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_350"
+            },
+            {
+              "__array__": "array_351"
+            },
+            {
+              "__array__": "array_352"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "C_l1_t12": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_353"
+            },
+            {
+              "__array__": "array_354"
+            },
+            {
+              "__array__": "array_355"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_356"
+            },
+            "input.bias": {
+              "__array__": "array_357"
+            },
+            "output.weight": {
+              "__array__": "array_358"
+            },
+            "output.bias": {
+              "__array__": "array_359"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_360"
+            },
+            {
+              "__array__": "array_361"
+            },
+            {
+              "__array__": "array_362"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_363"
+            },
+            {
+              "__array__": "array_364"
+            },
+            {
+              "__array__": "array_365"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "C_l0_t15": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_366"
+            },
+            {
+              "__array__": "array_367"
+            },
+            {
+              "__array__": "array_368"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_369"
+            },
+            "input.bias": {
+              "__array__": "array_370"
+            },
+            "output.weight": {
+              "__array__": "array_371"
+            },
+            "output.bias": {
+              "__array__": "array_372"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_373"
+            },
+            {
+              "__array__": "array_374"
+            },
+            {
+              "__array__": "array_375"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_376"
+            },
+            {
+              "__array__": "array_377"
+            },
+            {
+              "__array__": "array_378"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    },
+    "C_l1_t15": {
+      "leace": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_379"
+            },
+            {
+              "__array__": "array_380"
+            },
+            {
+              "__array__": "array_381"
+            }
+          ],
+          "parameters": 759
+        },
+        "mlp": {
+          "kind": "budget_mlp",
+          "state": {
+            "input.weight": {
+              "__array__": "array_382"
+            },
+            "input.bias": {
+              "__array__": "array_383"
+            },
+            "output.weight": {
+              "__array__": "array_384"
+            },
+            "output.bias": {
+              "__array__": "array_385"
+            }
+          },
+          "input_dimension": 32,
+          "output_dimension": 23,
+          "hidden": 13,
+          "trained_parameters": 751,
+          "parameters": 751,
+          "lr": 0.02,
+          "selected_step": 400,
+          "initialization_seed": 43042
+        }
+      },
+      "orth": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_386"
+            },
+            {
+              "__array__": "array_387"
+            },
+            {
+              "__array__": "array_388"
+            }
+          ],
+          "parameters": 759
+        }
+      },
+      "binary_mp": {
+        "ridge": {
+          "kind": "ridge",
+          "head": [
+            {
+              "__array__": "array_389"
+            },
+            {
+              "__array__": "array_390"
+            },
+            {
+              "__array__": "array_391"
+            }
+          ],
+          "parameters": 759
+        }
+      }
+    }
+  },
+  "delta_maps": {
+    "H1_l0_t3": {
+      "__array__": "array_392"
+    },
+    "H1_l1_t3": {
+      "__array__": "array_393"
+    },
+    "H1_l0_t12": {
+      "__array__": "array_394"
+    },
+    "H1_l1_t12": {
+      "__array__": "array_395"
+    },
+    "H1_l0_t15": {
+      "__array__": "array_396"
+    },
+    "H1_l1_t15": {
+      "__array__": "array_397"
+    },
+    "H4_l0_t12": {
+      "__array__": "array_398"
+    },
+    "H4_l1_t12": {
+      "__array__": "array_399"
+    },
+    "H4_l0_t15": {
+      "__array__": "array_400"
+    },
+    "H4_l1_t15": {
+      "__array__": "array_401"
+    },
+    "C_l0_t12": {
+      "__array__": "array_402"
+    },
+    "C_l1_t12": {
+      "__array__": "array_403"
+    },
+    "C_l0_t15": {
+      "__array__": "array_404"
+    },
+    "C_l1_t15": {
+      "__array__": "array_405"
+    }
+  }
+}

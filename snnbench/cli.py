@@ -10,7 +10,7 @@ def main(argv=None):
     p=sub.add_parser('download');p.add_argument('args',nargs=argparse.REMAINDER)
     p=sub.add_parser('datasets');p.add_argument('--tier',default='all');p.add_argument('--ids',nargs='*')
     p=sub.add_parser('doctor')
-    p=sub.add_parser('campaign-plan');p.add_argument('--root',required=True);p.add_argument('--archives',nargs='*',default=[]);p.add_argument('--seeds',nargs='+',type=int,default=[11,22,33,44,55]);p.add_argument('--profiles',nargs='+',default=['full','paired','learning']);p.add_argument('--materialize',action='store_true')
+    p=sub.add_parser('campaign-plan');p.add_argument('--root',required=True);p.add_argument('--data-root');p.add_argument('--archives',nargs='*',default=[]);p.add_argument('--seeds',nargs='+',type=int,default=[11,22,33,44,55]);p.add_argument('--profiles',nargs='+',default=['full','paired','learning']);p.add_argument('--materialize',action='store_true')
     p=sub.add_parser('campaign-stage');p.add_argument('--root',required=True);p.add_argument('--phase',choices=('preliminary','all_shared'),default='preliminary');p.add_argument('--checkpoints',choices=('all','terminal'),default='all');p.add_argument('--archive-scenes',type=int);p.add_argument('--archive-batch',type=int,default=8)
     p=sub.add_parser('post-worker');p.add_argument('--db',required=True);p.add_argument('--device',default='cuda:0');p.add_argument('--one',action='store_true')
     p=sub.add_parser('post-job');p.add_argument('--job',required=True);p.add_argument('--device',default='cpu')
@@ -63,7 +63,7 @@ def main(argv=None):
         result=run_suite(args.suite,args.source,args.config,args.out)
     elif args.command=='campaign-plan':
         from .campaign import campaign_plan
-        result=campaign_plan(args.root,args.archives,args.seeds,args.profiles,args.materialize)
+        result=campaign_plan(args.root,args.archives,args.seeds,args.profiles,args.materialize,args.data_root)
     elif args.command=='campaign-stage':
         from .campaign import stage_postprocessing
         result=stage_postprocessing(args.root,args.phase,args.checkpoints,args.archive_scenes,args.archive_batch)

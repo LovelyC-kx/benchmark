@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-30",
+  "scope": "CPU server-layout and source-upload handoff validation",
+  "test_suite": {
+    "command": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m unittest discover -s tests -v",
+    "tests": 64,
+    "passed": 64,
+    "seconds": 31.156
+  },
+  "requested_server_root": "/home/bohan_zhang/research/benchmark_temporal",
+  "staging_root": "/workspace/scratch/0086de0e9beb/bohan_layout_proof",
+  "generated_scripts_syntax_checked": [
+    "benchmark.sh",
+    "download_real.sh",
+    "postprocess.sh",
+    "smoke.sh",
+    "status.sh",
+    "train.sh"
+  ],
+  "runbook_bash_blocks_syntax_checked": 12,
+  "runbook_python_heredocs_checked": 3,
+  "data_path_integration": "An actual train + postprocessing subprocess uses the external cache; differing campaign cache locations are rejected",
+  "path_configuration_controls": [
+    "quoted/spaced path CLI execution",
+    "LF shell files",
+    "idempotent setup",
+    "custom configuration kept unless replacement requested",
+    "previous backup on explicit replacement",
+    "missing research master detected",
+    "archive revision marker read"
+  ],
+  "training_implementation_sha256": "d53c78c7c1de31dfbbe94c6c76a1847fa6e695f223919317615ecd70206c6a9a",
+  "analysis_implementation_sha256": "d33a74765e5e5ceb8c69599eff2b4e26d643a411ff16accd85e0bcdb70029bbf",
+  "files": {
+    "scripts/setup_server_layout.py": "b326253ed69a8865fa73d10f93edbbf8f02913f3635f7070d6fa417b6a9e552e",
+    "docs/BOHAN_SERVER_LAYOUT.md": "93db95c8375cf5ab6a704c1c6e382dcc511a6534e0b254d85069cb4834e83c5b",
+    "tests/test_server_layout.py": "1856e07fefe69b0286436eb003a2db2a48355e510e20bc83b4f6e7f34b4befd4",
+    "docs/verification/2026-10-30/bohan_server_layout/unit_tests.log": "59376c1efcd769400c290058ef140ba6e261d15a8e7308f1a8b4507b7491dc0a"
+  },
+  "remote_server_modified": false,
+  "gpu_training_started": false
+}

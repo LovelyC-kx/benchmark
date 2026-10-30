@@ -26,15 +26,16 @@ def hardware_inventory(storage_root=None):
             'storage_root':str(storage),'disk_free_bytes':disk.free,'declared_gpu_memory_GB':84,'budget_rule':'Measure actual bytes; begin with 80% as a resource-planning budget, not a changed training batch or an enforced allocator limit'}
 
 
-def campaign_plan(root,archives=(),seeds=(11,22,33,44,55),profiles=('full','paired','learning'),materialize=False):
+def campaign_plan(root,archives=(),seeds=(11,22,33,44,55),profiles=('full','paired','learning'),materialize=False,data_root=None):
     from .catalogue import task_bank,model_bank,compile_manifest
     from .coverage import plan_inventory
     if not profiles or len(set(profiles))!=len(profiles) or not seeds or len(set(seeds))!=len(seeds) or any(s<0 for s in seeds):raise ValueError('Distinct profiles and nonnegative seeds required')
     root=Path(root);root.mkdir(parents=True,exist_ok=True);source=Path(__file__).resolve().parents[1];commands=[];counts={}
+    data_output=Path(data_root).resolve() if data_root is not None else (root/'data').resolve()
     from .engine import implementation_hash
     if (root/'campaign.json').exists():
         previous=json.loads((root/'campaign.json').read_text())
-        if previous['profiles']!=list(profiles) or previous['seeds']!=list(seeds) or previous['archives']!=[str(p) for p in archives] or previous['training_implementation_sha256']!=implementation_hash():raise ValueError('Campaign design/source changed; use a new root to preserve prior evidence')
+        if previous['profiles']!=list(profiles) or previous['seeds']!=list(seeds) or previous['archives']!=[str(p) for p in archives] or previous['training_implementation_sha256']!=implementation_hash() or Path(previous['data_output']).resolve()!=data_output:raise ValueError('Campaign design/source/data location changed; use a new root to preserve prior evidence')
     for profile in profiles:
         if profile not in ('smoke','screen','full','expanded','paired','learning'):raise ValueError('Unknown campaign profile')
         manifest=root/'manifests'/(profile+'.jsonl');n=sum(len(model_bank(t,profile,'expanded')) for t in task_bank(profile))*len(seeds)
@@ -58,7 +59,7 @@ def campaign_plan(root,archives=(),seeds=(11,22,33,44,55),profiles=('full','pair
         for profile in profiles:training_queue=enqueue(root/'train.sqlite',root/'manifests'/(profile+'.jsonl'))
     plan={'schema':'four_phase_campaign_v1','profiles':list(profiles),'seeds':list(seeds),'archives':[str(p) for p in archives],
         'training_implementation_sha256':implementation_hash(),
-        'training_output':str((root/'runs').resolve()),'data_output':str((root/'data').resolve()),'counts':counts,'compile_commands':commands,'materialized':materialize,
+        'training_output':str((root/'runs').resolve()),'data_output':str(data_output),'counts':counts,'compile_commands':commands,'materialized':materialize,
         'training_queue':training_queue,'training_database':str((root/'train.sqlite').resolve()),
         'execution_order':['broad_train_capture_preliminary','all_original_layer_analysis','discovery_mechanism_theory_design','evidence_led_paper_and_followups'],
         'selection_policy':'All declared configurations and all results remain in the discovery set; engineering calibration does not select scientific winners.',

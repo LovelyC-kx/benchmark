@@ -2,6 +2,8 @@
 
 更新：2026-10-30。以下适用于Linux/Bash，在已经可用的CUDA版PyTorch环境执行。代码来自`codex/l1-l4-unified-pipeline-20261029`分支；运行期间固定代码版本。SQLite队列所在的`SNN_ROOT`使用本机磁盘。
 
+用户当前的`/home/bohan_zhang/research/benchmark_temporal`布局优先使用[专用目录与上传说明](BOHAN_SERVER_LAYOUT.md)。本页保留通用`/data/snn`示例。
+
 主流程依次为1—9；第10部分是专项和运维命令。`all_shared`执行当前14项公共分析。原计划其余专用子节的适配、第三步深入研究和第四步论文构思沿覆盖表继续进行。
 
 ## 1. 获取代码、安装和检查

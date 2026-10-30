@@ -4,6 +4,8 @@
 
 当前版本0.4.0。执行优先级见[四阶段方案](FOUR_PHASE_EXECUTION_PLAN.md)：先广泛跑和留存，再完整执行L1—L6，随后追踪发现与机制，最后组织论文。
 
+2026-10-30补充：[用户服务器目录与SCP上传](BOHAN_SERVER_LAYOUT.md)已匹配`/home/bohan_zhang/research/benchmark_temporal`。初始化器生成路径合同与六个外层入口；`campaign-plan --data-root`将缓存放在data/cache，训练与后处理使用同一路径。当前64项CPU测试通过，含实际外部缓存训练/后处理以及配置保护、源码marker与跨工作目录脚本检查；[验收回执](verification/2026-10-30/bohan_server_layout/summary.json)保留实际范围。
+
 ## 已经接通的工程链
 
 1. 配置合同 → 稳定实验ID → 逐场景数据生成/规范化真实数据。

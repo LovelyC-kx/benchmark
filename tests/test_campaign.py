@@ -84,7 +84,7 @@ class CampaignExecution(unittest.TestCase):
 
     def test_post_queue_executes_actual_analysis_and_serializes_same_run(self):
         with tempfile.TemporaryDirectory() as tmp:
-            root=Path(tmp);campaign_plan(root,seeds=(11,),profiles=('smoke',));s=self.tiny();run=train(s,root/'runs',root/'data');r=stage_postprocessing(root,checkpoints='terminal',archive_scenes=2,archive_batch=2)
+            root=Path(tmp);cache=root/'external_data_cache';campaign_plan(root,seeds=(11,),profiles=('smoke',),data_root=cache);s=self.tiny();run=train(s,root/'runs',cache);r=stage_postprocessing(root,checkpoints='terminal',archive_scenes=2,archive_batch=2)
             self.assertEqual(r['new_jobs'],4)
             with connect(r['database']) as con:
                 first=_claim_post(con,'owner1',300,2);self.assertIsNotNone(first);self.assertIsNone(_claim_post(con,'owner2',300,2));con.execute("UPDATE jobs SET state='pending',owner=NULL,attempts=0");con.commit()

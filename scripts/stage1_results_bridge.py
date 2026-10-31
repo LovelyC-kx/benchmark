@@ -35,6 +35,9 @@ def patch_analysis(code):
         (code/'analysis.py',
         '    torch.manual_seed(seed);mean=fit.mean(0);scale=np.maximum(fit.std(0),1e-6)',
         '    torch.manual_seed(seed);mean=fit.mean(0);std=fit.std(0);scale=np.where(std<=1e-8,1.,np.maximum(std,1e-6))'),
+        (code/'analysis.py',
+        '        T=I.shape[1];weights=[];contributions=[]',
+        "        if cell.mode=='notd':b=np.zeros_like(b)  # NoTD has zero forward carry\n        T=I.shape[1];weights=[];contributions=[]"),
         (code/'campaign.py',
         "    override=replace(spec.analysis,modules=modules,eval_split='development')",
         '''    # compiled_stage1_recipe_dispatch_v1: preserve each compiled recipe.
@@ -48,18 +51,19 @@ def patch_analysis(code):
     if expected and expected!=implementation_hash('analysis'):
         raise ValueError('Analysis source changed after staging; prepare a new revision queue')
     override=replace(spec.analysis,**settings) if settings else replace(spec.analysis,modules=modules,eval_split='development')''')]
-    prepared=[]
+    prepared={}
     for path,before,after in changes:
-        text=path.read_text()
+        original,text=prepared.get(path,(None,None))
+        if original is None:original=text=path.read_text()
         if after in text:continue
         if text.count(before)!=1:raise RuntimeError('Unrecognized source; nothing patched: '+str(path))
-        updated=text.replace(before,after);compile(updated,str(path),'exec');prepared.append((path,text,updated))
-    for path,old,new in prepared:
+        updated=text.replace(before,after);compile(updated,str(path),'exec');prepared[path]=(original,updated)
+    for path,(old,new) in prepared.items():
         backup=path.with_name(path.name+'.before_stage1_bridge_'+hashlib.sha256(old.encode()).hexdigest()[:12]+'.bak')
         if not backup.exists():backup.write_text(old)
         temp=path.with_name(path.name+'.tmp-'+str(os.getpid()));temp.write_text(new);os.chmod(temp,path.stat().st_mode & 0o777);os.replace(temp,path)
         print('PATCHED',path,flush=True)
-    return [str(x[0]) for x in prepared]
+    return [str(x) for x in prepared]
 def inspect(stage):
     stage=Path(stage);plan=json.loads((stage/'campaign.json').read_text())
     with ro(stage/'train.sqlite') as con:

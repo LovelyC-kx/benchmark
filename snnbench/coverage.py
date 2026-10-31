@@ -54,10 +54,40 @@ def plan_inventory(root,out=None):
             elif isinstance(value,list):
                 for v in value:walk(v)
         walk(content)
+    # The JSON maps are literature routes, not an exhaustive section list.
+    # In particular, the original L4.3 map stops at 4.3.7 while its protocol
+    # explicitly defines 4.3.8. Reconcile explicit headings in root protocols;
+    # nested historical snapshots and incidental prose references stay separate.
+    protocol_headings=[]
+    for p in sorted(root.glob('SNN_L*.md')):
+        module=re.match(r'^SNN_L([1-6])_([0-9]+)(?:_|\.)',p.name)
+        if module is None:continue
+        prefix=module[1]+'.'+str(int(module[2]))
+        for number,line in enumerate(p.read_text().splitlines(),1):
+            if not re.match(r'^#{1,6}\s+',line):continue
+            # The explicit scientific identifier is independent of the prose
+            # chapter counter, e.g. "## 8. 4.3.8：...".
+            for match in re.finditer(r'(?<![\d.])([1-6](?:\.\d+){2,3})(?![\d.])',line):
+                ident=match[1]
+                if not ident.startswith(prefix+'.'):continue
+                relative=str(p.relative_to(root));title=line[match.end():].strip(' ：:-—')
+                evidence={'section_id':ident,'source':relative,'line':number,'heading':line,
+                          'source_sha256':file_hash(p),'source_kind':'explicit_protocol_heading'}
+                protocol_headings.append(evidence)
+                row=subsections.setdefault(ident,{'id':'section:'+ident,'source_section_id':ident,
+                    'sources':[],'code_candidates':[],'title':title or ident,
+                    'status':'specialized_checkpoint_adapter_required','complete_section_claim':False})
+                if relative not in row['sources']:row['sources'].append(relative)
+                row.setdefault('protocol_headings',[]).append(evidence)
+                if row['title'] in (ident,'Subsection referenced by original literature/plan map'):
+                    row['title']=title or ident
     result={'schema':'all_six_layer_plan_inventory_v1','source_root':str(root.resolve()),'master_cards':cards,
         'specialized_subsections':list(subsections.values()),'source_documents':sources,'reference_heading_index':headings,
+        'explicit_protocol_heading_index':protocol_headings,
         'counts':{'master_cards':len(cards),'specialized_subsections':len(subsections),'source_documents':len(sources),'reference_headings':len(headings)},
         'all_planned_analysis_complete':False,
+        'inventory_policy':'Master cards plus JSON routes plus explicit module-matched root protocol headings. All entries remain pending; inventory inclusion is not execution.',
         'meaning':'Executable shared components, source-specific requirements and future work remain separate; every original plan source stays addressable.'}
     if out:atomic_json(out,result)
     return result
+

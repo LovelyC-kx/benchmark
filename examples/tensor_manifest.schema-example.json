@@ -1,0 +1,43 @@
+{
+  "_note": "Schema example only; replace paths/IDs. Supply enough independent train/test groups for ten roles. No real data are included.",
+  "dataset_id": "your_dataset_v1",
+  "name": "causal current-target reconstruction",
+  "group_unit": "original_ROI_or_video",
+  "records": [
+    {
+      "official_split": "train",
+      "group_id": "roi_001",
+      "scene_id": "roi_001_window_000",
+      "input": {
+        "path": "x.npy"
+      },
+      "layout": "TCHW",
+      "target": {
+        "path": "target.npy"
+      },
+      "timestamps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "availability_times": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_deadline": 5,
+      "target_is_verified_clean": true,
+      "regions": {
+        "H": {
+          "path": "history_only_mask.npy"
+        }
+      }
+    }
+  ]
+}

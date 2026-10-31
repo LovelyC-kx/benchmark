@@ -1,0 +1,64 @@
+test_budget_is_an_error_not_silent_subsampling (test_efficient_campaign.FullDesign.test_budget_is_an_error_not_silent_subsampling) ... ok
+test_every_base_model_has_three_seeds_and_sentinels_have_five (test_efficient_campaign.FullDesign.test_every_base_model_has_three_seeds_and_sentinels_have_five) ... ok
+test_exact_design_count_and_all_conditions (test_efficient_campaign.FullDesign.test_exact_design_count_and_all_conditions) ... ok
+test_full_local_factorials_not_posthoc_substitutes (test_efficient_campaign.FullDesign.test_full_local_factorials_not_posthoc_substitutes) ... ok
+test_plan_matches_legacy_ids_and_keeps_source_readonly (test_efficient_campaign.FullDesign.test_plan_matches_legacy_ids_and_keeps_source_readonly) ... ok
+test_training_budget_and_evidence_not_shortened (test_efficient_campaign.FullDesign.test_training_budget_and_evidence_not_shortened) ... ok
+test_checkpoint_requires_exact_unambiguous_gpu_affinity (test_efficient_campaign.GPUAdmission.test_checkpoint_requires_exact_unambiguous_gpu_affinity) ... ok
+test_duplicate_coordinator_lock_is_rejected (test_efficient_campaign.GPUAdmission.test_duplicate_coordinator_lock_is_rejected) ... ok
+test_foreign_gpu_process_is_rejected_not_killed (test_efficient_campaign.GPUAdmission.test_foreign_gpu_process_is_rejected_not_killed) ... ok
+test_four_explicit_gpus_and_no_duplicate (test_efficient_campaign.GPUAdmission.test_four_explicit_gpus_and_no_duplicate) ... ok
+test_large_job_stays_exclusive_even_with_higher_slot_cap (test_efficient_campaign.GPUAdmission.test_large_job_stays_exclusive_even_with_higher_slot_cap) ... ok
+test_limited_deployment_then_pause_and_resume (test_efficient_campaign.GPUAdmission.test_limited_deployment_then_pause_and_resume) ... ok
+test_orphan_in_launch_record_gap_is_adopted (test_efficient_campaign.GPUAdmission.test_orphan_in_launch_record_gap_is_adopted) ... ok
+test_scheduler_runs_each_job_once_across_four_mock_gpus_and_keeps_failure (test_efficient_campaign.GPUAdmission.test_scheduler_runs_each_job_once_across_four_mock_gpus_and_keeps_failure) ... ok
+test_slots_reserve_and_per_device_budget (test_efficient_campaign.GPUAdmission.test_slots_reserve_and_per_device_budget) ... ok
+test_drain_defers_pending_without_touching_running_or_other_projects (test_efficient_campaign.Migration.test_drain_defers_pending_without_touching_running_or_other_projects) ... ok
+test_missing_checkpoint_prevents_false_reuse (test_efficient_campaign.Migration.test_missing_checkpoint_prevents_false_reuse) ... ok
+test_reuse_complete_and_failed_results_and_keep_outside_evidence (test_efficient_campaign.Migration.test_reuse_complete_and_failed_results_and_keep_outside_evidence) ... ok
+test_reuse_requires_checkpoint_source_and_complete_budget (test_efficient_campaign.Migration.test_reuse_requires_checkpoint_source_and_complete_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 39.788s
+
+OK
+
+test_budget_failure_does_not_modify_source_or_emit_partial_plan (test_compile_stage1.CompileAndMigration.test_budget_failure_does_not_modify_source_or_emit_partial_plan) ... ok
+test_compile_keeps_old_readonly_and_routes_every_requirement (test_compile_stage1.CompileAndMigration.test_compile_keeps_old_readonly_and_routes_every_requirement) ... ok
+test_missing_original_identity_does_not_become_a_new_experiment (test_compile_stage1.CompileAndMigration.test_missing_original_identity_does_not_become_a_new_experiment) ... ok
+test_new_contract_absent_from_old_database_stays_pending_on_activation (test_compile_stage1.CompileAndMigration.test_new_contract_absent_from_old_database_stays_pending_on_activation) ... ok
+test_new_contract_previous_failure_is_not_silently_retried (test_compile_stage1.CompileAndMigration.test_new_contract_previous_failure_is_not_silently_retried) ... ok
+test_wrong_source_campaign_is_rejected_before_writing (test_compile_stage1.CompileAndMigration.test_wrong_source_campaign_is_rejected_before_writing) ... ok
+test_only_related_foreign_supervisor_is_paused_and_own_children_are_ignored (test_compile_stage1.RelatedCampaignSafety.test_only_related_foreign_supervisor_is_paused_and_own_children_are_ignored) ... ok
+test_classification_reconstruction_real_and_forward_factorial (test_compile_stage1.Stage1Design.test_classification_reconstruction_real_and_forward_factorial) ... ok
+test_exact_count_and_six_layers (test_compile_stage1.Stage1Design.test_exact_count_and_six_layers) ... ok
+test_expected_analysis_jobs_and_formation_preserve_roles (test_compile_stage1.Stage1Design.test_expected_analysis_jobs_and_formation_preserve_roles) ... ok
+test_learning_has_matched_gain_forward_and_declared_rule_changes (test_compile_stage1.Stage1Design.test_learning_has_matched_gain_forward_and_declared_rule_changes) ... ok
+test_missing_real_archive_is_explicit (test_compile_stage1.Stage1Design.test_missing_real_archive_is_explicit) ... ok
+test_requirement_omission_fails_instead_of_dropping (test_compile_stage1.Stage1Design.test_requirement_omission_fails_instead_of_dropping) ... ok
+test_three_seeds_complete_budget_and_explicit_physical_width (test_compile_stage1.Stage1Design.test_three_seeds_complete_budget_and_explicit_physical_width) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 52.405s
+
+OK
+
+test_deeper_subsections_and_multiple_sources_preserve_provenance (test_coverage_protocol_headings.ProtocolHeadingCoverage.test_deeper_subsections_and_multiple_sources_preserve_provenance) ... ok
+test_inventory_is_not_execution_and_master_cards_remain_intact (test_coverage_protocol_headings.ProtocolHeadingCoverage.test_inventory_is_not_execution_and_master_cards_remain_intact) ... ok
+test_merge_map_and_protocol_without_losing_code_routes (test_coverage_protocol_headings.ProtocolHeadingCoverage.test_merge_map_and_protocol_without_losing_code_routes) ... ok
+test_references_counters_other_modules_and_nested_snapshots_are_not_requirements (test_coverage_protocol_headings.ProtocolHeadingCoverage.test_references_counters_other_modules_and_nested_snapshots_are_not_requirements) ... ok
+test_unrouted_protocol_section_is_retained (test_coverage_protocol_headings.ProtocolHeadingCoverage.test_unrouted_protocol_section_is_retained) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.020s
+
+OK
+
+test_bad_hash_changes_no_installed_files (test_stage1_install.Stage1Installer.test_bad_hash_changes_no_installed_files) ... ok
+test_unpinned_ref_is_rejected (test_stage1_install.Stage1Installer.test_unpinned_ref_is_rejected) ... ok
+test_verified_install_keeps_backups (test_stage1_install.Stage1Installer.test_verified_install_keeps_backups) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.266s
+
+OK

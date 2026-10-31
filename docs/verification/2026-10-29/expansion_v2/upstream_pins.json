@@ -1,0 +1,89 @@
+{
+  "checked_on": "2026-10-29",
+  "sources": {
+    "neuroseq": [
+      "liyc5929/neuroseqbench",
+      "af3c3204df0c3bedc9abfde3a01cc62f42effde5"
+    ],
+    "soul": [
+      "yudi-mars/Soul",
+      "e3dc3237bfbe1876886f3beb77b6d53c6c016232"
+    ],
+    "spikingtsf": [
+      "spikora/SpikingTSF",
+      "6154af0585bf615b4a47ce77c6869117b40178d0"
+    ],
+    "seqsnn": [
+      "microsoft/SeqSNN",
+      "15cbacb123362c97c0aa0f6f861c18f4f77e3e8f"
+    ],
+    "spikemamba": [
+      "Brain-Inspired-Computing-Lab/SpikeMamba",
+      "d864263e5a3c3da45905b9baafddafd969df97e1"
+    ],
+    "tslif": [
+      "kkking-kk/TS-LIF",
+      "a59826a6c7f62d0f16edbafdbb28db65bebd9f69"
+    ],
+    "spikf": [
+      "WWJ-creator/SpikF",
+      "041e3980ac770c2f5465674b2975f05dddf3a2ca"
+    ],
+    "rhythm": [
+      "YinsongYan/Rhythm-SNN",
+      "33c5e29ac2b4715cf7ddde4d9e0b891be32f12d8"
+    ],
+    "tsl": [
+      "THUML/Time-Series-Library",
+      "4e938a1767106324dd753b2a44832bf870a0252e"
+    ],
+    "mamba": [
+      "state-spaces/mamba",
+      "e9594ce1c732d97440f0332fdc43170a2294dbfa"
+    ],
+    "s4": [
+      "state-spaces/s4",
+      "e757cef57d89e448c413de7325ed5601aceaac13"
+    ],
+    "neurobench": [
+      "NeuroBench/neurobench",
+      "e521c28f5798cb40bb9423758bf066dad53fe070"
+    ],
+    "spiliformer": [
+      "KirinZheng/SpiLiFormer",
+      "23c6bf9fa927ae1edc593df56193ad46a43d7034"
+    ],
+    "meta": [
+      "BICLab/Spike-Driven-Transformer-V2",
+      "35f245f4f79acf1a2b3ef22698c58ab05c1ede33"
+    ],
+    "resformer": [
+      "xyshi2000/SpikingResformer",
+      "3f751275dedfda8b0a4ed0bf50e85e02a4335f3e"
+    ],
+    "qkformer": [
+      "zhouchenlin2096/QKFormer",
+      "4c7e0356dd535fec683b6a33214ddd2c5b45e56e"
+    ],
+    "spikingformer": [
+      "TheBrainLab/Spikingformer",
+      "94d575475e1f76e4c7d58e85882d156b279ee66e"
+    ],
+    "spikformer": [
+      "ZK-Zhou/spikformer",
+      "621268981827af47aa666c1b5f774de4281d90ad"
+    ],
+    "evsnn": [
+      "LinZhu111/EVSNN",
+      "9404c0a8dfc4a692ce7332774f36575b3213cb7c"
+    ],
+    "spikingssm": [
+      "shenshuaijie/SDN",
+      "709640e53796a1546f2636cd6c4e1a1193e81418"
+    ],
+    "utilise": [
+      "prs-eth/U-TILISE",
+      "1ea50fe1e4f1840a14b3f23062334077fc5f943b"
+    ]
+  }
+}

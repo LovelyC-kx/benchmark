@@ -1,0 +1,382 @@
+{
+  "scope": "tiny CPU synthetic/format fixtures, not full real datasets or converged benchmark results",
+  "implementation_sha256": "d7203d18d6814afc2925dd1f63ec4d938f611a44c208d463ebcc9e01438da9b9",
+  "runs": [
+    {
+      "run_id": "1aaaed928be21a10f0ba7eea",
+      "backbone": "mamba_ref",
+      "task": "tagged_load",
+      "objective": "regression",
+      "status": "trained",
+      "updates": 8,
+      "parameters_changed": true,
+      "parameters": 828,
+      "initial_parameter_sha256": "ecf7afed0f0d343fce3253ebac2b557ef14f0ac6d612cfd3d6e5c17e00184f8a",
+      "final_parameter_sha256": "85aef148ec525a2928cccfbb21be84d19d41c4dd3dc861ff64e9bed90524a49a",
+      "checkpoint_sha256": "2c7bd75de1cf9f5f389b98731c5d78b93b40bf3ff7bac1eb19941dbcbed34c45",
+      "analysis_modules": [
+        "task_controls",
+        "working_point",
+        "mechanism",
+        "probes",
+        "geometry",
+        "temporal",
+        "access",
+        "selective",
+        "communication",
+        "interventions",
+        "recovery",
+        "reconstruction",
+        "anova",
+        "theory"
+      ],
+      "analysis_receipt": {
+        "status": "analyzed",
+        "contract": {
+          "checkpoint_sha256": "2c7bd75de1cf9f5f389b98731c5d78b93b40bf3ff7bac1eb19941dbcbed34c45",
+          "parameter_sha256": "b7737ad4c30b6fd1bb734eb71e88674090e16f8642338c9ffe137a71845f7514",
+          "analysis": {
+            "fit_scenes": 24,
+            "select_scenes": 16,
+            "eval_scenes": 16,
+            "batch_size": 8,
+            "max_features": 8,
+            "max_targets": 8,
+            "ridge_alphas": [
+              0.0001,
+              0.01,
+              1.0,
+              100.0
+            ],
+            "modules": [
+              "task_controls",
+              "working_point",
+              "mechanism",
+              "probes",
+              "geometry",
+              "temporal",
+              "communication",
+              "access",
+              "selective",
+              "interventions",
+              "recovery",
+              "reconstruction",
+              "anova",
+              "theory"
+            ],
+            "eval_split": "development",
+            "interval_resamples": 20,
+            "delta": 0.05,
+            "mlp_steps": 3,
+            "anova_scenes": 8
+          },
+          "implementation_sha256": "b2a05f8c48ac76a472176c94f1c463ddcd4bae3a53de45354b2367d6e91183db",
+          "training_implementation_sha256": "d7203d18d6814afc2925dd1f63ec4d938f611a44c208d463ebcc9e01438da9b9",
+          "run_id": "1aaaed928be21a10f0ba7eea"
+        },
+        "report_sha256": "c137f4d2d34f76630f454124122b155b21222bdcc9591aa4d5f0de65223e114f",
+        "statistical_scope": "Exploratory marginal bootstrap intervals. Confirmatory families and stopping rules must be frozen before audit."
+      },
+      "forecast_metrics": null
+    },
+    {
+      "run_id": "67cb6b0fb25ec2f0b4710753",
+      "backbone": "transformer",
+      "task": "tagged_load",
+      "objective": "classification",
+      "status": "trained",
+      "updates": 8,
+      "parameters_changed": true,
+      "parameters": 669,
+      "initial_parameter_sha256": "8b7d5abe59b8bd5eee943af51cce60f2e6b6fa456d18f37d446d7d1693b954c4",
+      "final_parameter_sha256": "6afac8c8f44fdd16638125ec57cfd4b9a1c5d3aa0bd09eb2b6a7aa55465199a7",
+      "checkpoint_sha256": "b59a8c93113123aa8b0e5ea18302662098333027f04c973b5029bba8db4339af",
+      "analysis_modules": [
+        "task_controls",
+        "working_point",
+        "mechanism",
+        "probes",
+        "geometry",
+        "temporal",
+        "access",
+        "selective",
+        "communication",
+        "interventions",
+        "recovery",
+        "reconstruction",
+        "anova",
+        "theory"
+      ],
+      "analysis_receipt": {
+        "status": "analyzed",
+        "contract": {
+          "checkpoint_sha256": "b59a8c93113123aa8b0e5ea18302662098333027f04c973b5029bba8db4339af",
+          "parameter_sha256": "6afac8c8f44fdd16638125ec57cfd4b9a1c5d3aa0bd09eb2b6a7aa55465199a7",
+          "analysis": {
+            "fit_scenes": 24,
+            "select_scenes": 16,
+            "eval_scenes": 16,
+            "batch_size": 8,
+            "max_features": 8,
+            "max_targets": 8,
+            "ridge_alphas": [
+              0.0001,
+              0.01,
+              1.0,
+              100.0
+            ],
+            "modules": [
+              "task_controls",
+              "working_point",
+              "mechanism",
+              "probes",
+              "geometry",
+              "temporal",
+              "communication",
+              "access",
+              "selective",
+              "interventions",
+              "recovery",
+              "reconstruction",
+              "anova",
+              "theory"
+            ],
+            "eval_split": "development",
+            "interval_resamples": 20,
+            "delta": 0.05,
+            "mlp_steps": 3,
+            "anova_scenes": 8
+          },
+          "implementation_sha256": "b2a05f8c48ac76a472176c94f1c463ddcd4bae3a53de45354b2367d6e91183db",
+          "training_implementation_sha256": "d7203d18d6814afc2925dd1f63ec4d938f611a44c208d463ebcc9e01438da9b9",
+          "run_id": "67cb6b0fb25ec2f0b4710753"
+        },
+        "report_sha256": "4786460ecb84f8bcb3625f203f022248a3729c3595fc012111db72a4834543c9",
+        "statistical_scope": "Exploratory marginal bootstrap intervals. Confirmatory families and stopping rules must be frozen before audit."
+      },
+      "forecast_metrics": null
+    },
+    {
+      "run_id": "e912af94b0e199cd5ff8a015",
+      "backbone": "conv_lif_rnn",
+      "task": "spatial_v2",
+      "objective": "reconstruction",
+      "status": "trained",
+      "updates": 8,
+      "parameters_changed": true,
+      "parameters": 496,
+      "initial_parameter_sha256": "7361c8adee1f1145b2ac2203c7beda55eff903a357d0b6caf934eb4a005d3974",
+      "final_parameter_sha256": "1e04513ae2f2903fe90c005fff80c86065c0109fe72dde2b5c5a90e499fa3903",
+      "checkpoint_sha256": "ee070bb51744833bc884209983588e520a7ea942d8f154d3b98eda045ef28f94",
+      "analysis_modules": [
+        "task_controls",
+        "working_point",
+        "mechanism",
+        "probes",
+        "geometry",
+        "temporal",
+        "access",
+        "selective",
+        "communication",
+        "interventions",
+        "recovery",
+        "reconstruction",
+        "anova",
+        "theory"
+      ],
+      "analysis_receipt": {
+        "status": "analyzed",
+        "contract": {
+          "checkpoint_sha256": "ee070bb51744833bc884209983588e520a7ea942d8f154d3b98eda045ef28f94",
+          "parameter_sha256": "1e04513ae2f2903fe90c005fff80c86065c0109fe72dde2b5c5a90e499fa3903",
+          "analysis": {
+            "fit_scenes": 24,
+            "select_scenes": 16,
+            "eval_scenes": 16,
+            "batch_size": 8,
+            "max_features": 8,
+            "max_targets": 8,
+            "ridge_alphas": [
+              0.0001,
+              0.01,
+              1.0,
+              100.0
+            ],
+            "modules": [
+              "task_controls",
+              "working_point",
+              "mechanism",
+              "probes",
+              "geometry",
+              "temporal",
+              "communication",
+              "access",
+              "selective",
+              "interventions",
+              "recovery",
+              "reconstruction",
+              "anova",
+              "theory"
+            ],
+            "eval_split": "development",
+            "interval_resamples": 20,
+            "delta": 0.05,
+            "mlp_steps": 3,
+            "anova_scenes": 8
+          },
+          "implementation_sha256": "b2a05f8c48ac76a472176c94f1c463ddcd4bae3a53de45354b2367d6e91183db",
+          "training_implementation_sha256": "d7203d18d6814afc2925dd1f63ec4d938f611a44c208d463ebcc9e01438da9b9",
+          "run_id": "e912af94b0e199cd5ff8a015"
+        },
+        "report_sha256": "174de91f8a346b8685ec72d498af98216f23e4fea8f5da98d1fb4772cd23253b",
+        "statistical_scope": "Exploratory marginal bootstrap intervals. Confirmatory families and stopping rules must be frozen before audit."
+      },
+      "forecast_metrics": null
+    },
+    {
+      "run_id": "da31e2c45e9321e32ec900c0",
+      "backbone": "dilated_tcn",
+      "task": "format_fixture_forecast",
+      "objective": "regression",
+      "status": "trained",
+      "updates": 8,
+      "parameters_changed": true,
+      "parameters": 210,
+      "initial_parameter_sha256": "47bc2c41951dae2c2ee2864664325e737a7e49eecb8be0a04b11549b7dca2cf5",
+      "final_parameter_sha256": "adc11b8d00aadd31996ab5ad0d3c787bd2bde70d57676a29234224c9a52b7e72",
+      "checkpoint_sha256": "0d0f9e128aa58c6768ba1d80392826c5ad995be5e9c602df56c7a61b72dc4f7d",
+      "analysis_modules": [
+        "task_controls",
+        "working_point",
+        "mechanism",
+        "probes",
+        "geometry",
+        "temporal",
+        "access",
+        "selective",
+        "communication",
+        "interventions",
+        "recovery",
+        "reconstruction",
+        "anova",
+        "theory"
+      ],
+      "analysis_receipt": {
+        "status": "analyzed",
+        "contract": {
+          "checkpoint_sha256": "0d0f9e128aa58c6768ba1d80392826c5ad995be5e9c602df56c7a61b72dc4f7d",
+          "parameter_sha256": "adc11b8d00aadd31996ab5ad0d3c787bd2bde70d57676a29234224c9a52b7e72",
+          "analysis": {
+            "fit_scenes": 24,
+            "select_scenes": 16,
+            "eval_scenes": 16,
+            "batch_size": 8,
+            "max_features": 8,
+            "max_targets": 8,
+            "ridge_alphas": [
+              0.0001,
+              0.01,
+              1.0,
+              100.0
+            ],
+            "modules": [
+              "task_controls",
+              "working_point",
+              "mechanism",
+              "probes",
+              "geometry",
+              "temporal",
+              "communication",
+              "access",
+              "selective",
+              "interventions",
+              "recovery",
+              "reconstruction",
+              "anova",
+              "theory"
+            ],
+            "eval_split": "development",
+            "interval_resamples": 20,
+            "delta": 0.05,
+            "mlp_steps": 3,
+            "anova_scenes": 8
+          },
+          "implementation_sha256": "b2a05f8c48ac76a472176c94f1c463ddcd4bae3a53de45354b2367d6e91183db",
+          "training_implementation_sha256": "d7203d18d6814afc2925dd1f63ec4d938f611a44c208d463ebcc9e01438da9b9",
+          "run_id": "da31e2c45e9321e32ec900c0"
+        },
+        "report_sha256": "105cf27ba89f7e11c7442899a2d8786a485e2d105642b5cc1bccb5edf724bfb7",
+        "statistical_scope": "Exploratory marginal bootstrap intervals. Confirmatory families and stopping rules must be frozen before audit."
+      },
+      "forecast_metrics": {
+        "MSE_standardized": {
+          "mean": 1.2507768959512027,
+          "interval": [
+            1.149413615573248,
+            1.4990135009584387
+          ],
+          "n_scenes": 16,
+          "method": "source-group percentile bootstrap; marginal exploratory interval",
+          "independent_groups": 2,
+          "delta": 0.05
+        },
+        "MAE_standardized": {
+          "mean": 0.9559991328715114,
+          "interval": [
+            0.9060958935585304,
+            1.0782111475155467
+          ],
+          "n_scenes": 16,
+          "method": "source-group percentile bootstrap; marginal exploratory interval",
+          "independent_groups": 2,
+          "delta": 0.05
+        },
+        "MSE_original_units": {
+          "mean": 0.6251347370162627,
+          "interval": [
+            0.574608483120855,
+            0.7488725016580771
+          ],
+          "n_scenes": 16,
+          "method": "source-group percentile bootstrap; marginal exploratory interval",
+          "independent_groups": 2,
+          "delta": 0.05
+        },
+        "MAE_original_units": {
+          "mean": 0.6756420499015987,
+          "interval": [
+            0.640403167068896,
+            0.7619413547980143
+          ],
+          "n_scenes": 16,
+          "method": "source-group percentile bootstrap; marginal exploratory interval",
+          "independent_groups": 2,
+          "delta": 0.05
+        },
+        "persistence_MSE_standardized": {
+          "mean": 0.03579688537865877,
+          "interval": [
+            0.029191915211933,
+            0.03849391486340512
+          ],
+          "n_scenes": 16,
+          "method": "source-group percentile bootstrap; marginal exploratory interval",
+          "independent_groups": 2,
+          "delta": 0.05
+        },
+        "persistence_MAE_standardized": {
+          "mean": 0.1605254914611578,
+          "interval": [
+            0.14184343814849854,
+            0.16815399656382699
+          ],
+          "n_scenes": 16,
+          "method": "source-group percentile bootstrap; marginal exploratory interval",
+          "independent_groups": 2,
+          "delta": 0.05
+        }
+      }
+    }
+  ],
+  "analysis_implementation_sha256": "b2a05f8c48ac76a472176c94f1c463ddcd4bae3a53de45354b2367d6e91183db"
+}

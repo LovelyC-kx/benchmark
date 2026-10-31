@@ -1,0 +1,108 @@
+{
+  "schema": "four_phase_campaign_v1",
+  "profiles": [
+    "full",
+    "paired",
+    "learning"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "archives": [],
+  "training_implementation_sha256": "d53c78c7c1de31dfbbe94c6c76a1847fa6e695f223919317615ecd70206c6a9a",
+  "training_output": "/workspace/scratch/0086de0e9beb/campaign_v04_design/runs",
+  "data_output": "/workspace/scratch/0086de0e9beb/campaign_v04_design/data",
+  "counts": {
+    "full": {
+      "synthetic_runs_before_cross_profile_dedup": 315270,
+      "archives_requested": 0
+    },
+    "paired": {
+      "synthetic_runs_before_cross_profile_dedup": 125210,
+      "archives_requested": 0
+    },
+    "learning": {
+      "synthetic_runs_before_cross_profile_dedup": 84290,
+      "archives_requested": 0
+    }
+  },
+  "compile_commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "snnbench",
+      "compile",
+      "--profile",
+      "full",
+      "--model-roster",
+      "expanded",
+      "--seeds",
+      "11",
+      "22",
+      "33",
+      "44",
+      "55",
+      "--out",
+      "/workspace/scratch/0086de0e9beb/campaign_v04_design/manifests/full.jsonl"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "snnbench",
+      "compile",
+      "--profile",
+      "paired",
+      "--model-roster",
+      "expanded",
+      "--seeds",
+      "11",
+      "22",
+      "33",
+      "44",
+      "55",
+      "--out",
+      "/workspace/scratch/0086de0e9beb/campaign_v04_design/manifests/paired.jsonl"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "snnbench",
+      "compile",
+      "--profile",
+      "learning",
+      "--model-roster",
+      "expanded",
+      "--seeds",
+      "11",
+      "22",
+      "33",
+      "44",
+      "55",
+      "--out",
+      "/workspace/scratch/0086de0e9beb/campaign_v04_design/manifests/learning.jsonl"
+    ]
+  ],
+  "materialized": false,
+  "training_queue": null,
+  "training_database": "/workspace/scratch/0086de0e9beb/campaign_v04_design/train.sqlite",
+  "execution_order": [
+    "broad_train_capture_preliminary",
+    "all_original_layer_analysis",
+    "discovery_mechanism_theory_design",
+    "evidence_led_paper_and_followups"
+  ],
+  "selection_policy": "All declared configurations and all results remain in the discovery set; engineering calibration does not select scientific winners.",
+  "capture_contract": "Every saved checkpoint remains replayable. Complete coordinate trajectories are archived on declared fixed scene banks; coordinate-limited probe caches remain separate.",
+  "phase2_contract": "All six layers, original subsections and specialized controls remain in all_layer_coverage.json. A shared 14-module receipt is one part of that coverage.",
+  "source_counts": {
+    "master_cards": 40,
+    "specialized_subsections": 29,
+    "source_documents": 33,
+    "reference_headings": 907
+  },
+  "runtime": "Source code is local; this command does not connect to or start a remote GPU server."
+}

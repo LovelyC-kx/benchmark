@@ -1,0 +1,1200 @@
+{
+  "schema": "all_six_layer_plan_inventory_v1",
+  "source_root": "/workspace/scratch/0086de0e9beb/benchmark",
+  "master_cards": [
+    {
+      "id": "master:L1.1",
+      "source_module_id": "L1.1",
+      "title": "历史必要性",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "固定目标、查询和预测期限，比较完整历史与近期窗口的最优风险；可枚举时先给精确参照，真实数据再给经验基线。",
+      "shared_runner_components": [
+        "task_controls"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L1.2",
+      "source_module_id": "L1.2",
+      "title": "历史结构：无序、次序和度量时间",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "定义完整项多重集、无度量时间的事件序列和含时间的观察；在真正嵌套的观察下比较风险。",
+      "shared_runner_components": [
+        "task_controls",
+        "temporal"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L1.C",
+      "source_module_id": "L1.C",
+      "title": "任务合同、目标粒度与模型权限",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "每个任务写输入单位、目标函数、查询时机、期限、可见字段、分组划分和最小需求；分类标签与连续恢复对象分别登记。",
+      "shared_runner_components": [
+        "task_controls"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L1.D",
+      "source_module_id": "L1.D",
+      "title": "自然配对与标签合法性",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "区分同标签合法样本、重算标签的合法样本、离分布诊断扰动；优先只更换一个独立因素并固定其余内容、噪声与时刻。",
+      "shared_runner_components": [
+        "recovery"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L1.E",
+      "source_module_id": "L1.E",
+      "title": "真实时间、模拟步和可用时间",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "区分实际采样、重复内部仿真、确定性插值和更长窗口；记录每个派生观察的availability与预测期限。",
+      "shared_runner_components": [
+        "task_controls"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L1.F",
+      "source_module_id": "L1.F",
+      "title": "分类与重建的需求分离",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "同源目标分别定义类别和完整连续内容；图像逐像素分当前可见C、仅历史可见H、对目标全程未见U。",
+      "shared_runner_components": [
+        "task_controls",
+        "reconstruction"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L1.G",
+      "source_module_id": "L1.G",
+      "title": "现成数据与自建协议覆盖",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "沿用D01–D93来源候选与另外G01–G09补充协议，按任务需求、时间合法性和论文证据用途选择，不把下载目录当已验收主表。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L2.1",
+      "source_module_id": "L2.1",
+      "title": "完整状态、路径与更新时间",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "登记Cell的v/a/syn、RNN/TCN cache、读出累计与时钟；逐步核对pre→事件→post→辅助更新；用快照继续运行。",
+      "shared_runner_components": [
+        "mechanism"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L2.2",
+      "source_module_id": "L2.2",
+      "title": "写入幅度、编码与工作点",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "显式写J=g·eta(beta)·x，保留原始写入与DC归一化两轨，记录电流、margin与自然事件比例。",
+      "shared_runner_components": [
+        "working_point"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L2.3",
+      "source_module_id": "L2.3",
+      "title": "衰减、时间常数与频率响应",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "以连续无重置递推建立可解析核、幅相和物理时间参照；再检查事件驱动系统的自然响应。",
+      "shared_runner_components": [
+        "mechanism",
+        "theory"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L2.4",
+      "source_module_id": "L2.4",
+      "title": "阈值、发放事件与重置反馈",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "使用continuous/threshold/analog_hard_ref/lif_hard二维交叉；emit/reset/aux分支独立；实现路径核、自然扰动和SG分别记录。",
+      "shared_runner_components": [
+        "mechanism"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L2.5",
+      "source_module_id": "L2.5",
+      "title": "辅助状态、异质时间尺度与耦合",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "分别清v、aux、cell；区分慢突触、阈值适应与电流适应；同宽、同状态量、参数/工作点分别报告。",
+      "shared_runner_components": [
+        "working_point",
+        "probes"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L2.6",
+      "source_module_id": "L2.6",
+      "title": "骨架路径、传播与局部替代",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "八骨架逐项登记时间cache、当帧残差与跨层Cell；比较cell/cache/core/system清除，必要时按层定位。",
+      "shared_runner_components": [
+        "communication",
+        "interventions"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L2.7",
+      "source_module_id": "L2.7",
+      "title": "机制证据卡与跨层交接",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "每个操作记录checkpoint、完整范围、切点、事件/工作点、自然输入与人工操作身份，再连接内容和任务结果。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L3.1",
+      "source_module_id": "L3.1",
+      "title": "内容与来源表征分解",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "沿用A/B/C独立潜变量、内容标签与单因素配对；在独立数据上测目标/非目标恢复和条件/边际内容响应。",
+      "shared_runner_components": [
+        "probes",
+        "geometry"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L3.2",
+      "source_module_id": "L3.2",
+      "title": "时空叠加与资源关系",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "保留K×L×N三个轴；区分物理状态Ncore、观测Dobs和编码器瓶颈；先建线性可逆/带噪参照，再做学习后编码与冻结操作。",
+      "shared_runner_components": [
+        "probes",
+        "geometry"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L3.3",
+      "source_module_id": "L3.3",
+      "title": "目标—干扰几何",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "分别估计目标编码、非目标配对协方差、目标对齐干扰和噪声；结合条件数、噪声与受限读出解释已确认的恢复差。",
+      "shared_runner_components": [
+        "geometry",
+        "selective"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L3.4",
+      "source_module_id": "L3.4",
+      "title": "Wakhloo几何与泛化",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "按W0源码/版本→W1 Gaussian等价校准→W2稀疏码适用性→W3随机潜变量任务执行；与ridge、受限MLP和真实头并行。",
+      "shared_runner_components": [
+        "theory"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L3.5",
+      "source_module_id": "L3.5",
+      "title": "膜状态、脉冲与联合载体",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "固定内容、层和时刻，比较pre/post、spike、aux/cache及合法联合观察；检查膜清除后其他载体能否恢复或影响后续输出。",
+      "shared_runner_components": [
+        "probes",
+        "access"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L3.6",
+      "source_module_id": "L3.6",
+      "title": "跨时间几何与重新编码",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "逐时刻独立解码与train-time×test-time交叉解码并行；分别分析空白保持和持续输入；再连接不同年龄内容的旋转/重编码。",
+      "shared_runner_components": [
+        "temporal"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L3.7",
+      "source_module_id": "L3.7",
+      "title": "跨层传播与通信子空间",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "比较源表示内容、层间映射、接收方内容与真实输出；先线性通信/噪声归一化，FIT等信息转移仅在样本与假设支持时使用。",
+      "shared_runner_components": [
+        "communication"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L4.1",
+      "source_module_id": "L4.1",
+      "title": "观测权限与实际读出",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "把last/mean/sum/exponential/trajectory与output/pre/post登记为不同观察；原头、同权限重训头、额外内部诊断分组。",
+      "shared_runner_components": [
+        "access"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L4.2",
+      "source_module_id": "L4.2",
+      "title": "可恢复性与真正利用的区分",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "冻结表示比较原头、同权限重训、线性和受限非线性探针；结合任务标签而非只恢复全部z。",
+      "shared_runner_components": [
+        "access",
+        "theory"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L4.3",
+      "source_module_id": "L4.3",
+      "title": "内容、载体与通路干预",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "从自然内容配对到冻结状态操作，再到明确通路/子空间操作；同时测目标改变、非目标损伤、输出变化。",
+      "shared_runner_components": [
+        "selective",
+        "interventions"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L4.4",
+      "source_module_id": "L4.4",
+      "title": "恢复、补丁与方向验证",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "在同一权重同一快照上做donor/recipient、清除/patchback及非目标对照；恢复成功与失败均保留。",
+      "shared_runner_components": [
+        "recovery"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L4.5",
+      "source_module_id": "L4.5",
+      "title": "重建中的历史调用",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "沿C/H/U区域与已对齐来源，做内容配对、载体定位、读出恢复和残差分析；保留完整空间状态。",
+      "shared_runner_components": [
+        "reconstruction"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L5.1",
+      "source_module_id": "L5.1",
+      "title": "时长、负荷与能力边界",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "基于L1已认证任务，分别扫描实际空白年龄、内容负荷、目标维数、噪声与观测预算；能力曲线而非单总分。",
+      "shared_runner_components": [
+        "probes"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L5.2",
+      "source_module_id": "L5.2",
+      "title": "更新、保护与历史干扰",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "从整体stale过渡到多项目最新值与受保护项目；分开过时目标、无关历史、冲突与纯噪声。",
+      "shared_runner_components": [
+        "interventions",
+        "recovery"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L5.3",
+      "source_module_id": "L5.3",
+      "title": "真实任务、模态与分布变化",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "按分类/恢复各选有辨别力的数据，先审计时间语义，再留出噪声、更新频率、时长、规则或模态。",
+      "shared_runner_components": [
+        "task_controls"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L5.4",
+      "source_module_id": "L5.4",
+      "title": "留出预测与设计效用",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "事先写条件→机制→修改的规则，用未见任务/架构/条件评估；比较随机、默认、等预算验证选择与强基线。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L5.5",
+      "source_module_id": "L5.5",
+      "title": "鲁棒性、资源与系统价值",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "分别报告参数、持久状态、活动、训练/推理内存和实测延迟；鲁棒性先校验攻击/测量器有效性。",
+      "shared_runner_components": [
+        "working_point"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L6.1",
+      "source_module_id": "L6.1",
+      "title": "时间信用分配与前向状态",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "沿用full/detach/notd，明确full与detach固定前向而改梯度，notd改前向；冻结后统一probe与操作。",
+      "shared_runner_components": [
+        "mechanism",
+        "probes"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L6.2",
+      "source_module_id": "L6.2",
+      "title": "替代梯度、reset梯度与等价前向",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "先验证相同权重下的前向等价，再改SG形状/尺度、detach_reset或MPR类等价表达，记录梯度与后训练内容。",
+      "shared_runner_components": [
+        "mechanism",
+        "probes"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L6.3",
+      "source_module_id": "L6.3",
+      "title": "归一化、编码与初始工作点",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "检查bias、norm、首步锚点、编码非线性、beta初始化与状态初值；共同编码器保持输入绑定可表示性。",
+      "shared_runner_components": [
+        "working_point"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L6.4",
+      "source_module_id": "L6.4",
+      "title": "优化、课程、初始化与公平预算",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "固定每模型可比较的调参/选择预算，单独做课程与初始化扩展；记录成功率、更新数和失败run。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:L6.5",
+      "source_module_id": "L6.5",
+      "title": "表征形成与可学习参数",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "保存训练阶段checkpoint，复用L3内容/几何/载体测量，区分plif单参数学习、通道异质性初值与适应状态作用。",
+      "shared_runner_components": [
+        "geometry",
+        "temporal"
+      ],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:X.PAPER",
+      "source_module_id": "X.PAPER",
+      "title": "论文主张、图表与论证顺序",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "沿用P1测量条件、P2内容×载体×时间的实际作用、P3留出设计效用；第三层A/B/C嵌入主张，不按指标排列正文。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:X.STATS",
+      "source_module_id": "X.STATS",
+      "title": "统计、复现与证据等级",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "按场景/序列/种子等正确单位划分和估计，区分代数、工具、pilot、确认和部署；记录配置、哈希、环境与完整失败。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:X.COMP",
+      "source_module_id": "X.COMP",
+      "title": "最近邻、原文版本与贡献边界",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "每节先列已有覆盖、借用方法、尚待验证增量和不能声称的首次；上传稿、arXiv、会议/期刊终版分别建版本。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    },
+    {
+      "id": "master:X.CODE",
+      "source_module_id": "X.CODE",
+      "title": "代码入口与实现交接",
+      "source": "SNN_Research_Master_Index_2026-10-24.md",
+      "source_sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "execution_logic": "按模块先检索计划片段、再文献卡、再当前代码与校准；保留原始快照和只读代码参考，不静默覆盖。",
+      "shared_runner_components": [],
+      "status": "awaiting_campaign_execution_and_specialized_adapters",
+      "complete_section_claim": false,
+      "completion_requires": "Run every applicable original subsection/control; attach outputs or a specific applicability reason. Shared-module execution alone does not close the section."
+    }
+  ],
+  "specialized_subsections": [
+    {
+      "id": "section:3.6.2",
+      "source_section_id": "3.6.2",
+      "sources": [
+        "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:3.6.4",
+      "source_section_id": "3.6.4",
+      "sources": [
+        "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:3.6.3",
+      "source_section_id": "3.6.3",
+      "sources": [
+        "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:3.6.6",
+      "source_section_id": "3.6.6",
+      "sources": [
+        "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:3.6.1",
+      "source_section_id": "3.6.1",
+      "sources": [
+        "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:3.6.5",
+      "source_section_id": "3.6.5",
+      "sources": [
+        "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.3.1",
+      "source_section_id": "4.3.1",
+      "sources": [
+        "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.3.7",
+      "source_section_id": "4.3.7",
+      "sources": [
+        "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.3.2",
+      "source_section_id": "4.3.2",
+      "sources": [
+        "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.3.3",
+      "source_section_id": "4.3.3",
+      "sources": [
+        "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.3.6",
+      "source_section_id": "4.3.6",
+      "sources": [
+        "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.3.4",
+      "source_section_id": "4.3.4",
+      "sources": [
+        "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.3.5",
+      "source_section_id": "4.3.5",
+      "sources": [
+        "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Subsection referenced by original literature/plan map",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.1",
+      "source_section_id": "4.4.1",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_recovery_main.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/recovery_math44.py",
+          "exists": true
+        }
+      ],
+      "title": "Four groups and information permissions",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.2",
+      "source_section_id": "4.4.2",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/snapshot_recovery44.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_scoped_snapshot_grid.py",
+          "exists": true
+        }
+      ],
+      "title": "Operational restoration ceilings",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.3",
+      "source_section_id": "4.4.3",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/fit_recovery_bank.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_recovery_main.py",
+          "exists": true
+        }
+      ],
+      "title": "Content, donor, time and dose specificity",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.4",
+      "source_section_id": "4.4.4",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_recovery_supplements.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/recovery_math44.py",
+          "exists": true
+        }
+      ],
+      "title": "Joint owners and nonadditivity",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.5",
+      "source_section_id": "4.4.5",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_binary_recovery.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/edge_reblock44.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_path_reblocking.py",
+          "exists": true
+        }
+      ],
+      "title": "Actual communication and reblocking",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.6",
+      "source_section_id": "4.4.6",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_event_geometry.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/run_recovery_supplements.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/recovery_math44.py",
+          "exists": true
+        }
+      ],
+      "title": "Risk/output interaction and event geometry",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.7",
+      "source_section_id": "4.4.7",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/verify_l44_artifacts.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/tests/test_recovery44.py",
+          "exists": true
+        }
+      ],
+      "title": "Independent scene confirmation and eligibility",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.4.8",
+      "source_section_id": "4.4.8",
+      "sources": [
+        "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Frozen diagnostic-to-design predictions",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.1",
+      "source_section_id": "4.5.1",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/spatial_data45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/real_reconstruction_contract45.py",
+          "exists": true
+        }
+      ],
+      "title": "Target and permissions",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.2",
+      "source_section_id": "4.5.2",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/spatial_data45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/run_spatial_controls45.py",
+          "exists": true
+        }
+      ],
+      "title": "Source,coverage,alignment",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.3",
+      "source_section_id": "4.5.3",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/spatial_readers45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/fit_spatial_bank45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/run_matched_summaries45.py",
+          "exists": true
+        }
+      ],
+      "title": "Spatial readers and budgets",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.4",
+      "source_section_id": "4.5.4",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/spatial_runtime45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/run_spatial_main45.py",
+          "exists": true
+        }
+      ],
+      "title": "Actual post-state/source interventions",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.5",
+      "source_section_id": "4.5.5",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/spatial_metrics45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/run_spatial_supplements45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/audit_spatial_authors45.py",
+          "exists": true
+        }
+      ],
+      "title": "Frequency,geometry,absolute content",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.6",
+      "source_section_id": "4.5.6",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/run_spatial_supplements45.py",
+          "exists": true
+        },
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/resource_accounting45.py",
+          "exists": true
+        }
+      ],
+      "title": "Outdated history and joint owners",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.7",
+      "source_section_id": "4.5.7",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [
+        {
+          "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/real_reconstruction_contract45.py",
+          "exists": true
+        }
+      ],
+      "title": "Real data transition",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    },
+    {
+      "id": "section:4.5.8",
+      "source_section_id": "4.5.8",
+      "sources": [
+        "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json"
+      ],
+      "code_candidates": [],
+      "title": "Paper and design forecasts",
+      "status": "specialized_checkpoint_adapter_required",
+      "complete_section_claim": false
+    }
+  ],
+  "source_documents": [
+    {
+      "path": "SNN_L3_2_Protocol_v0_2_2026-10-25.md",
+      "sha256": "bd3cf2ce3fd944fd0176e2582b8dfbbd6cdd15b74094b419ca251b0009124ac4",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_2_Review_v0_3_2026-10-25.md",
+      "sha256": "2fdd2a2cd246d9137726fd1f391551faf02df969f2b953d7f3f850da51d2cf1c",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_3_1_Decomposition_v0_1_2026-10-25.md",
+      "sha256": "85912c5b8c4f0d358230bbf92d221d7ca975dc3db566fcb5265bc6d8eb303d8b",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_3_2_Subspaces_v0_1_2026-10-25.md",
+      "sha256": "bd916cf0dec472d437847bbe16d840e661395fd932ff4d68ca2fdb9a64a857a3",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_3_3_Nonlinear_v0_2_2026-10-25.md",
+      "sha256": "421b2d88a43d4c66d55f3ebf546761901d2810dc797e61510270988ff65544b5",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_3_Deepening_Audit_v0_1_2026-10-25.md",
+      "sha256": "24237e978713d70af0f9f010664cb8c7f3cbe72dcaf5faf4035a60c81a84ee4d",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_4_Deep_Review_and_Execution_v0_2_2026-10-25.md",
+      "sha256": "0116a0d92f318ed2d023533b9a3c40f469eff168590e789188ad5c947f11f7b0",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_4_to_3_7_Research_Protocol_2026-10-25.md",
+      "sha256": "b0ce7622c717a9d67e683663d3730ae35793df34e380779f65728391e2dced60",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_6_Deep_Review_and_Execution_2026-10-26.md",
+      "sha256": "9e1d12cbd213935f8a216accc811084df7b11b84072c86caf97676f461de86f4",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_6_Delivery_Guide_2026-10-27.md",
+      "sha256": "266fe0db13abc6ad170c163ec3d98bb92ca655645ee095f0fd6bcd825c6ecece",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_6_Paper_and_Experiment_Specification_2026-10-27.md",
+      "sha256": "c0fb3177b27d223bc457e731f12eaed2ccc01ee9591b552c1da5b5cc74d5419b",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_7_Deep_Review_and_Execution_2026-10-27.md",
+      "sha256": "6deb965a20af7709a118cfa7baa7f45a53f13b281b6dab705686fbfb93d20cb3",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_1_Deep_Review_and_Execution_2026-10-27.md",
+      "sha256": "29345717ca4d09391cc4e3411ec639dd56943d2b2ffae8c172158d02cb5f0faf",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_2_Deep_Review_and_Execution_2026-10-27.md",
+      "sha256": "c10f75e0e1d6383d73f36e879503836ea886b56cfa6385189edba2a4752c0fa1",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_2_Literature_and_Code_Map_2026-10-27.md",
+      "sha256": "7887fe528df52174242c875257d15aa59302849f6828fb5892afc9de01f6095e",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_3_Deep_Review_and_Execution_2026-10-27.md",
+      "sha256": "c10b0efb0303e632b37970e7f3586c4233fd5b77cae281b6d011ee949933fb88",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_3_Literature_and_Code_Map_2026-10-27.md",
+      "sha256": "f2beeded430366f49ff67debf5f1e11957b9cb86b4f384c7c8b219c712777398",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_3_Mathematical_Specification_2026-10-27.md",
+      "sha256": "ec7ad2e356586ed1b6dfba3777979a07902860b522e4b7d15195d5c459ab8b47",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_4_Deep_Review_and_Execution_2026-10-27.md",
+      "sha256": "e45e0f332d664894cdd83ad87d2ad75da16e69257f969a575c6a72c398d9f8f8",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_4_Literature_and_Code_Map_2026-10-27.md",
+      "sha256": "462c9114e13c6ccf3ea3e6024fa16c25e50a37f8a0f7f28474b51ce73119af66",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_4_Mathematical_Specification_2026-10-27.md",
+      "sha256": "59c5cf32e1507837a72085fa4f1c1a5f3ca301c8ce7f305efee3fce1145b0fb0",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_5_Data_Download_and_Adaptation_2026-10-27.md",
+      "sha256": "e25a42f4909975bdc37f92a7bf87ddfd531fe77cff2fa3236786132208d09948",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_5_Deep_Review_and_Execution_2026-10-27.md",
+      "sha256": "32370ab6f32463824a2399ebb9673b7eb923ec6e3773553b1a7b103e73a958f3",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_5_Literature_and_Code_Map_2026-10-27.md",
+      "sha256": "3e500d4469689a3fb62a34ff623e3e27baa1537a62047203d28897be6401f9ef",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_5_Mathematical_Specification_2026-10-27.md",
+      "sha256": "b06579c737009b770169a480c9409e94a88f58574f3a3596da8a0de5112d9704",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L4_Mathematical_and_Latent_Framework_2026-10-27.md",
+      "sha256": "565060be23189aab30dd259984e61f05d71dd670adffc048f5f43c54b860ffe4",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_Research_Master_Index_2026-10-24.md",
+      "sha256": "4373e233f7f52bc78c44ad26153ed531d3524fda69cb66bc0f477f3af2598eee",
+      "kind": "research_document"
+    },
+    {
+      "path": "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/references/literature_use_and_plan_coverage.json",
+      "sha256": "c4604e34630241691bfeeeb242fd885bb48cbd27e8de552828f8356d5609a0f5",
+      "kind": "original_coverage_map"
+    },
+    {
+      "path": "SNN_L4_1_Access_and_Readout_v0_1_2026-10-27/SNN_L4_1_Access_and_Readout_v0_1_2026-10-27/references/literature_and_plan_coverage.json",
+      "sha256": "e075cf1ddcb9fb1be2826725bc7e0aa4e7be72389a74dd4d2d176cdb6d34777f",
+      "kind": "original_coverage_map"
+    },
+    {
+      "path": "SNN_L4_2_Latent_Usability_v0_1_2026-10-27（1）/references/literature_and_plan_coverage.json",
+      "sha256": "64920c20e3b8dc9b964236fd4d9cbe4606c1d3e631448941168b72211f7a9fde",
+      "kind": "original_coverage_map"
+    },
+    {
+      "path": "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/references/literature_use_and_plan_coverage.json",
+      "sha256": "1acd7b9811cfe5065723c27e02b0149abf2655ff56482a980b18d19cb391341e",
+      "kind": "original_coverage_map"
+    },
+    {
+      "path": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/references/l44_plan_coverage.json",
+      "sha256": "4f958185b8bd981f49f5c4dbd1b48019ca680fd22db5577a0d758b007edd47ef",
+      "kind": "original_coverage_map"
+    },
+    {
+      "path": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/references/l45_plan_coverage.json",
+      "sha256": "628ce5b0deaefd101d0faec5b3bd66c100640044af39c9cdb4f32bad91ed6e0e",
+      "kind": "original_coverage_map"
+    }
+  ],
+  "counts": {
+    "master_cards": 40,
+    "specialized_subsections": 29,
+    "source_documents": 33,
+    "reference_headings": 907
+  },
+  "all_planned_analysis_complete": false,
+  "meaning": "Executable shared components, source-specific requirements and future work remain separate; every original plan source stays addressable.",
+  "heading_index_note": "Full 907-heading index is regenerated by campaign-plan; this versioned receipt keeps source hashes, cards and specialized subsections."
+}

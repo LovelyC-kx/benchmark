@@ -1,0 +1,11 @@
+{
+  "host": "5852f47cb570",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "torch": "2.9.1+cpu",
+  "cuda_runtime": null,
+  "visible_gpus": [],
+  "storage_root": "/workspace/scratch/0086de0e9beb/campaign_v04_design",
+  "disk_free_bytes": 26534055936,
+  "declared_gpu_memory_GB": 84,
+  "budget_rule": "Measure actual bytes; begin with 80% as a resource-planning budget, not a changed training batch or an enforced allocator limit"
+}

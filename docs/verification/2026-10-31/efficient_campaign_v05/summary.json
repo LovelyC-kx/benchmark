@@ -1,0 +1,48 @@
+{
+  "schema": "efficient_campaign_v05_verification_v1",
+  "reference_training_commit": "61e7240ccd7002300cf8ca4000522a83ead3bc83",
+  "changed_existing_training_files": [],
+  "controller_sha256": "6ac1f79fca44039fadc5c38af19b1b68c21609992643be5a1772af017025bd57",
+  "local_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "tests_passed": 19,
+  "design_fixture": {
+    "core_synthetic_contracts": 62,
+    "full_synthetic_contracts": 762,
+    "real_contract_shapes": 27,
+    "covered_task_conditions": 789,
+    "unique_training_identities": 43885,
+    "package_additions": {
+      "core": 21705,
+      "full_condition_axes": 6300,
+      "paired_local_factorial": 7776,
+      "learning_local_factorial": 2304,
+      "cross_backbone_boundary": 1992,
+      "five_seed_sentinels": 3886
+    },
+    "duplicate_additions": 78
+  },
+  "legacy_run_count_reported_by_user": 555405,
+  "count_reduction_factor": 12.655918878888002,
+  "server_legacy_identity_matching_required": true,
+  "tests_scope": [
+    "real catalogue/spec generation",
+    "read-only planning and exact identity matching against fixture legacy database",
+    "frozen manifest integrity",
+    "backup and graceful legacy drain",
+    "checkpoint identity/source/full-budget validation with mocked checkpoint deserialization",
+    "retain completed and failed legacy evidence",
+    "mocked four-GPU scheduling, CPU and memory admission",
+    "foreign-process protection",
+    "orphan child adoption and duplicate-controller rejection",
+    "limited job invocation and pause/resume"
+  ],
+  "not_verified_locally": [
+    "actual downloaded corpora",
+    "user GPU execution or throughput",
+    "GPU model numerical equivalence or convergence",
+    "all specialized original L1-L6 analyses",
+    "author-native reproduction"
+  ],
+  "training_or_batch_budget_reduced": false,
+  "runtime_speedup_claim": null
+}

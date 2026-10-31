@@ -3,6 +3,12 @@ from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parent
 PARENT=ROOT/'parent_l43'
+if not PARENT.is_dir():
+    if (ROOT/'parnetl43'/'bridge43.py').is_file(): PARENT=ROOT/'parnetl43'
+    else:
+        PARENT=next((base/'SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）' for base in ROOT.parents
+                     if (base/'SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）'/'bridge43.py').is_file()),PARENT)
+if not PARENT.is_dir(): raise FileNotFoundError('Missing archived L4.3 parent; use the canonical snnbench pipeline for new runs')
 sys.path.insert(0,str(PARENT))
 from bridge43 import (RUN_DIRECTORY,SOURCES,load_model,fixed_batch,hybrid,labels23,
     parameter_hash,fit_head,fit_mlp,predict,linear_bundle,save_tree,load_tree,

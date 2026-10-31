@@ -1,0 +1,901 @@
+{
+  "schema": "snnbench_model_sources_v1",
+  "checked_on": "2026-10-29",
+  "internal_count": 32,
+  "injectable_cells": 12,
+  "internal": [
+    {
+      "id": "mlp",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "逐帧线性层＋注入单元；跨步记忆只来自单元",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "recurrent_mlp",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "额外上一帧输出反馈；单元状态与反馈缓存分开",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "temporal_conv",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "三抽头因果特征时间卷积；显式两步延迟",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "cnn1d",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "每步沿特征轴卷积，时间递归位于单元",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "dilated_spiking_tcn",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "多层因果三抽头、膨胀率2^层；延迟与单元状态均可干预",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "causal_spike_attention_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "时间Q/K/V单元＋前缀KV积累；无softmax；不是官方Spikformer",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "cnn2d",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": true,
+      "description": "每帧两层空间卷积＋单元",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "sew_resnet18",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "2/2/2/2残差ADD骨架；小宽度独立实现",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "spike_attention",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "逐帧空间token attention；不建模跨时刻attention",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "unet",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": true,
+      "description": "浅层空间U-Net＋注入单元；不是完整EVSNN",
+      "official_reproduction": false,
+      "implementation": "snnbench/reference/models.py"
+    },
+    {
+      "id": "sew_resnet34",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "3/4/6/3残差ADD阶段＋单元",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "ms_resnet18_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "2/2/2/2预激活膜电位shortcut参考；不等同官方MS-ResNet",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "spiking_vgg11_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "1/1/2/2/2卷积阶段＋单元；缩宽参考",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "conv_lif_rnn",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "injectable_snn_skeleton",
+      "input": "TCHW",
+      "spatial_reconstruction": true,
+      "description": "卷积输入＋卷积输出反馈＋两级注入单元",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "gru",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "多层GRUCell，显式h",
+      "official_reproduction": false,
+      "implementation": "snnbench/models.py"
+    },
+    {
+      "id": "lstm",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "多层LSTMCell，显式h/c",
+      "official_reproduction": false,
+      "implementation": "snnbench/models.py"
+    },
+    {
+      "id": "diagonal_ssm",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "实数sigmoid衰减线性对角状态；不是S4",
+      "official_reproduction": false,
+      "implementation": "snnbench/models.py"
+    },
+    {
+      "id": "causal_attention",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "单层无位置编码的完整前缀softmax attention旧控制；新主比较另有transformer",
+      "official_reproduction": false,
+      "implementation": "snnbench/models.py"
+    },
+    {
+      "id": "rnn_tanh",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "多层Elman tanh RNN",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "dilated_tcn",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "因果膨胀卷积＋GELU，与脉冲版本匹配延迟架构",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "transformer",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "多层增量KV、正弦位置、前归一化、FFN；显式外生序列位置",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "conformer",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "上述attention＋因果深度可分卷积参考；未声称完整ASR Conformer复现",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "s4d_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "复数稳定对角SSM，ZOH输入离散化；稠密递归参考，无官方S4卷积核",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "lru_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "稳定复数线性递归＋输入幅值归一化；独立稠密参考",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "mamba_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TF",
+      "spatial_reconstruction": false,
+      "description": "Mamba-1式选择性delta/B/C＋因果depthwise卷积；单个小型scan块，非官方Mamba-2/3",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "convgru",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TCHW",
+      "spatial_reconstruction": true,
+      "description": "逐像素卷积GRU；时序空间隐状态",
+      "official_reproduction": false,
+      "implementation": "snnbench/models.py"
+    },
+    {
+      "id": "cnn_lstm",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "逐帧CNN＋空间池化＋多层LSTM；用于空间/时间解耦",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "causal_conv3d",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TCHW",
+      "spatial_reconstruction": true,
+      "description": "3×3×3因果视频卷积，保存两帧真实缓存；不是I3D/SlowFast",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "ann_unet",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TCHW",
+      "spatial_reconstruction": true,
+      "description": "逐帧浅层ANN U-Net；时间利用取决于读出，作为无递归空间控制",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "ann_resnet18_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "缩宽2/2/2/2 ANN残差＋GroupNorm；非torchvision预训练复现",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "convnext_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "缩宽3/3/9/3深度卷积阶段；逐帧参考，非官方预训练ConvNeXt",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    },
+    {
+      "id": "vit_ref",
+      "track": "common_reference",
+      "status": "implemented_cpu_contract_tested",
+      "kind": "continuous_baseline",
+      "input": "TCHW",
+      "spatial_reconstruction": false,
+      "description": "每帧patch4＋空间位置编码＋TransformerEncoder；时间聚合由公共读出决定",
+      "official_reproduction": false,
+      "implementation": "snnbench/extended_models.py"
+    }
+  ],
+  "external": [
+    {
+      "source": "soul",
+      "repository": "https://github.com/yudi-mars/Soul",
+      "commit": "e3dc3237bfbe1876886f3beb77b6d53c6c016232",
+      "models": [
+        "VGG5/9/11/13/16/19",
+        "SEW-ResNet18/34/50",
+        "MS-ResNet18/34/50",
+        "Spikformer",
+        "Spikingformer",
+        "Meta-SpikeFormer",
+        "SpikingResformer",
+        "QKFormer",
+        "SpiLiFormer",
+        "SpikingTCN",
+        "DCNN",
+        "DCL",
+        "SenseHAR"
+      ],
+      "purpose": "统一跨模态来源与领域骨架；Soul移植版另标，不自动等同原作者版",
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:soul",
+      "boundary": "重复静态编码与真实物理时序分开；完整窗口模型不能直接冒充在线状态干预"
+    },
+    {
+      "source": "neuroseq",
+      "repository": "https://github.com/liyc5929/neuroseqbench",
+      "commit": "af3c3204df0c3bedc9abfde3a01cc62f42effde5",
+      "models": [
+        "SFNN",
+        "SRNN",
+        "GSN",
+        "SpikingTCN",
+        "Spike-driven Transformer",
+        "BinaryS4D",
+        "GSU",
+        "DCLS-Delays"
+      ],
+      "purpose": "长序列时序方法与NSA任务对照",
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:neuroseq",
+      "source_path": "src/neuroseqbench/network/structure"
+    },
+    {
+      "source": "neuroseq",
+      "repository": "https://github.com/liyc5929/neuroseqbench",
+      "commit": "af3c3204df0c3bedc9abfde3a01cc62f42effde5",
+      "models": [
+        "LIF",
+        "PLIF",
+        "ALIF",
+        "GLIF",
+        "CLIF",
+        "TC-LIF",
+        "LTC",
+        "LM-H",
+        "DH-LIF",
+        "CE-LIF",
+        "SPSN",
+        "PMSN"
+      ],
+      "purpose": "原12参考单元之外的重要细胞机制；以作者类实现作独立实验",
+      "priority": "P0",
+      "component_level": "neuron",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:neuroseq",
+      "source_path": "src/neuroseqbench/network/neuron",
+      "boundary": "不得用alif_ref/two_state_ref等简化类替换后仍保留官方名字"
+    },
+    {
+      "source": "spikingtsf",
+      "repository": "https://github.com/spikora/SpikingTSF",
+      "commit": "6154af0585bf615b4a47ce77c6869117b40178d0",
+      "models": [
+        "SpikeRNN",
+        "SpikGRU",
+        "SpikTCN",
+        "Spikformer",
+        "Spikingformer",
+        "QKFormer",
+        "iSpikformer",
+        "SpikF",
+        "SpikF-GO",
+        "DLinear",
+        "iTransformer",
+        "TSGRU",
+        "TSTCN",
+        "TSFormer"
+      ],
+      "purpose": "2026预测库；按具体源文件列模型，不照抄README数量",
+      "priority": "P0",
+      "component_level": "task_specific_model",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:spikingtsf",
+      "boundary": "这是库中移植版本；SpikF是attention-free Fourier模型，不能归为Transformer"
+    },
+    {
+      "source": "seqsnn",
+      "repository": "https://github.com/microsoft/SeqSNN",
+      "commit": "15cbacb123362c97c0aa0f6f861c18f4f77e3e8f",
+      "models": [
+        "TS-GRU",
+        "TS-TCN",
+        "Spikformer",
+        "iSpikformer",
+        "CPG"
+      ],
+      "purpose": "ICML2024/NeurIPS2024/2025时序预测与位置编码来源",
+      "priority": "P0",
+      "component_level": "task_specific_model",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:seqsnn"
+    },
+    {
+      "source": "tslif",
+      "repository": "https://github.com/kkking-kk/TS-LIF",
+      "commit": "a59826a6c7f62d0f16edbafdbb28db65bebd9f69",
+      "models": [
+        "TS-LIF"
+      ],
+      "purpose": "ICLR2025双区室、多时间尺度/频率响应与稳定性对照",
+      "priority": "P0",
+      "component_level": "neuron",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:tslif",
+      "boundary": "作者仓库套在TS-LIF子目录；README安装命令指向SeqSNN，需使用登记的实际源码目录"
+    },
+    {
+      "source": "spikf",
+      "repository": "https://github.com/WWJ-creator/SpikF",
+      "commit": "041e3980ac770c2f5465674b2975f05dddf3a2ca",
+      "models": [
+        "SpikF"
+      ],
+      "purpose": "ICML2025 Fourier无attention预测；频谱匹配/相位/多尺度因果对照",
+      "priority": "P0",
+      "component_level": "task_specific_model",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:spikf"
+    },
+    {
+      "source": "spikingssm",
+      "repository": "https://github.com/shenshuaijie/SDN",
+      "commit": "709640e53796a1546f2636cd6c4e1a1193e81418",
+      "models": [
+        "SpikingSSMs"
+      ],
+      "purpose": "AAAI2025长序列稀疏并行脉冲SSM；分清训练并行与测试递归",
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:spikingssm"
+    },
+    {
+      "source": "spikemamba",
+      "repository": "https://github.com/Brain-Inspired-Computing-Lab/SpikeMamba",
+      "commit": "d864263e5a3c3da45905b9baafddafd969df97e1",
+      "models": [
+        "SpikeMamba tiny/medium/large"
+      ],
+      "purpose": "MICCAI2026选择性更新/活动门控及真实ECG/EEG桥接",
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:spikemamba",
+      "boundary": "CHB-MIT作者segment-mixed切分不支持跨患者结论；能耗是45nm操作估计"
+    },
+    {
+      "source": "rhythm",
+      "repository": "https://github.com/YinsongYan/Rhythm-SNN",
+      "commit": "33c5e29ac2b4715cf7ddde4d9e0b891be32f12d8",
+      "models": [
+        "RhythmFFSNN",
+        "RhythmSRNN",
+        "RhythmLSNN",
+        "RhythmASRNN",
+        "RhythmDH-SRNN",
+        "RhythmDH-SFNN"
+      ],
+      "purpose": "Nature Communications2025节律门控；保持、计算跳步和信息损失分开",
+      "priority": "P1",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "spikformer",
+      "repository": "https://github.com/ZK-Zhou/spikformer",
+      "commit": "621268981827af47aa666c1b5f774de4281d90ad",
+      "models": [
+        "Spikformer"
+      ],
+      "purpose": "原作者时空attention与Soul/TSF移植版交叉验证",
+      "priority": "P1",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "spikingformer",
+      "repository": "https://github.com/TheBrainLab/Spikingformer",
+      "commit": "94d575475e1f76e4c7d58e85882d156b279ee66e",
+      "models": [
+        "Spikingformer"
+      ],
+      "purpose": "原作者spike-driven residual；2023预印本/AAAI2026题名版本分开",
+      "priority": "P1",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "meta",
+      "repository": "https://github.com/BICLab/Spike-Driven-Transformer-V2",
+      "commit": "35f245f4f79acf1a2b3ef22698c58ab05c1ede33",
+      "models": [
+        "Meta-SpikeFormer/Spike-driven Transformer V2"
+      ],
+      "purpose": "原作者ICLR2024多阶段spike-driven架构",
+      "priority": "P1",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "qkformer",
+      "repository": "https://github.com/zhouchenlin2096/QKFormer",
+      "commit": "4c7e0356dd535fec683b6a33214ddd2c5b45e56e",
+      "models": [
+        "QKFormer"
+      ],
+      "purpose": "原作者层级Q-K attention；访问瓶颈与稀疏通信分析",
+      "priority": "P1",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "resformer",
+      "repository": "https://github.com/xyshi2000/SpikingResformer",
+      "commit": "3f751275dedfda8b0a4ed0bf50e85e02a4335f3e",
+      "models": [
+        "SpikingResformer"
+      ],
+      "purpose": "原作者CVPR2024 DSSA与多阶段局部/全局结构",
+      "priority": "P1",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "spiliformer",
+      "repository": "https://github.com/KirinZheng/SpiLiFormer",
+      "commit": "23c6bf9fa927ae1edc593df56193ad46a43d7034",
+      "models": [
+        "SpiLiFormer"
+      ],
+      "purpose": "原作者ICCV2025侧抑制；干扰抑制与有用内容保留的分离对照",
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "tsl",
+      "repository": "https://github.com/THUML/Time-Series-Library",
+      "commit": "4e938a1767106324dd753b2a44832bf870a0252e",
+      "models": [
+        "DLinear",
+        "PatchTST",
+        "iTransformer",
+        "TimesNet",
+        "TimeMixer",
+        "TimeXer",
+        "Mamba",
+        "MambaSL"
+      ],
+      "purpose": "预测/时序分类领域强ANN对照；不是只拿GRU作连续模型",
+      "priority": "P0",
+      "component_level": "task_specific_model",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "integration": "upstream-suite:tsl",
+      "boundary": "Time-Series-Library移植版标清；需另配相同上下文、变量、预测长度与调参预算 Native run.py hardcodes global RNG seed=2021 before parsing --seed; multiple init seeds require a declared patch revision."
+    },
+    {
+      "source": "s4",
+      "repository": "https://github.com/state-spaces/s4",
+      "commit": "e757cef57d89e448c413de7325ed5601aceaac13",
+      "models": [
+        "S4",
+        "S4D"
+      ],
+      "purpose": "长序列结构化状态空间原作者实现；与独立s4d_ref分开",
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "mamba",
+      "repository": "https://github.com/state-spaces/mamba",
+      "commit": "e9594ce1c732d97440f0332fdc43170a2294dbfa",
+      "models": [
+        "Mamba-1",
+        "Mamba-2",
+        "Mamba-3 source variants"
+      ],
+      "purpose": "选择性SSM原作者来源；核/GPU版本固定",
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "boundary": "此固定commit含后续变体；本项目mamba_ref仅是Mamba-1式稠密参考，绝不等同官方任何完整模型"
+    },
+    {
+      "source": "evsnn",
+      "repository": "https://github.com/LinZhu111/EVSNN",
+      "commit": "9404c0a8dfc4a692ce7332774f36575b3213cb7c",
+      "models": [
+        "EVSNN",
+        "PA-EVSNN"
+      ],
+      "purpose": "CVPR2022事件视频重建脉冲/膜电位结构；重建任务必须有领域SNN对照",
+      "priority": "P0",
+      "component_level": "restoration_model",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "boundary": "Author release provides minimal inference and pretrained weights, not complete training; target timing/event integration still require audit."
+    },
+    {
+      "source": "utilise",
+      "repository": "https://github.com/prs-eth/U-TILISE",
+      "commit": "1ea50fe1e4f1840a14b3f23062334077fc5f943b",
+      "models": [
+        "U-TILISE"
+      ],
+      "purpose": "真实遥感重建强ANN；序列到序列与本文因果当前目标另立权限",
+      "priority": "P0",
+      "component_level": "restoration_model",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false,
+      "boundary": "作者原生全序列可使用目标之后帧；不能与因果前缀直接排名"
+    },
+    {
+      "source": "neurobench",
+      "repository": "https://github.com/NeuroBench/neurobench",
+      "commit": "e521c28f5798cb40bb9423758bf066dad53fe070",
+      "models": [
+        "algorithm-track baselines"
+      ],
+      "purpose": "独立任务/操作计数/资源合同桥接；不把操作估计称芯片实测",
+      "priority": "P1",
+      "component_level": "architecture",
+      "status": "pinned_source_registered_not_run",
+      "state_analysis_adapter": false
+    },
+    {
+      "source": "spikyspace",
+      "models": [
+        "SpikySpace"
+      ],
+      "paper": "https://arxiv.org/abs/2601.02411",
+      "repository": "https://anonymous.4open.science/r/SpikySpace",
+      "commit": null,
+      "priority": "P0",
+      "component_level": "architecture",
+      "status": "paper_verified_anonymous_code_unpinned",
+      "state_analysis_adapter": false,
+      "purpose": "2026脉冲selective scan、近似非线性、阈值随时间变化的对照；先核代码与逐步因果性"
+    },
+    {
+      "source": "spikcommander",
+      "models": [
+        "SpikCommander"
+      ],
+      "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/37194",
+      "repository": null,
+      "commit": null,
+      "priority": "P1",
+      "component_level": "task_specific_model",
+      "status": "paper_verified_code_not_verified",
+      "state_analysis_adapter": false,
+      "purpose": "AAAI2026多视图语音时序attention；SHD/SSC/GSC强领域模型，代码链接未核实不猜测"
+    }
+  ],
+  "upstream_suites": {
+    "soul": {
+      "repository": "https://github.com/yudi-mars/Soul.git",
+      "commit": "e3dc3237bfbe1876886f3beb77b6d53c6c016232",
+      "entrypoints": [
+        [
+          "run_soul.py"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "spikingtsf": {
+      "repository": "https://github.com/spikora/SpikingTSF.git",
+      "commit": "6154af0585bf615b4a47ce77c6869117b40178d0",
+      "entrypoints": [
+        [
+          "run_long.py"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "spikf": {
+      "repository": "https://github.com/WWJ-creator/SpikF.git",
+      "commit": "041e3980ac770c2f5465674b2975f05dddf3a2ca",
+      "entrypoints": [
+        [
+          "run_long.py"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "spikemamba": {
+      "repository": "https://github.com/Brain-Inspired-Computing-Lab/SpikeMamba.git",
+      "commit": "d864263e5a3c3da45905b9baafddafd969df97e1",
+      "entrypoints": [
+        [
+          "train_spike_mamba.py"
+        ],
+        [
+          "inference_all.py"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "neuroseq": {
+      "repository": "https://github.com/liyc5929/neuroseqbench.git",
+      "commit": "af3c3204df0c3bedc9abfde3a01cc62f42effde5",
+      "entrypoints": [
+        [
+          "experiments/runner.py"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "seqsnn": {
+      "repository": "https://github.com/microsoft/SeqSNN.git",
+      "commit": "15cbacb123362c97c0aa0f6f861c18f4f77e3e8f",
+      "entrypoints": [
+        [
+          "-m",
+          "SeqSNN.entry.tsforecast"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "tslif": {
+      "repository": "https://github.com/kkking-kk/TS-LIF.git",
+      "commit": "a59826a6c7f62d0f16edbafdbb28db65bebd9f69",
+      "entrypoints": [
+        [
+          "-m",
+          "SeqSNN.entry.tsforecast"
+        ]
+      ],
+      "working_directory": "TS-LIF",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "spikingssm": {
+      "repository": "https://github.com/shenshuaijie/SDN.git",
+      "commit": "709640e53796a1546f2636cd6c4e1a1193e81418",
+      "entrypoints": [
+        [
+          "train.py"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    },
+    "tsl": {
+      "repository": "https://github.com/THUML/Time-Series-Library.git",
+      "commit": "4e938a1767106324dd753b2a44832bf870a0252e",
+      "entrypoints": [
+        [
+          "run.py"
+        ]
+      ],
+      "working_directory": ".",
+      "dependencies": "Install the pinned source's own requirements in an isolated environment; not installed or GPU-validated here",
+      "status": "launcher_registered_author_training_not_executed"
+    }
+  },
+  "other_important_families": [
+    {
+      "family": "video recognition",
+      "models": [
+        "I3D",
+        "R(2+1)D",
+        "SlowFast",
+        "Video Swin"
+      ],
+      "source": "https://github.com/open-mmlab/mmaction2",
+      "status": "candidate_not_integrated",
+      "purpose": "真实动作数据的强时空ANN对照；因果与双向窗口权限分开"
+    },
+    {
+      "family": "video restoration",
+      "models": [
+        "ConvLSTM",
+        "EDVR",
+        "BasicVSR++",
+        "RVRT"
+      ],
+      "source": "https://github.com/open-mmlab/mmagic",
+      "status": "candidate_not_integrated",
+      "purpose": "重建领域强ANN；配准、未来帧、预训练数据与预算分开，不用CNN类名称代替完整模型"
+    }
+  ]
+}

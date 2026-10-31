@@ -3,12 +3,19 @@ from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parent
 PARENT=ROOT/'parent_l42'
+if not PARENT.is_dir():
+    if (ROOT/'bridge42.py').is_file(): PARENT=ROOT
+    else:
+        PARENT=next((base/'SNN_L4_2_Latent_Usability_v0_1_2026-10-27（1）' for base in ROOT.parents
+                     if (base/'SNN_L4_2_Latent_Usability_v0_1_2026-10-27（1）'/'bridge42.py').is_file()),PARENT)
+if not PARENT.is_dir(): raise FileNotFoundError('Missing archived L4.2 parent; use the canonical snnbench pipeline for new runs')
 sys.path.insert(0,str(PARENT))
 from bridge42 import (load_model,fixed_batch,parameter_hash,fit_head,save_tree,
     load_tree,tree_hash,write_json,independent_ids)
 from bridge35 import Cell,StreamSession,BenchmarkModel,ModelConfig,NEURONS,BACKBONES,clone_tree
 from bridge import _render
 from capture35 import capture
+if (ROOT/'parent_l41'/'communication_capture.py').is_file(): sys.path.append(str(ROOT/'parent_l41'))
 from communication_capture import capture_edge
 from readers42 import fit_mlp as _fit_mlp,predict,linear_bundle
 SOURCES=('H1','H2','H3','H4','C')

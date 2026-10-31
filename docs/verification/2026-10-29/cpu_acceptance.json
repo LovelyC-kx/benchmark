@@ -1,0 +1,162 @@
+{
+  "schema": "cpu_engineering_acceptance_v1",
+  "status": "passed",
+  "date": "2026-10-29",
+  "implementation_sha256": "f5b1ad274fdfa0244e8d1e90edbbdbd41cebe66e24bac5ae9876c154f22d8026",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.9.1+cpu",
+    "numpy": "2.3.5",
+    "device": "cpu"
+  },
+  "manifest": {
+    "schema": "executable_manifest_v2",
+    "profile": "smoke",
+    "seeds": [
+      11
+    ],
+    "runs": 8,
+    "counts": {
+      "tagged/regression": 2,
+      "tagged/classification": 2,
+      "spatial/classification": 2,
+      "spatial/reconstruction": 2
+    },
+    "manifest_sha256": "cbc2e631618075d2a5979e01b8ad8475107d2d0b8b41e56917d04d4cad7fccb8",
+    "meaning": "validated runnable specifications; no trained-model claim",
+    "external_archives": [],
+    "external_without_preparation": "registry candidates are excluded, never synthesized or silently substituted"
+  },
+  "queue_states": {
+    "done": 8
+  },
+  "ledger_counts": {
+    "observed_runs": 8,
+    "trained": 8,
+    "trained_and_weights_changed": 8,
+    "analysis_receipts": 8
+  },
+  "runs": [
+    {
+      "run_id": "27890196f902c39aff6556fa",
+      "status": "trained",
+      "family": "tagged",
+      "task": "tagged_load",
+      "objective": "classification",
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.6910595893859863,
+      "checkpoint_sha256": "ff4ff8203ce42e3141bccf19b1d4a01964ced2594e3df7c9bb69c2f65eaaf376"
+    },
+    {
+      "run_id": "2aeb986d895b8bebc29da42b",
+      "status": "trained",
+      "family": "spatial",
+      "task": "spatial_v2",
+      "objective": "reconstruction",
+      "backbone": "convgru",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.29943156242370605,
+      "checkpoint_sha256": "e242d533566b0e9d1a906ed1fedb1a6435c5e219460ab8b08e7862a9bc717b10"
+    },
+    {
+      "run_id": "5cc4330c1c5abbe9cc2a4ef2",
+      "status": "trained",
+      "family": "tagged",
+      "task": "tagged_load",
+      "objective": "regression",
+      "backbone": "gru",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.9252036809921265,
+      "checkpoint_sha256": "d618e0ee8a0d084aabbb80e8a099a534c1809870e4748cfd10a13072807a0af1"
+    },
+    {
+      "run_id": "948f8363f9e77eb2c0e6349c",
+      "status": "trained",
+      "family": "tagged",
+      "task": "tagged_load",
+      "objective": "classification",
+      "backbone": "gru",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.69026780128479,
+      "checkpoint_sha256": "8d92cac36180b7c0385b47c86ebf5f0cd1991d0dd1a73f77003514e8739984d0"
+    },
+    {
+      "run_id": "ca2dbe146819e15fec262c36",
+      "status": "trained",
+      "family": "spatial",
+      "task": "spatial_v2",
+      "objective": "reconstruction",
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.2611677944660187,
+      "checkpoint_sha256": "5bc5319f0cd3c1f590448ea636ee1e57950ced0f736da36f0c277ceb036bfefc"
+    },
+    {
+      "run_id": "ce1f6a6d7170ac8121bcd2ff",
+      "status": "trained",
+      "family": "spatial",
+      "task": "spatial_v2",
+      "objective": "classification",
+      "backbone": "convgru",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.6978363990783691,
+      "checkpoint_sha256": "1840a074c88ede186e2e5ab15af65589c923d19d8d4c0ba2acc9423de723bfab"
+    },
+    {
+      "run_id": "e3697a242f482e8558d9f742",
+      "status": "trained",
+      "family": "spatial",
+      "task": "spatial_v2",
+      "objective": "classification",
+      "backbone": "cnn2d",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.684472918510437,
+      "checkpoint_sha256": "1a6709d88df53e504f2478dbd30cb47191604aaa7be1bef93bda168611290b11"
+    },
+    {
+      "run_id": "e6bcf3fb31ea38f95f1d0ee6",
+      "status": "trained",
+      "family": "tagged",
+      "task": "tagged_load",
+      "objective": "regression",
+      "backbone": "mlp",
+      "cell": "lif_hard",
+      "seed": 11,
+      "epochs_completed": 2,
+      "updates": 8,
+      "parameters_changed": true,
+      "last_val_loss": 0.9071743488311768,
+      "checkpoint_sha256": "45340d2f9a83ce2348bfb93d671c9ad98b83349b0541aa8837827501ff1fe51e"
+    }
+  ],
+  "scope": "8 short CPU runs, 2 epochs, 32 training scenes each; verifies execution and artifacts. No GPU convergence/performance/novelty claim."
+}

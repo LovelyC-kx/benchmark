@@ -1,0 +1,28 @@
+{
+  "model.neuron": [
+    "lif_hard",
+    "lif_soft",
+    "threshold",
+    "if_hard",
+    "plif_ref",
+    "alif_ref",
+    "adlif_ref",
+    "hetero_lif",
+    "two_state_ref",
+    "continuous",
+    "tanh",
+    "analog_hard_ref"
+  ],
+  "model.observation": [
+    "output",
+    "pre",
+    "post"
+  ],
+  "model.readout": [
+    "last",
+    "mean",
+    "sum",
+    "exponential",
+    "trajectory"
+  ]
+}

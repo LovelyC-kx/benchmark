@@ -1,0 +1,26 @@
+{
+  "screen/legacy": {
+    "task_contracts": 62,
+    "runs_per_seed": 2984,
+    "runs_five_seeds": 14920,
+    "scope": "configuration cardinality, not training or preflight count"
+  },
+  "full/legacy": {
+    "task_contracts": 762,
+    "runs_per_seed": 39384,
+    "runs_five_seeds": 196920,
+    "scope": "configuration cardinality, not training or preflight count"
+  },
+  "expanded/expanded": {
+    "task_contracts": 62,
+    "runs_per_seed": 4954,
+    "runs_five_seeds": 24770,
+    "scope": "configuration cardinality, not training or preflight count"
+  },
+  "full/expanded": {
+    "task_contracts": 762,
+    "runs_per_seed": 63054,
+    "runs_five_seeds": 315270,
+    "scope": "configuration cardinality, not training or preflight count"
+  }
+}

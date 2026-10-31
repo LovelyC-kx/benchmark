@@ -1,0 +1,27 @@
+{
+  "schema": "executable_manifest_v2",
+  "profile": "expanded",
+  "model_roster": "expanded",
+  "seeds": [
+    11
+  ],
+  "runs": 4954,
+  "counts": {
+    "legacy/classification": 1448,
+    "legacy/regression": 830,
+    "legacy/reconstruction": 234,
+    "tagged/classification": 332,
+    "tagged/regression": 332,
+    "official_adding/classification": 83,
+    "copy_memory/sequence_classification": 83,
+    "mqar/classification": 83,
+    "mqar/sequence_classification": 83,
+    "protocol/classification": 787,
+    "protocol/regression": 581,
+    "protocol/reconstruction": 78
+  },
+  "manifest_sha256": "8b3f11e8b64a3cadd1247b7baed14833fead0045f1c41352be068b1091a57a5d",
+  "meaning": "validated runnable specifications; no trained-model claim",
+  "external_archives": [],
+  "external_without_preparation": "registry candidates are excluded, never synthesized or silently substituted"
+}

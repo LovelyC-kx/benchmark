@@ -1,0 +1,290 @@
+[
+  {
+    "destination": "snnbench/legacy/physical.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/physical.py",
+    "sha256_original": "b5b5d36cd66aeb6f0a3bf414a8ff2ceb511f36a0dcd83e39490a6fcbc8b22f97",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "b5b5d36cd66aeb6f0a3bf414a8ff2ceb511f36a0dcd83e39490a6fcbc8b22f97",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/experiments.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/experiments.py",
+    "sha256_original": "1913fd49bb80e39d30c3cd49e3cc6b661b2aff15dd57bfdc22741f5d37ffa593",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "1913fd49bb80e39d30c3cd49e3cc6b661b2aff15dd57bfdc22741f5d37ffa593",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/l2_runtime.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/l2_runtime.py",
+    "sha256_original": "1f1cd8171fe74136021819751f488799c3b8f4754c1346b6ec1dc9f5a806f434",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "1f1cd8171fe74136021819751f488799c3b8f4754c1346b6ec1dc9f5a806f434",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/tasks.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/tasks.py",
+    "sha256_original": "f2875718bb36c95e5d7e93351582ff4140fed13356c5323f075df71b7c388704",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "f2875718bb36c95e5d7e93351582ff4140fed13356c5323f075df71b7c388704",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/runner.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/runner.py",
+    "sha256_original": "09bcdfd389a02c88e5cf1b32ef9f8ebf8fb0b851b33905c8d7b48b22d28ea929",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "09bcdfd389a02c88e5cf1b32ef9f8ebf8fb0b851b33905c8d7b48b22d28ea929",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/advisor.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/advisor.py",
+    "sha256_original": "1e78ba2c23591a436f8fbcf773966b5dc33dc8edc0f6129a549c60f168e554b2",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "1e78ba2c23591a436f8fbcf773966b5dc33dc8edc0f6129a549c60f168e554b2",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/data.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/data.py",
+    "sha256_original": "517fb7bda571f3318863bb65dac0671d4f086818c545f0dfd0dba0e98a86ba58",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "517fb7bda571f3318863bb65dac0671d4f086818c545f0dfd0dba0e98a86ba58",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/upstream.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/upstream.py",
+    "sha256_original": "a4c7d5ff2f066d1b681d59fd5f498f110fbe127fea9cc1b0132559486a4e6653",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "a4c7d5ff2f066d1b681d59fd5f498f110fbe127fea9cc1b0132559486a4e6653",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/neurons.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/neurons.py",
+    "sha256_original": "20da689cd325a0f550c008f45e6ad3eb560525120337641da4286167cf0d4910",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "20da689cd325a0f550c008f45e6ad3eb560525120337641da4286167cf0d4910",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/l2_time.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/l2_time.py",
+    "sha256_original": "1a786675a8df4286c41ce10406090328856eb8ef30319803bf5ec763e843687f",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "1a786675a8df4286c41ce10406090328856eb8ef30319803bf5ec763e843687f",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/l1_contracts.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/l1_contracts.py",
+    "sha256_original": "18693e2727cb8c57a980a72d101d7a45e36cc6da4d45d59d5bbe38c6dd339960",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "18693e2727cb8c57a980a72d101d7a45e36cc6da4d45d59d5bbe38c6dd339960",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/cli.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/cli.py",
+    "sha256_original": "15a294c5ea828b564887286b7cbee367c3ead0fc38dd8a05d4d678337917cd59",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "15a294c5ea828b564887286b7cbee367c3ead0fc38dd8a05d4d678337917cd59",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/models.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/models.py",
+    "sha256_original": "e9e3c89bbcc66cd46e30848e86bf4016cc5ed07be713681aff102077d4b083cf",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "e9e3c89bbcc66cd46e30848e86bf4016cc5ed07be713681aff102077d4b083cf",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/legacy/analysis.py",
+    "source": "SNN_L2_Complete_2026-10-21.zip:snnbench/analysis.py",
+    "sha256_original": "0c8c1cd5de9a8de43cd0dcb70290b4384941203d619a4b9660850e2b463f52ef",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "0c8c1cd5de9a8de43cd0dcb70290b4384941203d619a4b9660850e2b463f52ef",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/reference/neurons.py",
+    "source": "SNN_L3_2_Review_v0_3_2026-10-25/SNN_L3_2_Review_v0_3_2026-10-25/parent_l2/snnbench/neurons.py",
+    "sha256_original": "20da689cd325a0f550c008f45e6ad3eb560525120337641da4286167cf0d4910",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "20da689cd325a0f550c008f45e6ad3eb560525120337641da4286167cf0d4910",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/reference/models.py",
+    "source": "SNN_L3_2_Review_v0_3_2026-10-25/SNN_L3_2_Review_v0_3_2026-10-25/parent_l2/snnbench/models.py",
+    "sha256_original": "e9e3c89bbcc66cd46e30848e86bf4016cc5ed07be713681aff102077d4b083cf",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "e9e3c89bbcc66cd46e30848e86bf4016cc5ed07be713681aff102077d4b083cf",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/reference/l2_runtime.py",
+    "source": "SNN_L3_2_Review_v0_3_2026-10-25/SNN_L3_2_Review_v0_3_2026-10-25/parent_l2/snnbench/l2_runtime.py",
+    "sha256_original": "1f1cd8171fe74136021819751f488799c3b8f4754c1346b6ec1dc9f5a806f434",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "1f1cd8171fe74136021819751f488799c3b8f4754c1346b6ec1dc9f5a806f434",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/decomposition.py",
+    "source": "SNN_L3_3_1_Decomposition_v0_1_2026-10-25/SNN_L3_3_1_Decomposition_v0_1_2026-10-25/decomposition.py",
+    "sha256_original": "c72f67a189f3c9d6343816626ebb1ff9e11bb0333be8e195a923cd4158a552bc",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "b768bd34c76713076bce4399d3bf8d94ad437e1fc0b0b8b41e97cfee3434822d",
+    "current_edits": "namespace import repair / local projected-variance helper"
+  },
+  {
+    "destination": "snnbench/kernels/subspace_geometry.py",
+    "source": "SNN_L3_3_2_Subspaces_v0_1_2026-10-25/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/subspace_geometry.py",
+    "sha256_original": "420e26f4df88f134f1b79d5f614163f082e2faeae4ae3d88a20d6aa7c304fba1",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "0c550514964cf7aa7d2630704fe2089999f8ada897cc4ce295e3960dd562c6da",
+    "current_edits": "namespace import repair / local projected-variance helper"
+  },
+  {
+    "destination": "snnbench/kernels/readout_geometry.py",
+    "source": "SNN_L3_3_2_Subspaces_v0_1_2026-10-25/SNN_L3_3_2_Subspaces_v0_1_2026-10-25/readout_geometry.py",
+    "sha256_original": "3950492987f0c938dd83dad86f0ff4059c42d33ebd5775145b2316e57d159b5b",
+    "migration": "relative namespace imports only",
+    "sha256_ported": "180d4660dceca3d0338f7ced411caa7e68b6f1301068a61bdd79fa12b3c5b350",
+    "current_edits": "namespace import repair / local projected-variance helper"
+  },
+  {
+    "destination": "snnbench/kernels/functional_anova.py",
+    "source": "SNN_L3_3_3_Nonlinear_v0_2_2026-10-25/SNN_L3_3_3_Nonlinear_v0_2_2026-10-25/functional_anova.py",
+    "sha256_original": "7e0f53f17aedbc801de74305e4f58062c6d12cda5e01519806af966fc8911e74",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "7e0f53f17aedbc801de74305e4f58062c6d12cda5e01519806af966fc8911e74",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/linear_reference.py",
+    "source": "SNN_L3_2_Review_v0_3_2026-10-25/SNN_L3_2_Review_v0_3_2026-10-25/linear_reference.py",
+    "sha256_original": "df96a48c09d814ceec844bf7a8b372dd512f900d6adb0e5827872caffe118f45",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "df96a48c09d814ceec844bf7a8b372dd512f900d6adb0e5827872caffe118f45",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/temporal_alignment.py",
+    "source": "SNN_L3_6_Temporal_Geometry_v0_2_2026-10-27（1）/temporal_alignment.py",
+    "sha256_original": "6a6d643cc7ff84b28e43a748476373c7ce60ccbba9e9f8b24dc5ff45e8c355ac",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "6a6d643cc7ff84b28e43a748476373c7ce60ccbba9e9f8b24dc5ff45e8c355ac",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/finite_messages.py",
+    "source": "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/parent_l41/finite_messages.py",
+    "sha256_original": "a036c0cc4c318e92dc9daeae9cd7f9b014768a627bde185bfdcebd8f6f67f021",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "a036c0cc4c318e92dc9daeae9cd7f9b014768a627bde185bfdcebd8f6f67f021",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/intervention_math43.py",
+    "source": "SNN_L4_3_Content_Interventions_v0_1_2026-10-27（1）/intervention_math43.py",
+    "sha256_original": "95583a216aa994914c63241bff7c52f906e96f666c669a54c9e1cdd5980a8eed",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "95583a216aa994914c63241bff7c52f906e96f666c669a54c9e1cdd5980a8eed",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/recovery_math44.py",
+    "source": "SNN_L4_4_Recovery_and_Direction_v0_1_2026-10-27（1）/recovery_math44.py",
+    "sha256_original": "c88587771e3d1c756e4a8b809d85a91aaa17e3b263c739354c486fef63c928dc",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "c88587771e3d1c756e4a8b809d85a91aaa17e3b263c739354c486fef63c928dc",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/latent_theory42.py",
+    "source": "SNN_L4_2_Latent_Usability_v0_1_2026-10-27（1）/latent_theory42.py",
+    "sha256_original": "b3503f32414ac12927372af2e6af709afdab4048a664f4689ea8ceefc6eef942",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "b3503f32414ac12927372af2e6af709afdab4048a664f4689ea8ceefc6eef942",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/spatial_metrics45.py",
+    "source": "SNN_L4_5_Spatial_History_Reconstruction_v0_1_2026-10-27（1）/spatial_metrics45.py",
+    "sha256_original": "c6709e0bab3ea93904e2d431f035bb896c980cac7f18fa499982180f68f5f0ce",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "c6709e0bab3ea93904e2d431f035bb896c980cac7f18fa499982180f68f5f0ce",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/continuous_risk.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/continuous_risk.py",
+    "sha256_original": "33f40303396612fd75b9aa24747ad454f7cae7dc68af7b4f7943809ffee4377b",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "33f40303396612fd75b9aa24747ad454f7cae7dc68af7b4f7943809ffee4377b",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/finite_gaussian.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/finite_gaussian.py",
+    "sha256_original": "ba556e09124668741c85860fa127f1f7b012b49202c6a82682fd61f4165dece8",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "ba556e09124668741c85860fa127f1f7b012b49202c6a82682fd61f4165dece8",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/task_moments.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/task_moments.py",
+    "sha256_original": "325dd2fb431fd06e76226de7e9826de60c3ad91cb752b622f12f6c863e7e086f",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "325dd2fb431fd06e76226de7e9826de60c3ad91cb752b622f12f6c863e7e086f",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/task_spectrum.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/task_spectrum.py",
+    "sha256_original": "a8c6500b7998d8e9e4be2db62e8a10b616ca6fb7ed6cd378f567f89ed33948bc",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "a8c6500b7998d8e9e4be2db62e8a10b616ca6fb7ed6cd378f567f89ed33948bc",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/task_structure.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/task_structure.py",
+    "sha256_original": "3daa21682d3f240be184aea67f55fc2bcf152873d4c74de2816723bca9db44a2",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "3daa21682d3f240be184aea67f55fc2bcf152873d4c74de2816723bca9db44a2",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/geometry_generalization.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/geometry_generalization.py",
+    "sha256_original": "d5e8a44e67d9e6c7865af159ab5097b59b1f63c0a8936c46283eb27ff3080c01",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "d5e8a44e67d9e6c7865af159ab5097b59b1f63c0a8936c46283eb27ff3080c01",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/decoding.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/decoding.py",
+    "sha256_original": "7eefaa4c24539af8888b8ff39d8e98be7e1f349b2665868572058360f2368e02",
+    "migration": "unchanged at initial import",
+    "sha256_ported": "7eefaa4c24539af8888b8ff39d8e98be7e1f349b2665868572058360f2368e02",
+    "current_edits": "no content change from initial import"
+  },
+  {
+    "destination": "snnbench/kernels/higher_order_controls.py",
+    "source": "SNN_L3_4_Geometry_Generalization_v0_2_2026-10-25（1）/higher_order_controls.py",
+    "sha256_original": "4c343f7cd3d26c233e4234a679fd61c1e0b7dd78937175d0be09f18f359ed439",
+    "migration": "relative namespace imports only",
+    "sha256_ported": "f5d548d125566d78b221d97f187a44c3d90eaab46527d38542dee0f8e78d6201",
+    "current_edits": "namespace import repair / local projected-variance helper"
+  }
+]

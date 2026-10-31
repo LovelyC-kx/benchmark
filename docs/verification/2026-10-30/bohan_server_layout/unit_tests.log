@@ -1,0 +1,90 @@
+test_failed_training_keeps_update_and_inputs (test_campaign.CampaignExecution.test_failed_training_keeps_update_and_inputs) ... ok
+test_original_six_layer_inventory_and_materialized_campaign (test_campaign.CampaignExecution.test_original_six_layer_inventory_and_materialized_campaign) ... ok
+test_post_queue_executes_actual_analysis_and_serializes_same_run (test_campaign.CampaignExecution.test_post_queue_executes_actual_analysis_and_serializes_same_run) ... {"run_id": "a267e2e71da7b8a22be3a5ff", "epoch": 1, "updates": 4, "train_native_loss": 1.0299995988607407, "val": {"native_loss": 0.8467772006988525, "native_loss_se": 0.16540790581127443, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 8, "accuracy": null, "scenes": 8}, "last_gradient_norm": 2.198138952255249}
+ok
+test_training_journal_and_complete_archive_sealing (test_campaign.CampaignExecution.test_training_journal_and_complete_archive_sealing) ... {"run_id": "a267e2e71da7b8a22be3a5ff", "epoch": 1, "updates": 4, "train_native_loss": 1.0299995988607407, "val": {"native_loss": 0.8467772006988525, "native_loss_se": 0.16540790581127443, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 8, "accuracy": null, "scenes": 8}, "last_gradient_norm": 2.198138952255249}
+ok
+test_uncommitted_update_rows_are_preserved_before_resume (test_campaign.CampaignExecution.test_uncommitted_update_rows_are_preserved_before_resume) ... ok
+test_archive_failure_keeps_partial_evidence (test_campaign.CompleteArchive.test_archive_failure_keeps_partial_evidence) ... ok
+test_full_coordinates_and_complete_replay_for_multiple_state_types (test_campaign.CompleteArchive.test_full_coordinates_and_complete_replay_for_multiple_state_types) ... ok
+test_original_bits_binary_signed_zero_bfloat_and_nested_trees (test_campaign.CompleteArchive.test_original_bits_binary_signed_zero_bfloat_and_nested_trees) ... ok
+test_atomic_queue_claim_and_idempotent_enqueue (test_concurrency.Concurrency.test_atomic_queue_claim_and_idempotent_enqueue) ... ok
+test_shared_data_preparation_lease (test_concurrency.Concurrency.test_shared_data_preparation_lease) ... ok
+test_stable_multinode_shards (test_concurrency.Concurrency.test_stable_multinode_shards) ... ok
+test_future_and_group_leak_rejected (test_download_prepare.Canonical.test_future_and_group_leak_rejected) ... ok
+test_group_isolation_hashes_and_memmap (test_download_prepare.Canonical.test_group_isolation_hashes_and_memmap) ... ok
+test_archive_traversal_and_gzip (test_download_prepare.Downloader.test_archive_traversal_and_gzip) ... ok
+test_ignored_range_restarts_and_checksum (test_download_prepare.Downloader.test_ignored_range_restarts_and_checksum) ... 127.0.0.1 - - [30/Oct/2026 08:36:56] "GET /data.bin HTTP/1.1" 200 -
+ok
+test_mixed_csv_and_gzip_batch_extracts_only_container (test_download_prepare.Downloader.test_mixed_csv_and_gzip_batch_extracts_only_container) ... {"id": "fixture", "name": null, "priority": "P0", "access": null, "adapter": null, "source_url": null}
+127.0.0.1 - - [30/Oct/2026 08:36:57] "GET /ETTh1.csv HTTP/1.1" 200 -
+{"filename": "ETTh1.csv", "bytes": 24, "sha256": "cefeb68a7849aa38a370320e220564e7fcd1a8f1496c8bd0bff1a6266f10a5ec", "provider_checksum": false}
+127.0.0.1 - - [30/Oct/2026 08:36:57] "GET /spikes.h5.gz HTTP/1.1" 200 -
+{"filename": "spikes.h5.gz", "bytes": 40, "sha256": "27b7b08dbd3b766a51c7fbf8a80ebdf036b1d7b810a61507fedc5c48e0d8c66a", "provider_checksum": false}
+ok
+test_valid_range_resume (test_download_prepare.Downloader.test_valid_range_resume) ... ok
+test_author_runner_executes_pinned_source_and_rejects_edits (test_expansion.ExpandedProtocols.test_author_runner_executes_pinned_source_and_rejects_edits) ... ok
+test_esc50_original_recording_groups (test_expansion.ExpandedProtocols.test_esc50_original_recording_groups) ... ok
+test_expanded_catalogue_compatible_and_native_output (test_expansion.ExpandedProtocols.test_expanded_catalogue_compatible_and_native_output) ... ok
+test_forecast_no_overlap_train_only_scale_and_native_horizon (test_expansion.ExpandedProtocols.test_forecast_no_overlap_train_only_scale_and_native_horizon) ... ok
+test_mnist_scan_permutation_and_repeat (test_expansion.ExpandedProtocols.test_mnist_scan_permutation_and_repeat) ... ok
+test_notd_transformer_keeps_exogenous_position_and_replays (test_expansion.ExpandedProtocols.test_notd_transformer_keeps_exogenous_position_and_replays) ... ok
+test_openbmi_subjects_and_right_boundary_time (test_expansion.ExpandedProtocols.test_openbmi_subjects_and_right_boundary_time) ... ok
+test_optional_author_archives_do_not_download_by_default (test_expansion.ExpandedProtocols.test_optional_author_archives_do_not_download_by_default) ... {"id": "D1", "name": "fixture", "priority": "P0", "access": null, "adapter": null, "source_url": null}
+{"filename": "raw", "sha256": "fixture"}
+{"id": "D1", "name": "fixture", "priority": "P0", "access": null, "adapter": null, "source_url": null}
+{"filename": "raw", "sha256": "fixture"}
+{"filename": "pooled", "sha256": "fixture"}
+ok
+test_specialized_dynamics_and_normalization_survive_initialization (test_expansion.ExpandedProtocols.test_specialized_dynamics_and_normalization_survive_initialization) ... ok
+test_wisdm_subjects_and_activity_boundaries (test_expansion.ExpandedProtocols.test_wisdm_subjects_and_activity_boundaries) ... ok
+test_all_original_native_targets (test_pipeline.DataContracts.test_all_original_native_targets) ... ok
+test_all_protocols_and_prefix_invariance (test_pipeline.DataContracts.test_all_protocols_and_prefix_invariance) ... ok
+test_g01_exact_age_and_g02_invalid (test_pipeline.DataContracts.test_g01_exact_age_and_g02_invalid) ... ok
+test_g04_not_an_order_only_label (test_pipeline.DataContracts.test_g04_not_an_order_only_label) ... ok
+test_g09_acquisition_clock (test_pipeline.DataContracts.test_g09_acquisition_clock) ... ok
+test_store_chunk_stability_and_readonly (test_pipeline.DataContracts.test_store_chunk_stability_and_readonly) ... ok
+test_symbolic_native_masks (test_pipeline.DataContracts.test_symbolic_native_masks) ... ok
+test_tagged_role_load_and_shared_world (test_pipeline.DataContracts.test_tagged_role_load_and_shared_world) ... ok
+test_all_migrated_kernels_import (test_pipeline.ExecutionContracts.test_all_migrated_kernels_import) ... ok
+test_exact_mid_epoch_and_boundary_resume (test_pipeline.ExecutionContracts.test_exact_mid_epoch_and_boundary_resume) ... {"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 1, "updates": 4, "train_native_loss": 1.0018993318080902, "val": {"native_loss": 0.9176055192947388, "native_loss_se": 0.11333116229158624, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 2.4767062664031982}
+{"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 2, "updates": 8, "train_native_loss": 0.9902750551700592, "val": {"native_loss": 0.9071743488311768, "native_loss_se": 0.11250848494131495, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 1.5774675607681274}
+{"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 1, "updates": 4, "train_native_loss": 1.0018993318080902, "val": {"native_loss": 0.9176055192947388, "native_loss_se": 0.11333116229158624, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 2.4767062664031982}
+{"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 2, "updates": 8, "train_native_loss": 0.9902750551700592, "val": {"native_loss": 0.9071743488311768, "native_loss_se": 0.11250848494131495, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 1.5774675607681274}
+{"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 1, "updates": 4, "train_native_loss": 1.0018993318080902, "val": {"native_loss": 0.9176055192947388, "native_loss_se": 0.11333116229158624, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 2.4767062664031982}
+{"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 2, "updates": 8, "train_native_loss": 0.9902750551700592, "val": {"native_loss": 0.9071743488311768, "native_loss_se": 0.11250848494131495, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 1.5774675607681274}
+ok
+test_group_bootstrap (test_pipeline.ExecutionContracts.test_group_bootstrap) ... ok
+test_train_analysis_full_modules (test_pipeline.ExecutionContracts.test_train_analysis_full_modules) ... {"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 1, "updates": 4, "train_native_loss": 1.0018993318080902, "val": {"native_loss": 0.9176055192947388, "native_loss_se": 0.11333116229158624, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 2.4767062664031982}
+{"run_id": "e6bcf3fb31ea38f95f1d0ee6", "epoch": 2, "updates": 8, "train_native_loss": 0.9902750551700592, "val": {"native_loss": 0.9071743488311768, "native_loss_se": 0.11250848494131495, "native_loss_se_unit": "source group; cluster robust descriptive SE", "independent_groups": 16, "accuracy": null, "scenes": 16}, "last_gradient_norm": 1.5774675607681274}
+ok
+test_all_backbone_cell_pairs_backward_and_replay (test_pipeline.ModelContracts.test_all_backbone_cell_pairs_backward_and_replay) ... ok
+test_all_original_native_loss_paths (test_pipeline.ModelContracts.test_all_original_native_loss_paths) ... ok
+test_continuous_baselines_and_native_spatial_reconstruction (test_pipeline.ModelContracts.test_continuous_baselines_and_native_spatial_reconstruction) ... ok
+test_credit_detach_preserves_forward_and_changes_gradient (test_pipeline.ModelContracts.test_credit_detach_preserves_forward_and_changes_gradient) ... ok
+test_initialization_pairing (test_pipeline.ModelContracts.test_initialization_pairing) ... ok
+test_multi_query_mqar_loss (test_pipeline.ModelContracts.test_multi_query_mqar_loss) ... ok
+test_phase_and_noop_hooks (test_pipeline.ModelContracts.test_phase_and_noop_hooks) ... ok
+test_demand_only_input_is_fixed (test_raw_adapters.MathematicalControls.test_demand_only_input_is_fixed) ... ok
+test_observation_floors (test_raw_adapters.MathematicalControls.test_observation_floors) ... ok
+test_earthnet_author_hdf5_fixture (test_raw_adapters.RawAdapters.test_earthnet_author_hdf5_fixture) ... ok
+test_gsc_wav_and_speaker_lists_fixture (test_raw_adapters.RawAdapters.test_gsc_wav_and_speaker_lists_fixture) ... ok
+test_har_raw_inertial_fixture (test_raw_adapters.RawAdapters.test_har_raw_inertial_fixture) ... ok
+test_shd_ssc_hdf5_fixture (test_raw_adapters.RawAdapters.test_shd_ssc_hdf5_fixture) ... ok
+test_tonic_gesture_npy_fixture (test_raw_adapters.RawAdapters.test_tonic_gesture_npy_fixture) ... ok
+test_all_62_screen_task_native_loss_paths (test_scientific_controls.ScientificControls.test_all_62_screen_task_native_loss_paths) ... ok
+test_coordinate_demand_is_not_whole_source_demand (test_scientific_controls.ScientificControls.test_coordinate_demand_is_not_whole_source_demand) ... ok
+test_event_branches_are_independent (test_scientific_controls.ScientificControls.test_event_branches_are_independent) ... ok
+test_population_nested_risk_and_task_energy_counterexample (test_scientific_controls.ScientificControls.test_population_nested_risk_and_task_energy_counterexample) ... ok
+test_readout_state_replay_for_every_readout (test_scientific_controls.ScientificControls.test_readout_state_replay_for_every_readout) ... ok
+test_realized_path_accounting_and_shared_unit_coordinates (test_scientific_controls.ScientificControls.test_realized_path_accounting_and_shared_unit_coordinates) ... ok
+test_symbolic_diagnostics_are_categorical (test_scientific_controls.ScientificControls.test_symbolic_diagnostics_are_categorical) ... ok
+test_target_budget_preserves_native_targets_and_roles (test_scientific_controls.ScientificControls.test_target_budget_preserves_native_targets_and_roles) ... ok
+test_archive_revision_marker_and_missing_master_check (test_server_layout.ServerLayout.test_archive_revision_marker_and_missing_master_check) ... ok
+test_campaign_cache_override_is_persisted_and_cannot_drift (test_server_layout.ServerLayout.test_campaign_cache_override_is_persisted_and_cannot_drift) ... ok
+test_wrappers_reach_cli_with_quoted_paths_and_preserve_custom_configuration (test_server_layout.ServerLayout.test_wrappers_reach_cli_with_quoted_paths_and_preserve_custom_configuration) ... ok
+
+----------------------------------------------------------------------
+Ran 64 tests in 31.156s
+
+OK

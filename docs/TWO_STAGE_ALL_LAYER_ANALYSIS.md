@@ -97,3 +97,7 @@
 该修改不改训练公式、身份、预算或权重。已有campaign中的旧账本不会自动改变，需重新生成并核对差异；该差异是需求登记修订，不是新增已完成实验。
 
 English: Stage one must retain all six analytical layers and original subsection responsibilities. Reuse trained checkpoints and shared observations, while adding independent training wherever the scientific factor changes. Stage two expands conditions and confirmation. A shared-module receipt is not completion of specialized protocols; deadline-driven partial results remain explicitly incomplete.
+
+## 7. 已落实的编译入口（2026-10-31）
+
+见[第一阶段编译器与服务器操作](STAGE1_COMPILER_RUNBOOK.md)。编译得到492个唯一训练身份与732项共同分析配方；原主卡40张，合并显式协议标题后的专项编号92个。训练来源、全部依赖、归档请求和未闭环的适配问题分别输出。编译只读旧队列，不启动GPU；这些数量不表示相关实验已执行，也不表示每个专项已经适配完成。

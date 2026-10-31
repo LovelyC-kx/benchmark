@@ -386,7 +386,7 @@ def plan(source_root, out, max_runs=45000):
     plan_value = {
         'schema': 'efficient_campaign_v05', 'status': 'planned_not_activated',
         'planner_sha256': sha(Path(__file__).resolve()),
-        'source_root': str(source_root), 'training_output': legacy['training_output'],
+        'source_root': str(source_root), 'execution_root': str(out), 'training_output': legacy['training_output'],
         'data_output': legacy['data_output'],
         'training_implementation_sha256': legacy['training_implementation_sha256'],
         'source_counts_at_plan': legacy_counts, 'legacy_runs': sum(legacy_counts.values()),
@@ -420,6 +420,7 @@ def legacy_processes(plan_value):
     db = str(Path(plan_value['source_root']) / 'train.sqlite').encode()
     runs = plan_value['training_output'].encode()
     found = []
+    own = plan_value.get('execution_root')
     for path in Path('/proc').iterdir():
         if not path.name.isdigit():
             continue
@@ -427,7 +428,45 @@ def legacy_processes(plan_value):
         if b'snnbench' in args and ((b'worker' in args and db in args)
                                     or (b'train' in args and runs in args)):
             found.append(int(path.name))
-    return found
+        # A different optimized campaign can share these same run directories.
+        # Drain its children too; never mistake another project's GPU work for it.
+        helper = any(Path(os.fsdecode(a)).name == 'efficient_campaign.py' for a in args if a)
+        if helper and b'_train' in args and runs in args:
+            index = args.index(b'--spec') + 1 if b'--spec' in args else len(args)
+            spec_path = Path(os.fsdecode(args[index])) if index < len(args) else None
+            if own is None or spec_path is None or spec_path.parent != Path(own) / 'queue_specs':
+                found.append(int(path.name))
+        if helper and b'run' in args and b'--root' in args:
+            index=args.index(b'--root')+1
+            if index >= len(args):continue
+            other=Path(os.fsdecode(args[index])).resolve()
+            if own and other==Path(own).resolve():continue
+            try:other_plan=json.loads((other/'campaign.json').read_text())
+            except (OSError,ValueError):continue
+            if other_plan.get('training_output')==plan_value['training_output']:
+                found.append(int(path.name))
+    return sorted(set(found))
+
+
+def pause_related_campaigns(plan_value):
+    """Graceful admission pause for live optimized supervisors sharing evidence."""
+    paused=[]
+    own=Path(plan_value['execution_root']).resolve()
+    for path in Path('/proc').iterdir():
+        if not path.name.isdigit():continue
+        args=proc_args(path.name)
+        if not (b'run' in args and b'--root' in args and any(
+                Path(os.fsdecode(a)).name=='efficient_campaign.py' for a in args if a)):continue
+        index=args.index(b'--root')+1
+        if index>=len(args):continue
+        other=Path(os.fsdecode(args[index])).resolve()
+        if other==own:continue
+        try:value=json.loads((other/'campaign.json').read_text())
+        except (OSError,ValueError):continue
+        if value.get('training_output')==plan_value['training_output']:
+            atomic(other/'pause.request',{'time':time.time(),'policy':'finish active tasks; switching to '+str(own)})
+            paused.append(str(other))
+    return sorted(set(paused))
 
 
 def source_check(p):
@@ -467,11 +506,14 @@ def validate_completed(run, run_id, implementation):
 def activate(root, wait=False, poll=5):
     root = Path(root).resolve()
     p = json.loads((root / 'campaign.json').read_text())
+    p['execution_root'] = str(root)
     source_check(p)
     check_manifest(root, p)
     if p['status'] == 'activated':
         status_report(root)
         return True
+    paused=pause_related_campaigns(p)
+    if paused:print(canonical({'graceful_pause_requested':paused,'signals_sent':False}),flush=True)
     old_path = Path(p['source_root']) / 'train.sqlite'
     old = connect(old_path)
     backup = root / 'legacy_before_activation.sqlite'
@@ -510,16 +552,18 @@ def activate(root, wait=False, poll=5):
             original = old.execute('SELECT state,error FROM jobs WHERE id=?', (run_id,)).fetchone()
             run = Path(p['training_output']) / run_id
             status = json.loads((run / 'status.json').read_text()) if (run / 'status.json').exists() else {}
-            if original[0] == 'done' or status.get('status') == 'trained':
+            if (original and original[0] == 'done') or status.get('status') == 'trained':
                 validate_completed(run, run_id, p['training_implementation_sha256'])
                 new.execute("UPDATE jobs SET state='done',error=NULL WHERE id=?", (run_id,))
                 reused.append({'run_id': run_id, 'state': 'done', 'path': str(run),
                                'spec_sha256': sha(run / 'spec.json'), 'status_sha256': sha(run / 'status.json'),
                                'last_checkpoint_sha256': sha(run / 'last.pt'),
                                'best_checkpoint_sha256': sha(run / 'best.pt')})
-            elif original[0] == 'failed':
-                new.execute("UPDATE jobs SET state='failed',error=? WHERE id=?", (original[1], run_id))
-                reused.append({'run_id': run_id, 'state': 'failed', 'path': str(run), 'error': original[1]})
+            elif (original and original[0] == 'failed') or status.get('status') == 'failed':
+                error = original[1] if original and original[0] == 'failed' else status.get('error','Prior failed execution; inspect '+str(run))
+                new.execute("UPDATE jobs SET state='failed',error=? WHERE id=?", (error, run_id))
+                reused.append({'run_id': run_id, 'state': 'failed', 'path': str(run), 'error': error,
+                               'scope':'retained failure evidence; no successful checkpoint or failure-source equivalence claim'})
     # Preserve old completed evidence even where it is outside the optimized training design.
     with (root / 'legacy_evidence.jsonl').open('w') as stream:
         for run_id, state, error in old.execute("SELECT id,state,error FROM jobs WHERE state IN ('done','failed')"):
@@ -675,6 +719,7 @@ def schedule(root, gpu_tokens, max_slots=4, fraction=.8, reserve_gib=12, poll=1,
     elif pause.exists():
         raise RuntimeError('Campaign paused; use run --resume to continue')
     p = json.loads((root / 'campaign.json').read_text())
+    p['execution_root'] = str(root)
     if p['status'] != 'activated':
         raise RuntimeError('Activate and drain the legacy queue first')
     source_check(p)

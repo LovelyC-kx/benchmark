@@ -1,0 +1,36 @@
+{
+  "selected_runs": 492,
+  "origin_counts": {
+    "existing_legacy_contract": 429,
+    "new_explicit_contract": 63
+  },
+  "shared_analysis_jobs": 732,
+  "same_model_formation_jobs": 240,
+  "master_cards": 40,
+  "specialized_sections": 92,
+  "optimizer_updates_upper_budget": 1416960,
+  "all_original_analysis_complete": false,
+  "schema": "stage1_compiler_verification_v1",
+  "test_count": 41,
+  "legacy_database_unchanged": true,
+  "requirement_nodes": 132,
+  "training_engine_changed": false,
+  "raw_data_fixture": "27 canonical contract-shape fixtures; no downloaded real corpus",
+  "gpu_execution": "mocked control-flow tests only",
+  "measured_runtime_speedup": null,
+  "complete_stage_eta": null,
+  "unverified": [
+    "actual corpora",
+    "user GPU throughput",
+    "specialized checkpoint adapters",
+    "scientific conclusions"
+  ],
+  "file_sha256": {
+    "scripts/compile_stage1.py": "b53a96d54acb313078b9b3b5bc29e09d28365dcb0a33d723a6631ec38badf0f6",
+    "scripts/efficient_campaign.py": "6b58f4b0e1358e4c5e04f1dd703347fdfc3d7e5be3a14a91c3a659938be047fb",
+    "scripts/install_stage1_compiler.sh": "6925041ac81b944bfe343e88146c522dcb156450bacadb6ebf5b4aaa5b7d4d1c",
+    "snnbench/coverage.py": "98a530e905b12f3ccb070374296305adf3b9c8fdc12bb905c1635f3bea7d7de8"
+  },
+  "original_protocol_scope": "Current repository: 40 master cards and 92 explicit specialized identifiers, all 132 routed as required and incomplete",
+  "source_identity_check": "Final compiler tests reconstruct original task/model membership: 429 old identities, 63 declared scientific additions; missing original identities fail"
+}

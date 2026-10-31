@@ -592,7 +592,7 @@ def status_report(root):
 
 def gpu_inventory():
     output = subprocess.check_output(['nvidia-smi', '--query-gpu=index,uuid,memory.total,memory.free',
-        '--format=csv,noheader,nounits'], text=True)
+        '--format=csv,noheader,nounits', *(['-i', os.environ['SNN_GPU_QUERY_IDS']] if os.environ.get('SNN_GPU_QUERY_IDS') else [])], text=True)
     result = {}
     for row in csv.reader(io.StringIO(output)):
         index, uuid, total, free = [v.strip() for v in row]
@@ -641,7 +641,7 @@ def checkpoint_affinity(run):
 
 def gpu_compute_processes():
     output = subprocess.check_output(['nvidia-smi', '--query-compute-apps=gpu_uuid,pid',
-                                     '--format=csv,noheader,nounits'], text=True)
+                                     '--format=csv,noheader,nounits', *(['-i', os.environ['SNN_GPU_QUERY_IDS']] if os.environ.get('SNN_GPU_QUERY_IDS') else [])], text=True)
     return [(row[0].strip(), int(row[1].strip())) for row in csv.reader(io.StringIO(output)) if row]
 
 
@@ -756,7 +756,14 @@ def schedule(root, gpu_tokens, max_slots=4, fraction=.8, reserve_gib=12, poll=1,
     owned = {a['pid'] for run_id, a in active.items()
              if str(root / 'queue_specs' / (run_id + '.json')).encode() in proc_args(a['pid'])
              and str(Path(__file__).resolve()).encode() in proc_args(a['pid'])}
-    foreign = [(g, pid) for g, pid in gpu_compute_processes() if g in selected and pid not in owned]
+    shared_tokens = set(os.environ.get('SNN_SHARE_GPU_IDS', '').split(','))
+    shared = {g for g in selected if g in shared_tokens or str(inventory[g]['index']) in shared_tokens}
+    def permitted_existing(gpu, pid):
+        if gpu not in shared:return False
+        try:return Path(f'/proc/{pid}').stat().st_uid == os.getuid()
+        except OSError:return False
+    foreign = [(g, pid) for g, pid in gpu_compute_processes()
+               if g in selected and pid not in owned and not permitted_existing(g, pid)]
     if foreign:
         raise RuntimeError('Selected GPUs have other compute processes; no process stopped: ' + repr(foreign))
     affinity_cpus = len(os.sched_getaffinity(0)) if hasattr(os, 'sched_getaffinity') else (os.cpu_count() or 1)

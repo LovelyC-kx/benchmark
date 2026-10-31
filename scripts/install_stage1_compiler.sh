@@ -19,7 +19,7 @@ trap 'rm -rf -- "$stage1_tmp"' EXIT
 stage1_sources=(scripts/compile_stage1.py scripts/efficient_campaign.py snnbench/coverage.py)
 stage1_hashes=(
   b53a96d54acb313078b9b3b5bc29e09d28365dcb0a33d723a6631ec38badf0f6
-  6b58f4b0e1358e4c5e04f1dd703347fdfc3d7e5be3a14a91c3a659938be047fb
+  3063ec23f0243c2718576db3792a8ebbe9610c5f93bc0fe05b5fe72b99282a4a
   98a530e905b12f3ccb070374296305adf3b9c8fdc12bb905c1635f3bea7d7de8
 )
 stage1_targets=(
